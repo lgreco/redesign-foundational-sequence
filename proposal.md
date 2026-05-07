@@ -1,13 +1,11 @@
 # Proposal: COMP 158 and COMP 159
 ## An Integrated Introductory Sequence in Programming, Mathematics, and Computing Tools
 
-*Submitted to the CS Department Curriculum Committee*
-
 ---
 
 ## The Problem
 
-Students who complete COMP 141 (computing tools), COMP 163 (discrete mathematics), and COMP 170 (introductory programming) and then arrive at COMP 271 (data structures) arrive underprepared — not because the courses are weak, but because the courses do not talk to each other.
+Students who complete COMP 141 (computing tools), COMP 163 (discrete mathematics), and COMP 170 (introductory programming) arrive at COMP 271 (data structures) underprepared — not because the courses are weak, but because the courses do not talk to each other. This underpreparation is amplified as students cap off the foundational sequence (271, 272, 363) and enter upper classes with serious gaps.
 
 Three specific symptoms repeat across cohorts:
 
@@ -17,7 +15,7 @@ Three specific symptoms repeat across cohorts:
 
 3. **COMP 170 stops short of what COMP 271 expects.** The current COMP 170 schedule ends before reaching inheritance, recursion, Python dictionaries, or mutability. All four appear in the first weeks of COMP 271. Students are not missing isolated topics — they are missing the OOP vocabulary that COMP 271 is built on.
 
-The root cause is not the content of any single course. It is isolation: three subjects taught by different instructors in different semesters with no explicit connective tissue between them.
+In our opinion, the root cause is not the content of any single course. It is isolation: three subjects taught by different instructors in different semesters with no explicit connective tissue between them.
 
 There is a second, less immediate concern. AI coding tools are now capable of generating syntactically plausible code for well-described tasks. What they do not substitute for is the judgment to evaluate that code — to recognize when it is wrong, inefficient, or solving the wrong problem. That judgment is not a syntactic skill. It depends on understanding why programs behave the way they do: the mathematical structure behind an algorithm, the behavior of the system beneath the code, the cost of a design decision at scale. Our current sequence produces students who have encountered these ideas separately, in different courses, in different semesters. Familiarity without integration is exactly what AI tools replicate most effectively. Understanding that cuts across math, tools, and code is not.
 
