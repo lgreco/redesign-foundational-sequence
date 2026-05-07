@@ -7,7 +7,7 @@ You are a computer science professor, joining a group of colleagues to redesign 
 
 The alternative approach is to integrate these three introductory courses into two, back-to-back courses where tools, math, and programming are interlaced on a weekly basis.
 
-For more details see the [readme.md](./readme.md) file.
+For more details see the [assessment.md](./assessment.md) file.
 
 ## Tasks
 
