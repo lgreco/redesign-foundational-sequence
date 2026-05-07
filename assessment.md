@@ -1,4 +1,4 @@
-# Redesigning intro course sequence
+# Redesigning and assessing the intro course sequence
 
 **Challenge.** By the time students start their CS2 course (typically, COMP 271), we notice that they retain few of the skills introduced in COMP 141 (CLI and other system tools), COMP 163 (discrete mathematics), and COMP 170 (introductory programming/CS1).
 
