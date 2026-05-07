@@ -12,7 +12,7 @@ Students who complete COMP 141 (Unix tools), COMP 163 (discrete math), and COMP 
 
 COMP 158 and COMP 159 cover the same ground as the three legacy courses, but in an order driven by programming concepts rather than subject-area boundaries. Mathematical ideas arrive when they clarify what a program is doing. The command line is not a topic — it is the working environment for every assignment, from the first week to the last.
 
-The sequence is designed to produce students who understand their code, not just students who can produce it. That distinction matters more now than it did ten years ago.
+Both courses are co-taught by two instructors who are present for most sessions and share grading. The pairing allows one instructor to hold the programming thread while the other connects it to the relevant math or tool — something that is awkward to do solo across three separate courses.
 
 ---
 
@@ -30,9 +30,13 @@ The sequence is designed to produce students who understand their code, not just
 
 ---
 
+## Assessment
+
+The pilot runs two cohorts over two years. Treatment students (COMP 158 → 159 → 271) are compared to matched control students who took the legacy sequence. The primary outcome is performance in COMP 271; secondary outcomes include CLI fluency, mathematical operationalization, and retention into CS2. Details and research questions are in [`assessment.md`](./assessment.md).
+
 ## Status
 
-Working design documents — not a finalized curriculum. The courses are proposed for a two-cohort pilot running in parallel with the legacy sequence. Feedback from colleagues is welcome; open an issue or get in touch directly.
+Working design documents — not a finalized curriculum. Feedback from colleagues is welcome; open an issue or get in touch directly.
 
 ---
 
