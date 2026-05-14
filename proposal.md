@@ -27,7 +27,7 @@ We propose two new courses — **COMP 158** and **COMP 159** — offered each te
 
 1. **Topics are sequenced around programming concepts**, not around course boundaries. Math and CLI tools appear when they illuminate a programming idea, not on a separate schedule. Propositional logic arrives the week students write their first `if` statement. Summation notation arrives the week before the accumulator loop. Quantifiers arrive alongside `while` and `break`.
 
-2. **The terminal is the only programming environment.** No IDE. Students write code in Vim or nano, run it from the shell, manage it with Git, and build it with `make`. CLI fluency is not a module — it is the substrate every assignment runs on.
+2. **The terminal is the primary programming environment, with a deliberate IDE transition.** Weeks 1–8 of COMP 158 are shell-only: students write code in Vim, run it from the terminal, manage it with Git, and build it with `make`. In week 9, VS Code is introduced as the primary editor. The integrated terminal, `git push`, and `make` remain unchanged; only the text editor switches. The shell-only phase builds the understanding that underpins productive IDE use — a student who has never worked outside an IDE does not know what the IDE is doing for them.
 
 3. **The content is rationalized against the actual downstream pipeline.** Topics from the three source courses that have no direct application in COMP 271 or COMP 272 — combinatorial circuits, Boolean algebra as a standalone subject, four weeks of file processing, C compilation, networking commands — are deferred to later courses where they arise naturally. Topics the source courses do not reach — inheritance, recursion, dictionaries, mutability, Makefiles — are added, because COMP 271 assumes them.
 

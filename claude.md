@@ -10,7 +10,7 @@ The proposed remedy is two integrated back-to-back courses, **COMP 158** (fall) 
 
 These are settled design choices — do not relitigate them unless asked:
 
-- **CLI-first**: the terminal is the primary environment for all work. No IDE. Students use Vim or nano, run Python from the shell, and submit via `git push` from week 2 onward.
+- **CLI-first, then IDE**: weeks 1–8 of COMP 158 are shell-only — students write code in Vim, run it from the terminal, and submit via `git push`. In week 9, VS Code is introduced as the primary editor for the remainder of the sequence. The integrated terminal, `git push`, and `make` remain unchanged; only the text editor switches. The shell-only phase is deliberate: it builds the understanding that a program is a text file and that running it is a command, so that the IDE is used as a tool rather than a magic box.
 - **Math in service of programming**: mathematical concepts (logic, sets, combinatorics, recurrences) are introduced at the moment they clarify what a program is doing — not on a separate schedule.
 - **Sequence driven by programming concepts**: the weekly order follows programming development (types → logic → functions → sequences → iteration → OOP → recursion → algorithm analysis), with math and CLI woven in.
 - **Python → Java transition**: COMP 158/159 and the immediate downstream course (COMP 271) use Python. COMP 272 uses Java. The integrated sequence should build language-agnostic intuition (separating concepts like recursion and iteration from syntax) so the Python-to-Java shift in COMP 272 is not a barrier.

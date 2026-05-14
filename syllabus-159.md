@@ -61,7 +61,7 @@ By the end of COMP 159, students will be able to:
 
 ## How This Course Works
 
-COMP 159 continues where COMP 158 left off. The terminal remains the only development environment. Git and `make` remain the submission and build mechanisms. The pace is faster: students arrive with the baseline, and the course moves directly into new material.
+COMP 159 continues where COMP 158 left off. Students arrive having made the transition to VS Code in week 9 of COMP 158; that is the working environment throughout this course. Git and `make` remain the submission and build mechanisms — the integrated terminal inside VS Code handles both unchanged. The pace is faster: students arrive with the baseline, and the course moves directly into new material.
 
 The semester's mathematical arc runs alongside the programming arc: mathematical induction justifies recursion; recurrence relations describe recursive algorithms; Big-O formalizes the intuition of "how fast does this grow"; expected value connects to hash table behavior; function composition names what shell pipelines do. None of these is a detour — each arrives in the week where the programming concept needs it.
 

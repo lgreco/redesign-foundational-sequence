@@ -24,7 +24,9 @@ Both courses are co-taught by two instructors who are present for most sessions 
 
 | Document | Description |
 |----------|-------------|
-| [`proposal.md`](./proposal.md) | Departmental proposal for the curriculum committee |
+| [`qa.md`](./qa.md) | Claude's QA review based Karima & Leo meeting |
+| [`checklist.md`](./checklist.md) | Notes from Karima & Leo meeting(s) |
+| [`proposal.md`](./proposal.md) | Departmental proposal |
 | [`syllabus-158.md`](./syllabus-158.md) | Student-facing syllabus for COMP 158 (Fall) |
 | [`syllabus-159.md`](./syllabus-159.md) | Student-facing syllabus for COMP 159 (Spring) |
 | [`topics-158-159.md`](./topics-158-159.md) | Week-by-week course outline for both courses |

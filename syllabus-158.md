@@ -62,7 +62,9 @@ By the end of COMP 158, students will be able to:
 
 ## How This Course Works
 
-Every programming assignment is written in a plain text editor (Vim or nano), run from the terminal, and submitted via `git push`. There is no course-specific IDE. This is a deliberate choice: the terminal is where professional programming work happens, and fluency with it is a skill worth building from the start.
+**Weeks 1–8 are shell-only.** Code is written in Vim, run from the terminal, and submitted via `git push`. No IDE. The reason is deliberate: a plain text editor forces you to understand that a program is a file, that running it is a command, and that errors come back as text you have to read. An IDE that hides these layers before you understand them is a liability, not an asset.
+
+**In week 9, VS Code is introduced** as the primary editor for the rest of the semester. By then the foundations are solid, and the IDE's file browser, syntax highlighting, and debugger become tools rather than crutches. The integrated terminal inside VS Code runs the same `git push` and `make test` commands — nothing about how code is submitted or tested changes.
 
 Mathematical concepts are not taught as a separate subject. They arrive when they are needed to explain something in the code. You will see propositional logic the same week you write your first `if` statement, and summation notation the week before you write your first `for` loop accumulator. The goal is not to compartmentalize — it is to show that the math and the code are describing the same thing.
 
@@ -126,7 +128,7 @@ The project is individual work. A brief (10-minute) oral review may be requested
 | 6 | Sequences and vectors | Indexing, summation ∑; lists, `len()`, slicing |
 | 7 | Iteration — the `for` loop | Universal quantifier ∀; accumulator pattern, dot product |
 | 8 | Searching — the `while` loop | Existential quantifier ∃; linear search, `break`; `try`/`except` for input validation |
-| 9 | List algorithms and comprehension | Set-builder notation; comprehensions, string methods |
+| 9 | List algorithms and comprehension; IDE transition | Set-builder notation; comprehensions, string methods; VS Code setup, debugger basics |
 | 10 | Sets and file input | Set theory: ∈, ∪, ∩, ×; Python `set` and `frozenset`; `open()`, `strip()`, `split()` |
 | 11 | Number representation | Binary and hexadecimal; `bin()`, `hex()`, file permissions |
 | 12 | Classes and objects | Mathematical structures; `class`, `__init__`, methods |
