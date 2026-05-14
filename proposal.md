@@ -23,7 +23,7 @@ There is a second, less immediate concern. AI coding tools are now capable of ge
 
 ## The Proposal
 
-We propose two new courses — **COMP 158** and **COMP 159** — offered back-to-back in a Fall/Spring arrangement, co-taught by two instructors. Together they cover the material currently distributed across COMP 141, 163, and 170, with three significant changes:
+We propose two new courses — **COMP 158** and **COMP 159** — offered each term — fall and spring — as a sequential pair, co-taught by two instructors. Together they cover the material currently distributed across COMP 141, 163, and 170, with three significant changes:
 
 1. **Topics are sequenced around programming concepts**, not around course boundaries. Math and CLI tools appear when they illuminate a programming idea, not on a separate schedule. Propositional logic arrives the week students write their first `if` statement. Summation notation arrives the week before the accumulator loop. Quantifiers arrive alongside `while` and `break`.
 
@@ -37,7 +37,7 @@ We propose two new courses — **COMP 158** and **COMP 159** — offered back-to
 
 Each course runs 14 weeks at three 50-minute or two 75-minute sessions per week.
 
-### COMP 158 — Fall
+### COMP 158
 
 The arc: environment → values and types → logic and conditionals → functions → sequences and vectors → iteration → list algorithms → sets → number representation → classes.
 
@@ -58,7 +58,7 @@ The arc: environment → values and types → logic and conditionals → functio
 | 13 | Multi-class design | Relations, equivalence, partial orders |
 | 14 | Capstone | Review: each math concept paired with its programming analog |
 
-### COMP 159 — Spring
+### COMP 159
 
 The arc: recursion → algorithm analysis → sorting → inheritance and polymorphism → dictionaries and hashing → mutability → probability and expected-case analysis → abstract data types → shell scripting → testing → language-agnostic thinking.
 
@@ -127,7 +127,7 @@ Two cohorts allow Year 2 to replicate and refine Year 1 findings, and to test wh
 
 **Primary outcome:** COMP 271 performance. We collect final grade, grade on the first programming assignment, and withdrawal rate for both treatment and matched control students. Additionally, COMP 271 instructors — ideally without knowing which students came from which sequence — rate a random sample of submitted work on code organization, tool use, and mathematical reasoning.
 
-**Secondary outcomes:** Three short concept tests (~10 items each) administered at entry to 158, exit from 159, and entry to 271:
+**Secondary outcomes:** Three short concept tests (~10 items each) administered at four time points: entry to 158, exit from 159, entry to 271, and exit from 271:
 
 - *Module A:* CLI fluency — scenario-based tasks ("given this directory tree, write the command that...")
 - *Module B:* Math operationalization — translating formulas into code ("given **x**·**y** = ∑ xᵢyᵢ, write a Python loop that computes it")

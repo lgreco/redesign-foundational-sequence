@@ -6,7 +6,7 @@
 
 **Proposal.** In a course that spans two terms, mix and match topics from COMP 141, 163, and 170. The order in which these topics will be presented shall establish the command line interface as the principal modality for interacting with a computer system. It should also establish core mathematical concepts that are vital for programming.
 
-**Implementation.** Create two experimental courses, COMP 158 and COMP 159. (These are approximately the average value of 141, 163, and 170). Offer the courses back-to-back in a Fall/Spring arrangement. Have the courses co-taught by two instructors.
+**Implementation.** Create two experimental courses, COMP 158 and COMP 159. (These are approximately the average value of 141, 163, and 170). Offer both courses each term — fall and spring — with COMP 159 not offered in the pilot's opening fall, when no students have yet completed COMP 158. Have the courses co-taught by two instructors.
 
 **Note on downstream language transition.** Students who complete the integrated sequence will eventually move from Python (the language of COMP 158/159 and COMP 271) to Java (COMP 272, non-linear data structures). The integrated sequence should build enough language-agnostic programming intuition — separating concepts like recursion, iteration, and data modeling from syntax — so that the Python-to-Java transition in COMP 272 is not a barrier.
 
@@ -83,6 +83,14 @@ Standard CS1 exit inventory: variables, loops, conditionals, functions, basic da
 
 **Scoring and analysis:** Compute gain scores (post − pre) and compare treatment vs. control using a two-sample t-test or Mann-Whitney U per module. With two cohorts we can check whether Year 2 replicates Year 1 effect sizes.
 
+**A note on statistical power:** With ~25–30 students per treatment cohort, power is limited — detecting a medium effect (Cohen's d ≈ 0.5) at 80% power requires roughly 50–65 per group. Non-significant results should not be read as evidence of no effect. Report effect sizes (Cohen's d or rank-biserial r) and 95% confidence intervals alongside p-values; these carry more interpretive weight than a significance threshold at this sample size.
+
+#### Entry Motivation Survey
+
+A short Likert-scale survey (5–8 items) administered at entry to COMP 158 alongside Module A of the concept tests. Items cover: self-reported interest in programming; self-reported interest in mathematics; prior exposure to command-line tools; reason for choosing this sequence; general academic confidence. The same items are collected from matched control students at entry to their first legacy course.
+
+Purpose: to verify that treatment and control students do not differ systematically on motivation at baseline — supplementing the math-placement match with a behavioral baseline. Survey scores are used as a covariate in the quantitative analysis, not as a primary outcome. A significant baseline difference on motivation would be flagged as a threat to causal interpretation.
+
 #### COMP 271 Performance Metrics
 
 This is the primary downstream outcome. Collect for both treatment and matched control students:
@@ -142,11 +150,11 @@ Even without retention/continuation rates as a formal instrument, we can track: 
 
 ### Deliverables by End of Year 2
 
-1. **Quantitative report** — gain scores per module, COMP 271 grade distributions, retention rates, with effect sizes and confidence intervals.
+1. **Quantitative report** — gain scores per module, COMP 271 grade distributions, retention rates. Effect sizes and confidence intervals are the primary statistics; p-values are reported but should not drive conclusions given per-cohort sample sizes of 25–30.
 2. **Qualitative report** — thematic analysis of oral exam transcripts, organized around the four RQs.
 3. **Artifact portfolio** — anonymized sample of CLI submissions annotated with rubric scores.
 4. **Instructor reflection document** — structured post-mortems from both co-instructors after each term (what integrations worked, what sequencing changes are needed).
-5. **Recommendation memo** — 2–3 pages for the curriculum committee, answering: *should COMP 158/159 replace the legacy sequence, run in parallel, or be revised further?*
+5. **Recommendation memo** — 2–3 pages for the curriculum committee, answering: *should COMP 158/159 replace the legacy sequence, run in parallel, or be revised further?* The memo must note that non-significant p-values at this sample size do not establish ineffectiveness; the committee should weight effect sizes and confidence intervals, and treat cross-cohort replication as the stronger evidentiary bar.
 
 ---
 

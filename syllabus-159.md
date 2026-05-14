@@ -1,5 +1,5 @@
 # COMP 159 — Computing, Mathematics, and Programming II
-### Spring Semester | 3 Credit Hours
+### 3 Credit Hours | Offered fall and spring
 
 ---
 
@@ -136,7 +136,7 @@ The capstone is the primary assessment artifact for the integrated sequence. It 
 | 9 | Probability and expected-case analysis | Sample spaces, expected value; simulating hash collision rates |
 | 10 | Abstract data types | Stack and queue; two implementations, same test suite |
 | 11 | Shell scripting in depth | Functions, `$1`/`$@`, loops; `sys.argv`; pipeline as composition |
-| 12 | Testing and code quality | Test suites, edge cases, `diff`-based testing; loop invariants |
+| 12 | Testing and code quality | Test suites, edge cases, `diff`-based testing; loop invariants; `raise`, `try`/`except` in tests |
 | 13 | Language-agnostic thinking | Concepts without syntax; Java Hello World from the terminal |
 | 14 | Capstone and oral exit interview | Project due; oral interview scheduled this week |
 

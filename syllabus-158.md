@@ -1,5 +1,5 @@
 # COMP 158 — Computing, Mathematics, and Programming I
-### Fall Semester | 3 Credit Hours
+### 3 Credit Hours | Offered fall and spring
 
 ---
 
@@ -22,7 +22,7 @@ This course is co-taught. Both instructors are present for most sessions and sha
 
 ## Course Description
 
-COMP 158 is the first half of a two-semester integrated introduction to programming, computing tools, and the mathematics of computation. Topics from introductory programming, discrete mathematics, and Unix command-line tools are presented together, in an order driven by programming concepts rather than by subject-area boundaries. Mathematical ideas are introduced when they clarify what a program is doing; command-line tools are used throughout as the working environment. By the end of the semester, students will write Python programs from the terminal, manage their work with Git, reason about programs using basic logic and set theory, and design simple classes. COMP 159 follows in the spring.
+COMP 158 is the first half of a two-semester integrated introduction to programming, computing tools, and the mathematics of computation. Topics from introductory programming, discrete mathematics, and Unix command-line tools are presented together, in an order driven by programming concepts rather than by subject-area boundaries. Mathematical ideas are introduced when they clarify what a program is doing; command-line tools are used throughout as the working environment. By the end of the semester, students will write Python programs from the terminal, manage their work with Git, reason about programs using basic logic and set theory, and design simple classes. COMP 159 follows in the subsequent term.
 
 ---
 
@@ -125,9 +125,9 @@ The project is individual work. A brief (10-minute) oral review may be requested
 | 5 | Designing and testing functions | Preconditions, docstrings, `assert`; `make test` |
 | 6 | Sequences and vectors | Indexing, summation ∑; lists, `len()`, slicing |
 | 7 | Iteration — the `for` loop | Universal quantifier ∀; accumulator pattern, dot product |
-| 8 | Searching — the `while` loop | Existential quantifier ∃; linear search, `break` |
+| 8 | Searching — the `while` loop | Existential quantifier ∃; linear search, `break`; `try`/`except` for input validation |
 | 9 | List algorithms and comprehension | Set-builder notation; comprehensions, string methods |
-| 10 | Sets | Set theory: ∈, ∪, ∩, ×; Python `set` and `frozenset` |
+| 10 | Sets and file input | Set theory: ∈, ∪, ∩, ×; Python `set` and `frozenset`; `open()`, `strip()`, `split()` |
 | 11 | Number representation | Binary and hexadecimal; `bin()`, `hex()`, file permissions |
 | 12 | Classes and objects | Mathematical structures; `class`, `__init__`, methods |
 | 13 | Designing with classes | Relations, partial orders; multi-class design, invariants |

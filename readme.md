@@ -4,6 +4,10 @@ A curriculum design project at Loyola University Chicago proposing two new integ
 
 ---
 
+## Principals
+* Leo Irakliotis
+* Karima Ennaoui
+
 ## The Problem
 
 Students who complete COMP 141 (Unix tools), COMP 163 (discrete math), and COMP 170 (intro Python) arrive at COMP 271 (Data Structures) underprepared — not because the courses are weak, but because they are taught in isolation. CLI skills learned in COMP 141 do not carry forward. Mathematical notation from COMP 163 is never connected to code. COMP 170 ends before reaching the OOP vocabulary that COMP 271 assumes from day one.
