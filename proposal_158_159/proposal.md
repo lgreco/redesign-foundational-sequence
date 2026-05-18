@@ -11,7 +11,7 @@ Three specific symptoms repeat across cohorts:
 
 1. **CLI skills do not carry forward.** Students who used the terminal in COMP 141 have largely abandoned it by the time they reach COMP 271. They write Python in an IDE and have no habit of using `git`, `make`, or the command line as a development environment.
 
-2. **Discrete math stays abstract.** Students who saw summation notation and quantifiers in COMP 163 cannot recognize those concepts in code. A student who learned ∑ xᵢyᵢ in math does not connect it to a `for` loop accumulator in Python — because the two were never presented together.
+2. **Discrete math stays abstract.** Students who saw summation notation and quantifiers in COMP 163 cannot recognize those concepts in code. A student who learned $\sum x_i y_i$ in math does not connect it to a `for` loop accumulator in Python — because the two were never presented together.
 
 3. **COMP 170 stops short of what COMP 271 expects.** The current COMP 170 schedule ends before reaching inheritance, recursion, Python dictionaries, or mutability. All four appear in the first weeks of COMP 271. Students are not missing isolated topics — they are missing the OOP vocabulary that COMP 271 is built on.
 
