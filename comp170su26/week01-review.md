@@ -20,7 +20,7 @@ Every command you type is a small program. When you type `ls`, Bash finds the `l
 
 **Good starting points:**
 - [Learning the Shell — linuxcommand.org](https://linuxcommand.org/lc3_learning_the_shell.php) — a clear, free introduction written for beginners; covers everything in this section
-- [The Unix Shell — Software Carpentry](https://swcarpentry.github.io/shell-novice/) — a structured lesson with exercises, widely used in university courses
+- [The Unix Shell — Software Carpentry](https://swcarpentry.github.io/shell-novice/) — a structured lesson with exercises, widely used in university courses (you may skip the setup part)
 - [The Missing Semester of Your CS Education: The Shell — MIT](https://missing.csail.mit.edu/2020/course-shell/) — a concise lecture with video, aimed at first-year CS students
 
 ---
@@ -37,7 +37,7 @@ Every command you type is a small program. When you type `ls`, Bash finds the `l
 | `cd ..` | Move up one level (to the parent directory) |
 | `cd ~` | Move to your home directory, no matter where you are |
 | `python3 file.py` | Run the Python script `file.py` with the Python 3 interpreter |
-| `vim file.py` | Open `file.py` in the Vim editor (creates it if it doesn't exist) |
+| ``vim` file.py` | Open `file.py` in the `vim` editor (creates it if it doesn't exist) |
 
 **Tips:**
 - Commands are case-sensitive. `ls` works; `LS` does not.
@@ -111,9 +111,9 @@ The script must exist in your current directory (or you must provide a path to i
 
 ---
 
-## 6. Vim Quick Reference
+## 6. `vim` Quick Reference
 
-Vim is a terminal-based text editor available on virtually every Unix system. Its defining feature is **modes**: in Normal mode, keys are commands; in Insert mode, keys type text.
+`vim` is a terminal-based text editor available on virtually every Unix system. Its defining feature is **modes**: in Normal mode, keys are commands; in Insert mode, keys type text.
 
 ```
 Open a file:   vim hello.py
@@ -128,8 +128,8 @@ Quit without saving: :q!
 When in doubt, press `Esc`. It always returns you to Normal mode and never causes harm.
 
 **Interactive practice:**
-- [OpenVim — interactive Vim tutorial in the browser](https://www.openvim.com/) — no installation needed; practice the basics live
-- [vimtutor](https://vimschool.netlify.app/introduction/vimtutor/) — also available by typing `vimtutor` in your terminal; a guided 30-minute walkthrough built into most systems
+- [Open`vim` — interactive `vim` tutorial in the browser](https://www.open`vim`.com/) — no installation needed; practice the basics live
+- [`vim`tutor](https://`vim`school.netlify.app/introduction/`vim`tutor/) — also available by typing ``vim`tutor` in your terminal; a guided 30-minute walkthrough built into most systems
 
 ---
 
@@ -190,7 +190,7 @@ print(type(3.14))        # <class 'float'>
 
 ## 8. Exercises
 
-Work through these in order. Each builds on the previous. Use the Bash + Vim + python3 workflow: edit, save, run, repeat.
+Work through these in order. Each builds on the previous. Use the Bash + `vim` + python3 workflow: edit, save, run, repeat.
 
 ---
 
@@ -310,10 +310,10 @@ cd name          go into a folder
 cd ..            go up one level
 cd ~             go home
 python3 file.py  run a Python script
-vim file.py      open a file in Vim
+`vim` file.py      open a file in `vim`
 ```
 
-### Vim
+### `vim`
 ```
 i       start typing (Insert mode)
 Esc     stop typing (Normal mode)

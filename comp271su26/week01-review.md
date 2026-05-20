@@ -24,7 +24,7 @@ At the COMP 271 level, the goal is fluency: you should be able to open, edit, an
 
 ## 2. Two Programs You Have Seen Before
 
-In COMP 170, you wrote two programs that most introductory courses treat as finished exercises: *Hello, World* and *Mississippi*. You may also have encountered *The House that Jack Built*. In each case, the course arrived at a working solution and moved on.
+In COMP 170, we ask students to write two programs that most introductory courses treat as finished exercises: *Hello, World* and *Mississippi*. You may also have encountered *The House that Jack Built*. In each case, the course arrived at a working solution and moved on.
 
 That is the right choice for COMP 170 — the goal there is fluency with the basics. But COMP 271 asks a different question: *what does the same program look like once you know more?*
 
