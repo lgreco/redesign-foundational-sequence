@@ -4,7 +4,7 @@ These notes cover the tools we set up this week and connect the programming idea
 
 ---
 
-## 1. Terminal and Vim
+## 1. Terminal and `vim`
 
 If any of the commands or editor mechanics from this week felt unfamiliar, the resources below are worth bookmarking. They are the same tools you used in COMP 170, but now you will use them more fluently and for longer programs.
 
