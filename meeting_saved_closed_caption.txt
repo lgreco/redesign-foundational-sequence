@@ -1,0 +1,2559 @@
+[Leo Irakliotis] 10:25:04
+Hello. Hello, everyone.
+
+[Leo Irakliotis] 10:25:13
+Alex, I'm sorry for the scare yesterday.
+
+[Alexander Garcia] 10:25:18
+Oh, no, it's all right. Yeah, no, I was confused. I was like what I've been there
+
+[Leo Irakliotis] 10:25:23
+Yeah, I'm sorry.
+
+[Leo Irakliotis] 10:25:26
+Alright.
+
+[Alexander Garcia] 10:25:27
+No, that
+
+[Leo Irakliotis] 10:25:31
+Well, let's get started. Any questions, any comments, any requests?
+
+[Leo Irakliotis] 10:25:41
+All right, so what we are doing today, we're going to wrap up week one and this is, you know, we're talking mostly about course organization, the tools, housekeeping stuff and everything like that. So speaking of housekeeping
+
+[Leo Irakliotis] 10:26:00
+I have not published
+
+[Leo Irakliotis] 10:26:03
+The
+
+[Leo Irakliotis] 10:26:07
+Sakai sites for the course
+
+[Leo Irakliotis] 10:26:12
+Because I wanted to get us started first also because
+
+[Leo Irakliotis] 10:26:19
+Sakai is going away as you know, the university is replacing it with another learning management system
+
+[Leo Irakliotis] 10:26:27
+And also Sakai is such an old application that
+
+[Leo Irakliotis] 10:26:34
+It's not worth using it. So we'll have a Sakai site for two reasons. The first is
+
+[Leo Irakliotis] 10:26:41
+It's still the easy way to exchange homework. Assignments. Ideally, where I'd like us to be is to do everything through GitHub. However.
+
+[Leo Irakliotis] 10:26:54
+That is not always possible because there is a contract between you and the university when you take 271 and the contract says you're here to learn data structures, you're here to learn how to problem solve with data structures
+
+[Leo Irakliotis] 10:27:09
+to improve your programming skills and the contract does not specify by contract, I mean the syllabus, the course outline, the expectations that you have as customers of these university and students of this university. The contract does not tell you anything in advance about, hey, you know, you have to use this industry grade tool
+
+[Leo Irakliotis] 10:27:29
+That will require about 3 Tylenols per day for the next 2 weeks to master.
+
+[Leo Irakliotis] 10:27:36
+So I don't want to make GitHub a requirement because it's not part of the scope of the course. But if one day we get there, it would be ideal. But we're not there yet. So we're going to exchange assignments through Sakai
+
+[Leo Irakliotis] 10:27:54
+The other benefit of Sakai is that it provides me with a easy way to communicate with you, because I can use the Sakai to broadcast emails to you instead of sending you those emails where every one of you is listed in the
+
+[Leo Irakliotis] 10:28:12
+blind carbon copy field of the email distribution.
+
+[Leo Irakliotis] 10:28:17
+So Sakai will go up today and will make minimal use for of it
+
+[Leo Irakliotis] 10:28:27
+What also I'm going to do at the end of this each week, I will provide you with a week review, and that will be on GitHub. So you'll
+
+[Leo Irakliotis] 10:28:36
+If you have not checked out, if you have not found the repository for the course, it's on my GitHub, it's called Comp 271 summer 26. And in each
+
+[Leo Irakliotis] 10:28:49
+In that repository, there will be a folder corresponding to each week of the course. So where week one, here's week one and when you click there, there will be a week one review. Maybe I'll change the name of this file, maybe I
+
+[Leo Irakliotis] 10:29:04
+I don't know, but, you know, you'll see a file that says, okay, this is a summary of the week and the name of the file is indicative. So, there it is
+
+[Leo Irakliotis] 10:29:14
+Now, it will provide a summary along with resources what to study. So the expectation is that when we're done today and I need to make some more edits on this. So this is not the final version, although it's going to be about, it's 90% final
+
+[Leo Irakliotis] 10:29:31
+But after I look at my notes from today's meeting, I might change a few things in this document
+
+[Leo Irakliotis] 10:29:37
+So, once I send you that email and say, hey, you know, the review for the week is now officially posted on GitHub
+
+[Leo Irakliotis] 10:29:49
+Rib
+
+[Leo Irakliotis] 10:29:50
+Read it
+
+[Leo Irakliotis] 10:29:54
+It's reading is, I can't tell you how important it is to read and to read with purpose and intention and focus.
+
+[Leo Irakliotis] 10:30:08
+Because of my age, 5,800 years old
+
+[Leo Irakliotis] 10:30:15
+I come from a generation where we spend a lot of time reading
+
+[Leo Irakliotis] 10:30:20
+And you are not in the same generation as I am. What are you? Generation Zs maybe? Any millennials in this group
+
+[Leo Irakliotis] 10:30:31
+All right, coffee. Okay, all right.
+
+[Leo Irakliotis] 10:30:35
+Damika, okay, okay, so I can relate to millennia who are once a generation apart, but for the rest of you, you know, Generation Zs and any alphas
+
+[Leo Irakliotis] 10:30:47
+I don't know, it will depress me if there are any alphas in this course, I don't want any… anyway.
+
+[Leo Irakliotis] 10:30:55
+I know that you're coming from an education system where the reading has a different scope and a different engagement, but I also have news for you that reading is still essential. So, what I'm doing in this course
+
+[Leo Irakliotis] 10:31:12
+Instead of throwing a textbook at you and say, here is a doorstop
+
+[Leo Irakliotis] 10:31:19
+Weighing 5 pounds, and you have to read it cover to cover. I am providing small reading assignments
+
+[Leo Irakliotis] 10:31:27
+For you to consider, and those are very focused. For example, here the Vim reference card
+
+[Leo Irakliotis] 10:31:36
+Which
+
+[Leo Irakliotis] 10:31:38
+is something that you can read in
+
+[Leo Irakliotis] 10:31:42
+5, 10 minutes.
+
+[Leo Irakliotis] 10:31:45
+Read the material that I sent you
+
+[Leo Irakliotis] 10:31:50
+And because all the information is there and by material I send you, I mean
+
+[Leo Irakliotis] 10:31:55
+The not the technical notes that I'll be sharing on GitHub
+
+[Leo Irakliotis] 10:32:00
+And also the programs that I write for you
+
+[Leo Irakliotis] 10:32:05
+Sorry, for example, when you look at the Mississippi
+
+[Leo Irakliotis] 10:32:09
+program here, but we started talking about yesterday
+
+[Leo Irakliotis] 10:32:13
+This is reading material and you might say, what's in there to read? Well, my comments
+
+[Leo Irakliotis] 10:32:20
+My comments are class nodes, so read the comments, read the code, of course, but also read the comments.
+
+[Leo Irakliotis] 10:32:29
+And
+
+[Leo Irakliotis] 10:32:32
+Because I'm writing comments in illustrative and pedagogical approach. I'm not saying that my comments are pedagogical. I'm not, you know, I don't take credit for something that may not be there, but my intention
+
+[Leo Irakliotis] 10:32:49
+My motives are pedagogical, so that's the direction I take when I'm writing those comments, whether I succeed or not, you can… you will tell me, and I'll use your feedback to change the way I do things. But I write comments
+
+[Leo Irakliotis] 10:33:04
+as if I'm writing a brief paragraph in a fictional textbook about programming. So this is all reading materials. If something comes to you that I typed, whether it's an email, comments in code, technical note
+
+[Leo Irakliotis] 10:33:20
+A text message on Teams treat it as reading material and read attentively
+
+[Leo Irakliotis] 10:33:29
+One, I can't tell you how much in this business, whether it's management or engineering or software product development, reading is 50% of our time. You think that as technology people, we spend a lot of time doing cool things on machines. That's about
+
+[Leo Irakliotis] 10:33:47
+30% of our time, if you're lucky. The other 30%, the other 20% is fixing other people's mistakes, and the other 50% is about reading and writing about what we do. So we have to be writers, also, we have to be authors
+
+[Leo Irakliotis] 10:34:04
+And we write in two languages. At the very least, we write in Python in a formal language like Python, but we also write in English, and we have
+
+[Leo Irakliotis] 10:34:13
+be able to express what we want to say very well. In both sets of writing, whether you're writing a formal language like a programming language or a natural language like English
+
+[Leo Irakliotis] 10:34:25
+AI tools have given us an amazing boost in expressiveness. Also, they have given us a way to write a lot of
+
+[Leo Irakliotis] 10:34:36
+Lobby language, whether it's in Python or in English. So I personally use AI
+
+[Leo Irakliotis] 10:34:44
+To polish things after I write. So I always write the first draft myself, or at the very least an outline of what I want to say. And then I ask Claude or ChatGPT to help me
+
+[Leo Irakliotis] 10:34:57
+make it a little bit more readable. And before I send it, before I publish it, I always make some corrections because I look at the output that the language model gave me and say, you know, I would never use this word here. I don't
+
+[Leo Irakliotis] 10:35:13
+speak, I don't write like this, so I add a little bit of my individual style in there
+
+[Leo Irakliotis] 10:35:21
+But one way or another, in order to be a good author, whether you're writing software or you're writing memos, is to have a clear outline in our heads to be able to say, what am I trying to communicate?
+
+[Leo Irakliotis] 10:35:36
+What is important to communicate here and how do I communicate it? Do I communicate in a way that I want to show off how smart I am or how many words with more than two syllables I can spell? Or is this not about me, but it's about the team
+
+[Leo Irakliotis] 10:35:53
+And I want to focus on what this team, this group of people I work with need
+
+[Leo Irakliotis] 10:35:59
+So there is a lot of thinking to do before writing something. And it's a soft skill. It's a life skill, it's an essential skill
+
+[Leo Irakliotis] 10:36:12
+Because I'll tell you, and I'll stop, you know, I'll quit my pep talk here, I'll tell you that
+
+[Leo Irakliotis] 10:36:20
+At the end of the day, you can write as anyone can write code. Everyone can write code with a little bit of effort and a bit of assistance. Programming is not as hard as we make it sound.
+
+[Leo Irakliotis] 10:36:33
+But being a good communicator, whether you communicate with computers or with other people, that takes some effort. And I won't say that it is a gift
+
+[Leo Irakliotis] 10:36:43
+Again, anyone, everyone can be a good communicator, but the effort it requires is at a commitment level that I believe is more significant
+
+[Leo Irakliotis] 10:36:53
+than the commitment level required to be just a computer programmer
+
+[Leo Irakliotis] 10:37:01
+Going back to tools and systems.
+
+[Leo Irakliotis] 10:37:06
+Like I said yesterday, if you have been using Idle now is the time to say your goodbyes to Idle. It's time to part ways with Idle and switch to something more sophisticated
+
+[Leo Irakliotis] 10:37:22
+You have two options. One is to follow along with a text editor like I do here for some of my examples. Text editors are wonderful. They don't require too much movement between the keyboard and the mouse
+
+[Leo Irakliotis] 10:37:38
+They give you essential access to everything you need through the keyboard. So your fingers, your hands never move away from the keyboard, and that is
+
+[Leo Irakliotis] 10:37:50
+for me, it's a major advantage
+
+[Leo Irakliotis] 10:37:54
+They also have limitations
+
+[Leo Irakliotis] 10:37:57
+So there is a reason that the industry 30 years ago, 35 years ago, moved away from plain text editors into integrated development environments and an IDE is an amazing tool
+
+[Leo Irakliotis] 10:38:12
+And we'll use IDs in this course, the environment I use is Visual Studio Code
+
+[Leo Irakliotis] 10:38:21
+You can use something else. Yeah, some people I use like to use net pins, others like to use PyCharm
+
+[Leo Irakliotis] 10:38:29
+Whatever you use.
+
+[Leo Irakliotis] 10:38:31
+good at it and stay stay with it
+
+[Leo Irakliotis] 10:38:36
+From an industry perspective
+
+[Leo Irakliotis] 10:38:39
+When it comes to Python coding, Visual Studio Code is a really good choice. So if you have not spent too much time investing
+
+[Leo Irakliotis] 10:38:50
+Time and effort in another
+
+[Leo Irakliotis] 10:38:54
+ID. Now is the time to give Visual Studio Code a chance
+
+[Leo Irakliotis] 10:39:01
+You can install it in 5 min on your computer. Any computer can run almost any computer can run Visual Studio code
+
+[Leo Irakliotis] 10:39:10
+And
+
+[Leo Irakliotis] 10:39:12
+You can also run it on
+
+[Leo Irakliotis] 10:39:16
+On the web without installing anything on your computer in the form of a GitHub workspace
+
+[Leo Irakliotis] 10:39:24
+workspace in GitHub is just a virtual machine. Those of you who have taken Comp 170 here at Loyola University, up until a few years ago, we were providing you with a virtual machine
+
+[Leo Irakliotis] 10:39:39
+We had a computer service in the basement of the building and everyone had access to a virtual machine to do their coding. So we are moving away from that for two reasons. A
+
+[Leo Irakliotis] 10:39:52
+A small department like ours does not have the resources to maintain a cloud server, especially during this time when the cost of this machinery goes up, because there's so much demand for similar equipment
+
+[Leo Irakliotis] 10:40:10
+AI data centers.
+
+[Leo Irakliotis] 10:40:14
+And
+
+[Leo Irakliotis] 10:40:14
+The other reason is that
+
+[Leo Irakliotis] 10:40:19
+It was not a good example of technology use and we're training. We'd like to think that we're training people to use technology in the best way possible. So
+
+[Leo Irakliotis] 10:40:34
+do something ourselves, do a half-baked job ourselves at something that GitHub provides for free to anyone who's affiliated with the university and at no cost
+
+[Leo Irakliotis] 10:40:45
+So we'll look at the web-based version of visual
+
+[Leo Irakliotis] 10:40:53
+Studio code, and then I'll put it side by side with a native version that runs on my computer, and you're going to see that they're identical, and we'll talk a little bit about the advantages of disadvantages of both of these
+
+[Leo Irakliotis] 10:41:05
+Any questions? Any comments, any requests so far?
+
+[Leo Irakliotis] 10:41:11
+All right.
+
+[Leo Irakliotis] 10:41:12
+So
+
+[Leo Irakliotis] 10:41:15
+How to run Visual Studio Code on your web browser? Well
+
+[Leo Irakliotis] 10:41:24
+I can show this to you on my computer, but it may be best if I had a brave volunteer who already has a GitHub account to share screen and work with us. Any takers?
+
+[Leo Irakliotis] 10:41:43
+Zara
+
+[Leo Irakliotis] 10:41:45
+I'll stop sharing my screen, and Kofi, thanks for offering your number two. I'll stop sharing my screen. And now what I would like you to do is
+
+[Leo Irakliotis] 10:41:56
+Open a browser to github.com, log in, and once you're logged in, make that as big as possible, maximize the window, and then start sharing your screen with us.
+
+[Leo Irakliotis] 10:42:08
+And the only reason I'm asking you to maximize the window is that if you have any personal files open, any private information on your desktop, we don't need to see that
+
+[Leo Irakliotis] 10:42:16
+But it's easier to share your whole desktop once you have the browser taking there. And I'm going to give you one minute and go downstairs and let one of my two puppies in the house before she wakes up the rest of the neighborhood
+
+[Leo Irakliotis] 10:43:25
+All right, so we are looking at your GitHub screen. Awesome. What I would like you to do is to find my repository, my GitHub page. And all you have to do is go up there on the URL in github.com. There, awesome
+
+[Leo Irakliotis] 10:43:45
+So, click on the upper left on repositories
+
+[Leo Irakliotis] 10:43:55
+And by the way, the rest of you, if you are open on GitHub, you can follow along what we're doing here and you're going to see one of the repositories is COM271 summer 26 hit it
+
+[Leo Irakliotis] 10:44:16
+So this is the course, right?
+
+[Leo Irakliotis] 10:44:24
+One thing that you can do
+
+[Leo Irakliotis] 10:44:28
+is
+
+[Leo Irakliotis] 10:44:31
+to create your local copy of it. You don't have to
+
+[Leo Irakliotis] 10:44:36
+But you can create your local copy
+
+[Leo Irakliotis] 10:44:40
+It comes with a price.
+
+[Leo Irakliotis] 10:44:43
+Every time
+
+[Leo Irakliotis] 10:44:45
+I changed my repository
+
+[Leo Irakliotis] 10:44:48
+Your local copy has to be refreshed
+
+[Leo Irakliotis] 10:44:53
+And the only way right now to refresh it is to do it manually. So you have to know, you have to get to the habit
+
+[Leo Irakliotis] 10:45:02
+that before you do any work
+
+[Leo Irakliotis] 10:45:05
+You refresh your
+
+[Leo Irakliotis] 10:45:07
+repository
+
+[Leo Irakliotis] 10:45:09
+But let's say for now that you don't want to create your local copy
+
+[Leo Irakliotis] 10:45:14
+Let's see what happens when you click on that green button that says code.
+
+[Leo Irakliotis] 10:45:22
+it give click on the coach, it gives you two tabs local and code spaces. You click on Codespaces, and you say, create a code space on main. So let's hit that
+
+[Leo Irakliotis] 10:45:37
+What happens next
+
+[Leo Irakliotis] 10:45:40
+Is it opens
+
+[Leo Irakliotis] 10:45:44
+That entire repository, all the code that I will be sharing with you in the course
+
+[Leo Irakliotis] 10:45:49
+In a web rendered version of Visual Studio Code, what you see there
+
+[Leo Irakliotis] 10:45:58
+Is Visual Studio Code without having to install it
+
+[Leo Irakliotis] 10:46:05
+It takes about a couple of minutes to provision everything because what happens here really is GitHub
+
+[Leo Irakliotis] 10:46:13
+Put together a computer for you. A virtual machine. But it's the same like someone is unboxing a computer, plugging into the network, firing it up, booting the operating system, and then says, hey, here's your computer. But this is all done virtually, so it takes about a couple of minutes
+
+[Leo Irakliotis] 10:46:30
+And there is the course. There is everything you need to do, and you know it's still working because you know it's ready, because at some point, something that is rolling and turning at the bottom left of your screen stops doing that.
+
+[Leo Irakliotis] 10:46:45
+Right now, it looks everything is there, so we can click, all right, let's go and click on the pasta program there. There it is. That's the code we wrote yesterday.
+
+[Leo Irakliotis] 10:46:58
+By the way, now you notice a pop-up on the lower right corner that asks you if you want to install something
+
+[Leo Irakliotis] 10:47:06
+Everything, every time
+
+[Leo Irakliotis] 10:47:08
+Visual Studio Code through GitHub asks you to install something
+
+[Leo Irakliotis] 10:47:13
+I trust them blindly, so I click the… I say install. I click on the most affirmative option that it gives me. Sometimes it says, install, sometimes it says install and don't ask again. Just go for it, and the installation window will come up right here. You can always close that tab
+
+[Leo Irakliotis] 10:47:33
+For the extension Python after the installation is done
+
+[Leo Irakliotis] 10:47:36
+But always, I always accept the installation recommendations forum Python, from GitHub. Please, please, please don't. If you know Eric Chantin, do not tell him that I blindly accept
+
+[Leo Irakliotis] 10:47:52
+those recommendations because he is my colleague in cybersecurity, and he almost had a heart attack a couple of years ago when I told him that I have not changed my PIN number for my ATM debit card in over 35 years
+
+[Leo Irakliotis] 10:48:10
+And if he now hears that I accept every software recommendation from GitHub, we might finish him. And he's a good friend and I'm not ready to lose him yet.
+
+[Leo Irakliotis] 10:48:24
+So
+
+[Leo Irakliotis] 10:48:26
+There is a program, okay? We're happy with the program. There's nothing to add no edits to do. All we have to do to execute this program is to click on that little play button on the upper right-ish corner there. There it is.
+
+[Leo Irakliotis] 10:48:41
+So it will do its thing, it will churn, churn, churn, and there is our pasta recipe as we discussed yesterday. There is also something else there at the bottom of the edit window, what you see there that says
+
+[Leo Irakliotis] 10:48:58
+Is that username Zara, what I think it is
+
+[Leo Irakliotis] 10:49:04
+Is that the Star Wars reference
+
+[Leo Irakliotis] 10:49:09
+Awesome.
+
+[Leo Irakliotis] 10:49:10
+All right, right there where it says Arsa Bink's workspace Comm71, that is a full-fledged
+
+[Leo Irakliotis] 10:49:19
+Linux command line interface. Go there and type ls.
+
+[Leo Irakliotis] 10:49:24
+And press Enter
+
+[Leo Irakliotis] 10:49:27
+Those are the components of that of director. So you have access. What you have here really is access to a fully provisioned
+
+[Leo Irakliotis] 10:49:36
+Ubuntu, Linux machine with complete access to the cell
+
+[Leo Irakliotis] 10:49:44
+So it's a pretty awesome tool. All right
+
+[Leo Irakliotis] 10:49:49
+If you're happy with this, you don't need to install Visual Studio Code on your computer.
+
+[Leo Irakliotis] 10:49:58
+There is a price to pay.
+
+[Leo Irakliotis] 10:50:02
+GitHub gives you about
+
+[Leo Irakliotis] 10:50:06
+I don't know the exact amount, let's say 50, just as an example, 50 hours of virtual machine time
+
+[Leo Irakliotis] 10:50:14
+So you can use this for 50 hours. And it's not necessarily 50 clock hours, like 50 hours the way we perceive them, but 50 hours the way the computer perceives them.
+
+[Leo Irakliotis] 10:50:27
+Which in real time means closer to, I don't know, 1,000 hours.
+
+[Leo Irakliotis] 10:50:32
+So if this is the only course you're taking this summer and you're doing programming only for this course, you will not get even halfway through that monthly limit of CPU time for this virtual machine.
+
+[Leo Irakliotis] 10:50:48
+I
+
+[Leo Irakliotis] 10:50:50
+Last semester
+
+[Leo Irakliotis] 10:50:54
+I used exclusively the virtual visual studio code on GitHub workspaces for three courses, and I was running it almost 10 hours a day
+
+[Leo Irakliotis] 10:51:08
+And only once
+
+[Leo Irakliotis] 10:51:10
+I got within 5% of my monthly allocation, free allocation. So you don't have to worry about that. But it is there. If somehow you left your computer on this website webpage running 24 by 7 for a month, maybe you'll get that warning that you have
+
+[Leo Irakliotis] 10:51:29
+10% of your monthly allowance remaining.
+
+[Leo Irakliotis] 10:51:35
+That is a monthly allowance and it resets at the end of the month
+
+[Leo Irakliotis] 10:51:39
+What I do
+
+[Leo Irakliotis] 10:51:42
+Is
+
+[Leo Irakliotis] 10:51:43
+Most often, I use
+
+[Leo Irakliotis] 10:51:47
+In my local version, my installed, my native version of
+
+[Leo Irakliotis] 10:51:53
+Visual Studio code for two reasons. A, it's faster to turn to when I turn on the application, everything is there. It doesn't take a couple of minutes. You're going to notice that the workspace might take a couple of minutes to set up sometimes. It's not as fast as turning on
+
+[Leo Irakliotis] 10:52:11
+Starting an application, launching an application on your computer.
+
+[Leo Irakliotis] 10:52:17
+The other is because I have spent more time than I'm willing to admit publicly in customizing the color settings for the cursor and for the fonts and all that
+
+[Leo Irakliotis] 10:52:31
+I've been wasting my time. But
+
+[Leo Irakliotis] 10:52:36
+I don't have I don't have time to do that on the web version of
+
+[Leo Irakliotis] 10:52:43
+of GitHub workspaces. But one way or another, this is an awesome tool and it comes
+
+[Leo Irakliotis] 10:52:51
+pre-built with a Copilot agent. If you want to use it, and it can be very, very, very helpful
+
+[Leo Irakliotis] 10:53:00
+Another benefit of an integrated development environment over a text editor is that the integrated development environment offers
+
+[Leo Irakliotis] 10:53:12
+To complete your sentences
+
+[Leo Irakliotis] 10:53:14
+So that's auto completion can be very helpful. Offers
+
+[Leo Irakliotis] 10:53:24
+Free execution error checking. Let's go and make an intentional mistake somewhere.
+
+[Leo Irakliotis] 10:53:33
+Zara, make any mistake, be creative, make some silly mistake there with your code
+
+[Leo Irakliotis] 10:53:40
+There. So guest space for we forgot to type equal
+
+[Leo Irakliotis] 10:53:45
+And if we run the program as is, we'll get yelled because there is something wrong at line 14, and you're going to see it right there in the transcript of the session line 14 syntax error invalid syntax.
+
+[Leo Irakliotis] 10:54:00
+All right, before we do that, you already see the syntax error on line 14 there, because it's you see that squiggly lines.
+
+[Leo Irakliotis] 10:54:10
+And it visually guides you there. It doesn't tell you what merit is, but if you hover your mouse over guest
+
+[Leo Irakliotis] 10:54:19
+You're going to see something
+
+[Leo Irakliotis] 10:54:23
+something informative, and you know with time and experience you figure out, oh, I know where this mistake is, I'm of course, the equal sign
+
+[Leo Irakliotis] 10:54:30
+Okay, so you go back and you put the equal sign and everyone is happy, and the code can run just fine.
+
+[Leo Irakliotis] 10:54:37
+Another thing is leave it as is because you did not put a space after the equal sign, which is great, because what I would like you to do now is there is to right click
+
+[Leo Irakliotis] 10:54:48
+Inside there and select
+
+[Leo Irakliotis] 10:54:55
+Oops, we are. Okay, let's click somewhere else on the code
+
+[Leo Irakliotis] 10:55:02
+And right click again. I don't see
+
+[Leo Irakliotis] 10:55:10
+No, no, okay, we may have… oh, I see. All right, do me a favor. Go to the left vertical navigation bar and click on one, two, three, four, five, six icon down that looks like four squares there. That's it
+
+[Leo Irakliotis] 10:55:27
+Click again, I guess we were already there and clear that search box and type black is the color black
+
+[Leo Irakliotis] 10:55:38
+And one of the first things should be black formatter installed
+
+[Leo Irakliotis] 10:55:47
+It's installing and let's go back to our code
+
+[Leo Irakliotis] 10:55:50
+Click anywhere on the code, right-click anywhere on the code, format document
+
+[Leo Irakliotis] 10:56:01
+Yeah.
+
+[Leo Irakliotis] 10:56:03
+And it did a couple of changes. First of all, it put a space after the equal sign because it follows some standard style guide
+
+[Leo Irakliotis] 10:56:14
+for coding, and it broke the print line into multiple lines for readability
+
+[Leo Irakliotis] 10:56:21
+whose readability
+
+[Leo Irakliotis] 10:56:23
+choices that whoever the black guy is, John Black or what was his name who wrote that formatter
+
+[Leo Irakliotis] 10:56:30
+But
+
+[Leo Irakliotis] 10:56:32
+It helps us
+
+[Leo Irakliotis] 10:56:33
+Once every so often we right click and format the code, and we get something that looks a little bit more stylish, and style matters
+
+[Leo Irakliotis] 10:56:42
+in this business
+
+[Leo Irakliotis] 10:56:47
+Major software
+
+[Leo Irakliotis] 10:56:49
+companies
+
+[Leo Irakliotis] 10:56:52
+spent an extraordinary amount of time writing style guides
+
+[Leo Irakliotis] 10:56:57
+For code
+
+[Leo Irakliotis] 10:57:00
+And why do they do that? They do that because if everyone follows the same style
+
+[Leo Irakliotis] 10:57:08
+Everyone can work on the same code without having to learn the
+
+[Leo Irakliotis] 10:57:15
+ndosyncratic quirks of different programmers.
+
+[Leo Irakliotis] 10:57:22
+Coding style is a
+
+[Leo Irakliotis] 10:57:25
+pillar of software engineering hundreds of pages in these style guides. We are going to look at a very simple style guide for our course. I don't call it a style guide. I call
+
+[Leo Irakliotis] 10:57:41
+Their programmers packed
+
+[Leo Irakliotis] 10:57:42
+I'm going to share with you the programmers packed today as part of your reading assignment.
+
+[Leo Irakliotis] 10:57:54
+Simple rules, but important rules to follow. I will also share with you the industrial strength style guide that Google programmers use when they write Python code.
+
+[Leo Irakliotis] 10:58:07
+And it's a document you can read. I mean, I will tell you to skip some sections because they're not relevant to our course, but you're going to see how much time they spend in describing how to write variable names, how to create variable names, what to call them
+
+[Leo Irakliotis] 10:58:26
+Speaking of what to call viable aims, a very simple rule we can
+
+[Leo Irakliotis] 10:58:32
+implement for our course is
+
+[Leo Irakliotis] 10:58:36
+When we are naming a method
+
+[Leo Irakliotis] 10:58:39
+The name should sound like a verb
+
+[Leo Irakliotis] 10:58:44
+And when we name a variable, it should not sound like a verb, but it should be descriptive of the data it holds.
+
+[Leo Irakliotis] 10:58:52
+So looking at the code on our screen on line 8, we have a name there called Pasta Recipe
+
+[Leo Irakliotis] 10:59:00
+That does not sound like a verb
+
+[Leo Irakliotis] 10:59:04
+So technically, that is not a good name
+
+[Leo Irakliotis] 10:59:11
+The valuable names are appropriately named. They're fairly descriptive, but the method is not properly named. The second most difficult thing in programming
+
+[Leo Irakliotis] 10:59:24
+is naming things
+
+[Leo Irakliotis] 10:59:27
+Nobody knows what is the first most difficult thing in programming. Nobody agrees what is the most difficult thing in programming, but almost everyone agrees that the second most difficult thing in writing good code is what to call things
+
+[Leo Irakliotis] 10:59:43
+What names to give to methods and variables
+
+[Leo Irakliotis] 10:59:48
+We don't have to give any particular names. We could have called that method there instead of pasta recipe, we could have called it the Millennium Falcon
+
+[Leo Irakliotis] 11:00:00
+It's not descriptive
+
+[Leo Irakliotis] 11:00:02
+For what we're trying to do there. It's descriptive about our taste in pop culture
+
+[Leo Irakliotis] 11:00:08
+But we're not writing code to express our taste in pop culture
+
+[Leo Irakliotis] 11:00:15
+So coming up with meaningful descriptive names is more of an art than a skill
+
+[Leo Irakliotis] 11:00:23
+Well, it's a skill that comes through more of an artistic approach than a craft or a scientific approach, but always, always keep that in your mind.
+
+[Leo Irakliotis] 11:00:38
+What I'm going to do, let me see if I can have screens shared side by side. I doubt
+
+[Leo Irakliotis] 11:00:50
+But let me give it a try
+
+[Leo Irakliotis] 11:00:54
+Allow multiple presenters, and I want a portion of my screen
+
+[Leo Irakliotis] 11:01:00
+All right, so there goes
+
+[Leo Irakliotis] 11:01:08
+Zara, do me a favor and try to share again and see what happens.
+
+[Leo Irakliotis] 11:01:46
+Not much, okay.
+
+[Leo Irakliotis] 11:01:47
+All right, so let me go to my screen share here. And I'm in the wrong repository. Let me open
+
+[Leo Irakliotis] 11:02:07
+It is
+
+[Leo Irakliotis] 11:02:18
+All right, so this is the same thing that we're seeing on Zara's web browser
+
+[Leo Irakliotis] 11:02:25
+But I'm running my application native here on my computer. This is not a web page. This is the Visual Studio Code application that I installed on my machine. And the same code again, the changes
+
+[Leo Irakliotis] 11:02:41
+That we were making this code there
+
+[Leo Irakliotis] 11:02:45
+They're right here. So
+
+[Leo Irakliotis] 11:02:47
+Whether you want to install Visual Studio Code or use workspaces, that's entirely up to you, but both ways, either way
+
+[Leo Irakliotis] 11:02:56
+You get exposed to a fairly decent Visual Studio decent integrated development environment. I find myself these days saying a lot of positive things about Microsoft, which is something either
+
+[Leo Irakliotis] 11:03:11
+you know, sign of, you know, as you're getting older, you compromise your values, or that Microsoft is actually doing something right
+
+[Leo Irakliotis] 11:03:20
+Because Visual Studio Code is also a Microsoft product, and I'm surprised by how good it is. I have
+
+[Leo Irakliotis] 11:03:28
+I have been a passionate advocate of jet brains, the company that writes the integrated development environment for
+
+[Leo Irakliotis] 11:03:38
+Java, IntelliJE, they also have an IDE
+
+[Leo Irakliotis] 11:03:42
+for Python called PyCharm, but more and more I find myself drawn to using Visual Studio Code. But those are preferences. As long as you have an IDE you're comfortable with and it's not called idle or
+
+[Leo Irakliotis] 11:03:58
+Blue Jay. Okay, so either you do your work on Vim or another text editor at the shell, you know, there's always Emacs
+
+[Leo Irakliotis] 11:04:09
+Or Visual Studio Code, unless you already have a preferred IDE like PyCharm or NetBeings, in which case go for it. I'm not asking you to change a tool you're already familiar, well familiar with. But if you have not invested
+
+[Leo Irakliotis] 11:04:24
+time on any of those tools give Visual Studio code a chance.
+
+[Leo Irakliotis] 11:04:30
+Where are we taking things from here to next week?
+
+[Leo Irakliotis] 11:04:35
+So next week we're going to start writing some code. We're going to start looking at what data structures are about
+
+[Leo Irakliotis] 11:04:44
+Fundamentally, and again, these are one of those things that I do sometimes, I say sometimes to be dramatic, or, you know, but I'm exaggerating, I'm just trying to make a point by, you know, involving
+
+[Leo Irakliotis] 11:04:57
+you know, I'm Greek, we like drama, right? We wrote a lot of dramas and a lot of things, you know, epic stories in our time. So I'm trying to be a little bit dramatic, in a sense. There's only one data structure
+
+[Leo Irakliotis] 11:05:10
+That matters.
+
+[Leo Irakliotis] 11:05:13
+VRA. If you understand what an array is and how it works, you understand data structures, because most of the things we do with data structures can be done with arrays. Again, this is overgeneralization, oversimplification, dismissive of a lot of good research and a lot of good work that has been done in the field. That's not my intention
+
+[Leo Irakliotis] 11:05:33
+To be dismissive or judgmental. It's to amplify how important it is to understand
+
+[Leo Irakliotis] 11:05:40
+The value of arrays or as we call them in Python lists because Python doesn't have real, real arrays the way we learn them
+
+[Leo Irakliotis] 11:05:49
+in a different context. We'll talk about the essence of arrays next week. So, if everything can be done with arrays or lists
+
+[Leo Irakliotis] 11:05:59
+Why we bother with studying data structures
+
+[Leo Irakliotis] 11:06:03
+It's all about problem solving
+
+[Leo Irakliotis] 11:06:08
+It's all about our ability to understand how the computer thinks and for the computer to understand how they think
+
+[Leo Irakliotis] 11:06:15
+how we think there is a fundamental difference between how we humans
+
+[Leo Irakliotis] 11:06:22
+perceive the world, and we narrate the world around us in natural language, and how a computer does the same thing in a formal language, like a programming language like Python
+
+[Leo Irakliotis] 11:06:35
+A computer
+
+[Leo Irakliotis] 11:06:36
+and I'm not going to cross into the AI realm, because AI is as it's developing, it's changing a lot how we think about computing
+
+[Leo Irakliotis] 11:06:48
+So leaving AI aside, a computer is a very linear tool
+
+[Leo Irakliotis] 11:06:55
+A computer is basically an a single row, a very long single row of drawers. and every drawer can have one piece of data in it.
+
+[Leo Irakliotis] 11:07:07
+That's what the computer is. We think the memory is a little tiny box that is folded inside the computer and all that, you know, in two dimensions or three dimensions. As far as the computer is concerned, that memory is a linear arrangement of data
+
+[Leo Irakliotis] 11:07:22
+But it's very, very, very, very I'm going very, very long, and my hands get out of the screen, right? So I maybe need a wide-angle lens to show you how long it is. But
+
+[Leo Irakliotis] 11:07:34
+For us
+
+[Leo Irakliotis] 11:07:36
+We organize data
+
+[Leo Irakliotis] 11:07:40
+In, two or three dimensions. Take, for example.
+
+[Leo Irakliotis] 11:07:44
+the organizational chart for a company or an organization. It's a two-dimensional diagram. You have the CEO at the top, and below the CEO, there are two or three VPs, and below the VPs, there are a few more assistant VPs or associate VPs, and below them, they're directors, managing directors, senior managers
+
+[Leo Irakliotis] 11:08:02
+And it becomes as you keep going down and down that org chart has more and more boxes. Same thing in the military structure
+
+[Leo Irakliotis] 11:08:13
+When you look at the top of a uniform service like the Air Force, you have the chief of staff of the air, you have a four star general commanding the Air Force and under that four star general, there are a bunch of three star generals and under them a bunch of two star generals and three one-star general
+
+[Leo Irakliotis] 11:08:30
+And then you have kernels and lieutenant colonels and majors and captains. So there is a hierarchical structure. Same thing with the church. You have the Pope and the cardinals and the archbishops and the bishops and that is a two-dimensional way to represent a complex organization. It's so natural for us to think of an organization
+
+[Leo Irakliotis] 11:08:50
+chart. You're thinking about the passenger seating arrangements in an airplane
+
+[Leo Irakliotis] 11:08:57
+You know, there are rows of seats, and each row has three seats, A, B, C, D, E, F. A, B, C, D, E, F, and they… what changes the row number, row 1, row 2, row 3. So that is a two-dimensional arrangement of seeds, but when you look at the flight manifest
+
+[Leo Irakliotis] 11:09:14
+It's a single page of seed name after name, name after name. It's a linear
+
+[Leo Irakliotis] 11:09:20
+list of passenger names that are seated in a 2-dimensional arrangement when
+
+[Leo Irakliotis] 11:09:28
+When you go to a football game in Chicago, you have a three-dimensional arrangement of sitting. You have, you know, it's, you have a 2x2 arrangement of seats, and then you have two or three stories.
+
+[Leo Irakliotis] 11:09:45
+of seats in different levels. And again, if you look at the names of all the people that go towards the Bears play, all five people, it's a linear list of names.
+
+[Leo Irakliotis] 11:09:58
+But those people are scattered in three dimensions in the seeds that are named by row and number, and then by level. Same thing for the operator. You have people seated at the main floor, you have people seated at the balconies and so on. Multi three-dimensional organization of where you get seated
+
+[Leo Irakliotis] 11:10:18
+But at the end of the day, when you go to the box office and say, hey, give me the names of all the people who came
+
+[Leo Irakliotis] 11:10:24
+tonight's performance. It's going to be name after name after name after name. The order in which they are seated does not exist in that printout. All it matters are the names. That's how the computer looks at data as a linear
+
+[Leo Irakliotis] 11:10:40
+Arrangement of information, but that's not very helpful to us. We want to think in 2 or 3 or even multiple.
+
+[Leo Irakliotis] 11:10:48
+dimensions and how we reconcile the computers
+
+[Leo Irakliotis] 11:10:53
+linearity
+
+[Leo Irakliotis] 11:10:56
+With our advanced perception of
+
+[Leo Irakliotis] 11:11:00
+spatial data arrangement is called the data structure.
+
+[Leo Irakliotis] 11:11:03
+So that's what a data structure is essential how to explain to the computer that when you have this linear list of passengers, you go see
+
+[Leo Irakliotis] 11:11:13
+Seat by seat in one row, and when you have 6 people seated across, then you go to the next row and start A, B, C, D, E, F.
+
+[Leo Irakliotis] 11:11:21
+When you go to F, you go to the next row A B C D E F plus one row A, B, C, D, e, f, plus one row, A, B, C, D, f, until you run out of passengers or out of seats in the airplane, whichever comes first
+
+[Leo Irakliotis] 11:11:36
+We're going to look at simple interfaces between the linear data storage inside the computer and our need for a more sophisticated representation of that data. And that's the essence
+
+[Leo Irakliotis] 11:11:52
+of data structures. How do we interface our sophistication with computer, with the computers lack of
+
+[Leo Irakliotis] 11:12:02
+special data arrangement.
+
+[Leo Irakliotis] 11:12:06
+In doing so, we're also going to brush up a little bit of our programming skills. We're going to refresh our programming skills, and we're going to learn some neat tricks.
+
+[Leo Irakliotis] 11:12:16
+To do that, I will have to be sometimes a royal pain
+
+[Leo Irakliotis] 11:12:23
+Because this is the best time
+
+[Leo Irakliotis] 11:12:28
+or the worst time, depending on whether you're a half glass empty or a half glass full kind of person
+
+[Leo Irakliotis] 11:12:36
+To develop bad habits in programming
+
+[Leo Irakliotis] 11:12:39
+And you will develop them. There is what do you call a programmer who does not have bad habits out there
+
+[Temeeka Glass] 11:12:48
+a program?
+
+[Leo Irakliotis] 11:12:50
+No, a Starbucks employee.
+
+[Leo Irakliotis] 11:12:55
+There is no programmer
+
+[Leo Irakliotis] 11:12:58
+Gamefully employed who does not have bad habits. Bad habits make you who you are, define your style, your personality, your spunk. It's the spice of programming. But before you develop bad habits
+
+[Leo Irakliotis] 11:13:12
+You need to develop your good habits first
+
+[Leo Irakliotis] 11:13:17
+And my job is to keep poking at you
+
+[Leo Irakliotis] 11:13:24
+To make sure that we focus on the good habits first, and that's why I'm saying I'm going to be a royal pain
+
+[Leo Irakliotis] 11:13:31
+And then once we are past this point, then you go ahead and you develop your own
+
+[Leo Irakliotis] 11:13:37
+Not so good habits. But first we have to build on some good habits first. We were going to talk about this as well, and some of them are already enshrined
+
+[Leo Irakliotis] 11:13:45
+in terms of good practices on the programmer's pact that I will share with you
+
+[Leo Irakliotis] 11:13:53
+That's all for week one. Any comments? Any thoughts, any requests?
+
+[Leo Irakliotis] 11:14:00
+Sure.
+
+[Shú Perez] 11:14:00
+I just wanted to, um, like, let you know something just kind of after the meeting ends.
+
+[Leo Irakliotis] 11:14:07
+Sure, sure
+
+[Leo Irakliotis] 11:14:09
+Anything else?
+
+[Leo Irakliotis] 11:14:11
+All right, remember, there are only seven or eight of us in this course
+
+[Leo Irakliotis] 11:14:18
+You tell me, especially after we finish next week, and you start seeing where we're going with the technical aspect of the course, with the programming aspect of the course, you tell me what you need to do. Also, next week, Monday, Tuesday, Wednesday
+
+[Leo Irakliotis] 11:14:35
+I am going to be at the office, whereas those of you who are taking the course online, you stay online. Those of you who need to be on campus for any reason, for any scholarship or residence requirement or whatever else
+
+[Leo Irakliotis] 11:14:52
+You are welcome to join me to my office in Doyle 207, that would be in an email reminder that will go out for you as well.
+
+[Leo Irakliotis] 11:15:03
+Other than that, have a great weekend and I will see you Monday.
+
+[Temeeka Glass] 11:15:11
+Thank you. Um, I do have a question about the Mississippi problem. I didn't know if we were going to go… did we go over that? I'm sorry, there was, like,
+
+[Kofi Nyarku] 11:15:11
+Thank you, Professor.
+
+[Leo Irakliotis] 11:15:12
+Hi, Brian.
+
+[Leo Irakliotis] 11:15:16
+Yeah.
+
+[Temeeka Glass] 11:15:20
+5 minutes that I missed because the fire alarm was gone, but…
+
+[Leo Irakliotis] 11:15:22
+No, no, no. And false alarm
+
+[Temeeka Glass] 11:15:23
+Oh,
+
+[Temeeka Glass] 11:15:25
+Yeah, yeah.
+
+[Leo Irakliotis] 11:15:27
+Okay, all right. No, we didn't just do the reading
+
+[Temeeka Glass] 11:15:30
+Mm-hmm.
+
+[Leo Irakliotis] 11:15:31
+and bring it to class. We're going to work on those problems in a little bit more detail on Monday.
+
+[Temeeka Glass] 11:15:36
+Okay, okay, cool. Thank you.
+
+[Leo Irakliotis] 11:15:39
+See ya.
+
+[Leo Irakliotis] 11:15:44
+What's in your mind
+
+[Shú Perez] 11:15:44
+Yeah, no, I just wanted to let you know that over the, uh, course, like, over the summer, I'm gonna be having an internship.
+
+[Shú Perez] 11:15:51
+Um, so, like, I'll let you know if anything, like, comes up that, um, I just have too much work on my plate if I, like, need an extension. Like, um, the internship won't start until June 8th, and it ends July 7th.
+
+[Shú Perez] 11:16:05
+16th or 17th, so it won't be throughout the entire, um…
+
+[Shú Perez] 11:16:11
+What's our entire course? I just thought that I should bring it up so that it's not, like,
+
+[Shú Perez] 11:16:15
+Um, like, I'm suddenly sending you an email of, like, please, like, mercy, you know?
+
+[Leo Irakliotis] 11:16:21
+Sure. With extensions, the most tricky part is if the extension needs two things. If the extension request comes after I publish solutions
+
+[Shú Perez] 11:16:31
+Linda. Yeah.
+
+[Leo Irakliotis] 11:16:34
+The other is when you, if you need an extension before I publish solution, you send me the work you've done already.
+
+[Shú Perez] 11:16:40
+Okay.
+
+[Leo Irakliotis] 11:16:42
+Okay, so that's that, but we'll talk about these things when we get there. And I'm trying something new in the summer. I don't want to have too much work for you to take home
+
+[Shú Perez] 11:16:46
+When they go up. Yeah.
+
+[Shú Perez] 11:16:54
+Okay.
+
+[Leo Irakliotis] 11:16:56
+I'd like to do a… I'd like to do some assignments in class, so by the time you're done in class, you have another 10 minutes to finish the assignment, and then I don't care about… there is no… we have solved the problem, so there is
+
+[Leo Irakliotis] 11:17:10
+There's no worries about an extension
+
+[Shú Perez] 11:17:11
+Okay, perfect. I just wanted to let you know, like, just in case anything should come up, so it's not, like, out of the blue nowhere. Um, I did also have a question about how to get to this page specifically.
+
+[Leo Irakliotis] 11:17:15
+Appreciate it.
+
+[Shú Perez] 11:17:22
+I'm on, um…
+
+[Shú Perez] 11:17:24
+like a MacBook, so it might be…
+
+[Shú Perez] 11:17:26
+different, because I think that you're on, uh…
+
+[Shú Perez] 11:17:29
+like a Windows computer?
+
+[Leo Irakliotis] 11:17:32
+Yeah.
+
+[Shú Perez] 11:17:32
+Um, uh, but was it throughout class, I was trying to get there, but then I realized that I actually hadn't updated my computer. I thought it was.
+
+[Shú Perez] 11:17:39
+Um, maybe that could…
+
+[Shú Perez] 11:17:42
+play a part of it, but I also just don't really know, like,
+
+[Shú Perez] 11:17:45
+the steps on how to get to that point.
+
+[Shú Perez] 11:17:47
+point, just, like, at this page here.
+
+[Leo Irakliotis] 11:17:51
+So which page are you referring to?
+
+[Shú Perez] 11:17:52
+the one that you're sharing your screen on right now.
+
+[Leo Irakliotis] 11:17:55
+Oh, okay, so that's not a base, that's an application. Are you on a
+
+[Shú Perez] 11:17:57
+Oh, okay. Yeah.
+
+[Leo Irakliotis] 11:17:59
+Are you on a Mac computer? All right, so what I'm running here will look identical to your computer if you download and install Visual Studio Code
+
+[Shú Perez] 11:18:00
+Yeah.
+
+[Shú Perez] 11:18:07
+Okay, yeah, I've been trying to download that throughout the class, I think that my computer's just, like, having fun.
+
+[Shú Perez] 11:18:12
+for whatever reason.
+
+[Leo Irakliotis] 11:18:14
+How old is the machine?
+
+[Shú Perez] 11:18:16
+Uh, I think I got it? 2022?
+
+[Leo Irakliotis] 11:18:21
+So, it's fairly new, no problem running. It's as old as my MacBook.
+
+[Leo Irakliotis] 11:18:28
+So download Visual Studio Code
+
+[Shú Perez] 11:18:31
+Yeah. I'm gonna try…
+
+[Leo Irakliotis] 11:18:35
+Why don't share your screen with me? We have a couple of minutes before the next group of students come in and we can take a look.
+
+[Leo Irakliotis] 11:18:41
+So let me stop sharing mine
+
+[Shú Perez] 11:18:42
+Yeah, here…
+
+[Shú Perez] 11:18:45
+And then…
+
+[Shú Perez] 11:18:47
+Like, I can go to my folder…
+
+[Shú Perez] 11:18:55
+Uh, no, I don't know where to find my applications folder. Oh, it's right here. I'm slow.
+
+[Leo Irakliotis] 11:19:11
+So it's just visual
+
+[Leo Irakliotis] 11:19:19
+Click on applications
+
+[Shú Perez] 11:19:21
+Yeah, just gotta find it, looking for the logo.
+
+[Shú Perez] 11:19:25
+Oh, here it is. Okay, it is clear.
+
+[Leo Irakliotis] 11:19:28
+All right.
+
+[Shú Perez] 11:19:40
+Okay, cool. Continue with GitHub.
+
+[Shú Perez] 11:19:43
+It took me to, um, a different thing.
+
+[Shú Perez] 11:19:46
+It's on my…
+
+[Shú Perez] 11:19:49
+monitor. I'm just doing the authorization here.
+
+[Shú Perez] 11:19:54
+Allow…
+
+[Shú Perez] 11:19:57
+I like this one, it's super cute.
+
+[Shú Perez] 11:20:03
+Just get started.
+
+[Shú Perez] 11:20:06
+Holden
+
+[Leo Irakliotis] 11:20:09
+So you have the application running, what your missing variant is now access to the code that I'm sharing
+
+[Shú Perez] 11:20:11
+Mm-hmm.
+
+[Shú Perez] 11:20:15
+Mm-hmm.
+
+[Leo Irakliotis] 11:20:17
+And there are
+
+[Leo Irakliotis] 11:20:20
+There is one way to do it on the native application. If you want to have access to my code, you have to clone the repository. So you go clone repository there on the left side of your Visual Studio code
+
+[Shú Perez] 11:20:35
+To clone it on the left side… oh!
+
+[Shú Perez] 11:20:39
+Here?
+
+[Leo Irakliotis] 11:20:42
+It says
+
+[Shú Perez] 11:20:44
+Oh, here, uh, clone.
+
+[Shú Perez] 11:20:46
+Git repository.
+
+[Shú Perez] 11:20:50
+And then is there a specific…
+
+[Leo Irakliotis] 11:20:54
+What did you tell… what is… I don't see what happens when you click there.
+
+[Shú Perez] 11:20:57
+Oh, it just opened that. It opened this right here. Uh, clone…
+
+[Leo Irakliotis] 11:21:01
+Okay, let's say clone from… click on clone from GitHub, allow
+
+[Shú Perez] 11:21:02
+Yeah.
+
+[Shú Perez] 11:21:06
+Oh!
+
+[Leo Irakliotis] 11:21:07
+Okay.
+
+[Shú Perez] 11:21:09
+Alright, let's try that one more time.
+
+[Leo Irakliotis] 11:21:14
+Or it would clone your own repos, not another one.
+
+[Leo Irakliotis] 11:21:20
+Okay.
+
+[Leo Irakliotis] 11:21:27
+Okay, so first, I guess you have to fork it and then
+
+[Shú Perez] 11:21:38
+Choose a destination.
+
+[Leo Irakliotis] 11:21:42
+What are you trying to do
+
+[Shú Perez] 11:21:43
+I don't know, I just clicked it, and I was like…
+
+[Leo Irakliotis] 11:21:45
+Okay. Don't click on without me telling you to click because we might go into directions that may be very difficult to recover from
+
+[Shú Perez] 11:21:49
+Okay.
+
+[Leo Irakliotis] 11:22:01
+All right, go to a web browser, go to my GitHub page
+
+[Leo Irakliotis] 11:22:08
+There it is.
+
+[Leo Irakliotis] 11:22:12
+And
+
+[Leo Irakliotis] 11:22:14
+Yeah, on the URL little box there, select the URL and copy it
+
+[Shú Perez] 11:22:21
+Pick the URL here.
+
+[Leo Irakliotis] 11:22:23
+Yeah, copy it, control C, Command C
+
+[Leo Irakliotis] 11:22:27
+And now go to a clone repository on the left side of your window there
+
+[Leo Irakliotis] 11:22:36
+There. To the left, the left.
+
+[Shú Perez] 11:22:37
+Ms. Both of the load.
+
+[Shú Perez] 11:22:38
+Oh, right here, got it, got it. Sorry.
+
+[Leo Irakliotis] 11:22:41
+Click clone from GitHub
+
+[Shú Perez] 11:22:43
+Or from GitHub.
+
+[Leo Irakliotis] 11:22:45
+And up there, command V to paste and hit enter
+
+[Shú Perez] 11:22:50
+Okay, and it's making me lose the location.
+
+[Leo Irakliotis] 11:22:51
+All right. So now let's think about where do we want to save that stuff. Click on new folder
+
+[Leo Irakliotis] 11:23:01
+And call it GitHub clones
+
+[Leo Irakliotis] 11:23:07
+Okay, create it.
+
+[Leo Irakliotis] 11:23:10
+And select
+
+[Leo Irakliotis] 11:23:14
+And open
+
+[Shú Perez] 11:23:17
+Yay! Oh. Trust.
+
+[Leo Irakliotis] 11:23:21
+Well, you just said that you're trusting me. Are you sure about this?
+
+[Shú Perez] 11:23:27
+Do I trust you?
+
+[Leo Irakliotis] 11:23:30
+Okay, you don't have a choice. Go for it.
+
+[Shú Perez] 11:23:34
+Okay, cool.
+
+[Leo Irakliotis] 11:23:35
+But I mean, that's right there, 90% when you read on in the news that there was a breach of security here, a breach of security there is because someone trusted code
+
+[Leo Irakliotis] 11:23:48
+That was written by someone they don't know.
+
+[Shú Perez] 11:23:49
+Yeah.
+
+[Leo Irakliotis] 11:23:51
+So, okay, so the stakes here are low. I'm not going, I'm not a hacker. I'm not going to hold you hostage for us ransomware, but 90% of the problems information technology security start by clicking
+
+[Shú Perez] 11:23:55
+Yeah.
+
+[Leo Irakliotis] 11:24:06
+Ask the authors. All right, so now there is your repository, there is my repository, there is your copy. If you click on Week 1, there is the code we wrote
+
+[Shú Perez] 11:24:06
+Totally.
+
+[Shú Perez] 11:24:12
+It's okay.
+
+[Shú Perez] 11:24:14
+Yay! Okay, cool. Ugh, thank you so much!
+
+[Leo Irakliotis] 11:24:17
+Don't breathe a sign of relief yet because for now it will work.
+
+[Shú Perez] 11:24:22
+Yeah.
+
+[Leo Irakliotis] 11:24:23
+But you will run into trouble
+
+[Shú Perez] 11:24:24
+Mm-hmm.
+
+[Leo Irakliotis] 11:24:25
+And when you do, we'll have another session and we'll fix it
+
+[Shú Perez] 11:24:28
+Okay, sounds good.
+
+[Shú Perez] 11:24:31
+Perfect. Uh, how do I stop sharing, Rick?
+
+[Leo Irakliotis] 11:24:31
+All right
+
+[Leo Irakliotis] 11:24:33
+Let's see
+
+[Leo Irakliotis] 11:24:36
+drop out of the column, we'll be fine.
+
+[Leo Irakliotis] 11:24:39
+But have a great weekend, and I'll see you Monday.
+
+[Shú Perez] 11:24:41
+Yep, see you! Bye-bye!
+
+[Leo Irakliotis] 11:24:43
+Bye
+
+[Leo Irakliotis] 11:31:11
+Hello
+
+[Leo Irakliotis] 11:31:12
+Hello everyone
+
+[Leo Irakliotis] 11:31:14
+How are we doing
+
+[Leo Irakliotis] 11:31:21
+All right, any questions, any comments, any requests before we get started?
+
+[Leo Irakliotis] 11:31:33
+Oh, good. All right. So a couple of things I want to do to wrap up the first week. And again, remember, the first week is we're diving off the deep end. We're looking at tools, system, a little bit of programming language, a little bit of things that are not necessarily first week
+
+[Leo Irakliotis] 11:31:49
+content for an introductory programming course, but
+
+[Leo Irakliotis] 11:31:53
+The idea here is to build some familiarity by exposure, by desensitizing any pressure points, any fear points maybe about programming by demystifying some concepts
+
+[Leo Irakliotis] 11:32:11
+Let me start with some housekeeping information first.
+
+[Leo Irakliotis] 11:32:18
+I will be publishing material for you to consider for your review and to work on using GitHub. We talked a little bit about GitHub on Monday and Tuesday. It's a wonderful tool. It's an amazing tool
+
+[Leo Irakliotis] 11:32:31
+And for now, I will be using it to broadcast material to you. I'll be using GitHub more than I will be using Sakai. Speaking of Sakai
+
+[Leo Irakliotis] 11:32:44
+I have not published the Sakai website for the course yet because I wanted to go through the first week of classes, but there is a Sakai
+
+[Leo Irakliotis] 11:32:55
+site coming your way today. I'm using it only mostly only to exchange homework assignments with you
+
+[Leo Irakliotis] 11:33:06
+There is not much use in Sakai otherwise, ideally, if I had my way
+
+[Leo Irakliotis] 11:33:15
+We would be doing everything through GitHub
+
+[Leo Irakliotis] 11:33:18
+But I realized two things that not all of you are taking this course because you're going to be software developers. And GitHub is a tool that makes sense in that direction.
+
+[Leo Irakliotis] 11:33:32
+So especially in the summer, we see students in the course that are curious about programming and my goal is to make this a rewarding learning experience without too much pain
+
+[Leo Irakliotis] 11:33:48
+GitHub is really the ideal tool for developers, but it has a steep learning curve, and we're not going to worry about it. Sakai is a
+
+[Leo Irakliotis] 11:34:00
+Good, not perfect, adequate, not even good, adequate way to trade assignments. We are going to use that for that purpose.
+
+[Leo Irakliotis] 11:34:14
+At the same time, I'm designing the course and you're going to start seeing this next week so that we can do a lot of work here in the classroom
+
+[Leo Irakliotis] 11:34:23
+So you don't have much to take. There's always going to be something to do
+
+[Leo Irakliotis] 11:34:29
+At home, but I'd rather
+
+[Leo Irakliotis] 11:34:36
+You putting the time into reading than trying to do exercises, solve exercises for grading. Practice exercises, absolutely. But to give you an assignment, say, hey, go home and three days later submit it or six days later submit it
+
+[Leo Irakliotis] 11:34:55
+This is kind of silly, because all you have to do really is copy and paste that assignment to your favorite frontier model, and it will do the work for you. So the idea is not so much to test your fluency with AI tools in that way
+
+[Leo Irakliotis] 11:35:11
+But
+
+[Leo Irakliotis] 11:35:13
+To help you build confidence doing things on your own
+
+[Leo Irakliotis] 11:35:16
+So that's about GitHub and Sakai going back to GitHub, there is a thing of GitHub as a website for the course. Technically, we call it a repository because we keep depositing information there
+
+[Leo Irakliotis] 11:35:33
+And there is the website, the repository for our course called Assembly summer 2026. And what I'll be doing here is at the end of every week you'll see a week or even at the beginning of the week you'll see a week
+
+[Leo Irakliotis] 11:35:51
+folder with the number of the week and
+
+[Leo Irakliotis] 11:35:55
+Whatever examples, whatever code I write with you, for example or whatever code you write and we demonstrate in class will go into that folder for that week. And at the end of the week
+
+[Leo Irakliotis] 11:36:09
+There will be, or even at the beginning of the week, there will be a review file in it in that folder same week number, just a review suffix to the name
+
+[Leo Irakliotis] 11:36:22
+And at the end of the week, when we're done with the week, you'll get an email from me saying, okay, the review is now complete because I'm building the contents of this file as we go. So it's a draft until I tell you otherwise.
+
+[Leo Irakliotis] 11:36:36
+So here is I think I'm done for this week, so this is no longer a draft. Here is the review of what we covered. No, no, you know what? It's still a draft. Why? Because I am trying something new because we're meeting on Zoom. I
+
+[Leo Irakliotis] 11:36:52
+We have Zoom here transcribing what I'm saying, which is pretty hilarious, trying to see Zoom working through my accent
+
+[Leo Irakliotis] 11:36:59
+But 90%, it gets it right
+
+[Leo Irakliotis] 11:37:03
+And what I'll try this, I'm trying this for the first time today, so we'll see how that works. I'm going to take this transcript and wash it through an AI agent and say, hey, can you take this transcript and summarize it
+
+[Leo Irakliotis] 11:37:20
+And I will add that summary to this review for the week. But other than the today's summary transcript, the review for this week is complete, including some reading assignments here at the beginning
+
+[Leo Irakliotis] 11:37:36
+And as you scroll down, some exercises, there will be an email coming for that your way. So you don't have to rush into this
+
+[Leo Irakliotis] 11:37:50
+What I would like
+
+[Leo Irakliotis] 11:37:53
+To stretch, to emphasize
+
+[Leo Irakliotis] 11:37:56
+to encourage you about is
+
+[Leo Irakliotis] 11:38:00
+reading
+
+[Leo Irakliotis] 11:38:04
+I… I don't have words, which is kind of ironic, standing here telling you to read more. I don't have words to tell you how important it is
+
+[Leo Irakliotis] 11:38:14
+to read in this business
+
+[Leo Irakliotis] 11:38:22
+Any wide-collar job and
+
+[Leo Irakliotis] 11:38:26
+Information technology is definitely a white collar job.
+
+[Leo Irakliotis] 11:38:30
+After your first year, if you make it through your first year
+
+[Leo Irakliotis] 11:38:35
+10% of your time is
+
+[Leo Irakliotis] 11:38:41
+writing code or doing technical stuff
+
+[Leo Irakliotis] 11:38:45
+10% of your time is fixing other people's mistakes. And 80% of your time is reading and writing about what you've done.
+
+[Leo Irakliotis] 11:38:57
+So we have to be attentive, purposeful readers. And we have to be good authors
+
+[Leo Irakliotis] 11:39:06
+And we have to be good authors in a formal language like Python, but also in a natural language like English.
+
+[Leo Irakliotis] 11:39:16
+The introduction of AI tools has improved authoring skills a little bit, but also has brought in a lot of what we call AI slop. A lot of bad writing out there that you can tell there is no way
+
+[Leo Irakliotis] 11:39:31
+You wrote this thing.
+
+[Leo Irakliotis] 11:39:34
+And I'm very sensitive to that myself because what I do is I use a lot of, I use AI to help me write things. But what I do is I always write the first draft myself
+
+[Leo Irakliotis] 11:39:47
+Or if I don't have time for a draft, at least an extensive outline, and I give this to the agent and say, okay, write the flesh this out for me in my voice
+
+[Leo Irakliotis] 11:39:58
+And I have already pre-trained the language model with my writing. So I've given a few hundred pages of stuff I wrote before. And
+
+[Leo Irakliotis] 11:40:08
+After the AI model, the AI agent gives me back the draft
+
+[Leo Irakliotis] 11:40:16
+I will read it to make sure that it sounds like me, because still, now and there, there'll be words or syntax that I have never used in my life, and it may be better than my preference
+
+[Leo Irakliotis] 11:40:28
+But it's not my voice, it's not my style. So I'll make those changes. I will not trust the AI agent explicitly to write or to speak for me, at least not yet. But the important thing is
+
+[Leo Irakliotis] 11:40:45
+We have
+
+[Leo Irakliotis] 11:40:47
+You
+
+[Leo Irakliotis] 11:40:47
+have to read
+
+[Leo Irakliotis] 11:40:50
+You have to read attentively. And one change I make in the courses I teach by myself, because I have that freedom without having to worry about
+
+[Leo Irakliotis] 11:41:02
+Collective decisions we usually make within an instructional team with other professors is I don't require a textbook, because for two things, honestly
+
+[Leo Irakliotis] 11:41:13
+spending $100 or $150 on a massive textbook that is basically a collection of information that's freely available out there
+
+[Leo Irakliotis] 11:41:22
+You know, if you have that kind of discretionary income, go spend it on a good coffee shop or in a savings account, but not on a textbook, really. Second
+
+[Leo Irakliotis] 11:41:34
+Because who reads a textbook cover to cover these days?
+
+[Leo Irakliotis] 11:41:39
+Or for that matter, who writes a textbook cover to cover these days? So, I'd rather have focused, targeted reading assignments for you that are 4 or 5 pages, but I expect you to read those. So the trade-off here is I'm not going to
+
+[Leo Irakliotis] 11:41:55
+torture you with a 900-page textbook
+
+[Leo Irakliotis] 11:42:00
+But in exchange
+
+[Leo Irakliotis] 11:42:04
+I expect that you read everything I put out there. And by everything, I mean the technical notes like the one you see on the screen
+
+[Leo Irakliotis] 11:42:12
+When I write code, I write code with
+
+[Leo Irakliotis] 11:42:17
+illustrative and pedagogical intention. And I want to make sure that, you know, I'm not saying that my code is pedagogical. I hope it is, but I cannot make that claim, but at least my intention, my motive is to write code that is
+
+[Leo Irakliotis] 11:42:32
+pedagogically documented. So the comments I write in the code are meant to be written… are part of your reading assignment, are part of your
+
+[Leo Irakliotis] 11:42:42
+learning experience. Commons. What are comments? So let's go technical
+
+[Leo Irakliotis] 11:42:48
+And talk a little bit about comments unless there are any questions or requests about the housekeeping information so far.
+
+[Leo Irakliotis] 11:43:03
+So I'm in the shell and
+
+[Leo Irakliotis] 11:43:06
+And I am going to use my favorite editor Vim to write a simple program
+
+[Leo Irakliotis] 11:43:14
+That is a little bit more advanced than what we do usually in the first or second week of an introductory programming course, but the idea here is, again, to demonstrate the structure
+
+[Leo Irakliotis] 11:43:26
+of a program
+
+[Leo Irakliotis] 11:43:30
+Introductory programming concepts that we will start covering next week.
+
+[Leo Irakliotis] 11:43:36
+I will call the file where I save my program quad.py. And this is the editor in normal mode and I want to go into editing mode or insert mode. So I will press the letter I, the key I, which is a command that says go into insert mode
+
+[Leo Irakliotis] 11:43:54
+And you see at the bottom that now it says I'm operating in insert mode. So now everything I press on the keyboard becomes part of this file
+
+[Leo Irakliotis] 11:44:08
+So I will create a mini program called Solve Quadratic Equation
+
+[Leo Irakliotis] 11:44:19
+And I will give it three parameters, A, that is a float
+
+[Leo Irakliotis] 11:44:24
+B, that is also a float
+
+[Leo Irakliotis] 11:44:28
+And see that is also a float
+
+[Leo Irakliotis] 11:44:36
+And I will ask it
+
+[Leo Irakliotis] 11:44:39
+to return
+
+[Leo Irakliotis] 11:44:42
+A pair of log numbers
+
+[Leo Irakliotis] 11:44:47
+Okay, I won't specify what I want this program to return yet, because I want to talk a little bit about the program. What the program does is take the famous quadratic equation and solves it
+
+[Leo Irakliotis] 11:45:30
+This is something you may have seen first year in college. This is something that you may have seen in high school. If you grow in a country that falsely claims that they invented mathematics, this is something that you see in kindergarten as well
+
+[Leo Irakliotis] 11:45:46
+And right there you learn that the solutions to this equation
+
+[Leo Irakliotis] 11:45:56
+X1 and X2, they're quadratic equation has two solutions. For example, what is the square root of 4? You might say two, but also it's minus 2 because when you multiply minus two by itself, it's also 4. So the solution to this equation is given by the fraction minus
+
+[Leo Irakliotis] 11:46:23
+My minus B minus square root
+
+[Leo Irakliotis] 11:46:27
+of B square minus 4ac
+
+[Leo Irakliotis] 11:46:33
+divided by
+
+[Leo Irakliotis] 11:46:41
+And somewhere here is a plus minus. Let me see if I can grab a plus minus symbol from my
+
+[Leo Irakliotis] 11:46:55
+So
+
+[Leo Irakliotis] 11:46:57
+Is there an easy way to do this?
+
+[Leo Irakliotis] 11:47:09
+Yeah
+
+[Leo Irakliotis] 11:47:11
+Google to the rescue
+
+[Leo Irakliotis] 11:47:19
+Oh, so much that I was not what I was hoping to see
+
+[Leo Irakliotis] 11:47:25
+Maybe Wikipedia to the rescue.
+
+[Leo Irakliotis] 11:47:31
+And it's plus minus, there it
+
+[Leo Irakliotis] 11:47:35
+So there are two formulas. There is the formula with minus B plus the square root of this divided by 2A or minus B minus the square root of this divided by 2A. And also we know that
+
+[Leo Irakliotis] 11:47:49
+Equation
+
+[Leo Irakliotis] 11:47:54
+has solutions
+
+[Leo Irakliotis] 11:47:55
+Only when the quantity
+
+[Leo Irakliotis] 11:48:00
+B square
+
+[Leo Irakliotis] 11:48:03
+Minus 4ac
+
+[Leo Irakliotis] 11:48:07
+is greater than or equal to 0. because if it's a negative number, then we we cannot get the square root of a negative number
+
+[Leo Irakliotis] 11:48:17
+Now, why is the square root
+
+[Leo Irakliotis] 11:48:29
+Well, that's kind of a limited mathematical perspective. It says negative numbers don't have square roots. Actually, negative numbers do have square roots. We call them imaginary numbers. But in the context of doing this in kindergarten in Greece, of course, we know everything about complex numbers, never mind that. But in the rest of the world
+
+[Leo Irakliotis] 11:48:49
+When you introduce the quadratic equation, you don't go complex and imaginary numbers right away. You take real numbers and you want that quantity to be a non-negative number. That quantity has n name
+
+[Leo Irakliotis] 11:49:05
+This quantity is called the discriminant
+
+[Leo Irakliotis] 11:49:14
+Of the equation
+
+[Leo Irakliotis] 11:49:16
+So what I have here, what I'm writing here is plain language. And it is part of my documentation for this little mini program I'm writing. And you can tell that it's documentation can tell that it's just commentary
+
+[Leo Irakliotis] 11:49:32
+Because it
+
+[Leo Irakliotis] 11:49:35
+Boxed in this triple double quotes
+
+[Leo Irakliotis] 11:49:39
+So anything between
+
+[Leo Irakliotis] 11:49:42
+Triple double quotes in Python
+
+[Leo Irakliotis] 11:49:46
+These free text commentary. All right. So
+
+[Leo Irakliotis] 11:49:50
+The first thing I need to do is to compute
+
+[Leo Irakliotis] 11:49:54
+The discriminal
+
+[Leo Irakliotis] 11:50:02
+That's another form of comment. Anything, any line in Python or any part of the code in Python that starts with the hash
+
+[Leo Irakliotis] 11:50:11
+Simple. We do not call this hashtag in programming.
+
+[Leo Irakliotis] 11:50:15
+You know, this is hash. Hashtag is something for social media. Hash is for programming, but fine, let's call it this a hashtag for our program. Program, quadratic equation, hashtag computer discriminant. So this
+
+[Leo Irakliotis] 11:50:30
+This is common. This is explaining to the user, to the reader of this program, what I'm about to do. All right, so I want to define a quantity called discriminant
+
+[Leo Irakliotis] 11:50:42
+What is equal to what? By definition, b square
+
+[Leo Irakliotis] 11:50:47
+minus 4 times AC. Where are these values? This B and A and C are
+
+[Leo Irakliotis] 11:50:56
+Where these variables come from? From up here. I'm providing when I'm calling this program, when I'm asking the program to execute, I'm giving the ABC values of the equation
+
+[Leo Irakliotis] 11:51:07
+Okay? And using those values, I compute the discriminant here. And then I am going to check if the discriminant
+
+[Leo Irakliotis] 11:51:18
+Is filing.
+
+[Leo Irakliotis] 11:51:32
+If
+
+[Leo Irakliotis] 11:51:33
+The discriminant
+
+[Leo Irakliotis] 11:51:38
+is greater than or equal to zero
+
+[Leo Irakliotis] 11:51:42
+Solve the equation
+
+[Leo Irakliotis] 11:51:50
+Else
+
+[Leo Irakliotis] 11:51:51
+If it's not
+
+[Leo Irakliotis] 11:51:55
+Reject. And how do I reject? I'm going to print
+
+[Leo Irakliotis] 11:52:00
+Sorry
+
+[Leo Irakliotis] 11:52:03
+No real solutions for this equation
+
+[Leo Irakliotis] 11:52:15
+No, undone cleaning here
+
+[Leo Irakliotis] 11:52:31
+There we are.
+
+[Leo Irakliotis] 11:52:34
+But in the case that there is a solution, if the discriminant is positive, I'm going to say that solution one is what minus
+
+[Leo Irakliotis] 11:52:49
+Minus the square root of the discriminant
+
+[Leo Irakliotis] 11:52:53
+And now it's safe to compute the square root, because the discriminant is non-negative, divided by 2 times A
+
+[Leo Irakliotis] 11:53:00
+And the second solution is minus B plus the square root. There's our plus minus scenario there for the discriminant
+
+[Leo Irakliotis] 11:53:12
+divided by 2 times a. And I'll put this in parentheses as well, because
+
+[Leo Irakliotis] 11:53:19
+These are a couple of things we need to talk. Again, most of the code I write here makes is is
+
+[Leo Irakliotis] 11:53:25
+3-4 weeks out in an introductory course. So the idea is not to focus on the actual coding
+
+[Leo Irakliotis] 11:53:31
+part, but on the structure, on the overall form of the program. And when I compute this
+
+[Leo Irakliotis] 11:53:40
+print X1 and X2. Okay, so those those are the solutions. So this is a single program, not my finest program. If you
+
+[Leo Irakliotis] 11:53:53
+If you come back at the end of the course and you look at that program, you'll say that this is a terrible program. I can't believe that you graduated from a Greek kindergarten and that's the style of code that you're still writing.
+
+[Leo Irakliotis] 11:54:07
+So as a program, it is terrible
+
+[Leo Irakliotis] 11:54:11
+So that's one lesson to learn that this here is what bad code looks like, all right? But
+
+[Leo Irakliotis] 11:54:18
+Bad code has also structure has also form. And what I would like you to look at here is that this mini program and that we have a special name for this kind of mini program. We call it a method
+
+[Leo Irakliotis] 11:54:35
+A method is a nickname for a function. A function is a nickname for a subroutine. A subroutine is a nickname for a procedure.
+
+[Leo Irakliotis] 11:54:46
+So many programs like this can be called functions, methods, procedures, subroutines.
+
+[Leo Irakliotis] 11:54:54
+God forbid, we can also call them as user-defined functions, UDFs
+
+[Leo Irakliotis] 11:55:02
+Nomenclature in computer science is very much like the Lord of the Rings
+
+[Leo Irakliotis] 11:55:10
+One entity, 20 names. You have names in elfish, you have names in Highshire language, you have names in low Shire language, you have the dark language of Mordor. The same thing, the same city, Minasty
+
+[Leo Irakliotis] 11:55:26
+has five different names, you know, Gandalf is known by six names. Seven if you include those in the simarillion. So
+
+[Leo Irakliotis] 11:55:37
+I don't know why we're doing this to ourselves, but if I were to speculate is because we want to keep everyone else out there in the community confused about the trade, because that's the only way that people will keep paying us obscene amount of money
+
+[Leo Irakliotis] 11:55:52
+To be software developers
+
+[Leo Irakliotis] 11:55:55
+But
+
+[Leo Irakliotis] 11:55:56
+for
+
+[Leo Irakliotis] 11:55:57
+Most of the course, most of contemporary courses in programming, these mini programs are called functions or methods.
+
+[Leo Irakliotis] 11:56:08
+I will try to use method to differentiate my use of function when I refer to a mathematical function, when something is written with a lot of Greek letters, that's a function. When something is written with Python, it's a method
+
+[Leo Irakliotis] 11:56:24
+So the first thing that we see in a method, in a mini program in Python or any other programming language for that matter, is that it has an entry point. Here is an entry point identifies the mini program says, here is your name. This is what
+
+[Leo Irakliotis] 11:56:40
+you will be called. And here is the minimum amount of data that you need to operate. So this is a mini program that is called solve quadratic Equation, and the minimum amount of information it needs is the variables ABC.
+
+[Leo Irakliotis] 11:56:55
+8 times x squared plus b times x plus c equals 0. That's the definition of the quadratic equation.
+
+[Leo Irakliotis] 11:57:04
+Another thing that the program needs is
+
+[Leo Irakliotis] 11:57:08
+a manual. This is you're you're writing a tool. You're writing a system, and it has to come with a user manual. The 1st thing that we write after the identification of the program of this of a method
+
+[Leo Irakliotis] 11:57:25
+is it's manual, how to operate it because this actually becomes part of the user handbook
+
+[Leo Irakliotis] 11:57:33
+For this system. Okay, that's kind of a very simple system. Who needs
+
+[Leo Irakliotis] 11:57:38
+30, 40 words of prose about quadratic equations when you learn about this in daycare, right? Now
+
+[Leo Irakliotis] 11:57:47
+The second part that a program needs is logic.
+
+[Leo Irakliotis] 11:57:52
+What am I trying to do here? Well, I'm trying to solve the quadratic equation. How do I do this? Well, I go back to math and I look how it's done mathematically and I transfer that mathematical logic
+
+[Leo Irakliotis] 11:58:04
+into the program. I compute the discriminant, which is B squared minus 4 times AC. I check if that value is a non-negative number. If it's a non-negative number, I follow the formula that shows me the solutions.
+
+[Leo Irakliotis] 11:58:18
+But if that discriminant is negative
+
+[Leo Irakliotis] 11:58:23
+I abort, I reject the operation
+
+[Leo Irakliotis] 11:58:27
+There is a decision point to be made, and this is where programming languages have really shown what can be truly done with a computer is by providing branching
+
+[Leo Irakliotis] 11:58:39
+logic.
+
+[Leo Irakliotis] 11:58:42
+The if statement creates here two branches. One branch is if the discriminant is non-positive, we solve the equation. The other branch is if the discriminant is negative, we reject the equation.
+
+[Leo Irakliotis] 11:58:54
+So a lot of things we ask programs to do is to make decisions based on plain logic rules. Like we make decisions on plain logic rules on every moment of our day. Cross the street. If the light is red
+
+[Leo Irakliotis] 11:59:10
+If the pedestrian sign is orange and you see the closed palm, you don't cross. If you know it's the working figure, you cross. That's an if statement we implement
+
+[Leo Irakliotis] 11:59:24
+Another if statement is if rain, take umbrella
+
+[Leo Irakliotis] 11:59:28
+If snow, put on gloves and so on. So we have all this if all anytime we make a decision, we use a branching logic
+
+[Leo Irakliotis] 11:59:40
+an if statement and here we do this explicit. We have to write it down in
+
+[Leo Irakliotis] 11:59:48
+In the code is we're fleshing out this logic in our code
+
+[Leo Irakliotis] 11:59:55
+We document it along the way. One of the biggest mistakes we make in early programming and becomes a really bad habit is to not write comments.
+
+[Leo Irakliotis] 12:00:08
+And here, this is what I call a painfully obvious comment. Compute the discriminant. Someone who knows a little bit of programming when they look at the next line and they say discriminant is a sign, remember that equal sign there
+
+[Leo Irakliotis] 12:00:24
+is the assignment operator says, okay, what the assignment operator does is, first, it tells the program, compute this expression
+
+[Leo Irakliotis] 12:00:32
+B square minus 4ac. So this is an arithmetic operation multiplying numbers, subtract them, and then find what the value is. And when you have that value, assign it in a memory location that shall be called discriminant
+
+[Leo Irakliotis] 12:00:48
+Or, for that matter, we could have called it pepperoni
+
+[Leo Irakliotis] 12:00:52
+But the idea is once you compute this formula, once you have this number, take that value and assign it here.
+
+[Leo Irakliotis] 12:01:03
+So in this respect, this common compute the discriminant is painfully obvious. I'd rather you have you write painfully obvious comments than not writing comments at all
+
+[Leo Irakliotis] 12:01:23
+Part of my job this term is to be a royal pain, to help you develop
+
+[Leo Irakliotis] 12:01:31
+good programming habits
+
+[Leo Irakliotis] 12:01:34
+You will also develop bad programming habits. It's inevitable
+
+[Leo Irakliotis] 12:01:40
+What do we call a programmer
+
+[Leo Irakliotis] 12:01:45
+Without bad programming habits
+
+[Leo Irakliotis] 12:01:50
+Any guess
+
+[Leo Irakliotis] 12:01:52
+What we call a programmer
+
+[Leo Irakliotis] 12:01:55
+with no bad programming habits
+
+[Leo Irakliotis] 12:01:59
+Take a guess.
+
+[Leo Irakliotis] 12:02:01
+Participate class extra points for class participation.
+
+[Leo Irakliotis] 12:02:09
+Come on, help me work my comedy startup gig for the Nerds collab of Chicago. What do you call a programmer with no bad programming habits?
+
+[Leo Irakliotis] 12:02:19
+Canis.
+
+[Kandace Garcia] 12:02:21
+Didn't
+
+[Leo Irakliotis] 12:02:23
+No, unemployed
+
+[Leo Irakliotis] 12:02:29
+Every programmer, no matter how good they are, no matter how superstar programmer they are, no matter how many million dollars a year they get on their bonus from OpenAI or Anthropic or Google has bad programming habits. That's what makes them unique
+
+[Leo Irakliotis] 12:02:47
+But before they get there, before you get there
+
+[Leo Irakliotis] 12:02:50
+You have to develop your good programming habits, and that's where we do this. And what a good programming habit is to write comments. A better programming habit is to write meaningful comments
+
+[Leo Irakliotis] 12:03:06
+And that's why I always tell anyone interested in programming that it's a writing intensive course.
+
+[Leo Irakliotis] 12:03:14
+You have to write prose
+
+[Leo Irakliotis] 12:03:17
+You have to write creative prose
+
+[Leo Irakliotis] 12:03:24
+And there is
+
+[Leo Irakliotis] 12:03:27
+There is no other way. So some of the best programmers out there are also great authors.
+
+[Leo Irakliotis] 12:03:33
+They just don't publish books, they publish comments in their code.
+
+[Leo Irakliotis] 12:03:38
+So a program has documentation, which is a block of code at the beginning. This documentation has a special name and we're going to see that again and again and again in the course, but I just want to start throwing terms out there so that
+
+[Leo Irakliotis] 12:03:54
+you know, they will start landing where they need to land. So the documentation at the beginning of a mini program, the beginning of a method is called doc string documentation string.
+
+[Leo Irakliotis] 12:04:07
+It serves a very special purpose. When you are developing real software for an application, what we write in the doc string will be extracted by
+
+[Leo Irakliotis] 12:04:19
+a tool during the production of the system by the documentation tool, and that's what's going to end up in the manual for that tool. So essentially, we're writing the manual, the operating manual, for this system, for this tool
+
+[Leo Irakliotis] 12:04:34
+One method at a time
+
+[Leo Irakliotis] 12:04:36
+So this is called the doc string. These comments here are called block comments or inline comments. They have to be narrative. They have to be descriptive
+
+[Leo Irakliotis] 12:04:47
+and they have to be there.
+
+[Leo Irakliotis] 12:04:53
+There is operations like here we're doing some computation and we assign the outcome of this computation B square minus 4 times AC into a variable that are obviously variables
+
+[Leo Irakliotis] 12:05:08
+There is logic in this case, do this. In another case, do that this logic can be multi-case logic. Here we have a binary decision. If the discriminant is negative, no solution. If the discriminant is positive
+
+[Leo Irakliotis] 12:05:22
+There is a solution. But sometimes the
+
+[Leo Irakliotis] 12:05:29
+There may be more than two branches.
+
+[Leo Irakliotis] 12:05:31
+in our logic, and we're going to see how to implement that. And there is output. We talked about input to this method, the ABC variables that are given here, and there is output when the method computes the solution, it prints the solution
+
+[Leo Irakliotis] 12:05:46
+When the method cannot compute the solution, it prints a intimidating error message.
+
+[Leo Irakliotis] 12:05:59
+I mentioned
+
+[Leo Irakliotis] 12:06:02
+that the beginning that this is terrible code.
+
+[Leo Irakliotis] 12:06:08
+It's terrible code because it prints
+
+[Leo Irakliotis] 12:06:13
+Printing is something that appears on the screen and makes sense at this level. Okay, I'm going
+
+[Leo Irakliotis] 12:06:19
+You know what
+
+[Leo Irakliotis] 12:06:23
+Let's run it
+
+[Leo Irakliotis] 12:06:27
+Now that we wrote
+
+[Leo Irakliotis] 12:06:33
+this program
+
+[Leo Irakliotis] 12:06:37
+Let's call it, let's see
+
+[Leo Irakliotis] 12:06:58
+Sol quadratic equation with V for A1, vi for 2 and for b2 and value for C3. So that's basically the equation X squared
+
+[Leo Irakliotis] 12:07:11
+Plus
+
+[Leo Irakliotis] 12:07:14
+2X
+
+[Leo Irakliotis] 12:07:17
+Plus
+
+[Leo Irakliotis] 12:07:19
+Equals 0.
+
+[Leo Irakliotis] 12:07:21
+So I should have done everything kind of correctly.
+
+[Leo Irakliotis] 12:07:28
+If I call Python
+
+[Leo Irakliotis] 12:07:31
+the language to run
+
+[Leo Irakliotis] 12:07:34
+This program
+
+[Leo Irakliotis] 12:07:36
+It will tell me, sorry, there are no real solutions for this equation because x squared plus 2x plus 3, the discriminant is negative, so I cannot compute
+
+[Leo Irakliotis] 12:07:49
+The
+
+[Leo Irakliotis] 12:07:52
+The
+
+[Leo Irakliotis] 12:07:53
+The solutions, why the discrimination is negative? Because B here equals 2, C equals 3, A equals 1, so B square is 4. And when I subtract from 4, 4 times A, which is 1,
+
+[Leo Irakliotis] 12:08:08
+times 3, which is times C, which is 3, so I have 4 minus 12, so the discriminant is minus 8.
+
+[Leo Irakliotis] 12:08:17
+Therefore, a negative number. If I change
+
+[Leo Irakliotis] 12:08:24
+If I try to solve another equation, let's say here
+
+[Leo Irakliotis] 12:08:28
+solve
+
+[Leo Irakliotis] 12:08:29
+quadratic
+
+[Leo Irakliotis] 12:08:34
+Equation
+
+[Leo Irakliotis] 12:08:40
+One
+
+[Leo Irakliotis] 12:08:43
+minus 3
+
+[Leo Irakliotis] 12:08:48
+Which is x squared
+
+[Leo Irakliotis] 12:08:51
+Plus
+
+[Leo Irakliotis] 12:08:53
+Wix
+
+[Leo Irakliotis] 12:08:57
+Minus 3
+
+[Leo Irakliotis] 12:08:58
+Equals 0. And I run the code for the first equation, it will still tell me that cannot solve it. But for the second equation
+
+[Leo Irakliotis] 12:09:09
+It will tell me that it cannot find the square root, of course
+
+[Leo Irakliotis] 12:09:15
+So I have to go and tell it where to find the square root, because Python, in the simplest form when we use it here, does not have knowledge of mathematics
+
+[Leo Irakliotis] 12:09:33
+So
+
+[Leo Irakliotis] 12:09:37
+I'll go to the beginning of this slide here. I'll go to insert mode and I'll say import
+
+[Leo Irakliotis] 12:09:45
+From
+
+[Leo Irakliotis] 12:09:46
+The math library import the square root function. So now it knows when it says SQRT here, it knows what to do
+
+[Leo Irakliotis] 12:09:55
+So if I run the code now
+
+[Leo Irakliotis] 12:09:59
+They're the solutions to
+
+[Leo Irakliotis] 12:10:03
+X square minus plus 2x minus 3, it's minus 3n1.
+
+[Leo Irakliotis] 12:10:09
+So the output, the printing is helpful output for us when we're doing silly things like solving quadratic equations or saying hello world. But
+
+[Leo Irakliotis] 12:10:21
+Print
+
+[Leo Irakliotis] 12:10:22
+has only one recipient, our eyes
+
+[Leo Irakliotis] 12:10:27
+So eventually the results of any program, the results of any application have one destination, the user. So we want to see the results.
+
+[Leo Irakliotis] 12:10:38
+When it's time to see the results, we should have a separate
+
+[Leo Irakliotis] 12:10:43
+mini program, a separate method to do that displaying
+
+[Leo Irakliotis] 12:10:49
+Everything else, every internal working on a program should be producing data, not print.
+
+[Leo Irakliotis] 12:10:56
+Print is final and cannot be used by anyone else except for us.
+
+[Leo Irakliotis] 12:11:02
+But we want to have our structure, our approach to building programs so that all the mini programs we have are producing data that are passed to other mini programs. So other mini programs. And eventually there is one
+
+[Leo Irakliotis] 12:11:17
+final mini program at the end that collects all the data and provides a visual rendering of that data for human eyes.
+
+[Leo Irakliotis] 12:11:28
+I keep talking about many programs or methods. Why?
+
+[Leo Irakliotis] 12:11:32
+Because those mini programs correspond to small solutions of a bigger problem. Problem solving
+
+[Leo Irakliotis] 12:11:45
+is our ability to look at a complex task and break it down in multiple simple
+
+[Leo Irakliotis] 12:11:53
+see blurred
+
+[Leo Irakliotis] 12:11:55
+tasks and execute them one at a time, or if there are many of us in a team, parcel out those tasks and have a few people execute some of them in parallel. And at the end
+
+[Leo Irakliotis] 12:12:08
+assemble the partial outcomes to a final solution.
+
+[Leo Irakliotis] 12:12:16
+If we come to a point as professionals, as programmers, when we look at a complex problem and say, you know what
+
+[Leo Irakliotis] 12:12:24
+Yeah, I can write 10,000 lines of code in a single method
+
+[Leo Irakliotis] 12:12:29
+to solve this, or I can write 50 different methods, 50 different
+
+[Leo Irakliotis] 12:12:37
+mini programs
+
+[Leo Irakliotis] 12:12:39
+to handle partial tasks inside the problem, I can also solve the problem with one tenth of the effort
+
+[Leo Irakliotis] 12:12:47
+It's like communal cooking.
+
+[Leo Irakliotis] 12:12:53
+In
+
+[Leo Irakliotis] 12:12:55
+In Greece, we have stuffed grape leaves in Mexico, we have tamales. These are dishes that you prepare in a communal setting because you need a lot of hands to do the work
+
+[Leo Irakliotis] 12:13:09
+So you prepare a big vat of rice when it comes to stuffing grape leaves, and then you have the whole family around the table putting one spoonful of cooked rice inside the grape leaf, wrapping it, stacking it in a pot, cooking
+
+[Leo Irakliotis] 12:13:24
+Great food. Same thing with tamales. You have… you need hatch to wrap that filling in the husks.
+
+[Leo Irakliotis] 12:13:34
+Cooking, preparing tamales for 150 people, preparing grape leaves for 300 people, monumental task. I mean, if an average person in Greece eats 100 stuffed grape leaves and you have to feed 300 people
+
+[Leo Irakliotis] 12:13:48
+That's 30,000
+
+[Leo Irakliotis] 12:13:54
+Perhaps
+
+[Leo Irakliotis] 12:13:55
+Who in their right mind will sit down in their kitchen and wrap
+
+[Leo Irakliotis] 12:14:00
+Thousands of grape leaves. You need help. You need another 10 pairs of hands, and now it's manageable. That's why we have those mini programs. Those are the extra pairs of hands you need when you're wrapping grape leaves or tamales.
+
+[Leo Irakliotis] 12:14:18
+Our ability
+
+[Leo Irakliotis] 12:14:20
+to look at a complex task, whether it's feeding a party of 300
+
+[Leo Irakliotis] 12:14:25
+or
+
+[Leo Irakliotis] 12:14:27
+solving complex computational tasks
+
+[Leo Irakliotis] 12:14:31
+Breaks down to our ability to manage complexity, to see past the intimidating complexity of a problem and say, yeah, I can do this
+
+[Leo Irakliotis] 12:14:42
+And
+
+[Leo Irakliotis] 12:14:45
+You are… how many of you, by showing of hands on camera, how many of you are first-year students or in the first or second year in your college studies?
+
+[Leo Irakliotis] 12:14:58
+Okay, third or fourth year.
+
+[Leo Irakliotis] 12:15:02
+Past BS.
+
+[Leo Irakliotis] 12:15:06
+All right. So you are already doing that. You are looking
+
+[Leo Irakliotis] 12:15:13
+at a very complex task, obtain a bachelor's degree
+
+[Leo Irakliotis] 12:15:17
+In discipline
+
+[Leo Irakliotis] 12:15:20
+And with the help of the university, you have broken that task in about 40 to 50 steps.
+
+[Leo Irakliotis] 12:15:27
+We call them courses. You have to take 40 or 50 courses to get there
+
+[Leo Irakliotis] 12:15:32
+Taking 40 to 50 courses, it's easier and more manageable. So, okay, you're going to start your studies now and four years later without interruption, you're going to have this comprehensive exam, and if you pass that comprehensive exam, we're going to give you a degree
+
+[Leo Irakliotis] 12:15:47
+Instead, you have 40 or 50 exams, so you have now more points of failure. But if you fail one course, it's not the end of the world
+
+[Leo Irakliotis] 12:15:57
+You can retake the exam or you can take another course.
+
+[Leo Irakliotis] 12:16:00
+But imagine you had only one comprehensive exam at the end and you failed that exam four years went out the window
+
+[Leo Irakliotis] 12:16:07
+So we are breaking the complexity of earning a bachelor's degree by creating 40 methods. We call them courses in the college, 40 mini problems, 40 courses, 45 courses, whatever is the requirement. And each course in itself is monumental in its complexity
+
+[Leo Irakliotis] 12:16:23
+And we're breaking down into 11 or 14 weekly sessions, and those weekly sessions are then broken down into two or three meetings per
+
+[Leo Irakliotis] 12:16:34
+per week. So we are already having the ability to manage complexity. And the challenge for us beginning next week is to transfer that ability
+
+[Leo Irakliotis] 12:16:47
+of managing complexity into a realm, into a domain that has its own formal language and its own logic rules, and its own tools and systems for implementation. And that's, at the end of the day, is programming
+
+[Leo Irakliotis] 12:17:04
+Your ability to solve complex problems translated in a different set of expressive tools and techniques.
+
+[Leo Irakliotis] 12:17:12
+You get over that, you understand that this is all and everything else is learning a new language and the conversation level, we're done.
+
+[Leo Irakliotis] 12:17:26
+That's what we're going to start doing on Monday. But again, I want to take first week a little bit slow, a little bit just to demystify some things to demonstrate tools. I know that some of the demonstrations, some of the things you saw online on your screen can feel overwhelming. Trust me
+
+[Leo Irakliotis] 12:17:43
+Halfway through the course, you'll be doing those things yourselves
+
+[Leo Irakliotis] 12:17:48
+Most important thing, preparing for next week, make sure you have access to
+
+[Leo Irakliotis] 12:17:59
+to a terminal cell to a terminal shell like I have here, whether you're on Windows or on macOS or on an Ubuntu machine, you have to have access to the terminal
+
+[Leo Irakliotis] 12:18:10
+If you're on Windows, it takes a little bit more, couple more steps, but
+
+[Leo Irakliotis] 12:18:14
+It's all you have to do in Windows when you open
+
+[Leo Irakliotis] 12:18:21
+a terminal window, a PowerShell
+
+[Leo Irakliotis] 12:18:24
+window on Windows, all you have to do is type WSL and now you're inside the
+
+[Leo Irakliotis] 12:18:32
+The shell
+
+[Leo Irakliotis] 12:18:35
+have that, do a little bit of reading on Veeam. It's part of the technical note I'm sharing with you today. And there is do a little bit of practice on Vim. You don't have to do your Vim practice on your own
+
+[Leo Irakliotis] 12:18:49
+terminal on your computer, there is a virtual a web-based version of Vim that you can use on the web browser to get a little bit of comfort with it. And if you do something silly or some some terrible mistake, all you have to do is close that web window, open it again, and nothing bad happens
+
+[Leo Irakliotis] 12:19:07
+Here you can do, you know, there's always, if you do something silly on your own terminal, there is always the risk of damaging the computer. So let's not do this on first week of classes. Let's wait for six or seventh week before we do something really catastrophic
+
+[Leo Irakliotis] 12:19:25
+Questions, comments?
+
+[Leo Irakliotis] 12:19:28
+All right, some reading coming your way. If you have any questions, I'm around, reach out. For those of you who need to be on campus
+
+[Leo Irakliotis] 12:19:39
+for, to fulfill any obligations, residency, scholarship, and you need to be in the same room with me for a few hours this term. I will be doing the class from my office in Doyle 207, Monday, Tuesday, and Wednesday
+
+[Leo Irakliotis] 12:19:55
+If you need to be in the same room with me physically, come there if you're okay with the online, stay where you are.
+
+[Leo Irakliotis] 12:20:04
+But I always get done now and then students that their scholarship requires to spend
+
+[Leo Irakliotis] 12:20:11
+5 hours on campus with a professor. That's why I'm making that available next week. Otherwise, we'll see you on camera
+
+[Leo Irakliotis] 12:20:20
+Monday morning
+
+[Leo Irakliotis] 12:20:23
+Have a great weekend, everyone. Take care.
+
+[Bella Fiorucci] 12:20:24
+Thank you.
+
+[Kandace Garcia] 12:20:24
+Do we have class on Monday? Because it's Memorial Day?
+
+[Leo Irakliotis] 12:20:31
+You know, when I was a student, I knew exactly when we didn't have class
+
+[Leo Irakliotis] 12:20:38
+So I expect you to tell me if we have classes. But I have no idea, to be honest.
+
+[Leo Irakliotis] 12:20:48
+But if we have classes, I'll be here. If we don't have classes, I'll be here and no one will be here. I can take
+
+[Leo Irakliotis] 12:20:54
+I'll take the cue. If I log in on Zoom and no one is here
+
+[Leo Irakliotis] 12:21:01
+Then, obviously not, but I'll check the university calendar and send out an email about it as well, just to be safe. Okay
+
+[Leo Irakliotis] 12:21:10
+All right, everyone. Have a great weekend.
+
+[Bella Fiorucci] 12:21:11
+Thank you, you too.
+
+[Leo Irakliotis] 12:21:13
+But
+
