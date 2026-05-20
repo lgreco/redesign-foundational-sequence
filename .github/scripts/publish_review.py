@@ -18,7 +18,7 @@ def publish(review_path, owner, token):
 
     code = re.match(r'comp(\d+)su26', folder).group(1)
     week = re.match(r'(week\d+)-review\.md', filename).group(1)
-    target_repo = f"comp-{code}-su-26"
+    target_repo = f"comp-{code}-su26"
 
     repo_url = f"https://x-access-token:{token}@github.com/{owner}/{target_repo}.git"
     subprocess.run(['git', 'clone', repo_url, 'target_repo'], check=True)
