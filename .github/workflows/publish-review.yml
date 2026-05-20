@@ -4,6 +4,11 @@ on:
   push:
     paths:
       - 'comp*su26/week*-review.md'
+  workflow_dispatch:
+    inputs:
+      review_file:
+        description: 'Path to review file (e.g. comp170su26/week01-review.md)'
+        required: true
 
 jobs:
   publish:
@@ -18,6 +23,9 @@ jobs:
           GH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
           REPO_OWNER: ${{ github.repository_owner }}
         run: |
-          git diff --name-only ${{ github.event.before }} ${{ github.sha }} \
-            | grep -E '^comp[0-9]+su26/week[0-9]+-review\.md$' \
-            | python3 .github/scripts/publish_review.py
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "${{ github.event.inputs.review_file }}"
+          else
+            git diff --name-only ${{ github.event.before }} ${{ github.sha }} \
+              | grep -E '^comp[0-9]+su26/week[0-9]+-review\.md$'
+          fi | python3 .github/scripts/publish_review.py
