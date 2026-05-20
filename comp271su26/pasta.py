@@ -6,6 +6,7 @@ WATER_PER_GUEST: float = 0.5  # liters per additional person
 
 
 def pasta_recipe(number_of_guests: int):
+    """Compute simple amounts for pasta recipe."""
     amount_of_water: float = BASE_WATER + (number_of_guests - 1) * WATER_PER_GUEST
     amount_of_pasta: float = number_of_guests * AMOUNT_PER_PERSON
     return amount_of_water, amount_of_pasta
