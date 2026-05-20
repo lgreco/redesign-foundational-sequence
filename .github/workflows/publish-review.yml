@@ -1,0 +1,23 @@
+name: Publish week review
+
+on:
+  push:
+    paths:
+      - 'comp*su26/week*-review.md'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Publish changed review files
+        env:
+          GH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          REPO_OWNER: ${{ github.repository_owner }}
+        run: |
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }} \
+            | grep -E '^comp[0-9]+su26/week[0-9]+-review\.md$' \
+            | python3 .github/scripts/publish_review.py
