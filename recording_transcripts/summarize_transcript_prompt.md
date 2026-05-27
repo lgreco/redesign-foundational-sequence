@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Summarize classroom transcript
 
 ## Definitions

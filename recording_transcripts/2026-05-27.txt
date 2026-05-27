@@ -1,0 +1,2487 @@
+[Leo Irakliotis] 10:27:11
+Actually, before it starts transcribing, I want to show you something I'm I'm working on here
+
+[Leo Irakliotis] 10:27:36
+So I'm using Zoom has this feature that you can record the Zoom meeting. I don't record the Zoom meetings, but it has a feature that I call it recording light. So basically
+
+[Leo Irakliotis] 10:27:52
+It creates a transcript of what we discussed. It's just pure text
+
+[Leo Irakliotis] 10:27:57
+Which is amazing, amazes me because even though with my accent, it gets 90% of what I say right
+
+[Leo Irakliotis] 10:28:03
+And then I give this transcript to an AI agent. And what I'm showing you on the screen is the prompt
+
+[Leo Irakliotis] 10:28:14
+For the AI agent and say, okay, read the transcript and then create a 250-word summary
+
+[Leo Irakliotis] 10:28:21
+of what I discussed in class, what we discussed in class. And, for example, the emails that I sent you yesterday with the summary were based
+
+[Leo Irakliotis] 10:28:30
+On this agent.
+
+[Leo Irakliotis] 10:28:33
+And I have to give an operational prompt
+
+[Leo Irakliotis] 10:28:39
+How many of you have done any operational prompts at all on and on AI
+
+[Leo Irakliotis] 10:28:47
+So most of you use AI just like we would go and use Google, tell me about X, Y, Z and see what gets you back. But there is much more to it
+
+[Leo Irakliotis] 10:28:57
+And what I tell here my agent is that I'm teaching two classes and these are the meeting times because the transcript has timestamps.
+
+[Leo Irakliotis] 10:29:06
+And, let me show you what the transcript file looks like.
+
+[Leo Irakliotis] 10:29:23
+So this is the transcript file from the other day, and you can see that at every
+
+[Leo Irakliotis] 10:29:31
+Every time someone speaks, it records the name of who's speaking and the timestamp. So you can see the flow of the course and the timestamp. So basically, because I'm using the same Zoom call for both classes, I have to tell my agent that everything that you see in the
+
+[Leo Irakliotis] 10:29:48
+transcript from 10.30 to 11.15, it's COM271, and from 11.30 to 1220 is the other course.
+
+[Leo Irakliotis] 10:29:55
+The format of the text of the transcript file, and the output that I want
+
+[Leo Irakliotis] 10:30:02
+And then I'm just
+
+[Leo Irakliotis] 10:30:05
+Telling it to do what I would have done
+
+[Leo Irakliotis] 10:30:08
+I would have what I would have done to transcribe the text. So
+
+[Leo Irakliotis] 10:30:16
+When you build the files, use the timestamps, write a summary for this class, keep it to 250 words, use markdown headers to organize
+
+[Leo Irakliotis] 10:30:29
+The topics covered, and then
+
+[Leo Irakliotis] 10:30:33
+The tone and language, for example, right from a first person plural instead of using something formal saying, you know.
+
+[Leo Irakliotis] 10:30:41
+Student Jalil did that say we work with Jalil to do that. So keep it a little bit more laid back, a little bit more friendly than formal
+
+[Leo Irakliotis] 10:30:54
+And keep the voice active. Course level calibration. Do not use any jargon, especially for COMP 170 because the first course, introductory course, don't throw any jargon to first years. Do that, you know, you don't want to scare the first year. Second year students like 271, sure, absolutely, we'll scare you.
+
+[Leo Irakliotis] 10:31:11
+But for a compound 70, make sure that you understand this is an introductory course
+
+[Leo Irakliotis] 10:31:22
+And for our course, whenever new terminology is introduced, give a definition. Provide a definition
+
+[Leo Irakliotis] 10:31:29
+So it takes about, and that scares me, that scares the living lives out of me. It takes about
+
+[Leo Irakliotis] 10:31:37
+10 seconds
+
+[Leo Irakliotis] 10:31:39
+For this tool to read through the transcript of 2 h of conversation and lecturing and examples
+
+[Leo Irakliotis] 10:31:46
+and provide a summary like the ones you saw yesterday and the one you'll see today.
+
+[Leo Irakliotis] 10:31:56
+As I am as thrilled as I am with artificial intelligence and what it can do
+
+[Leo Irakliotis] 10:32:05
+The more I see what it can do, the more scared I become because
+
+[Leo Irakliotis] 10:32:13
+You know, the job market is affected. You see those news yourselves. But I begin to worry about
+
+[Leo Irakliotis] 10:32:20
+myself, not I mean, I'm
+
+[Leo Irakliotis] 10:32:23
+At the end of my career, I'm fine. I'm not, you know, I don't worry about, oh my God, am I going to be out of a job? But, you know, I was planning at
+
+[Leo Irakliotis] 10:32:32
+I'm 58.9 years old. My wife tells me I'm 59. I don't believe her.
+
+[Leo Irakliotis] 10:32:41
+And I thought, you know, I have no plans to retire anytime soon. I love doing what I'm doing. Students don't complain too much about me. So
+
+[Leo Irakliotis] 10:32:52
+I love teaching. I've always done that. And I realized that an AI
+
+[Leo Irakliotis] 10:33:02
+System can replace me and probably do a better job than I do because an AI system will be available 24 by 7. Why do you have to come to this Zoom call at 10:30 AM
+
+[Leo Irakliotis] 10:33:12
+If you're, you know, what if your best time to learn something is at 3 AM? No one is going to schedule a class for you at 3 AM, but if that was… that's what works for you, why
+
+[Leo Irakliotis] 10:33:25
+Why not have your learning experience at that time at 3 a.m. in the morning
+
+[Leo Irakliotis] 10:33:31
+An AI instructor can do that for you
+
+[Leo Irakliotis] 10:33:33
+An AI instructor can be less moody than your average college professor, can be less judgmental than your average college professor, can speak with a different accent than your average college professor
+
+[Leo Irakliotis] 10:33:49
+So
+
+[Leo Irakliotis] 10:33:51
+There is a lot to be said about moving instruction to AI, and at some point, universities might say, you know, we're spending all that money paying salaries for faculty, we can cut 50% back
+
+[Leo Irakliotis] 10:34:02
+So but by that time, students might start saying, you know, and why should I pay billion dollars a year to go get a bachelor's degree that will get me nowhere? So it's the
+
+[Leo Irakliotis] 10:34:17
+The pessimistic perspective on where we're heading with this technology kind of scares me
+
+[Leo Irakliotis] 10:34:23
+And I hope that somewhere out there, there is also a more optimistic perspective that I'm missing. And if you have seen a more optimistic perspective or you're looking or you're thinking more optimistically yourselves
+
+[Leo Irakliotis] 10:34:35
+I'm all yours
+
+[Temeeka Glass] 10:34:38
+Um, I… I kind of think, like, the personability of…
+
+[Temeeka Glass] 10:34:42
+people… like, AI can't replace that.
+
+[Temeeka Glass] 10:34:46
+Or, like, just… I don't know.
+
+[Temeeka Glass] 10:34:49
+like, like…
+
+[Temeeka Glass] 10:34:51
+like, how, like, in some of our classes, like, you tell jokes and stuff, and then, like, we laugh, and it…
+
+[Temeeka Glass] 10:34:57
+I don't know, it kind of, like, lightens the mood a bit, so… I feel like AI can't…
+
+[Temeeka Glass] 10:35:01
+do that. So…
+
+[Temeeka Glass] 10:35:03
+even if…
+
+[Leo Irakliotis] 10:35:05
+Sure
+
+[Leo Irakliotis] 10:35:05
+But is it… at some point, you might have said, you know, am I paying $5,000 tuition to go towards LEO training to be a stand-up comedian
+
+[Temeeka Glass] 10:35:15
+Okay, Nasper.
+
+[Leo Irakliotis] 10:35:16
+And, you know, not everybody laughs with my jokes, and sometimes my jokes can be a little too soon
+
+[Temeeka Glass] 10:35:22
+Oh.
+
+[Leo Irakliotis] 10:35:24
+But you know that's not what you're… if a university… one universities are charging the tuition they're charging
+
+[Leo Irakliotis] 10:35:34
+You know, okay, fine, you have a funding professor or a laid-back professional, that's fine, but what are you… other than the comfortable setting
+
+[Leo Irakliotis] 10:35:43
+What are you getting in return for that investment and how it's going to help your career? And that's something I see at open houses at the university when
+
+[Leo Irakliotis] 10:35:54
+prospective students come with their parents
+
+[Leo Irakliotis] 10:35:57
+And the parents do not care about
+
+[Leo Irakliotis] 10:36:01
+You know how much research you've done as a professor or how important your research has been. They care about if I give away all $100,000 of my money
+
+[Leo Irakliotis] 10:36:12
+What kind of career will my kid have and will it be a rewarding career and will be a safe career and a steady career and all that. That's what matters at the end. That's why you see movies like Parman saying, I'm not paying you to go be an act
+
+[Leo Irakliotis] 10:36:26
+learn how to be an actor or musician. You know, five years down the road, parents may tell their kids, I'm not paying tuition for you to go be a computer scientist, go be a plumber
+
+[Leo Irakliotis] 10:36:39
+And I get the community aspect because at the end of the day, Tamika, that's what you're talking about. The community, the social aspect of
+
+[Leo Irakliotis] 10:36:49
+of learning
+
+[Leo Irakliotis] 10:36:51
+And maybe that's something that we need to focus as
+
+[Leo Irakliotis] 10:36:56
+As an enterprise as higher education enterprise who may be a good idea to focus
+
+[Leo Irakliotis] 10:37:03
+More on the social learning
+
+[Leo Irakliotis] 10:37:06
+But my biggest fear is, and that something has not happened before in our history
+
+[Leo Irakliotis] 10:37:12
+is that AI has brought the marginal cost
+
+[Leo Irakliotis] 10:37:17
+of, components
+
+[Leo Irakliotis] 10:37:19
+to zero
+
+[Leo Irakliotis] 10:37:22
+The job of most junior programmers can be done by AI. And you don't have to pay salaries.
+
+[Leo Irakliotis] 10:37:29
+for those junior developers. And another thing I did last semester, I tried with mixed results, but I'm still trying to find a way to improve is for the for the last two years, I have not been using graders and teaching assistants
+
+[Leo Irakliotis] 10:37:43
+For the course
+
+[Leo Irakliotis] 10:37:46
+I use a cancel of 3 LLMs. I'm using Gemini
+
+[Leo Irakliotis] 10:37:51
+ChatGPT and Claude to grade assignments
+
+[Leo Irakliotis] 10:37:56
+students. And so I have three graders for each assignment
+
+[Leo Irakliotis] 10:38:02
+And two of those three graders have to agree
+
+[Leo Irakliotis] 10:38:06
+Before I accept the grade, if there is disagreement between those three graders, I will grade it myself.
+
+[Leo Irakliotis] 10:38:13
+And I've been very transparent about this with students. I'm sharing every at the end of every week when we are collecting the assignments, I'm sharing the prompts that I use. So there is full transparency. And also I'm showing the students the scripts that I have written
+
+[Leo Irakliotis] 10:38:28
+So that their personal information is removed from the assignment. So the AI agent does not see Tamika Glass as the student sees X 1414, because there are some also, you know, FERPA requirement, you know, we as an institution, we cannot give your information
+
+[Leo Irakliotis] 10:38:48
+to Anthropic or OpenAI Nova.
+
+[Leo Irakliotis] 10:38:50
+So I'm fully transparent about it and students know that you know if there is something in the grading they don't like
+
+[Leo Irakliotis] 10:38:57
+Come talk with me
+
+[Leo Irakliotis] 10:39:01
+But the work
+
+[Leo Irakliotis] 10:39:04
+that this has produced is very good. And for the last two years, I'm not using graders and the cost per student throughout the semester
+
+[Leo Irakliotis] 10:39:14
+To grade all 15 assignments for each student is about 17 cents per student per semester.
+
+[Leo Irakliotis] 10:39:21
+So that's the marginal cost of what cost me for me to grade assignments for a semester if I have 100 students, you do the math. That's what $17
+
+[Leo Irakliotis] 10:39:32
+400 students for entire semester
+
+[Leo Irakliotis] 10:39:34
+And at some point, students might say, you know what, if you're spending pennies for that, why do we still have to pay
+
+[Leo Irakliotis] 10:39:42
+3,000, $4,000 tuition for this course.
+
+[Leo Irakliotis] 10:39:47
+And that's at some point, it's going to come out in the open and we'll have a reckoning time as higher education.
+
+[Leo Irakliotis] 10:39:58
+So I don't know, I want to believe, right? I mean, I want to be optimistic. I have always been
+
+[Leo Irakliotis] 10:40:08
+a
+
+[Leo Irakliotis] 10:40:08
+I always
+
+[Leo Irakliotis] 10:40:10
+I mean, you know, I'm a technology nerd. I love new things
+
+[Leo Irakliotis] 10:40:14
+And I'm fascinated by what this tool can do, these tools can do. But
+
+[Leo Irakliotis] 10:40:22
+I don't know if we're prepared as a society, as a civilization
+
+[Leo Irakliotis] 10:40:26
+To accept these tools and benefit from them without destroying each other. I've seen one way… I've seen the Matrix movie on too many times
+
+[Leo Irakliotis] 10:40:37
+And I think that's
+
+[Leo Irakliotis] 10:40:39
+That got really killed me.
+
+[Leo Irakliotis] 10:40:42
+I like the Matrix movie too much, and I thought this will never happen, right? Please tell me this will never happen
+
+[Leo Irakliotis] 10:40:49
+All right
+
+[Leo Irakliotis] 10:40:51
+Looks like it's the five of us today. So enough small talk and doom and gloom scenarios. Let's do some coding. We talked yesterday about, I'm trying to sell the idea to you that arrays or
+
+[Leo Irakliotis] 10:41:06
+Again, Python does not have arrays, but when I say arrays in Python, I mean lists, wink, wink, wink.
+
+[Leo Irakliotis] 10:41:16
+So arrays are a very important tool and in Python, when we are using a list that has the same data types in it, that's as good as an array in the example we did
+
+[Leo Irakliotis] 10:41:30
+was something like Zipcot friends
+
+[Leo Irakliotis] 10:41:38
+zip codes
+
+[Leo Irakliotis] 10:41:41
+And I have friends in
+
+[Leo Irakliotis] 10:41:43
+606, 605, 60611 and 60625. Those are Chicago zip codes. Every number there is an integer number. So this is a list of integer numbers, and therefore we can treat it as
+
+[Leo Irakliotis] 10:42:01
+an array
+
+[Leo Irakliotis] 10:42:02
+of integer numbers. The problem… the good news about Python is that if you make a new friend at a new zip code, you can take this array and append
+
+[Leo Irakliotis] 10:42:14
+the zip code of your new friend
+
+[Leo Irakliotis] 10:42:17
+And now if you
+
+[Leo Irakliotis] 10:42:20
+And the zip codes, they went from 3 to 4. That
+
+[Leo Irakliotis] 10:42:25
+casual, effortless addition
+
+[Leo Irakliotis] 10:42:28
+of
+
+[Leo Irakliotis] 10:42:32
+of an array element is not possible in other languages. So for example, in Java, do I have Java here
+
+[Leo Irakliotis] 10:42:43
+Yeah, I don't have Java here, so
+
+[Leo Irakliotis] 10:42:45
+I don't have time to install. In Java
+
+[Leo Irakliotis] 10:42:50
+This will require… in Java and other languages, we create an array, and then we populate. But but after we create an array, we cannot change its size, at least not easily. I mean, you can
+
+[Leo Irakliotis] 10:43:01
+We can do everything we want in programming
+
+[Leo Irakliotis] 10:43:03
+The question is, how much effort does it take, and how much how safe it is, because it's like an apartment building. You build that 5-story apartment building, and then you decide, oh my God, I wish I had another 5 floors, because, you know, this area is so popular, and I get all these renders that want to come and rent apartments for me
+
+[Leo Irakliotis] 10:43:23
+Can you take a five-story building in Chicago and convert it to a 10-story building? Absolutely. I mean, what do we take? First of all, you have to bribe a few people at the different offices and your alderman and all that. It's doable
+
+[Leo Irakliotis] 10:43:38
+Right? To get the permit. But imagine
+
+[Leo Irakliotis] 10:43:42
+First of all, the cost for doing that. And you know it might have been cheaper for you to build a 10 story building up front and keep half of it empty until you got more and more demand for the than to start with five stories
+
+[Leo Irakliotis] 10:43:58
+And then double the size of the billing because, you know, there is a regulatory process. You have to get the permits, you have to possibly rezone the area to allow for this new expansion of the building. And you have to do construction
+
+[Leo Irakliotis] 10:44:15
+on an existing structure where people live, so you have to be extra
+
+[Leo Irakliotis] 10:44:19
+careful. You have maybe to compensate your tenants for all the noise and the inconvenience and all that, so can it be done? Absolutely.
+
+[Leo Irakliotis] 10:44:28
+Does make sense to be done. Well, if it makes sense, why didn't you not do it in the 1st place when you started building?
+
+[Leo Irakliotis] 10:44:35
+Or, if you don't want to spend too much money, you want to do it on the inexpensive side, you don't go through the process, and you hire some contractor that you met at aisle 13 at Home Depot
+
+[Leo Irakliotis] 10:44:51
+And they come with our crew, and they do a shoddy job and sometime when it's a very windy day, have your building collapses and takes down the tenants
+
+[Leo Irakliotis] 10:45:02
+So it's going to be a crash and disaster. So there is, you know, there are always risks and expenses involved, and we're going to see how to replicate that in Python, because it's important to understand how an array can double its size.
+
+[Leo Irakliotis] 10:45:20
+Python makes us feel it's effortless because it just appended in the previous example, it just appended
+
+[Leo Irakliotis] 10:45:30
+a
+
+[Leo Irakliotis] 10:45:33
+A new zip code to the list
+
+[Leo Irakliotis] 10:45:37
+But it's not always that
+
+[Leo Irakliotis] 10:45:40
+Effortless
+
+[Leo Irakliotis] 10:45:42
+So let's go and I'm going to do this example in
+
+[Leo Irakliotis] 10:45:51
+Through the command line
+
+[Leo Irakliotis] 10:45:55
+We'll switch between the command line
+
+[Leo Irakliotis] 10:46:01
+The
+
+[Leo Irakliotis] 10:46:02
+Integrate development environment, but you know I like to keep my command line skills sharp. So let's go to the repository for our course
+
+[Leo Irakliotis] 10:46:11
+171, this is week two
+
+[Leo Irakliotis] 10:46:14
+And let's call the program dynamic array, because it's an array
+
+[Leo Irakliotis] 10:46:23
+that will
+
+[Leo Irakliotis] 10:46:24
+resize itself the way an actual Python list does.
+
+[Leo Irakliotis] 10:46:29
+All right, so the first thing
+
+[Leo Irakliotis] 10:46:33
+I want to do is
+
+[Leo Irakliotis] 10:46:37
+Take a step back and talk a little bit about objects. We are here because we have been at some point through some introduction in object-oriented programming. So
+
+[Leo Irakliotis] 10:46:51
+Free association, the first thing that comes to mind, I'll start with Zara. The first thing that comes to mind when I say, what is an object in programming? What's the first thing that you want to say?
+
+[Leo Irakliotis] 10:47:03
+Doesn't have to be correct. Just tell me what you think when I say objects.
+
+[Zahra Nadeem] 10:47:09
+I think about the types, like how you can do or else or for in something like ranges and stuff like that.
+
+[Leo Irakliotis] 10:47:18
+Dutch, the first thing that comes to mind when I say objects
+
+[Q. Dutch] 10:47:26
+First thing I think about is, like, for while loops, like, what are you trying to reach in those four while loops?
+
+[Leo Irakliotis] 10:47:34
+Jalil, the first thing that comes to mind when I say objects
+
+[Soaga, Jeleel] 10:47:43
+Um…
+
+[Soaga, Jeleel] 10:47:46
+I don't really know. I don't really have an answer for you. Sorry.
+
+[Leo Irakliotis] 10:47:50
+Dominika, what's the first thing that comes to mind when I say objects?
+
+[Temeeka Glass] 10:47:53
+um, like, a group of…
+
+[Temeeka Glass] 10:47:57
+I guess a group of arrays.
+
+[Leo Irakliotis] 10:48:01
+Forget everything you know about objects.
+
+[Leo Irakliotis] 10:48:04
+An object is a program
+
+[Leo Irakliotis] 10:48:07
+At the very, if
+
+[Leo Irakliotis] 10:48:09
+If I had to choose one word as to what is an object
+
+[Leo Irakliotis] 10:48:15
+An object is a program.
+
+[Leo Irakliotis] 10:48:17
+An object is a program that is based on the specifications that we write about it in a class. So a class is a blueprint for an object. So we're going to write a class here
+
+[Leo Irakliotis] 10:48:31
+And do a crash course into object-oriented programming. So I'll start by saying class
+
+[Leo Irakliotis] 10:48:38
+dynamically.
+
+[Leo Irakliotis] 10:48:43
+Okay, so I am writing a blueprint
+
+[Leo Irakliotis] 10:48:48
+For an object
+
+[Leo Irakliotis] 10:48:50
+And
+
+[Leo Irakliotis] 10:48:51
+The first thing that we need in a blueprint for an object is, hey, here is how to create yourself.
+
+[Leo Irakliotis] 10:49:05
+So basically here is how to take this blueprint
+
+[Leo Irakliotis] 10:49:09
+and become an entity yourself. This is called instantiation
+
+[Leo Irakliotis] 10:49:21
+We have all these verbose
+
+[Leo Irakliotis] 10:49:24
+fancy words in programming, because if we said, well, I'm just creating a copy of this class. What is an object? A copy of a class? That sounds way too, you know
+
+[Leo Irakliotis] 10:49:34
+pedestrian every day speak, but you start using $5 words
+
+[Leo Irakliotis] 10:49:39
+People think you're smart and therefore worth paying $150 an hour, do whatever you're supposed to be doing for them.
+
+[Leo Irakliotis] 10:49:48
+This is accomplished
+
+[Leo Irakliotis] 10:49:51
+with a special method
+
+[Leo Irakliotis] 10:50:04
+Call the constructor. A constructor is not the method
+
+[Leo Irakliotis] 10:50:08
+To be precise, that's why I put it in quotes, but it looks like a method, it sounds like a method, it works like a method, but it's not a method, okay? But it is a method
+
+[Leo Irakliotis] 10:50:20
+The constructor is a method that has a special name
+
+[Leo Irakliotis] 10:50:26
+And the name of that method is the need for initialize.
+
+[Leo Irakliotis] 10:50:31
+And I want to initialize this object
+
+[Leo Irakliotis] 10:50:36
+Self refers to the object itself, so it's a magic word. It's a special word in programming and
+
+[Leo Irakliotis] 10:50:46
+I want
+
+[Leo Irakliotis] 10:50:49
+the object to initialize, to have a list
+
+[Leo Irakliotis] 10:50:56
+With a length four. So this object will have, let's say we started with zip codes as an example, let's say zip codes
+
+[Leo Irakliotis] 10:51:05
+And I want you to have a list of the numbers 0, or minus one, because there's no such thing as minus one for zip code, and I want you to have this 4 times. What happens with this syntax? You may not have seen this syntax before. This is very Py
+
+[Leo Irakliotis] 10:51:22
+Let me show you in Python what happens when I create a list like this
+
+[Leo Irakliotis] 10:51:41
+It would be nice if I remember how to write this.
+
+[Leo Irakliotis] 10:51:48
+It creates a list that has four of those values in there. So this is a list with four elements, okay? 4 is the capacity of
+
+[Leo Irakliotis] 10:52:00
+Of the list
+
+[Leo Irakliotis] 10:52:14
+Again, this is very Pythonic syntax. By Pythonic, we mean we talk about things we can do in a program that are not possible to do in a very similar fashion in another language. So every programming language has a for loop, has an if statement
+
+[Leo Irakliotis] 10:52:31
+Python has a way to do things like this in a more compact, more natural way of expressing things that makes programming really fast. and when something can be done in Python in a particular way, but not in any other language, that is called Pythonic syntax
+
+[Leo Irakliotis] 10:52:47
+I will try to avoid Pythonic syntax as much as I can because we're still transitioning from basic programming to this specific language. So I am going to comment this line out
+
+[Leo Irakliotis] 10:53:07
+It's too Pythonic
+
+[Leo Irakliotis] 10:53:11
+and give you a way to do it that can't work in any other programming language. So in any other programming language will declare the data type we want to use, so zip codes. What do I want this to be? A list
+
+[Leo Irakliotis] 10:53:24
+This is going to be a Python list. And then
+
+[Leo Irakliotis] 10:53:29
+For some loop variable I in range 4, because that's the default size I want
+
+[Leo Irakliotis] 10:53:39
+Append to the zip code
+
+[Leo Irakliotis] 10:53:42
+The value minus one.
+
+[Leo Irakliotis] 10:53:46
+Y minus one? Because this is an array that keeps zip codes and there is no such thing as a negative zip code. So by looking at an array of minus a list of minus one, I know that's essentially empty
+
+[Leo Irakliotis] 10:54:03
+And, by the way, I want this array to live inside the object. So I have to identify it as an attribute of the object. So this is not just
+
+[Leo Irakliotis] 10:54:18
+Eddie Harry, this an array inside this object. Remember the self
+
+[Leo Irakliotis] 10:54:24
+Is a reference to the object itself.
+
+[Leo Irakliotis] 10:54:28
+So now that I initialized it, I need to keep track as I'm adding elements to it. I need to keep track how many elements I add to this, how many zip codes I add to this, because the capacity is full.
+
+[Leo Irakliotis] 10:54:43
+This is a list that has room for four zip codes. So if I try to add a fifth one would say, no, no. Even though in Python, all I have to do is append the fifth one
+
+[Leo Irakliotis] 10:54:54
+I want this to behave as a list, so I am going to be adding one at a time within the allowed capacity, which is four. So I need to track
+
+[Leo Irakliotis] 10:55:10
+How many
+
+[Leo Irakliotis] 10:55:17
+How many elements have been added
+
+[Leo Irakliotis] 10:55:21
+To the object
+
+[Leo Irakliotis] 10:55:26
+And I will call this capacity
+
+[Leo Irakliotis] 10:55:30
+And initially, when it's empty, when I have no zip codes there, when everything is minus one, minus one, minus one, minus one, I have zero capacity
+
+[Leo Irakliotis] 10:55:38
+And every time I add something, the capacity will go up to one
+
+[Leo Irakliotis] 10:55:42
+And when the capacity reaches 4
+
+[Leo Irakliotis] 10:55:48
+Let's call it size instead of capacity because I'm using capacity. When the size reaches four, which is the capacity
+
+[Leo Irakliotis] 10:55:56
+Then I stop. There is no room in this array. Again, in Python, we can do an append and add more, but we don't want to use append. We want this to behave like a real array
+
+[Leo Irakliotis] 10:56:08
+All right, so now we have this
+
+[Leo Irakliotis] 10:56:11
+item inside the object, a list called zip codes
+
+[Leo Irakliotis] 10:56:15
+With room for four values only. And I want to add a value, so I will write a method, define
+
+[Leo Irakliotis] 10:56:23
+What do I want to add? I want to add a zip code.
+
+[Leo Irakliotis] 10:56:28
+All right. And by the way, I will identify this method as an object method. So this method
+
+[Leo Irakliotis] 10:56:37
+exists in the object. It takes the object, that's what the self-reference means here, that this method operates on two needs two items to operate.
+
+[Leo Irakliotis] 10:56:48
+self, which is the object.
+
+[Leo Irakliotis] 10:56:50
+and a value for zip code
+
+[Leo Irakliotis] 10:56:53
+So what I want to do here, first of all, I want to check if
+
+[Leo Irakliotis] 10:57:00
+There is room for a new vibe
+
+[Leo Irakliotis] 10:57:01
+It means that if
+
+[Leo Irakliotis] 10:57:06
+The size
+
+[Leo Irakliotis] 10:57:08
+is less than four
+
+[Leo Irakliotis] 10:57:10
+Because if the size is 4, if I already have four items in this object, there is no room for a fifth item. Why? Because I made my array
+
+[Leo Irakliotis] 10:57:21
+size 4. Why? I'm the designer, my choice.
+
+[Leo Irakliotis] 10:57:26
+So if there is room
+
+[Leo Irakliotis] 10:57:30
+Then
+
+[Leo Irakliotis] 10:57:32
+I need to place the element
+
+[Leo Irakliotis] 10:57:35
+In VRA, where to place it? Well
+
+[Leo Irakliotis] 10:57:40
+Let's look at
+
+[Leo Irakliotis] 10:57:47
+And how this works.
+
+[Leo Irakliotis] 10:57:55
+So I started with an empty list
+
+[Leo Irakliotis] 10:57:59
+Here's our empty list.
+
+[Leo Irakliotis] 10:58:04
+Really XP Pen
+
+[Leo Irakliotis] 10:58:06
+Excuse me for a second.
+
+[Leo Irakliotis] 10:58:09
+My… my tablet
+
+[Leo Irakliotis] 10:58:15
+Has its own mind today from here
+
+[Leo Irakliotis] 10:58:18
+All right, there we are.
+
+[Leo Irakliotis] 10:58:20
+So I am creating
+
+[Leo Irakliotis] 10:58:39
+an array with four spaces
+
+[Leo Irakliotis] 10:58:44
+Okay, 0 is the first space. One is the second
+
+[Leo Irakliotis] 10:58:51
+2 is the third and three is the fourth, and they're all empty, minus one. Well, they're not empty, but they contain the value that indicates that there is nothing here because there is no zip code with a negative value. And at initialization, the size of this object
+
+[Leo Irakliotis] 10:59:12
+is 0. And I want to add
+
+[Leo Irakliotis] 10:59:17
+The zip code for a new friend
+
+[Leo Irakliotis] 10:59:19
+Okay? Where should it go? Where that zip code for the new friend will go in? You have four possible positions. Where would it make sense to place it?
+
+[Temeeka Glass] 10:59:29
+Is there enough?
+
+[Leo Irakliotis] 10:59:31
+Why not? I mean, why not at the beginning, right?
+
+[Leo Irakliotis] 10:59:36
+So I am going to come here and place a zip code for a friend, let's say 60
+
+[Leo Irakliotis] 10:59:44
+611. And what happens now is that the size
+
+[Leo Irakliotis] 10:59:52
+becomes one. Why? Because I have only one value here
+
+[Leo Irakliotis] 10:59:57
+Okay, now it's time to add another friend.
+
+[Leo Irakliotis] 11:00:09
+Where does go, it went
+
+[Leo Irakliotis] 11:00:12
+To the value of science
+
+[Leo Irakliotis] 11:00:15
+And now, of course, size becomes 2, which suggests that the next time I need to add a value, it will go to this position. And the next time I need to add a value, it will go to this position.
+
+[Leo Irakliotis] 11:00:28
+And the next time
+
+[Leo Irakliotis] 11:00:32
+This will become four. And the next time I need to add the value, the comparison size
+
+[Leo Irakliotis] 11:00:40
+must be less than 4 will result to false, meaning that, hey, you already have 4 items here.
+
+[Leo Irakliotis] 11:00:47
+You cannot add a fifth item in an array
+
+[Leo Irakliotis] 11:00:54
+That has room for only four items
+
+[Leo Irakliotis] 11:01:00
+So the size serves two purposes to tell us how many items
+
+[Leo Irakliotis] 11:01:06
+are in this object, and where to place the next one if there is room
+
+[Leo Irakliotis] 11:01:11
+for the next one
+
+[Leo Irakliotis] 11:01:13
+So we can write this in our code
+
+[Leo Irakliotis] 11:01:21
+There we are
+
+[Leo Irakliotis] 11:01:27
+In this underlying array, zip codes
+
+[Leo Irakliotis] 11:01:33
+At this position
+
+[Leo Irakliotis] 11:01:37
+Assign the value that is being given to you in the argument.
+
+[Leo Irakliotis] 11:01:42
+And then increment the self size
+
+[Leo Irakliotis] 11:01:50
+By UI
+
+[Leo Irakliotis] 11:01:56
+That's it. If Visa value H2
+
+[Leo Irakliotis] 11:02:00
+If
+
+[Leo Irakliotis] 11:02:02
+We already have four elements there. Nothing will happen.
+
+[Leo Irakliotis] 11:02:06
+Or maybe you want to say else
+
+[Leo Irakliotis] 11:02:15
+Breen
+
+[Leo Irakliotis] 11:02:16
+Sorry, Noru
+
+[Leo Irakliotis] 11:02:25
+And we can test this code
+
+[Leo Irakliotis] 11:02:37
+You know what? No
+
+[Leo Irakliotis] 11:02:39
+So this is our object
+
+[Leo Irakliotis] 11:02:40
+And we can, let's save this object
+
+[Leo Irakliotis] 11:02:49
+And we can test this code by writing another program test implement
+
+[Leo Irakliotis] 11:02:57
+Dynamic array
+
+[Leo Irakliotis] 11:03:07
+from the class I created, import the classes wrote import dynamic array
+
+[Leo Irakliotis] 11:03:15
+That's the program I wrote.
+
+[Leo Irakliotis] 11:03:18
+And now
+
+[Leo Irakliotis] 11:03:20
+I can say create a new object, instantiate an object
+
+[Leo Irakliotis] 11:03:29
+What I want to call it test object
+
+[Leo Irakliotis] 11:03:38
+Dynamic array
+
+[Leo Irakliotis] 11:03:51
+So going to this program I just imported and instantiate
+
+[Leo Irakliotis] 11:03:57
+It's object.
+
+[Leo Irakliotis] 11:03:59
+refers to the file I'm importing. This refers to the class inside the imported file
+
+[Leo Irakliotis] 11:04:07
+Let's see so far if this works. Python three
+
+[Leo Irakliotis] 11:04:38
+5 seconds
+
+[Leo Irakliotis] 11:04:46
+We append
+
+[Leo Irakliotis] 11:04:55
+We append to a list. I wrote a penned list instead of list append.
+
+[Leo Irakliotis] 11:05:12
+Zip codes
+
+[Leo Irakliotis] 11:05:14
+Plural, the list is plural, the single zip code is singular. Okay.
+
+[Leo Irakliotis] 11:05:21
+By the way, none of those mistakes would have happened if I was using an integrated development environment because in an IDE, when you're typing things, any silly mistakes that you're doing, these are silly syntax mistakes will be highlighted
+
+[Leo Irakliotis] 11:05:37
+And say, well, why is the red line under this? Oh, I switch the syntax, right? But
+
+[Leo Irakliotis] 11:05:43
+That's the price we pay to use
+
+[Leo Irakliotis] 11:05:49
+The command line interface. Let me see if I can do this in interactive Python import
+
+[Leo Irakliotis] 11:05:55
+Dynamic array
+
+[Leo Irakliotis] 11:05:57
+Okay, test equals dynamic array
+
+[Leo Irakliotis] 11:06:09
+Okay, so I just created an object, and if I say print it, it shows nothing. Well, it shows something that this is an object at this memory reference. So when you create an object
+
+[Leo Irakliotis] 11:06:24
+The program doesn't know how to display it
+
+[Leo Irakliotis] 11:06:29
+So all we get is, hey, okay, you want to show this
+
+[Leo Irakliotis] 11:06:34
+object
+
+[Leo Irakliotis] 11:06:37
+I will give you this location in memory
+
+[Leo Irakliotis] 11:06:41
+So if you really want to see it, go up and find a way to scan the memory and look at that address that is given here to us in hexadecimal
+
+[Leo Irakliotis] 11:06:49
+That's not very helpful
+
+[Leo Irakliotis] 11:06:53
+So the first
+
+[Leo Irakliotis] 11:06:55
+Like I said, the first thing we do when we write a class to define an object is to explain how the object gets instantiated. The second thing we should be doing
+
+[Leo Irakliotis] 11:07:07
+is to describe to this object how to express itself
+
+[Leo Irakliotis] 11:07:14
+In a print command. And this is done with another special method. And this is an actual method, not method.
+
+[Leo Irakliotis] 11:07:30
+That is called string. Define the string representation of this object, and I'll keep it very simple. I'd say just print
+
+[Leo Irakliotis] 11:07:41
+Self
+
+[Leo Irakliotis] 11:07:42
+zip codes
+
+[Leo Irakliotis] 11:07:44
+the underlying
+
+[Leo Irakliotis] 11:07:47
+So now when I go to Python and I say, okay, create a test object
+
+[Leo Irakliotis] 11:08:11
+Not print return.
+
+[Leo Irakliotis] 11:08:23
+Can I do this? Can I do a return string?
+
+[Leo Irakliotis] 11:08:56
+Zip codes, zip codes, zip codes
+
+[Leo Irakliotis] 11:09:21
+Oh.
+
+[Leo Irakliotis] 11:09:22
+I forgot to import it. That's why it's complaining
+
+[Leo Irakliotis] 11:09:28
+It's not even Friday yet
+
+[Leo Irakliotis] 11:09:38
+Still, oh, it's of course it's a list, that's why
+
+[Leo Irakliotis] 11:09:47
+So we better do this.
+
+[Leo Irakliotis] 11:09:51
+Okay, I'll create a string. You want to create a string? Okay, output
+
+[Leo Irakliotis] 11:09:56
+is an empty string for i in range length
+
+[Leo Irakliotis] 11:10:03
+Self zip codes
+
+[Leo Irakliotis] 11:10:12
+Output
+
+[Leo Irakliotis] 11:10:14
+is output
+
+[Leo Irakliotis] 11:10:16
+Less
+
+[Leo Irakliotis] 11:10:29
+Lots of space. All right
+
+[Leo Irakliotis] 11:10:36
+return out
+
+[Leo Irakliotis] 11:10:40
+Okay, let's see if that works.
+
+[Leo Irakliotis] 11:10:58
+Okay, there's our app. Okay, so now I can take this test and say add
+
+[Leo Irakliotis] 11:11:04
+What code
+
+[Leo Irakliotis] 11:11:05
+6 0611.
+
+[Leo Irakliotis] 11:11:09
+And if I print it, you see now that I have one there, one zip code there, and three empties. So now I can add another zip code
+
+[Leo Irakliotis] 11:11:21
+And now I have two zip codes there and two empty spots. If I add another zip code
+
+[Leo Irakliotis] 11:11:30
+I have one empty spot, and if I add another zip code, what I got 611, 625, all right, there we are, and I see the object, now I'm full
+
+[Leo Irakliotis] 11:11:40
+And if I try to add another zip code, 60602,
+
+[Leo Irakliotis] 11:11:47
+I will get the error message. I'll say, sorry, no room.
+
+[Leo Irakliotis] 11:11:54
+What happens when we're out of room
+
+[Leo Irakliotis] 11:11:57
+Well, we have to work out
+
+[Leo Irakliotis] 11:12:01
+how
+
+[Leo Irakliotis] 11:12:05
+Make the underlying array
+
+[Leo Irakliotis] 11:12:06
+This object
+
+[Leo Irakliotis] 11:12:08
+called dynamic array is based on a fixed size array. We have to find a way to make the fixed size array
+
+[Leo Irakliotis] 11:12:19
+larger
+
+[Leo Irakliotis] 11:12:21
+While containing the existing data
+
+[Leo Irakliotis] 11:12:25
+And then we can keep adding. So in the example here
+
+[Leo Irakliotis] 11:12:35
+What I would like to do is when this array is full
+
+[Leo Irakliotis] 11:12:47
+This is the underlying array. When this array is full, take it
+
+[Leo Irakliotis] 11:12:53
+And what I want now to happen is to expand it. Let's say that for convenience, I decide to double its size
+
+[Leo Irakliotis] 11:13:16
+While preserving the existing data
+
+[Leo Irakliotis] 11:13:20
+And now the capacity went from four
+
+[Leo Irakliotis] 11:13:24
+to aid, and I have more space to keep adding, and when I run out of space, again, maybe I will double, and when I run out of space, maybe I will double again. So that's the example with the 5-story building that you are 5 stories by 5 stories. It can be done
+
+[Leo Irakliotis] 11:13:40
+The question for you to ponder over the weekend, and we'll reconnect Monday, is how can you take an ex… forget about the object orientation stuff, we'll talk… we'll keep talking about that down the road, but the problem I want you to think, and I'm going to provide that
+
+[Leo Irakliotis] 11:13:56
+as
+
+[Leo Irakliotis] 11:13:58
+Prompt
+
+[Leo Irakliotis] 11:14:00
+for your reflection for Monday is if you're given an array, at least with four elements, and you want to double the size of that list, while preserving the existing elements in the same positions, like I'm showing here in the diagram
+
+[Leo Irakliotis] 11:14:14
+What code do you need to run in plain Python? No methods.
+
+[Leo Irakliotis] 11:14:19
+Not glass, nothing, just plain pure Python. How would you do it?
+
+[Leo Irakliotis] 11:14:24
+And that's where we resume from on Monday
+
+[Leo Irakliotis] 11:14:31
+Questions, comments?
+
+[Leo Irakliotis] 11:14:35
+All right, everyone.
+
+[Leo Irakliotis] 11:14:37
+I will see you Monday. Have a great weekend.
+
+[Temeeka Glass] 11:14:40
+You too, you too, thank you.
+
+[Leo Irakliotis] 11:30:26
+Hello, everyone.
+
+[Leo Irakliotis] 11:30:30
+Any questions, any comments, any requests?
+
+[Leo Irakliotis] 11:30:37
+All right, so let's what I would like to do today is to go back to the code we were writing yesterday about computing interest rates and investment recovery because
+
+[Leo Irakliotis] 11:30:52
+There is something to be learned. There's always something to be learned, right? That's why we're here. There is something very important to discuss on based on that code.
+
+[Leo Irakliotis] 11:31:04
+So
+
+[Leo Irakliotis] 11:31:14
+We are in week two. And what do we have here? We were working on the interest program.
+
+[Leo Irakliotis] 11:31:23
+So this is the code we wrote. And we have two print statements. One was very simplistic, very naive. We had a nice formatting
+
+[Leo Irakliotis] 11:31:33
+Let me
+
+[Leo Irakliotis] 11:31:39
+Let me take a sense of how you are with ambiguity here.
+
+[Leo Irakliotis] 11:31:43
+Would you rather have me write this fancy
+
+[Leo Irakliotis] 11:31:49
+Challenging at the beginning print statements, or you want me to stay with symbol prints for a couple more weeks? What's your preference? I don't want the… my preference for fancy printing can be overwhelming sometimes, even for myself
+
+[Leo Irakliotis] 11:32:05
+So
+
+[Leo Irakliotis] 11:32:05
+What's your take?
+
+[Leo Irakliotis] 11:32:06
+What do you like? What do you prefer?
+
+[Leo Irakliotis] 11:32:10
+The symbol print statement or the not-so-symbol print statement.
+
+[Kandace Garcia] 11:32:15
+I like the simple print statement.
+
+[Leo Irakliotis] 11:32:18
+All right, so we'll go simple
+
+[Leo Irakliotis] 11:32:22
+And I'll make it even more simple
+
+[Leo Irakliotis] 11:32:40
+I'll break it down into three print statements
+
+[Leo Irakliotis] 11:33:11
+And because, you know, you can take the print statement out of Leo's programs, but you cannot take Leo out of the fancy print statements. I'll do some
+
+[Leo Irakliotis] 11:33:24
+Aligning to the right here so that you
+
+[Leo Irakliotis] 11:33:29
+The
+
+[Leo Irakliotis] 11:33:30
+left side of the names will be… the right side of the names will be lined up
+
+[Leo Irakliotis] 11:33:38
+All right.
+
+[Leo Irakliotis] 11:33:41
+The program works. Let's demonstrate to see how the symbol print statement shows up. Python 3
+
+[Leo Irakliotis] 11:33:51
+Interest Python. So what's the principal amount? We said $1,000. The interest rate is 9%, and we want to see what happens in 30 years. So here's the output
+
+[Leo Irakliotis] 11:34:03
+The numbers we entered
+
+[Leo Irakliotis] 11:34:06
+Oh, and what am I forgetting? How much money we're making after. So there is one more print statement to have here
+
+[Leo Irakliotis] 11:34:17
+Great.
+
+[Leo Irakliotis] 11:34:25
+Raise the total
+
+[Leo Irakliotis] 11:34:32
+And maybe I'll add one more decorative print statement here
+
+[Leo Irakliotis] 11:34:41
+It's just a
+
+[Leo Irakliotis] 11:34:46
+Just to create a visual separation from the input
+
+[Leo Irakliotis] 11:34:53
+And again, $1,000
+
+[Leo Irakliotis] 11:34:56
+The 9
+
+[Leo Irakliotis] 11:34:58
+9% annually for 30 years will give me
+
+[Leo Irakliotis] 11:35:03
+that. Okay.
+
+[Leo Irakliotis] 11:35:11
+When you look at the program
+
+[Leo Irakliotis] 11:35:16
+I mentioned yesterday that there are two concerns, two competing concerns, two competing
+
+[Leo Irakliotis] 11:35:28
+processes
+
+[Leo Irakliotis] 11:35:29
+In this program. One is the input-output. The input output is how the program interacts with the user by obtaining information from the user and displaying information to the user. That's what happens with the input and the print statements. Those are input-output statements.
+
+[Leo Irakliotis] 11:35:44
+And then there is the logic side of things where we compute things. That's basically, okay, in this program it's just
+
+[Leo Irakliotis] 11:35:55
+One line
+
+[Leo Irakliotis] 11:35:58
+But it's a
+
+[Leo Irakliotis] 11:36:00
+It's logic. And in general
+
+[Leo Irakliotis] 11:36:06
+It is not a good idea
+
+[Leo Irakliotis] 11:36:10
+to mix
+
+[Leo Irakliotis] 11:36:11
+input output
+
+[Leo Irakliotis] 11:36:15
+It's all about separating tasks and simplifying the complexity of the process. And you might say, seriously, what complexity? You're obtaining three values, you're doing one operation that involves
+
+[Leo Irakliotis] 11:36:29
+One multiplication, one addition, and one exponentiation, it's fairly simple. Why do you want to decompose complexity of the process? The process is not very complex. You collect three numbers, the principal amount, the interest rate, and the term. You do the computation, and then you inform
+
+[Leo Irakliotis] 11:36:46
+the user how much money they will have at the end of the maturity.
+
+[Leo Irakliotis] 11:36:53
+when the investment ensures. So this is not very
+
+[Leo Irakliotis] 11:37:00
+complex logic
+
+[Leo Irakliotis] 11:37:02
+But let me turn on line numbers here so that we can reference to the code by line numbers.
+
+[Leo Irakliotis] 11:37:11
+It's a good idea when we're looking at a problem
+
+[Leo Irakliotis] 11:37:16
+to split it into fundamental tasks, and at every problem that we're trying to solve, there's always the first question, what is the information you want me to process?
+
+[Leo Irakliotis] 11:37:25
+cooking pasta
+
+[Leo Irakliotis] 11:37:27
+How many people am I cooking pasta for? The logic for cooking pasta is always the same. You boil water and you put the pasta in the water for a given period of time. How much water you boil and how much pasta you put in, that depends on how many people you're cooking for
+
+[Leo Irakliotis] 11:37:43
+So there are two parts here. You get the logic down pot, fire, salt, water, bubbles.
+
+[Leo Irakliotis] 11:37:51
+How much pasta to put in there needs input information from
+
+[Leo Irakliotis] 11:37:57
+Someone, right?
+
+[Leo Irakliotis] 11:37:59
+So the things that I want to do is to separate the concerns, to separate the subtasks, if you wish, of the process of what I'm trying to do
+
+[Leo Irakliotis] 11:38:14
+So the approach that I take is in any situation in problem solving is to have
+
+[Leo Irakliotis] 11:38:23
+The input concern separate
+
+[Leo Irakliotis] 11:38:27
+And pass
+
+[Leo Irakliotis] 11:38:29
+The results of that concern, of that process to the logic
+
+[Leo Irakliotis] 11:38:34
+Concern to the logic part of the process and then pass that to the output
+
+[Leo Irakliotis] 11:38:43
+So we want the logic to be independent
+
+[Leo Irakliotis] 11:38:48
+of input output
+
+[Leo Irakliotis] 11:38:56
+And historically, in computer science, input output is written as other eye, stroke O in uppercase or IO in lowercase
+
+[Leo Irakliotis] 11:39:14
+Every complex task
+
+[Leo Irakliotis] 11:39:17
+can be separated in subtasks
+
+[Leo Irakliotis] 11:39:20
+sub processes, subroutines.
+
+[Leo Irakliotis] 11:39:24
+In computing, in programming, those subtasks have different names. Historically
+
+[Leo Irakliotis] 11:39:32
+A subtask in computer science was called procedure
+
+[Leo Irakliotis] 11:39:47
+Procedure or just abbreviated as pro. And then historically, again, so we're talking about here, I don't know, 1950s maybe
+
+[Leo Irakliotis] 11:39:57
+Then it became known as subroutine
+
+[Leo Irakliotis] 11:40:03
+In the 1960s when the dominant programming language of the time, Fortran, wanted to call it something other than procedure
+
+[Leo Irakliotis] 11:40:14
+From there, it got named in the 70s as we have the emergence of object-oriented programming
+
+[Leo Irakliotis] 11:40:27
+We have the names function
+
+[Leo Irakliotis] 11:40:33
+Method
+
+[Leo Irakliotis] 11:40:38
+And the dominant
+
+[Leo Irakliotis] 11:40:41
+term today
+
+[Leo Irakliotis] 11:40:43
+his method. Although all farts, like myself, sometimes still call it a function
+
+[Leo Irakliotis] 11:40:53
+function is if someone talks about functions in programming, you know that this person is either a mathematician or a physicist or an engineer. They came into programming from the hard sciences, from physics, chemistry, or math, because everything, if you're mathematically trained
+
+[Leo Irakliotis] 11:41:09
+Everything is a function, whether it's a simple function like f of x equals x squared, or a multivariable function like f of principal term and interest rate is
+
+[Leo Irakliotis] 11:41:25
+Principal times 1 plus rate to the term rate. So this is a multi variable function. But that's a function we just computed to find what is the total amount of a given principle
+
+[Leo Irakliotis] 11:41:41
+Over a given term for a given interest rate
+
+[Leo Irakliotis] 11:41:46
+So everything is a function, but to separate the mathematical connotation of function from the programmatic connotation, I will try to keep the word method for programming and function for mathematical stuff
+
+[Leo Irakliotis] 11:42:00
+So the separation of concerns is achieved by procedures or subroutines or functions or methods.
+
+[Leo Irakliotis] 11:42:08
+In this context.
+
+[Leo Irakliotis] 11:42:11
+We need a method or a function or a subroutine or a procedure
+
+[Leo Irakliotis] 11:42:18
+To input data
+
+[Leo Irakliotis] 11:42:26
+And then that method communicates with a method
+
+[Leo Irakliotis] 11:42:32
+To implement the logic
+
+[Leo Irakliotis] 11:42:38
+And then that method communicates with the method
+
+[Leo Irakliotis] 11:42:45
+To present
+
+[Leo Irakliotis] 11:42:47
+The data
+
+[Leo Irakliotis] 11:42:51
+So there is your input part. There is your output part, and there is the logic.
+
+[Leo Irakliotis] 11:42:59
+part
+
+[Leo Irakliotis] 11:43:01
+Three methods, one of them is purely mathematical. It just executes a computation based on an principle interest and duration of investment. And the other two are input output
+
+[Leo Irakliotis] 11:43:13
+A method
+
+[Leo Irakliotis] 11:43:16
+For a function or a task, subtask, or subroutine, or a procedure. And if I open my history of computing book, I can find another five synonyms for that.
+
+[Leo Irakliotis] 11:43:28
+A method in programming is a smaller chunk of code
+
+[Leo Irakliotis] 11:43:35
+That has a nickname
+
+[Leo Irakliotis] 11:43:41
+For example
+
+[Leo Irakliotis] 11:43:45
+You go to your favorite coffee shop
+
+[Leo Irakliotis] 11:43:48
+which usually for me is Metropolis down on Granville
+
+[Leo Irakliotis] 11:43:54
+And you ask for a drink.
+
+[Leo Irakliotis] 11:43:58
+What do you tell
+
+[Leo Irakliotis] 11:44:03
+The person behind the counter when you order a drink at a coffee shop, what do you usually ask for? Eric
+
+[Erica Gregor] 11:44:16
+I don't need to do, like, a size and a drink.
+
+[Erica Gregor] 11:44:18
+like a medium coffee.
+
+[Leo Irakliotis] 11:44:18
+Okay.
+
+[Leo Irakliotis] 11:44:20
+Okay.
+
+[Leo Irakliotis] 11:44:22
+Would you ever in your right mind
+
+[Leo Irakliotis] 11:44:26
+Tell that person how to prepare the drink. For example, if you're asking for a latte, would you tell them, okay, I want one cup of milk and two shots of espresso. You trust
+
+[Leo Irakliotis] 11:44:37
+them, that when you say
+
+[Leo Irakliotis] 11:44:40
+I want a vanilla latte
+
+[Leo Irakliotis] 11:44:43
+How to make it. You don't give them
+
+[Leo Irakliotis] 11:44:47
+step-by-step instructions, because both you and the person behind the counter assume that by vanilla latte, you refer to that particular drink that has this specific execution steps.
+
+[Leo Irakliotis] 11:45:01
+Now
+
+[Leo Irakliotis] 11:45:05
+Why isn't it while
+
+[Leo Irakliotis] 11:45:08
+When there is a long line behind you at Starbucks
+
+[Leo Irakliotis] 11:45:11
+I don't know about you, but I do that because I'm a misanthrope. When there's a long line behind me at Starbucks and I'm number one there at the service station, I'm asking for a soy chai latte, six pumps, no water, no foam, extra
+
+[Leo Irakliotis] 11:45:29
+So now I'm communicating
+
+[Leo Irakliotis] 11:45:32
+instructions because there is no specific name like Leo's cough syrup.
+
+[Leo Irakliotis] 11:45:39
+If Starbucks offered a drink called Leo's cough syrup that was a soy chai latte with six pumps of syrup, no water, no foam, extra hot, then I would say, give me my cough syrup
+
+[Leo Irakliotis] 11:45:49
+But because they don't have that ring and Starbucks advertised that, you know, we're going to make you any drink you ask us for, I give them the instructions, but it doesn't happen often, that's why we don't have a nickname for it. But for a vanilla latte, or for a caramel macchiato.
+
+[Leo Irakliotis] 11:46:06
+You just specify when a caram macchiato, and I want it this size, and maybe, maybe, they will ask you if you want it iced or hot
+
+[Leo Irakliotis] 11:46:14
+But other than that, you expect every time you ask for a caramel macchiato
+
+[Leo Irakliotis] 11:46:20
+To be that consistent during that you expect to have. That's what a procedure is. A recipe that is already known to all parties and we don't have to reference its details. We just call it by the name.
+
+[Leo Irakliotis] 11:46:37
+So this
+
+[Leo Irakliotis] 11:46:39
+This input method
+
+[Leo Irakliotis] 11:46:42
+is
+
+[Leo Irakliotis] 11:46:45
+bundle a group
+
+[Leo Irakliotis] 11:46:51
+of programming
+
+[Leo Irakliotis] 11:46:54
+Statements
+
+[Leo Irakliotis] 11:47:00
+That take care of the input
+
+[Leo Irakliotis] 11:47:05
+And it has a nickname. What do we call it? What do you want to call it? Here is the most second most difficult thing in programming.
+
+[Leo Irakliotis] 11:47:14
+Naming things in programming is the second most difficult task in this business
+
+[Leo Irakliotis] 11:47:20
+No one, we cannot agree amongst ourselves what is the most difficult task in programming, different programmers, different software developers have different ideas as to what is the most difficult task
+
+[Leo Irakliotis] 11:47:32
+But everyone agrees that the second most difficult is giving names
+
+[Leo Irakliotis] 11:47:38
+to artifacts that we create
+
+[Leo Irakliotis] 11:47:41
+And for all I care
+
+[Leo Irakliotis] 11:47:44
+You can call this method Leo's
+
+[Leo Irakliotis] 11:47:48
+Cough syrup
+
+[Leo Irakliotis] 11:47:52
+If that makes sense to you, absolutely. But here's the problem.
+
+[Leo Irakliotis] 11:47:57
+Would make sense to you in a moment of revivality or levity, or introspection may not always make sense to other programmers.
+
+[Leo Irakliotis] 11:48:12
+So we have a code. How many of you have seen the first movie, The Pirates of the Caribbean
+
+[Leo Irakliotis] 11:48:20
+Okay, you remember about the pirate code that is more of guidelines. We have our own pirate code. We have our guidelines that are not very strict, but they're highly recommended.
+
+[Leo Irakliotis] 11:48:31
+that we give our artifacts names that communicate their purpose.
+
+[Leo Irakliotis] 11:48:41
+If you want to write obfuscated code, you can call your things whatever you want, just free association.
+
+[Leo Irakliotis] 11:48:48
+It worked very well for James Joyce. It worked very well for David Foster Wallace, may not work very well for your code, but free country, freedom of expression, First Amendment applies.
+
+[Leo Irakliotis] 11:49:04
+in your coding, but not in my class.
+
+[Leo Irakliotis] 11:49:09
+You cannot claim First Amendment rights on naming your code.
+
+[Leo Irakliotis] 11:49:15
+I can because MeProv U students
+
+[Leo Irakliotis] 11:49:19
+But for now, I'm pulling rank and I'm going to be writing silly names just to demonstrate the silliness of it
+
+[Leo Irakliotis] 11:49:28
+But this is one of the things that
+
+[Leo Irakliotis] 11:49:31
+Do as I say, not as I do, okay?
+
+[Leo Irakliotis] 11:49:35
+So let's go back to our code and write
+
+[Leo Irakliotis] 11:49:41
+it in a way that separates concern. And for that task
+
+[Leo Irakliotis] 11:49:45
+What I would like to do is give you your first glimpse of an integrated development environment. So far, we've been working
+
+[Leo Irakliotis] 11:49:56
+In the command line interface
+
+[Leo Irakliotis] 11:50:01
+Which is great. I want to keep working on that and building on that, but because I want to put code side by side to demonstrate to make a point today, it's easier for me to do that
+
+[Leo Irakliotis] 11:50:14
+at
+
+[Leo Irakliotis] 11:50:19
+No.
+
+[Leo Irakliotis] 11:50:20
+No, I don't need to make things easy for myself.
+
+[Leo Irakliotis] 11:50:25
+If I'm going to ask you to make things difficult for yourself, I'm going to make things difficult for myself. Okay, so here is
+
+[Leo Irakliotis] 11:50:33
+The code we wrote, the totally unsophisticated code that we wrote. So make this window a little bit small. I'll create another
+
+[Leo Irakliotis] 11:50:43
+PowerShift
+
+[Leo Irakliotis] 11:50:45
+terminal window here, and I'll open it in the shared screen in a second
+
+[Leo Irakliotis] 11:50:55
+All right. Hello, come over here.
+
+[Leo Irakliotis] 11:51:01
+There we are
+
+[Leo Irakliotis] 11:51:07
+And make the fonts about the same size. Okay, clear
+
+[Leo Irakliotis] 11:51:27
+And here I am going to write
+
+[Leo Irakliotis] 11:51:32
+The same program, but with separations of concern. So I will call that program instead of inverse.python nice, not nice
+
+[Leo Irakliotis] 11:51:45
+Interest underscore pro.
+
+[Leo Irakliotis] 11:51:48
+Because it looks more professional.
+
+[Leo Irakliotis] 11:52:01
+So the first thing I need to do is to create
+
+[Leo Irakliotis] 11:52:08
+A concern, a method, a function, a procedure, a subroutine
+
+[Leo Irakliotis] 11:52:14
+that does the computation of the interest
+
+[Leo Irakliotis] 11:52:16
+Okay, what do you want to call that
+
+[Leo Irakliotis] 11:52:19
+method. Again, we can call it anything you want.
+
+[Leo Irakliotis] 11:52:24
+If you're thinking about lunch already and you look at a nice Caesar salad, you can call it Caesar salad. It makes sense to you
+
+[Leo Irakliotis] 11:52:36
+But if you want to communicate the intent of this method to the rest of the world, let's call it
+
+[Leo Irakliotis] 11:52:42
+compute future value.
+
+[Leo Irakliotis] 11:52:44
+of an investment
+
+[Leo Irakliotis] 11:52:51
+false here
+
+[Leo Irakliotis] 11:52:53
+Come on, computers.
+
+[Leo Irakliotis] 11:53:04
+Okay. Define a method. Every method we create, how do we show that we are creating a method? We start with a command diff define
+
+[Leo Irakliotis] 11:53:14
+And then we give our method the name. Define
+
+[Leo Irakliotis] 11:53:19
+compute
+
+[Leo Irakliotis] 11:53:23
+future value.
+
+[Leo Irakliotis] 11:53:24
+So we want to compute the future value of an investment based on what? What is the principal amount
+
+[Leo Irakliotis] 11:53:32
+What is the interest rate?
+
+[Leo Irakliotis] 11:53:34
+And what is the term of maturity? So these are the three variables we used before, principal, interest rate and term for the computation. So we need to give that information
+
+[Leo Irakliotis] 11:53:49
+To this method in the program to the left. Everything is obtained by the keyboard in lines 1, 2 and 3
+
+[Leo Irakliotis] 11:53:59
+And those values then are used in line five to do the computation
+
+[Leo Irakliotis] 11:54:05
+Here we are going to create a separate task that say, hey, here's a magic box that if I give you these three numbers, you're going to do something with these three numbers. But first I have to describe what numbers I give you. So I'm giving you
+
+[Leo Irakliotis] 11:54:20
+At principle
+
+[Leo Irakliotis] 11:54:28
+An interest rate
+
+[Leo Irakliotis] 11:54:30
+In a term
+
+[Leo Irakliotis] 11:54:35
+And the column at the end of this line says that's the end of the definition line of my method. This is the title, this is the cover of my method. And what's inside my method, let me name numbers here as well
+
+[Leo Irakliotis] 11:54:52
+And
+
+[Leo Irakliotis] 11:54:54
+What's inside my method
+
+[Leo Irakliotis] 11:55:09
+A computation total equals the principal amount
+
+[Leo Irakliotis] 11:55:16
+times 1 plus
+
+[Leo Irakliotis] 11:55:19
+The interest rate
+
+[Leo Irakliotis] 11:55:25
+to the power of the term
+
+[Leo Irakliotis] 11:55:28
+So line two on the right is identical to line five on the left.
+
+[Leo Irakliotis] 11:55:35
+But because I'm treating this method as a black box, I'm giving you numbers, you give me numbers back. How do you a method gives numbers back? It returns a value
+
+[Leo Irakliotis] 11:55:47
+What is the value?
+
+[Leo Irakliotis] 11:55:49
+The total
+
+[Leo Irakliotis] 11:55:51
+So take these numbers, go to whatever you want, come back to me with a product
+
+[Leo Irakliotis] 11:55:56
+That's exactly what happens at the coffee shop counter. Take my order, take my money. I don't care what you do back there. I'm going to be seated here
+
+[Leo Irakliotis] 11:56:05
+Reading my book, and when you call my name, I'll come at the counter and grab that drink, and I know that that's the drink that I ordered, because it has my name
+
+[Leo Irakliotis] 11:56:14
+on that little sticker on the side.
+
+[Leo Irakliotis] 11:56:20
+That's the return part. That's when the barista at the coffee shop in exchange for your order and your money returns you a cup with your drink. That's what happens on line 3 to the right.
+
+[Leo Irakliotis] 11:56:33
+So this function
+
+[Leo Irakliotis] 11:56:39
+Is the logic of the program okay not a big deal, just one line, right? Ess two lines with a return statement. But that's it.
+
+[Leo Irakliotis] 11:56:48
+So now
+
+[Leo Irakliotis] 11:56:51
+The next part is, all right, how do we pass information to this method? Well, we have to do the input part
+
+[Leo Irakliotis] 11:57:08
+So I have to write a method to obtain the data
+
+[Leo Irakliotis] 11:57:14
+What do you call like, what are you going to call a method that
+
+[Leo Irakliotis] 11:57:18
+obtains data from the user. Who wants to be the godparent to our next method?
+
+[Leo Irakliotis] 11:57:25
+Jessica, what would you call it?
+
+[cheska ocampo] 11:57:33
+Sorry, I'm still pondering.
+
+[Leo Irakliotis] 11:57:38
+Look at the painting behind you, give me a two-word description for that painting.
+
+[Leo Irakliotis] 11:57:45
+There is a painting behind you on the or
+
+[Leo Irakliotis] 11:57:48
+Yes.
+
+[cheska ocampo] 11:57:48
+This thing,
+
+[Leo Irakliotis] 11:57:49
+Yeah
+
+[cheska ocampo] 11:57:50
+I'll say, like, splotch line
+
+[Leo Irakliotis] 11:57:56
+What kind of line
+
+[cheska ocampo] 11:57:58
+S-P-L-O-T-C-H
+
+[Leo Irakliotis] 11:58:02
+Right, not a name. Okay.
+
+[Leo Irakliotis] 11:58:06
+Does it make sense to anyone else outside this call? Because everyone on this call heard the exchange between me and Cheska, and you know exactly what we're talking about.
+
+[Leo Irakliotis] 11:58:16
+If someone outside this call, if someone outside our team looked at that name
+
+[Leo Irakliotis] 11:58:22
+Would it convey to them what we're trying to do?
+
+[Leo Irakliotis] 11:58:26
+Probably not
+
+[Leo Irakliotis] 11:58:28
+So Melina, give us something that is friendly to people that we really don't care about, but we still have to be nice to them.
+
+[melina ammann] 11:58:38
+What do you mean, like, we still have to be nice to them?
+
+[Leo Irakliotis] 11:58:42
+Well, Splot's line works for you and me and Ceska, not for the rest of the world
+
+[Leo Irakliotis] 11:58:46
+But let's be nice to the rest of the world. What would we call a method that gets data from the user instead of splotch lines?
+
+[melina ammann] 11:58:55
+Um…
+
+[melina ammann] 11:58:58
+input?
+
+[Leo Irakliotis] 11:59:00
+Input data, get data, obtain data, read inputs
+
+[Leo Irakliotis] 11:59:05
+Wait for data, something that shows the action that we do.
+
+[Leo Irakliotis] 11:59:10
+Okay
+
+[Leo Irakliotis] 11:59:14
+I'll call it read inputs
+
+[Leo Irakliotis] 11:59:20
+And for reading inputs, I don't need to give any more information to the method. That's why there is an empty pair of parentheses there. There is nothing
+
+[Leo Irakliotis] 11:59:30
+To communicate to you just what I want you to do is basically
+
+[Leo Irakliotis] 11:59:36
+Execute lines 1 through 3
+
+[Leo Irakliotis] 11:59:40
+from the left code
+
+[Leo Irakliotis] 11:59:45
+Right here
+
+[Leo Irakliotis] 11:59:48
+90% cleaner because
+
+[Leo Irakliotis] 11:59:51
+copy and paste could have been done better here
+
+[Leo Irakliotis] 12:00:00
+Same as before, only now that we read them, they're inside this magic box. These values do not exist inside outside this magic box that we call read inputs
+
+[Leo Irakliotis] 12:00:11
+return these values
+
+[Leo Irakliotis] 12:00:31
+And the last thing we need to do to plan for the output, let's say that somehow the computation is done
+
+[Leo Irakliotis] 12:00:39
+And we have the result. That $1,000 at 9% a year over 30 years, about $17,000 and change
+
+[Leo Irakliotis] 12:00:48
+How do I return the result?
+
+[Leo Irakliotis] 12:00:53
+Okay
+
+[Leo Irakliotis] 12:00:55
+Define
+
+[Leo Irakliotis] 12:00:57
+Show results
+
+[Leo Irakliotis] 12:00:58
+Or so result.
+
+[Leo Irakliotis] 12:01:08
+And what does the result involve usually
+
+[Leo Irakliotis] 12:01:13
+Well, it involves the total amount that you have
+
+[Leo Irakliotis] 12:01:23
+After the investment. But also you may want to show that how did you get the total amount? Well, I invested $1,000 in principle over 30 years at 9% and that's how I want. So to show the results, you want the same information as before. You want the principal, you want the interest rate, you want the term
+
+[Leo Irakliotis] 12:01:41
+But also, you
+
+[Leo Irakliotis] 12:01:45
+How much you get in total? So you want the total amount
+
+[Leo Irakliotis] 12:01:48
+And the interest and the principle in the term that produced that. So that's our method there. And
+
+[Leo Irakliotis] 12:01:58
+This is where we do the printing
+
+[Leo Irakliotis] 12:02:01
+And I think that Cadence asked for single printing, so I'm going to take this simple printing here
+
+[Leo Irakliotis] 12:02:08
+And just paste it here because I'm too lazy to type.
+
+[Leo Irakliotis] 12:02:13
+And I'll just go and do some cleanup of
+
+[Leo Irakliotis] 12:02:18
+The line
+
+[Leo Irakliotis] 12:02:30
+So now my logic is separate
+
+[Leo Irakliotis] 12:02:36
+For my input output. And now I can orchestrate
+
+[Leo Irakliotis] 12:02:42
+The program
+
+[Leo Irakliotis] 12:02:43
+by saying, first of all
+
+[Leo Irakliotis] 12:02:49
+obtain
+
+[Leo Irakliotis] 12:02:51
+The principal amount
+
+[Leo Irakliotis] 12:02:56
+The interest rate
+
+[Leo Irakliotis] 12:03:00
+And the term by invoking
+
+[Leo Irakliotis] 12:03:03
+The input concern
+
+[Leo Irakliotis] 12:03:05
+read inputs
+
+[Leo Irakliotis] 12:03:15
+Compute
+
+[Leo Irakliotis] 12:03:17
+total amount
+
+[Leo Irakliotis] 12:03:22
+By invoking the logic concern
+
+[Leo Irakliotis] 12:03:25
+which is compute future value
+
+[Leo Irakliotis] 12:03:32
+Compute future value requires information about the principal. I got that
+
+[Leo Irakliotis] 12:03:37
+It requires information about the rate. I got that requires information about the term. I got that. PRT, those are variables I named myself. I could have called them X, Y, Z, A, B, C, DDDF, DY, whatever you want
+
+[Leo Irakliotis] 12:03:52
+But basically remember that this method here is going to return three values. So I want three variables to grab those values so that I can communicate them to future methods
+
+[Leo Irakliotis] 12:04:04
+And then
+
+[Leo Irakliotis] 12:04:06
+Once I have my total
+
+[Leo Irakliotis] 12:04:09
+Show results
+
+[Leo Irakliotis] 12:04:16
+Sorry, what do you want? So this is the total amount based on this principle and this ratio and this term
+
+[Leo Irakliotis] 12:04:24
+So the code to the right now looks a little bit more complex than the code to the left
+
+[Leo Irakliotis] 12:04:32
+But we have separated logic, that's like the first three lines from input, that's lines five through nine, and output lines 11 through 16
+
+[Leo Irakliotis] 12:04:43
+In the actual program is these three lines.
+
+[Leo Irakliotis] 12:04:47
+Read the inputs, compute the value, show the results.
+
+[Leo Irakliotis] 12:05:00
+5 and 3 maybe
+
+[Leo Irakliotis] 12:05:04
+Principal amount $1,000
+
+[Leo Irakliotis] 12:05:07
+Interest rate 0.9%.
+
+[Leo Irakliotis] 12:05:09
+30 years
+
+[Leo Irakliotis] 12:05:17
+And we made a mistake. What is the mistake? It says that
+
+[Leo Irakliotis] 12:05:22
+Reading them, the error message is a kind of an art. It seems that I'm using this variable name here called interest rate
+
+[Leo Irakliotis] 12:05:34
+And it is not defined
+
+[Leo Irakliotis] 12:05:38
+Let's go into the program and see what I've done wrong.
+
+[Leo Irakliotis] 12:05:50
+type of interest instead of in test.
+
+[Leo Irakliotis] 12:05:55
+We'll fix this typo here
+
+[Leo Irakliotis] 12:05:57
+We'll fix this type of here as well
+
+[Leo Irakliotis] 12:06:03
+Interest rate, interest rate, any other typos, I don't see any other typos. Okay.
+
+[Leo Irakliotis] 12:06:11
+Save the program, try again. $1,000
+
+[Leo Irakliotis] 12:06:16
+9% over 30 years
+
+[Leo Irakliotis] 12:06:21
+Another type of show results is not defined. Why? Because
+
+[Leo Irakliotis] 12:06:25
+In one line, I call it show result
+
+[Leo Irakliotis] 12:06:29
+In another line, I call it so results. So let's go with Singular
+
+[Leo Irakliotis] 12:06:35
+Okay.
+
+[Leo Irakliotis] 12:06:41
+$1,000
+
+[Leo Irakliotis] 12:06:43
+9%, 30 years
+
+[Leo Irakliotis] 12:06:47
+There is our computation.
+
+[Leo Irakliotis] 12:06:49
+Now, the errors that you saw me correcting were purely typo errors, syntax errors. Those errors would have been avoided if I was using an integrated development environment instead of a command plain text editor because command integrated development environments are very much like Word
+
+[Leo Irakliotis] 12:07:08
+If you make a typo, they underline it and say, hey, you know, what do you mean here? So they're a little bit more proactive with helping you make silly mistakes
+
+[Leo Irakliotis] 12:07:20
+But I'm a big believer in making mistakes, silly or otherwise. And I'd rather make those mistakes in front of you for two or three reasons. First of all, to show you that
+
+[Leo Irakliotis] 12:07:33
+Age and experience are no factor in making mistakes. We all make mistakes.
+
+[Leo Irakliotis] 12:07:39
+And I'd rather make mistakes in front of you and correct them on my feet to show you how things are done. Even if we were a software development shop and we were working on an actual product.
+
+[Leo Irakliotis] 12:07:52
+We will be making mistakes.
+
+[Leo Irakliotis] 12:07:58
+What do you call a programmer who doesn't make mistakes?
+
+[Leo Irakliotis] 12:08:06
+And very bad program
+
+[Leo Irakliotis] 12:08:11
+And if you ever meet a program says, you know, I don't make mistakes.
+
+[Leo Irakliotis] 12:08:14
+Probably they're not a programmer. Probably they're, you know, there may have been a programmer 20 years ago, and for the last 20 years, they've been, you know.
+
+[Leo Irakliotis] 12:08:24
+Not writing code, but a good programmer makes mistakes and I
+
+[Leo Irakliotis] 12:08:30
+I'm going to solve those mistakes. And sometimes those mistakes are silly. You know, in this code
+
+[Leo Irakliotis] 12:08:36
+I named this method originally read inputs. Sorry, show result, singular. And then here I typed show results
+
+[Leo Irakliotis] 12:08:46
+So syntactical errors, even will show up, typos will show up. And if we were using an integrated environment, we may have called them before we even tried the program for the first time.
+
+[Leo Irakliotis] 12:09:01
+So we're going to make, even with an IDE, even with a sophisticated tool as an ID will make mistakes.
+
+[Leo Irakliotis] 12:09:11
+What we see here is a program that is written down in three parts, three methods
+
+[Leo Irakliotis] 12:09:18
+And once we test the code and we're satisfied that it's correct, it's like when you go to the coffee shop and you order something, you don't tell your barista how to make you a caramel macchiato.
+
+[Leo Irakliotis] 12:09:31
+You just reference to the process by its name. So we don't really care how the computer reads the inputs. All we care is that we have a reliable method to obtain the inputs from the user and then pass these values
+
+[Leo Irakliotis] 12:09:47
+To another method that computes
+
+[Leo Irakliotis] 12:09:50
+something based on those inputs
+
+[Leo Irakliotis] 12:09:52
+And at some point, we are going to get sophisticated enough to write code like this
+
+[Leo Irakliotis] 12:10:01
+So I'm going to comment out those lines.
+
+[Leo Irakliotis] 12:10:08
+And I am
+
+[Leo Irakliotis] 12:10:16
+Going to rewrite these. You know what? No, too much for first week.
+
+[Leo Irakliotis] 12:10:22
+We'll leave it here for now because we're out of time. Instead, let me fire up, let me close these files
+
+[Leo Irakliotis] 12:10:29
+And fire up
+
+[Leo Irakliotis] 12:10:33
+The integrated development environment
+
+[Leo Irakliotis] 12:10:38
+And show you how we could have avoided those mistakes in that setting. So let me open
+
+[Leo Irakliotis] 12:10:49
+In my E drive, you have clones 170. Let's open this folder
+
+[Leo Irakliotis] 12:10:57
+During week two
+
+[Leo Irakliotis] 12:10:59
+Let me make the fonts a little bit larger
+
+[Leo Irakliotis] 12:11:01
+And I want to open this file
+
+[Leo Irakliotis] 12:11:08
+In this file
+
+[Leo Irakliotis] 12:11:12
+And make some room here.
+
+[Leo Irakliotis] 12:11:21
+Okay and put this symbol file
+
+[Leo Irakliotis] 12:11:28
+Okay, close this
+
+[Leo Irakliotis] 12:11:34
+Move this here and that's all I want. Okay
+
+[Leo Irakliotis] 12:11:38
+So maybe it's smaller phones. So to the left, again, I have the naive code that we wrote earlier, and to the right, I have the code we just wrote. So now I'm in the integrated development environment
+
+[Leo Irakliotis] 12:11:53
+And let's make the mistake I made before. I call this method here showResult
+
+[Leo Irakliotis] 12:11:58
+And I call here so results.
+
+[Leo Irakliotis] 12:12:03
+Right now, you can see the underlying here says, what's going… so visually, there is a cure. What's going on here?
+
+[Leo Irakliotis] 12:12:08
+And if I hover my mouse over this underlining, you'll see the error. Before you even execute the code, it says, hey, you know what, something's wrong here
+
+[Leo Irakliotis] 12:12:18
+And what's wrong? Show results is not defined
+
+[Leo Irakliotis] 12:12:21
+Not the most user-friendly message, but through experience, you're getting used to those messages. Go, oh, okay. And and
+
+[Leo Irakliotis] 12:12:30
+Because these tools are now enhanced by AI subsystems. You see here online 11
+
+[Leo Irakliotis] 12:12:39
+This symbol, the curved arrow, that is the universal symbol for the tab key. And if you press the tab key here, it will auto correct
+
+[Leo Irakliotis] 12:12:54
+The code
+
+[Leo Irakliotis] 12:13:02
+So results here, saw results down there. So now the code is correct. There's no more underlining and I can execute the code like I executed before. And again, it will ask me for the same information, $1,000
+
+[Leo Irakliotis] 12:13:15
+9% interest rate over 30 years
+
+[Leo Irakliotis] 12:13:19
+Where is the output
+
+[Leo Irakliotis] 12:13:24
+In the great development environments, great tools.
+
+[Leo Irakliotis] 12:13:28
+Are we ready for them yet?
+
+[Leo Irakliotis] 12:13:30
+We will get there in three to five weeks, but for now, I would prefer to do things side by side to reinforce not only a text editor like Python, but also our ability to run simple operating system commands straight there
+
+[Leo Irakliotis] 12:13:49
+at the command line interface
+
+[Leo Irakliotis] 12:14:02
+As I'm wrapping things up
+
+[Leo Irakliotis] 12:14:08
+When you look at code like this, there are certain things that a lot of things that are missing. So when we write code, it's a good idea to add comments to the code to narrate in a natural language what you're trying to do and why
+
+[Leo Irakliotis] 12:14:25
+So someone
+
+[Leo Irakliotis] 12:14:28
+You can see in this code on line 2 that you're doing some mathematical operation, and if they look close, you say, okay, you have this quantity called principal times another quantity exponentiation, and by the judging by the name of the variables, okay, you're computing compound interest
+
+[Leo Irakliotis] 12:14:44
+Got it
+
+[Leo Irakliotis] 12:14:47
+What if your variables were a little bit more cryptic instead of principle, interest rate and term, you had XYZ
+
+[Leo Irakliotis] 12:14:56
+or A B C
+
+[Leo Irakliotis] 12:14:58
+Again, we're trying to give variables meaningful names
+
+[Leo Irakliotis] 12:15:03
+But what if
+
+[Leo Irakliotis] 12:15:06
+as your as part of your job, you're looking at code that Simon wrote 30 years ago.
+
+[Leo Irakliotis] 12:15:10
+And they were not very good programmers, and you're trying to figure out what they're doing. If there are no comments, you really it's going to be a mess. So we write comments to describe what we're doing, not only to help other people understand our code
+
+[Leo Irakliotis] 12:15:26
+But also to help ourselves understand our code. Because if you look at this code six weeks later as is, you may not remember what you were trying to do.
+
+[Leo Irakliotis] 12:15:36
+Okay, this is a very simple code. Of course you remember what you were trying to do. But
+
+[Leo Irakliotis] 12:15:42
+As your code becomes more sophisticated, comments are there for you as well as for other developers. But when I write code live like this in front of you, my comments is what I say. And when I post this code
+
+[Leo Irakliotis] 12:15:56
+on GitHub for your reading assignment
+
+[Leo Irakliotis] 12:16:01
+there will be comments there, so you will see extensive comments here describing
+
+[Leo Irakliotis] 12:16:22
+Okay, so that would be a lot of comments there.
+
+[Leo Irakliotis] 12:16:25
+Another thing you're going to find when you write your first Python code is that white space matters.
+
+[Leo Irakliotis] 12:16:35
+Notice that
+
+[Leo Irakliotis] 12:16:37
+In line one, I start writing
+
+[Leo Irakliotis] 12:16:40
+The line at the very first position
+
+[Leo Irakliotis] 12:16:44
+And then in line two and below, everything is two spaces.
+
+[Leo Irakliotis] 12:16:49
+to the right
+
+[Leo Irakliotis] 12:16:51
+Until I go on line 5 when I'm back to the original position.
+
+[Leo Irakliotis] 12:16:56
+There is this concept in programming called scope, when you define, for example, here in line five, I'm defining this recipe for how to reading inputs.
+
+[Leo Irakliotis] 12:17:06
+The scope of that recipe is everything under that header that is tabulated to the right
+
+[Leo Irakliotis] 12:17:14
+And the tabulation has to be consistent. Two spaces or three space if you want odd numbers or 16 spaces if you like pressing the key, the space button too much. But it has to be the same amount of spacing
+
+[Leo Irakliotis] 12:17:29
+Because if
+
+[Leo Irakliotis] 12:17:31
+I do something silly accidentally
+
+[Leo Irakliotis] 12:17:35
+Right here
+
+[Leo Irakliotis] 12:17:37
+In line 7
+
+[Leo Irakliotis] 12:17:38
+And I put this one space to the right, the program will have problems executing. Python is very strict with wide spacing
+
+[Leo Irakliotis] 12:17:49
+And there is nothing you can do about it.
+
+[Leo Irakliotis] 12:17:52
+We're going to experience that, and we're going to make that mistake often again and again and again. And if we do this mistake in an IDE here
+
+[Leo Irakliotis] 12:18:02
+You'll see it right away. You see the red underlying, the red squiggly lines. You go, oh, okay, spacing issue. Fine
+
+[Leo Irakliotis] 12:18:12
+But otherwise
+
+[Leo Irakliotis] 12:18:19
+Be prepared for missing a space here or there.
+
+[Leo Irakliotis] 12:18:23
+We're going to talk more about scope next week. So what you have coming your way for this week is quite a bit of reading assignment, including this code with extensive comments
+
+[Leo Irakliotis] 12:18:35
+And I would like to ask you, there is no assignment here next week, but I would like you to come to class prepared
+
+[Leo Irakliotis] 12:18:43
+on Monday to write code in front of other people. Like I've been doing for the last hour
+
+[Leo Irakliotis] 12:18:48
+And for that, I will give you a couple of things to practice over the weekend
+
+[Leo Irakliotis] 12:18:54
+I'm not going to make it a requirement because you have the biggest incentive to have it done by Monday
+
+[Leo Irakliotis] 12:19:02
+others will notice if you didn't
+
+[Leo Irakliotis] 12:19:08
+Questions, comments
+
+[Bella Fiorucci] 12:19:10
+I have a question of just to clarify, with the spacing on the line, so whenever you're defining your method and then you, like, indent space all of the things underneath it, for comments, since they're not included in part of
+
+[Leo Irakliotis] 12:19:11
+Again, yeah, Bella
+
+[Bella Fiorucci] 12:19:25
+like, the actual running of the code, do they also have to follow that even spacing? Or can you, like, space them sort of however you want, because they're not?
+
+[Bella Fiorucci] 12:19:35
+In the code, in the same way.
+
+[Leo Irakliotis] 12:19:48
+There you are.
+
+[Leo Irakliotis] 12:19:51
+And if I run the code
+
+[Leo Irakliotis] 12:19:53
+It still runs. So comments do not matter, but if you scatter them all over the place, then things will look kind of off. They will not look good. So a code you have, your code needs to be well built, robust
+
+[Leo Irakliotis] 12:20:08
+So you follow the same spacing rules for comments as for your statements, not because you have to, because you can put comments anywhere you want online
+
+[Leo Irakliotis] 12:20:21
+But because
+
+[Leo Irakliotis] 12:20:23
+If you start doing, you know, two spaces here, five spaces there, it will not look good
+
+[Bella Fiorucci] 12:20:28
+Okay, thank you.
+
+[Leo Irakliotis] 12:20:29
+So it's all about
+
+[Leo Irakliotis] 12:20:33
+A code that is visually robust is code that is easy to maintain.
+
+[Bella Fiorucci] 12:20:37
+Okay.
+
+[Leo Irakliotis] 12:20:38
+We follow all these appearance rules not because there's some stylistic guidelines, but because it makes the code more maintainable.
+
+[Leo Irakliotis] 12:20:49
+Again, we are into, I'm drinking from a fire hydrant metaphor here. Things will fall in place, especially after you spend a couple of hours reading the material I'll be sharing with you today.
+
+[Leo Irakliotis] 12:21:04
+If there are no more questions, I'll see you and probably put some of you on the spot Monday morning.
+
+[Bella Fiorucci] 12:21:10
+Thank you, have a good week.
+
+[Leo Irakliotis] 12:21:13
+Have a great weekend, everyone. Bye-bye.
+
