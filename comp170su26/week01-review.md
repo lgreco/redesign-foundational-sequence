@@ -208,7 +208,10 @@ $ python3 hello.py
 Hello, World!
 ```
 
-**Goal:** Confirm your environment is working. If you see `Hello, World!`, everything is set up correctly.
+Questions:
+1. What does `print` do? What would happen if you removed the parentheses?
+2. What do the quotation marks tell Python?
+3. Introduce a deliberate error — remove the closing `)` and run the program again. Read the error message. What does it tell you, and on which line?
 
 ---
 
@@ -221,6 +224,10 @@ Then add a second `print` statement so the program outputs two lines — for exa
 Hello, Alice!
 Welcome to COMP 170.
 ```
+
+Questions:
+1. Python ran your two `print` statements in order, top to bottom. What would happen if you swapped them?
+2. Is `"Alice"` in `print("Hello, Alice!")` a variable or a string literal? What is the difference?
 
 ---
 
@@ -235,7 +242,7 @@ print("comp" + "170")
 print("ha" * 3)
 ```
 
-Questions to answer for yourself after running:
+Questions:
 1. What does `+` do when both values are strings?
 2. What does `*` do when one value is a string and the other is an integer?
 3. What happens if you try `print("hello" + 5)`? Try it and read the error message carefully.
@@ -295,6 +302,11 @@ Name: Alice
 Major: Computer Science
 Days left in the semester: 42
 ```
+
+Questions:
+1. Why store your name in a variable instead of writing it directly inside each `print` call? What would change if you needed to update the name?
+2. Your arithmetic expression produces a number. What type is it — `int` or `float`? How can you check?
+3. What happens if you use the variable name before assigning it a value? Try it and read the error.
 
 ---
 
