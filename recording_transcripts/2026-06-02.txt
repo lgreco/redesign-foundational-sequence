@@ -1,0 +1,2259 @@
+[Leo Irakliotis] 10:26:47
+All right, good morning, everyone.
+
+[Temeeka Glass] 10:26:49
+Good morning.
+
+[Leo Irakliotis] 10:26:50
+I think we're ready now.
+
+[Leo Irakliotis] 10:26:52
+Any questions, any comments, any requests before we get started?
+
+[Kofi Nyarku] 10:26:58
+Yeah, Professor, I have a question. So I did, I saw your email and I did go through, try to review the stuff that you access to do. Do you expect us to write you
+
+[Kofi Nyarku] 10:27:10
+I know other classes, they had to write like a reflection. You don't okay sorry
+
+[Leo Irakliotis] 10:27:15
+When it's time for you to write something, I will give you specific instructions, I will say so. What I expect is
+
+[Leo Irakliotis] 10:27:26
+To read the stuff that I post and to read with attention and purpose. Not to just browse, but to read, and by reading, I mean to read like a lawyer
+
+[Leo Irakliotis] 10:27:38
+How do lawyers read things? They question
+
+[Leo Irakliotis] 10:27:43
+Every word, why are you using this word here
+
+[Leo Irakliotis] 10:27:49
+Instead of another word
+
+[Leo Irakliotis] 10:27:52
+Especially when you think that someone could have used another word, why did they go to the trouble of choosing a particular word?
+
+[Leo Irakliotis] 10:28:02
+So this is
+
+[Leo Irakliotis] 10:28:08
+Intense
+
+[Leo Irakliotis] 10:28:10
+purposeful reading with intention
+
+[Leo Irakliotis] 10:28:15
+And
+
+[Leo Irakliotis] 10:28:18
+That's how I want you to read, to go line by line and reflect on your own
+
+[Leo Irakliotis] 10:28:25
+What is he trying to say here? What is he trying to communicate? And why does he think it is important to communicate this to us?
+
+[Leo Irakliotis] 10:28:36
+And when you cannot answer those questions, what is it trying? What Leo is trying to communicate to us
+
+[Leo Irakliotis] 10:28:44
+And why does he think this is important to communicate to us?
+
+[Leo Irakliotis] 10:28:49
+Come back with questions, and ask me those questions. Why did you bother to write four lines about X, Y, Z?
+
+[Leo Irakliotis] 10:28:57
+Why is that important in your head? What's going on in your head
+
+[Leo Irakliotis] 10:29:03
+Because
+
+[Leo Irakliotis] 10:29:07
+When they say the devil is the details, you've heard that expression, the devil is in the details.
+
+[Leo Irakliotis] 10:29:12
+And it's not like I'm intentionally hiding the devil in the details, but because we're discussing nuance and fine details and an abstraction that is not part of our everyday life experience, our everyday life is very simple
+
+[Leo Irakliotis] 10:29:30
+We go to the coffee shop, we order coffee. Okay, some of us are, you know, show offs and we go to the coffee shop and we order something like when I'm in the mood, I will order a
+
+[Leo Irakliotis] 10:29:47
+Chai latte with six pumps, no water, no foam, extra hot, and you know it takes about half an hour to figure out how to do it. But most of us go to the store and we buy coffee, go to the restaurant and we buy a burger
+
+[Leo Irakliotis] 10:30:01
+So we meet friends on the street and we talk about the weather, about how family our families are, what are our plans for next weekend.
+
+[Leo Irakliotis] 10:30:12
+In Chicago, we still talk about the bears. I don't know for how much longer we'll be talking about the bears, but this is the simplicity
+
+[Leo Irakliotis] 10:30:21
+of our everyday discourse. And when we're looking at programming
+
+[Leo Irakliotis] 10:30:26
+or any STEM-related concept, any science-related concept, there is nuance, there is detail, there are
+
+[Leo Irakliotis] 10:30:35
+So many details and so many definitions that we really have to pay attention, so that's why it's important
+
+[Leo Irakliotis] 10:30:44
+to read these things and understand what's going on here. We have to spend a little bit more time
+
+[Leo Irakliotis] 10:30:53
+Analyzing the context and the content.
+
+[Leo Irakliotis] 10:30:58
+That's, that's the most… really, if you master this, if you can look at the document, whether it's a computer program or a memo and
+
+[Leo Irakliotis] 10:31:10
+Ask the right questions about it
+
+[Leo Irakliotis] 10:31:13
+That's a life skill and
+
+[Leo Irakliotis] 10:31:18
+A soft skill, a professional soft skill that sets you apart, sets you in the top 5% of the workforce
+
+[Leo Irakliotis] 10:31:26
+Not because the other 95% is not capable of doing it, but because they have not practiced it, they have not been incentivized to do that. But the top five, the top 10% of the workforce are people who
+
+[Leo Irakliotis] 10:31:41
+actually read and write well, regardless of their technical competence. I mean, the technical competence has to be there. If you don't know how to program and you're a good writer, you're not going to do very well in the tech industry, but you're going to have a great career
+
+[Leo Irakliotis] 10:31:55
+as you know, an offer. But if you have a strong technical background, and you're a good reader and a good writer sky's the limit, no matter how many jobs are eliminated because of AI.
+
+[Leo Irakliotis] 10:32:11
+All right.
+
+[Temeeka Glass] 10:32:12
+Um, sorry, I do have a question.
+
+[Leo Irakliotis] 10:32:13
+Yeah
+
+[Temeeka Glass] 10:32:14
+Um, so I… with a resi… I had a question on the resize method.
+
+[Temeeka Glass] 10:32:19
+Um, being, like, double, uh, because, like, in one…
+
+[Leo Irakliotis] 10:32:19
+Yeah.
+
+[Temeeka Glass] 10:32:22
+instance, you said, like, not to add,
+
+[Temeeka Glass] 10:32:26
+Um, like, a… like, an unnecessary amount.
+
+[Temeeka Glass] 10:32:30
+So, if we're, like, adding one…
+
+[Temeeka Glass] 10:32:33
+Um…
+
+[Temeeka Glass] 10:32:34
+item to the list, and we're doubling it, why not, uh…
+
+[Temeeka Glass] 10:32:39
+Why don't we just, um, like, keep track of, like, how many items are in the array, and only add…
+
+[Temeeka Glass] 10:32:45
+like, as much space as that's needed.
+
+[Temeeka Glass] 10:32:49
+If that makes it.
+
+[Leo Irakliotis] 10:32:50
+Well, at the very least, we need one more space because, okay, so we don't know how many, okay, again, what is the context here? We are creating we're trying to keep track of the zip codes where we have friends. We just made a new friend in a zip code that is not in the database. We're adding that zip code
+
+[Temeeka Glass] 10:32:53
+Okay.
+
+[Leo Irakliotis] 10:33:09
+We don't know how many more friends we're going to be making in the near future
+
+[Leo Irakliotis] 10:33:16
+So for all you care, it's going to be zero. You just made your last friend. So all you need to really do is increase the size of the underlying array by just one
+
+[Leo Irakliotis] 10:33:26
+Doubling
+
+[Leo Irakliotis] 10:33:28
+Well, you know
+
+[Leo Irakliotis] 10:33:30
+If you had 4 friends and you made one more friend, five, but now you have room for a total of 8 friends, and you're never going to make another friend again, you have those 3 spaces there sitting empty and idle, and that's a waste of space.
+
+[Leo Irakliotis] 10:33:44
+So there is, but between adding just one and doubling the size or tripling the size or quadrupling the size, there is a sweet spot somewhere
+
+[Leo Irakliotis] 10:33:56
+And it is up to you to, as a designer, you're the architect, you own this thing. As long as you can justify, not convince me
+
+[Leo Irakliotis] 10:34:07
+Not justified to convince me, but justify to yourself that the resizing that you do
+
+[Leo Irakliotis] 10:34:15
+Makes sense to you.
+
+[Leo Irakliotis] 10:34:17
+And explain why it makes sense to you
+
+[Leo Irakliotis] 10:34:22
+That's all I need. I'm not going to question your justification. I want to see your justification. That's
+
+[Leo Irakliotis] 10:34:30
+So let's do this example with something very trivial. Let's say
+
+[Leo Irakliotis] 10:34:38
+That
+
+[Leo Irakliotis] 10:34:43
+I keep forgetting that every time I end a meeting, the tablet resets itself. So excuse me for a second while
+
+[Leo Irakliotis] 10:34:58
+I am telling it how… where to find the writing area
+
+[Leo Irakliotis] 10:35:02
+I want to go from here to basically here. Okay, there we are
+
+[Leo Irakliotis] 10:35:10
+All right.
+
+[Leo Irakliotis] 10:35:14
+So let's say that we started with an array that had a capacity of four.
+
+[Leo Irakliotis] 10:35:22
+And we finally added
+
+[Leo Irakliotis] 10:35:26
+For friends in it
+
+[Leo Irakliotis] 10:35:29
+Okay.
+
+[Leo Irakliotis] 10:35:30
+And
+
+[Leo Irakliotis] 10:35:32
+Now
+
+[Leo Irakliotis] 10:35:35
+We made
+
+[Leo Irakliotis] 10:35:37
+A new friend
+
+[Leo Irakliotis] 10:35:39
+What can we do? Well
+
+[Leo Irakliotis] 10:35:42
+we can increase the size of this array by just one
+
+[Leo Irakliotis] 10:35:49
+And not the new friend we made. Or
+
+[Leo Irakliotis] 10:35:53
+We can
+
+[Leo Irakliotis] 10:35:55
+double the size
+
+[Leo Irakliotis] 10:35:59
+Of the array by adding another 4 positions.
+
+[Leo Irakliotis] 10:36:13
+But if this is our last
+
+[Leo Irakliotis] 10:36:17
+ever friend
+
+[Leo Irakliotis] 10:36:20
+We are wasting this space, right?
+
+[Leo Irakliotis] 10:36:24
+So
+
+[Leo Irakliotis] 10:36:28
+door number one, a better solution, or door number two, a better solution.
+
+[Temeeka Glass] 10:36:37
+I… sorry.
+
+[Leo Irakliotis] 10:36:40
+Yeah, go ahead, Amika.
+
+[Temeeka Glass] 10:36:41
+I would want to say maybe door…
+
+[Temeeka Glass] 10:36:44
+Number 1…
+
+[Temeeka Glass] 10:36:46
+Although, I know this… I know there's stuff having to do with, like,
+
+[Temeeka Glass] 10:36:51
+the bite size of some… oh, I mean, if we were assuming everything's the same bite size, then we probably would never run into, like, an over…
+
+[Temeeka Glass] 10:36:58
+Hello, thing, but, um…
+
+[Temeeka Glass] 10:37:01
+I would say one.
+
+[Temeeka Glass] 10:37:05
+Okay.
+
+[Leo Irakliotis] 10:37:06
+of glass person because you think that this is the last friend I'll ever make, I will never make another friend in my life so I don't need to extend the database, right? What if
+
+[Leo Irakliotis] 10:37:17
+What if
+
+[Leo Irakliotis] 10:37:19
+At some point, you make another friend and now you have to go through the effort again.
+
+[Leo Irakliotis] 10:37:26
+You have the space here. But really, it's, you know we're going to look at a little bit more. We're going to quantify this in a second. Jalil, what's in your mind?
+
+[Soaga, Jeleel] 10:37:38
+Um, I think, like,
+
+[Soaga, Jeleel] 10:37:42
+two would honestly be better, just because, like,
+
+[Soaga, Jeleel] 10:37:45
+if we're… if we're talking in, like, you know, having friends, right? Like, if you're a very pessimistic person, like…
+
+[Soaga, Jeleel] 10:37:52
+And you think that's the only friend you're ever gonna have, sure, but…
+
+[Soaga, Jeleel] 10:37:56
+I think because there's always a chance for a relationship, and if we're talking in, like,
+
+[Soaga, Jeleel] 10:38:03
+Um, like, data structures and, like, sets and stuff like that, like, there's always going to be more.
+
+[Soaga, Jeleel] 10:38:10
+Um, and I feel like having… having that space for more,
+
+[Soaga, Jeleel] 10:38:16
+Um, that kind of alleviates the pressure of now you have to, like, go back and, like, um…
+
+[Soaga, Jeleel] 10:38:21
+create more space.
+
+[Leo Irakliotis] 10:38:28
+What if you are a very popular person
+
+[Leo Irakliotis] 10:38:31
+But only in a particular neighborhood in Chicago. So I live in North Park, right? It's about 4 miles west of campus near Kimball and Foster. And all my friends are on the same zip code, 60625. And I make friends every day
+
+[Leo Irakliotis] 10:38:50
+But they're all in the same zip code, and I have 1,000 friends
+
+[Leo Irakliotis] 10:38:56
+that are on the same zip code. All I need is an array of size 1 here
+
+[Leo Irakliotis] 10:39:00
+I keep making friends, new friends every day
+
+[Leo Irakliotis] 10:39:04
+You know, and but they're all on the same zip code, 606
+
+[Leo Irakliotis] 10:39:13
+Right? So there's that. But let's… okay, so these are
+
+[Leo Irakliotis] 10:39:18
+Two hypothetical scenarios, one friend versus multiple friends in multiple zip codes
+
+[Leo Irakliotis] 10:39:23
+Versus multiple friends in multiple… in the same zip code. So let's quantify this. Let's say that we start… our array has an original size, whether it's 4 or 2
+
+[Leo Irakliotis] 10:39:34
+whatever we want to make it. Okay, so let's make it 2, because 2 is the smallest non-trivial binary number.
+
+[Leo Irakliotis] 10:39:44
+the second smallest non-trivial, the first trivial binary number is 2 to the power. No, no, it's the second. The first is 2 to the power 0, which is one, and the second smallest is 2 to the power one, which is 2. Alright, so we start with this. We have room for only two friends, and we run out of space
+
+[Leo Irakliotis] 10:40:01
+How do we expand this array? Do we multiply it by 2, so we go to 4, and then we go to 8, 16, 32, and so on? Or
+
+[Leo Irakliotis] 10:40:10
+Do we say
+
+[Leo Irakliotis] 10:40:13
+It will imply a similar rule, extend, expand, resize
+
+[Leo Irakliotis] 10:40:23
+By 10%.
+
+[Leo Irakliotis] 10:40:26
+Okay, add 10%. Why 10%? I'm just pulling it out of thin air to make a point.
+
+[Leo Irakliotis] 10:40:33
+And by resizing by 10%
+
+[Leo Irakliotis] 10:40:36
+What is 10% on an array of size 2? If an array has two elements, what's 10% of two elements?
+
+[Leo Irakliotis] 10:40:43
+0.2. So does that mean that I'm going to have an array with 2.2 elements?
+
+[Leo Irakliotis] 10:40:53
+That's not possible.
+
+[Leo Irakliotis] 10:40:55
+Array size has to be
+
+[Leo Irakliotis] 10:40:58
+Being a jerk
+
+[Leo Irakliotis] 10:41:01
+We're enumerating things. You cannot say there are three and a half students in my course
+
+[Leo Irakliotis] 10:41:09
+There are either 3 or 4 make up your mind
+
+[Leo Irakliotis] 10:41:13
+So if I resize by 10%, that will necessitate an array of size 2.2 that doesn't exist. So I'm revising the rule
+
+[Leo Irakliotis] 10:41:23
+And I'm saying resize
+
+[Leo Irakliotis] 10:41:29
+By the floor function
+
+[Leo Irakliotis] 10:41:32
+20%.
+
+[Leo Irakliotis] 10:41:36
+Not the floor of the ceiling faction
+
+[Leo Irakliotis] 10:41:40
+Length
+
+[Leo Irakliotis] 10:41:42
+Times
+
+[Leo Irakliotis] 10:41:44
+10%
+
+[Leo Irakliotis] 10:41:47
+And take the ceiling function. What is the ceiling function value of 2.2?
+
+[Leo Irakliotis] 10:41:52
+That's three. The next higher integer
+
+[Leo Irakliotis] 10:41:57
+So if you resize by 30% here, what is 30% of 2
+
+[Leo Irakliotis] 10:42:04
+about 66 0.66. Well, you cannot have an array with 2.66 elements, but when you take the ceiling of it, that's 3 elements.
+
+[Leo Irakliotis] 10:42:14
+So you can create a rule that says resize by 10% and 10% when you have small arrays will give you just one extra space because you just have one to add that one extra person.
+
+[Leo Irakliotis] 10:42:25
+But as your array grows
+
+[Leo Irakliotis] 10:42:28
+And you go from size 2 to size 3
+
+[Leo Irakliotis] 10:42:34
+And let's say query sizing by adding 10% to keep consistent. So we go to 3, we go from 3 to 4
+
+[Leo Irakliotis] 10:42:44
+That's plus 10
+
+[Leo Irakliotis] 10:42:47
+But we take the ceiling function of 10
+
+[Leo Irakliotis] 10:42:53
+From 4, we go to 5, 5 to 6, 6 to 7, 7 to 8, 8 to 9, 9 to 10
+
+[Leo Irakliotis] 10:43:01
+And then we end up with an array with 10 elements
+
+[Leo Irakliotis] 10:43:12
+And we add 10
+
+[Leo Irakliotis] 10:43:14
+10% of 10 is one
+
+[Leo Irakliotis] 10:43:16
+So we go to 11
+
+[Leo Irakliotis] 10:43:20
+And 10% of 11 is 12. Again, we take this, actually, 10% of 11 is 13
+
+[Leo Irakliotis] 10:43:30
+11 times
+
+[Leo Irakliotis] 10:43:34
+10%
+
+[Leo Irakliotis] 10:43:37
+Let me write it mathematically correct. 11, the current size
+
+[Leo Irakliotis] 10:43:41
+Plus, the current size times 10
+
+[Leo Irakliotis] 10:43:47
+That 11 plus what's 10%
+
+[Leo Irakliotis] 10:43:51
+of 11, 1.1
+
+[Leo Irakliotis] 10:43:54
+That
+
+[Leo Irakliotis] 10:43:55
+12.1. And again, this is all the ceiling function. That's 13 elements. So we're going from 11 to 13. So we just added 2 elements in an array that had 11 elements
+
+[Leo Irakliotis] 10:44:09
+We just added two new elements, one of it to place a new friend and one that remains vacant. So right now we're wasting only one position. So if we never made another friend again, our waste is minimized here
+
+[Leo Irakliotis] 10:44:28
+Now we grow up to 30 friends.
+
+[Leo Irakliotis] 10:44:31
+And we make a new friend, and we're doing 10%. That takes SRA from 30 to 33.
+
+[Leo Irakliotis] 10:44:40
+So the increment is relatively smaller, which guarantees less waste.
+
+[Leo Irakliotis] 10:44:46
+Which addresses Tamika's point, but there's always a bar. It's a trade-off
+
+[Leo Irakliotis] 10:44:51
+Every time we increase the size of the array, we go through a loop that takes the contents of the current array
+
+[Leo Irakliotis] 10:45:00
+and copies it to the new array, because what do we do? We have
+
+[Leo Irakliotis] 10:45:05
+We had an array with four elements.
+
+[Leo Irakliotis] 10:45:10
+And all of them
+
+[Leo Irakliotis] 10:45:13
+who are occupied. So we have friends A, B, C, D. And now, we have a new friend arriving, friend E.
+
+[Leo Irakliotis] 10:45:21
+But there is no room for this friend in an array of size 4. What do we do? Well, we create a temporary array
+
+[Leo Irakliotis] 10:45:29
+That had double the size of elements
+
+[Leo Irakliotis] 10:45:38
+Then we copy the existing elements here
+
+[Leo Irakliotis] 10:45:47
+Then we place the new friend here
+
+[Leo Irakliotis] 10:45:51
+No, we don't place a new friend here yet
+
+[Leo Irakliotis] 10:45:57
+We take this entire
+
+[Leo Irakliotis] 10:46:02
+new array
+
+[Leo Irakliotis] 10:46:04
+And we replace it, we use it to replace
+
+[Leo Irakliotis] 10:46:09
+the existing underlying arrays. So now this is our underlying array, and in the new underlying array there is room for the new friend
+
+[Leo Irakliotis] 10:46:19
+This process create a new array, copy the… whether it's double the size or just one extra space
+
+[Leo Irakliotis] 10:46:27
+requires some time to copy the existing elements
+
+[Leo Irakliotis] 10:46:32
+So that takes
+
+[Leo Irakliotis] 10:46:34
+repetitions. How many repetitions? How? What is the this as many as is the size
+
+[Leo Irakliotis] 10:46:40
+of the current array.
+
+[Leo Irakliotis] 10:46:42
+And if we do the scoping often, just to increment the array by one, that takes
+
+[Leo Irakliotis] 10:46:48
+We're spending electricity, we're spending time, we're consuming, we're dedicating resources
+
+[Leo Irakliotis] 10:46:57
+To the process
+
+[Leo Irakliotis] 10:46:58
+So on the other end, we're not wasting too much memory by having an array. We had 128 friends. We made a new friend, we doubled the size of our array. We have now 256 positions
+
+[Leo Irakliotis] 10:47:12
+129 French, which means that 127 positions will remain empty
+
+[Leo Irakliotis] 10:47:17
+So we have a trade-off between a lot of unused space versus a lot of processing to copy things more often than otherwise.
+
+[Leo Irakliotis] 10:47:27
+How do we decide
+
+[Leo Irakliotis] 10:47:30
+What's the best way to settle this trade off
+
+[Leo Irakliotis] 10:47:34
+It all depends on the application for which we write
+
+[Leo Irakliotis] 10:47:40
+this
+
+[Leo Irakliotis] 10:47:43
+Data structure
+
+[Leo Irakliotis] 10:47:44
+If we expect this data structure to accommodate a lot of demands for increased space, it may be worth to double the size, double the size, double the size, because that way we'll always have available room without going through the expense of resizing.
+
+[Leo Irakliotis] 10:47:58
+If we expect this data structure to grow more slowly
+
+[Leo Irakliotis] 10:48:04
+Then we increment the underlying array by a smaller factor instead of doubling it, maybe 10% or 20% instead of 200%.
+
+[Leo Irakliotis] 10:48:14
+But between 10% and 300, 400%, there is a sweet spot. How do we find about it?
+
+[Leo Irakliotis] 10:48:21
+Sometimes we don't know how to find about it. Sometimes we get have a clear understanding of what is the application domain
+
+[Leo Irakliotis] 10:48:28
+And it's easy to do, and sometimes we're clueless, and when we are clueless, when we have a choice of ranges, and we're clueless, we're exactly the sweet spot is
+
+[Leo Irakliotis] 10:48:41
+The solution is to parameterize things even more
+
+[Leo Irakliotis] 10:48:49
+How do we parameterize things? Well
+
+[Leo Irakliotis] 10:48:52
+In the code
+
+[Leo Irakliotis] 10:49:22
+In the code
+
+[Leo Irakliotis] 10:49:25
+On line 20 here
+
+[Leo Irakliotis] 10:49:27
+We are hard coding the resizing factor, our choice of a resizing factor to two
+
+[Leo Irakliotis] 10:49:35
+So basically we're committing by extending the array by 200% every time
+
+[Leo Irakliotis] 10:49:40
+from 4 to 8 to 16, and so on. But
+
+[Leo Irakliotis] 10:49:44
+What if
+
+[Leo Irakliotis] 10:49:47
+We took a more nuanced approach
+
+[Leo Irakliotis] 10:49:50
+And say, hey, Lisa, the default resizing will be two
+
+[Leo Irakliotis] 10:49:57
+But if we allow the user
+
+[Leo Irakliotis] 10:50:05
+To choose a we may want to allow the user to choose a different resize factor
+
+[Leo Irakliotis] 10:50:10
+But if they don't want to choose, we'll double the size. If they want to go more conservative, they will have that option. If they want to go more aggressive
+
+[Leo Irakliotis] 10:50:20
+like, quadruple the size instead of doubling, quadrupling
+
+[Leo Irakliotis] 10:50:24
+They can do that as well.
+
+[Leo Irakliotis] 10:50:27
+And the design of our program then becomes a little bit different
+
+[Leo Irakliotis] 10:50:34
+So I'm going to delete some comments here. Actually, let me make a copy of this class so that we can compare copy dynamic array
+
+[Leo Irakliotis] 10:50:51
+to dynamic array
+
+[Leo Irakliotis] 10:50:56
+Even more improved
+
+[Leo Irakliotis] 10:50:57
+How about this for naming?
+
+[Leo Irakliotis] 10:51:01
+So it's the same class
+
+[Leo Irakliotis] 10:51:06
+But
+
+[Leo Irakliotis] 10:51:09
+I'll delete the comments to keep the code a little bit more readable on the screen, and I will narrate what we're doing
+
+[Leo Irakliotis] 10:51:27
+This can stay like it is
+
+[Leo Irakliotis] 10:51:32
+All right.
+
+[Leo Irakliotis] 10:51:33
+So here is the code that we had before, and I'm going to change it in a couple of ways. First of all, I'm going to introduce a default capacity and a default resize by. So I'm going to change the names here to default
+
+[Leo Irakliotis] 10:51:53
+Default resize, and I am going to add a default capacity
+
+[Leo Irakliotis] 10:52:07
+And I will modify
+
+[Leo Irakliotis] 10:52:11
+The construct or the way we initialize this object by saying, hey, you know what?
+
+[Leo Irakliotis] 10:52:24
+Here, if the user does not specify a capacity, use the default capacity
+
+[Leo Irakliotis] 10:52:36
+And if the user does not specify a resize buying, use the default
+
+[Leo Irakliotis] 10:52:50
+But if the user wants to resize only by 10%.
+
+[Leo Irakliotis] 10:52:54
+Instead of 2% of 200%
+
+[Leo Irakliotis] 10:53:00
+Absolutely, no problem. All I have to do here is to create one more class variable
+
+[Leo Irakliotis] 10:53:08
+Self
+
+[Leo Irakliotis] 10:53:10
+Resize by
+
+[Leo Irakliotis] 10:53:20
+And what I'm saying here is, hey, this value that is passed to youth from the input arguments, assign it
+
+[Leo Irakliotis] 10:53:36
+value inside the object. So basically, I'm connecting an argument that I pass at the objects creation into the object itself. That's what's happening here
+
+[Leo Irakliotis] 10:53:58
+The other thing I want to do is
+
+[Leo Irakliotis] 10:54:02
+Let's do a quick
+
+[Leo Irakliotis] 10:54:05
+A quick test, let's say save this
+
+[Leo Irakliotis] 10:54:18
+Dynamic array, more improved, okay? Python 3
+
+[Leo Irakliotis] 10:54:25
+From dynamic
+
+[Leo Irakliotis] 10:54:29
+Alrighty, more improved
+
+[Leo Irakliotis] 10:54:33
+Import
+
+[Leo Irakliotis] 10:54:35
+dynamic array
+
+[Leo Irakliotis] 10:54:38
+Okay, so let's create a test object. Test is a dynamic array
+
+[Leo Irakliotis] 10:54:46
+I'm not specifying how what is the initial capacity. I'm not specifying what is the resize by. So basically, this object will have the default values, and if I print it right now, it will give me nothing to show, because I haven't added anything to it
+
+[Leo Irakliotis] 10:55:03
+But if I say, OK, test
+
+[Leo Irakliotis] 10:55:08
+at 6060
+
+[Leo Irakliotis] 10:55:12
+test and
+
+[Leo Irakliotis] 10:55:14
+602 test at 603. So there are my first three friends. Okay, they're my first three friends.
+
+[Leo Irakliotis] 10:55:25
+604, there is one more friend
+
+[Leo Irakliotis] 10:55:30
+And
+
+[Leo Irakliotis] 10:55:31
+Let me
+
+[Leo Irakliotis] 10:55:35
+add one more friend. Now, I'm out of size
+
+[Leo Irakliotis] 10:55:38
+And if I add one more friend, he will take it, but I'd like to modify the printing a little bit to show the full length
+
+[Leo Irakliotis] 10:55:46
+of the underlying arrays, I have to modify my string, string size
+
+[Leo Irakliotis] 10:55:53
+You know what, let's
+
+[Leo Irakliotis] 10:56:22
+Let's do the import again.
+
+[Leo Irakliotis] 10:56:39
+That's where I would love to
+
+[Leo Irakliotis] 10:56:49
+The IDE to use because it would have caught these errors right away.
+
+[Leo Irakliotis] 10:57:07
+All right, so that should do it.
+
+[Leo Irakliotis] 10:57:15
+Okay
+
+[Leo Irakliotis] 10:57:15
+All right, so test is a dynamic array
+
+[Leo Irakliotis] 10:57:21
+With default values. So I have not specified anything. And if I print test, I should see just four places okay with some weird
+
+[Leo Irakliotis] 10:57:32
+Closing brackets that
+
+[Leo Irakliotis] 10:57:35
+will annoy the living lights out of me, so let's fix this print statement
+
+[Leo Irakliotis] 10:58:05
+It's empty, okay? So now I can add four friends
+
+[Leo Irakliotis] 10:58:10
+60601.
+
+[Leo Irakliotis] 10:58:16
+Let's see what it looks now that I have three friends, okay, three places are occupied. The last place is empty. I can add one more friend and all four places are occupied. If I add the fifth friend, this array will double in size.
+
+[Leo Irakliotis] 10:58:39
+If I wrote the code correctly, because I forgot to update when I changed the resize by, I change here, okay, self
+
+[Leo Irakliotis] 10:58:47
+or resize by should be in lowercase because I'm using an object variable now
+
+[Leo Irakliotis] 10:58:59
+Okay, okay, one more time
+
+[Leo Irakliotis] 10:59:03
+Dynamic array. First to import the module
+
+[Leo Irakliotis] 10:59:07
+then create
+
+[Leo Irakliotis] 10:59:14
+There it is. Then do the ads
+
+[Leo Irakliotis] 10:59:27
+print it
+
+[Leo Irakliotis] 10:59:29
+So all four positions
+
+[Leo Irakliotis] 10:59:34
+present. If I add another object.
+
+[Leo Irakliotis] 10:59:38
+another zip code
+
+[Leo Irakliotis] 10:59:40
+VRA now should double in size.
+
+[Leo Irakliotis] 10:59:46
+8 positions, 5 of them occupied. And if I add a few more
+
+[Leo Irakliotis] 11:00:01
+VRA now is full and if I add the ninth
+
+[Leo Irakliotis] 11:00:09
+Let's say I have a friend in Colorado
+
+[Leo Irakliotis] 11:00:15
+And I think now I have room for 16 because again, it doubles in size.
+
+[Leo Irakliotis] 11:00:20
+And it will keep doubling in size.
+
+[Leo Irakliotis] 11:00:28
+If I want
+
+[Leo Irakliotis] 11:00:31
+To avoid this
+
+[Leo Irakliotis] 11:00:43
+Let's do another object.
+
+[Leo Irakliotis] 11:01:08
+So let's say that I'm creating a dynamic array and I'm specifying the one of the two variables, one
+
+[Leo Irakliotis] 11:01:18
+Dynamic array.
+
+[Leo Irakliotis] 11:01:22
+Now, specifying one of the two variables. The first of the two variables is the capacity, how big I want it to be initially. And I printed
+
+[Leo Irakliotis] 11:01:30
+There's only one element. Why? Because I exercised my option to declare
+
+[Leo Irakliotis] 11:01:39
+the size
+
+[Leo Irakliotis] 11:01:40
+of this array.
+
+[Leo Irakliotis] 11:01:42
+If I could have written it like before
+
+[Leo Irakliotis] 11:01:50
+Without any parameters
+
+[Leo Irakliotis] 11:01:54
+and would have given me an array of 4 elements, but I can specify
+
+[Leo Irakliotis] 11:01:59
+So, you know, start with 11
+
+[Leo Irakliotis] 11:02:05
+I can now control the size, but if I don't want to
+
+[Leo Irakliotis] 11:02:10
+There is always chef's choice
+
+[Leo Irakliotis] 11:02:13
+the default values. Likewise, let's say I start with a dynamic array of size 1, and I'm resizing by 4, I'm quadrupling the size every time I run out of space.
+
+[Leo Irakliotis] 11:02:25
+Okay, so print test.
+
+[Leo Irakliotis] 11:02:29
+Right now, it's empty
+
+[Leo Irakliotis] 11:02:32
+Just add zip code 601.
+
+[Leo Irakliotis] 11:02:35
+Okay, now the array is full. If I add one more element, it will quadruple the size first
+
+[Leo Irakliotis] 11:02:49
+So now I have room for four. And if I add two more and I run out of space, so there are four more
+
+[Leo Irakliotis] 11:02:56
+and there's what the array now is full. The underlying array is full. And if I try to add one more value to the object
+
+[Leo Irakliotis] 11:03:05
+It will quadruple its size, it will create… it will make an underlying array of 16 positions, of which only 5
+
+[Leo Irakliotis] 11:03:14
+will be occupied
+
+[Leo Irakliotis] 11:03:21
+16 positions, 5 occupied. Why? Because I create an array initially of size one with a size factor 4. So I'm growing it by 40%.
+
+[Leo Irakliotis] 11:03:32
+All right, let's do something silly so that I can give you something to take home and come back with tomorrow.
+
+[Leo Irakliotis] 11:03:40
+Let's say
+
+[Leo Irakliotis] 11:03:43
+that I create a silly test array that is a dynamic array
+
+[Leo Irakliotis] 11:03:50
+With initial size two and resize factor 0.1, which is 10%.
+
+[Leo Irakliotis] 11:04:04
+Two positions right now empty.
+
+[Leo Irakliotis] 11:04:10
+Let's add zip code 601.
+
+[Leo Irakliotis] 11:04:14
+And zip code 602, and now the underlying array is full. What will happen if I try to add one more zip code to it
+
+[Temeeka Glass] 11:04:31
+It would add, um…
+
+[Temeeka Glass] 11:04:33
+I mean, it will extend the list by…
+
+[Temeeka Glass] 11:04:36
+I mean, did you have the ceiling? So, by…
+
+[Temeeka Glass] 11:04:41
+By one?
+
+[Leo Irakliotis] 11:04:43
+Based on the discussion we had, that's the expectation
+
+[Leo Irakliotis] 11:04:55
+Oops.
+
+[Leo Irakliotis] 11:05:00
+Your job
+
+[Leo Irakliotis] 11:05:03
+In exchange for ending five minutes early today
+
+[Leo Irakliotis] 11:05:09
+is to come back tomorrow
+
+[Leo Irakliotis] 11:05:12
+with suggestions as to what happened
+
+[Leo Irakliotis] 11:05:17
+Why it happened
+
+[Leo Irakliotis] 11:05:20
+And how to avoid it.
+
+[Leo Irakliotis] 11:05:23
+What, why, and how. And I'm going to clean up the code
+
+[Leo Irakliotis] 11:05:32
+And share it with you with comments and all that. But
+
+[Leo Irakliotis] 11:05:37
+Our intentions are good. We want to provide a very flexible object to our clients. We want our clients to be able to determine the initial size and the size factor. And if they don't want to go into that trouble, we give them the default values
+
+[Leo Irakliotis] 11:05:53
+Initial size 4, resize by doubling the size.
+
+[Leo Irakliotis] 11:05:58
+But this flexibility that we're offering that you can resize by any factor, including 10% instead of 20% or maybe 150%, what happens if I create another silly object
+
+[Leo Irakliotis] 11:06:19
+That is a dynamic array
+
+[Leo Irakliotis] 11:06:25
+of initial size 2 and resize factor 1.5.
+
+[Leo Irakliotis] 11:06:30
+So I increment its size by 50%.
+
+[Leo Irakliotis] 11:06:42
+So initially, it has room for two because I made that size two, so I'm going to add these 2 things. I'm going to print
+
+[Leo Irakliotis] 11:06:51
+The object there it is. And now I'm going to try another one
+
+[Leo Irakliotis] 11:06:56
+Again, boom.
+
+[Leo Irakliotis] 11:07:03
+Again, our hearts are in the right place. We want to create a flexible object, an object that will give full creative control to the user about how long you wanted
+
+[Leo Irakliotis] 11:07:19
+data storage thing to be initially, and how fast do you want it to resize itself
+
+[Leo Irakliotis] 11:07:26
+But as the saying goes, the road to is often paved with good intentions.
+
+[Leo Irakliotis] 11:07:33
+And that's what happened here. Our good intentions have taken us to an error, to a runtime error.
+
+[Leo Irakliotis] 11:07:47
+You will analyze that error, you'll reflect on that error and we'll fix it when we get together tomorrow, same time, same place.
+
+[Leo Irakliotis] 11:07:57
+wait for my email with a cleanup code in the comments before you get to work on it. Right now, you cannot see the code because it's not posted on GitHub yet, but I will send you an email with a link to the code as soon as I clean it up a little bit.
+
+[Leo Irakliotis] 11:08:10
+Questions, comments?
+
+[Leo Irakliotis] 11:08:15
+All right, everyone, we'll see you tomorrow. Have a great rest of your day.
+
+[Kofi Nyarku] 11:08:19
+Thank you.
+
+[Temeeka Glass] 11:08:20
+Thank you.
+
+[Leo Irakliotis] 11:08:22
+Bye
+
+[Leo Irakliotis] 11:30:45
+Hello, everyone
+
+[Leo Irakliotis] 11:30:57
+Any, questions, any…
+
+[Leo Irakliotis] 11:31:01
+Comments, any requests, anyone?
+
+[Bella Fiorucci] 11:31:03
+I have a question about the… the end of the review from yesterday, where it talked about the, like, um, asterisk symbol operator on strings.
+
+[Bella Fiorucci] 11:31:13
+Um, and it said, like, oh, if you have, like, uh, two integers and you, like, use that, it'll multiply them, but if you have strings, it just repeats it. Does that mean that if you put the numbers in, like, single or double quotes and make them strings,
+
+[Bella Fiorucci] 11:31:29
+And then use that symbol, that it'll just…
+
+[Bella Fiorucci] 11:31:32
+repeat them as opposed to multiplying them.
+
+[Leo Irakliotis] 11:31:35
+Yes, and this is one of the most weird things in programming
+
+[Leo Irakliotis] 11:31:43
+So let me see if I understand your question, Bella. You're asking about this scenario. Let's go to Python here really quickly
+
+[Leo Irakliotis] 11:31:52
+And as always, if the fonts on the screen are not big enough, just say so
+
+[Leo Irakliotis] 11:31:58
+So I'll say, okay, so here is, I will create a variable that I call 22. And that variable holds the string with the symbols22.
+
+[Leo Irakliotis] 11:32:09
+Okay, is this a number or a string? This is a string.
+
+[Leo Irakliotis] 11:32:16
+It's not a number.
+
+[Leo Irakliotis] 11:32:17
+It looks like a number to us, because we see the symbols for the number… the symbol for the number 2 next to the symbol for the number 2. But, you know, if… if, you know, since this being a, you know, Catholic university and Latin is an important language for Loyol
+
+[Leo Irakliotis] 11:32:33
+I could have used this
+
+[Leo Irakliotis] 11:32:36
+Okay
+
+[Leo Irakliotis] 11:32:37
+That's not 22 enrollment. That's the number 2 enrollment followed by the number 2.
+
+[Leo Irakliotis] 11:32:46
+Which, by the way, life hack for everyone, follow me for more life hacks. If you go to a bar and the barman, do not ask for two beers like this because you'll end up with five beers, because this is the Roman symbol for five
+
+[Leo Irakliotis] 11:33:00
+Anyway
+
+[Leo Irakliotis] 11:33:05
+What happens
+
+[Leo Irakliotis] 11:33:06
+If I say, okay, give me 2
+
+[Leo Irakliotis] 11:33:11
+times 2.
+
+[Leo Irakliotis] 11:33:13
+Now, in plain language, 22 times 2, well, 44.
+
+[Leo Irakliotis] 11:33:18
+But that's not what I'm telling the computer to do here. I'm telling the computer, repeat
+
+[Leo Irakliotis] 11:33:27
+The contents of the string that I call 22
+
+[Leo Irakliotis] 11:33:31
+Repeat them twice
+
+[Leo Irakliotis] 11:33:35
+Repeat them five times
+
+[Leo Irakliotis] 11:33:37
+If you want to multiply, can I multiply 2 times 2244? Yes, I can do it, but I will have to write, take the string 22, convert it
+
+[Leo Irakliotis] 11:33:49
+to an integer value
+
+[Leo Irakliotis] 11:33:53
+And then multiply the integer equivalent of that string
+
+[Leo Irakliotis] 11:33:58
+With two
+
+[Leo Irakliotis] 11:34:00
+There's your 44.
+
+[Leo Irakliotis] 11:34:01
+But if I try to do this in Roman arithmetic, if I had defined my 22 as
+
+[Leo Irakliotis] 11:34:10
+Let's write actually the number 22 in Roman numerals
+
+[Leo Irakliotis] 11:34:15
+Okay, that's 22 in Roman numerals.
+
+[Leo Irakliotis] 11:34:18
+And if I say, okay, repeat this five times, it will be this
+
+[Leo Irakliotis] 11:34:24
+But 5 times 22 numerically
+
+[Leo Irakliotis] 11:34:29
+is… 110, right?
+
+[Leo Irakliotis] 11:34:33
+If I said, okay, take the integer part
+
+[Leo Irakliotis] 11:34:36
+of this Roman numeral express 22 and multiply it by 5 times to give me 110.
+
+[Leo Irakliotis] 11:34:43
+Look what happens
+
+[Leo Irakliotis] 11:34:47
+Basically, Python says, dude, I can barely keep up with Arab numerals, don't give me anything more than that
+
+[Leo Irakliotis] 11:34:58
+Programming languages have an easy way to convert a typographical symbol that looks like a number to the actual value of that number. Think of it as a character recognition
+
+[Leo Irakliotis] 11:35:10
+But that applies only for the standard numeral symbols, which are Arab numerals
+
+[Leo Irakliotis] 11:35:19
+One of the most difficult things I had to do in programming was a third year in college
+
+[Leo Irakliotis] 11:35:29
+We got this assignment to write a program that will take numbers in Roman numerals
+
+[Leo Irakliotis] 11:35:37
+And multiply them and produce the product in also in Roman numerals. So basically what is the product of
+
+[Leo Irakliotis] 11:35:46
+22 times 5
+
+[Leo Irakliotis] 11:35:48
+So that's handed them.
+
+[Leo Irakliotis] 11:35:50
+whatever it's, you know
+
+[Leo Irakliotis] 11:35:55
+And
+
+[Leo Irakliotis] 11:35:57
+And it was
+
+[Leo Irakliotis] 11:36:00
+A royal pain
+
+[Leo Irakliotis] 11:36:03
+Because decimal arithmetic or any number based arithmetic, whether it's not based 10, base 8, base 16, base 2 has the same rules. The difference is that the numbers get longer or shorter
+
+[Leo Irakliotis] 11:36:18
+But the same rules apply. When you add numbers, you have, like we do in addition, we're lever in grade school, we have Ikarian, we carry that carry forward, and we do the addition
+
+[Leo Irakliotis] 11:36:30
+Things like this were not straightforward in Roman numerals arithmetic, and writing that program
+
+[Leo Irakliotis] 11:36:40
+Oh, I'd rather not talk about it.
+
+[Leo Irakliotis] 11:36:46
+But speaking of numbers and number systems, let's go back and look at what we discussed yesterday really quickly about what is this year, 2026. What does a positional number system means
+
+[Leo Irakliotis] 11:37:01
+that this is a coefficient for the fourth power of 10, and I write 10 to the power 3. How is that the fourth power of 10
+
+[Leo Irakliotis] 11:37:11
+But it's 10 to the power 3. This coefficient for the 3rd power of 10. This coefficient for the second power of 10, and this coefficient for the first
+
+[Leo Irakliotis] 11:37:23
+power of 10. So the first power is 0, 1, 2, 3, that's why the 10 to the power 3 is the fourth power of 10.
+
+[Leo Irakliotis] 11:37:32
+Of course, 10 to the power 3 is 1000, 10 to the power 2 is 100, 10 to the power 1 is 10, and 10 to the power 0 is 1. So basically all together, it means that this number is two times
+
+[Leo Irakliotis] 11:37:48
+Plus
+
+[Leo Irakliotis] 11:37:49
+Zero times 100
+
+[Leo Irakliotis] 11:37:52
+plus 2 times 10 plus 6 times one. And that's how the 2026 comes from
+
+[Leo Irakliotis] 11:38:01
+The same logic
+
+[Leo Irakliotis] 11:38:03
+applies
+
+[Leo Irakliotis] 11:38:10
+binary numbers. A binary number is a number that can express with only two digits. For convenience, we use 0 and 1.
+
+[Leo Irakliotis] 11:38:18
+Much like for convenience to express a decimal number, a number that can be written by 10 digits, we're using 0 through 9
+
+[Leo Irakliotis] 11:38:27
+A decimal, a binary number
+
+[Leo Irakliotis] 11:38:31
+uses zeros and ones, and we saw that, for example, one, two, three, four, five. This binary number. And how do we say, how do we know that this is a binary number and not 1 million and one?
+
+[Leo Irakliotis] 11:38:47
+Well, it depends on the context. If you see numbers like this in a computer science course, probably it is a binary number, but when there is ambiguity and to resolve any ambiguity, we use
+
+[Leo Irakliotis] 11:39:01
+parenthesize subscript
+
+[Leo Irakliotis] 11:39:03
+Indicating the base number. So this binary number equals to 65 in decimal number in the decimal number basis in base 10.
+
+[Leo Irakliotis] 11:39:15
+How does this
+
+[Leo Irakliotis] 11:39:17
+translate to this. Well, again, it's the same position. This is a coefficient of 2 to the power 0, 2 to the power 1, 2 to the power 2, 2 to the power 3, 2 to the power
+
+[Leo Irakliotis] 11:39:31
+4 2 to the power
+
+[Leo Irakliotis] 11:39:33
+2 to the power 6. So basically, I have the product
+
+[Leo Irakliotis] 11:39:38
+This one
+
+[Leo Irakliotis] 11:39:40
+times 2 to the power 6 plus 0 times this plus zero times this plus a bunch of zeros
+
+[Leo Irakliotis] 11:39:48
+plus
+
+[Leo Irakliotis] 11:39:50
+times 2 to the power 2. What is 2 to the power 6? This is 64.
+
+[Leo Irakliotis] 11:39:55
+What is this? One times one
+
+[Leo Irakliotis] 11:39:57
+There's your 65.
+
+[Leo Irakliotis] 11:40:03
+Another number system that is very useful in computer science is the hexadecimal number system. And let me explain why is it useful first before I describe it.
+
+[Leo Irakliotis] 11:40:17
+This number here
+
+[Leo Irakliotis] 11:40:20
+65 in binary
+
+[Leo Irakliotis] 11:40:29
+is actually written if you have if you want to have six digits in it, sorry, eight digits in it, it can be written with eight digits.
+
+[Leo Irakliotis] 11:40:38
+Let me ask you this question first about this year, 2026.
+
+[Leo Irakliotis] 11:40:44
+This, I needed your number, but I want to write it with 6 digits. How can I write an integer number with 6 digits? What can I do to make this a 6-digit number? That is the same number as 2026, but has 6 digits
+
+[melina ammann] 11:41:08
+Would you be able to add, um, extra zeros?
+
+[Leo Irakliotis] 11:41:14
+Where?
+
+[melina ammann] 11:41:15
+Um…
+
+[melina ammann] 11:41:16
+Next to the other one.
+
+[Leo Irakliotis] 11:41:20
+Well, they're next to water
+
+[melina ammann] 11:41:21
+Next to the zero already there.
+
+[Leo Irakliotis] 11:41:25
+Here
+
+[melina ammann] 11:41:26
+Yeah.
+
+[Leo Irakliotis] 11:41:27
+So what should I write?
+
+[melina ammann] 11:41:28
+like, 200026.
+
+[Leo Irakliotis] 11:41:36
+So that's the year 2026. That's about a few thousand years into the future.
+
+[Leo Irakliotis] 11:41:44
+Let's say that your salary this month is 2026
+
+[Leo Irakliotis] 11:41:49
+Surely you'd like to write a couple more extra zeros in the middle there, but it's not the same salary anymore.
+
+[Leo Irakliotis] 11:41:57
+How can I write this number with six digits and still remain the same amount of money?
+
+[andrewchinsen] 11:42:03
+Would you put the two zeros in front of the two?
+
+[Leo Irakliotis] 11:42:06
+You put the two zeros in front of the number
+
+[Bella Fiorucci] 11:42:12
+Could you also put them behind the number and just add a decimal point?
+
+[Leo Irakliotis] 11:42:17
+I want to keep it an integer number. Absolutely. If you say, okay, can you put the numbers after
+
+[Leo Irakliotis] 11:42:24
+Okay, you just multiply this number by 100, but if you put a decimal point here, it's the same number, but it's no longer an integer number. So the requirement is, I want to keep it integer, and I want to keep it same value, but I want to have more digits to it.
+
+[Leo Irakliotis] 11:42:38
+So, adding zeros to the front of the number does not change the value of the number.
+
+[Leo Irakliotis] 11:42:45
+We can do the same thing with binary numbers
+
+[Leo Irakliotis] 11:42:49
+0 is a 0 in any number base. So here
+
+[Leo Irakliotis] 11:42:54
+We have now an
+
+[Leo Irakliotis] 11:42:58
+digit binary number
+
+[Leo Irakliotis] 11:43:01
+That can be broken into two parts of four digits each
+
+[Leo Irakliotis] 11:43:06
+A binary digit, by the way
+
+[Leo Irakliotis] 11:43:12
+has a very special name
+
+[Leo Irakliotis] 11:43:15
+We call it a bit
+
+[Leo Irakliotis] 11:43:26
+So
+
+[Leo Irakliotis] 11:43:28
+So this is number 65 in
+
+[Leo Irakliotis] 11:43:35
+In binary
+
+[Leo Irakliotis] 11:43:40
+It's a number that I remember often because it's easy for me to remember because I use it all the time.
+
+[Leo Irakliotis] 11:43:49
+But can you imagine remembering all these very long numbers that look the same? So for that reason, to simplify the notation
+
+[Leo Irakliotis] 11:44:02
+We have introduced the hexadecimal number system
+
+[Leo Irakliotis] 11:44:17
+Also known as HECS
+
+[Leo Irakliotis] 11:44:21
+And the hexadecimal number system uses 16
+
+[Leo Irakliotis] 11:44:25
+numeric symbols
+
+[Leo Irakliotis] 11:44:31
+It starts with the numeric symbols that we're familiar with
+
+[Leo Irakliotis] 11:44:37
+012345678 and 9
+
+[Leo Irakliotis] 11:44:45
+And needs 6 more, because it needs to have 16, and for the next 6 symbols, it uses the letters A, B, C, D, E, and F.
+
+[Leo Irakliotis] 11:44:56
+So there's your 16 symbols
+
+[Leo Irakliotis] 11:45:00
+And how those 16 symbols are assigned are just like any numbers. You start your 0, 1, 2, 3, 4, 5, 6, 8, 9, A, B, C, d, e, f. But what is the numerical equivalent in decimal? This first 10 digits are the numbers 0 through 9
+
+[Leo Irakliotis] 11:45:16
+Okay, as in a decimal system. This is the number 10
+
+[Leo Irakliotis] 11:45:22
+In decimal, this is the number 11 in decimal. This is the number 12
+
+[Leo Irakliotis] 11:45:29
+in in the decimal system
+
+[Leo Irakliotis] 11:45:32
+This is the number 13.
+
+[Leo Irakliotis] 11:45:35
+In the decimal system
+
+[Leo Irakliotis] 11:45:37
+14 in the decimal system. And last but not least, 15 in the decimal system
+
+[Leo Irakliotis] 11:45:46
+So 15 in decimal plus 15 in decimal is what 30 in decimal. If I want to do this in hexadecimal F plus F is what
+
+[Leo Irakliotis] 11:46:02
+30. How do I write 30?
+
+[Leo Irakliotis] 11:46:06
+In
+
+[Leo Irakliotis] 11:46:08
+in decimal it is 16 plus 14, right? And I have a symbol for 14, which is E, and I have a symbol for 16, which is one
+
+[Leo Irakliotis] 11:46:23
+So there is your 30 in decimal.
+
+[Leo Irakliotis] 11:46:31
+no one in their right mind will ask you to make any computations in hexadecimal, and if you ever meet a person that can do additions, multiplications, and subtractions in decimal, probably that person spends way too much time in front of a computer, and you should gently back off
+
+[Leo Irakliotis] 11:46:50
+from them, smiling and waving as you're removing yourself from their presence. But there is
+
+[Leo Irakliotis] 11:46:57
+A mapping correspondence that is worth
+
+[Leo Irakliotis] 11:47:03
+not remembering, but at least seeing once.
+
+[Leo Irakliotis] 11:47:07
+how… if you have four binary digits
+
+[Leo Irakliotis] 11:47:12
+You basically have room
+
+[Leo Irakliotis] 11:47:14
+for
+
+[Leo Irakliotis] 11:47:16
+Places and this can be either 0 or 1. How many combinations do you have?
+
+[Leo Irakliotis] 11:47:22
+How many numbers can you express with 1, 2, 3, 4 binary digits? Well, the smallest number is 0, 0. So everything is zero all the way up to 11
+
+[Leo Irakliotis] 11:47:37
+One, one
+
+[Leo Irakliotis] 11:47:39
+So that's the range. How does that range go? Well
+
+[Leo Irakliotis] 11:47:48
+One easy way for me to write it is to write eight zeros, one, two, three, four, five, six
+
+[Leo Irakliotis] 11:47:56
+7, 8, followed by 8 once
+
+[Leo Irakliotis] 11:48:09
+Then write four zeros
+
+[Leo Irakliotis] 11:48:13
+Followed by four ones
+
+[Leo Irakliotis] 11:48:17
+Followed by four zeros.
+
+[Leo Irakliotis] 11:48:21
+Followed by four ones
+
+[Leo Irakliotis] 11:48:26
+Then write two zeros, followed by two ones
+
+[Leo Irakliotis] 11:48:31
+2 zeros, followed by 2 ones
+
+[Leo Irakliotis] 11:48:35
+Two zeros, followed by two ones. Two zeros
+
+[Leo Irakliotis] 11:48:39
+followed by 2 ones, and then write 0, 1, 0, 1, 0, 1,
+
+[Leo Irakliotis] 11:48:47
+010101.
+
+[Leo Irakliotis] 11:48:51
+0101. So these are all the possible binary numbers you can write with four digits. How many of them are there
+
+[Leo Irakliotis] 11:49:02
+14. Why? We have four digits in the number base is two, two to the power 4, 14. And we map these symbols
+
+[Leo Irakliotis] 11:49:13
+to this hexadecimal digits
+
+[Leo Irakliotis] 11:49:20
+Let me change the color here
+
+[Leo Irakliotis] 11:49:23
+To make it a little bit more dramatic
+
+[Leo Irakliotis] 11:50:01
+These are all the 16 numbers
+
+[Leo Irakliotis] 11:50:04
+From 0 to 15, so because we're including 0, we end up with 15
+
+[Leo Irakliotis] 11:50:09
+But we don't have
+
+[Leo Irakliotis] 11:50:12
+In hexadecimal.
+
+[Leo Irakliotis] 11:50:16
+Is shown as
+
+[Leo Irakliotis] 11:50:19
+A, 11 is B, 12 is C, 13 is D, 14 is Z, and 15 is F. So when I had the 65 decimal earlier, shown as 0100
+
+[Leo Irakliotis] 11:50:36
+001. I can break it into two components
+
+[Leo Irakliotis] 11:50:42
+of four digits each
+
+[Leo Irakliotis] 11:50:50
+And use the corresponding hexadecimal numbers for each of these two halves. What is 001? Okay, there is your 001 hexadecimal one
+
+[Leo Irakliotis] 11:51:03
+And what is 0100
+
+[Leo Irakliotis] 11:51:09
+0100. There it is.
+
+[Leo Irakliotis] 11:51:14
+So in hexadecimal notation
+
+[Leo Irakliotis] 11:51:19
+VCs
+
+[Leo Irakliotis] 11:51:21
+41.
+
+[Leo Irakliotis] 11:51:23
+Base 16
+
+[Leo Irakliotis] 11:51:26
+What does this mean? This means four times
+
+[Leo Irakliotis] 11:51:31
+The base 16 to power one plus one times the base 16 to the power 0. We know that this is one because the power 0 is 1, 1 times 1 is 1, 4 times 16
+
+[Leo Irakliotis] 11:51:48
+This is 64
+
+[Leo Irakliotis] 11:51:51
+In decimal, plus 1 in decimal
+
+[Leo Irakliotis] 11:51:56
+65 in base 10 or decimal system. So an eight digit number is compressed to a two digit number. And because we have
+
+[Leo Irakliotis] 11:52:08
+Today's computers use not
+
+[Leo Irakliotis] 11:52:14
+A bit arithmetic anymore, this is 8 bits, but 64-bit arithmetic
+
+[Leo Irakliotis] 11:52:19
+Breaking that 64-digit long number
+
+[Leo Irakliotis] 11:52:25
+to 16 chunks of 4 bits long and using hexadecimal symbols, compress the notation space makes things a little bit easier to display.
+
+[Leo Irakliotis] 11:52:37
+Other than that, we are not going to touch hexadecimal values in this course, but I wanted you to be aware of the 3 principle number basis that we use in computers. Decimal to communicate with
+
+[Leo Irakliotis] 11:52:56
+each other with between us, between humans
+
+[Leo Irakliotis] 11:52:59
+Binary, the computers use to communicate with each other, then hexadecimal, the computer engineers
+
+[Leo Irakliotis] 11:53:05
+use to stay uninvited from parties and other fun events.
+
+[Leo Irakliotis] 11:53:19
+All right.
+
+[Leo Irakliotis] 11:53:24
+Originally when computers became, let's do a little bit of computer history here
+
+[Leo Irakliotis] 11:53:33
+Because we discussed yesterday that the uppercase A is
+
+[Leo Irakliotis] 11:53:39
+ASCII value
+
+[Leo Irakliotis] 11:53:45
+65. And the lowercase a is ASCII value 97
+
+[Leo Irakliotis] 11:53:55
+Why uppercase letters have an earlier value than lowercase letters
+
+[Leo Irakliotis] 11:54:01
+In the beginning of computers
+
+[Leo Irakliotis] 11:54:04
+Computers did not have a lot of memory
+
+[Leo Irakliotis] 11:54:10
+Tiny, tiny, tiny slow machines compared to even your smartwatch by the definition
+
+[Leo Irakliotis] 11:54:20
+of of technology when I was your age
+
+[Leo Irakliotis] 11:54:25
+A smartphone back then would have been classified as a supercomputer
+
+[Leo Irakliotis] 11:54:32
+And it would have been subject to US export controls imposed by the Department of Defense. Oh, I'm sorry, Department of War.
+
+[Leo Irakliotis] 11:54:45
+Because in the 80s and the 90s, the US companies were prohibited from exporting advanced technology, and that included supercomputers. And a supercomputer in the 80s and 90s was a machine that can do more than one billion operations per second
+
+[Leo Irakliotis] 11:55:03
+Well, smart watches can do that now. So I think that the notion of what a supercomputer is for legal purposes has changed
+
+[Leo Irakliotis] 11:55:14
+But there were a few… there was a funny period, I think, in the mid-90s when Apple introduced the first laptop that hit the one giga flop spec, that 1 billion operations per second spec
+
+[Leo Irakliotis] 11:55:30
+And traveling abroad with one of those laptops was technically a violation of federal law because you were exporting literally a supercomputer
+
+[Leo Irakliotis] 11:55:41
+And I'm not sure if anybody got arrested at the borders or anything like this, but technically, if you traveled with one of the fancy Apple laptops in the mid 90s, you may have been in violation of defense export controls
+
+[Leo Irakliotis] 11:55:57
+But even before that, computers
+
+[Leo Irakliotis] 11:56:00
+Had very limited memory and they could only memorize uppercase letters. There was no reason, no need
+
+[Leo Irakliotis] 11:56:09
+To have upper and lowercase letters. We are talking about technology that is coming out of the Manhattan Project, out of Los Alamos, out of Bletchley Park in England, where they were breaking German secret codes. And as long as they could
+
+[Leo Irakliotis] 11:56:25
+print uppercase letters, a comma, a period, and then in numbers. That's all they needed to communicate with the computer. Anything else, lowercase letters
+
+[Leo Irakliotis] 11:56:36
+semicolons? Those were luxury that we could not afford the memory for every available tiny bit of memory was dedicated to actual computation, and the luxury of typography was something that was not even within
+
+[Leo Irakliotis] 11:56:54
+the scope of those projects
+
+[Leo Irakliotis] 11:56:57
+And that's why
+
+[Leo Irakliotis] 11:56:58
+If you look at old programs, if you go on Wikipedia and read about the history of programming languages, you might find that programs were written in uppercase letters. A lot of programming languages, early programming languages
+
+[Leo Irakliotis] 11:57:15
+Like Fortran and COBOL. If you look at programs from that era were written in uppercase letters. And I have here the Bible of
+
+[Leo Irakliotis] 11:57:31
+Programming language history. And every program that is shown here, every schematic, I don't know if my camera can resolve this if I hold it still.
+
+[Leo Irakliotis] 11:57:44
+Oh, I know what it is
+
+[Leo Irakliotis] 11:57:59
+It's in uppercase. Why? Because we did not have the luxury back then
+
+[Leo Irakliotis] 11:58:09
+For anything less. So the first letters were assigned those values 6
+
+[Leo Irakliotis] 11:58:16
+Up to 100
+
+[Leo Irakliotis] 11:58:18
+Up to 90, sorry.
+
+[Leo Irakliotis] 11:58:22
+And then as computers improved and memory became a little bit more affordable, we were able to add a little bit more typography. We were able to add more punctuation marks, more symbols, including lowercase letters
+
+[Leo Irakliotis] 11:58:36
+And that's why they went later in the encoding scheme and they have values starting at 97 plus
+
+[Leo Irakliotis] 11:58:47
+And this is all we had
+
+[Leo Irakliotis] 11:58:49
+To draw things, to design things on the screen. And
+
+[Leo Irakliotis] 11:58:56
+That's how we connect to where we started yesterday, where we looked at, okay, how do I draw a triangle? Nowadays
+
+[Leo Irakliotis] 11:59:03
+This is how I draw a triangle
+
+[Leo Irakliotis] 11:59:07
+Okay, or if my drawing is not up to snuff by your artistic standards
+
+[Leo Irakliotis] 11:59:15
+You know, you don't like my drawing, go take a class at the School of the Art Institute of Chicago. But I'm trying to accommodate reasonable requests and some were here on this infernal application, there is there we are
+
+[Leo Irakliotis] 11:59:36
+Here is a nicer triangle. Perfect, right?
+
+[Leo Irakliotis] 11:59:40
+That this thing didn't exist back in my day. This kind of graphics did not exist 40 years ago. Or if they existed, they were part of super high-end machines that were not affordable to colleges and universities. So instead
+
+[Leo Irakliotis] 11:59:55
+We used ASCII art
+
+[Leo Irakliotis] 11:59:59
+to draw things
+
+[Leo Irakliotis] 12:00:02
+Like we saw yesterday, ASCII art was
+
+[Leo Irakliotis] 12:00:09
+And just hello
+
+[Leo Irakliotis] 12:00:21
+versus just drawing things like this.
+
+[Leo Irakliotis] 12:00:29
+Yeah, perfect. But it conveys the image of a triangle and I can
+
+[Leo Irakliotis] 12:00:36
+I showed you yesterday that I can even convince you a little bit that this might look like a sailboat if I added a few more things.
+
+[Leo Irakliotis] 12:00:48
+I can even make it look like a Christmas tree
+
+[Leo Irakliotis] 12:00:53
+We may be
+
+[Leo Irakliotis] 12:00:56
+Not yet in season for that
+
+[Leo Irakliotis] 12:01:02
+Let's see
+
+[Leo Irakliotis] 12:01:27
+Okay, there is your Christmas tree and with a little bit of effort, I can make it an arrow. I can make it a sailboat. But the question we had is when we look at the symbol triangle, what you look at what we had at the beginning here, how to draw it
+
+[Leo Irakliotis] 12:01:45
+And one answer, the naive answer is to just draw it by a bunch of print statements. So every line is a separate print statement.
+
+[Leo Irakliotis] 12:01:58
+But
+
+[Leo Irakliotis] 12:02:00
+It will take six print statements to do this. And if I wanted a triangle with a height of 60 lines, it would take 60 print statements and the last print statement will have 60 asterisks to the previous statement, the previous print statement will have 59 and so on. And that's not programming.
+
+[Leo Irakliotis] 12:02:17
+That's typing
+
+[Leo Irakliotis] 12:02:21
+Programming means that we look at this structure and we try to find the pattern. And the pattern we found in this simple
+
+[Leo Irakliotis] 12:02:33
+Christmas tree is that first line
+
+[Leo Irakliotis] 12:02:42
+has one star.
+
+[Leo Irakliotis] 12:02:44
+Second line
+
+[Leo Irakliotis] 12:02:48
+has two stars and so forth. And the nth line
+
+[Leo Irakliotis] 12:02:55
+Has n stars
+
+[Leo Irakliotis] 12:02:59
+So there is a progression that says repeat line after line, and as you increase the line numbers, the line number, increase the stars.
+
+[Leo Irakliotis] 12:03:07
+So now we have a pattern
+
+[Leo Irakliotis] 12:03:12
+print
+
+[Leo Irakliotis] 12:03:15
+and lines
+
+[Leo Irakliotis] 12:03:20
+Each line
+
+[Leo Irakliotis] 12:03:23
+Print
+
+[Leo Irakliotis] 12:03:25
+As many stars
+
+[Leo Irakliotis] 12:03:31
+As the sequential number of line.
+
+[Leo Irakliotis] 12:03:43
+So with counting lines, one line, one star, two lines, two stars, three lines, three stars, until we reach the number of lines that are specified.
+
+[Leo Irakliotis] 12:03:51
+This repetition
+
+[Leo Irakliotis] 12:03:54
+is the pattern that creates
+
+[Leo Irakliotis] 12:03:57
+The triangle. And instead of writing a bunch of print statements, we only need to write one print statement that repeats as many stars as a sequential number that represents for which line
+
+[Leo Irakliotis] 12:04:12
+We are applying that print statement
+
+[Leo Irakliotis] 12:04:20
+The command
+
+[Leo Irakliotis] 12:04:24
+We use for that in most programming languages is called a loop, the construct we use for this thing in most programming languages is called a loop.
+
+[Leo Irakliotis] 12:04:45
+Hello?
+
+[Leo Irakliotis] 12:04:53
+repeats a block
+
+[Leo Irakliotis] 12:04:56
+of code as many times
+
+[Leo Irakliotis] 12:05:04
+As we wish.
+
+[Leo Irakliotis] 12:05:07
+Different languages have different syntax, how to implement a loop. In Python
+
+[Leo Irakliotis] 12:05:16
+A loop is implemented with a statement
+
+[Leo Irakliotis] 12:05:23
+A sequence counter
+
+[Leo Irakliotis] 12:05:35
+some range.
+
+[Leo Irakliotis] 12:05:37
+So, Bella, help me out here.
+
+[Leo Irakliotis] 12:05:41
+Count from 1 to 5
+
+[Bella Fiorucci] 12:05:44
+1, 2, 3, 4, 5?
+
+[Leo Irakliotis] 12:05:48
+You were my sequence counter. I gave you the range 1 to 5
+
+[Leo Irakliotis] 12:05:54
+And you executed it. Use your
+
+[Leo Irakliotis] 12:05:58
+uttering the numbers. 1, 2, 3, 4, 5, that's the sequence counter. Well, I call it Bella
+
+[Leo Irakliotis] 12:06:05
+Okay, so in syntactically, I would have written something for, hey, Bella
+
+[Leo Irakliotis] 12:06:15
+Count in range
+
+[Leo Irakliotis] 12:06:18
+1, 5
+
+[Leo Irakliotis] 12:06:20
+Now
+
+[Leo Irakliotis] 12:06:21
+As we mentioned before, and we'll mention it again, one of the second most difficult thing in programming is giving
+
+[Leo Irakliotis] 12:06:28
+artifacts a good name and Bella means something to us in this group because we just did this example with Bella. But outside this group has absolutely no meaning
+
+[Leo Irakliotis] 12:06:42
+So by convention and tradition
+
+[Leo Irakliotis] 12:06:46
+The sequence counters in programming languages
+
+[Leo Irakliotis] 12:06:52
+Simple variables like the letter I, the letter J, the letter K.
+
+[Leo Irakliotis] 12:06:58
+You
+
+[Leo Irakliotis] 12:07:00
+can use anything that makes sense. But in the absence of a context
+
+[Leo Irakliotis] 12:07:06
+I jk
+
+[Leo Irakliotis] 12:07:08
+M, and whatever makes sense.
+
+[Leo Irakliotis] 12:07:15
+So I just asked Bella to count from one to five
+
+[Leo Irakliotis] 12:07:20
+Okay.
+
+[Leo Irakliotis] 12:07:22
+So if you have
+
+[Leo Irakliotis] 12:07:24
+Wine apples, two apples, three apples
+
+[Fatima Camara] 12:07:28
+The only
+
+[Leo Irakliotis] 12:07:29
+Who's laughing loudly with my apples there? You are
+
+[Leo Irakliotis] 12:07:35
+Counting one apple to apple, three, apple, 4 apples. Your tuition at work, you know, were back to first grade counting apples.
+
+[Leo Irakliotis] 12:07:43
+Now, I want to do something a little bit more challenging
+
+[Leo Irakliotis] 12:07:49
+I haven't heard in a while from Erica. Erica, are you up for it
+
+[Leo Irakliotis] 12:07:56
+We're going to do advanced mathematics here, very advanced mathematics.
+
+[Leo Irakliotis] 12:08:01
+I want to enumerate those five apples in any way except for using these numbers.
+
+[Leo Irakliotis] 12:08:13
+How would you enumerate
+
+[Leo Irakliotis] 12:08:16
+those apples
+
+[Gregor, Erica] 12:08:26
+I… yeah, I don't know.
+
+[Gregor, Erica] 12:08:29
+I guess, like, you could start using letters, A, B, C, D, E…
+
+[Leo Irakliotis] 12:08:32
+Okay, no, awesome, awesome.
+
+[Leo Irakliotis] 12:08:41
+There is a difference between counting
+
+[Leo Irakliotis] 12:08:43
+And enumerating.
+
+[Leo Irakliotis] 12:08:46
+I would
+
+[Leo Irakliotis] 12:08:47
+Enumer
+
+[Leo Irakliotis] 12:09:07
+And not including 16
+
+[Leo Irakliotis] 12:09:10
+With a step of four
+
+[Leo Irakliotis] 12:09:13
+So my enumeration is a range of values that has a starting value
+
+[Leo Irakliotis] 12:09:24
+It has an end value
+
+[Leo Irakliotis] 12:09:28
+not to be included
+
+[Leo Irakliotis] 12:09:31
+This is the most
+
+[Leo Irakliotis] 12:09:33
+Weird part
+
+[Leo Irakliotis] 12:09:35
+And it has a step
+
+[Leo Irakliotis] 12:09:39
+So, can you enumerate from minus 4 to 16 with a step 4, but not reach 16? Okay, minus 4. What is the next numerative value? Minus 4 plus the step, 0. What is the next numerative value? 0 plus
+
+[Leo Irakliotis] 12:09:55
+Where's the next numerative value that is not 16? 4 plus 4, 8, 8 plus 4, 12
+
+[Leo Irakliotis] 12:10:03
+If I add now for the step
+
+[Leo Irakliotis] 12:10:07
+To this value, I'll go 16, and I cannot use 16, so I stop here. How many items I have enumerated? 1, 2, 3, 4, 5. There are your 5 apples.
+
+[Leo Irakliotis] 12:10:20
+Most people
+
+[Leo Irakliotis] 12:10:23
+We'll enumerate from 1 to 5. How many apples here? 1 to 5
+
+[Leo Irakliotis] 12:10:30
+whether you use letters
+
+[Leo Irakliotis] 12:10:32
+or the way I learned how to enumerate in first grade, I don't know about you, alpha
+
+[Leo Irakliotis] 12:10:38
+Beta, gamma, delta, epsilon. Okay
+
+[Leo Irakliotis] 12:10:45
+But
+
+[Leo Irakliotis] 12:10:50
+Talk about a traumatic experience in elementary school learning arithmetic in ancient Greek.
+
+[Leo Irakliotis] 12:10:58
+Most of us enumerate with Arab numerals from one to five
+
+[Leo Irakliotis] 12:11:05
+Computers are a little bit more weird than that
+
+[Leo Irakliotis] 12:11:13
+Let's pretend
+
+[Leo Irakliotis] 12:11:16
+Can it, let's pretend that you are in line at the checkout line at the grocery store.
+
+[Leo Irakliotis] 12:11:25
+There is no one in front of between you and the cashier.
+
+[Leo Irakliotis] 12:11:32
+Zero people
+
+[Leo Irakliotis] 12:11:35
+Between
+
+[Leo Irakliotis] 12:11:38
+You and register
+
+[Leo Irakliotis] 12:11:43
+What's your position in line, Candace
+
+[Kandace Garcia] 12:11:48
+I'm first in line.
+
+[Leo Irakliotis] 12:11:51
+You are first in line. What does first in line mean? It means that there is no one in front of you.
+
+[Leo Irakliotis] 12:12:02
+Aaron
+
+[Leo Irakliotis] 12:12:04
+There are 3 people between you and the register. What is your position in line?
+
+[Eron Banushi] 12:12:11
+You're fourth?
+
+[Leo Irakliotis] 12:12:13
+You are fourth. Awesome. So computers, instead of telling you that you're fourth in line or first in line, they count by telling you how many people are in
+
+[Leo Irakliotis] 12:12:26
+In front of you. So if this is
+
+[Leo Irakliotis] 12:12:30
+The register here
+
+[Leo Irakliotis] 12:12:50
+And Candace is the first in line
+
+[Leo Irakliotis] 12:12:59
+How many ways can I misspell your name?
+
+[Leo Irakliotis] 12:13:06
+The computer says you are number zero
+
+[Leo Irakliotis] 12:13:09
+And that number indicates how many people are ahead of you.
+
+[Leo Irakliotis] 12:13:14
+For Aaron, the computer says that you are number four, sorry, your number three
+
+[Leo Irakliotis] 12:13:21
+Doesn't mean that you're third in line. It means
+
+[Leo Irakliotis] 12:13:31
+that there are
+
+[Leo Irakliotis] 12:13:33
+3 people in front of you in line.
+
+[Leo Irakliotis] 12:13:39
+Therefore, if there are three people in front of you in line, you are number fourth
+
+[Leo Irakliotis] 12:13:47
+Distinguishing between human counting and computer counting is going to trouble you for a while
+
+[Leo Irakliotis] 12:13:55
+But the best thing you can do is to come back to
+
+[Leo Irakliotis] 12:14:00
+grocery store checkout line and says, I'm first in line, I'm in position zero, meaning I'm first in line, because zero indicates how many people are in front of you. So the computer enumeration
+
+[Leo Irakliotis] 12:14:13
+Says that in a sequence of things, how many of those things are before you?
+
+[Leo Irakliotis] 12:14:18
+And if you know how many things are before you, you know what is your place in line. If there are zero people in front of you, you're first in line. If there are three people in front of you, you're fourth in line. So it's very easy to translate
+
+[Leo Irakliotis] 12:14:34
+We are going to explore this in the context of how we write range values
+
+[Leo Irakliotis] 12:14:43
+for a computer program to enumerate things for us tomorrow, but I want you to remember this. I'm 1st in line because there are zero people in front of me. So as far as the computer is concerned, I have a big zero on my head. The computer, by
+
+[Leo Irakliotis] 12:14:59
+Putting that zero on me says that there is no one between you and the service you require.
+
+[Leo Irakliotis] 12:15:05
+Whether it's checking out from the grocery store or stepping up to the box office to get your event ticket, your movie ticket or whatnot
+
+[Leo Irakliotis] 12:15:17
+There is an apocryphal story about how we came to counting like that. And there is a mathematical story as well. I will tell you the apocryphal story tomorrow because it's much more interesting than the mathematics of it.
+
+[Leo Irakliotis] 12:15:32
+Questions, comments, requests? All right, so we are going to wrap up loops tomorrow and you're going to go home with an actual assignment that I will ask you to bring to class to submit by class time on Monday. So you have two or three days plus the weekend to do it. It's going to be an assignment that
+
+[Leo Irakliotis] 12:15:50
+try to be respectful of your weekend time. So if you want to work on it Thursday and Friday, you can finish it definitely by then. If you want to stretch a little bit into your weekend, it's your time, but if there is a weekend between the assignment and its due date.
+
+[Leo Irakliotis] 12:16:07
+I try to make it such that it doesn't really creep into the weekend unless you make… you choose to.
+
+[Leo Irakliotis] 12:16:16
+We'll see you tomorrow
+
+[Bella Fiorucci] 12:16:18
+Thank you!
+
+[Rebecca Dickman] 12:16:20
+Thank you.
+
+[Leo Irakliotis] 12:16:20
+Bye everyone
+
+[Kandace Garcia] 12:16:21
+Thank you.
+
