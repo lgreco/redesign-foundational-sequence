@@ -1,0 +1,2781 @@
+[Leo Irakliotis] 10:25:30
+Hello. Hello, everyone.
+
+[Leo Irakliotis] 10:25:50
+All right, so we'll get started. Let me see if there are any questions, any comments, any requests
+
+[Leo Irakliotis] 10:26:23
+Yesterday, as we were discussing
+
+[Leo Irakliotis] 10:26:30
+The code we wrote for the dynamic array
+
+[Leo Irakliotis] 10:26:35
+We accidentally, kind of intentionally, kind of accidentally, intentionally on my part, but it could have been just as accidental. We introduced
+
+[Leo Irakliotis] 10:26:45
+a bug. And
+
+[Leo Irakliotis] 10:26:49
+The bug itself, if we want to
+
+[Leo Irakliotis] 10:26:52
+to demonstrate it
+
+[Leo Irakliotis] 10:26:56
+As a reminder
+
+[Leo Irakliotis] 10:26:59
+From dynamic
+
+[Leo Irakliotis] 10:27:01
+All right
+
+[Leo Irakliotis] 10:27:05
+more improved that the name of the Python file where we have our code import the dynamic array module or importing a module
+
+[Leo Irakliotis] 10:27:17
+And from that module, we are importing a particular
+
+[Leo Irakliotis] 10:27:21
+artifact, the object we wrote. So I can use it like a by itself here, so I can write test equals dynamic array
+
+[Leo Irakliotis] 10:27:34
+And I want you to start with space for two items, and I want you to grow by 10%.
+
+[Leo Irakliotis] 10:27:43
+And I go in and add couple of items there
+
+[Leo Irakliotis] 10:27:51
+And when I print the object, you see that all two positions are occupied, and
+
+[Leo Irakliotis] 10:28:00
+I sold you this object. I told you, I told my customers that this is an object that dynamically, automagically resizes itself when it's run out of space and you want to add more data, don't worry about it
+
+[Leo Irakliotis] 10:28:16
+the object
+
+[Leo Irakliotis] 10:28:17
+will grow
+
+[Leo Irakliotis] 10:28:18
+As needed so my clients believe me, then they say, okay, let's add something else
+
+[Leo Irakliotis] 10:28:31
+And the program crashes
+
+[Leo Irakliotis] 10:28:34
+That's the bug we introduced
+
+[Leo Irakliotis] 10:28:38
+And the question is now, what is causing the bug? Why is this not working
+
+[Leo Irakliotis] 10:28:49
+And how can we fix it?
+
+[Leo Irakliotis] 10:28:52
+So
+
+[Leo Irakliotis] 10:28:54
+Who put some thought to it?
+
+[Q. Dutch] 10:28:58
+He said what, sir?
+
+[Leo Irakliotis] 10:29:01
+Anyone put some thought in it?
+
+[Q. Dutch] 10:29:03
+Yes.
+
+[Leo Irakliotis] 10:29:06
+Yeah.
+
+[Q. Dutch] 10:29:07
+Um…
+
+[Leo Irakliotis] 10:29:08
+Let's say, let's start with Dutch, and I see Tamika raising her hand as well. Zara Alexander, how about yourself?
+
+[Alexander Garcia] 10:29:18
+So in the previous code that you had there, it was 0.1 and although there's multiple numbers like contained within like local zip codes
+
+[Alexander Garcia] 10:29:31
+When you compile it, the zero before the one would cause it to… because it's a float, it would cause it to be
+
+[Alexander Garcia] 10:29:41
+Marked as like a zero, which would produce the error. So you would have to do a 1.1 at the very least to increase it by 10%. You'd have to insert a command to make it an integer to convert
+
+[Alexander Garcia] 10:29:56
+float from an integer, so that way it would be a whole number, and
+
+[Alexander Garcia] 10:30:05
+Allow it to register as a whole number, as opposed to, like, a float, which would
+
+[Alexander Garcia] 10:30:12
+get kicked out of, like, a list because, like, the list needs to be integers, if I'm not mistaken.
+
+[Leo Irakliotis] 10:30:19
+And Tamika, what do you think? Thanks, Alexander.
+
+[Temeeka Glass] 10:30:23
+I had a similar line of thinking where, um,
+
+[Temeeka Glass] 10:30:27
+like, the error is definitely because of the float that's being introduced into the resize method.
+
+[Temeeka Glass] 10:30:33
+Um…
+
+[Temeeka Glass] 10:30:35
+And, like, converting that float to a whole number integer.
+
+[Leo Irakliotis] 10:30:41
+Okay.
+
+[Temeeka Glass] 10:30:42
+Um… yeah.
+
+[Temeeka Glass] 10:30:43
+Using, like, you mentioned in the last class the sealing.
+
+[Leo Irakliotis] 10:30:45
+So
+
+[Temeeka Glass] 10:30:46
+function, too, so…
+
+[Leo Irakliotis] 10:30:46
+Yeah.
+
+[Leo Irakliotis] 10:30:48
+Yeah
+
+[Leo Irakliotis] 10:30:49
+So, absolutely. And I think that I agree with both of you.
+
+[Leo Irakliotis] 10:30:56
+Tamika, you took it a step, one step further, which is you told us where to look for the mistake
+
+[Temeeka Glass] 10:31:04
+Oh.
+
+[Leo Irakliotis] 10:31:05
+We know where the mistake is. We don't know where the mistake is. We need to find where the mistake is. So I ask you about what, why, and how, and I forgot to ask where. And you just answered the where part. It's in the where is the bug in the program? Okay, well, my program is 10,000 lines. Where exactly is it? Well, it's in the resize method
+
+[Leo Irakliotis] 10:31:22
+Okay, now I'm narrowing down
+
+[Leo Irakliotis] 10:31:27
+the location. Okay, what is the problem? The problem is
+
+[Leo Irakliotis] 10:31:34
+That in line
+
+[Leo Irakliotis] 10:31:38
+85, I'm multiplying an integer number. Capacity is an integer number
+
+[Leo Irakliotis] 10:31:43
+How many seats are in this car? How many people can fit in this car? 5 people, 6 car capacity is always an integer number. And I'm multiplying it with a factor resize by
+
+[Leo Irakliotis] 10:31:59
+Which is no longer guaranteed to be an integer. In the previous implementation, resize by was 2.
+
+[Leo Irakliotis] 10:32:06
+Integer by times integer gives us an integer, no problem. But now, resize may be a fraction
+
+[Leo Irakliotis] 10:32:15
+And not only that, Dutch, go ahead.
+
+[Q. Dutch] 10:32:18
+I just want to say that even after that, if we use the math, uh, seal,
+
+[Q. Dutch] 10:32:25
+I don't know, function…
+
+[Q. Dutch] 10:32:27
+Um, and it goes up to 1, and so we saw something that it's gonna stay the same, and so how we… how you have it on…
+
+[Q. Dutch] 10:32:36
+a say line 85?
+
+[Q. Dutch] 10:32:39
+Versus the temp capacity equals self-resize by self-capacity.
+
+[Q. Dutch] 10:32:45
+Um, you have to do if…
+
+[Q. Dutch] 10:32:47
+Um, you have to do the if statement, um, in the loop, so it should be, like,
+
+[Q. Dutch] 10:32:53
+If, um…
+
+[Q. Dutch] 10:32:55
+temp capacity is less or equal to self-capacity, and then you would do that the
+
+[Q. Dutch] 10:33:01
+Temp capacity equals self-capacity plus 1. So you have to add…
+
+[Q. Dutch] 10:33:07
+an extra one, because if we… even if we… even if we change that float to an integer,
+
+[Q. Dutch] 10:33:12
+it's still gonna be, like, what was that, 4 times 1, and it doesn't…
+
+[Q. Dutch] 10:33:17
+It doesn't increase, it just stays the same.
+
+[Leo Irakliotis] 10:33:23
+Alexander also mentioned that Resize by is 0.1%. So if I have a capacity with four and I say the new capacity is 0.1 times 4, that's my capacity of four to 0.4, which first of all is not an integer, so I'm going to have a problem with
+
+[Q. Dutch] 10:33:28
+Yeah.
+
+[Leo Irakliotis] 10:33:40
+with that. But the idea is to increase the capacity, not to reduce it. So the first thing we need to do here
+
+[Leo Irakliotis] 10:33:47
+Is… and we don't need to do an if statement. I understand what you're saying, and I agree, but I want to keep the code symbol, so what I want to do is here, add one
+
+[Leo Irakliotis] 10:33:59
+To this
+
+[Leo Irakliotis] 10:34:02
+So now I'm multiplying by if you want to increase the size of this array by 10%, you have to multiply the existing size by 11
+
+[Leo Irakliotis] 10:34:14
+So if you have an array with 10 elements and you increase the size by 10%, you expect an array of 11 elements. That means you take the current size
+
+[Leo Irakliotis] 10:34:26
+Plus
+
+[Leo Irakliotis] 10:34:27
+1 tenth of the current size, and that's what the one plus resize comes from. It's just factoring things mathematically
+
+[Leo Irakliotis] 10:34:37
+But the problem is that line 85 still produces
+
+[Leo Irakliotis] 10:34:44
+And non-integer number, and we want an integer number because that's that's how lists arrays work. They have an integer number of spaces. And also
+
+[Leo Irakliotis] 10:34:59
+You know, let's see here what happened. So we want to make this an integer number. So I'll come here and say, hey, and take this entire expression and make it an integer number.
+
+[Leo Irakliotis] 10:35:27
+So when I add things, okay, if I try to add the third thing, what will happen?
+
+[Leo Irakliotis] 10:35:37
+Again, I have a problem. This time, it is not about float versus integer. I have an integer
+
+[Leo Irakliotis] 10:35:47
+But I have a
+
+[Leo Irakliotis] 10:35:49
+totally different problem. So, let's talk a little bit about this totally different problem
+
+[Leo Irakliotis] 10:35:57
+And get it out of the way. So first of all
+
+[Leo Irakliotis] 10:36:02
+I saw a hand going up. Who was that hand? Sorry, I missed it.
+
+[Soaga, Jeleel] 10:36:04
+Oh, it was mean.
+
+[Leo Irakliotis] 10:36:06
+Go ahead.
+
+[Soaga, Jeleel] 10:36:07
+Um, I was gonna say, cause Tamika kind of touched on it earlier,
+
+[Soaga, Jeleel] 10:36:11
+About, um, adding, like, a ceiling.
+
+[Soaga, Jeleel] 10:36:15
+So, like, you could, like, I mean, you could keep the code pretty much the same, um, you would just, like, add, like, a…
+
+[Soaga, Jeleel] 10:36:20
+like a math dot ceiling.
+
+[Soaga, Jeleel] 10:36:24
+Um, and then, like, the air should, like,
+
+[Leo Irakliotis] 10:36:24
+Yeah.
+
+[Soaga, Jeleel] 10:36:28
+shouldn't appear to correct itself.
+
+[Leo Irakliotis] 10:36:30
+Yeah. But let's see what is the cause of the error first, okay? I agree. So we want to increase the capacity by 100%. So one of the new capacity
+
+[Leo Irakliotis] 10:36:46
+To be the old capacity
+
+[Leo Irakliotis] 10:36:49
+Plus, 10%.
+
+[Leo Irakliotis] 10:36:51
+of the old capacity.
+
+[Leo Irakliotis] 10:36:55
+Okay, so basically what we say is, all right capacity
+
+[Leo Irakliotis] 10:37:00
+We assign the value yourself plus 10%
+
+[Leo Irakliotis] 10:37:06
+times yourself. That's why that's where that expression comes. And then we took the integer part of this
+
+[Leo Irakliotis] 10:37:13
+But here is the problem. So, if our capacity
+
+[Leo Irakliotis] 10:37:19
+And I want to increase it by 10%. What happens in here is I'm saying that capacity, the new capacity, is the integer part
+
+[Leo Irakliotis] 10:37:31
+of
+
+[Leo Irakliotis] 10:37:32
+times 1. That's 10% increment.
+
+[Leo Irakliotis] 10:37:38
+And this is integer part of 3.3.
+
+[Leo Irakliotis] 10:37:43
+And what is the integer value of 3.3?
+
+[Leo Irakliotis] 10:37:47
+3.
+
+[Leo Irakliotis] 10:37:49
+So my capacity is the same
+
+[Leo Irakliotis] 10:37:51
+I'm not incrementing it. Why? Because the integer function in Python goes to the nearest
+
+[Leo Irakliotis] 10:38:02
+integer that is less than the current value
+
+[Leo Irakliotis] 10:38:06
+So in Python, the integer function is the same as the floor function.
+
+[Leo Irakliotis] 10:38:14
+And we want the ceiling function. That's what we talked about yesterday. Go to the next highest integer, not the previous lowest integer.
+
+[Leo Irakliotis] 10:38:23
+So in mathematics, when you have the line number and every vertical line here is an integer, let's say that this is N, this is N
+
+[Leo Irakliotis] 10:38:38
+plus one, and you have a number here somewhere between end and a number and and plus one, a real number somewhere between 2 integers. What we have is this is the floor function
+
+[Leo Irakliotis] 10:38:53
+If this is X, this is the floor
+
+[Leo Irakliotis] 10:38:57
+of X, and this is the ceiling
+
+[Leo Irakliotis] 10:39:01
+Of X. And mathematically, we show floor by this brackets and ceiling
+
+[Leo Irakliotis] 10:39:09
+by these brackets to indicate which direction we're moving as we round up the number to the next
+
+[Leo Irakliotis] 10:39:16
+to a near to the to a nearby integer. Do we go low, or do we go high? We want to go high.
+
+[Leo Irakliotis] 10:39:23
+Because if integer
+
+[Leo Irakliotis] 10:39:27
+3.3 is 3 ceiling of 3.3. Guess what it is? 4
+
+[Leo Irakliotis] 10:39:33
+So now, my capacity, even at 10%
+
+[Leo Irakliotis] 10:39:38
+Most of our if I had an array with three elements and I'm adding 10% to it, it would be 3.3. Well, actually we'll move to 4 because of the ceiling function.
+
+[Leo Irakliotis] 10:39:48
+problem
+
+[Leo Irakliotis] 10:39:50
+However, is that
+
+[Leo Irakliotis] 10:39:55
+And let's demonstrate it. So here is integer 3.3.
+
+[Leo Irakliotis] 10:40:00
+or if it is a value of 3.3 is 3. Okay, what is the ceiling value of 3.3? Well, we expect 4, but instead we get an error. Why? Because the ceiling function is not
+
+[Leo Irakliotis] 10:40:15
+part of the standard
+
+[Leo Irakliotis] 10:40:19
+library for Python. We have to import so import we have to import the math module
+
+[Leo Irakliotis] 10:40:26
+And now we can say, go to the math module, pull out the ceiling function and give me the ceiling value of 3.3. Now we're going to get four.
+
+[Leo Irakliotis] 10:40:35
+And that's a modification we have to do into our code because it's not sufficient anymore to come here and say, oh, instead of sealing, instead of integer, I got it. I have to write ceiling
+
+[Leo Irakliotis] 10:40:50
+Well, the program will execute because it doesn't know where ceiling comes from.
+
+[Leo Irakliotis] 10:40:55
+Okay, oh, you mean massilly? Okay, so I'll do this math
+
+[Leo Irakliotis] 10:41:01
+ceiling
+
+[Leo Irakliotis] 10:41:02
+Well, what is math? Math doesn't exist in this code. I have to go to the beginning of the code here
+
+[Leo Irakliotis] 10:41:10
+All the way up
+
+[Leo Irakliotis] 10:41:15
+And import
+
+[Leo Irakliotis] 10:41:16
+The math module.
+
+[Temeeka Glass] 10:41:20
+Um, I have a question about the imported. Can you also… I mean, you'd also be able to import the…
+
+[Leo Irakliotis] 10:41:21
+Yeah.
+
+[Temeeka Glass] 10:41:26
+dynamic array file, too, from here.
+
+[Temeeka Glass] 10:41:30
+Like, ownership?
+
+[Leo Irakliotis] 10:41:30
+Well, this is a dynamic array file. I'm inside the dynamic array file
+
+[Temeeka Glass] 10:41:31
+Oh.
+
+[Temeeka Glass] 10:41:34
+Okay.
+
+[Leo Irakliotis] 10:41:35
+So when I use it in a different application, when I import the dynamic array file, it imports what that file imports as well, in this case, the math module
+
+[Temeeka Glass] 10:41:47
+Oh.
+
+[Leo Irakliotis] 10:41:49
+But I'm editing the dynamic array file
+
+[Leo Irakliotis] 10:41:54
+Now, here, there are a couple of ways to do the import. Another way to do the import is to write, say that from the math module
+
+[Leo Irakliotis] 10:42:02
+import chile
+
+[Leo Irakliotis] 10:42:08
+If I use the second option
+
+[Leo Irakliotis] 10:42:12
+Then in my
+
+[Leo Irakliotis] 10:42:14
+resize program, I don't have to reference
+
+[Leo Irakliotis] 10:42:20
+Here, I don't have to say go to math
+
+[Leo Irakliotis] 10:42:23
+I don't and use ceiling.
+
+[Leo Irakliotis] 10:42:30
+I can do it like this
+
+[Leo Irakliotis] 10:42:36
+Whether you import the module and then you reference module.function like we had before, or you say from module import this function and use just a function name, it's up to you. There are a couple of schools of thought. When I had math.seiling here
+
+[Leo Irakliotis] 10:42:53
+I'm giving you the full hierarchy
+
+[Leo Irakliotis] 10:43:01
+So what you see here is, oh, this is a function called
+
+[Leo Irakliotis] 10:43:07
+as it's called CEIL ceiling maybe that belongs into this higher level artifact, a module, and you expect to see the import module up at
+
+[Leo Irakliotis] 10:43:22
+At the beginning of your code
+
+[Leo Irakliotis] 10:43:28
+Whichever way you want to use, it's fine with me. In the notes I'm sharing with you the preference seems to be toward the import the full module and then use module.function
+
+[Leo Irakliotis] 10:43:44
+reference throughout the code. But at the same time, if you're going to be using the ceiling function in a lot like 20, 30 times throughout your code, you don't want to have to write 20, 30 times math dot ceiling math dot ceiling
+
+[Leo Irakliotis] 10:43:59
+If a function is going to be used so many times in your code
+
+[Leo Irakliotis] 10:44:05
+Import that function from the module. So from module import ceiling, from math import ceiling. Those are, you know
+
+[Leo Irakliotis] 10:44:11
+stylistic preferences that don't really make a difference.
+
+[Leo Irakliotis] 10:44:17
+Another thing I would like, so we fixed the bug that we introduced yesterday. Great.
+
+[Leo Irakliotis] 10:44:25
+What I would like to do next is to make a couple of changes here. First of all
+
+[Leo Irakliotis] 10:44:37
+We started this discussion by creating a kind of a silly example where I want to capture the zip codes of my friends. In line 45 and throughout the program, I am
+
+[Leo Irakliotis] 10:44:50
+calling the underlying container where I store data
+
+[Leo Irakliotis] 10:44:55
+Zip codes, which makes the name very specific to a very narrow application. This is for tracking zip codes.
+
+[Leo Irakliotis] 10:45:03
+Fair enough, but let's generalize the name. If this was a container to capture just about any data we want, doesn't have to be necessarily zip codes
+
+[Leo Irakliotis] 10:45:13
+What should be a more appropriate name for the container instead of zip codes
+
+[Leo Irakliotis] 10:45:22
+I want to rename line 45 with a more appropriate name for a broader
+
+[Leo Irakliotis] 10:45:32
+use of this object.
+
+[Leo Irakliotis] 10:45:38
+Any suggestions
+
+[Leo Irakliotis] 10:45:40
+Pepperoni
+
+[Leo Irakliotis] 10:45:43
+Broccoli
+
+[Q. Dutch] 10:45:45
+I guess you can name it anything, um, even…
+
+[Q. Dutch] 10:45:49
+new underscore zip codes, but it still has just have some notes of explaining it, why you renamed it, so I guess, does it really…
+
+[Q. Dutch] 10:45:57
+I'm asking, does it really matter what you name it?
+
+[Leo Irakliotis] 10:46:01
+Well, it does matter what you name it, because if I call it broccoli
+
+[Leo Irakliotis] 10:46:07
+What does this tell others about how serious programmer I am
+
+[Leo Irakliotis] 10:46:14
+If, if I… if I rename it to this
+
+[Leo Irakliotis] 10:46:33
+Were you okay with that?
+
+[Leo Irakliotis] 10:46:52
+So what would be a more appropriate name?
+
+[Leo Irakliotis] 10:46:55
+Because I want this to be a container to store any data the user wants to store. Zip codes implies a very specific application. I don't want to be that specific. I want to be more generic
+
+[Q. Dutch] 10:47:10
+Oh, well, at the beginning… oh, sorry.
+
+[Leo Irakliotis] 10:47:13
+Nadeem? Huzara, sorry
+
+[Kofi Nyarku] 10:47:15
+Zipstore
+
+[Zahra Nadeem] 10:47:16
+He took out storage.
+
+[Zahra Nadeem] 10:47:18
+You should…
+
+[Leo Irakliotis] 10:47:19
+Storage
+
+[Leo Irakliotis] 10:47:21
+Okay, storage
+
+[Leo Irakliotis] 10:47:27
+A very broad noun that captures things
+
+[Leo Irakliotis] 10:47:31
+Any other suggestions?
+
+[Q. Dutch] 10:47:34
+I think at the…
+
+[Kofi Nyarku] 10:47:34
+zip underscore story
+
+[Leo Irakliotis] 10:47:38
+coffee?
+
+[Kofi Nyarku] 10:47:40
+Zip underscore store.
+
+[Leo Irakliotis] 10:47:42
+With ZIP implies zip codes.
+
+[Kofi Nyarku] 10:47:45
+Okay.
+
+[Leo Irakliotis] 10:47:45
+What if I want to store their ISBN numbers for books? What I want to store their phone numbers? If I want to store their… I don't know, recipes
+
+[Leo Irakliotis] 10:47:59
+Zip is… if you say that we're writing this only for zip things, absolutely, but that's not the case anymore. Dutch
+
+[Q. Dutch] 10:48:08
+That's a beginning, you said that this would be… we were trying to, like, input our friends' locations and stuff like that.
+
+[Leo Irakliotis] 10:48:14
+Yeah.
+
+[Q. Dutch] 10:48:15
+Did you just change it to, like, I guess, self.france underscore location?
+
+[Leo Irakliotis] 10:48:17
+Yeah.
+
+[Q. Dutch] 10:48:20
+And just change it like that.
+
+[Leo Irakliotis] 10:48:20
+What about what if I want instead of France, I want the locations of the restaurants where I got food poisoning in the last five years?
+
+[Q. Dutch] 10:48:26
+Well, you could do that. Self.bat, uh, or you said poison underscore food, and stuff like that.
+
+[Leo Irakliotis] 10:48:33
+Okay, that's for me. But then if I want to sell that application to someone else that wants to list their coffee shops
+
+[Leo Irakliotis] 10:48:41
+And someone else wants to use this product to store flower shops, like flower shop locations. Am I going to go into the application and change the name of the variable for different clients?
+
+[Leo Irakliotis] 10:48:56
+All I want to sell you is a piece of paper. What you write on that paper, none of my business
+
+[Leo Irakliotis] 10:49:02
+But what I will tell you is a stack
+
+[Leo Irakliotis] 10:49:05
+is a notebook
+
+[Soaga, Jeleel] 10:49:06
+Could you say, like…
+
+[Soaga, Jeleel] 10:49:08
+zip-like number, or not zip number, sorry, self, self.number, or, like, self. Like, location.
+
+[Leo Irakliotis] 10:49:11
+See?
+
+[Soaga, Jeleel] 10:49:14
+So then it's generic enough, so it's like…
+
+[Soaga, Jeleel] 10:49:17
+Depending on, like, what the application is being used for, like, it's not like…
+
+[Soaga, Jeleel] 10:49:23
+your, like, imprint on it, right? Like, no one knows, like, what you used it beforehand.
+
+[Soaga, Jeleel] 10:49:28
+Or…
+
+[Leo Irakliotis] 10:49:29
+Numbers implies numbers, locations implies locations
+
+[Leo Irakliotis] 10:49:34
+I want when you buy a notebook
+
+[Leo Irakliotis] 10:49:47
+What you write in this notebook is quite different from what I write in my notebook. You can write anything you want there
+
+[Leo Irakliotis] 10:49:56
+So I want a name like storage
+
+[Leo Irakliotis] 10:50:00
+That does not
+
+[Leo Irakliotis] 10:50:04
+Indicate
+
+[Leo Irakliotis] 10:50:05
+Any particular preference as to how this application will be used
+
+[Alexander Garcia] 10:50:14
+So would something like size, like self.size be more appropriate?
+
+[Leo Irakliotis] 10:50:22
+Size in this
+
+[Leo Irakliotis] 10:50:24
+Would you go to a bookstore and buy a 20 page thing? You don't ask for 20. This is the size here, 20 pages, 30 pages, 50 pages. Size implies size, some measurable quantity about this object
+
+[Leo Irakliotis] 10:50:39
+How many pages are in the notebook? Well, I want a notebook, okay. How many pages? Well, here we're building a notebook that adds pages, as we need more and more pages. It resizes itself.
+
+[Leo Irakliotis] 10:50:52
+So size is a measurement
+
+[Leo Irakliotis] 10:50:56
+Not a functional name.
+
+[Leo Irakliotis] 10:50:59
+And that's why I'm telling you that the second most difficult thing in computing, in programming is finding the right name for things
+
+[Leo Irakliotis] 10:51:09
+And we can go storage
+
+[Temeeka Glass] 10:51:13
+But something like entries or items work?
+
+[Leo Irakliotis] 10:51:16
+Entries, items, storage. Now you're talking
+
+[Leo Irakliotis] 10:51:23
+And what those entries are depends on the user. Alexander wants those entries to be the restaurants where he got food poisoning. Dutch wants those entries to be flower shops where you can find
+
+[Leo Irakliotis] 10:51:38
+Yellow roses and those entries to be bookstores
+
+[Leo Irakliotis] 10:51:48
+Independent bookstores in Chicago, and I want those angries to be the zip codes with my friends
+
+[Leo Irakliotis] 10:51:55
+We can call it entries, we can call it items, we can call it storage. Absolutely. My preference, and that's from the instructional perspective as an instructor, it makes my job easier when I call that
+
+[Leo Irakliotis] 10:52:10
+underlying, implying that this is the underlying storage unit.
+
+[Leo Irakliotis] 10:52:15
+Because then, I'm describing the code and say, when you look at the underlying list.
+
+[Leo Irakliotis] 10:52:20
+And I'm referencing that object. So I'm going to change
+
+[Leo Irakliotis] 10:52:24
+All the references
+
+[Leo Irakliotis] 10:52:27
+to,
+
+[Leo Irakliotis] 10:52:29
+To this
+
+[Leo Irakliotis] 10:52:33
+from zip codes
+
+[Leo Irakliotis] 10:52:41
+Underlying
+
+[Leo Irakliotis] 10:52:46
+And avoid that, but I am going to preface
+
+[Leo Irakliotis] 10:52:51
+underlying
+
+[Leo Irakliotis] 10:52:56
+With a
+
+[Leo Irakliotis] 10:52:58
+single underscore
+
+[Leo Irakliotis] 10:53:01
+And I want this
+
+[Leo Irakliotis] 10:53:03
+change to be global. There we are. So
+
+[Leo Irakliotis] 10:53:11
+Throughout my program now
+
+[Leo Irakliotis] 10:53:14
+I have
+
+[Leo Irakliotis] 10:53:17
+Underline
+
+[Leo Irakliotis] 10:53:18
+And
+
+[Leo Irakliotis] 10:53:24
+There is a reason I started with
+
+[Leo Irakliotis] 10:53:28
+and underscore
+
+[Leo Irakliotis] 10:53:30
+I'm going to do the same thing for capacity
+
+[Leo Irakliotis] 10:53:34
+I am going to rename capacity
+
+[Leo Irakliotis] 10:53:40
+If I can spell it.
+
+[Leo Irakliotis] 10:53:44
+to capacity
+
+[Leo Irakliotis] 10:53:50
+And under
+
+[Leo Irakliotis] 10:53:51
+score
+
+[Leo Irakliotis] 10:53:57
+And I'm going to do the same thing with size
+
+[Leo Irakliotis] 10:54:23
+What does an underscore mean?
+
+[Leo Irakliotis] 10:54:28
+It is a visual cue
+
+[Leo Irakliotis] 10:54:32
+Telling other programmers
+
+[Leo Irakliotis] 10:54:35
+that these object attributes are
+
+[Leo Irakliotis] 10:54:40
+Protect it. Please do not allow programs outside this program to access those values directly.
+
+[Leo Irakliotis] 10:54:50
+Okay.
+
+[Leo Irakliotis] 10:54:51
+Let's see how this works
+
+[Leo Irakliotis] 10:55:12
+So if I say, hey, what is
+
+[Leo Irakliotis] 10:55:16
+the size of this object
+
+[Leo Irakliotis] 10:55:19
+It will print zero. So I am now operating on this object from an outside program
+
+[Leo Irakliotis] 10:55:24
+And I'm allowed to go into that object and obtain the value of an object attribute
+
+[Leo Irakliotis] 10:55:34
+What I do here
+
+[Leo Irakliotis] 10:55:37
+is a violation of
+
+[Leo Irakliotis] 10:55:41
+of the principal known as we're all adult adults
+
+[Leo Irakliotis] 10:55:46
+And that principle says that when you see an object variable that is prefixed with an underscore, please do not do this.
+
+[Leo Irakliotis] 10:55:57
+It's the equivalent like just because
+
+[Leo Irakliotis] 10:56:01
+Your backpack is open. That doesn't give me permission to reach in your backpack
+
+[Leo Irakliotis] 10:56:11
+Pull out your wallet with your ID card and say, hey, your name is Alexander. Good to meet you
+
+[Leo Irakliotis] 10:56:19
+If I want to ask Mr. Garcia what his name is, I should just say that, hey, what's your name?
+
+[Leo Irakliotis] 10:56:26
+And it's up to Alex to determine if he wants to answer that question or not
+
+[Leo Irakliotis] 10:56:36
+And most of us, when I'm being asked about our first name
+
+[Leo Irakliotis] 10:56:43
+But, you know, no problem. But say, hey
+
+[Leo Irakliotis] 10:56:47
+Damika, what is your social security number, date of birth, and mother's maiden name?
+
+[Leo Irakliotis] 10:56:54
+You know, that's information that you may want to protect. Now, so if a random
+
+[Leo Irakliotis] 10:57:00
+Bozo are there in the street says, hey, what's your social security number
+
+[Leo Irakliotis] 10:57:05
+Mother's maiden name and date of birth
+
+[Leo Irakliotis] 10:57:09
+You're not going to give that information to the person because that person is your professor at Loyola
+
+[Leo Irakliotis] 10:57:15
+But if the setting was different, if I was the loan officer at the bank and you're applying
+
+[Leo Irakliotis] 10:57:21
+For a mortgage
+
+[Leo Irakliotis] 10:57:24
+You're going to spill your guts just like this.
+
+[Leo Irakliotis] 10:57:27
+Why? Because there is a trusted relationship when you go to the banking environment
+
+[Leo Irakliotis] 10:57:34
+both the legal regulations and the conduct of the business ethics and all that
+
+[Leo Irakliotis] 10:57:41
+tells you that you are protected. You may run into one of those, you know.
+
+[Leo Irakliotis] 10:57:46
+dirty, rotten
+
+[Leo Irakliotis] 10:57:48
+Bank employees that is going to do something really bad with your information, but
+
+[Leo Irakliotis] 10:57:54
+Outside that, you trust that when a
+
+[Leo Irakliotis] 10:57:59
+loan officer asked for that information, there is an established trust and an established legal protection that makes you comfortable to sharing with them information that you're not going to share with a professor or some stranger out in the street
+
+[Leo Irakliotis] 10:58:14
+Your first name, no problem.
+
+[Leo Irakliotis] 10:58:17
+My social SKU number, none of your business.
+
+[Leo Irakliotis] 10:58:19
+And that's what that single underscore there says. None of your business. If you want to know the size of this object
+
+[Leo Irakliotis] 10:58:28
+Ask nicely
+
+[Leo Irakliotis] 10:58:32
+And we're going to see as part of the other assignment how to ask nicely.
+
+[Leo Irakliotis] 10:58:38
+I can make life
+
+[Leo Irakliotis] 10:58:40
+Here a little bit more challenging for an outsider, so I can go to my program here
+
+[Leo Irakliotis] 10:58:47
+And
+
+[Leo Irakliotis] 10:58:49
+Change
+
+[Leo Irakliotis] 10:58:53
+The object attributes by introducing a double underscore in front of their name. I'm going to do it only with size to just do the example
+
+[Leo Irakliotis] 10:59:03
+But I can have double underscores in front of
+
+[Leo Irakliotis] 10:59:08
+Every object attribute
+
+[Leo Irakliotis] 10:59:12
+So now
+
+[Leo Irakliotis] 10:59:17
+All right, there is the test print
+
+[Leo Irakliotis] 10:59:21
+this object size
+
+[Leo Irakliotis] 10:59:26
+So now I make it more difficult to access it. Not impossible, but more difficult
+
+[Leo Irakliotis] 10:59:34
+If someone is really committed
+
+[Leo Irakliotis] 10:59:43
+To get this
+
+[Leo Irakliotis] 10:59:48
+Information, they can get it like this.
+
+[Leo Irakliotis] 10:59:51
+Because this double
+
+[Leo Irakliotis] 10:59:54
+underscore name is now converted to this name. Single underscore class name, double underscore
+
+[Leo Irakliotis] 11:00:00
+followed by the attribute name. This is called name mangling, and it makes it a little bit difficult, but not impossible
+
+[Temeeka Glass] 11:00:13
+Um, oh, sorry.
+
+[Leo Irakliotis] 11:00:14
+My yeah
+
+[Leo Irakliotis] 11:00:15
+Go ahead, go on
+
+[Temeeka Glass] 11:00:15
+Uh, so if it makes it, like, difficult to grab…
+
+[Temeeka Glass] 11:00:20
+or, like, I guess…
+
+[Temeeka Glass] 11:00:22
+Yeah, grab those values, um…
+
+[Temeeka Glass] 11:00:25
+if… like, someone wouldn't be able to…
+
+[Temeeka Glass] 11:00:31
+like, add to, or, like, mutate those values because it's…
+
+[Temeeka Glass] 11:00:35
+it's, like, via underscore dynamic array, underscore underscore size, right?
+
+[Temeeka Glass] 11:00:41
+Like, they would…
+
+[Temeeka Glass] 11:00:43
+You would have to, like…
+
+[Temeeka Glass] 11:00:45
+Yeah, so basically… yeah, do you know what I'm saying? Sorry.
+
+[Leo Irakliotis] 11:00:48
+No problem
+
+[Leo Irakliotis] 11:00:51
+Yeah. So is the equivalent of someone reaching into your backpack while you're having lunch, pulling out your ID, changing your name and putting back in your backpack and you don't rediscover the issue until it's too late and you're in trouble
+
+[Leo Irakliotis] 11:01:07
+You go to cash a check and they ask you for an ID and the name of the check does not match
+
+[Leo Irakliotis] 11:01:13
+the name of the ID. Who goes out there to cash checks anymore? Who writes checks anymore? But, you know, you get the example
+
+[Leo Irakliotis] 11:01:21
+So
+
+[Leo Irakliotis] 11:01:22
+The difference between the single underscore and the double underscore is that the double underscore makes things a little bit more difficult, but not impossible. Remember, the other objects attributes here, for example, capacity
+
+[Leo Irakliotis] 11:01:34
+Are still accessible directly without doing the name mangling. So I can change the capacity as well, just like this
+
+[Leo Irakliotis] 11:01:40
+from the outside
+
+[Leo Irakliotis] 11:01:43
+The underscore there, whether it's a single or a double underscore, says, please don't do this.
+
+[Leo Irakliotis] 11:01:51
+And
+
+[Leo Irakliotis] 11:01:52
+It implies our reliance in the kindness of strangers
+
+[Leo Irakliotis] 11:01:57
+I cannot forbid you from
+
+[Leo Irakliotis] 11:02:02
+accessing the sensitive parts of the object.
+
+[Leo Irakliotis] 11:02:07
+In Python
+
+[Leo Irakliotis] 11:02:10
+Other programming languages like Java, for example, make that impossible.
+
+[Leo Irakliotis] 11:02:16
+So Java has access modifiers that make it impossible to do things like this.
+
+[Leo Irakliotis] 11:02:26
+But biathon
+
+[Leo Irakliotis] 11:02:29
+did not go into such a strict policy for a reason, and the reason as
+
+[Leo Irakliotis] 11:02:36
+Grido van Rosam, the creator of the language described, is we're all adults here
+
+[Leo Irakliotis] 11:02:42
+If you see me using an underscore there, the beginning of a name
+
+[Leo Irakliotis] 11:02:47
+Please treat it as private. You don't want to treat it as private. Let's find out, you know, I cannot force you, even in Java, you have access
+
+[Leo Irakliotis] 11:02:57
+to the source code, and you can change it
+
+[Leo Irakliotis] 11:03:02
+So at the end of the day, we rely on the professionalism
+
+[Leo Irakliotis] 11:03:08
+And on the integrity of other programmers to treat our projects
+
+[Leo Irakliotis] 11:03:13
+In our programs, the way we mean them to be
+
+[Leo Irakliotis] 11:03:19
+It's like, you know, the warranty on a computer. The warrant says, please don't open it. But they cannot stop you from opening it
+
+[Leo Irakliotis] 11:03:29
+When you buy a lawnmower, the manger says, please don't use the lawnmower to clip your nails
+
+[Leo Irakliotis] 11:03:38
+They cannot stop you from doing that.
+
+[Leo Irakliotis] 11:03:40
+It's going to hurt
+
+[Leo Irakliotis] 11:03:43
+But we're all adults here
+
+[Leo Irakliotis] 11:03:50
+Couple more things
+
+[Leo Irakliotis] 11:03:55
+So we've got
+
+[Leo Irakliotis] 11:03:57
+Let me correct here and go. I'll be using single underscores
+
+[Leo Irakliotis] 11:04:06
+Because A, that means I get to type less
+
+[Leo Irakliotis] 11:04:10
+And,
+
+[Leo Irakliotis] 11:04:13
+Anything that has a protection, whether it's a single underscore, a double underscore, sometimes if I forget about it and I go double
+
+[Leo Irakliotis] 11:04:20
+means that you can still provide the user of this object
+
+[Leo Irakliotis] 11:04:26
+With information about the size.
+
+[Leo Irakliotis] 11:04:31
+How? By writing a method
+
+[Leo Irakliotis] 11:04:37
+That returns the value of that attribute
+
+[Leo Irakliotis] 11:04:41
+And one of the things that you have to do over the weekend is to write that method.
+
+[Leo Irakliotis] 11:04:46
+And to write that method
+
+[Leo Irakliotis] 11:04:50
+We have to remember
+
+[Leo Irakliotis] 11:04:52
+that an object
+
+[Leo Irakliotis] 11:04:53
+In general
+
+[Leo Irakliotis] 11:04:57
+is an artifact that contains
+
+[Leo Irakliotis] 11:05:02
+State and behavior. State is the data
+
+[Leo Irakliotis] 11:05:05
+What data does an object have
+
+[Leo Irakliotis] 11:05:08
+So here is the object that we just created, dynamic array
+
+[Leo Irakliotis] 11:05:17
+And what are the data that this object contains? Well, it has the underlying storage
+
+[Leo Irakliotis] 11:05:30
+It has its capacity
+
+[Leo Irakliotis] 11:05:36
+And it has its size
+
+[Leo Irakliotis] 11:05:39
+And the minus in front of these names
+
+[Leo Irakliotis] 11:05:44
+implies that these are private entities
+
+[Leo Irakliotis] 11:05:49
+And then we have a method
+
+[Leo Irakliotis] 11:05:54
+That is called add
+
+[Leo Irakliotis] 11:05:57
+Add data
+
+[Leo Irakliotis] 11:05:58
+That's public, that anything with a plus means public. Everyone can use that.
+
+[Leo Irakliotis] 11:06:03
+And we have a method called resize that when we run out of space
+
+[Leo Irakliotis] 11:06:10
+We resize the object. That method needs to be private. That method is for internal use of the object.
+
+[Leo Irakliotis] 11:06:17
+And we're going to change that in the code by just renaming resize to underscore resize. Again, to indicate that please don't allow users of this program to directly resize the object. The object resizes itself when it
+
+[Leo Irakliotis] 11:06:34
+feel so
+
+[Leo Irakliotis] 11:06:37
+And in that way, we create a public interface
+
+[Leo Irakliotis] 11:06:45
+For an object
+
+[Leo Irakliotis] 11:06:48
+Which is all
+
+[Leo Irakliotis] 11:06:50
+It's public or non-private, in other words
+
+[Leo Irakliotis] 11:06:58
+attributes, meaning variables
+
+[Leo Irakliotis] 11:07:02
+and methods
+
+[Leo Irakliotis] 11:07:06
+And here is an example of an object that has both a private and a public interface.
+
+[Leo Irakliotis] 11:07:15
+Picard
+
+[Leo Irakliotis] 11:07:19
+To most of us, a car means start stop button, turning wheel
+
+[Leo Irakliotis] 11:07:26
+gas pedal, accelerator pedal, brake pedal, turning signals, radio controls, and air condition controls, and seat adjustments.
+
+[Leo Irakliotis] 11:07:36
+We do not have direct access at how much fuel is injected in the engine or how much electricity is going to the electric motors.
+
+[Leo Irakliotis] 11:07:46
+We do not have direct control of how much oil goes into the moving parts at any given time when we drive the car. The car has so many functions that the piece of technology has so many functions, but we control it from an interface
+
+[Leo Irakliotis] 11:08:01
+That is called the dashboard
+
+[Leo Irakliotis] 11:08:04
+the driver's seat. That's the public interface of that engine, but under the hood
+
+[Leo Irakliotis] 11:08:12
+There are all these private parts that we don't know, we don't need to know, we don't control directly.
+
+[Leo Irakliotis] 11:08:18
+Same thing with an object in programming
+
+[Leo Irakliotis] 11:08:23
+what's under the hood is not necessarily what we expose to the user
+
+[Leo Irakliotis] 11:08:30
+Smartphone
+
+[Leo Irakliotis] 11:08:32
+What's under the hood of a smartphone
+
+[Leo Irakliotis] 11:08:36
+is not everything that we expose to the user. As a user, you have access to an interface here that allows you to do things safely, but you cannot, from this interface, from outside the phone, control how much power goes in this tiny little anten
+
+[Leo Irakliotis] 11:08:53
+The phone decides how much power
+
+[Leo Irakliotis] 11:08:56
+to use in different circumstances
+
+[Leo Irakliotis] 11:09:00
+And
+
+[Leo Irakliotis] 11:09:03
+Separation of private versus non-private artifacts in a class
+
+[Leo Irakliotis] 11:09:09
+creates the public versus non-public interface for the class. The public interface is for the user. The private methods and the privacy of the attributes are for the safety and integrity of the operations
+
+[Leo Irakliotis] 11:09:25
+of the object.
+
+[Leo Irakliotis] 11:09:27
+So let's go make these changes really quickly here
+
+[Leo Irakliotis] 11:09:38
+So I want to come here to the resize method
+
+[Leo Irakliotis] 11:09:44
+And make it
+
+[Leo Irakliotis] 11:09:48
+private
+
+[Leo Irakliotis] 11:09:50
+And where I need to call it in line 101,
+
+[Leo Irakliotis] 11:09:55
+I need to call it with its new name.
+
+[Leo Irakliotis] 11:09:58
+And again.
+
+[Leo Irakliotis] 11:09:59
+Nothing stops a user from resizing this object from the outside
+
+[Leo Irakliotis] 11:10:07
+But
+
+[Leo Irakliotis] 11:10:08
+by placing that underscore there, we tell users, please don't do that.
+
+[Leo Irakliotis] 11:10:16
+But we are all adults here. And if you want to do it
+
+[Leo Irakliotis] 11:10:20
+I cannot stop you
+
+[Leo Irakliotis] 11:10:32
+So this is the object. And nothing stops me from calling very size method, even though
+
+[Leo Irakliotis] 11:10:40
+It's private
+
+[Leo Irakliotis] 11:10:45
+And now the object is larger
+
+[Leo Irakliotis] 11:10:47
+But by writing this code here, by invoking a private method
+
+[Leo Irakliotis] 11:10:56
+What I'm transmitting to the world is that I'm a terrible, terrible, terrible programmer that should not be trusted.
+
+[Leo Irakliotis] 11:11:05
+And if that's what you want to advertise about your skills, there are employers
+
+[Leo Irakliotis] 11:11:12
+Are there that will hire you
+
+[Leo Irakliotis] 11:11:14
+To do hacking, to do bad things, to break code
+
+[Leo Irakliotis] 11:11:18
+Okay.
+
+[Leo Irakliotis] 11:11:20
+Not the most ethical living out there, but
+
+[Leo Irakliotis] 11:11:25
+It's a living
+
+[Leo Irakliotis] 11:11:33
+The code that you're going to see for your assignment will be a little bit different. It's going to be very similar to what we have here, but also it will be different. We talked in an introductory programming classes about data
+
+[Leo Irakliotis] 11:11:48
+hints in Python. For example, the fold resize here is a float number. And I want to indicate this
+
+[Leo Irakliotis] 11:12:00
+by writing flow like this and by writing as a floating number 2.2. Default capacity is an integer number, and I want to
+
+[Leo Irakliotis] 11:12:12
+indicate this.
+
+[Leo Irakliotis] 11:12:18
+These annotations
+
+[Leo Irakliotis] 11:12:20
+are very annoying
+
+[Leo Irakliotis] 11:12:24
+But they're very useful. Your program will run whether you put them there or not.
+
+[Leo Irakliotis] 11:12:31
+Your program will run even if the suggested data type does not match the actual data type.
+
+[Leo Irakliotis] 11:12:45
+So I'm creating a variable X here that I say it's an integer and I say equals 1.1. Python has no problem with that.
+
+[Leo Irakliotis] 11:12:52
+1.1 is not an integer. I just said it's an integer. 500 is absolutely no problem
+
+[Leo Irakliotis] 11:12:58
+The reason we write those type hints there, that's why we call them hints, not
+
+[Leo Irakliotis] 11:13:04
+data types is more as a reminder when we declare a variable for the first time
+
+[Leo Irakliotis] 11:13:12
+We write what is our intention about that variable.
+
+[Leo Irakliotis] 11:13:18
+And there are quality control tools that rely on those intentions to make sure that we're not introducing any bugs like we did yesterday with
+
+[Leo Irakliotis] 11:13:29
+Flawed versus integer mismatch
+
+[Leo Irakliotis] 11:13:32
+But
+
+[Leo Irakliotis] 11:13:33
+I'm… I'm between two places, whether I should use
+
+[Leo Irakliotis] 11:13:38
+type hints or not.
+
+[Leo Irakliotis] 11:13:41
+From a pedagogical perspective, from the position of, you know, I'm here to show you a few more tricks in programming to sharpen your programming skills in addition to
+
+[Leo Irakliotis] 11:13:54
+looking at data structures as a problem-solving strategies.
+
+[Leo Irakliotis] 11:14:01
+I have to use that.
+
+[Leo Irakliotis] 11:14:04
+And so do you.
+
+[Leo Irakliotis] 11:14:07
+But I will do my best to minimize that burden on you. So the code that I will be giving you will be full of
+
+[Leo Irakliotis] 11:14:17
+Type hints.
+
+[Leo Irakliotis] 11:14:20
+If you give me back code that is not fully documented in type hints
+
+[Leo Irakliotis] 11:14:28
+It will not be the end of the world
+
+[Leo Irakliotis] 11:14:31
+The end of the world will be for us if you give me code that doesn't have comments.
+
+[Leo Irakliotis] 11:14:38
+Or has multiple return statements
+
+[Leo Irakliotis] 11:14:41
+But we'll talk about these things down the road.
+
+[Leo Irakliotis] 11:14:46
+Coming up for the weekend, there is quite a lot of reading to do. There are two chapters from Bill Lubanovich's book, couple of brief tutorials from the Python webpage official documentation. So there is significant reading and then there is an assignment
+
+[Leo Irakliotis] 11:15:03
+If you are tempted to go straight to the assignment and ask your best friend whether it's Claude or ChatGPT or Gemini to help you with
+
+[Leo Irakliotis] 11:15:12
+Again, I cannot police this, I cannot enforce this
+
+[Leo Irakliotis] 11:15:17
+But I will tell you a couple of things. We're going to use AI in the course
+
+[Leo Irakliotis] 11:15:21
+Just wait for the right context, because we need to do it right. You just, you know. You don't want to go to Claude or ChatGPT and say, Hey, solve this problem for me. You'll you'll get results. But those results will be so obviously artificial that even I can
+
+[Leo Irakliotis] 11:15:36
+Can sense that
+
+[Leo Irakliotis] 11:15:39
+The problem with artificial results is that you don't get enough friction with a problem to form an understanding of the issues at heart, and that will come back and haunt you.
+
+[Leo Irakliotis] 11:15:52
+And that's why I'm saying, stay off AI for the first couple of assignments
+
+[Leo Irakliotis] 11:15:59
+And we'll see a more agending, a more professional, a more industry grade approach
+
+[Leo Irakliotis] 11:16:06
+on solving these problems with AI in a few weeks.
+
+[Leo Irakliotis] 11:16:11
+Questions, comments?
+
+[Alexander Garcia] 11:16:15
+So, you mentioned, like, when, like, using, like, underscore or double underscore. Are you saying it's like
+
+[Alexander Garcia] 11:16:25
+Not a good habit to use when like writing the code or encouraged to use like as
+
+[Alexander Garcia] 11:16:36
+As like a cue to like don't touch it or something
+
+[Leo Irakliotis] 11:16:41
+If you want to say to the world, don't touch it, just put an underscore there. There may be some items that you have that are public
+
+[Leo Irakliotis] 11:16:51
+Your face is public.
+
+[Leo Irakliotis] 11:16:54
+Right? You cannot make that private
+
+[Leo Irakliotis] 11:16:58
+But your social security is private, so you want to tell the world, don't touch it
+
+[Leo Irakliotis] 11:17:03
+So we'll use judgment and we'll use design principles. But yes, if you want to tell the world, don't touch this variable directly, do it through me. It's like even your first name, Alexander, is a do not touch it. I cannot go to the Cook County Registry office and rename you to something else
+
+[Leo Irakliotis] 11:17:23
+Even you cannot go just there and say, yeah, I want to change my name to Leo.
+
+[Leo Irakliotis] 11:17:27
+You have to go through a process through the courts, and once you get that court order, that's how you change a private field like your first name
+
+[Leo Irakliotis] 11:17:39
+officially, if you want to do that change official.
+
+[Leo Irakliotis] 11:17:43
+So if something you feel something needs to be protective, an object attribute needs to be protected, just put an underscore there. And that's part of your reading for next week
+
+[Alexander Garcia] 11:17:53
+Gotcha. And then the double underscore is the
+
+[Alexander Garcia] 11:17:58
+is the manipulation that allows you to, like, view the protective material, or is there
+
+[Leo Irakliotis] 11:18:05
+The single underscore will give you direct access from outside. So the single underscore is just a, please, please don't do this.
+
+[Leo Irakliotis] 11:18:13
+A double underscore is, please don't do this or if you do, it's going to be very difficult.
+
+[Alexander Garcia] 11:18:19
+Gotcha.
+
+[Leo Irakliotis] 11:18:19
+There is no way to prevent someone 100% from doing it
+
+[Leo Irakliotis] 11:18:24
+The question is
+
+[Leo Irakliotis] 11:18:25
+Do you want to stay at the please don't do this level or please don't do this otherwise I know where you live level
+
+[Leo Irakliotis] 11:18:34
+So how threatening you want to be, but no matter how threading you want to be, you cannot be lethally threatening here. There is, you know, if I want to break through this, if I want to grab your ID from your backpack, I'll find a time when you're not watching and do that and there is nothing you can do about
+
+[Alexander Garcia] 11:18:34
+Got it.
+
+[Alexander Garcia] 11:18:51
+Gotcha.
+
+[Leo Irakliotis] 11:18:52
+But by zipping, by closing that zipper on your backpack, you're saying, please don't bother me
+
+[Leo Irakliotis] 11:18:59
+That's it. We're just closing a zipper. There is no padlock, there is no combination, nothing. Just a simple zipper. And it's as easy as it is to zip it close. It's just as easy to unzip it.
+
+[Leo Irakliotis] 11:19:11
+But we're asking people, please don't unzip it without asking first.
+
+[Alexander Garcia] 11:19:15
+Gotcha. And then another thing, the readings, those are the hyperlinks that are on the listed like under week three, like the assignments
+
+[Leo Irakliotis] 11:19:26
+It will be on the assignment. I'm still editing the assignment, but as soon as I send you the email later today, the assignment is finalized, the links in the assignment are your reading material
+
+[Alexander Garcia] 11:19:35
+Gotcha, okay, all right, thank you.
+
+[Leo Irakliotis] 11:19:38
+Cool. Anything else?
+
+[Leo Irakliotis] 11:19:42
+All right, everyone, have a great rest of your week, great weekend, and we'll see you Monday.
+
+[Temeeka Glass] 11:19:47
+Okie do. Thank you
+
+[Alexander Garcia] 11:19:47
+Thank
+
+[Leo Irakliotis] 11:20:17
+Hey, Mark.
+
+[Leo Irakliotis] 11:20:33
+No, they very new sign
+
+[Leo Irakliotis] 11:20:37
+But we'll talk about it at the board meeting tomorrow.
+
+[Leo Irakliotis] 11:20:43
+But
+
+[Leo Irakliotis] 11:31:53
+Hello, everyone.
+
+[Leo Irakliotis] 11:31:58
+Let's get started. I want to wrap up our conversation about loops and ranges today. So let me start by asking if there are any comments, any questions, any requests
+
+[Leo Irakliotis] 11:32:19
+So
+
+[Leo Irakliotis] 11:32:21
+We were talking yesterday about enumerating, about counting things, and different languages have different ways to count, but invariably every language has a concept that is called the for loop
+
+[Leo Irakliotis] 11:32:38
+In Python, the for loop is implemented with another artifact called range. It's a function
+
+[Leo Irakliotis] 11:32:49
+When you call for a range of numbers, let's say from 10 to 20
+
+[Leo Irakliotis] 11:32:55
+What you get is those numbers, including the starting point, but excluding the endpoint. So when you're asking for all the numbers between 10 and 20, it means 10, 20 up to 19, but not including 20
+
+[Leo Irakliotis] 11:33:12
+We can also ask for all the levels from 10 or 20, but by changing the status of 10, 11, 12, 14, we get 10, 12, 14, 16
+
+[Leo Irakliotis] 11:33:24
+up to 18, and that's the third parameter here that determines the step
+
+[Leo Irakliotis] 11:33:30
+If you want a random step, let's say by step seven, we're going to get 10 and 17 only because the next number 24 is beyond the endpoint
+
+[Leo Irakliotis] 11:33:42
+So in general.
+
+[Leo Irakliotis] 11:33:46
+In Python, we have the concept of
+
+[Leo Irakliotis] 11:33:53
+Range
+
+[Leo Irakliotis] 11:33:58
+that has a start point
+
+[Leo Irakliotis] 11:34:00
+an endpoint
+
+[Leo Irakliotis] 11:34:02
+and a step
+
+[Leo Irakliotis] 11:34:03
+We don't have to specify these values all of them. We only, at the very least, however, we need to specify
+
+[Leo Irakliotis] 11:34:15
+the end. When the other two values are not specified, it is implied
+
+[Leo Irakliotis] 11:34:20
+That the star point is zero and the step is plus one
+
+[Leo Irakliotis] 11:34:28
+So when I write range
+
+[Leo Irakliotis] 11:34:33
+Five, visual produce zero because that's what I'm implying, and every number between 0 and 5, excluding 5
+
+[Leo Irakliotis] 11:34:46
+by step one
+
+[Leo Irakliotis] 11:34:51
+In terms of mathematics, when I'm writing range
+
+[Leo Irakliotis] 11:34:58
+From
+
+[Leo Irakliotis] 11:35:00
+The number A to number B, including using some step C, what I mean is give me all the integer numbers
+
+[Leo Irakliotis] 11:35:13
+in the interval close A
+
+[Leo Irakliotis] 11:35:16
+Open B. This is mathematical notation for intervals
+
+[Leo Irakliotis] 11:35:32
+For the closed brackets means inclusive of and the open bracket also called parentheses means exclusive of
+
+[Leo Irakliotis] 11:35:43
+not important for us right now, but there is a correspondence between integer intervals and range. But the important thing to remember for us is that more often when we say
+
+[Leo Irakliotis] 11:36:01
+Count the
+
+[Leo Irakliotis] 11:36:07
+That is as simple as range 10. It will count 10 items. It will not give us all the numbers from 1 to 10. It will count 10 items starting from 0. So 0 through 9 inclusive is 10 items
+
+[Leo Irakliotis] 11:36:24
+I can also say count to 10 by saying range
+
+[Leo Irakliotis] 11:36:30
+10 to 20, or range
+
+[Leo Irakliotis] 11:36:34
+1,011 to 1,021.
+
+[Leo Irakliotis] 11:36:38
+or range
+
+[Leo Irakliotis] 11:36:41
+3,001
+
+[Leo Irakliotis] 11:36:43
+to 3,021 step two
+
+[Leo Irakliotis] 11:36:52
+But really, if you want to count to 10
+
+[Leo Irakliotis] 11:36:57
+This is the simpler version
+
+[Leo Irakliotis] 11:36:59
+If you want to be really annoying
+
+[Leo Irakliotis] 11:37:08
+Go for this
+
+[Leo Irakliotis] 11:37:10
+Go for any two numbers.
+
+[Leo Irakliotis] 11:37:13
+And a given step that will give you 10 items. At the end of the day, count to 10 means enumerate 10 items for me, okay? So I say, okay, enumerate 10 items for me. Here, 1, 2,
+
+[Leo Irakliotis] 11:37:27
+3, 4, 5, 6, 7, 8, 9, 10. Label those items for me
+
+[Leo Irakliotis] 11:37:35
+Most people
+
+[Leo Irakliotis] 11:37:39
+old goal
+
+[Leo Irakliotis] 11:37:43
+One, two, three
+
+[Leo Irakliotis] 11:37:46
+4, 5, 6, 7, 8, 9, 10. Some people may go letters A, B, C, D, E, F, G, H, I, J
+
+[Leo Irakliotis] 11:38:00
+Some people will go Roman. I, I too
+
+[Leo Irakliotis] 11:38:05
+3
+
+[Leo Irakliotis] 11:38:07
+4, 5
+
+[Leo Irakliotis] 11:38:09
+Six
+
+[Leo Irakliotis] 11:38:11
+7
+
+[Leo Irakliotis] 11:38:13
+Eight
+
+[Leo Irakliotis] 11:38:15
+9 and 10.
+
+[Leo Irakliotis] 11:38:18
+But how many of you will go, okay, this is item 3,017. This is item 3,022. This is item 3,027
+
+[Leo Irakliotis] 11:38:34
+This is item 3032, this is 3037, this is 3042, this is 3047, this is 3052, this is
+
+[Leo Irakliotis] 11:38:50
+57, and this is 3062.
+
+[Leo Irakliotis] 11:38:55
+So an enumeration, this enumeration that I just wrote, it's so easy to implement
+
+[Leo Irakliotis] 11:39:06
+With a range function, can someone
+
+[Leo Irakliotis] 11:39:11
+Think of what the parameters I need to pass to the range function.
+
+[Leo Irakliotis] 11:39:17
+should be
+
+[Leo Irakliotis] 11:39:19
+If I wanted to write this as a range command
+
+[Katie McGowan] 11:39:24
+Would it
+
+[Katie McGowan] 11:39:27
+Range 3017 and comma 3,062 comma 5
+
+[Leo Irakliotis] 11:39:42
+Anyone else?
+
+[Bella Fiorucci] 11:39:42
+Would it be $3,017, 3067, and then 5?
+
+[Leo Irakliotis] 11:39:49
+Why
+
+[Bella Fiorucci] 11:39:50
+Because the end number is not included within the sequence.
+
+[Leo Irakliotis] 11:39:58
+The end number is always excluded.
+
+[Leo Irakliotis] 11:40:02
+But that's going
+
+[Leo Irakliotis] 11:40:06
+Katie, you're going to make this mistake as often as I make this mistake, and I forget. I've been at this for
+
+[Leo Irakliotis] 11:40:15
+42 years. I started coding when I was really coding when I was 16. I'm 58.9. I've been coding for 42 years. I am making this mistake all the time because it's natural
+
+[Leo Irakliotis] 11:40:32
+To us to think that if this number is included, then why in the world who in their right mind decide that the second number will be excluded
+
+[Leo Irakliotis] 11:40:47
+But there is always an easy way to answer that question, not in a conversational setting, because in a conversational setting, I'm applying a little bit of pressure, a little bit of intimidation to get you going, to make you feel a little bit like you're
+
+[Leo Irakliotis] 11:41:04
+In a competitive environment, because that's part of the nature of the workspace we're preparing. But there is always a way to say, okay.
+
+[Leo Irakliotis] 11:41:15
+Let's prove those numbers. For number
+
+[Leo Irakliotis] 11:41:19
+Or let's use N, because N stands for number in range, what do you say? Three already forgot 3017, 3,017.
+
+[Leo Irakliotis] 11:41:34
+3062, step 5
+
+[Leo Irakliotis] 11:41:38
+Print the number
+
+[Leo Irakliotis] 11:41:44
+Well, I get nine numbers. I don't get the last number. I don't even have to write 3067, Bella. All I have to do is write a number that is just greater than the last number I want to see
+
+[Leo Irakliotis] 11:41:59
+Or maybe have the right fit file 67
+
+[Leo Irakliotis] 11:42:04
+Because the step is 5, yeah
+
+[Leo Irakliotis] 11:42:15
+There you go.
+
+[Leo Irakliotis] 11:42:21
+Can I do just 63?
+
+[Leo Irakliotis] 11:42:24
+Yeah.
+
+[Leo Irakliotis] 11:42:26
+I just… I don't need to go 3067. All I have to do is go just one number greater
+
+[Leo Irakliotis] 11:42:33
+than the number I want to end
+
+[Leo Irakliotis] 11:42:35
+plus one is fine. 3062 plus one would be fine. You know, 3067 would be fine too. But why bother yourself with extra addition when all you have to do is just add plus one
+
+[Leo Irakliotis] 11:42:52
+I'd rather do auditions that involve plus one than plus five.
+
+[Leo Irakliotis] 11:42:55
+Yeah, that's too much math for my taste.
+
+[Leo Irakliotis] 11:43:01
+Writing loops
+
+[Leo Irakliotis] 11:43:04
+is one of the four fundamental
+
+[Leo Irakliotis] 11:43:09
+Tasks that we learn in programming loops, strings, if statements and arrays.
+
+[Leo Irakliotis] 11:43:14
+But we're looking at loops this week
+
+[Leo Irakliotis] 11:43:24
+A loop
+
+[Leo Irakliotis] 11:43:26
+It's constructed with a for statement
+
+[Leo Irakliotis] 11:43:31
+That's a
+
+[Leo Irakliotis] 11:43:32
+Python command or the technical term is a reserved
+
+[Leo Irakliotis] 11:43:39
+Keyword
+
+[Leo Irakliotis] 11:43:42
+Followed by the loop variable
+
+[Leo Irakliotis] 11:43:49
+And in the example just now I used the variable N, but you can use any name you want here. Pepperoni
+
+[Leo Irakliotis] 11:43:58
+followed by the operator
+
+[Leo Irakliotis] 11:44:04
+Followed by the function range
+
+[Leo Irakliotis] 11:44:15
+So what this tells the program to do is produce the range that I'm asking you.
+
+[Leo Irakliotis] 11:44:22
+So in the previous example, 3017, 3022, and so forth, up to 3,062.
+
+[Leo Irakliotis] 11:44:35
+And for each of those numbers
+
+[Leo Irakliotis] 11:44:38
+Take this number, execute what's in the scope
+
+[Leo Irakliotis] 11:44:44
+of this loop, and we'll talk about scope in a second.
+
+[Leo Irakliotis] 11:44:49
+Then go to the next number and execute the same scope. Then go to the next number and execute the same scope and again and again and again.
+
+[Leo Irakliotis] 11:45:05
+In the symbol program we wrote
+
+[Leo Irakliotis] 11:45:09
+We were
+
+[Leo Irakliotis] 11:45:12
+Printing the numbers from 3017 up to and including 3062, which means that we were printing the numbers
+
+[Leo Irakliotis] 11:45:22
+From
+
+[Leo Irakliotis] 11:45:24
+3017
+
+[Leo Irakliotis] 11:45:27
+Up to 3,063
+
+[Leo Irakliotis] 11:45:31
+by step five. This was included
+
+[Leo Irakliotis] 11:45:36
+This was excluded and this was our step. So we know that 362 was finally printed because
+
+[Leo Irakliotis] 11:45:45
+We got to this and 362 plus 5, the next item would have been outside the range
+
+[Leo Irakliotis] 11:45:56
+Let me start
+
+[Leo Irakliotis] 11:45:59
+Showing scope and discussing scope, because that's a very important topic.
+
+[Leo Irakliotis] 11:46:08
+And for that, I'm going to use a visual
+
+[Leo Irakliotis] 11:46:14
+and integrate development environment that
+
+[Leo Irakliotis] 11:46:18
+helps to visualize things a little bit better for us.
+
+[Leo Irakliotis] 11:46:24
+I don't want to use the command line interface I've been using so far, because that would require me going in and out of the file as I'm editing, and I want to show you the code and the results in the same screen without having to switch context all the time
+
+[Leo Irakliotis] 11:46:41
+So this is very good for demonstration purposes. Demonstrate scope.
+
+[Leo Irakliotis] 11:46:48
+Make the phones a little bit larger. Close this window. The fonts are a bit too large here. So I'm going to write a simple loop statement for
+
+[Leo Irakliotis] 11:46:58
+And in range, okay, let's the example we have 1317 up to 30, 63, step five
+
+[Leo Irakliotis] 11:47:14
+Very what we wrote earlier, and if I run this program, you're going to see down here the numbers that we saw before. Cool.
+
+[Leo Irakliotis] 11:47:27
+The scope
+
+[Leo Irakliotis] 11:47:33
+of a loop statement is the group of
+
+[Leo Irakliotis] 11:47:39
+statements under it that are identities to the right here. There's only one statement print
+
+[Leo Irakliotis] 11:47:47
+But I could have written something like
+
+[Leo Irakliotis] 11:47:52
+I'm going to go a little bit above beyond what we're discussing this week, but just to demonstrate scope, I would say
+
+[Leo Irakliotis] 11:48:20
+And I will run the program again. And now the scope of the loop statement has two parts. It has one part here, this line that determines the parity of the number. Is it an even or an odd number?
+
+[Leo Irakliotis] 11:48:32
+And then the print line that prints the result.
+
+[Leo Irakliotis] 11:48:37
+So now I'm getting this 307 is old, 3,000 new is even, 307 is odd. No surprise there. Don't worry so much about the syntax here. This is just to demonstrate scope.
+
+[Leo Irakliotis] 11:48:49
+If accidentally
+
+[Leo Irakliotis] 11:48:53
+I took the print statement outside the scope of the four loop. What will happen
+
+[Leo Irakliotis] 11:49:03
+is… I'll get only the last
+
+[Leo Irakliotis] 11:49:06
+After the loop concludes
+
+[Leo Irakliotis] 11:49:09
+I will execute the result on the last value of the loop, which is the result for 3062, which is even.
+
+[Leo Irakliotis] 11:49:16
+So scoping
+
+[Leo Irakliotis] 11:49:19
+is very, very important.
+
+[Leo Irakliotis] 11:49:22
+Scoping also has to do with the
+
+[Leo Irakliotis] 11:49:30
+temporal
+
+[Leo Irakliotis] 11:49:32
+existence of data. So let's say that I create a new variable here, and I divide. I make it half the value of N as n goes from 3017, 3022, and so on
+
+[Leo Irakliotis] 11:49:45
+And I'm printing that information as well. And at the end of the loop
+
+[Leo Irakliotis] 11:49:54
+I print X
+
+[Leo Irakliotis] 11:49:57
+What will happen now
+
+[Leo Irakliotis] 11:50:02
+Here is the X printed inside the loop, and here is the X printed outside the loop just by itself
+
+[Leo Irakliotis] 11:50:11
+So scope
+
+[Leo Irakliotis] 11:50:14
+is very much like the identation we use when we create bullet lists and we tabulate things on sublist and sub sub lists
+
+[Leo Irakliotis] 11:50:25
+And so on. For example.
+
+[Leo Irakliotis] 11:50:30
+Let's me show you
+
+[Leo Irakliotis] 11:51:47
+So this is my shopping list.
+
+[Leo Irakliotis] 11:51:49
+for this week
+
+[Leo Irakliotis] 11:51:51
+And each shopping list has… each item has sub-item. So when I go to the produce and veggies, I want to buy carrots, lettuce, and ground beef. Okay, fine. If you're Greek, ground beef is considered a vegetable.
+
+[Leo Irakliotis] 11:52:06
+cleaning supplies, chlorine, and sponges, pet items, a taser, because one of my dogs ate my favorite pair of socks, and there is going to be retribution that he has no idea what's coming for him.
+
+[Leo Irakliotis] 11:52:23
+And a weep to avoid future incidents. All right, maybe I should be a little bit kinder since I volunteer for a shelter here in Chicago. So lots of treats
+
+[Leo Irakliotis] 11:52:38
+And monochromatic socks for me from now on
+
+[Leo Irakliotis] 11:52:41
+Okay.
+
+[Leo Irakliotis] 11:52:45
+So we have
+
+[Leo Irakliotis] 11:52:49
+scope. This is
+
+[Leo Irakliotis] 11:52:52
+This sub list here is the scope of produce. Okay, let's be serious. Let us cherries, cherries.
+
+[Leo Irakliotis] 11:53:19
+We use scope every day
+
+[Leo Irakliotis] 11:53:24
+when we're producing lists and sub-lists, when we organize things, these are my produce items for today, these are my bakery items for today, these are my cleaning supplies
+
+[Leo Irakliotis] 11:53:36
+for today. Same thing in programming a there are
+
+[Leo Irakliotis] 11:53:45
+commands that are programming artifacts
+
+[Leo Irakliotis] 11:53:48
+That are essentially headers
+
+[Leo Irakliotis] 11:53:53
+For other items, much like you don't go to the grocery store to buy. There is no such thing in the grocery store as produce.
+
+[Leo Irakliotis] 11:54:01
+Produce is a collective header for carrots, lettuce, cherries
+
+[Leo Irakliotis] 11:54:08
+salary, you name it, but that produce is a collective noun in this context. Bakery is a collective. You don't buy bakery from the grocery store. You don't buy
+
+[Leo Irakliotis] 11:54:19
+There is no such product called a cleaning supplies. That's a collective noun for different items in a particular aisle that comprise the collective known as cleaning supplies. Same thing in programming. We have
+
+[Leo Irakliotis] 11:54:35
+collective
+
+[Leo Irakliotis] 11:54:37
+artifacts that define a scope. The 4
+
+[Leo Irakliotis] 11:54:41
+The loop statement, the for loop is one of them.
+
+[Leo Irakliotis] 11:54:45
+The for loop means whatever is in my scope executed for every iteration that the range function
+
+[Leo Irakliotis] 11:54:55
+The range function says enumerate 10 items, enumerate 5 items, enumerate whatever.
+
+[Leo Irakliotis] 11:55:02
+And for each enumeration
+
+[Leo Irakliotis] 11:55:06
+Do this
+
+[Leo Irakliotis] 11:55:12
+Any
+
+[Leo Irakliotis] 11:55:17
+Anything that is under the scope, meaning in Python scope is shown by a tabulation to the right, and the tabulation has to be consistent, either two space all the time or four spaces. The standard is four spaces, but hey, if you want to go seven spaces
+
+[Leo Irakliotis] 11:55:35
+That's fine. If as long as you are consistent
+
+[Leo Irakliotis] 11:55:41
+So, for example, here, by default, there's four spaces. I can go five
+
+[Leo Irakliotis] 11:55:47
+I don't need this anymore
+
+[Leo Irakliotis] 11:55:49
+I can. We can go 5 as long as we are consistent.
+
+[Leo Irakliotis] 11:55:54
+The code will run
+
+[Leo Irakliotis] 11:55:57
+But if you go off by one
+
+[Leo Irakliotis] 11:55:59
+You're going to get yelled at. And the beautiful thing is that when you're using an integrated development environment, this kind of extra space that you may have accidentally pressed here
+
+[Leo Irakliotis] 11:56:11
+really shows you see the red squigging, you see the arrow, and you can correct it right away
+
+[Leo Irakliotis] 11:56:17
+And also, when you're writing a loop in an integrated development environment
+
+[Leo Irakliotis] 11:56:24
+Let me turn off this autocomplete thing.
+
+[Leo Irakliotis] 11:56:28
+I thought you were off
+
+[Leo Irakliotis] 11:56:36
+When you go to the next line
+
+[Leo Irakliotis] 11:56:39
+To do something else
+
+[Leo Irakliotis] 11:56:43
+The program will automatically the integrated environment will automatically place you inside the scope. And when you're done, all you have to do is press backspace and now you're outside the scope and you can write the rest of the program
+
+[Leo Irakliotis] 11:57:03
+This is not so easy to do in a text editor
+
+[Leo Irakliotis] 11:57:22
+Here's our program, we're back to the text editor. And if I want to add the line here, again, it will place me in the scope, even as simple text editor has this capacity.
+
+[Leo Irakliotis] 11:57:40
+And I will have to again backspace to go outside the scope.
+
+[Leo Irakliotis] 11:57:46
+And then maybe here print
+
+[Leo Irakliotis] 11:57:53
+Demo completed because I want to say, you know, when I'm done with the demo
+
+[Leo Irakliotis] 11:57:58
+I want the program says demo completed
+
+[Leo Irakliotis] 11:58:01
+And if I run the program
+
+[Leo Irakliotis] 11:58:09
+We will print the 10 numbers and then it will say demo completed.
+
+[Leo Irakliotis] 11:58:14
+But if
+
+[Leo Irakliotis] 11:58:16
+if I accidentally miss the scope, and for example, I forget
+
+[Leo Irakliotis] 11:58:21
+To put that last statement outside the scope of the loop statement, look what's going to happen now.
+
+[Leo Irakliotis] 11:58:30
+The print statement that says demo completed is within the scope of the loop statement.
+
+[Leo Irakliotis] 11:58:35
+So it will execute it with every iteration of the loop.
+
+[Leo Irakliotis] 11:58:43
+Why? Why do we need to have these iterations?
+
+[Leo Irakliotis] 11:58:48
+Because in programming, a lot of things that we do is
+
+[Leo Irakliotis] 11:58:54
+iterative do this task and repeat, do this task and repeat, do this task, task and repeat. For example, when you're computing your
+
+[Leo Irakliotis] 11:59:04
+the average grade for a student, you go course after course for every course this student has taken
+
+[Leo Irakliotis] 11:59:11
+Add the grade, and after you have added all the grades, divide them by the number of courses.
+
+[Leo Irakliotis] 11:59:18
+But until you compute the total score, you go, next course, next course, next score, add for every course
+
+[Leo Irakliotis] 11:59:27
+The grade
+
+[Leo Irakliotis] 11:59:29
+And then, how many courses are there? Divided.
+
+[Leo Irakliotis] 11:59:33
+Divide the total by that number of courses, and there's your GPA
+
+[Leo Irakliotis] 11:59:43
+It is one of the most important and most ancient features in programming, the ability to repeat tasks, because that's why we build computers so that they can repeat
+
+[Leo Irakliotis] 11:59:58
+computate menial tasks and we can focus into something else.
+
+[Leo Irakliotis] 12:00:04
+In mathematics
+
+[Leo Irakliotis] 12:00:08
+One of the most important functions is approximation of a value. You need to compute a value. The mathematical computation, the formula that you need to use is so complex
+
+[Leo Irakliotis] 12:00:23
+that you… it's not something as, you know, 2 times 10
+
+[Leo Irakliotis] 12:00:29
+It is much more complicated and you need to break into smaller
+
+[Leo Irakliotis] 12:00:35
+computations and repeat them, repeat them, repeat them until you're done. A single example for that is
+
+[Leo Irakliotis] 12:00:43
+The computation of an integral. In symbol. And why is that important? Well, it has to do with the history of computing. I'm going to explain in a second. So if you have a function
+
+[Leo Irakliotis] 12:00:54
+f of x
+
+[Leo Irakliotis] 12:00:56
+And it goes like this. And someone says, okay, what is the area
+
+[Leo Irakliotis] 12:01:02
+Under the curve of the function from this point
+
+[Leo Irakliotis] 12:01:09
+From this value
+
+[Leo Irakliotis] 12:01:12
+To this vine
+
+[Leo Irakliotis] 12:01:15
+You have a couple of choices
+
+[Leo Irakliotis] 12:01:17
+One thing is to say, you know what, this looks very much like a rectangular shape if you take the average height of this line here
+
+[Leo Irakliotis] 12:01:27
+And now that you have a rectangular, you know what is the size of this, you know the height of this. You can do an approximation for this. But if you're trying to do this to compute how much enriched uranium you need to put
+
+[Leo Irakliotis] 12:01:43
+To create the first atomic bomb in Los Alamos, you need a little bit more precise computations
+
+[Leo Irakliotis] 12:01:50
+So you say, you know what?
+
+[Leo Irakliotis] 12:01:52
+Especially if the function here
+
+[Leo Irakliotis] 12:01:57
+is really wild like this.
+
+[Leo Irakliotis] 12:02:00
+And you cannot find, okay, what can I approximate it with this
+
+[Leo Irakliotis] 12:02:05
+average high to make it to… if I look from a distance, does it look like a rectangular? No, it doesn't
+
+[Leo Irakliotis] 12:02:11
+So if you want a more precise computation, what you need to do instead
+
+[Leo Irakliotis] 12:02:23
+is to say, you know what?
+
+[Leo Irakliotis] 12:02:26
+I can take… I can take a very small rectangular from here
+
+[Leo Irakliotis] 12:02:31
+To here
+
+[Leo Irakliotis] 12:02:34
+And
+
+[Leo Irakliotis] 12:02:35
+Okay, its shape
+
+[Leo Irakliotis] 12:02:38
+Down here is perfect, but here it's like this. That's a triangle. It looks like a triangle. If it's very small, it looks like a triangle. So you have a very small rectangular here, and the very small triangle here, and elementary geometry can tell you exactly how much surface area you have here
+
+[Leo Irakliotis] 12:02:55
+And then you move and take another slice here.
+
+[Leo Irakliotis] 12:02:59
+In another slice here
+
+[Leo Irakliotis] 12:03:01
+And you do this for every small slice between X1 and X2.
+
+[Leo Irakliotis] 12:03:07
+How small the slice can be, I don't know if X1 is 10 and X2 is 12, you can separate this space into 1 million slices
+
+[Leo Irakliotis] 12:03:20
+Or 10 million slices
+
+[Leo Irakliotis] 12:03:23
+And do this little
+
+[Leo Irakliotis] 12:03:25
+tiny, tiny rectangulars and tiny, tiny triangles, and compute the surface with a better approximation than saying, you know what
+
+[Leo Irakliotis] 12:03:34
+I'll… I'll do this approximation and we're good
+
+[Leo Irakliotis] 12:03:38
+Well, in this approximation, you're excluding this shark fin, you're excluding this shark fin, you're excluding this shark fin. You're making wild assumptions
+
+[Leo Irakliotis] 12:03:48
+But if you make these rectangulars
+
+[Leo Irakliotis] 12:03:51
+do thin
+
+[Leo Irakliotis] 12:03:53
+that the error is infinitesimal, then, first of all, you have invented the infinitesimal calculus
+
+[Leo Irakliotis] 12:04:02
+Too bad that Newton did that for 400 years before you did. But second, you have a technique that if you have the patience to go through one million or 10 million iterations, you're going to get a very, very precise value
+
+[Leo Irakliotis] 12:04:18
+And you're going to invent an atomic weapon, and you're going to win World War II
+
+[Leo Irakliotis] 12:04:26
+That's what drove the need for iterations in computing. This is as old as the dawn of computing in Los Alamos, because we need to be able to do these computations the same computation, because what you're computing
+
+[Leo Irakliotis] 12:04:42
+is the surface of a rectangular with a known height and a known width
+
+[Leo Irakliotis] 12:04:49
+And the surface of a triangle whose base was the same as the width of the rectangular and its height was also known
+
+[Leo Irakliotis] 12:05:03
+And we were doing this millions of times, and we needed
+
+[Leo Irakliotis] 12:05:09
+context in programming to allow us to write this
+
+[Leo Irakliotis] 12:05:14
+procedure without
+
+[Leo Irakliotis] 12:05:17
+having to write 1 million different computations. We wrote the computation once, because, well, if you know how to compute the surface of a rectangle
+
+[Leo Irakliotis] 12:05:27
+of A rectangle, you can compute the surface of any rectangle. All you need is the dimensions. How long and how wide it is.
+
+[Leo Irakliotis] 12:05:35
+You do not invent a new mathematical theory
+
+[Leo Irakliotis] 12:05:38
+to compute the surface of the bedroom and the surface of a living room in the house, if they're both rectangles. All you have to do is measure them. And if you have the measurements, it's the same formula. You multiply length times width
+
+[Leo Irakliotis] 12:05:53
+And how do we find the total surface of a house? We multiply width and length of every room and we add them together. That's exactly what's happening here.
+
+[Leo Irakliotis] 12:06:02
+And
+
+[Leo Irakliotis] 12:06:04
+In terms of real estate, we would have written for a loop like this for every
+
+[Leo Irakliotis] 12:06:11
+Rome
+
+[Leo Irakliotis] 12:06:13
+in the house
+
+[Leo Irakliotis] 12:06:17
+Compute
+
+[Leo Irakliotis] 12:06:18
+length times width
+
+[Leo Irakliotis] 12:06:21
+added
+
+[Leo Irakliotis] 12:06:23
+To total
+
+[Leo Irakliotis] 12:06:25
+And at the end of this loop, when he went through every row, basically we're going to tell our computation return give me
+
+[Leo Irakliotis] 12:06:37
+The total value, the total area
+
+[Leo Irakliotis] 12:06:41
+So the context, the scope for the loop is
+
+[Leo Irakliotis] 12:06:46
+Multiply the size of this room and add it to the total size of the house. And when you're done, give me the total size.
+
+[Leo Irakliotis] 12:06:55
+Now, we don't say give me in computer programs, usually we say return this value, but the concept is the same. So writing loops is essential and has been there since day one
+
+[Leo Irakliotis] 12:07:09
+in computing for a good reason.
+
+[Leo Irakliotis] 12:07:16
+Some variable in range
+
+[Leo Irakliotis] 12:07:23
+Our intention
+
+[Leo Irakliotis] 12:07:25
+to show scope when we write one of those collective statements like for is to have a column following it. So whenever we see a column in programming
+
+[Leo Irakliotis] 12:07:37
+We expect to see at least one line
+
+[Leo Irakliotis] 12:07:40
+or more.
+
+[Leo Irakliotis] 12:07:42
+In scope
+
+[Leo Irakliotis] 12:07:45
+And that scope is indicated by the white space of tabulation
+
+[Leo Irakliotis] 12:07:51
+And end of scope
+
+[Leo Irakliotis] 12:07:54
+We return to the previous vertical
+
+[Leo Irakliotis] 12:07:57
+space as the collective header.
+
+[Leo Irakliotis] 12:08:03
+There
+
+[Leo Irakliotis] 12:08:13
+For collective scope headers in Python. We just saw one
+
+[Leo Irakliotis] 12:08:28
+Which is the loop for X in range
+
+[Leo Irakliotis] 12:08:32
+Some value
+
+[Leo Irakliotis] 12:08:34
+The other is they define
+
+[Leo Irakliotis] 12:08:40
+Some method name will see those things again and again in the course
+
+[Leo Irakliotis] 12:08:45
+The other is class
+
+[Leo Irakliotis] 12:08:50
+For some object
+
+[Leo Irakliotis] 12:08:56
+And the other is the
+
+[Leo Irakliotis] 12:08:58
+Statement
+
+[Leo Irakliotis] 12:09:03
+So whenever we see if define and 4, we expect to have at least one line under that statement to be in scope. Same thing for class, but we're not going to see objects in this course for a while, so we can put it aside
+
+[Leo Irakliotis] 12:09:21
+In addition to the for loop, there is another form of loop while loop that also is scope, but this is considered a loop anyway. We're going to talk about the while loop
+
+[Leo Irakliotis] 12:09:30
+The if statement is the next scope statement that we're going to explore next week.
+
+[Leo Irakliotis] 12:09:37
+For now, to wrap up this third week of the course, where I want to
+
+[Leo Irakliotis] 12:09:44
+take us is our ability to write repeated statements. And that's why we've been discussing about ASCII art
+
+[Leo Irakliotis] 12:09:54
+the past few days, because when I ask you to print a simple
+
+[Leo Irakliotis] 12:10:00
+triangle like this
+
+[Leo Irakliotis] 12:10:02
+What I'm doing is I'm repeating the same statement. I'm repeating the print statement
+
+[Leo Irakliotis] 12:10:09
+And when you do this by hand and you say, okay
+
+[Leo Irakliotis] 12:10:12
+Print this string, print this string
+
+[Leo Irakliotis] 12:10:15
+print this string
+
+[Leo Irakliotis] 12:10:28
+That's kind of ridiculous to have to write hundreds of print strings by hand. Like I said, this is not programming, this is typing. Instead, we're writing a
+
+[Leo Irakliotis] 12:10:40
+A task
+
+[Leo Irakliotis] 12:10:42
+For as many lines
+
+[Leo Irakliotis] 12:10:47
+As I tell you
+
+[Leo Irakliotis] 12:10:52
+Bring the line
+
+[Leo Irakliotis] 12:10:56
+with S
+
+[Leo Irakliotis] 12:10:57
+Many stars
+
+[Leo Irakliotis] 12:11:03
+As the sequence
+
+[Leo Irakliotis] 12:11:05
+Number is
+
+[Leo Irakliotis] 12:11:09
+So the first line has one star, the second line has two stars, the third line has three stars and all that. And we operationalize it
+
+[Leo Irakliotis] 12:11:19
+In Python, by writing something like
+
+[Leo Irakliotis] 12:11:28
+This can be any variable name
+
+[Leo Irakliotis] 12:11:33
+In range
+
+[Leo Irakliotis] 12:11:34
+Let's say 10 lines
+
+[Leo Irakliotis] 12:11:40
+Print
+
+[Leo Irakliotis] 12:11:41
+The star
+
+[Leo Irakliotis] 12:11:43
+By repeating it
+
+[Leo Irakliotis] 12:11:46
+I times, that's the sequence
+
+[Leo Irakliotis] 12:11:53
+And, you know, instead of the star, let's use the hash
+
+[Leo Irakliotis] 12:11:58
+So that we won't have star here as a string and star here as an operator
+
+[Leo Irakliotis] 12:12:04
+Other languages
+
+[Leo Irakliotis] 12:12:06
+the same thing in slightly different way. If you want to look at an industry strength at a language that is ideal for system design, like Java, the similar thing can be accomplished by
+
+[Leo Irakliotis] 12:12:26
+Integer i equals 0. i less than 10
+
+[Leo Irakliotis] 12:12:32
+I plus plus
+
+[Leo Irakliotis] 12:12:39
+system
+
+[Leo Irakliotis] 12:12:41
+Out
+
+[Leo Irakliotis] 12:12:43
+Print line
+
+[Leo Irakliotis] 12:12:45
+the string hash
+
+[Leo Irakliotis] 12:12:48
+Repeated
+
+[Leo Irakliotis] 12:12:52
+I times
+
+[Leo Irakliotis] 12:12:56
+In languages like Java, scope is indicated by curly braces. Anything that is within the curly braces that we open after the for statement is within scope. So we don't need this white space in the beginning. We still place it there because it makes the code more readable
+
+[Leo Irakliotis] 12:13:14
+putting a, you know blank line between paragraphs when we write a letter.
+
+[Leo Irakliotis] 12:13:21
+The structure of the for loop is the same. You have the starting value, you have the finished value, and you have the step. And in Java, you have to declare the step explicitly, even though this means that increment by one in Java syntax
+
+[Leo Irakliotis] 12:13:36
+There are no default values in Java syntax. Python says, you know, if you just give me 10
+
+[Leo Irakliotis] 12:13:42
+I'll start from zero, go up to and not including 10, and I'll increment by one. You don't have to give me additional information. Python makes things very compact, very shorthand notation for us, but the concept
+
+[Leo Irakliotis] 12:13:56
+is the same
+
+[Leo Irakliotis] 12:13:58
+And
+
+[Leo Irakliotis] 12:14:00
+in Java. You see that, you know, the
+
+[Leo Irakliotis] 12:14:05
+The print statement is much more verbose. In Python, it's a sprint. Here we have to call the system super function, the high level function within the system that is for output. And within that the function for printing
+
+[Leo Irakliotis] 12:14:22
+And you might say, why are people still using Java when Python is making things so easy?
+
+[Leo Irakliotis] 12:14:29
+There are a lot of good reasons. I mean, there is a lot of good reasons to use either language
+
+[Leo Irakliotis] 12:14:35
+And we're going to discuss them down the road because they're designed for different things
+
+[Leo Irakliotis] 12:14:45
+But
+
+[Leo Irakliotis] 12:14:45
+Whether it's as verbose and garrulous as Java or
+
+[Leo Irakliotis] 12:14:48
+more concise as Python, the structure is the same. You have this collective statement at the beginning, the for loops, the for loop header. And what follows within the scope of the loop.
+
+[Leo Irakliotis] 12:15:01
+will be executed for as many times as the loop iterates.
+
+[Leo Irakliotis] 12:15:07
+You spend your weekend reading about integer variables
+
+[Leo Irakliotis] 12:15:15
+and strings
+
+[Leo Irakliotis] 12:15:15
+And we'll be ready to take off Monday.
+
+[Leo Irakliotis] 12:15:17
+But there is reading assignment coming your way and a couple of exercises to do on your own. And what I would like to suggest
+
+[Leo Irakliotis] 12:15:30
+is that you read
+
+[Leo Irakliotis] 12:15:34
+with purpose, and you read with intention. You really spend focus
+
+[Leo Irakliotis] 12:15:39
+However you focus when you do something, focus on that reading
+
+[Leo Irakliotis] 12:15:47
+And when it comes to the exercises
+
+[Leo Irakliotis] 12:15:50
+If you are tempted to use AI assistance, come to me first. I'm watching I'm watching for my email throughout the weekend.
+
+[Leo Irakliotis] 12:16:00
+Come to me before you go to Claude. We will use AI in the course
+
+[Leo Irakliotis] 12:16:06
+Okay, me telling you do not use AI is like someone telling people 100 years ago, do not use books to learn.
+
+[Leo Irakliotis] 12:16:16
+Hate it or love it, AI is something that is changing our lives. We are going to explore it and find a way to make it part of our professional toolset.
+
+[Leo Irakliotis] 12:16:27
+But for the first couple of assignments, if you're tempted
+
+[Leo Irakliotis] 12:16:33
+And you can resist that temptation, it will pay off at the end.
+
+[Leo Irakliotis] 12:16:38
+And before you ask Claude, before you ask ChatGPD, ask Leo a more moody and more judgmental than the chat box is. I'm not as readily available as Gemini
+
+[Leo Irakliotis] 12:16:53
+But if you ask me
+
+[Leo Irakliotis] 12:16:56
+I will find a way to take your question, not only help you, but help the rest of the class
+
+[Leo Irakliotis] 12:17:01
+Because if you have the question, chances are that at least another 5 people have the same question in the class, and you're the first to ask it. plan for some time to work tomorrow and Friday. If you finish your work tomorrow and Friday, you don't have to do anything over the weekend
+
+[Leo Irakliotis] 12:17:18
+If you spread things a little bit and or you have something better to do tomorrow and the work spills over the weekend, I am here as well. I'm just one email away, and may take an hour to respond, may take half an hour, may take two hours, but I will respond.
+
+[Leo Irakliotis] 12:17:40
+Questions, comments?
+
+[Leo Irakliotis] 12:17:42
+Alright, everyone, have a great rest of your week, and I will see you Monday. Have a great weekend as well.
+
+[Bella Fiorucci] 12:17:46
+Thank you, you too.
+
+[Rebecca Dickman] 12:17:48
+Thank you
+
