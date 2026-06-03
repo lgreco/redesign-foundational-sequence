@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(cp /mnt/e/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-05-27-COMP271.md /mnt/e/GitHub_Clones/redesign-foundational-sequence/comp271su26/)",
-      "Bash(cp /mnt/e/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-05-27-COMP170.md /mnt/e/GitHub_Clones/redesign-foundational-sequence/comp170su26/)"
+      "Bash(cp /mnt/e/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-05-27-COMP170.md /mnt/e/GitHub_Clones/redesign-foundational-sequence/comp170su26/)",
+      "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-06-03-COMP170.md /Users/leo/GitHub_Clones/comp-170-su26/)",
+      "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-06-03-COMP271.md /Users/leo/GitHub_Clones/comp-271-su26/)"
     ]
   }
 }
