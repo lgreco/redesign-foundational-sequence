@@ -1,5 +1,14 @@
 name: Publish week review
 
+# Copies a finished week*-review.md from this private planning repo into the
+# corresponding student-facing course repo (comp-170-su26 or comp-271-su26).
+#
+# Trigger: any push that touches comp*su26/week*-review.md, or a manual run
+# via the Actions tab (useful for republishing without a new commit).
+#
+# Required secret: PUBLISH_TOKEN — a personal access token with write access
+# to the target student-facing repos under the same owner.
+
 on:
   push:
     paths:
@@ -23,6 +32,9 @@ jobs:
           GH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
           REPO_OWNER: ${{ github.repository_owner }}
         run: |
+          # On a push event, extract only the review files that changed in this
+          # push.  On a manual dispatch, use the single path the caller supplied.
+          # Either way, pipe the list of paths to publish_review.py on stdin.
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "${{ github.event.inputs.review_file }}"
           else
