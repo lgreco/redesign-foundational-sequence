@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(git rebase *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git -C ~/GitHub_Clones/introcs-cs2-examples-python pull)",
+      "Bash(git -C ~/GitHub_Clones/prompts-public pull)",
+      "Bash(git *)"
     ]
   }
 }
