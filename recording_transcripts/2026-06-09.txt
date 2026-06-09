@@ -1,0 +1,3117 @@
+[Shú Perez] 10:16:33
+Professor?
+
+[Shú Perez] 10:16:43
+Professor?
+
+[Shú Perez] 10:16:46
+I have a little question.
+
+[Leo Irakliotis] 10:16:50
+Sure.
+
+[Shú Perez] 10:16:50
+Okay, um, I just wanted to make sure, like, I just want to double-check if you saw my message on Teams, just…
+
+[Shú Perez] 10:16:56
+that, like, I've been setting up for my internship, it started yesterday, so that's why I wasn't able to make it.
+
+[Shú Perez] 10:17:03
+Um, yesterday, um, and some reasoning for past absences.
+
+[Shú Perez] 10:17:09
+Um, just with Wi-Fi connection at my old place. Um, but anyways, I noticed on Sakai when I was trying to find, like, a Zoom link here that there was an assignment for yesterday,
+
+[Shú Perez] 10:17:19
+And, um, I just haven't…
+
+[Shú Perez] 10:17:41
+But I guess I hadn't
+
+[Shú Perez] 10:17:42
+But
+
+[Shú Perez] 10:17:43
+So I was just wondering if I could have like a little like extension just for the end of today to get that all like completed and turned in for the week 3 stuff from like for yesterday.
+
+[Leo Irakliotis] 10:17:57
+Unfortunately, no, because we're discussing the assignment to yesterday and today in class, so we're doing the solutions in class.
+
+[Leo Irakliotis] 10:18:05
+And I'm sorry about that. And also, you know, maybe this is something we can talk offline when there are no other people in the classroom, unless, I mean, it's your private information. You're welcome to broadcast them in front of the class, but
+
+[Leo Irakliotis] 10:18:19
+If you want to have a little bit more quiet space to discuss this, we can always do this in office hours.
+
+[Shú Perez] 10:18:29
+Okay, okay, I understand.
+
+[Shú Perez] 10:18:32
+Could we, like, set something up by chance?
+
+[Leo Irakliotis] 10:18:37
+All you have to do is to schedule any time that works for you on the calendar
+
+[Shú Perez] 10:18:40
+Go on to Calendly
+
+[Leo Irakliotis] 10:18:44
+If the time slots there do not work for you, you send me an email with a couple of alternative time slots, and I'll try to accommodate those. But look at the
+
+[Leo Irakliotis] 10:18:55
+Student hours schedule and grab the first time slot that works for you, and if none of them work for you, let me know.
+
+[Shú Perez] 10:19:03
+Okay, okay, you got it. And just so you know, I'm at my work right now, but I'll have to get off because I have a meeting at 11.
+
+[Shú Perez] 10:19:14
+I just wanted to be here for at least a little bit because I wasn't able to yesterday. Yeah
+
+[Leo Irakliotis] 10:19:18
+Okay. Be mindful of the course absence policy. If you're gone for more than 5 min that counts as an absence.
+
+[Leo Irakliotis] 10:19:28
+For the class
+
+[Shú Perez] 10:19:30
+Okay
+
+[Shú Perez] 10:19:32
+Okay, I understand.
+
+[Leo Irakliotis] 10:24:48
+Hello, everyone.
+
+[Q. Dutch] 10:24:51
+Good morning.
+
+[Leo Irakliotis] 10:24:52
+Are there any
+
+[Leo Irakliotis] 10:24:54
+Any questions? Any comments, any requests from yesterday?
+
+[Leo Irakliotis] 10:25:05
+All right, so
+
+[Leo Irakliotis] 10:25:10
+We were looking at the dynamic array, how to enrich it, how to
+
+[Leo Irakliotis] 10:25:19
+improve it, and that conversation took us down a
+
+[Leo Irakliotis] 10:25:25
+A very troubling direction where I got to hear all about your least favorite vegetables
+
+[Leo Irakliotis] 10:25:33
+And I'm still recovering from that experience. It was kind of painful, but now that we have shared our most secret thoughts about least favorite vegetables, and you know, just to be fair
+
+[Leo Irakliotis] 10:25:50
+My list of favorite vegetable is kale. So now that we're on equal footing, we can go here and restore
+
+[Leo Irakliotis] 10:26:03
+The naming convention of our code
+
+[Leo Irakliotis] 10:26:12
+To self instead of carrots, instead of broccoli, instead of cabbage
+
+[Leo Irakliotis] 10:26:18
+And instead of anti-corn and
+
+[Leo Irakliotis] 10:26:24
+We're done with this for now.
+
+[Leo Irakliotis] 10:26:27
+The idea was to demonstrate that
+
+[Leo Irakliotis] 10:26:33
+The object reference in Python
+
+[Leo Irakliotis] 10:26:37
+It's a very flexible name. We use self
+
+[Leo Irakliotis] 10:26:42
+Is the first argument within instance methods, methods that are part of the object to reference the object, but we can do use anything
+
+[Leo Irakliotis] 10:26:54
+We want as long as it is a syntactically legal
+
+[Leo Irakliotis] 10:27:02
+Valuable name.
+
+[Leo Irakliotis] 10:27:03
+I mean, no one in their right mind will call this like that, but if for some reason you feel inspired to do so, do so. By the way, you may have noticed that I have moved into an integrated development environment
+
+[Leo Irakliotis] 10:27:19
+Because it's time to start week three. We start, you know, switching back and forth between command line interface and integrate development environment. The IDE I'm using is Visual Studio Code, but you are welcome to use whatever you prefer
+
+[Leo Irakliotis] 10:27:37
+But if you have not spent much time with an IDE, and you're starting just now
+
+[Leo Irakliotis] 10:27:43
+Visual Studio Code is not bad
+
+[Leo Irakliotis] 10:27:47
+It could be better
+
+[Leo Irakliotis] 10:27:49
+But you could also do worse.
+
+[Leo Irakliotis] 10:27:54
+So, we got the size function, we got, the length function, we discussed about the similarities of these two functions. They're virtually identical
+
+[Leo Irakliotis] 10:28:07
+But also
+
+[Leo Irakliotis] 10:28:11
+We explained that the get size follows an established pattern in object-oriented design. It's a
+
+[Leo Irakliotis] 10:28:23
+fully qualified getter access or method
+
+[Leo Irakliotis] 10:28:30
+But also, this allows a little bit more Pythonic
+
+[Leo Irakliotis] 10:28:36
+I think that so that we can use the length function inside the programs, inside programs that are calling dynamic array objects. So these two functions are the same, and we discussed, you know what, maybe we can indicate the similarities
+
+[Leo Irakliotis] 10:28:52
+By saying here that instead of returning the attribute size of the object, maybe return the length function itself. So the getSize method refers the length method or
+
+[Leo Irakliotis] 10:29:07
+The other way around, we can have the get size return the size and the length
+
+[Leo Irakliotis] 10:29:12
+Return
+
+[Leo Irakliotis] 10:29:14
+The objects get size method
+
+[Leo Irakliotis] 10:29:18
+Like so.
+
+[Leo Irakliotis] 10:29:19
+So one method refers to the other, whether you want the length method to reference the size, the get size method or the get size, reference the length method that is entirely up to you.
+
+[Leo Irakliotis] 10:29:31
+In Python
+
+[Leo Irakliotis] 10:29:34
+There are a few functions that have a very specific syntactic
+
+[Leo Irakliotis] 10:29:47
+appearance and I like to talk a little bit about them. They're the functions that begin with two underscores
+
+[Leo Irakliotis] 10:29:55
+Then have a function name
+
+[Leo Irakliotis] 10:29:59
+Whatever that name may be, followed by two underscores
+
+[Leo Irakliotis] 10:30:05
+This double underscore at the beginning and the end of the function
+
+[Leo Irakliotis] 10:30:23
+gives rise to the name dander
+
+[Leo Irakliotis] 10:30:27
+And that's what we call these functions. So this here is a dander function because it starts here with
+
+[Leo Irakliotis] 10:30:36
+underscores and ends with two underscores. Thunder functions have a special name dander methods have a special name they're called special methods
+
+[Leo Irakliotis] 10:30:49
+Technically, they're called spatial methods, but everyone is called them dunder
+
+[Leo Irakliotis] 10:30:54
+methods.
+
+[Leo Irakliotis] 10:31:00
+They are languages that they are function names that are built in the language model for Python, and they serve specific tasks.
+
+[Leo Irakliotis] 10:31:14
+So the dander length
+
+[Leo Irakliotis] 10:31:19
+Allows programs to reference this object as length, whatever object we want to type to use to call the length function on an object if the dunder length is implemented.
+
+[Leo Irakliotis] 10:31:32
+The Dunder SDR for string allows an object that implements this function
+
+[Leo Irakliotis] 10:31:40
+To prove itself, to represent itself as a string. We are going to see a number of other dander methods throughout the course, and part of our reading assignment for this week will be to review some of them, at least
+
+[Leo Irakliotis] 10:31:58
+It's a reading assignment because really the best way to understand dunder
+
+[Leo Irakliotis] 10:32:04
+methods is to implement them, to use them in our actual code. We have already used a dander method here before
+
+[Leo Irakliotis] 10:32:14
+There it is, string
+
+[Leo Irakliotis] 10:32:18
+is allowing us to
+
+[Leo Irakliotis] 10:32:22
+Print to create string representations of these objects, because otherwise when we create an object from scratch
+
+[Leo Irakliotis] 10:32:30
+Like this one here, the dynamic array object. If we did not have this method
+
+[Leo Irakliotis] 10:32:36
+So let me delete this method temporarily
+
+[Leo Irakliotis] 10:32:41
+Okay. And
+
+[Leo Irakliotis] 10:32:44
+Let me write a quick implementation
+
+[Leo Irakliotis] 10:32:48
+of this object inside this class
+
+[Leo Irakliotis] 10:32:52
+Oh, there it is.
+
+[Leo Irakliotis] 10:32:57
+I can delete all that stuff
+
+[Leo Irakliotis] 10:33:00
+So there
+
+[Leo Irakliotis] 10:33:02
+a dynamic array object based on the class we have. I am adding a few zip codes, and then I'm masking the program to print it
+
+[Leo Irakliotis] 10:33:10
+So when I run the code
+
+[Leo Irakliotis] 10:33:12
+And it prints, I forgot something on line 88. That's my bad. I can fix it because I have a while loop without the semicolon
+
+[Leo Irakliotis] 10:33:25
+There it is. So when I run this program
+
+[Leo Irakliotis] 10:33:29
+And I said, okay, create this dynamic array object
+
+[Leo Irakliotis] 10:33:33
+Add a few
+
+[Leo Irakliotis] 10:33:37
+Value street
+
+[Leo Irakliotis] 10:33:39
+and then print it. The result of the printing, this is what I get
+
+[Leo Irakliotis] 10:33:44
+I get that there is a dynamic array object at this memory location
+
+[Leo Irakliotis] 10:33:50
+Not very friendly
+
+[Leo Irakliotis] 10:33:53
+However, if I go back and restate
+
+[Leo Irakliotis] 10:34:00
+string method
+
+[Leo Irakliotis] 10:34:02
+that I deleted earlier
+
+[Leo Irakliotis] 10:34:05
+That instructs the object how to represent itself as a string. Basically, what this function says is create and return a string
+
+[Leo Irakliotis] 10:34:16
+That represents this object
+
+[Leo Irakliotis] 10:34:19
+And it could be something as simple as this
+
+[Leo Irakliotis] 10:34:34
+And I can say, okay, now let's execute this code here
+
+[Leo Irakliotis] 10:34:42
+That creates an object, adds a few values and prints the object. And now this streak representation of the object, instead of this cryptic dynamic array object and this hexadecimal memory address.
+
+[Leo Irakliotis] 10:34:56
+I get this trick.
+
+[Leo Irakliotis] 10:34:59
+I don't know about you, but to me, this dynamic array object of this hexadecimal address makes more sense.
+
+[Leo Irakliotis] 10:35:10
+So it's all about vegetables. Not so helpful. So maybe
+
+[Leo Irakliotis] 10:35:15
+Maybe I can come here and let the string method play out
+
+[Leo Irakliotis] 10:35:23
+the way that I wrote it before, and when I execute the code, what I get is actually
+
+[Leo Irakliotis] 10:35:30
+The contents that are so far in my object. And I can enhance this function
+
+[Leo Irakliotis] 10:35:36
+And that's part of our assignment for next Monday
+
+[Leo Irakliotis] 10:35:40
+I can enhance this function to provide additional information about this object, because right now what this function shows is only the contents
+
+[Leo Irakliotis] 10:35:52
+That I have added to the dynamic array
+
+[Leo Irakliotis] 10:35:56
+Maybe I want some more information. Maybe I want to know how much capacity
+
+[Leo Irakliotis] 10:36:01
+this dynamic array have
+
+[Leo Irakliotis] 10:36:03
+Maybe I want to know how what is the size of this underlying array? Well, you just saw three values there, therefore, can you count 1, 2, 3? Yes, the size is 3. The underlying capacity is probably 4, but I want that information to be displayed
+
+[Leo Irakliotis] 10:36:21
+And I can modify the string function here, the string representation of this object to do whatever makes sense to me.
+
+[Leo Irakliotis] 10:36:31
+So that would be a part of your assignment.
+
+[Leo Irakliotis] 10:36:35
+One thing to remember, and that's a really good rule for object-oriented design, is when we create our own objects
+
+[Leo Irakliotis] 10:36:43
+It is always a good idea
+
+[Leo Irakliotis] 10:36:48
+To write the string function
+
+[Leo Irakliotis] 10:36:52
+as early in the project as possible.
+
+[Leo Irakliotis] 10:37:01
+Having an object that knows how to represent itself as a string is one of the first five things that we should be doing when we create our own object. I don't know what are the other four things in the top five list
+
+[Leo Irakliotis] 10:37:16
+Well, actually, I do, but we can talk about it later, but I would say one of those top five should be the string function, the special method for string.
+
+[Leo Irakliotis] 10:37:27
+Because that will make debugging down the road a little bit easier.
+
+[Leo Irakliotis] 10:37:37
+So we got our
+
+[Leo Irakliotis] 10:37:39
+Length function, we got our size function, we got one of those two functions to call the other function, so we don't have too much duplicate code. We got a get method for capacity and because we want to know, hey, what's the capacity of this object
+
+[Leo Irakliotis] 10:37:54
+I know that there are 3 elements in it right now, but how much more room is there, just in case? And we got a get function
+
+[Leo Irakliotis] 10:38:04
+that we say, hey, what is that position
+
+[Leo Irakliotis] 10:38:08
+I index. What data is at a given position in that object or in the same way if that object was a hotel with 100 rooms and we have 50 guests and we have this weird hotel where each guest
+
+[Leo Irakliotis] 10:38:23
+We started assigning guests from room 1, and we go up from there. So if someone says, hey, you know, who is guest number 48? We go to room number 48 and we say, here's the guest. Who is guest number 213? Well, there is no our hotel has only 100 rooms. How can you possibly
+
+[Leo Irakliotis] 10:38:41
+Ask me something like this. So let's take a quick minute here and visualize
+
+[Leo Irakliotis] 10:38:47
+The situation because sometimes a picture helps a little bit better. So the underlying array, the underlying list
+
+[Leo Irakliotis] 10:38:58
+has a given capacity. Let's say
+
+[Leo Irakliotis] 10:39:02
+8
+
+[Leo Irakliotis] 10:39:04
+We initialize the object to have a capacity for eight items. Position 0, 1,
+
+[Leo Irakliotis] 10:39:11
+2, 3
+
+[Leo Irakliotis] 10:39:14
+4, 5, 6, and seven. So this here is the capacity of the object.
+
+[Leo Irakliotis] 10:39:25
+And initially, we have
+
+[Leo Irakliotis] 10:39:28
+data here
+
+[Leo Irakliotis] 10:39:30
+here and here. This is the size
+
+[Leo Irakliotis] 10:39:35
+Of the object
+
+[Leo Irakliotis] 10:39:41
+And a user
+
+[Leo Irakliotis] 10:39:43
+might call this object, let's call it dynamic array object, and they're calling the function get
+
+[Leo Irakliotis] 10:39:51
+at position
+
+[Leo Irakliotis] 10:39:57
+Or someone might say, get me whatever is in this object.
+
+[Leo Irakliotis] 10:40:03
+our position
+
+[Leo Irakliotis] 10:40:05
+9
+
+[Leo Irakliotis] 10:40:09
+We have two situations here
+
+[Leo Irakliotis] 10:40:11
+Get something from position nine is an outright out of bounds error
+
+[Leo Irakliotis] 10:40:22
+It implies that the underlying object
+
+[Leo Irakliotis] 10:40:26
+has 10 elements. And that is not the case.
+
+[Leo Irakliotis] 10:40:30
+this underlying object
+
+[Leo Irakliotis] 10:40:37
+There's only 8 elements. This position 9 implies the 10th element. So this is an automatic no no.
+
+[Leo Irakliotis] 10:40:47
+This here
+
+[Leo Irakliotis] 10:40:49
+is within bounds. It says, give me the fifth element.
+
+[Leo Irakliotis] 10:40:54
+The underlying object has room for eight elements, therefore, there is a place for the fifth element.
+
+[Leo Irakliotis] 10:41:02
+Where is that? At position 4
+
+[Leo Irakliotis] 10:41:04
+But because we know the size of the object right now, we also know that there is nothing stored in the fifth place
+
+[Leo Irakliotis] 10:41:13
+at position 4
+
+[Leo Irakliotis] 10:41:15
+So as designers
+
+[Leo Irakliotis] 10:41:18
+We have to decide how to handle a request that is within bounds but not populated.
+
+[Leo Irakliotis] 10:41:26
+Versus a request that is out of bounds.
+
+[Leo Irakliotis] 10:41:32
+An out of bounds is easy. If it's out of bounds
+
+[Leo Irakliotis] 10:41:36
+You are
+
+[Leo Irakliotis] 10:41:37
+who are well within our rights to crush the program to end the program abrupt abruptly.
+
+[Leo Irakliotis] 10:41:44
+If it is within bounds, but not within range
+
+[Leo Irakliotis] 10:41:50
+Not within size. Then we have options.
+
+[Leo Irakliotis] 10:41:57
+And those options can be expressed in logic.
+
+[Leo Irakliotis] 10:42:03
+And this is what we attempted to do here. We said, you know, the index has to be positive because somehow weird enough, Python allows
+
+[Leo Irakliotis] 10:42:15
+negative values as array indices
+
+[Leo Irakliotis] 10:42:18
+I
+
+[Leo Irakliotis] 10:42:20
+Kind of understand the logic
+
+[Leo Irakliotis] 10:42:24
+But
+
+[Leo Irakliotis] 10:42:26
+I can't say that I agree with it
+
+[Leo Irakliotis] 10:42:47
+So here is a
+
+[Leo Irakliotis] 10:42:49
+Sybil string list, what is the second element of this list? Well, to find the second element of this list, I go to position one
+
+[Leo Irakliotis] 10:42:58
+There it is, New York
+
+[Leo Irakliotis] 10:42:59
+What is the fifth element, the sixth element of this list out of bounds list index out of range.
+
+[Leo Irakliotis] 10:43:06
+Okay, what is the first element of this list? Well, Chicago, what is the minus one element of this list?
+
+[Leo Irakliotis] 10:43:16
+Seattle. It goes around
+
+[Leo Irakliotis] 10:43:18
+What is the minus 2 element? What's before Seattle, Dallas.
+
+[Leo Irakliotis] 10:43:22
+So it wraps around, which is kind of cute and kind of useful
+
+[Leo Irakliotis] 10:43:32
+But it's like you driving
+
+[Leo Irakliotis] 10:43:40
+Southbound
+
+[Leo Irakliotis] 10:43:42
+On Dearborn Avenue.
+
+[Leo Irakliotis] 10:43:46
+You will discover
+
+[Leo Irakliotis] 10:43:49
+That every other car is driving the opposite direction
+
+[Leo Irakliotis] 10:43:55
+And when you see those flashing blue lights behind you
+
+[Leo Irakliotis] 10:43:59
+You cannot tell the Chicago police officer that all those other hundreds of drivers were going the wrong direction, and you were going in the right direction.
+
+[Leo Irakliotis] 10:44:10
+Dearborn Avenue is one-way street northbound, and if you're driving southbound
+
+[Leo Irakliotis] 10:44:15
+You're like Python that allows negative values for array indices. Qt
+
+[Leo Irakliotis] 10:44:24
+useful, I mean, driving opposite in a one-way street can be useful if you're in a hurry, and that's the fastest way, because people are, you know, getting out of your way, and you're assuming that like that.
+
+[Leo Irakliotis] 10:44:35
+But also dangerous
+
+[Leo Irakliotis] 10:44:38
+Do not go driving in the opposite direction. You know, in a one-way street. Not only it's illegal, but it's also dangerous.
+
+[Leo Irakliotis] 10:44:46
+Same thing here. For some reason, Python creators thought that I want to be different than other programming languages when it comes to arrays
+
+[Leo Irakliotis] 10:44:58
+And they gave us… they went, they did.
+
+[Leo Irakliotis] 10:45:05
+Unfortunately, I don't have JShell here
+
+[Leo Irakliotis] 10:45:13
+To show you Java being, you know what, I do think I should have access.
+
+[Leo Irakliotis] 10:45:19
+to JShell, because I have access here to a full computer
+
+[Leo Irakliotis] 10:45:33
+There is a
+
+[Leo Irakliotis] 10:45:36
+Oh, I don't have JShell here as well either. Oh, well, never mind. Who cares about demonstrating this in Java anyway?
+
+[Leo Irakliotis] 10:45:43
+So
+
+[Leo Irakliotis] 10:45:45
+For the purposes of this course
+
+[Leo Irakliotis] 10:45:49
+We will make a deal
+
+[Leo Irakliotis] 10:45:52
+that array indices cannot be negative. Yes, Python allows them
+
+[Leo Irakliotis] 10:45:59
+But this community, the COMP 271 community of the summer 26 does not allow them. Okay
+
+[Leo Irakliotis] 10:46:07
+So we want the index to be a positive number. And yesterday's discussion, we said we also want to be within the size of the object.
+
+[Leo Irakliotis] 10:46:16
+We want this method
+
+[Leo Irakliotis] 10:46:18
+To return something meaningful
+
+[Leo Irakliotis] 10:46:21
+Only
+
+[Leo Irakliotis] 10:46:23
+If the request comes
+
+[Leo Irakliotis] 10:46:25
+for elements
+
+[Leo Irakliotis] 10:46:31
+In this range. If it comes for elements in this range here
+
+[Leo Irakliotis] 10:46:41
+What we suggested we return is oops
+
+[Leo Irakliotis] 10:46:46
+Which, you know, it's not the most professional way to say thing to say, but oh well, we'll talk about it in a second.
+
+[Leo Irakliotis] 10:47:01
+Instead of oops
+
+[Leo Irakliotis] 10:47:04
+What we can do is raise
+
+[Leo Irakliotis] 10:47:07
+An error
+
+[Leo Irakliotis] 10:47:10
+Index out of bounds.
+
+[Leo Irakliotis] 10:47:13
+This will cause the program to crash
+
+[Leo Irakliotis] 10:47:22
+Okay.
+
+[Leo Irakliotis] 10:47:24
+I'm not happy when I cause my programs to crash when that crash can is predictable, and if something is predictable in my books, it's avoidable.
+
+[Leo Irakliotis] 10:47:40
+Okay. And
+
+[Leo Irakliotis] 10:47:43
+Anytime I raise some type of error, anytime I use the command raise to make the program crash
+
+[Leo Irakliotis] 10:47:51
+I feel very uncomfortable. I feel like, you know what, I'm a lazy programmer, and I am a lazy programmer. I mean, by definition, we got into programming computers because we want… we don't want to do heavy lifting for menial repetitive tasks.
+
+[Leo Irakliotis] 10:48:06
+Does that make us lazy or more productive? You know, I'll reserve judgment for later
+
+[Leo Irakliotis] 10:48:12
+But
+
+[Leo Irakliotis] 10:48:14
+Personally, whenever I type the raise command here or in other languages, the equivalent task is called throw an exception
+
+[Leo Irakliotis] 10:48:25
+I'm causing my program to crash
+
+[Leo Irakliotis] 10:48:28
+It's like driving my car down the road
+
+[Leo Irakliotis] 10:48:31
+And I want to clear my windshield and I press my wiper thingy and there is no water coming out. And I'm so frustrated because I forgot to fill the tank there with wiper fluid that I go and crush my car into some light bulb
+
+[Leo Irakliotis] 10:48:51
+Too dramatic
+
+[Leo Irakliotis] 10:48:54
+And then I have to go buy a new car
+
+[Leo Irakliotis] 10:48:57
+So whenever I use the raise command, I think like, you know, am I being a little bit traumatic here?
+
+[Leo Irakliotis] 10:49:05
+If this is an anticipated error, how can I handle it in a way that allows the program to decide what to do rather than me throwing a fit
+
+[Leo Irakliotis] 10:49:16
+So I will make the
+
+[Leo Irakliotis] 10:49:20
+convention here
+
+[Leo Irakliotis] 10:49:21
+And that's just all about style. Instead of raising an exception
+
+[Leo Irakliotis] 10:49:36
+To return
+
+[Leo Irakliotis] 10:49:37
+None.
+
+[Leo Irakliotis] 10:49:37
+To basically
+
+[Leo Irakliotis] 10:49:40
+This method promises to return something. Under normal circumstances, you expect a
+
+[Leo Irakliotis] 10:49:48
+We integer value or whatever data type you're storing in this
+
+[Leo Irakliotis] 10:49:54
+underlying array in our example so far, we've been using integer values to represent zip codes, but can be anything.
+
+[Leo Irakliotis] 10:50:01
+So let's delete this expectation here.
+
+[Leo Irakliotis] 10:50:05
+And
+
+[Leo Irakliotis] 10:50:11
+And if there is nothing there
+
+[Leo Irakliotis] 10:50:17
+I'm out of bounds, or amount of size, then return nothing and then explain this, document this
+
+[Leo Irakliotis] 10:50:25
+In the program I'm writing, document my philosophy, document my choice that if you are trying
+
+[Leo Irakliotis] 10:50:34
+to reach something in the gray zone, or
+
+[Leo Irakliotis] 10:50:41
+In
+
+[Leo Irakliotis] 10:50:44
+In the forbidden zone
+
+[Leo Irakliotis] 10:50:51
+In the negative values or in the out of bounds values. I will return none. I will return the language equivalent of nothing.
+
+[Leo Irakliotis] 10:51:03
+And you handle this any way you want. And if the calling program says, hey, give me WhatsApp position 10
+
+[Leo Irakliotis] 10:51:10
+And it gets nothing. Then the calling program
+
+[Leo Irakliotis] 10:51:16
+can decide
+
+[Leo Irakliotis] 10:51:18
+How to handle that situation. Do you want to throw an exception and crash, or do you want to tell the user there is nothing here?
+
+[Leo Irakliotis] 10:51:25
+But I do not want my program to crash. So let's talk a little bit about what is that other program. Let's talk a little bit about the duality of programmer and user
+
+[Leo Irakliotis] 10:51:51
+All right, so what I want to do here
+
+[Temeeka Glass] 10:51:57
+Um, sorry, question. So, just so that I'm understanding correctly…
+
+[Temeeka Glass] 10:52:02
+the… the, like, Git functions and stuff, we want…
+
+[Temeeka Glass] 10:52:07
+those to, like, kind of return none, and then, like,
+
+[Temeeka Glass] 10:52:10
+the… the functions that call those get getter functions is what we want to actually tell us what, like, the error is.
+
+[Leo Irakliotis] 10:52:19
+Yes.
+
+[Temeeka Glass] 10:52:19
+Okay.
+
+[Leo Irakliotis] 10:52:21
+And the best way to understand this is to talk a little bit about the duality. We're developers, right? We're developing code.
+
+[Leo Irakliotis] 10:52:29
+Sometimes, when developing
+
+[Leo Irakliotis] 10:52:32
+I don't even know what I'm writing anymore
+
+[Leo Irakliotis] 10:52:43
+Programmer
+
+[Leo Irakliotis] 10:52:45
+As a developer
+
+[Leo Irakliotis] 10:52:54
+Versus programmer as a user.
+
+[Leo Irakliotis] 10:53:06
+As developers
+
+[Leo Irakliotis] 10:53:09
+We write code that others will use
+
+[Leo Irakliotis] 10:53:14
+As users
+
+[Leo Irakliotis] 10:53:16
+We use code that others develop to write code for us or for others. So it's a kind of, you know, kind of chicken and egg problem, but as a user, I write code that uses code that other people developed.
+
+[Leo Irakliotis] 10:53:33
+For example, when you're writing code that you use the import statement, let's say, for example, import math
+
+[Leo Irakliotis] 10:53:41
+When you're typing this line, you are wearing your user
+
+[Leo Irakliotis] 10:53:47
+You're still a programmer
+
+[Leo Irakliotis] 10:53:49
+But you are a programmer user
+
+[Leo Irakliotis] 10:53:52
+When you are writing, when you're creating the math library
+
+[Leo Irakliotis] 10:53:56
+You are the developer
+
+[Leo Irakliotis] 10:54:00
+So as a developer
+
+[Leo Irakliotis] 10:54:03
+You write an object, say, in our case, dynamic array
+
+[Leo Irakliotis] 10:54:13
+We wrote this class and someone else. And that someone else could be us. Five minutes later.
+
+[Leo Irakliotis] 10:54:21
+Or our colleague across the desk
+
+[Leo Irakliotis] 10:54:25
+Someone else will take this object through an import statement
+
+[Leo Irakliotis] 10:54:31
+If they do
+
+[Leo Irakliotis] 10:54:32
+things properly or just copy the object and do some coding within
+
+[Leo Irakliotis] 10:54:39
+Within itself, and say, okay, create a dynamic array object
+
+[Leo Irakliotis] 10:54:44
+using this
+
+[Leo Irakliotis] 10:54:46
+class
+
+[Leo Irakliotis] 10:54:49
+that I import it.
+
+[Leo Irakliotis] 10:54:52
+And now, every time they're operating on this object
+
+[Leo Irakliotis] 10:54:57
+They're acting as users.
+
+[Leo Irakliotis] 10:55:03
+And the person acting as user on this object may be us, the very creator of that object.
+
+[Leo Irakliotis] 10:55:11
+So now we write a separate program that uses our object.
+
+[Leo Irakliotis] 10:55:17
+And we let that program decide how to handle what the methods of this class return. And we document those methods. And our methods in this example say that.
+
+[Leo Irakliotis] 10:55:31
+If there is nothing here to return
+
+[Leo Irakliotis] 10:55:35
+Do not crash
+
+[Leo Irakliotis] 10:55:37
+do not have this program crash
+
+[Leo Irakliotis] 10:55:41
+Let the implementing program decide how to handle that exception.
+
+[Leo Irakliotis] 10:55:46
+And we can… we can demonstrate this
+
+[Leo Irakliotis] 10:55:49
+So here is our method that returns none if something is not there.
+
+[Leo Irakliotis] 10:55:54
+And that's our class
+
+[Leo Irakliotis] 10:55:57
+There is actually no running code, so let's delete this. There is no running code here
+
+[Leo Irakliotis] 10:56:04
+That's the product we explore
+
+[Leo Irakliotis] 10:56:06
+Okay, and then someone else might say, okay, let's create here another program
+
+[Leo Irakliotis] 10:56:16
+It's called Implement
+
+[Leo Irakliotis] 10:56:19
+Dynamic Array Python
+
+[Leo Irakliotis] 10:56:23
+And from what's the name of the file from dynamic array assignment, that's the name of the file, because the assignment file from last week, import the object
+
+[Leo Irakliotis] 10:56:32
+Okay, so now
+
+[Leo Irakliotis] 10:56:35
+I have the object, and I can create… I have the class, and I can create my test object
+
+[Leo Irakliotis] 10:56:41
+And I say, add
+
+[Leo Irakliotis] 10:56:47
+Zip code
+
+[Leo Irakliotis] 10:56:49
+add one more. And now
+
+[Leo Irakliotis] 10:56:52
+print
+
+[Leo Irakliotis] 10:56:55
+They
+
+[Leo Irakliotis] 10:56:56
+The fourth item
+
+[Leo Irakliotis] 10:56:58
+For this
+
+[Leo Irakliotis] 10:57:00
+Well, there's no 45M because I only have two
+
+[Leo Irakliotis] 10:57:03
+So the size is 2, and I'm asking something that's greater than that size, so I'm going to throw an exception
+
+[Leo Irakliotis] 10:57:15
+That's what I get back. I don't get the, oh, I can't believe you're asking me to do this, dramatic thing
+
+[Leo Irakliotis] 10:57:20
+I'm getting that. That's a softer blow
+
+[Leo Irakliotis] 10:57:25
+than if I was raising an exception
+
+[Leo Irakliotis] 10:57:29
+In
+
+[Leo Irakliotis] 10:57:32
+In here
+
+[Leo Irakliotis] 10:57:44
+What if I instead of that, I raised an exception
+
+[Leo Irakliotis] 10:57:52
+And I run my implement program
+
+[Leo Irakliotis] 10:57:55
+And there is my exception. But notice that by throwing an exception
+
+[Leo Irakliotis] 10:58:01
+what you get back here is the postmortem of a program. What what you see here
+
+[Leo Irakliotis] 10:58:09
+Technically, it's called the postmortem
+
+[Leo Irakliotis] 10:58:11
+It's a program that crashed and here is the crashing report.
+
+[Leo Irakliotis] 10:58:17
+In the postmortem
+
+[Leo Irakliotis] 10:58:18
+can tell people a lot about the kind of programmer you are.
+
+[Leo Irakliotis] 10:58:23
+This is more revealing to the world than telling me you don't like cabbage or broccoli or carrots.
+
+[Leo Irakliotis] 10:58:30
+and more… much more dangerous
+
+[Leo Irakliotis] 10:58:35
+Because from a cybersecurity perspective, it reveals a philosophy about the quality of software development that you do.
+
+[Leo Irakliotis] 10:58:45
+And you want to mask this from the world
+
+[Leo Irakliotis] 10:58:48
+And that's why
+
+[Leo Irakliotis] 10:58:50
+Instead of
+
+[Leo Irakliotis] 10:58:53
+raising
+
+[Leo Irakliotis] 10:58:54
+An exception
+
+[Leo Irakliotis] 10:58:57
+I decide to return none
+
+[Leo Irakliotis] 10:59:03
+So now, when I'm asking you to get me a value from the object at a position that is not valid, I get none.
+
+[Leo Irakliotis] 10:59:13
+And I can capture my program. Okay
+
+[Leo Irakliotis] 10:59:18
+obtain value
+
+[Leo Irakliotis] 10:59:27
+is something like this. And I can say, hey, if obtained is none.
+
+[Leo Irakliotis] 10:59:34
+No data present.
+
+[Leo Irakliotis] 10:59:41
+Else
+
+[Leo Irakliotis] 10:59:42
+print the obtained value
+
+[Leo Irakliotis] 10:59:45
+So now my program can decide how to handle
+
+[Leo Irakliotis] 10:59:50
+The absence of data.
+
+[Leo Irakliotis] 10:59:55
+And
+
+[Leo Irakliotis] 10:59:57
+terminate
+
+[Leo Irakliotis] 10:59:58
+With a user-friendly error
+
+[Leo Irakliotis] 11:00:02
+That doesn't necessarily reveal the philosophy behind the object itself.
+
+[Leo Irakliotis] 11:00:20
+I would say, just to be fair, that I'm in the minority
+
+[Leo Irakliotis] 11:00:26
+For a lot of programmer developers are in love with raising exceptions.
+
+[Leo Irakliotis] 11:00:34
+And depending on which school of software engineering you subscribe to, some schools say, you know, raise exceptions as close to the source as soon as they happen. Do not propagate that error
+
+[Leo Irakliotis] 11:00:49
+down to other applications, to other applications, like I just did here, allowing my application I'm a little bit charitable by calling these 10 lines of code an application, but allowing this code
+
+[Leo Irakliotis] 11:01:02
+To decide how to handle an error that was created at a previous program.
+
+[Leo Irakliotis] 11:01:09
+Ideally, what
+
+[Leo Irakliotis] 11:01:12
+What happens in a realistic software implementation, in a realistic software design environment is that we have applications
+
+[Leo Irakliotis] 11:01:27
+One object after the other
+
+[Leo Irakliotis] 11:01:33
+other passing messages
+
+[Leo Irakliotis] 11:01:46
+Object, and what is an object? An object is a program. And message passing
+
+[Leo Irakliotis] 11:01:55
+between objects is done with values that are returned by methods
+
+[Leo Irakliotis] 11:02:03
+And method headers
+
+[Leo Irakliotis] 11:02:08
+So for example, we're passing information by calling some method DA, that's the object
+
+[Leo Irakliotis] 11:02:16
+get
+
+[Leo Irakliotis] 11:02:18
+That's the method
+
+[Leo Irakliotis] 11:02:22
+Two
+
+[Leo Irakliotis] 11:02:24
+And this is a message we're passing into an object through its method, and this method will pass… create a message which is whatever is at position 2 in this object that we can pass to another application, to another object.
+
+[Leo Irakliotis] 11:02:39
+So objects communicate each other through what they request from other objects methods, and by providing data to other objects methods.
+
+[Leo Irakliotis] 11:02:50
+And if this object here makes an error and that error is propagated as a non-value that we hope this object will handle and maybe this object will handle, as you go further and further away from the source of the error
+
+[Leo Irakliotis] 11:03:03
+You might get a
+
+[Leo Irakliotis] 11:03:07
+Increasingly less clear
+
+[Leo Irakliotis] 11:03:10
+perspective about what the error was versus to, you know what, you're asking me to give you something that doesn't exist, I'm going to raise an exception here, crush and die, and you go figure it out, because it's not the job of this object, or of this object to clean up the mess
+
+[Leo Irakliotis] 11:03:26
+of this object
+
+[Leo Irakliotis] 11:03:27
+That's one philosophy
+
+[Leo Irakliotis] 11:03:31
+I
+
+[Leo Irakliotis] 11:03:34
+Neither approach is wrong.
+
+[Leo Irakliotis] 11:03:36
+What I'm suggesting is that at this level of coding at the COM271 level of coding
+
+[Leo Irakliotis] 11:03:45
+Let's be kind, and instead of raising an exception, let's create a kinder way to indicate
+
+[Leo Irakliotis] 11:03:54
+FAU without crashing the program. Every time the command raise is executed, the program crashes.
+
+[Leo Irakliotis] 11:04:04
+Let's do it in a less dramatic way. There's not that much at stake in terms of security here. But let's do it in a less dramatic way.
+
+[Leo Irakliotis] 11:04:15
+Going back to the method to the class itself, the dynamic array class, we worked on the index method to say, hey, you know which position this array is such and such value. And if that value doesn't exist
+
+[Leo Irakliotis] 11:04:31
+It will return index minus one, which is any legal value for an array position, even though Python will accept it, we just made an agreement that index values in negative index values in our course are not acceptable.
+
+[Leo Irakliotis] 11:04:51
+I want to write next
+
+[Leo Irakliotis] 11:04:55
+A method that returns true or false
+
+[Leo Irakliotis] 11:05:07
+I need to turn off this
+
+[Temeeka Glass] 11:05:13
+Um, it's like in the settings, go ahead and turn mine off, too. Um…
+
+[Leo Irakliotis] 11:05:13
+A little
+
+[Leo Irakliotis] 11:05:17
+It used to be right here, this
+
+[Leo Irakliotis] 11:05:20
+little icon here of the copilot, and you could at least hitch news, so now I have to do it in the settings
+
+[Leo Irakliotis] 11:05:28
+Great.
+
+[Leo Irakliotis] 11:05:33
+Inline suggestions
+
+[Leo Irakliotis] 11:05:35
+No, there is a snooze.
+
+[Leo Irakliotis] 11:05:37
+Okay, fine. All right
+
+[Temeeka Glass] 11:05:37
+I didn't show up
+
+[Leo Irakliotis] 11:05:41
+So you know what? It was
+
+[Leo Irakliotis] 11:05:44
+When you see the inline suggestions here
+
+[Leo Irakliotis] 11:05:47
+click on it, and it will expand the menu, and there is your snooze
+
+[Leo Irakliotis] 11:05:56
+bottom
+
+[Leo Irakliotis] 11:05:58
+All right.
+
+[Leo Irakliotis] 11:06:00
+So contains, I want this
+
+[Leo Irakliotis] 11:06:03
+To return true
+
+[Leo Irakliotis] 11:06:07
+If value is present in the underlying array
+
+[Leo Irakliotis] 11:06:12
+and
+
+[Leo Irakliotis] 11:06:13
+Otherwise
+
+[Leo Irakliotis] 11:06:14
+And one way to do it, again, to assume the worst that the value is not found
+
+[Leo Irakliotis] 11:06:22
+And return
+
+[Leo Irakliotis] 11:06:25
+that variable. And right now
+
+[Leo Irakliotis] 11:06:28
+You know, this method is complete. I mean, does the work properly, but I'm promising to return a Boolean value, I'm returning a Boolean value. Whether I'm promising to return a Boolean outcome. I'm returning a Boolean outcome
+
+[Leo Irakliotis] 11:06:41
+It doesn't matter what the value I'm looking for exists or not, it's going to always return false
+
+[Leo Irakliotis] 11:06:46
+So now I have to add the logic to make this work a little bit better, and I can start a
+
+[Leo Irakliotis] 11:06:54
+A traversal of the array, while the index
+
+[Leo Irakliotis] 11:06:59
+is less
+
+[Leo Irakliotis] 11:07:02
+than the number of items stored, because I don't want to go through the empty rooms in this array. I want to scan if any given value exists within
+
+[Leo Irakliotis] 11:07:10
+the values that have been assigned
+
+[Leo Irakliotis] 11:07:13
+And not found
+
+[Leo Irakliotis] 11:07:18
+And at every position, I'm updating my found value to say, hey, is the current element
+
+[Leo Irakliotis] 11:07:25
+In the underlying array
+
+[Leo Irakliotis] 11:07:28
+Equal to the value I'm looking for
+
+[Leo Irakliotis] 11:07:33
+If the answer is yes, the loop will collapse. I'll come to line 116 and return value. If this is false, the loop will continue in expectation of that continuation, I have to increment
+
+[Leo Irakliotis] 11:07:46
+The index. So this loop in line 112 ends either when I exhaust every element stored in the array without finding what I'm looking for
+
+[Leo Irakliotis] 11:07:55
+And
+
+[Leo Irakliotis] 11:07:58
+Or
+
+[Leo Irakliotis] 11:08:00
+As soon as I find what I'm looking for
+
+[Leo Irakliotis] 11:08:06
+So
+
+[Leo Irakliotis] 11:08:15
+That will work.
+
+[Leo Irakliotis] 11:08:17
+However.
+
+[Leo Irakliotis] 11:08:23
+I'm not happy with this code
+
+[Leo Irakliotis] 11:08:28
+And I am
+
+[Leo Irakliotis] 11:08:34
+I don't want to end the class on an unhappy note.
+
+[Leo Irakliotis] 11:08:39
+So what do you think bothers me with the contains method? Dash.
+
+[Leo Irakliotis] 11:09:14
+Alex, is there anything bothering you with the condensed method?
+
+[Alexander Garcia] 11:09:21
+I mean, it's
+
+[Alexander Garcia] 11:09:23
+It's kind of
+
+[Alexander Garcia] 11:09:28
+It's kind of like limited how
+
+[Alexander Garcia] 11:09:31
+Like in the previous code, like right above it, it'll either like originally like produce like negative one if there's something like not within value. So like kind of similar how I would produce like false. It's not
+
+[Alexander Garcia] 11:09:46
+Clear like the logic behind it. It's not 100% clear. It's very vague
+
+[Leo Irakliotis] 11:09:52
+What's wrong with the logic? Come on.
+
+[Leo Irakliotis] 11:09:55
+Give me some credit. The logic is solid. The logic is beautiful, but what is wrong
+
+[Alexander Garcia] 11:09:58
+Yeah.
+
+[Leo Irakliotis] 11:10:01
+You hate it there. I mean, the first thing that you said was exactly what I was looking for, that contains
+
+[Leo Irakliotis] 11:10:09
+is identical to index off only instead of an integer number, it returns true or false
+
+[Leo Irakliotis] 11:10:19
+But it does the same thing. It looks through the array, look at lines 96 and 107. They're identical
+
+[Leo Irakliotis] 11:10:27
+The condition is identical. I'm asking, is the current
+
+[Leo Irakliotis] 11:10:32
+value, what I'm looking for is the current element what I'm looking for
+
+[Alexander Garcia] 11:10:38
+No, because, I mean, like, it's just returning true like if like
+
+[Alexander Garcia] 11:10:45
+How do I explain it? Like
+
+[Alexander Garcia] 11:10:48
+It's
+
+[Alexander Garcia] 11:10:50
+I'm losing my train of thought. I really
+
+[Alexander Garcia] 11:10:53
+Like, if I'm trying to look like from a user perspective, if it's as true
+
+[Alexander Garcia] 11:10:58
+It's just true, but I don't know, like, who's in room, like, 25. It's just as true
+
+[Q. Dutch] 11:11:04
+Is it not giving you the actual position or something? Like…
+
+[Leo Irakliotis] 11:11:07
+But that's what I'm asking. I'm not asking
+
+[Leo Irakliotis] 11:11:08
+I'm not, but I'm not asking for this.
+
+[Leo Irakliotis] 11:11:10
+In contains, all I'm asking, hey, is Alexander… is Alexander Garcia in this room?
+
+[Leo Irakliotis] 11:11:19
+That's either true or false. I'm not asking which room is Alex in?
+
+[Alexander Garcia] 11:11:20
+Yeah, it would just produce true
+
+[Alexander Garcia] 11:11:21
+Yeah.
+
+[Leo Irakliotis] 11:11:24
+I'm asking, is Alex here?
+
+[Leo Irakliotis] 11:11:27
+So the question is a true-false question
+
+[Leo Irakliotis] 11:11:32
+But
+
+[Leo Irakliotis] 11:11:34
+Let's say, let's go back to index of. The question is, which room is Alex in?
+
+[Leo Irakliotis] 11:11:41
+If Alex is not in the hotel
+
+[Leo Irakliotis] 11:11:44
+Is Alex is not in the underlying array
+
+[Leo Irakliotis] 11:11:47
+What will index solve return?
+
+[Alexander Garcia] 11:11:51
+False
+
+[Leo Irakliotis] 11:11:52
+The index
+
+[Leo Irakliotis] 11:11:57
+The method in line 88, what it will return if Alex is not present
+
+[Q. Dutch] 11:12:04
+Negative one.
+
+[Leo Irakliotis] 11:12:06
+Negative one. Every time I'm asking for something non-present, index of will return negative one
+
+[Leo Irakliotis] 11:12:14
+And if something exists in the array, index off will return a positive number
+
+[Leo Irakliotis] 11:12:21
+But in the absence of that value, index off will always return minus one
+
+[Leo Irakliotis] 11:12:28
+In the absence of a value, what will contains
+
+[Leo Irakliotis] 11:12:33
+Return, Alex.
+
+[Leo Irakliotis] 11:12:49
+What was that?
+
+[Leo Irakliotis] 11:12:55
+The method contains, if a value is not present, what will return?
+
+[Kofi Nyarku] 11:13:03
+False
+
+[Leo Irakliotis] 11:13:14
+False. So we have here a pattern.
+
+[Leo Irakliotis] 11:13:15
+We have here a pattern that in the absence of something
+
+[Leo Irakliotis] 11:13:23
+Index of
+
+[Leo Irakliotis] 11:13:26
+It returns minus one and contains
+
+[Leo Irakliotis] 11:13:30
+Return
+
+[Leo Irakliotis] 11:13:31
+False
+
+[Leo Irakliotis] 11:13:33
+And in the presence of something
+
+[Leo Irakliotis] 11:13:36
+Index of returns something positive or non negative, and contains returns true
+
+[Leo Irakliotis] 11:13:48
+Does that make sense?
+
+[Leo Irakliotis] 11:13:53
+Index solve will always return minus one when it doesn't find a value or a non-negative value when it finds that value
+
+[Leo Irakliotis] 11:14:02
+Index off will return -1 to indicate that
+
+[Leo Irakliotis] 11:14:06
+Value is nowhere to be found in the underlying array, or the position index for that value, if it is in the underlying array
+
+[Leo Irakliotis] 11:14:17
+Contains will return true or false. True if it's present, false if it's absent.
+
+[Leo Irakliotis] 11:14:25
+So if index of
+
+[Leo Irakliotis] 11:14:30
+is less than zero then contains
+
+[Leo Irakliotis] 11:14:35
+is false
+
+[Leo Irakliotis] 11:14:44
+And so
+
+[Leo Irakliotis] 11:14:48
+I
+
+[Leo Irakliotis] 11:14:51
+Rewrite my contains method
+
+[Leo Irakliotis] 11:14:57
+As in one line method
+
+[Leo Irakliotis] 11:15:02
+Call the indexof method
+
+[Leo Irakliotis] 11:15:06
+For this same value
+
+[Leo Irakliotis] 11:15:08
+And if
+
+[Leo Irakliotis] 11:15:11
+Index of method is greater than minus one
+
+[Leo Irakliotis] 11:15:16
+Then you will return true
+
+[Leo Irakliotis] 11:15:20
+Otherwise
+
+[Leo Irakliotis] 11:15:22
+you will return false
+
+[Leo Irakliotis] 11:15:27
+Because contains
+
+[Leo Irakliotis] 11:15:29
+will give us minus 1 if the item is absent
+
+[Leo Irakliotis] 11:15:36
+And line 105, if the index of is minus one, line 105 will cause a false to be returned by method contains.
+
+[Leo Irakliotis] 11:15:45
+So I don't have to duplicate the while loop structure in contains method because I can call the index of method, let it do the search and say, hey, notice I don't
+
+[Leo Irakliotis] 11:15:58
+Line 105 is not asking if Alex is here. Line 105 is asking, what room is Alex in?
+
+[Leo Irakliotis] 11:16:07
+And the method that tells us what room Alex is in
+
+[Leo Irakliotis] 11:16:12
+We'll come back with an integer value. And if that integer value is minus one, then Alex is not here and line 105 will evaluate false.
+
+[Leo Irakliotis] 11:16:21
+But if Alex is here
+
+[Leo Irakliotis] 11:16:24
+The index of method will give us a non-negative number
+
+[Leo Irakliotis] 11:16:29
+And line 105 will evaluate true, and that's what we… where is Alex here? Well, before I tell you if Alex is here, let me find the room where Alex is in.
+
+[Leo Irakliotis] 11:16:39
+If that room is minus one, Alex is not here. If that room is not minus one, then Alex is here. That's exactly what line 105 does.
+
+[Leo Irakliotis] 11:16:52
+basically contains
+
+[Leo Irakliotis] 11:16:55
+is a Boolean front to the index of method. And basically tell us if the index of method returns a negative number or not. If it returns a negative number, then what we're looking for is not here. If it does not return a negative number
+
+[Leo Irakliotis] 11:17:10
+Then what we're looking for is here
+
+[Alexander Garcia] 11:17:18
+So essentially, you're just combining those two codes into one instead of two separate while if statements
+
+[Leo Irakliotis] 11:17:23
+Exactly. The heavy lifting is done here. The search, the scan through the rooms of the hotel, going door after door, knocking the door, are you Alex? Are you Alex? Are you Alex is done in line in method index solve.
+
+[Alexander Garcia] 11:17:23
+Okay
+
+[Leo Irakliotis] 11:17:37
+So now that person is going door after door, knocking the doors, comes down to the reception, and the manager returns, what room is Alex in?
+
+[Alexander Garcia] 11:17:38
+Gotcha.
+
+[Leo Irakliotis] 11:17:45
+room number minus 1. Okay, I got it, we don't have a guest whose name, Alex.
+
+[Leo Irakliotis] 11:17:52
+But now we are providing functionality to our code. One is find me the room where Alex is, because sometimes you need to know what room Alex is in
+
+[Leo Irakliotis] 11:18:01
+And sometimes you need to know, hey, is there an Alex here
+
+[Leo Irakliotis] 11:18:04
+I don't care where that person is, hey, is there an Alex here?
+
+[Leo Irakliotis] 11:18:09
+Sometimes the question can be just a simple binary question.
+
+[Leo Irakliotis] 11:18:13
+That is answered with the method in 101. And that's us presenting options to our users, functional options. You know, you want to know the room where Alex is or whether or not Alex is here
+
+[Leo Irakliotis] 11:18:26
+Either way, we have you covered
+
+[Leo Irakliotis] 11:18:33
+This and a few more details will be discussed tomorrow, same day, same place
+
+[Leo Irakliotis] 11:18:43
+And I owe you three minutes back to you for your time. I'll give that to you tomorrow, hopefully.
+
+[Leo Irakliotis] 11:18:51
+All right, everyone.
+
+[Kofi Nyarku] 11:18:52
+Thank you.
+
+[Alexander Garcia] 11:18:52
+Thank you, Professor
+
+[Leo Irakliotis] 11:18:52
+See you tomorrow. Bye.
+
+[Q. Dutch] 11:18:54
+Before you get off, Professor, can I ask you a quick question?
+
+[Leo Irakliotis] 11:18:58
+Yeah.
+
+[Q. Dutch] 11:18:59
+Okay, so for this contain, the… I guess the index of and contains, like,
+
+[Q. Dutch] 11:19:07
+Because I'm… because I'm in… my major is cybersecurity, so I'm trying to still understand for the coding.
+
+[Q. Dutch] 11:19:13
+And I know that, I guess, for the containers, you don't have to put it back in that while loop, but is it?
+
+[Q. Dutch] 11:19:19
+Is it necessary… is it necessary, I guess, in, like, in the coding world, to have it
+
+[Q. Dutch] 11:19:26
+dense as much, or it's just based on, like, cosmetics? Like, I know why we're doing it now, as you keep breaking it down, but, like, even if…
+
+[Q. Dutch] 11:19:34
+We kept it in that while loop situation. Is that still fine?
+
+[Leo Irakliotis] 11:19:40
+It is fine
+
+[Leo Irakliotis] 11:19:43
+But
+
+[Leo Irakliotis] 11:19:45
+You're duplicating code. You're duplicating functions. So if you decide to change something in the way you write while loops, now you have two of those loops to maintain in two separate places
+
+[Leo Irakliotis] 11:19:59
+So you're creating more work for you
+
+[Q. Dutch] 11:20:02
+Oh, wow.
+
+[Leo Irakliotis] 11:20:06
+But if you want to implement contains as a with a full while loop that we had before, absolutely.
+
+[Leo Irakliotis] 11:20:14
+And by the way, if you're paid by the keystroke, absolutely because you're typing more. But that creates maintenance issues whenever we duplicate code
+
+[Leo Irakliotis] 11:20:27
+whenever we duplicate logic in our code, we create redundant code and redundancy is not a good thing for maintenance.
+
+[Leo Irakliotis] 11:20:39
+That's why I prefer to write contains the way it is here by calling a method that is already doing the scanning of the array
+
+[Q. Dutch] 11:20:46
+Okay.
+
+[Leo Irakliotis] 11:20:47
+Rather than initiate a new scan here
+
+[Q. Dutch] 11:20:49
+So I guess that's the idea with, like, coding. Like, first you get the idea of it and everything, so… but now with the cosmetics,
+
+[Leo Irakliotis] 11:20:50
+Because the
+
+[Q. Dutch] 11:20:55
+you want to kind of sharpen it and, like, make sure everything is cleaned up so you don't have to… I guess the idea of, like, not having redundancy in your coding, so now you're trying to make it…
+
+[Q. Dutch] 11:21:06
+as smooth as possible, so if you do have to modify something, you don't have to go through…
+
+[Q. Dutch] 11:21:10
+all of it at the same time.
+
+[Leo Irakliotis] 11:21:13
+I wouldn't call it cosmetics. It's cosmetics imply something that's not substantial or substantive. Code redundancy is a substantive issue. So initially, you may write your, sometimes what I what I do with the course sometimes is I ask students to write the contains method first
+
+[Q. Dutch] 11:21:19
+Mm-hmm.
+
+[Q. Dutch] 11:21:24
+internet.
+
+[Leo Irakliotis] 11:21:33
+Without the index method, without discussing the index method. And they write the full loop, because there's no… if you don't have anything to help you with, you write the contains method with a full loop.
+
+[Leo Irakliotis] 11:21:42
+Like we did a few minutes ago. And then I asked, hey
+
+[Leo Irakliotis] 11:21:47
+Now let's write an index off method
+
+[Leo Irakliotis] 11:21:50
+And they arrive index off method like you see it here, and they realize we have a while loop here and a while loop here that qualitatively, they're very similar
+
+[Leo Irakliotis] 11:22:00
+So we just duplicated effort.
+
+[Leo Irakliotis] 11:22:03
+And the lesson here is, okay, before you duplicate effort, you spend some time on a piece of paper, on a whiteboard designing things and discussing things so that you minimize effort in implementation. But now that the duplication is there, what are you going to do? Are you going to leave it there
+
+[Leo Irakliotis] 11:22:17
+Or are you going to refactor your code
+
+[Leo Irakliotis] 11:22:23
+To eliminate some of that redundancy. And the answer is we always refactor. That's a basic fundamental rule in software engineering that we refactor code to eliminate redundancies as much as we can.
+
+[Q. Dutch] 11:22:37
+Okay, I guess that makes sense now, okay.
+
+[Leo Irakliotis] 11:22:42
+Right? We'll see you tomorrow
+
+[Q. Dutch] 11:22:43
+Alright. Thank you.
+
+[Leo Irakliotis] 11:22:46
+But
+
+[Leo Irakliotis] 11:30:30
+Hello, everyone.
+
+[Leo Irakliotis] 11:30:34
+Any questions?
+
+[Leo Irakliotis] 11:30:37
+Any comments, any requests?
+
+[Leo Irakliotis] 11:30:42
+All right.
+
+[Leo Irakliotis] 11:30:43
+Let's play around a little bit. So
+
+[Leo Irakliotis] 11:30:48
+Let's say that we have a smaller plane
+
+[Leo Irakliotis] 11:30:52
+that can accommodate 9 passengers.
+
+[Leo Irakliotis] 11:30:56
+very smaller plane
+
+[Leo Irakliotis] 11:30:59
+And here is the seating arrangement for the airplane. We have
+
+[Leo Irakliotis] 11:31:05
+two seats separated by an aisle, and then
+
+[Leo Irakliotis] 11:31:09
+One seat on the other side of the aisle
+
+[Leo Irakliotis] 11:31:15
+And it's rows one, two, three, and the seats are labeled A, B, C.
+
+[Leo Irakliotis] 11:31:24
+A, B, C
+
+[Leo Irakliotis] 11:31:27
+a
+
+[Leo Irakliotis] 11:31:28
+B, C
+
+[Leo Irakliotis] 11:31:31
+And I want to have nine passengers, as it happens
+
+[Leo Irakliotis] 11:31:36
+let's say passenger 1, Passenger two, three.
+
+[Leo Irakliotis] 11:31:41
+4, 5, 6, 7, 8, 9 passengers
+
+[Leo Irakliotis] 11:31:47
+And you know what
+
+[Leo Irakliotis] 11:31:50
+We're going to count passengers computer science style. Passenger zero is the first passenger, passenger eight is the ninth passenger.
+
+[Leo Irakliotis] 11:32:02
+Why? Because that's how we count in computer science. Who's on first? Number zero.
+
+[Leo Irakliotis] 11:32:08
+And if you don't get the cultural reference with who's on first.
+
+[Leo Irakliotis] 11:32:12
+I'm not surprised, it's 100 years old by now. Anybody gets the who's on first cultural reference by any chance? Okay, you're
+
+[Leo Irakliotis] 11:32:20
+Ask your grandparents, or maybe increasingly your great grandparents about it
+
+[Leo Irakliotis] 11:32:27
+Alright, so the seating assignment I want to have here is
+
+[Leo Irakliotis] 11:32:32
+The first passenger goes to seat 1A, the second passenger goes to seat 1B, 1C
+
+[Leo Irakliotis] 11:32:40
+2a to
+
+[Leo Irakliotis] 11:32:43
+2C3A
+
+[Leo Irakliotis] 11:32:46
+3B
+
+[Leo Irakliotis] 11:32:47
+3C. That's the seating arrangement. So basically, I will have passenger number one here, passenger number two here, three
+
+[Leo Irakliotis] 11:32:58
+5, 6
+
+[Leo Irakliotis] 11:33:00
+7 8
+
+[Leo Irakliotis] 11:33:01
+Oops, I forgot we're counting from zero. Who's on first?
+
+[Leo Irakliotis] 11:33:07
+Passenger 0, 1, 2,
+
+[Leo Irakliotis] 11:33:11
+3
+
+[Leo Irakliotis] 11:33:14
+5
+
+[Leo Irakliotis] 11:33:15
+6
+
+[Leo Irakliotis] 11:33:17
+7, 8
+
+[Leo Irakliotis] 11:33:33
+How can I produce this mapping?
+
+[Leo Irakliotis] 11:33:37
+How can I take a passenger serial number zero through eight, and convert it into a seating arrangement
+
+[Leo Irakliotis] 11:33:55
+This question requires us to do one of the most challenging tasks
+
+[Leo Irakliotis] 11:34:02
+in computing
+
+[Leo Irakliotis] 11:34:04
+And that is
+
+[Leo Irakliotis] 11:34:06
+To recognize patterns.
+
+[Leo Irakliotis] 11:34:09
+To visualize patterns, to abstract, to see pattern abstraction
+
+[Leo Irakliotis] 11:34:14
+in our heads
+
+[Leo Irakliotis] 11:34:18
+And it's not terribly
+
+[Leo Irakliotis] 11:34:21
+Easy
+
+[Leo Irakliotis] 11:34:23
+It's not terribly difficult either
+
+[Leo Irakliotis] 11:34:26
+But
+
+[Leo Irakliotis] 11:34:30
+Someone got to show us how to get started.
+
+[Leo Irakliotis] 11:34:38
+What is the pattern that you see here
+
+[Leo Irakliotis] 11:34:44
+And for a good measure, if you want, we can add
+
+[Leo Irakliotis] 11:34:52
+Another role
+
+[Leo Irakliotis] 11:34:55
+of seeds here. And maybe
+
+[Leo Irakliotis] 11:35:01
+A few more passengers
+
+[Leo Irakliotis] 11:35:09
+Oops.
+
+[Leo Irakliotis] 11:35:45
+Because I don't want to have the same number of rows and the same number of seeds per row. So we have now, we bought a larger airplane with 12 seats.
+
+[Leo Irakliotis] 11:35:54
+What is the pattern that you see here?
+
+[Leo Irakliotis] 11:35:57
+Can someone describe the pattern for me
+
+[Bella Fiorucci] 11:36:00
+Groups of three.
+
+[Leo Irakliotis] 11:36:03
+Groups of free. And that's where we start
+
+[Leo Irakliotis] 11:36:12
+Groups of free. What does this three here is in reference to? What is the number three represent?
+
+[Bella Fiorucci] 11:36:21
+the number of seats in a row.
+
+[Leo Irakliotis] 11:36:24
+the number of seats. Group of… so, in a more parametric way, we write groups
+
+[Leo Irakliotis] 11:36:34
+of
+
+[Leo Irakliotis] 11:36:37
+seats
+
+[Leo Irakliotis] 11:36:39
+Per
+
+[Leo Irakliotis] 11:36:41
+Rogue. And of course now we're going to have the conversation, but you know, I have been in an airplane before, and it's not every row has the same number of seats and all that. Fine. We keep this a very simple model, yes, you know, in a realistic airplane, you may have different number
+
+[Leo Irakliotis] 11:36:57
+seats per row in the front of the cabin versus the back of the cabin on an emergency exit row you may have different number of seats, fine. So those are exceptions to a rule. As a rule, in any airplane, you have more or less the same number of seats per row
+
+[Leo Irakliotis] 11:37:15
+Except for
+
+[Leo Irakliotis] 11:37:17
+Business class exit role, whatever. But for the most part it's, you know the same pattern.
+
+[Leo Irakliotis] 11:37:24
+So we have groups of three. How many groups of 3 we have
+
+[Leo Irakliotis] 11:37:33
+Yeah, Bella, for why four?
+
+[Bella Fiorucci] 11:37:36
+Because that's how many groups of 3 are in… or that's how many rows we have.
+
+[Leo Irakliotis] 11:37:59
+So there is your Panametric… there is the pattern
+
+[Leo Irakliotis] 11:38:03
+You have a number of rows, and each row has a number of seats
+
+[Leo Irakliotis] 11:38:09
+And now we want to convert, we want to create a
+
+[Leo Irakliotis] 11:38:14
+function, a system, a method, a technique, a black box
+
+[Leo Irakliotis] 11:38:20
+That takes a sequence of numbers from 0
+
+[Leo Irakliotis] 11:38:24
+up to 11 and produces 4 groups
+
+[Leo Irakliotis] 11:38:32
+How do we label those four groups?
+
+[Leo Irakliotis] 11:38:35
+Evan, we have four groups. How do we label each of those four groups? What is the group label for each of those four groups?
+
+[Evan Ryndak] 11:38:48
+Row 1, Row 2, Row 3, Row 4?
+
+[Leo Irakliotis] 11:38:52
+The row number.
+
+[Leo Irakliotis] 11:38:54
+Four groups
+
+[Leo Irakliotis] 11:38:57
+Lay built
+
+[Leo Irakliotis] 11:38:59
+By row number
+
+[Leo Irakliotis] 11:39:03
+With each group
+
+[Leo Irakliotis] 11:39:10
+Labeled
+
+[Leo Irakliotis] 11:39:13
+By seat number
+
+[Leo Irakliotis] 11:39:16
+A, B, C.
+
+[Leo Irakliotis] 11:39:24
+So I want the numbers
+
+[Leo Irakliotis] 11:39:30
+Here is what I want to do. The numbers are 0, 1, 2,
+
+[Leo Irakliotis] 11:39:36
+4… 5… 6… 7… 8… 9… 10 and 11. Those are my 12 passengers, and I want
+
+[Leo Irakliotis] 11:39:48
+These first three numbers, these first three passengers to go to row number one
+
+[Leo Irakliotis] 11:39:57
+I want these three passengers row number two. I want these three passengers row number three, and I want these three passengers to be row number four.
+
+[Leo Irakliotis] 11:40:06
+So that's one grouping first.
+
+[Leo Irakliotis] 11:40:09
+There your groups of three labeled by role
+
+[Leo Irakliotis] 11:40:14
+And also, I want each passenger
+
+[Leo Irakliotis] 11:40:17
+To be seat A
+
+[Leo Irakliotis] 11:40:23
+A, B, C.
+
+[Leo Irakliotis] 11:40:24
+A. B. C.
+
+[Leo Irakliotis] 11:40:28
+A, B, C
+
+[Leo Irakliotis] 11:40:30
+And now I have two other patterns to discern
+
+[Leo Irakliotis] 11:40:35
+So I would like you to think a little bit
+
+[Leo Irakliotis] 11:40:40
+and describe the behavioral of this yellow highlighted pattern
+
+[Leo Irakliotis] 11:40:49
+And also
+
+[Leo Irakliotis] 11:40:51
+I would like some description of this
+
+[Leo Irakliotis] 11:40:55
+Green
+
+[Leo Irakliotis] 11:40:56
+Neon green highlighted pattern
+
+[Leo Irakliotis] 11:41:02
+I'm about to get blind
+
+[Leo Irakliotis] 11:41:04
+bright green pattern
+
+[Leo Irakliotis] 11:41:16
+So what is your observation about the yellow pattern? Anyone? What do you see on the yellow pattern? How would you describe the yellow pattern?
+
+[Gregor, Erica] 11:41:31
+repeating sequence of A, B, and C.
+
+[Leo Irakliotis] 11:41:34
+The keyword is repeating
+
+[Leo Irakliotis] 11:41:40
+We're going A, B, C, and again, A, B, C, and again, A, B, C, and again.
+
+[Leo Irakliotis] 11:41:47
+So this is a repeating sequence. It's a periodic sequence of three letters, A, B, C. Could be X, Y, Z, could be
+
+[Leo Irakliotis] 11:41:57
+ABC
+
+[Leo Irakliotis] 11:42:02
+Switch row A, B, C, switch row A, B, C, switch row A, B, C
+
+[Leo Irakliotis] 11:42:07
+The green pattern
+
+[Leo Irakliotis] 11:42:10
+What's the pattern there?
+
+[Bella Fiorucci] 11:42:22
+a non-repeating sequence of, like, 1, 2, 3, 4.
+
+[Leo Irakliotis] 11:42:27
+An enumeration
+
+[Leo Irakliotis] 11:42:31
+of one of groups of three numbers
+
+[Leo Irakliotis] 11:42:33
+First group of three numbers, second group, it's a calendar
+
+[Leo Irakliotis] 11:42:38
+First group, second group, third three, third group, fourth group, and so on.
+
+[Leo Irakliotis] 11:42:43
+So now that we have the patterns, now things become a little bit dicey. Now we have to switch from English to mathematics
+
+[Leo Irakliotis] 11:42:55
+And to do that
+
+[Leo Irakliotis] 11:42:58
+Let's say that A, B, C are not mathematical values. A, B, C are letters. Let's say that just to get things a little bit interesting and moving along, that the letter A
+
+[Leo Irakliotis] 11:43:13
+corresponds to number zero. The letter B corresponds to number one, the letter C to number two. So we have zero
+
+[Leo Irakliotis] 11:43:21
+1, 2, 0, 1, 2. 012. Well, we discussed earlier in the course that letters, symbols have a numeric value that is called ASCII. And we know that the ASCII value of A is 6
+
+[Leo Irakliotis] 11:43:36
+Well, I don't want to use ask, I want to use
+
+[Leo Irakliotis] 11:43:39
+our own numeric encoding, and I'm assigning the value 0 to A, which means B is number 1, and C is number 2.
+
+[Leo Irakliotis] 11:43:48
+So the problem now becomes to write a function
+
+[Leo Irakliotis] 11:44:05
+of integer value
+
+[Leo Irakliotis] 11:44:14
+Such that
+
+[Leo Irakliotis] 11:44:19
+F of Y
+
+[Leo Irakliotis] 11:44:22
+Will always be will always derive the value from this set
+
+[Leo Irakliotis] 11:44:34
+In a periodic function, in a periodic fashion fashion.
+
+[Leo Irakliotis] 11:44:48
+For example
+
+[Leo Irakliotis] 11:44:50
+If f of i is mapped to zero, then f of i plus one should be mapped to 1, f of i plus two should be mapped to 2.
+
+[Leo Irakliotis] 11:45:04
+F
+
+[Leo Irakliotis] 11:45:06
+of I plus 3 should go back to 0. F of I plus 4 should go back to one f of
+
+[Leo Irakliotis] 11:45:15
+I plus 5 should go back to 2 and so on
+
+[Leo Irakliotis] 11:45:21
+And if you want to graph this function
+
+[Leo Irakliotis] 11:45:26
+Here is the value of i
+
+[Leo Irakliotis] 11:45:33
+01212
+
+[Leo Irakliotis] 11:45:41
+012. So there is
+
+[Leo Irakliotis] 11:45:47
+The graph of this function.
+
+[Leo Irakliotis] 11:45:52
+How can I produce this function mathematically
+
+[Leo Irakliotis] 11:45:57
+How can I produce a periodic function within integer values?
+
+[Leo Irakliotis] 11:46:01
+Well, that's where in the remainder
+
+[Leo Irakliotis] 11:46:04
+comes
+
+[Leo Irakliotis] 11:46:05
+handy.
+
+[Leo Irakliotis] 11:46:09
+The function that I want
+
+[Leo Irakliotis] 11:46:13
+Is I
+
+[Leo Irakliotis] 11:46:14
+Integer remainder 3
+
+[Leo Irakliotis] 11:46:20
+Okay?
+
+[Leo Irakliotis] 11:46:21
+So let's say, what is the integer remainder
+
+[Leo Irakliotis] 11:46:27
+of
+
+[Leo Irakliotis] 11:46:30
+Of zero
+
+[Leo Irakliotis] 11:46:34
+Divided
+
+[Leo Irakliotis] 11:46:36
+What's the industry remain of
+
+[Leo Irakliotis] 11:46:38
+0 divided by 3. How many hold times 3 fits into 0.
+
+[Leo Irakliotis] 11:46:45
+Zero. And what do I have to add to that to go to zero from 0 to 0.
+
+[Leo Irakliotis] 11:47:00
+How many hold times 3 fits into one
+
+[Leo Irakliotis] 11:47:04
+And what do I have to add to this to go from 0 to 1?
+
+[Leo Irakliotis] 11:47:14
+And here is the repetition.
+
+[Leo Irakliotis] 11:47:18
+How many hold times
+
+[Leo Irakliotis] 11:47:22
+Three
+
+[Leo Irakliotis] 11:47:23
+Feature 3
+
+[Leo Irakliotis] 11:47:25
+One, right?
+
+[Leo Irakliotis] 11:47:27
+And watch the remainder of that
+
+[Leo Irakliotis] 11:47:30
+Zero. And how many hold times
+
+[Leo Irakliotis] 11:47:34
+3 fits to 4, 1, and what's the remainder? One
+
+[Leo Irakliotis] 11:47:38
+And so on and so on. So now I got my pattern that the yellow pattern here
+
+[Leo Irakliotis] 11:47:47
+This is a modular function.
+
+[Leo Irakliotis] 11:47:53
+And in computing, we use the percentage size in most program sign in most programming languages to indicate modulo. But in mathematics, that would be i
+
+[Leo Irakliotis] 11:48:03
+Mod 3. What is 3? The number of seats per row. So this is a parameter related to the problem. So my function would be I mode
+
+[Leo Irakliotis] 11:48:14
+seats per row
+
+[Leo Irakliotis] 11:48:17
+It just happens that here we have three seats
+
+[Leo Irakliotis] 11:48:21
+Okay, so we got that.
+
+[Leo Irakliotis] 11:48:23
+How do I get the grouping 01 maps to 1, 3 to 4 maps to 2, 6, 7, 8 maps to 3, 9, 10, 11 maps to
+
+[Leo Irakliotis] 11:48:37
+4.
+
+[Leo Irakliotis] 11:48:42
+What do the numbers related to the green pattern, meaning
+
+[Leo Irakliotis] 11:48:48
+These numbers here as well
+
+[Leo Irakliotis] 11:48:57
+have in common the green numbers.
+
+[Leo Irakliotis] 11:49:11
+What can I do to zero
+
+[Leo Irakliotis] 11:49:14
+End to 1, n to 2 to make them look like one. What can I do to 3, 4, 5 to make them look like two? What can I do to six, seven, eight to make them look like 3? What can I do to 9, 10, 11 to make them like four
+
+[Leo Irakliotis] 11:49:28
+In plain arithmetic operations
+
+[Leo Irakliotis] 11:49:32
+There is nothing I mean, modulo is the most complex mathematical function we've seen in this course, and probably one of the top five most complex mathematical functions complicated mathematical functions we'll see in this course
+
+[Leo Irakliotis] 11:49:47
+But what can I do to the green numbers, 0, 1, 2, 3, 4, 5, 3, 11, to make them look like 1, 2, 3, and 4 in groups of three
+
+[Leo Irakliotis] 11:50:00
+Here's the trick. Here's another trick.
+
+[Leo Irakliotis] 11:50:06
+Let's say that they have the numbers 0, 1, 2, 3. Let me write them in groups of three
+
+[Leo Irakliotis] 11:50:14
+3, 4, 5, 6, 7, 8
+
+[Leo Irakliotis] 11:50:22
+9
+
+[Leo Irakliotis] 11:50:24
+10, 11.
+
+[Leo Irakliotis] 11:50:26
+When I divide any of these numbers here
+
+[Leo Irakliotis] 11:50:32
+by 3 in the division, I mean integer division. How many hold times 3 fits to any of those numbers? What is the answer?
+
+[Leo Irakliotis] 11:50:42
+Zero. How many yeah
+
+[Leo Irakliotis] 11:50:44
+So integer division by 3 here
+
+[Leo Irakliotis] 11:50:49
+is 000
+
+[Leo Irakliotis] 11:50:53
+Integer division by 3 here is what?
+
+[Leo Irakliotis] 11:50:57
+111.
+
+[Leo Irakliotis] 11:51:01
+Integer division by 3 here is 2, 2, 2. Integer division by 3 here
+
+[Leo Irakliotis] 11:51:10
+333. But I want to map them to one, the mapping I want is row numbers 111,
+
+[Leo Irakliotis] 11:51:19
+2, 2, 2, 3, 3, 3
+
+[Leo Irakliotis] 11:51:23
+444. What do I need to do? Just add plus one, right?
+
+[Leo Irakliotis] 11:51:30
+So there is your mathematical correspondence. We get the seed number
+
+[Leo Irakliotis] 11:51:37
+The seed label
+
+[Leo Irakliotis] 11:51:40
+As passenger number I
+
+[Leo Irakliotis] 11:51:44
+Module 3
+
+[Leo Irakliotis] 11:51:46
+And we get
+
+[Leo Irakliotis] 11:51:50
+Row label
+
+[Leo Irakliotis] 11:51:54
+It's
+
+[Leo Irakliotis] 11:51:55
+Integer division by 3
+
+[Leo Irakliotis] 11:51:59
+Plus one
+
+[Leo Irakliotis] 11:52:01
+To give us from 000 to 111, from 111
+
+[Leo Irakliotis] 11:52:07
+And the common element here
+
+[Leo Irakliotis] 11:52:16
+Yeah, it's a bit too red. Is the number
+
+[Leo Irakliotis] 11:52:20
+Seeds per row
+
+[Leo Irakliotis] 11:52:25
+So now
+
+[Leo Irakliotis] 11:52:28
+Now that we solve this program in the abstract.
+
+[Leo Irakliotis] 11:52:33
+kind of trivial
+
+[Leo Irakliotis] 11:52:37
+code, because the objective
+
+[Leo Irakliotis] 11:52:41
+Is to solve the problem in the abstract. If you have an abstract description of the problem, whether it's mathematical or
+
+[Leo Irakliotis] 11:52:48
+Pros
+
+[Leo Irakliotis] 11:52:50
+You have a solution and the amazing thing about having the
+
+[Leo Irakliotis] 11:52:56
+solution improves. Forget about mathematics for a second. Mathematics are wonderful.
+
+[Leo Irakliotis] 11:53:01
+But now
+
+[Leo Irakliotis] 11:53:04
+If we have the equivalent solution, the equivalent logic that we can describe in plain language
+
+[Leo Irakliotis] 11:53:12
+That plain language can become an operational prompt
+
+[Leo Irakliotis] 11:53:17
+For an AI agent to write the code for us
+
+[Leo Irakliotis] 11:53:23
+And that's how they feel, that's how the profession is changing, as we're still trying to figure out what this AI technology is doing to us, but
+
+[Leo Irakliotis] 11:53:35
+Increasingly, we express programming logic in plain English that an AI agent can process for us
+
+[Leo Irakliotis] 11:53:48
+Let me tell you why I can do this and you shouldn't yet
+
+[Leo Irakliotis] 11:53:55
+I can do this because I
+
+[Leo Irakliotis] 11:53:59
+Enough training and experience to know how to orchestrate
+
+[Leo Irakliotis] 11:54:04
+the agents
+
+[Leo Irakliotis] 11:54:07
+You need to get there first
+
+[Leo Irakliotis] 11:54:10
+before you manage agents, and to get there first
+
+[Leo Irakliotis] 11:54:14
+You have to try things the old fashioned
+
+[Leo Irakliotis] 11:54:23
+Every time I have someone flying with me in one of the airplanes in a flying club that I belong
+
+[Leo Irakliotis] 11:54:30
+They… we have fairly well-equipped airplanes with a lot of automation and a lot of upgraded systems. So really, you know, as soon as the airplane is 500 feet above the ground
+
+[Leo Irakliotis] 11:54:42
+You can engage the autopilot and it will take you wherever you need to take to go, and you disengage the autopilot 500 feet above ground, and you fly the… basically, you fly the first two minutes and last two minutes of the flight by controlling the airplane, and everything else is done by automation.
+
+[Leo Irakliotis] 11:55:01
+What if something happens? You know, you're, you know, 5,000 feet, you know, having a nice conversation with your passenger, saying, hey, there is Rockford, Illinois, there is the train museum, whatever, and your engine quits
+
+[Leo Irakliotis] 11:55:14
+It can happen. I mean, you run out of fuel or there is water in the tank and it's clogging the fuel lines, your engine quits, and you're at 5,000 feet. When you have about
+
+[Leo Irakliotis] 11:55:24
+5 minutes of gliding, as you're losing altitude gradually. And as you're losing altitude gradually, eventually you are going to get very close to the planet.
+
+[Leo Irakliotis] 11:55:35
+Question is
+
+[Leo Irakliotis] 11:55:37
+Can you make an emergency landing out on a cornfield and survive it
+
+[Leo Irakliotis] 11:55:43
+There is nothing automation can do for you there
+
+[Leo Irakliotis] 11:55:46
+So we still train people how to fly airplanes by hand, even though no pilot flies by hand anymore. From airline pilots to weekend warriors like myself, as soon as we're 500 feet above the ground, we press the button and we turn around and we shoot the breeze with our
+
+[Leo Irakliotis] 11:56:05
+Whoever is sitting on the right seat
+
+[Leo Irakliotis] 11:56:08
+But
+
+[Leo Irakliotis] 11:56:10
+The training is there to handle exceptions. The training is there to handle the unanticipated, unexpected. And that requires a lot of hand flying
+
+[Leo Irakliotis] 11:56:21
+That requires a lot of manual programming.
+
+[Leo Irakliotis] 11:56:23
+And I'm not… I'm not trying to moralize here, I'm not trying to say, you know what, that's why you should stay away from AI. You cannot. AI is… there is no way to stay away from AI unless you retire to some remote island in the Pacific with no electricity and no internet connection
+
+[Leo Irakliotis] 11:56:40
+It's a technology that is going to define our lives moving forward very realistically, there is no way out of it
+
+[Leo Irakliotis] 11:56:47
+But to fully appreciate it and to fully gain from it, rather than AI gaining on you, is we have to understand the underlying
+
+[Leo Irakliotis] 11:56:58
+Picnics, the old fashioned, the old style techniques.
+
+[Leo Irakliotis] 11:57:02
+So
+
+[Leo Irakliotis] 11:57:04
+Let's create a file
+
+[Leo Irakliotis] 11:57:07
+The program for seating arrangements
+
+[Leo Irakliotis] 11:57:10
+To discuss the mathematical solution
+
+[Leo Irakliotis] 11:57:13
+We wrote, and we need to have to write a couple of parameters, number of passengers
+
+[Leo Irakliotis] 11:57:20
+How many passengers we had here? We had 12 passengers.
+
+[Leo Irakliotis] 11:57:25
+How many seats per roll
+
+[Leo Irakliotis] 11:57:31
+We had three seats for all
+
+[Leo Irakliotis] 11:57:36
+And
+
+[Leo Irakliotis] 11:57:38
+We want it
+
+[Leo Irakliotis] 11:57:41
+Produce a seating arrangement. Okay. So let's write a loop for every passenger
+
+[Leo Irakliotis] 11:57:56
+So there's my loop that will consider every passenger
+
+[Leo Irakliotis] 11:57:59
+Among my 12 passengers. What I want you to do is to calculate
+
+[Leo Irakliotis] 11:58:07
+The seat for that passenger, the seat label
+
+[Leo Irakliotis] 11:58:14
+And that was the passenger number
+
+[Leo Irakliotis] 11:58:18
+We wrote I mathematically because that's what you write mathematically. But here we have a variable name
+
+[Leo Irakliotis] 11:58:25
+Modulo
+
+[Leo Irakliotis] 11:58:27
+the Sageborough
+
+[Leo Irakliotis] 11:58:32
+So there's our seed label
+
+[Leo Irakliotis] 11:58:40
+The row label
+
+[Leo Irakliotis] 11:58:43
+was the
+
+[Leo Irakliotis] 11:58:47
+Passenger number
+
+[Leo Irakliotis] 11:58:51
+Integer division by the seats per row
+
+[Leo Irakliotis] 11:58:59
+And then we added one so that, you know, the first row will be row number one instead of row number 0.
+
+[Leo Irakliotis] 11:59:06
+And then
+
+[Leo Irakliotis] 11:59:08
+Let's print the print
+
+[Leo Irakliotis] 11:59:12
+This passenger
+
+[Leo Irakliotis] 11:59:22
+gets to visit what city they want. I want the role label
+
+[Leo Irakliotis] 11:59:30
+followed by the seed label
+
+[Leo Irakliotis] 11:59:38
+And I don't see any
+
+[Leo Irakliotis] 11:59:43
+CDAX errors. So let's see if the program will run Python 3, seed assignments
+
+[Leo Irakliotis] 11:59:54
+number of passengers, not numbers of passengers
+
+[Leo Irakliotis] 12:00:06
+There it is
+
+[Leo Irakliotis] 12:00:11
+Seat row 1, seed label 0. 1 1 1 2. This is very numeric, but we wanted to assign seats by 1A, 1B1C, 2a to B2C, and we agreed that 0 is a
+
+[Leo Irakliotis] 12:00:27
+is B2 is C. All right, that was in the representation you and I agree to have, but the computer has its own representation, which is the ASCII representation. So what is 0 to us
+
+[Leo Irakliotis] 12:00:42
+is 65 to the computer, the letter A is 65 ASCII to AC0. The letter B is 66 ASCII to us is
+
+[Leo Irakliotis] 12:00:52
+The letter C is 67 ASCII to ask is 0. So basically all I have to do is add these numbers to 65. So 65 plus zero is 65, 65 plus one is 66, 65 plus
+
+[Leo Irakliotis] 12:01:06
+67
+
+[Leo Irakliotis] 12:01:08
+And convert
+
+[Leo Irakliotis] 12:01:24
+Let's do this seat later
+
+[Leo Irakliotis] 12:01:31
+It is
+
+[Leo Irakliotis] 12:01:35
+The character that corresponds to ASCII 6
+
+[Leo Irakliotis] 12:01:39
+Plus the seed label.
+
+[Leo Irakliotis] 12:01:43
+So when the seed label is 0, 65 plus zero is 65. That will give me A
+
+[Leo Irakliotis] 12:01:48
+BC and continue like this. And instead of printing seed label here
+
+[Leo Irakliotis] 12:01:53
+I will
+
+[Leo Irakliotis] 12:01:57
+See the bladder instead
+
+[Leo Irakliotis] 12:02:12
+Oh, will find a mistake here
+
+[Leo Irakliotis] 12:02:15
+That is
+
+[Leo Irakliotis] 12:02:21
+the sitting or anything. 1A, 1B, 1C, 2A, 2B, 2C, 3A, 3B, 3C, 4A, 4B, 4C
+
+[Leo Irakliotis] 12:02:29
+All right. So now the question is, are we happy with this formatting and can we do the format, the output formatting a little bit better? Personally, I'm bothered, because you see that for the first 10 passengers here, everything is lined up, and then we when we get to double digit passengers, everything shifts one position to
+
+[Leo Irakliotis] 12:02:49
+To the right, I can't tell you how much that, but I mean, if there is an element of all undiagnosed OCD in me, it's right here on printout
+
+[Leo Irakliotis] 12:03:01
+So that's why I
+
+[Leo Irakliotis] 12:03:03
+And by the way, if I turn the camera around to see my home office, you'll know that OCD and I are on non-speaking terms. But when it comes to printouts here
+
+[Leo Irakliotis] 12:03:18
+I would prefer something a little bit more nuanced
+
+[Leo Irakliotis] 12:03:26
+And I'd say print
+
+[Leo Irakliotis] 12:03:30
+In a stylized fashion
+
+[Leo Irakliotis] 12:03:34
+passenger
+
+[Leo Irakliotis] 12:03:36
+This passenger number
+
+[Leo Irakliotis] 12:03:39
+and print it as a two-digit
+
+[Leo Irakliotis] 12:03:43
+integer. So we have room for 2 digits there.
+
+[Leo Irakliotis] 12:03:52
+sits in
+
+[Leo Irakliotis] 12:03:55
+Role label
+
+[Leo Irakliotis] 12:03:59
+followed by
+
+[Leo Irakliotis] 12:04:02
+See the letter
+
+[Leo Irakliotis] 12:04:10
+Yeah, that's good.
+
+[Leo Irakliotis] 12:04:13
+And let's run the code
+
+[Leo Irakliotis] 12:04:17
+So now everything is a little bit more neat. Everything is kind of aligned. There is no gaps between the seed label and the row label, and it almost looks like something that can be printed out of an airline printer
+
+[Leo Irakliotis] 12:04:34
+at the airport
+
+[Leo Irakliotis] 12:04:38
+We took
+
+[Leo Irakliotis] 12:04:40
+A linear arrangement of data
+
+[Leo Irakliotis] 12:04:42
+0 through 11 for 12 passengers
+
+[Leo Irakliotis] 12:04:44
+And we converted it into a two-dimensional arrangement. One dimension is the row in which the passer sits, and the other dimension is the seat label
+
+[Leo Irakliotis] 12:04:55
+That we have a two-dimensional arrangement of 3x4 seats in our airplane
+
+[Leo Irakliotis] 12:05:01
+4 rows, 3 seats per row, and we converted the passengers, which is a sequential stream of data 0 through 11
+
+[Leo Irakliotis] 12:05:12
+Four groups
+
+[Leo Irakliotis] 12:05:14
+3 seats per group
+
+[Leo Irakliotis] 12:05:16
+And you might say, okay, what's the big deal about this? Well, the big deal about this is
+
+[Leo Irakliotis] 12:05:23
+That we used simple mathematics division in all we used here is integer division
+
+[Leo Irakliotis] 12:05:30
+An energy division produces two numbers, produces the quotient, how many whole times the number three fits into number five. Does the quotient
+
+[Leo Irakliotis] 12:05:40
+And the remainder
+
+[Leo Irakliotis] 12:05:42
+So all we do here is the quotient and the remainder of the integer division
+
+[Leo Irakliotis] 12:05:47
+And in programming, the quotient is stroke, stroke, the remainder is percentage sign. Those are the symbols we use for those two very simple arithmetic quantities. The quotient
+
+[Leo Irakliotis] 12:06:04
+And the remainder of an industry division
+
+[Leo Irakliotis] 12:06:09
+Second, third, fourth grade
+
+[Leo Irakliotis] 12:06:12
+Mathematics
+
+[Leo Irakliotis] 12:06:14
+is what gets you assigned on a seat on that flight
+
+[Leo Irakliotis] 12:06:19
+to wherever
+
+[Leo Irakliotis] 12:06:22
+And our ability to translate that, to take a one dimensional
+
+[Leo Irakliotis] 12:06:27
+Arrangement of data
+
+[Leo Irakliotis] 12:06:29
+And create a three-dimensional or a two-dimensional, or even a three dimensional
+
+[Leo Irakliotis] 12:06:38
+is
+
+[Leo Irakliotis] 12:06:40
+A critical skill
+
+[Leo Irakliotis] 12:06:43
+Because it's not so much the mathematics. Okay, the mathematics are simple. Once we demystify them as energy division. But it's the abstraction of the problem. I have this pattern of data 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+
+[Leo Irakliotis] 12:07:00
+And I want to represent those as three groups
+
+[Leo Irakliotis] 12:07:05
+It's groups of three. It's four groups of three. And I want to label every group one, it's group 1, 2, 3, 4. And within each group, I want to label the data ABC, A, B, C, ABC.
+
+[Leo Irakliotis] 12:07:19
+And the only programming that we really did here was to remember that the letter A has a special numeric value in programming. It's the value 65 in some encoding scheme that is called ASCII
+
+[Leo Irakliotis] 12:07:33
+And if you want to move periodically from A, B, C
+
+[Leo Irakliotis] 12:07:37
+You have to add 0, 1, 2, 3, 0, 1, 2, 3, 012… sorry, 012, 012012.
+
+[Leo Irakliotis] 12:07:44
+to the base value for A, which is 65. 65 plus 0, 65 plus 1, 65 plus 2, and repeat, repeat, repeat, and that's how we got the repeating pattern. And if all of a sudden
+
+[Leo Irakliotis] 12:07:57
+Somehow we upgrade to a new airplane
+
+[Leo Irakliotis] 12:08:01
+that has
+
+[Leo Irakliotis] 12:08:05
+Four
+
+[Leo Irakliotis] 12:08:07
+Since Barrow, all we have to do is just change that number there
+
+[Leo Irakliotis] 12:08:13
+and run our code
+
+[Leo Irakliotis] 12:08:16
+And here are arrangements. 1A, 1B1C1D for the first four passengers, and then 2A, 2B2C for the next and so on and so on.
+
+[Leo Irakliotis] 12:08:30
+And again, that's for a very similar line where every seat is the same. We don't have a business class, we don't have exit roads.
+
+[Leo Irakliotis] 12:08:39
+We have now a solution that covers 80%, 90%
+
+[Leo Irakliotis] 12:08:45
+of seating assignments in just about any airline
+
+[Leo Irakliotis] 12:08:49
+So
+
+[Leo Irakliotis] 12:08:51
+under less 10 min, we produce a solution for 90% of seating arrangements in flying.
+
+[Leo Irakliotis] 12:08:57
+And now we can spend the rest of our time handling exceptions. What about business class passengers? What if the airplane has a first class cabin? What if we have
+
+[Leo Irakliotis] 12:09:09
+two exit rows
+
+[Leo Irakliotis] 12:09:12
+Let's say at row 13 and row 28. In those rows, we have only one seat instead of two seats per row. Okay, now we can create exceptions, and exceptions can be carved out
+
+[Leo Irakliotis] 12:09:26
+With if statements, if the row label is 11, that's an exit row. You know skip a couple of seats there because you don't have four seats in that row. You have only two seats, whatever it is.
+
+[Leo Irakliotis] 12:09:38
+So now we can build in exceptions. But the objective here is we looked at the pattern, we generalized the pattern for 90% of the cases, we described the pattern in abstract terms and
+
+[Leo Irakliotis] 12:09:54
+We produce something that looks kind of realistic. There is more to this.
+
+[Leo Irakliotis] 12:10:02
+Passengers have names, not numbers, right? So what would you like really is a list of names and seating arrangements so that the flight attendants know who's the passenger on seat to Charlie.
+
+[Leo Irakliotis] 12:10:16
+or free alpha
+
+[Leo Irakliotis] 12:10:17
+We're going to discover how to
+
+[Leo Irakliotis] 12:10:22
+Turn those passengers from nameless numbers to actual names
+
+[Leo Irakliotis] 12:10:28
+But what I would like to do is to close
+
+[Leo Irakliotis] 12:10:33
+With a quick demonstration of of Claude.
+
+[Leo Irakliotis] 12:10:37
+Because I said earlier that if you know what you want to do
+
+[Leo Irakliotis] 12:10:43
+You can ask an AI agent to do this for you
+
+[Leo Irakliotis] 12:10:47
+So
+
+[Leo Irakliotis] 12:10:50
+For reference, I have access to through work not through my consulting to Claude Plus. But what I'm going to do today is exactly what you can do even with a free
+
+[Leo Irakliotis] 12:11:06
+version of Claude, or with a $20 version of Claude. So I'll say, Okay, create
+
+[Leo Irakliotis] 12:11:14
+A Python file
+
+[Leo Irakliotis] 12:11:19
+Called
+
+[Leo Irakliotis] 12:11:20
+Airline Python
+
+[Leo Irakliotis] 12:11:25
+to assign
+
+[Leo Irakliotis] 12:11:27
+Sequential numbers
+
+[Leo Irakliotis] 12:11:30
+Representing passengers
+
+[Leo Irakliotis] 12:11:43
+To assemble
+
+[Leo Irakliotis] 12:11:46
+seating arrangement
+
+[Leo Irakliotis] 12:11:53
+of an airplane
+
+[Leo Irakliotis] 12:11:58
+That has
+
+[Leo Irakliotis] 12:12:02
+Three seats per row
+
+[Leo Irakliotis] 12:12:05
+labeled
+
+[Leo Irakliotis] 12:12:08
+B, C.
+
+[Leo Irakliotis] 12:12:12
+So this is SS superficial prompt as
+
+[Leo Irakliotis] 12:12:18
+As you can get, it's going to chew through this, and I'm curious to see what kind of code it produces, and then we'll talk about whether, you know, would that be acceptable code in an assignment.
+
+[Leo Irakliotis] 12:12:31
+Now
+
+[Leo Irakliotis] 12:12:34
+The code
+
+[Leo Irakliotis] 12:12:37
+knows that I'm asking, Claude knows that I'm working within comp 170 that is an introductory programming course. So it kind of knows that I should not be doing two things too complicated. And
+
+[Leo Irakliotis] 12:12:53
+Let's see what it gave us here.
+
+[Leo Irakliotis] 12:12:57
+Let me move in another window here
+
+[Leo Irakliotis] 12:13:03
+Let's see
+
+[Leo Irakliotis] 12:13:05
+Week 4
+
+[Leo Irakliotis] 12:13:09
+Okay, it wrote the file airline Python
+
+[Leo Irakliotis] 12:13:15
+All right, so this is the code
+
+[Leo Irakliotis] 12:13:17
+But it gave us.
+
+[Leo Irakliotis] 12:13:27
+It doesn't do anything. The outcome will be the same. So if I run this code
+
+[Leo Irakliotis] 12:13:41
+All passengers
+
+[Leo Irakliotis] 12:13:45
+More or less the same outcome, right?
+
+[Leo Irakliotis] 12:13:48
+A little bit more verbose, you know, but that's because I didn't specify the formatting
+
+[Leo Irakliotis] 12:13:56
+But what the program does here is it does, first of all, it creates a function, a method to do those things. It runs two loops. We have discussed how to do how to operate with
+
+[Leo Irakliotis] 12:14:12
+for loops, but we didn't discuss why loops, and you'll notice that the for loops, the for loop here does not use a range, it references something called seeds that, you know, we have not discussed what this is. This is something that we're going to cover tomorrow actually
+
+[Leo Irakliotis] 12:14:27
+So it's not exactly the way that I would introduce
+
+[Leo Irakliotis] 12:14:33
+Things in class, but it is a correct code. But if that's the code you turned, if what we discussed today was an assignment and you turned in this code
+
+[Leo Irakliotis] 12:14:42
+You know, you're a week ahead of the course and explain yourself.
+
+[Leo Irakliotis] 12:14:47
+Right?
+
+[Leo Irakliotis] 12:14:48
+So, interestingly enough, now I can go back to Claude and say compare
+
+[Leo Irakliotis] 12:14:54
+The Python file you wrote
+
+[Leo Irakliotis] 12:15:00
+With my code in the other is my code called? I don't even remember my file name.
+
+[Leo Irakliotis] 12:15:47
+Hey, look at this
+
+[Leo Irakliotis] 12:15:51
+That's as much validations I'm getting today, by the way.
+
+[Leo Irakliotis] 12:15:57
+But
+
+[Leo Irakliotis] 12:16:02
+And I'll share all that output with you because we're coming up on time. But
+
+[Leo Irakliotis] 12:16:08
+You can see that as you read the response here, that there are stronger teaching artifacts. I like this expression that
+
+[Leo Irakliotis] 12:16:19
+You know, I'm emphasizing on the mathematics, I'm emphasizing on the individual arithmetic. If we had followed Claude's instinct, and I know I anthropomorphous Claude here, but if I had followed Claude's response to this problem
+
+[Leo Irakliotis] 12:16:35
+We would have skipped these two concepts, the integer arithmetic that is fundamental to computing
+
+[Leo Irakliotis] 12:16:44
+There is a time and there is a place for our friend here for AI. We're not there yet, but I wanted to demonstrate the gap
+
+[Leo Irakliotis] 12:16:56
+And sometimes exploring that gap can be illustrative. So I'll share the outputs with you on the summary for today. And we will continue tomorrow by
+
+[Leo Irakliotis] 12:17:11
+Trying to find a computationally friendly way to assign names to those 12 or 13 passengers, what have you
+
+[Leo Irakliotis] 12:17:19
+And in that direction, we're going to discover the third most important pillar in coding. And we talked about loops, we talked about if statements, and we'll keep talking about this. But also I said there are two more things. There are four things in my books, loops, if statements, arrays, and strings
+
+[Leo Irakliotis] 12:17:37
+So tomorrow we're going to look at arrays, and after that we'll spend the rest of the semester reinforcing understanding all those 4 pillars, strings, arrays, loops, if statements.
+
+[Leo Irakliotis] 12:17:50
+And what we'll be doing is solving problems that are increasingly a bit more complicated, a little bit more sophisticated than taking passengers and seating them in a smaller plane. But we have to start from somewhere
+
+[Leo Irakliotis] 12:18:05
+and that's as good as
+
+[Leo Irakliotis] 12:18:07
+Questions, comments?
+
+[Leo Irakliotis] 12:18:14
+All right, everyone, remember, this is an introductory course. This may be the first time you see coding. This is the first time maybe you see coding in a more formal, more instructional context.
+
+[Leo Irakliotis] 12:18:29
+Feeling overwhelmed, no problem.
+
+[Leo Irakliotis] 12:18:32
+make some time and come see me to make some time. Just look at the signature block on every email I send. There is my schedule there. Click on it. I'll be waiting for you on the other side of the Zoom call if you make an appointment, I'd be happy to speak with you about
+
+[Leo Irakliotis] 12:18:48
+Okay, going over the world
+
+[Leo Irakliotis] 12:18:50
+Let's unpack it. But it's totally normal to feel a little bit overwhelmed. And I know that, you know, the reading assignments for the course, but reading assignments
+
+[Leo Irakliotis] 12:18:58
+Sometimes compound that feeling of overwhelming instead of clarifying things, model things more. Again, that's your
+
+[Leo Irakliotis] 12:19:08
+That you're saying that maybe it's time to click that button, make an appointment, come speak with me.
+
+[Leo Irakliotis] 12:19:15
+Otherwise, I will see you tomorrow, same time, same place
+
