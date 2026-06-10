@@ -1,0 +1,2823 @@
+[Leo Irakliotis] 10:25:34
+Hello, good morning.
+
+[Leo Irakliotis] 10:25:38
+Wrapping up week number four
+
+[Leo Irakliotis] 10:25:41
+Any.
+
+[Leo Irakliotis] 10:25:42
+Questions, any comments
+
+[Leo Irakliotis] 10:25:48
+All right, so
+
+[Leo Irakliotis] 10:25:51
+What we are doing essentially this week is we're building
+
+[Leo Irakliotis] 10:25:57
+A data structure from scratch.
+
+[Leo Irakliotis] 10:25:59
+And much like every time we build something from scratch, we need some ingredients. I mean, no matter how good of a cook you are
+
+[Leo Irakliotis] 10:26:10
+When you make your own pasta
+
+[Leo Irakliotis] 10:26:12
+from scratch, you have to go to the store and buy the semolina flower
+
+[Leo Irakliotis] 10:26:16
+It's not like you start a year earlier by planting the wheat in your backyard and harvesting it
+
+[Leo Irakliotis] 10:26:24
+And grinding into a semolina and all that. I mean, there is only so much
+
+[Leo Irakliotis] 10:26:31
+creativity that we can exercise using ingredients that someone else has produced for us.
+
+[Leo Irakliotis] 10:26:37
+So yeah, if you want to have the best pasta meal of your life two years from now, you start cultivating the wheat
+
+[Leo Irakliotis] 10:26:46
+This year, harvest next year, mill it for the year after and have your flower ready. How many of us do that?
+
+[Leo Irakliotis] 10:26:52
+Probably no one, right? Same thing with building data structures. It's like executing a recipe. You have to rely
+
+[Leo Irakliotis] 10:27:01
+When someone else providing you with some basic ingredients, and you have to trust
+
+[Leo Irakliotis] 10:27:08
+The quality of those ingredients, much like you trust the quality of the flour that you get from the grocery store or the quality of the tomatoes that you get for your pasta sauce.
+
+[Leo Irakliotis] 10:27:19
+And
+
+[Leo Irakliotis] 10:27:21
+Because most of us live here in Chicago, you cannot say, oh, you know what, I'm growing my own tomatoes. Realistically, in Chicago, if you put tomatoes on the ground in May, you'll be lucky to harvest some tomatoes late August, early September. So if you really want to make good pasta
+
+[Leo Irakliotis] 10:27:37
+Tonight, you have to go and get tomatoes, good tomatoes from someone you trust
+
+[Leo Irakliotis] 10:27:44
+Same thing here. We're building a data structure that behaves like an array of fixed size
+
+[Leo Irakliotis] 10:27:52
+that resize itself on demand. That's what a dynamic array is. Of course, Python already has built in dynamic arrays. It does Python, in fact, does not
+
+[Leo Irakliotis] 10:28:05
+fixed size arrays.
+
+[Leo Irakliotis] 10:28:08
+Contrast to every other programming language that has fixed size arrays, Python does not.
+
+[Leo Irakliotis] 10:28:14
+But we're doing this exercise because A, it helps us understand
+
+[Leo Irakliotis] 10:28:19
+how Python
+
+[Leo Irakliotis] 10:28:21
+builds those arrays that has that grow automatically.
+
+[Leo Irakliotis] 10:28:27
+And second, it also helps us understand how to put together basic ingredients to produce something remarkable
+
+[Leo Irakliotis] 10:28:36
+Something that, you know, you have on your kitchen counter eggs, flour
+
+[Leo Irakliotis] 10:28:42
+Tomato, olive oil
+
+[Leo Irakliotis] 10:28:45
+And basil
+
+[Leo Irakliotis] 10:28:48
+Couple of hours later, you have a great
+
+[Leo Irakliotis] 10:28:51
+pasta dish
+
+[Leo Irakliotis] 10:28:52
+So doing something even as a plain pasta dish from scratch by beating the eggs and the flour
+
+[Leo Irakliotis] 10:29:00
+and boiling them for 2 minutes. That's remarkable. You are… we're making food from first
+
+[Leo Irakliotis] 10:29:06
+ingredients from primary ingredients. That's a remarkable thing to do
+
+[Leo Irakliotis] 10:29:11
+Same. Likewise here in programming, we are building a program called dynamic array
+
+[Leo Irakliotis] 10:29:19
+that at its heart has an array of fixed size
+
+[Leo Irakliotis] 10:29:26
+And that
+
+[Leo Irakliotis] 10:29:27
+program that we call Dynamic Array
+
+[Leo Irakliotis] 10:29:30
+With the fixed size array at its heart
+
+[Leo Irakliotis] 10:29:34
+exhibits behavior
+
+[Leo Irakliotis] 10:29:37
+That we endow it with. We are creating an object with specific behavior. And what is the behavior when you run out of space, double your size
+
+[Leo Irakliotis] 10:29:49
+When I'm asking you in which position zip code 60202 is return position number two
+
+[Leo Irakliotis] 10:29:58
+When I ask you if zip code 6 0625 is present in this array, answer me within yes or no. I don't necessarily need to know what position it is. I want to know
+
+[Leo Irakliotis] 10:30:11
+Where it is. I don't need to know where it is. I need to know if it's there.
+
+[Leo Irakliotis] 10:30:17
+When
+
+[Leo Irakliotis] 10:30:19
+When I'm asking you, hey, get me WhatsApp position number one, you return the value of whatever is in position number one.
+
+[Leo Irakliotis] 10:30:31
+That is
+
+[Leo Irakliotis] 10:30:33
+pretty amazing to be able to do that. So we have, we wrote functions so far
+
+[Leo Irakliotis] 10:30:42
+Index of
+
+[Leo Irakliotis] 10:30:47
+Where is 60
+
+[Leo Irakliotis] 10:30:49
+202
+
+[Leo Irakliotis] 10:30:51
+And this will return
+
+[Leo Irakliotis] 10:30:53
+Two, we may also ask index of
+
+[Leo Irakliotis] 10:31:00
+11157. And this will return position
+
+[Leo Irakliotis] 10:31:06
+Number one, minus one
+
+[Leo Irakliotis] 10:31:10
+Okay, and to avoid confusion with this minus one value here, let's call it none
+
+[Leo Irakliotis] 10:31:18
+So
+
+[Leo Irakliotis] 10:31:20
+The position of
+
+[Leo Irakliotis] 10:31:22
+The index
+
+[Leo Irakliotis] 10:31:23
+Of a value that does not exist in the array is minus one.
+
+[Leo Irakliotis] 10:31:28
+Okay?
+
+[Leo Irakliotis] 10:31:28
+And we discussed yesterday how to exploit this feature
+
+[Leo Irakliotis] 10:31:34
+And write the method contains
+
+[Leo Irakliotis] 10:31:37
+There's this object contain the zip code 60602, and that returns true.
+
+[Leo Irakliotis] 10:31:44
+And does it contain
+
+[Leo Irakliotis] 10:31:49
+11157, and that returns
+
+[Leo Irakliotis] 10:31:54
+False. And we saw how the method contains can be expressed in terms of method index, so we don't have to replicate the code.
+
+[Leo Irakliotis] 10:32:13
+There is one notable behavior missing from this object. What is the behavior of this object so far? You can
+
+[Leo Irakliotis] 10:32:22
+Search for a value
+
+[Leo Irakliotis] 10:32:26
+Either by position or by presence
+
+[Leo Irakliotis] 10:32:30
+Sometimes I want to know, hey, is Dutch here?
+
+[Leo Irakliotis] 10:32:34
+I want to see, I want someone to say yes or no. I don't want someone to tell me, oh, Dutch is on one, two, three on the fourth window on your video call
+
+[Leo Irakliotis] 10:32:45
+All I care is, hey, are you here?
+
+[Leo Irakliotis] 10:32:48
+And that's an yes, no question. That's the contains method
+
+[Leo Irakliotis] 10:32:52
+The index method says, where is Dodge
+
+[Leo Irakliotis] 10:32:55
+Okay, we do number four. That's fine. So these two methods, index often contains provide search functionality
+
+[Leo Irakliotis] 10:33:07
+So, so far I have behavior that allows me to add data to the object
+
+[Leo Irakliotis] 10:33:15
+And search for data
+
+[Leo Irakliotis] 10:33:18
+In the object
+
+[Leo Irakliotis] 10:33:20
+And I'm saying that there is some behavior here that is missing. What do you think we're missing from this behavior?
+
+[Temeeka Glass] 10:33:29
+Hello.
+
+[Temeeka Glass] 10:33:32
+Um, is it removing?
+
+[Leo Irakliotis] 10:33:33
+Removing. Yeah. So if you add something, you also have to, it's kind of symmetric if you can add something somewhere, you should have the ability to remove it.
+
+[Leo Irakliotis] 10:33:45
+So let's develop remove.
+
+[Leo Irakliotis] 10:33:50
+How
+
+[Leo Irakliotis] 10:33:50
+Do we remove data from this object?
+
+[Leo Irakliotis] 10:33:53
+And more specifically, what do we want to do with the removed data
+
+[Leo Irakliotis] 10:34:01
+So this is our object. We are the architects, we are the creators. We can do whatever we want as long as we agree that it makes sense to us.
+
+[Leo Irakliotis] 10:34:12
+Does it make sense to the rest of the world? Who cares?
+
+[Leo Irakliotis] 10:34:15
+For now, it has to make sense to us
+
+[Leo Irakliotis] 10:34:18
+So the ability to remove data
+
+[Leo Irakliotis] 10:34:30
+We want to train, not trained is not a good word. We want to
+
+[Leo Irakliotis] 10:34:35
+Instruct our object
+
+[Leo Irakliotis] 10:34:40
+How to remove data
+
+[Leo Irakliotis] 10:34:43
+But first, we have to agree as a team, what does data removal look like? What do we expect that process to look like? Not in terms of code. So I'm not asking about pseudocode or code
+
+[Leo Irakliotis] 10:34:58
+I'm talking about
+
+[Leo Irakliotis] 10:35:04
+behavior-wise
+
+[Shú Perez] 10:35:07
+emptying that place in the capacity
+
+[Leo Irakliotis] 10:35:11
+That's too technical.
+
+[Leo Irakliotis] 10:35:17
+Let's say that we're in a meeting and one of the team members is very disruptive and we want to remove that person from the room. What does that mean exactly?
+
+[Leo Irakliotis] 10:35:31
+Do we ask that person to just go
+
+[Leo Irakliotis] 10:35:34
+A way
+
+[Leo Irakliotis] 10:35:35
+Until they cool down? Or do we ask them to go away and we report them to HR
+
+[Temeeka Glass] 10:35:44
+Dayton?
+
+[Q. Dutch] 10:35:47
+Hmm.
+
+[Leo Irakliotis] 10:35:52
+Your call
+
+[Leo Irakliotis] 10:35:54
+Your object
+
+[Leo Irakliotis] 10:35:55
+Your team, you're the manager. Someone is disruptive at your team.
+
+[Q. Dutch] 10:35:58
+I guess, is there any way to, like, remove them?
+
+[Q. Dutch] 10:36:02
+Uh, remove them from the object, and then have another storage of removable, um…
+
+[Leo Irakliotis] 10:36:09
+Two technical, we're not talking objects. We're talking about a meeting room with people. And one of those persons is very disruptive and you are the manager and you're asking that person to leave the room. Is that enough or would you report that person to HR?
+
+[Q. Dutch] 10:36:13
+Okay.
+
+[Q. Dutch] 10:36:24
+I think I will report that… that person or behavior to HR, because if that happens again,
+
+[Q. Dutch] 10:36:30
+you know, you don't have to keep doing it
+
+[Q. Dutch] 10:36:33
+every time you're reporting it, so if you can report that same behavior or rule,
+
+[Q. Dutch] 10:36:37
+I guess there's an automatic thing now to just remove that, um…
+
+[Q. Dutch] 10:36:43
+remove that person or whatever from that object.
+
+[Leo Irakliotis] 10:36:46
+Okay, so here we are actually doing two tasks then. One is we're in a meeting, someone is disruptive. You say, hey, Dutch, get out
+
+[Leo Irakliotis] 10:36:54
+Right
+
+[Leo Irakliotis] 10:36:55
+That could be enough in some settings, but if you want to report that person
+
+[Leo Irakliotis] 10:37:01
+You have to write down their name to remember that name and take that piece of paper to HR
+
+[Leo Irakliotis] 10:37:09
+So the removal process can be just, okay, get out of here
+
+[Leo Irakliotis] 10:37:16
+We had nothing else seems to be done or get out of here and I remember your name and I'm going to give your name to the HR manager.
+
+[Leo Irakliotis] 10:37:26
+So going back to the programming side of things, let's say that we want to remove the zip code from position one
+
+[Leo Irakliotis] 10:37:38
+That method that we're going to build
+
+[Leo Irakliotis] 10:37:42
+can do exactly what Xu suggested. Just, you know empty it
+
+[Leo Irakliotis] 10:37:48
+Or empty that location in the underlying array
+
+[Leo Irakliotis] 10:37:54
+And return the value we removed
+
+[Leo Irakliotis] 10:37:59
+So if we can have two versions of remove here
+
+[Leo Irakliotis] 10:38:04
+One version, the simpler version, will be something like remove
+
+[Leo Irakliotis] 10:38:10
+Whatever is at position one
+
+[Leo Irakliotis] 10:38:14
+And this method returns nothing.
+
+[Leo Irakliotis] 10:38:21
+Or
+
+[Leo Irakliotis] 10:38:23
+We can ask, hey, you know what, remove whatever is at position one
+
+[Leo Irakliotis] 10:38:37
+And this method, this version returns 80526
+
+[Leo Irakliotis] 10:38:46
+So we can decide whether the removal is a silent one
+
+[Leo Irakliotis] 10:38:51
+Just, you know, removes the item or it removes the item and returns us a copy of the value of the item that has been removed.
+
+[Leo Irakliotis] 10:39:03
+And again, this is something that
+
+[Leo Irakliotis] 10:39:10
+It is always up to us to decide.
+
+[Leo Irakliotis] 10:39:14
+And we have a little bit of time to decide whether we want the method to be quiet, silent, or to actually return the value of what we removed
+
+[Leo Irakliotis] 10:39:24
+So let me make a copy of this array. Let's scroll a little bit down here
+
+[Leo Irakliotis] 10:39:30
+Place the copy here
+
+[Leo Irakliotis] 10:39:36
+And let's say
+
+[Leo Irakliotis] 10:39:39
+That
+
+[Leo Irakliotis] 10:39:40
+In this example, I want to remove
+
+[Leo Irakliotis] 10:39:44
+Let's write the positions here
+
+[Leo Irakliotis] 10:39:47
+Position 0 for the first item, position one for the second position 2 for the third position 3 for the fourth. Okay, and let's say that I want to remove
+
+[Leo Irakliotis] 10:40:11
+From position one.
+
+[Leo Irakliotis] 10:40:14
+What will happen to this array after the removal step by step. So here is again the array
+
+[Leo Irakliotis] 10:40:22
+that I'm removing from position one. I know that at the end of the process.
+
+[Leo Irakliotis] 10:40:30
+that Colorado zip code will not be there
+
+[Leo Irakliotis] 10:40:33
+I know that. But what I don't know yet, and I need some help from you, is what
+
+[Leo Irakliotis] 10:40:42
+Do you think
+
+[Leo Irakliotis] 10:40:46
+VRA will look after the removal
+
+[Q. Dutch] 10:41:01
+You said once we remove the Colorado zip code,
+
+[Q. Dutch] 10:41:04
+Um, if I…
+
+[Leo Irakliotis] 10:41:04
+Yeah.
+
+[Q. Dutch] 10:41:07
+If we remove that Colorado zip code, um, would everything else ship…
+
+[Q. Dutch] 10:41:11
+Shift to the left.
+
+[Leo Irakliotis] 10:41:14
+Good question.
+
+[Q. Dutch] 10:41:15
+Um, especially if we use… I don't know if… because I was… when I was reading last week and trying to
+
+[Leo Irakliotis] 10:41:16
+We know
+
+[Q. Dutch] 10:41:20
+look at that. Are we going to use that, um…
+
+[Q. Dutch] 10:41:24
+I think it's what, the list pop? Is that the…
+
+[Leo Irakliotis] 10:41:28
+We are not using anything like this. We're not using we're writing everything from scratch.
+
+[Q. Dutch] 10:41:29
+Okay.
+
+[Q. Dutch] 10:41:33
+Okay.
+
+[Leo Irakliotis] 10:41:35
+We are not making pasta for our best friend by making sauce from a jar. We're making the sauce from scratch.
+
+[Q. Dutch] 10:41:42
+Okay.
+
+[Q. Dutch] 10:41:44
+Okay, so I think it is… I think we're… I think everything will shift to the left, because then, once you add something,
+
+[Q. Dutch] 10:41:50
+I guess it's easier to find that empty cell, because you just attach it to the end.
+
+[Leo Irakliotis] 10:41:57
+Your call
+
+[Leo Irakliotis] 10:41:57
+It is our object and it's our call to do whatever we want with it. But I like how you're thinking because in designing this object, we have agreed that we are placing new data at the first available position and we're filling this
+
+[Leo Irakliotis] 10:42:15
+object from left to right. So not only we have to eliminate the Colorado zip code, but we also have
+
+[Leo Irakliotis] 10:42:24
+to move existing data
+
+[Leo Irakliotis] 10:42:28
+One position
+
+[Leo Irakliotis] 10:42:31
+To the left, and in the vacant space
+
+[Leo Irakliotis] 10:42:39
+I want to place a none or an indication that is empty. In our example, we're using minus one, but might as well start talking about none's
+
+[Leo Irakliotis] 10:42:47
+So VCs, the state of the underlying array
+
+[Leo Irakliotis] 10:42:54
+After the removal
+
+[Leo Irakliotis] 10:43:04
+So now we can describe the removal process on a step-by-step
+
+[Leo Irakliotis] 10:43:11
+Bases
+
+[Leo Irakliotis] 10:43:12
+To remove
+
+[Leo Irakliotis] 10:43:18
+from position
+
+[Leo Irakliotis] 10:43:21
+Index
+
+[Leo Irakliotis] 10:43:23
+So someone says, remove from this position
+
+[Leo Irakliotis] 10:43:26
+First is make sure
+
+[Leo Irakliotis] 10:43:33
+Index
+
+[Leo Irakliotis] 10:43:34
+is a legit value.
+
+[Leo Irakliotis] 10:43:38
+So for example, if someone says remove from position three, that's not a legit value.
+
+[Leo Irakliotis] 10:43:44
+Because the array has only 3 elements. We can only remove from the first 3 positions, because the fourth position is not populated
+
+[Leo Irakliotis] 10:43:53
+If someone says remove from position 11, that's not possible because there are only four the capacity of this object is four. And there is position 11 implies a capacity of 12 and a size of 12
+
+[Leo Irakliotis] 10:44:11
+Remove from minus one, we don't accept negative values as legitimate index values in this course.
+
+[Leo Irakliotis] 10:44:21
+Then, depending on whether we are returning the value or not
+
+[Leo Irakliotis] 10:44:27
+If value must be returned
+
+[Leo Irakliotis] 10:44:46
+Retain
+
+[Leo Irakliotis] 10:44:49
+A copy
+
+[Leo Irakliotis] 10:44:54
+Then
+
+[Leo Irakliotis] 10:44:59
+Save remaining values
+
+[Leo Irakliotis] 10:45:04
+To the left
+
+[Leo Irakliotis] 10:45:13
+Change
+
+[Leo Irakliotis] 10:45:18
+Last occupied
+
+[Leo Irakliotis] 10:45:22
+Sell
+
+[Leo Irakliotis] 10:45:24
+With none
+
+[Leo Irakliotis] 10:45:27
+Like we did here
+
+[Leo Irakliotis] 10:45:30
+And then
+
+[Leo Irakliotis] 10:45:34
+Reduce size
+
+[Leo Irakliotis] 10:45:36
+So those are the steps that we need to take
+
+[Leo Irakliotis] 10:45:42
+And if we get to this point, if we can write that stuff down in plain language
+
+[Leo Irakliotis] 10:45:48
+We are done, because this becomes the pseudocode
+
+[Leo Irakliotis] 10:45:53
+for our program, and we can write these things ourselves
+
+[Leo Irakliotis] 10:45:57
+Or this becomes an operational prompt for our AI assistant
+
+[Leo Irakliotis] 10:46:08
+I'm still doing things by hand
+
+[Leo Irakliotis] 10:46:11
+Because
+
+[Leo Irakliotis] 10:46:14
+These are things that we need to learn by hand before we start engaging AI agents to do the job for us. So let's
+
+[Leo Irakliotis] 10:46:36
+What happened
+
+[Leo Irakliotis] 10:46:39
+to my color scheme. Oh, my Lord
+
+[Leo Irakliotis] 10:46:45
+So, let me
+
+[Leo Irakliotis] 10:46:48
+Sorry about that. Let me go to Visual Studio Code because at least
+
+[Leo Irakliotis] 10:46:55
+The color scheme is less painful, less atrocious, and I'll figure out what happened there.
+
+[Leo Irakliotis] 10:47:15
+All right, so here's the program. And we're going to write the remove method define remove
+
+[Leo Irakliotis] 10:47:22
+For this object
+
+[Leo Irakliotis] 10:47:23
+And I want to remove from a given index
+
+[Leo Irakliotis] 10:47:29
+All right.
+
+[Leo Irakliotis] 10:47:33
+My suggestions snooze for a little bit. Thank you.
+
+[Leo Irakliotis] 10:47:38
+All right. So
+
+[Leo Irakliotis] 10:47:50
+Check if index is legit. So I'm just typing here as comments. The steps we outlined by
+
+[Leo Irakliotis] 10:47:57
+on the whiteboard earlier.
+
+[Leo Irakliotis] 10:48:01
+obtain copy of removed item
+
+[Leo Irakliotis] 10:48:05
+If return, we want to return it
+
+[Leo Irakliotis] 10:48:14
+Shift remaining values
+
+[Leo Irakliotis] 10:48:16
+To the left
+
+[Leo Irakliotis] 10:48:22
+Mark last occupied
+
+[Leo Irakliotis] 10:48:25
+Value
+
+[Leo Irakliotis] 10:48:28
+To none
+
+[Leo Irakliotis] 10:48:35
+reduce size by minus one because we have now one less element since we removed
+
+[Leo Irakliotis] 10:48:41
+All right
+
+[Leo Irakliotis] 10:48:43
+So once at a time, is the index legit
+
+[Leo Irakliotis] 10:48:47
+Okay, proceed only if
+
+[Leo Irakliotis] 10:48:51
+Index
+
+[Leo Irakliotis] 10:48:53
+Is greater than or equal to 0.
+
+[Leo Irakliotis] 10:48:57
+And index
+
+[Leo Irakliotis] 10:49:00
+is less than the size of the object, not the capacity
+
+[Leo Irakliotis] 10:49:07
+But the size of the object.
+
+[Leo Irakliotis] 10:49:13
+Okay, let's say that we want to return this object, that we want to return the value we're removing. Okay, so value to return
+
+[Leo Irakliotis] 10:49:27
+is the it element of the underlying array at this legitimate index position
+
+[Leo Irakliotis] 10:49:36
+That we got
+
+[Leo Irakliotis] 10:49:37
+And we know that line 110 here is safe because we're operating under the if condition of line 108
+
+[Leo Irakliotis] 10:49:45
+Index is a valid value
+
+[Leo Irakliotis] 10:49:53
+So now I have to move the remaining values
+
+[Leo Irakliotis] 10:49:58
+to the left
+
+[Leo Irakliotis] 10:50:00
+What I have to do here is
+
+[Leo Irakliotis] 10:50:05
+If I'm removing
+
+[Leo Irakliotis] 10:50:17
+From this position
+
+[Leo Irakliotis] 10:50:19
+And there are values here
+
+[Leo Irakliotis] 10:50:23
+App indicated by size
+
+[Leo Irakliotis] 10:50:27
+I have to move this here and I have to move this value here
+
+[Leo Irakliotis] 10:50:31
+And then I have to put a none in this last occupied value
+
+[Leo Irakliotis] 10:50:43
+So how do I remove the remaining values? That's a loop.
+
+[Leo Irakliotis] 10:50:47
+For every position from here to the last value
+
+[Leo Irakliotis] 10:50:53
+move on position to the left
+
+[Leo Irakliotis] 10:51:03
+And then the last value, wherever size is, make it none
+
+[Leo Irakliotis] 10:51:14
+And then reduce your size
+
+[Leo Irakliotis] 10:51:25
+By
+
+[Leo Irakliotis] 10:51:26
+What you want?
+
+[Leo Irakliotis] 10:51:31
+It's that the most complex thing that we have to write here is the for loop that traverses between the element we are removing and the last value.
+
+[Leo Irakliotis] 10:51:44
+in the array
+
+[Leo Irakliotis] 10:51:44
+And we have to think a little bit about it
+
+[Leo Irakliotis] 10:51:49
+Because where is the last value in the array? If we have an array
+
+[Leo Irakliotis] 10:51:57
+With size
+
+[Leo Irakliotis] 10:52:01
+Fine
+
+[Leo Irakliotis] 10:52:02
+Let's say capacity is 8.
+
+[Leo Irakliotis] 10:52:05
+But we only have five items in it. Which array position holds the last item
+
+[Leo Irakliotis] 10:52:19
+We have 5 items in the array. That's what size means
+
+[Leo Irakliotis] 10:52:23
+Which position in the array
+
+[Leo Irakliotis] 10:52:26
+Can we find the fifth item at
+
+[Temeeka Glass] 10:52:33
+index paperwork.
+
+[Leo Irakliotis] 10:52:35
+Index 4
+
+[Leo Irakliotis] 10:52:38
+Why? Because the first item is at index 0, 1, 2, 3, 4.
+
+[Leo Irakliotis] 10:52:46
+The last item
+
+[Leo Irakliotis] 10:52:48
+The fifth item
+
+[Leo Irakliotis] 10:52:52
+is in position 4
+
+[Leo Irakliotis] 10:52:54
+Why? Because it means that in front of this item, there are four more items. That's why you're number 5 in line, because there are four people in front of you. That is what the array indexing means in programming. Your index position 4, because that's how many people are in front of you in line. Therefore.
+
+[Leo Irakliotis] 10:53:12
+you are fifth person in line. Your index position is zero, because that's how many people are in front of you. Therefore, what are you waiting? Start emptying that shopping basket, because you are the cashier register.
+
+[Leo Irakliotis] 10:53:28
+So we have to be careful where this loop runs for because it runs from the current position we removed
+
+[Leo Irakliotis] 10:53:35
+Up to
+
+[Leo Irakliotis] 10:53:38
+But not including size
+
+[Leo Irakliotis] 10:53:43
+Because up to and not including size is size is 5 up to and not including five is four.
+
+[Leo Irakliotis] 10:53:53
+And once we do this, everything else is cosmetics. Everything else is engineering. So what I'm going to do here is I'm going to write a loop for I in range
+
+[Leo Irakliotis] 10:54:08
+From index
+
+[Leo Irakliotis] 10:54:10
+up to size.
+
+[Leo Irakliotis] 10:54:21
+And a loop runs from its starting point up to and not including its last value
+
+[Leo Irakliotis] 10:54:27
+So the way the range works in loops in Python and also in Java is that we start from the first value index and we go all the way to the value size there, but not including that. So it will run from index up to an including size minus one
+
+[Leo Irakliotis] 10:54:45
+And what I want to do is in my underlying array
+
+[Leo Irakliotis] 10:54:53
+I want to have a position I
+
+[Leo Irakliotis] 10:54:56
+is whatever is already in position i plus one
+
+[Leo Irakliotis] 10:55:04
+And when this loop
+
+[Leo Irakliotis] 10:55:08
+is done
+
+[Leo Irakliotis] 10:55:18
+go to the last occupied position, which is size minus one
+
+[Leo Irakliotis] 10:55:22
+And set it to none.
+
+[Leo Irakliotis] 10:55:25
+Or to minus one, because in this implementation, we use minus one to indicate the absence of a value.
+
+[Leo Irakliotis] 10:55:32
+And then
+
+[Leo Irakliotis] 10:55:37
+And then reduce size
+
+[Leo Irakliotis] 10:55:48
+Buy one.
+
+[Leo Irakliotis] 10:55:56
+And this is the remove method. There is one more detail to discuss
+
+[Leo Irakliotis] 10:56:02
+But this is it.
+
+[Leo Irakliotis] 10:56:04
+If we decide to return a value, we need the return statement here.
+
+[Leo Irakliotis] 10:56:10
+Return
+
+[Leo Irakliotis] 10:56:15
+value to return.
+
+[Leo Irakliotis] 10:56:18
+However
+
+[Leo Irakliotis] 10:56:22
+Value to return is not visible here. Why? Because it is defined within the scope of the if statement.
+
+[Leo Irakliotis] 10:56:31
+And if the if statement is never executed because
+
+[Leo Irakliotis] 10:56:36
+index
+
+[Leo Irakliotis] 10:56:37
+value is not legitimate.
+
+[Leo Irakliotis] 10:56:40
+We're asking the program to return a value here that has not been initialized.
+
+[Leo Irakliotis] 10:56:45
+So the program will blow up
+
+[Leo Irakliotis] 10:56:50
+Again
+
+[Leo Irakliotis] 10:56:52
+Some programmers are okay with that.
+
+[Leo Irakliotis] 10:56:55
+I'm not, because this is a mistake.
+
+[Leo Irakliotis] 10:56:58
+That is very easy
+
+[Leo Irakliotis] 10:57:01
+To rectify
+
+[Leo Irakliotis] 10:57:05
+Initialize
+
+[Leo Irakliotis] 10:57:10
+Buying to return
+
+[Leo Irakliotis] 10:57:12
+With worst-case scenario
+
+[Leo Irakliotis] 10:57:18
+Buy to return equals minus 1, which means there is no value to return
+
+[Leo Irakliotis] 10:57:24
+So if the if statement does not execute, I go from line 111 to line 123 and I return minus one, which means that you're asking me to return something that doesn't exist.
+
+[Leo Irakliotis] 10:57:39
+If
+
+[Leo Irakliotis] 10:57:41
+The index value is legit.
+
+[Leo Irakliotis] 10:57:44
+I'm returning the actual value to return.
+
+[Leo Irakliotis] 10:57:48
+Because that is a sign in line 115.
+
+[Leo Irakliotis] 10:58:09
+How do we feel so far
+
+[Leo Irakliotis] 10:58:14
+Because we just finished building an object from scratch. I mean, there is a lot of things to do about cosmetics here, both in terms of decorating the code. For example, I have to specify, give a type hint that this is an integer
+
+[Leo Irakliotis] 10:58:29
+That this method may return an integer or not or
+
+[Leo Irakliotis] 10:58:35
+Always attention in a jerk.
+
+[Leo Irakliotis] 10:58:39
+I need to write a documentation string here
+
+[Leo Irakliotis] 10:58:56
+But the object is more or less complete
+
+[Leo Irakliotis] 10:59:01
+We can add data, we can remove data from a given position. We can search for data
+
+[Leo Irakliotis] 10:59:10
+What I would like to do is make the code a little bit more generic, meaning that so far we've built this around the concept that we're storing zip codes, but zip codes are integer numbers. What if I want to store
+
+[Leo Irakliotis] 10:59:23
+Okay
+
+[Leo Irakliotis] 10:59:25
+So, I will go up here at the beginning of the object
+
+[Leo Irakliotis] 10:59:31
+Where I initialize the object.
+
+[Leo Irakliotis] 10:59:34
+And remember, the way I initialized it is I added a bunch of minus ones to indicate that there is nothing here. All right, the first thing I want to do here is
+
+[Leo Irakliotis] 10:59:46
+add nudge
+
+[Leo Irakliotis] 10:59:48
+So that, you know, the code does not imply that I'm storing necessarily
+
+[Leo Irakliotis] 10:59:56
+Indigen numbers here, I can be storing strings
+
+[Leo Irakliotis] 10:59:59
+Everything else here is,
+
+[Leo Irakliotis] 11:00:03
+The same
+
+[Leo Irakliotis] 11:00:08
+Couple of things I don't like here, and we're going to talk more about it next week is that this method here, the string representation of the object, is full of magic values
+
+[Leo Irakliotis] 11:00:21
+So far, we talked about magic values in terms of numbers, anything that is not a plus minus one, or a 0.
+
+[Leo Irakliotis] 11:00:30
+And it has to be parameterized
+
+[Leo Irakliotis] 11:00:33
+Also, anything that is not the empty string or a single space
+
+[Leo Irakliotis] 11:00:40
+is a magic word or a magic sentence or a magic piece of text. And I don't want magic piece of text in my code.
+
+[Leo Irakliotis] 11:00:52
+So there is a lot of work to be done in method string here. However
+
+[Leo Irakliotis] 11:00:57
+It is cosmetic. It's important to be done, but if I'm rushing to send a beta copy of this code to my client, if the client wants to see some progress, I'll ship it as is with a note
+
+[Leo Irakliotis] 11:01:13
+that we're
+
+[Leo Irakliotis] 11:01:15
+improving code reusability, but the functionality is already there, test it.
+
+[Leo Irakliotis] 11:01:23
+Resize looks fine. We've done a good job with resize except for line 50 here when we are expanding the array, we don't add minus ones
+
+[Leo Irakliotis] 11:01:32
+To indicate empty space, we add nuns
+
+[Leo Irakliotis] 11:01:45
+Adding is fine. Here
+
+[Leo Irakliotis] 11:01:49
+In line 57, I'm implying that I'm adding integer values only. I will remove the specification because I may be adding anything, integer numbers, real numbers
+
+[Leo Irakliotis] 11:02:03
+strings, anything doesn't have to be
+
+[Leo Irakliotis] 11:02:07
+Length is fine, get size is fine, get capacity is fine. Tell me what's at given index position is fine.
+
+[Leo Irakliotis] 11:02:19
+Index off is fine. It does not always need to return a
+
+[Leo Irakliotis] 11:02:24
+I need the value, minus 1 if the value is not present, the actual index position if the value is present, contains this Boolean, it looks fine. Remove doesn't have the item we removed doesn't have to be an integer anymore
+
+[Leo Irakliotis] 11:02:41
+So I will leave it like this for now
+
+[Leo Irakliotis] 11:02:45
+And
+
+[Leo Irakliotis] 11:02:48
+There is our object.
+
+[Leo Irakliotis] 11:02:50
+There are still things that we need to add
+
+[Leo Irakliotis] 11:02:54
+For example
+
+[Leo Irakliotis] 11:02:55
+What if I now use this object
+
+[Leo Irakliotis] 11:02:58
+to store the names of my friends
+
+[Leo Irakliotis] 11:03:02
+Instead of their zip codes, you know, most people write down names instead of zip codes. So in the implementation, instead of adding
+
+[Leo Irakliotis] 11:03:14
+Zip codes allowed friends, and I will name the object accordingly
+
+[Leo Irakliotis] 11:03:21
+My friends
+
+[Leo Irakliotis] 11:03:24
+So
+
+[Leo Irakliotis] 11:03:27
+Proto
+
+[Leo Irakliotis] 11:03:45
+Sauron… I know, I know, you love your… you don't judge your friends, you just accept them.
+
+[Leo Irakliotis] 11:03:51
+with our imperfections
+
+[Leo Irakliotis] 11:04:06
+That's another sum from the office, not from Middle-earth
+
+[Leo Irakliotis] 11:04:21
+That Donald Duck
+
+[Leo Irakliotis] 11:04:30
+And that's Donald, that sounds like duck, but has a different letter at the beginning.
+
+[Leo Irakliotis] 11:04:36
+So one question maybe
+
+[Leo Irakliotis] 11:04:42
+Do I have a friend whose name is Sam?
+
+[Leo Irakliotis] 11:04:46
+The answer is yes, it will stop at the first sound
+
+[Leo Irakliotis] 11:04:49
+When I do index of SAM, it will return one because the second friend is Sam. But there is another Sam there
+
+[Leo Irakliotis] 11:04:59
+An inexposition 4
+
+[Leo Irakliotis] 11:05:03
+So maybe I want a method that gives me the index positions of every occurrence of some
+
+[Leo Irakliotis] 11:05:11
+Or every occurrence of Donald
+
+[Leo Irakliotis] 11:05:17
+Because the index of method right now will return, you know.
+
+[Leo Irakliotis] 11:05:26
+Let's try it
+
+[Leo Irakliotis] 11:05:54
+Go to my friends, get me the index of this target value
+
+[Leo Irakliotis] 11:06:01
+And report back
+
+[Leo Irakliotis] 11:06:13
+Your friend
+
+[Leo Irakliotis] 11:06:17
+Target
+
+[Leo Irakliotis] 11:06:20
+is in index
+
+[Leo Irakliotis] 11:06:23
+Position IDX
+
+[Leo Irakliotis] 11:06:37
+You can run the code
+
+[Leo Irakliotis] 11:06:42
+That is, your friend Sam is in index position one
+
+[Leo Irakliotis] 11:06:46
+And yet
+
+[Leo Irakliotis] 11:06:52
+If you print the object itself, print my friends
+
+[Leo Irakliotis] 11:07:01
+You'll notice, okay, position one, there is Sam. There is another SAM at position 4
+
+[Leo Irakliotis] 11:07:14
+So what if I want a method that returns 1 and 4
+
+[Leo Irakliotis] 11:07:22
+What if I want
+
+[Leo Irakliotis] 11:07:23
+If I ask this array, this object, hey, do I have a friend whose name is Sam? The answer is yes. Do I have a friend whose name is Donald? The answer is yes. But whether all my friends have the same name, Sam, Sam, Sam, Sam, Sam, or there's only one Sam, it's the same answer, yes
+
+[Leo Irakliotis] 11:07:41
+What if I want to know how many of my friends are called Sam
+
+[Leo Irakliotis] 11:07:45
+So now I have to add.
+
+[Leo Irakliotis] 11:07:50
+So those are two additional functionalities that you will have to work on between now and
+
+[Leo Irakliotis] 11:07:57
+And Monday the 15th
+
+[Leo Irakliotis] 11:08:11
+Now, again, there is so much we can improve here on this object, but at the end of the day, what we have here is the basic elements of what is a symbol
+
+[Leo Irakliotis] 11:08:27
+We have an object is defined in a class. A class is the blueprint
+
+[Leo Irakliotis] 11:08:34
+For the object and copies of that blueprint become the objects themselves.
+
+[Leo Irakliotis] 11:08:40
+A class has special methods that we call dander methods that have prescribed functionality and the
+
+[Leo Irakliotis] 11:08:50
+They're extremely useful. For example, the dander init
+
+[Leo Irakliotis] 11:08:54
+creates an instance of the object, takes the blueprint
+
+[Leo Irakliotis] 11:08:58
+And create an instance of the object. This is the same thing as looking at the recipe printed on a piece of paper, on your screen
+
+[Leo Irakliotis] 11:09:07
+And initializing that recipe, executing the recipe, and presenting someone with
+
+[Leo Irakliotis] 11:09:13
+plate with food
+
+[Leo Irakliotis] 11:09:17
+That's what happens within it. We also have the string representation that has some rooms for improvement, but we'll talk about it on week five.
+
+[Leo Irakliotis] 11:09:29
+We have the main
+
+[Leo Irakliotis] 11:09:33
+The magic here in this object is that it can resize itself
+
+[Leo Irakliotis] 11:09:37
+But this is an internal function. No one needs to know how it does it. So I'm going to go and designate this method as a private method by adding another score in front of its name.
+
+[Leo Irakliotis] 11:09:55
+no one needs to know
+
+[Leo Irakliotis] 11:10:06
+What time do you like? Everybody knows that we rest. Like is there anyone on this call that doesn't rest for a few hours a day?
+
+[Leo Irakliotis] 11:10:13
+Is there any vampire in this call? No, everyone in this call rests a few hours a day
+
+[Leo Irakliotis] 11:10:23
+Some of us may be okay of sharing, hey, you know what, my resting hours are 10 PM to 4:00 AM
+
+[Leo Irakliotis] 11:10:30
+Okay.
+
+[Leo Irakliotis] 11:10:32
+But
+
+[Leo Irakliotis] 11:10:34
+How you rest
+
+[Leo Irakliotis] 11:10:36
+is your own business
+
+[Leo Irakliotis] 11:10:38
+And that's how this object resizes, it's its own business. We do not want to allow others from the outside
+
+[Leo Irakliotis] 11:10:49
+to cause an object to resize itself. An object resizes itself when it's time to, when the object determines it's time to resize yourself. You go to bed
+
+[Leo Irakliotis] 11:11:01
+at the time you decide
+
+[Leo Irakliotis] 11:11:04
+No one tells you
+
+[Leo Irakliotis] 11:11:06
+I hope anymore
+
+[Leo Irakliotis] 11:11:08
+to go to bed
+
+[Leo Irakliotis] 11:11:12
+When my father was still alive and he's all the way to his late 80s, and I was in my 40s and my early 50s, and I would go to visit back in Greece
+
+[Leo Irakliotis] 11:11:20
+at 9 o'clock every day he would have me time to go to bed
+
+[Leo Irakliotis] 11:11:25
+And I'll give him that look and say, you realize that I'm 50 years old and I'm just about to go out
+
+[Leo Irakliotis] 11:11:32
+So as adults, I hope that no one tells you, hey, it's time to go to bed
+
+[Leo Irakliotis] 11:11:39
+You go to bed
+
+[Leo Irakliotis] 11:11:41
+at whatever time you want to go to bed and run your own business, that's what happens here in line 44. This object resizes itself whenever it feels like. and doesn't
+
+[Leo Irakliotis] 11:11:53
+Need to give you access to that function. It doesn't need to give you access to that behavior. There are things that we do as objects that are internal and private
+
+[Leo Irakliotis] 11:12:04
+Everybody poops
+
+[Leo Irakliotis] 11:12:05
+Everybody sleeps
+
+[Leo Irakliotis] 11:12:07
+Everybody eats
+
+[Leo Irakliotis] 11:12:11
+The specifics of those behaviors
+
+[Leo Irakliotis] 11:12:15
+Our personal, private, protected and internal. And if you want to share about this
+
+[Leo Irakliotis] 11:12:23
+That's you're right, that's your prerogative. But as a designer of this object, I'm telling this object, do not reveal to the world
+
+[Leo Irakliotis] 11:12:32
+The details of your resizing
+
+[Leo Irakliotis] 11:12:37
+But the rest of the world has to trust me
+
+[Leo Irakliotis] 11:12:41
+That the way I'm implementing the resizing is correct
+
+[Leo Irakliotis] 11:12:46
+And for that it is the responsibility of the world to write the appropriate tests
+
+[Leo Irakliotis] 11:12:52
+To confirm that this object resizes as needed without actually accessing the code
+
+[Leo Irakliotis] 11:13:01
+And we'll talk more about it on Monday.
+
+[Leo Irakliotis] 11:13:04
+So a little bit of reading coming your way. Two or three more methods for you to add to this object. I'm going to clean up this object and repost it on the repository so that you have a well-documented version
+
+[Leo Irakliotis] 11:13:19
+to work from. And we'll continue our discussion on Monday. Questions, comments, requests.
+
+[Temeeka Glass] 11:13:26
+I have a question. Uh, so, since we…
+
+[Leo Irakliotis] 11:13:28
+Yeah.
+
+[Temeeka Glass] 11:13:29
+Since, um, the remove method was implemented,
+
+[Temeeka Glass] 11:13:33
+Um…
+
+[Temeeka Glass] 11:13:35
+for, like, the capacity, since the capacity, like,
+
+[Temeeka Glass] 11:13:39
+growth, which each, like, call to resize. Do we ever want to, like,
+
+[Temeeka Glass] 11:13:43
+If we remove enough items from the array,
+
+[Temeeka Glass] 11:13:46
+Do you ever want to, like, decrease their capacity?
+
+[Leo Irakliotis] 11:13:51
+I like the way you think.
+
+[Leo Irakliotis] 11:13:55
+Great topic for conversation, not nothing to worry about for the assignment.
+
+[Temeeka Glass] 11:13:59
+Okay.
+
+[Leo Irakliotis] 11:14:01
+So, but I think where you're going, you grew the underlying object to an array with 1024 elements. You made so many removals that you have only two elements remaining
+
+[Leo Irakliotis] 11:14:12
+And the rest of the array is empty. Should you cut it in half
+
+[Leo Irakliotis] 11:14:15
+to save some space.
+
+[Leo Irakliotis] 11:14:18
+Great question
+
+[Leo Irakliotis] 11:14:22
+But this is something that we should do together in class rather than as an assignment, because there are merits to it
+
+[Leo Irakliotis] 11:14:31
+But we may want to talk what kind of application is that that Gruen object 2024 capacity
+
+[Leo Irakliotis] 11:14:40
+And then rendered most of that capacity
+
+[Leo Irakliotis] 11:14:44
+Unused
+
+[Leo Irakliotis] 11:14:46
+What kind of a contractor builds a 20 story hotel and never rent rooms past the second story.
+
+[Leo Irakliotis] 11:14:55
+So there is a lot of good discussion around this that has to do about design, and we'll talk about it as well.
+
+[Leo Irakliotis] 11:15:02
+But good question. Don't worry about it for the assignment. Anything else?
+
+[Kofi Nyarku] 11:15:07
+Professor, are you going to pose the solution so we do the reflection for okay
+
+[Leo Irakliotis] 11:15:11
+Yes. Yes, yes. The code that I will post for next week's assignment is the solutions that we discussed this week for last week's assignment. And you're going to do your reflection on those solutions as well.
+
+[Kofi Nyarku] 11:15:23
+Awesome. Thank you.
+
+[Leo Irakliotis] 11:15:25
+All right, everyone, have a great rest of your week and a great weekend. I will see you Monday.
+
+[Temeeka Glass] 11:15:32
+Okay, thank you.
+
+[Alexander Garcia] 11:15:32
+Thank you, Professor.
+
+[Leo Irakliotis] 11:30:46
+Hello, everyone
+
+[Leo Irakliotis] 11:30:54
+Are there any questions, any comments, any requests?
+
+[Leo Irakliotis] 11:31:02
+All right, so yesterday
+
+[Leo Irakliotis] 11:31:06
+We did a simple experiment to convert
+
+[Leo Irakliotis] 11:31:12
+A linear arrangement of data
+
+[Leo Irakliotis] 11:31:15
+In one-dimensional arrangement of data into two dimensions
+
+[Leo Irakliotis] 11:31:19
+And
+
+[Leo Irakliotis] 11:31:21
+The example we used was, okay, let's say that we have a passengers lining up
+
+[Leo Irakliotis] 11:31:26
+to board an airplane
+
+[Leo Irakliotis] 11:31:28
+That has 4 or 3 seats per row, and those seats are labeled A, B, C, whatever
+
+[Leo Irakliotis] 11:31:35
+Can we convert the
+
+[Leo Irakliotis] 11:31:38
+Linear
+
+[Leo Irakliotis] 11:31:40
+sequence. The one-dimensional sequence of passengers into a two-dimensional seating chart
+
+[Leo Irakliotis] 11:31:45
+And we discovered that this can be done with the simplest possible arithmetic operations, integer divisions
+
+[Leo Irakliotis] 11:31:53
+And nothing more. We're looking at the quotient and the remainder of an integer division
+
+[Leo Irakliotis] 11:31:59
+And that goes to demonstrate that
+
+[Leo Irakliotis] 11:32:02
+Integer arithmetic in general is
+
+[Leo Irakliotis] 11:32:06
+Possibly the most important arithmetic in computing, I would say
+
+[Leo Irakliotis] 11:32:13
+It's the fundamental, the foundational arithmetic of computing. Yeah, we can use computers to compute very
+
+[Leo Irakliotis] 11:32:24
+Complicated and complex numbers like we can compute the number pi with 1 billion decimal points.
+
+[Leo Irakliotis] 11:32:32
+We can compute the exact trajectory from here to the moon and back. These are a very advanced mathematical computations. But at the end of the day
+
+[Leo Irakliotis] 11:32:44
+All that a computer does is integer arithmetic
+
+[Leo Irakliotis] 11:32:49
+And integer arithmetic is
+
+[Leo Irakliotis] 11:32:53
+fundamental. and it starts with understanding a few basic operations like we did yesterday.
+
+[Leo Irakliotis] 11:33:01
+The problem
+
+[Leo Irakliotis] 11:33:03
+We ran yesterday when we played with our code, and let me run the code just to remember where we were from
+
+[Leo Irakliotis] 11:33:13
+What we had
+
+[Leo Irakliotis] 11:33:16
+The problem is that we end up with a passenger list with a passenger manifest like this. Passenger zero in seat 1a, passenger one in seat 1B, and so on
+
+[Leo Irakliotis] 11:33:29
+Not the most informative thing, because passengers usually
+
+[Leo Irakliotis] 11:33:35
+have names
+
+[Leo Irakliotis] 11:33:38
+So I want to say that Ben Dorsey is in seat 2a and Cheska Ocampo is in seat 3A and Bella Fiorucci is in seat 3
+
+[Leo Irakliotis] 11:33:52
+Charlie
+
+[Leo Irakliotis] 11:33:53
+That's what a passenger manifest look like.
+
+[Leo Irakliotis] 11:33:58
+And how do I produce this?
+
+[Leo Irakliotis] 11:34:02
+Well, I need to collect the names of the passengers.
+
+[Leo Irakliotis] 11:34:08
+And how do we collect names?
+
+[Leo Irakliotis] 11:34:12
+How do we collect data?
+
+[Leo Irakliotis] 11:34:15
+In a programming language
+
+[Leo Irakliotis] 11:34:17
+All right, let's forget about programming language and ask
+
+[Leo Irakliotis] 11:34:25
+Pretend that you're working for this weird airline and you're at the airport and your supervisor, me
+
+[Leo Irakliotis] 11:34:31
+comes and says, let's see, Omar
+
+[Leo Irakliotis] 11:34:34
+You work for me. I just have my airline startup, and you were
+
+[Leo Irakliotis] 11:34:43
+Full enough to sign up for a startup airline that I'm managing. Okay?
+
+[Leo Irakliotis] 11:34:49
+So increasingly, that alternative career is a barista at Starbucks begins to look more and more promising, but now you're stuck with me.
+
+[Leo Irakliotis] 11:34:57
+So it's our first day of operations. And I say, hey, Omar, you see those passengers there lining up to fly with us?
+
+[Leo Irakliotis] 11:35:04
+I want their names
+
+[Leo Irakliotis] 11:35:07
+What do you do? Forget about computer science. You're a proud employee number one of Leo Airlines, and the boss says, go get the names of those passengers. What do you do
+
+[Omar Khan] 11:35:22
+I asked them their names
+
+[Leo Irakliotis] 11:35:24
+Okay, great. What do you do after that?
+
+[Leo Irakliotis] 11:35:29
+I'm not saying that you are there to socialize with them. I'm the boss, I expect you to bring me something back
+
+[Omar Khan] 11:35:38
+Get there like their boarding pass and stuff
+
+[Leo Irakliotis] 11:35:43
+dude who just started the airline, we don't have money to pick boarding passes
+
+[Leo Irakliotis] 11:35:50
+I want their names
+
+[Omar Khan] 11:35:54
+Yeah, why don't you just ask them the names and then I'll give them to
+
+[Leo Irakliotis] 11:35:59
+Like, what are you going to give me
+
+[Omar Khan] 11:36:06
+Their names
+
+[Leo Irakliotis] 11:36:08
+What are you going to surgically remove something from the passengers and bring those to me on a plate? What are you giving me?
+
+[Omar Khan] 11:36:15
+Oh, like a paper with their names
+
+[Leo Irakliotis] 11:36:18
+And that's exactly what I'm paying you $6.50 an hour, because you figure out that
+
+[Leo Irakliotis] 11:36:26
+You're going to get a clipboard, never mind, we cannot afford a clipboard
+
+[Leo Irakliotis] 11:36:31
+So probably get a napkin from the coffee shop down the concourse at the airport, and you write the names of the passengers, say, hey, boss, here are the names. Okay, so you are producing a list of names
+
+[Leo Irakliotis] 11:36:46
+on a piece of paper
+
+[Leo Irakliotis] 11:36:47
+Okay, now, as the airline grows, maybe I'll give you a tablet. Maybe I'll give you your own notepad. Maybe we can afford a couple of pencils for that. But at the very least, at the very fundamental, what you give me is a piece of paper with the names of those
+
+[Leo Irakliotis] 11:37:03
+passengers, that's how we collect information in the most elemental way. And before paper, we used to inscribe those names on marble, or on clay tablets, but since we're talking about airline scenario model, probably paper
+
+[Leo Irakliotis] 11:37:19
+has been invented by now because, you know, we're flying airplanes. So, you are giving me
+
+[Leo Irakliotis] 11:37:25
+A list of names like, okay.
+
+[Leo Irakliotis] 11:37:40
+Hello computer, wake up
+
+[Leo Irakliotis] 11:37:43
+Dina Kamara, who else is on the call? Okay, Omar, you're not a passenger, you're an employee, so you're not on the boat. You know what? You're also employee number one. It means that you are at the gate, but also your co-pilot. So you are on the flying list.
+
+[Leo Irakliotis] 11:37:59
+or a small agile airline multitasking
+
+[Leo Irakliotis] 11:38:22
+Okay, so these are the passengers. That is a list
+
+[Leo Irakliotis] 11:38:30
+It's a piece of paper that is logically can be separated into two columns
+
+[Leo Irakliotis] 11:38:36
+Like this, the first column is the first name
+
+[Leo Irakliotis] 11:38:40
+And the last column is the last name of the passengers.
+
+[Leo Irakliotis] 11:38:45
+And for now, we don't have to separate them, but it's the names, okay? And I'll go by first name because we're a very informal airline. We don't care about your last name, so as long as you paid cash
+
+[Leo Irakliotis] 11:38:57
+And what I end up with is with
+
+[Leo Irakliotis] 11:39:01
+a container
+
+[Leo Irakliotis] 11:39:03
+of information, well, in Omer and my example, that container of information is a piece of paper
+
+[Leo Irakliotis] 11:39:10
+But it can be something more abstract in computing, can be something more elaborate. But we start with a piece of paper
+
+[Leo Irakliotis] 11:39:18
+And what we end up with
+
+[Leo Irakliotis] 11:39:22
+is
+
+[Leo Irakliotis] 11:39:25
+Where is my program? Here.
+
+[Leo Irakliotis] 11:39:33
+Let me comment this out
+
+[Leo Irakliotis] 11:39:37
+What they end up with is with a list of passengers
+
+[Leo Irakliotis] 11:39:44
+And what this list looks like
+
+[Leo Irakliotis] 11:39:47
+Let me turn off Copilot here because it
+
+[Leo Irakliotis] 11:39:51
+like to tell me how to write code.
+
+[Leo Irakliotis] 11:39:55
+is
+
+[Leo Irakliotis] 11:39:57
+Here is Passenger Fatima
+
+[Leo Irakliotis] 11:40:02
+Here's passenger of Omar. Huge passenger Ben
+
+[Leo Irakliotis] 11:40:06
+Here is passenger Evan.
+
+[Leo Irakliotis] 11:40:09
+Here's passenger Bella
+
+[Leo Irakliotis] 11:40:11
+And so on. That's what you give back to me. This is your piece of paper
+
+[Leo Irakliotis] 11:40:18
+You give a piece of paper to a person, the equivalent of a piece of paper with information listed in it or a lot of programming languages is called an array.
+
+[Leo Irakliotis] 11:40:30
+Or a list. Python calls them a list. So we are introducing today the concept of arrays. Again, Python calls them calls them lists. But I will use the term interchangeably array and list in this course
+
+[Leo Irakliotis] 11:40:46
+These are our passengers
+
+[Leo Irakliotis] 11:40:47
+How many passengers are there? Well, five. You know what we can count? Fatima, Omar, Ben
+
+[Leo Irakliotis] 11:40:53
+Evan and Bella, 5, right? But as this list grows, because, you know, we went from a small 12-seater airplane, we just upgraded to a Boeing 737, now we have dozens of passengers. It's not
+
+[Leo Irakliotis] 11:41:11
+productive to count one passenger, two passengers, 3 passengers, 128 passengers, 138 passengers, whatever. So, when I have something like this
+
+[Leo Irakliotis] 11:41:21
+Like this
+
+[Leo Irakliotis] 11:41:24
+Let me copy
+
+[Leo Irakliotis] 11:41:26
+Go to plain Python
+
+[Leo Irakliotis] 11:41:38
+When I have a list of passengers like this, I can ask the machine to tell me, hey, what is the length of this list of passengers?
+
+[Leo Irakliotis] 11:41:47
+I'll say five
+
+[Leo Irakliotis] 11:41:49
+And if I want to add one more passenger to this list
+
+[Leo Irakliotis] 11:41:55
+Let's say that Melina was on standby and we have an available seat, so Melina joins the flight
+
+[Leo Irakliotis] 11:42:01
+How many passengers now 6. There is a little bit of automation built in the programming language that tells you how long a list is. That automation is a function called length. What is the length of this list?
+
+[Leo Irakliotis] 11:42:15
+So now I can write
+
+[Leo Irakliotis] 11:42:18
+A simple loop for i in range
+
+[Leo Irakliotis] 11:42:24
+length of the list of passengers
+
+[Leo Irakliotis] 11:42:28
+And what I can do is print
+
+[Leo Irakliotis] 11:42:32
+The
+
+[Leo Irakliotis] 11:42:34
+Name
+
+[Leo Irakliotis] 11:42:36
+from that list for every passenger.
+
+[Leo Irakliotis] 11:42:47
+And if I keep adding names to that list of passengers
+
+[Leo Irakliotis] 11:42:52
+This code doesn't remains the same. I do not have to edit it because the program automagically
+
+[Leo Irakliotis] 11:43:01
+We'll go through every passenger because it automatically computes the number
+
+[Leo Irakliotis] 11:43:08
+of passengers in the least present at any given time
+
+[Leo Irakliotis] 11:43:15
+The concept
+
+[Leo Irakliotis] 11:43:18
+of arrays
+
+[Leo Irakliotis] 11:43:20
+is one of the most consequential tools we have in computing.
+
+[Leo Irakliotis] 11:43:28
+An array is a way to organize data of similar type
+
+[Leo Irakliotis] 11:43:35
+next to each other
+
+[Leo Irakliotis] 11:43:38
+So that I know where to find that data in the fastest possible.
+
+[Leo Irakliotis] 11:43:48
+An array, and this is something that always comes up at a jump interview for technical jobs is what is NRA? NRA is an are contiguous arrangement of data next to each other
+
+[Leo Irakliotis] 11:44:03
+It's like
+
+[Leo Irakliotis] 11:44:04
+In array, sometimes I compare it to an apartment building
+
+[Leo Irakliotis] 11:44:10
+That you have a given number of stories and a given number of apartments per story. So if you know where to start, which floor to start, you go plus one, plus one, plus one, and you can go through every apartment
+
+[Leo Irakliotis] 11:44:27
+In a
+
+[Leo Irakliotis] 11:44:28
+very fast way you can scan, you can review the residence in that building in minutes. Imagine
+
+[Leo Irakliotis] 11:44:39
+an apartment building with 10 stories and 10 apartments per floor. That's 100 residences. Imagine, and you want to go and interview those 100 people for some reason
+
+[Leo Irakliotis] 11:44:52
+All you have to do is go floor after floor, door after door. You'll be done within a day
+
+[Leo Irakliotis] 11:44:59
+Imagine if now you had to go and interview 100 people scattered all over the city.
+
+[Leo Irakliotis] 11:45:08
+And no one
+
+[Leo Irakliotis] 11:45:10
+In single-family homes, and no one lives in the same block. So you have to drive all over the city. You have people on the south side, you have people on the north side, you have people on the west side, you have people downtown. And to drive across the 100 locations in Chicago traffic
+
+[Leo Irakliotis] 11:45:31
+It will take a while.
+
+[Leo Irakliotis] 11:45:34
+But if your residence
+
+[Leo Irakliotis] 11:45:37
+If your subjects, if your data are in the same location
+
+[Leo Irakliotis] 11:45:42
+And they are within predictable and constant distance from each other
+
+[Leo Irakliotis] 11:45:49
+Your life is much easier. Imagine
+
+[Leo Irakliotis] 11:45:52
+If all 12 of us decide to take a road trip to New York
+
+[Leo Irakliotis] 11:46:00
+And we make arrangements and we stay at separate hotels all over Manhattan.
+
+[Leo Irakliotis] 11:46:06
+And as the senior member of the party, and by senior I mean in years, and in no other terms
+
+[Leo Irakliotis] 11:46:13
+I'm responsible for driving the van because we got a good insurance rate because I'm older, therefore safer driver. If the insurance company only knew, but let's not go there
+
+[Leo Irakliotis] 11:46:24
+So, I now have to drive across Manhattan and collect each one of you from different hotels
+
+[Leo Irakliotis] 11:46:33
+And if you think that driving Chicago is bad, wait till you have to drive a minivan in Manhattan
+
+[Leo Irakliotis] 11:46:41
+Wouldn't be better if all 12 of us made arrangements to stay at the same hotel
+
+[Leo Irakliotis] 11:46:47
+So when we say tomorrow morning, we meet to go to the museum
+
+[Leo Irakliotis] 11:46:51
+8 o'clock, everyone is downstairs
+
+[Leo Irakliotis] 11:46:55
+Because if you were at different hotels and say we were going to the museum tomorrow, by the time I collected the last person in the van
+
+[Leo Irakliotis] 11:47:03
+The museum is closed for the day
+
+[Leo Irakliotis] 11:47:08
+Imagine the difference between data scattered in all over the place
+
+[Leo Irakliotis] 11:47:14
+Versus
+
+[Leo Irakliotis] 11:47:16
+data collected in the same place
+
+[Leo Irakliotis] 11:47:19
+is what makes computing possible, our ability to store things contiguously in memory and access them
+
+[Leo Irakliotis] 11:47:28
+By index saying that, hey, you know what
+
+[Leo Irakliotis] 11:47:32
+We block an entire floor of that hotel for a road trip to New York. And if Cannons is at room 100
+
+[Leo Irakliotis] 11:47:40
+Then Omar is in 101, Andrew is in 102, Rebecca is in 103, Fatima is in 104, and so on and so on. So all I need to know is where is the first member of our group, and then I can take that
+
+[Leo Irakliotis] 11:47:55
+room number
+
+[Leo Irakliotis] 11:47:57
+And one, until I exhaust all the members of our group.
+
+[Leo Irakliotis] 11:48:06
+That's what
+
+[Leo Irakliotis] 11:48:09
+array is a contiguous collection of data easily accessible by reference to the first object. The first object is always at position 0, anything else goes plus one.
+
+[Leo Irakliotis] 11:48:20
+So for example, here, if I say list of passengers
+
+[Leo Irakliotis] 11:48:25
+What is at position zero that Fatima, the first person that was added to the list.
+
+[Leo Irakliotis] 11:48:31
+Who is our position? One, that the second member of this list that would be Omar. Who is our position 13
+
+[Leo Irakliotis] 11:48:40
+Well, I only have six people in this list, so basically I'm asking who lives on 13th floor on a five-story building?
+
+[Leo Irakliotis] 11:48:50
+I will get an error that says, hey, your index is out of range. You're asking me for something that doesn't exist in this contiguous collection of data that has only six people. You're asking me for someone who is
+
+[Leo Irakliotis] 11:49:04
+for the 14
+
+[Leo Irakliotis] 11:49:05
+person
+
+[Leo Irakliotis] 11:49:07
+Because 13 means the 14th person
+
+[Leo Irakliotis] 11:49:15
+Let's unpack this who's on first thing
+
+[Leo Irakliotis] 11:49:20
+Because it's a very interesting concept in how computers count versus how people
+
+[Leo Irakliotis] 11:49:27
+count
+
+[Leo Irakliotis] 11:49:40
+I lost my tablet style. There it is
+
+[Leo Irakliotis] 11:49:43
+All right.
+
+[Leo Irakliotis] 11:49:46
+Let's say that
+
+[Leo Irakliotis] 11:49:51
+You are at the grocery store, and here is the register at the cashier register. And there is a line of people
+
+[Leo Irakliotis] 11:50:03
+Waiting to check out
+
+[Leo Irakliotis] 11:50:07
+And this is you
+
+[Leo Irakliotis] 11:50:11
+What's your position in line
+
+[Leo Irakliotis] 11:50:15
+Andrew, if that is you there, what is your position in line?
+
+[andrewchinsen] 11:50:20
+Uh, the verse, zero.
+
+[Leo Irakliotis] 11:50:23
+At first, how do you know you're the first? Other than I can put a big arrow over your head saying this is you
+
+[Leo Irakliotis] 11:50:30
+What
+
+[Leo Irakliotis] 11:50:32
+How do you know if you're at the grocery store and I'm not there with a big
+
+[Leo Irakliotis] 11:50:37
+Paintbrush will put an air over your head, say, hey, this is you
+
+[Leo Irakliotis] 11:50:41
+How do you know you're first in line, Andrew?
+
+[andrewchinsen] 11:50:45
+Uh, I'm closest to the register.
+
+[Leo Irakliotis] 11:50:54
+Okay, what does that mean?
+
+[andrewchinsen] 11:50:58
+I'm in front of everyone else.
+
+[Leo Irakliotis] 11:51:02
+That tells a lot of things about the people behind you, but how do you know
+
+[Leo Irakliotis] 11:51:07
+that you're the first
+
+[Leo Irakliotis] 11:51:16
+You're getting there
+
+[andrewchinsen] 11:51:18
+Am I?
+
+[Leo Irakliotis] 11:51:19
+Yeah. How do you know you're the first
+
+[andrewchinsen] 11:51:28
+that there's no one in front of me.
+
+[Leo Irakliotis] 11:51:31
+So how many people are in front of you?
+
+[andrewchinsen] 11:51:34
+Zero.
+
+[Leo Irakliotis] 11:51:35
+Zero
+
+[Leo Irakliotis] 11:51:40
+Zero people in front of you, that is your position in line is number one because there are zero people in front of you
+
+[Leo Irakliotis] 11:51:49
+If this is Ben here
+
+[Leo Irakliotis] 11:51:51
+His position in line is number two because is number one because there is one person in front of him, meaning that he's second in line.
+
+[Leo Irakliotis] 11:52:00
+So in computing, when we're counting, especially when we're counting our place in a collection, in a line, in an arrangement
+
+[Leo Irakliotis] 11:52:11
+Our place is indicated by how many people are in front of us
+
+[Leo Irakliotis] 11:52:16
+So I'm number… I'm first
+
+[Leo Irakliotis] 11:52:19
+Meaning there are zero people in front of me, therefore my number is zero. The computer says, who is the one that has zero people in front of them? I look, that's me. I'm first.
+
+[Leo Irakliotis] 11:52:31
+So in computing.
+
+[Leo Irakliotis] 11:52:33
+when we are creating a collection like a list of passengers, and the first one in our example was Fatima.
+
+[Leo Irakliotis] 11:52:42
+or Fatima
+
+[Leo Irakliotis] 11:52:44
+Where's the accent?
+
+[Fatima Camara] 11:52:46
+Fatima
+
+[Leo Irakliotis] 11:52:47
+Okay
+
+[Leo Irakliotis] 11:52:50
+So
+
+[Leo Irakliotis] 11:52:51
+You were the first person, and I'm showing this property by saying there are zero people
+
+[Leo Irakliotis] 11:52:58
+In front of you. So place in line
+
+[Leo Irakliotis] 11:53:09
+You are the first. Why? Because that's how many people in front of you
+
+[Leo Irakliotis] 11:53:18
+Omar
+
+[Leo Irakliotis] 11:53:22
+was second
+
+[Leo Irakliotis] 11:53:24
+Because there was only one person in front of him
+
+[Leo Irakliotis] 11:53:30
+And I'm putting quotes here to indicate that these are strings. I'm not saying Omar.
+
+[Leo Irakliotis] 11:53:35
+This is the string that corresponds to Omar's name
+
+[Leo Irakliotis] 11:53:41
+So we are using the enumeration of items in front of you
+
+[Leo Irakliotis] 11:53:47
+to indicate your place in line. So it's kind of a little bit disconnecting from how we
+
+[Leo Irakliotis] 11:53:55
+do things. I'm first in line, I'm number one in line. Okay, this is about you. I'm first in line, I'm number one in line.
+
+[Leo Irakliotis] 11:54:02
+From the computer's perspective is you're first in line because there are zero people in front of you, and that's how I label you. You're the one with zero people in front. You're the one with one person in front. You're the one with three persons involved. Therefore, if you're the one with three persons in front of you, you're number four in line. You're
+
+[Leo Irakliotis] 11:54:21
+fourth person
+
+[Leo Irakliotis] 11:54:22
+So that's the mathematical reason we're using this weird labeling indexing system. It has a name, of course, it's called
+
+[Leo Irakliotis] 11:54:32
+Zero-based
+
+[Leo Irakliotis] 11:54:40
+Indexing or counting
+
+[Leo Irakliotis] 11:54:45
+or numbering
+
+[Leo Irakliotis] 11:54:50
+And today, zero-based indexing is the standard way to label
+
+[Leo Irakliotis] 11:54:58
+positions in NRA in a contiguous arrangement of data
+
+[Leo Irakliotis] 11:55:03
+It was not always like this
+
+[Leo Irakliotis] 11:55:06
+In the 50s
+
+[Leo Irakliotis] 11:55:10
+When
+
+[Leo Irakliotis] 11:55:12
+programmers and computer designers at that time were still trying to figure out this technology. They did the natural thing.
+
+[Leo Irakliotis] 11:55:20
+The first item in line was number one, not number 0.
+
+[Leo Irakliotis] 11:55:30
+But
+
+[Leo Irakliotis] 11:55:33
+As computers evolved, the hardware became aware of zero-based indexing before programmers became aware of zero-based indexing
+
+[Leo Irakliotis] 11:55:45
+So
+
+[Leo Irakliotis] 11:55:47
+What happened in 1954, IBM donated a supercomputer
+
+[Leo Irakliotis] 11:55:53
+to MIT. Boring in 1954 so that supercomputer was just as fast as a TV remote control that has run out of batteries.
+
+[Leo Irakliotis] 11:56:03
+But in 1954, that was amazing technology. And IBM donated that the best computer they had just built
+
+[Leo Irakliotis] 11:56:13
+to MIT.
+
+[Leo Irakliotis] 11:56:15
+He said, okay, take this computer and do wonderful research with it, but it comes with strings attached.
+
+[Leo Irakliotis] 11:56:21
+Every time, because this is the most powerful computer in the world
+
+[Leo Irakliotis] 11:56:26
+And our CEO is a very competitive person. Every time he takes his sailboat out for racing
+
+[Leo Irakliotis] 11:56:34
+We want to use that computer to feed the program with weather data and get the best way to trim the sails of that boat
+
+[Leo Irakliotis] 11:56:44
+So that our CEO can have an advantage in that race.
+
+[Leo Irakliotis] 11:56:49
+And the deal was whenever there is a Tom Watson Jr. wanting to go race in his sailboat, his office will call MIT and say, hey, run the program
+
+[Leo Irakliotis] 11:57:01
+Around the sailboat optimization program
+
+[Leo Irakliotis] 11:57:04
+That computer, like I said, was as fast as a TV remote control, and it could only run one program at a time
+
+[Leo Irakliotis] 11:57:12
+And if you were the researcher whose program was running at the time, and at that time, programs took days to complete
+
+[Leo Irakliotis] 11:57:23
+If you were the programmer
+
+[Leo Irakliotis] 11:57:26
+Whose program was running and you were, I don't know, couple of hours you were you were waiting days for your result, and you know that any minute now
+
+[Leo Irakliotis] 11:57:35
+In the phone call came, they dropped your program
+
+[Leo Irakliotis] 11:57:41
+To load the sailboat program.
+
+[Leo Irakliotis] 11:57:44
+So now you have to take your program and go to the back of the waiting line
+
+[Leo Irakliotis] 11:57:54
+And hope that by the time you come up, the weather is not that good and there will be no more interruptions by Tom Watson Jr.
+
+[Leo Irakliotis] 11:58:05
+What programmers discovered at that time is that if they could move their data in arrays from one based indexing to zero-based indexing, the programs will run faster because IBM had just introduced
+
+[Leo Irakliotis] 11:58:24
+a logic and arithmetic design that allowed for zero-based indexing
+
+[Leo Irakliotis] 11:58:29
+And if you could modify your program a little bit to take advantage of that
+
+[Leo Irakliotis] 11:58:34
+It will run faster and the faster your program run, the less the probability that it will be interrupted because someone wanted to go sailing in the Chesapeake Bay.
+
+[Leo Irakliotis] 11:58:46
+So this is the apocryphal story
+
+[Leo Irakliotis] 11:58:48
+of how we became we moved to zero-based indexing
+
+[Leo Irakliotis] 11:58:53
+But the more technical story is that we're using zero-based indexing to identify someone's position in a collection by how many items are in front of them
+
+[Leo Irakliotis] 11:59:05
+So whether you want to remember the apocryphal story about Thomas J. Watson Jr. selling the Powell one sailboat in Chesapeake Bay and calling MIT to get ahead of competition, or whether you want to use ordinal and positional numbers like we do here
+
+[Leo Irakliotis] 11:59:23
+your call, but remember who's on first number 0. Who's on second? Number one, and so on.
+
+[Leo Irakliotis] 11:59:36
+So in this respect, all I have to do
+
+[Leo Irakliotis] 11:59:39
+is to keep adding
+
+[Leo Irakliotis] 11:59:43
+Passenger here
+
+[Leo Irakliotis] 11:59:44
+And when I am ready
+
+[Leo Irakliotis] 11:59:48
+To run the program, all I have to do is the number of passengers
+
+[Leo Irakliotis] 12:00:03
+is the length of the list of passengers.
+
+[Leo Irakliotis] 12:00:13
+And this loop
+
+[Leo Irakliotis] 12:00:15
+We'll run over each passenger
+
+[Leo Irakliotis] 12:00:21
+And here
+
+[Leo Irakliotis] 12:00:29
+I will print the I
+
+[Leo Irakliotis] 12:00:35
+item, I'll change my loop a little bit instead of using passenger as a variable, I use I
+
+[Leo Irakliotis] 12:00:40
+To make things a little bit more compact.
+
+[Leo Irakliotis] 12:00:45
+For every number for which I have a passenger, 0, 1, 2, 3, and so on
+
+[Leo Irakliotis] 12:00:54
+Do the computation that we did before and go to the list of passengers
+
+[Leo Irakliotis] 12:01:02
+and pull out the i-th item
+
+[Leo Irakliotis] 12:01:06
+and print it
+
+[Leo Irakliotis] 12:01:07
+And again, the zeroth item will be the first name on the list, Fatima, the one item will be the second name on the list, Omar, Ben, Evan, and so on. So now my output is a little bit more realistic
+
+[Leo Irakliotis] 12:01:23
+Passenger Fatima C1 Alpha, passenger Omar, C1B, Ben 1, Charlie, and so on and so on
+
+[Leo Irakliotis] 12:01:31
+However.
+
+[Leo Irakliotis] 12:01:33
+I still now run to the problem of things not being lined up and I get, you know, I get kind of
+
+[Leo Irakliotis] 12:01:41
+Annoyed when things do not line up. So I can always go back and change the format
+
+[Leo Irakliotis] 12:01:49
+In the print statement, and say, hey, print these names
+
+[Leo Irakliotis] 12:01:53
+And they were, you know, 10 characters long.
+
+[Leo Irakliotis] 12:02:00
+So now it allocates 10 spaces for a name. And for a name with only four characters like Omar will have 1, 2, 3, 4, 5, 6 empty spaces. So put some empty space here
+
+[Leo Irakliotis] 12:02:15
+What do you do? I mean, at least it gives you a predictable output.
+
+[Leo Irakliotis] 12:02:23
+So now I have realistic names
+
+[Leo Irakliotis] 12:02:27
+And
+
+[Leo Irakliotis] 12:02:28
+Okay, looks nice.
+
+[Leo Irakliotis] 12:02:30
+But more important, I have a concept of organizing data
+
+[Leo Irakliotis] 12:02:37
+in contiguous arrangements
+
+[Leo Irakliotis] 12:02:40
+that are accessible by index
+
+[Leo Irakliotis] 12:02:45
+Another example
+
+[Leo Irakliotis] 12:02:48
+To appreciate arrays is I'm going to write a completely different program and I will need some help
+
+[Leo Irakliotis] 12:02:57
+From the floor
+
+[Leo Irakliotis] 12:03:06
+Let's say that I am collecting
+
+[Leo Irakliotis] 12:03:18
+daily temperatures for this week. Okay, so on Monday, what was the high temperature on Monday? Anyone remembers or make up the numbers
+
+[Leo Irakliotis] 12:03:27
+Jessica, you are my meteorology partner. Make up numbers. What do you think was the high temperature on Sunday?
+
+[cheska ocampo] 12:03:36
+I'm probably like the only one non-Chicago, but I'm going to say like 8
+
+[Leo Irakliotis] 12:03:40
+Okay, I'll take your location, 80. What you had there on Monday?
+
+[cheska ocampo] 12:03:46
+88
+
+[Leo Irakliotis] 12:03:48
+Tuesday
+
+[cheska ocampo] 12:03:49
+86.
+
+[Leo Irakliotis] 12:03:52
+What's the call for today?
+
+[cheska ocampo] 12:03:55
+Today is 89.
+
+[Leo Irakliotis] 12:04:00
+Where are you?
+
+[cheska ocampo] 12:04:00
+North Carolina.
+
+[Leo Irakliotis] 12:04:02
+All right.
+
+[Leo Irakliotis] 12:04:03
+How's the humidity?
+
+[cheska ocampo] 12:04:04
+Really bad. I'm struggling. I'm not from here, so…
+
+[Leo Irakliotis] 12:04:08
+You could be in Chicago.
+
+[cheska ocampo] 12:04:10
+I wish I was
+
+[Leo Irakliotis] 12:04:11
+With these temperatures and humidity, you could be in Chicago. All right, so now I want to get the average temperature for those four days
+
+[Leo Irakliotis] 12:04:19
+Okay? So how do I compute the average value of those 4 days? Average. So first of all, what is the average? You have to add those numbers and divide them by how many days, right? So first, I have to write the sum
+
+[Leo Irakliotis] 12:04:34
+Okay, Sunday
+
+[Leo Irakliotis] 12:04:39
+Last Monday temperature last Tuesday temperature plus Wednesday temperature.
+
+[Leo Irakliotis] 12:04:45
+And then the average
+
+[Leo Irakliotis] 12:04:49
+is some
+
+[Leo Irakliotis] 12:04:50
+Divided by 4. And then print the average
+
+[Leo Irakliotis] 12:04:56
+Okay, so that here's the average temperature for the last four days at Ceska's location, 85.7
+
+[Leo Irakliotis] 12:05:04
+Okay.
+
+[Leo Irakliotis] 12:05:06
+So let's say that we're acute and say, hey, you know, Jessica, what was the temperature on the Saturday before that?
+
+[Leo Irakliotis] 12:05:13
+Now let's say
+
+[Leo Irakliotis] 12:05:16
+That the Saturday the temperature was 78.
+
+[Leo Irakliotis] 12:05:22
+So now I have to go into my code
+
+[Leo Irakliotis] 12:05:26
+And include Saturday here
+
+[Leo Irakliotis] 12:05:29
+and change the average from 4 days
+
+[Leo Irakliotis] 12:05:34
+to 5 days
+
+[Leo Irakliotis] 12:05:38
+And then, oh, you know what? Do you remember what was Friday? Sure, I remember what was Friday. Friday was 81.
+
+[Leo Irakliotis] 12:05:45
+When I go here and I add Friday
+
+[Leo Irakliotis] 12:05:49
+But because I'm tired or because my dog just walked into the office and got distracted, I forget to change the denominator in line 10, and I run the program
+
+[Leo Irakliotis] 12:06:00
+And now I say that the average temperature in North Carolina the last 5 days was 100 degrees
+
+[Leo Irakliotis] 12:06:06
+Inaccurate data.
+
+[Leo Irakliotis] 12:06:07
+Why? Because every time I collect a new data point, I have to manually update
+
+[Leo Irakliotis] 12:06:15
+The program
+
+[Leo Irakliotis] 12:06:23
+A better way to do it is to collect the temperatures
+
+[Leo Irakliotis] 12:06:27
+What works 8
+
+[Leo Irakliotis] 12:06:30
+Etuan, what I had there
+
+[Leo Irakliotis] 12:06:36
+78
+
+[Leo Irakliotis] 12:06:39
+AD, A, 8886
+
+[Leo Irakliotis] 12:06:42
+89
+
+[Leo Irakliotis] 12:06:44
+And write code to do the computation. So the sum, I'm initializing a sum at 0. I'm writing a loop for I in range length of the temperature array. How many
+
+[Leo Irakliotis] 12:06:55
+So basically what I'm saying in line 17 is for every item in this collection I call temperature
+
+[Leo Irakliotis] 12:07:04
+Take that value and add it to the sum
+
+[Leo Irakliotis] 12:07:11
+And when you're adding
+
+[Leo Irakliotis] 12:07:14
+Compute the average as the sum divided by how many items
+
+[Leo Irakliotis] 12:07:20
+are in that array
+
+[Leo Irakliotis] 12:07:23
+and print the correct average
+
+[Leo Irakliotis] 12:07:27
+So now, when I run the code
+
+[Leo Irakliotis] 12:07:31
+The incorrect value, because I forgot to change the denominator in line 10 is 100 degrees. The correct value is
+
+[Leo Irakliotis] 12:07:41
+83.
+
+[Leo Irakliotis] 12:07:44
+And let's say that I go back one more day, Thursday and Thursday last week was 85 in North Carolina.
+
+[Leo Irakliotis] 12:07:55
+And I add Thursday here, but also I forget to change the denominator one more time, and I add the Thursday data to this array as well, 85.
+
+[Leo Irakliotis] 12:08:07
+And just run the code
+
+[Leo Irakliotis] 12:08:08
+Now, Carolina, North Carolina is as hot as Arizona, but the actual temperature is here, the actual average temperature
+
+[Leo Irakliotis] 12:08:16
+In the second code I wrote here, all I have to do is just add new data. I… the same code that estimates the average for 4 days is good to estimate the average for 4,000 days without changing the computation
+
+[Leo Irakliotis] 12:08:31
+at all
+
+[Leo Irakliotis] 12:08:32
+The computation here remains the same. All that I'm updating is the data.
+
+[Leo Irakliotis] 12:08:42
+In the program
+
+[Leo Irakliotis] 12:08:42
+figures by itself, how many data items are there and how to take each one of them into the computation
+
+[Leo Irakliotis] 12:08:51
+And then how to compute the average
+
+[Leo Irakliotis] 12:08:54
+By knowing exactly how many… I don't hear the denominator that is updated automatically here in line 11, the denominator needs to be updated by me manually.
+
+[Leo Irakliotis] 12:09:06
+In line 21, it is done automatically. And this is the beauty of the array. It allows us to create a collection of data
+
+[Leo Irakliotis] 12:09:17
+And it derives information from that collection very easily by accessing every separate item by an index value
+
+[Leo Irakliotis] 12:09:26
+And these are the index values that we discussed. The first item is at position 0. The second item is at position
+
+[Leo Irakliotis] 12:09:36
+and so on
+
+[Leo Irakliotis] 12:09:41
+So this one here is this collection. That's what I call this collection temperature
+
+[Leo Irakliotis] 12:09:49
+Position 3
+
+[Leo Irakliotis] 12:09:52
+And this value of indices, around 3, 4, 5, 6
+
+[Leo Irakliotis] 12:09:57
+So the length here
+
+[Leo Irakliotis] 12:10:00
+How many… what is the length of this collection? Seven. It has seven items. So I'm running when
+
+[Leo Irakliotis] 12:10:08
+this range
+
+[Leo Irakliotis] 12:10:10
+from 0. up to and not including 7.
+
+[Leo Irakliotis] 12:10:14
+Remember, the syntax of range is that the terminating value is not included in the counting. Start counting is 0, 1,
+
+[Leo Irakliotis] 12:10:26
+4, 5, 6. Those are seven values
+
+[Leo Irakliotis] 12:10:31
+0, 1, 2, 3, 4, 5, 6.
+
+[Leo Irakliotis] 12:10:39
+And I start with an empty sum
+
+[Leo Irakliotis] 12:10:41
+And for each of those items, I add the value to the sum. That's what happens here. I keep incrementing the sum from 85.
+
+[Leo Irakliotis] 12:10:52
+to 166, 178 plus 80. And when I'm done, when this loop ends
+
+[Leo Irakliotis] 12:10:58
+And there are no more values to consider. I take the length of the array and I divide it.
+
+[Leo Irakliotis] 12:11:05
+I divided the sum with it
+
+[Leo Irakliotis] 12:11:11
+This has a name, it's called a cumulative
+
+[Leo Irakliotis] 12:11:16
+algorithm
+
+[Leo Irakliotis] 12:11:20
+And it's a very simple programming technique to add numbers together for averaging purposes.
+
+[Leo Irakliotis] 12:11:28
+And I could make the program a little bit more illustrative
+
+[Leo Irakliotis] 12:11:34
+By saying
+
+[Leo Irakliotis] 12:11:38
+N is the number of items
+
+[Leo Irakliotis] 12:11:41
+VRA
+
+[Leo Irakliotis] 12:11:56
+And the range here, instead of calling the function for the length of the array, I could say n. And here I can divide by n
+
+[Leo Irakliotis] 12:12:07
+So now my code looks almost like it came out of an introductory text
+
+[Leo Irakliotis] 12:12:13
+in statistics. How do you compute the average of a collection of values? You add those values together, that's what happens in lines 20, 21, and then you divide that sum by the number of items, that's line 23.
+
+[Leo Irakliotis] 12:12:27
+All it's missing from this to look more mathematical is the ability to write Greek symbols instead of variable names with English names.
+
+[Leo Irakliotis] 12:12:44
+We're in week 4 of the course, and I mentioned at the beginning, and I'll keep mentioning that if you understand arrays, if you understand for loops, if you understand strings, if you understand if statements, you have
+
+[Leo Irakliotis] 12:12:58
+80, 90% of what you need to be a programmer. Our job from now on
+
+[Leo Irakliotis] 12:13:05
+is to practice
+
+[Leo Irakliotis] 12:13:08
+Our understanding
+
+[Leo Irakliotis] 12:13:10
+On those four
+
+[Leo Irakliotis] 12:13:12
+concepts to internalize as much as we can. What is an array
+
+[Leo Irakliotis] 12:13:19
+What
+
+[Leo Irakliotis] 12:13:20
+how a for loop works with an array
+
+[Leo Irakliotis] 12:13:24
+How do I access an array?
+
+[Leo Irakliotis] 12:13:27
+And how to use if statements to do different things around arrays, or around the program in general, and how to use strings to represent data to the user.
+
+[Leo Irakliotis] 12:13:40
+That's what we're going to be doing for the remaining six weeks
+
+[Leo Irakliotis] 12:13:45
+In the course. The assignments that are coming your way today, and are due on Monday the 15th are mostly going to focus on a very simple arrays
+
+[Leo Irakliotis] 12:13:56
+We're going to… there's going to be a little bit of reading for that. But we're going to play for now with arrays that involve integer numbers like the array in line 16.
+
+[Leo Irakliotis] 12:14:09
+Arrays can hold any type of data, like you saw earlier, we used an array of first names for the passengers
+
+[Leo Irakliotis] 12:14:17
+Arrays can collect any kind of data that a computer can represent.
+
+[Leo Irakliotis] 12:14:22
+Python takes arrays to the next level
+
+[Leo Irakliotis] 12:14:27
+That makes it, in my opinion, problematic for an introductory programming language, but will not go there.
+
+[Leo Irakliotis] 12:14:34
+for a while in Python arrays lists can hold data of different types
+
+[Leo Irakliotis] 12:14:41
+That is not possible in most programming languages because arrays are
+
+[Leo Irakliotis] 12:14:47
+meant to be for items of the same data type, meaning items of the same size.
+
+[Leo Irakliotis] 12:14:54
+It's not just any apartment building, it's an apartment building where each unit is identical to the next unit. It's more like a cookie cutter apartment building, more like a dorm
+
+[Leo Irakliotis] 12:15:09
+Building where every room is more or less identical. It's not like an apartment building where you have in one bedroom here, a 3 bedroom here and one bedroom here, a four bedroom there. Every apartment is identical. That's what it means to be of the same data type.
+
+[Leo Irakliotis] 12:15:24
+Python
+
+[Leo Irakliotis] 12:15:25
+allows us to mix and match data types
+
+[Leo Irakliotis] 12:15:28
+Which is very useful at the developer's level, but not at the introductory programming level. So we will treat Python lists for now will make an artificial restriction to use only same data types as in line 16 here
+
+[Leo Irakliotis] 12:15:44
+We're only using integers.
+
+[Leo Irakliotis] 12:15:47
+And we're going to work on simple integer arrays for this week's assignments and we'll pick up things on Monday from there. Questions, comments, requests?
+
+[Leo Irakliotis] 12:16:02
+All right, again
+
+[Leo Irakliotis] 12:16:04
+whatever you want to use for unfeeling overwhelmed, it's fine
+
+[Leo Irakliotis] 12:16:13
+Let me know this is
+
+[Leo Irakliotis] 12:16:16
+If you get arrays
+
+[Leo Irakliotis] 12:16:19
+You know, I said those four pillars. A race is 50% of those four pillars
+
+[Leo Irakliotis] 12:16:23
+You get a raise, you're halfway through.
+
+[Leo Irakliotis] 12:16:27
+If statements, loops, strings
+
+[Leo Irakliotis] 12:16:30
+are the other 50%, but arrays by themselves are so central to computing because EPs
+
+[Leo Irakliotis] 12:16:38
+The most direct way we have to the underlying hardware.
+
+[Leo Irakliotis] 12:16:44
+A computer to us these days is an abstraction.
+
+[Leo Irakliotis] 12:16:48
+What you see here is not code that is executed on my computer under my desk here at the house. What you see here is code that is executed on some computer, on some cloud server owned by Microsoft, and I have no idea whether that server is
+
+[Leo Irakliotis] 12:17:05
+physically located in North America or in South America or in Europe
+
+[Leo Irakliotis] 12:17:11
+So basically what you see there is an app representation of a computer. The computer itself
+
+[Leo Irakliotis] 12:17:20
+is somewhere else
+
+[Leo Irakliotis] 12:17:24
+A computer that I use often
+
+[Leo Irakliotis] 12:17:27
+For programming is right here. This is two small raspberry pies
+
+[Leo Irakliotis] 12:17:33
+That I can plug in a monitor and I can plug in
+
+[Leo Irakliotis] 12:17:38
+a keyboard and program. This is… this is what a computer is.
+
+[Leo Irakliotis] 12:17:45
+But the closest I come to a computer like this, well, well, right now I'm holding it because I have one. But the closest most of us as developers come to the actual hardware
+
+[Leo Irakliotis] 12:17:56
+that does the job for us is through arrays. This is as close as we can get to the actual memory of the computer
+
+[Leo Irakliotis] 12:18:04
+through a programming language. There are other ways. There are programming languages called assembly languages, assembly code that gets us even closer
+
+[Leo Irakliotis] 12:18:16
+But
+
+[Leo Irakliotis] 12:18:17
+Most people with a marginal sense of sanity will not touch those programming languages unless they're desperate.
+
+[Leo Irakliotis] 12:18:26
+So arrays is how most of us get to actually touch
+
+[Leo Irakliotis] 12:18:32
+metaphorically, the underlying hardware.
+
+[Leo Irakliotis] 12:18:37
+Very important, so spend some time reading and appreciating arrays. Let me know if you have any questions.
+
+[Leo Irakliotis] 12:18:43
+Otherwise, have a great rest of the week, and I will see you Monday.
+
+[Kandace Garcia] 12:18:47
+Thank you
+
+[Fatima Camara] 12:18:48
+Thank you.
+
