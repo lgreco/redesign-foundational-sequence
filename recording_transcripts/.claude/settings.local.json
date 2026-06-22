@@ -12,7 +12,13 @@
       "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-06-10-COMP170.md /Users/leo/GitHub_Clones/comp-170-su26/)",
       "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-06-10-COMP271.md /Users/leo/GitHub_Clones/comp-271-su26/)",
       "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-06-15-COMP271.md /Users/leo/GitHub_Clones/comp-271-su26/)",
-      "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-06-15-COMP170.md /Users/leo/GitHub_Clones/comp-170-su26/)"
+      "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-06-15-COMP170.md /Users/leo/GitHub_Clones/comp-170-su26/)",
+      "Bash(cp 2026-06-16-COMP170.md ../../comp-170-su26/)",
+      "Bash(cp 2026-06-16-COMP271.md ../../comp-271-su26/)",
+      "Bash(mv ../../comp-170-su26/2026-06-16-COMP170.md ../../comp-170-su26/week05/)",
+      "Bash(mv ../../comp-271-su26/2026-06-16-COMP271.md ../../comp-271-su26/week05/)",
+      "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-06-17-COMP170.md /Users/leo/GitHub_Clones/comp-170-su26/)",
+      "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-06-17-COMP271.md /Users/leo/GitHub_Clones/comp-271-su26/)"
     ]
   }
 }

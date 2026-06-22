@@ -49,36 +49,10 @@ COMP 170 is a CS1 course — many students are writing code for the first time. 
 
 Summaries must be precise enough that a student could use them to reconstruct what happened in class without being misled.
 
-* **Functions vs. methods**: Standalone functions in Python are *functions*, not *methods*. Methods belong to classes. Do not use these terms interchangeably.
+* **Method, not function**: Per the repository-wide terminology convention (see `CLAUDE.md`), use *method* for all callable code — standalone `def` blocks, class members, and built-ins like `print()` and `input()` — except when referring to a strictly mathematical function. Do not use "function" in headings or prose.
 * **Loop bounds**: `range(n)` yields `0` through `n − 1`. Describe ranges as "0 through n − 1", not "0 to n."
 * **`print()` behavior**: `print()` with no arguments moves to the next line. It does not insert a blank line *between* rows — only between blocks of output if called at the end of a group.
 * **Code behavior**: Describe what the code actually does. If the code checks a condition before doing work (e.g., verifying all letters are the same height), note it — even briefly — because it models a habit worth learning.
 * **Python lists vs. arrays**: Python lists are not true arrays. When the course makes this distinction, the summary should reflect it clearly.
 
 * After both summaries are written, copy YYYY-MM-DD-COMP170.md to ../../comp-170-su26/ and copy YYYY-MM-DD-COMP271.md to ../../comp-271-su26/.
-=======
-# Summarize classroom transcript
-
-## Definitions
-
-COMP 271 meets from 10:25 AM to 11:15 AM
-COMP 170 meets from 11:30 AM to 12:20 PM
-
-## Input
-
-<YYYY-MM-DD>.txt: closed caption transcript for class meetings on YYYY-MM-DD.
-
-## Output:
-
-YYYY-MM-DD-COMP170.md: summary of discussion for COMP 170.
-YYYY-MM-DD-COMP271.md: summary of discussion for COMP 271.
-
-## Task 
-
-For every day (YYYY-MM-DD) for which there are no YYYY-MM-DD-COMP170.md and YYYY-MM-DD-COMP271.md files present:
-
-* Review the input file YYYY-MM-DD.txt.
-* Use the timestamps and the class time definitions above to identify which portions of the transcript belong to each class. Ignore any conversation that falls outside both class windows (e.g., one-on-one exchanges after a class ends).
-* Write a summary for the COMP 271 class in YYYY-MM-DD-COMP271.md. Keep the summary simple and short, about 250 words. Use markdown headers to organize topics covered.
-* Write a summary for the COMP 170 class in YYYY-MM-DD-COMP170.md. Keep the summary simple and short, about 250 words. Use markdown headers to organize topics covered.
->>>>>>> 7023cd5 (checkin)
