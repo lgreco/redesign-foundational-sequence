@@ -14,7 +14,7 @@ COMP 170 meets from 11:30 AM to 12:20 PM
 YYYY-MM-DD-COMP170.md: summary of discussion for COMP 170.
 YYYY-MM-DD-COMP271.md: summary of discussion for COMP 271.
 
-## Task 
+## Task
 
 For every day (YYYY-MM-DD) for which there are no YYYY-MM-DD-COMP170.md and YYYY-MM-DD-COMP271.md files present:
 
@@ -28,6 +28,7 @@ For every day (YYYY-MM-DD) for which there are no YYYY-MM-DD-COMP170.md and YYYY
 Write from a first-person plural ("we") perspective that treats the class as a shared experience. When a student contributed something in class — sharing their screen, running code, answering a question — acknowledge their role collaboratively rather than describing them as a subject. For example:
 * Prefer: "With Evan's help, we demonstrated X" or "We explored X together with Evan"
 * Avoid: "Student Evan did X" or "Evan performed X"
+* Use LaTeX when possible for mathematical notation. Number literals by themselves should be just plain text. But even simple arithmetic operations should be in LaTeX. For example, $1+2=3$ rather than 1+2=3 in plain text.
 
 Keep the voice active, collegial, and concise.
 
