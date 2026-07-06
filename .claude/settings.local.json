@@ -5,7 +5,10 @@
       "Bash(git push *)",
       "Bash(git -C ~/GitHub_Clones/introcs-cs2-examples-python pull)",
       "Bash(git -C ~/GitHub_Clones/prompts-public pull)",
-      "Bash(git *)"
+      "Bash(git *)",
+      "Read(//Users/leo/GitHub_Clones/comp-271-su26/**)",
+      "Read(//Users/leo/**)",
+      "Bash(python3 week07-solutions.py)"
     ]
   }
 }
