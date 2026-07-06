@@ -29,6 +29,7 @@ Write from a first-person plural ("we") perspective that treats the class as a s
 * Prefer: "With Evan's help, we demonstrated X" or "We explored X together with Evan"
 * Avoid: "Student Evan did X" or "Evan performed X"
 * Use LaTeX when possible for mathematical notation. Number literals by themselves should be just plain text. But even simple arithmetic operations should be in LaTeX. For example, $1+2=3$ rather than 1+2=3 in plain text.
+  * For big-oh notation use `\mathcal O`, for example `$\mathcal O(n)$` instead of `$O(n)$`.
 
 Keep the voice active, collegial, and concise.
 
