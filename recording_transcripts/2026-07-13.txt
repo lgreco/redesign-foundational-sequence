@@ -1,0 +1,2604 @@
+[Leo Irakliotis] 10:25:04
+Coffee, when are you heading out again? Is it this week or next week?
+
+[Kofi Nyarku] 10:25:10
+No, it's this week, Professor. Thursday morning.
+
+[Leo Irakliotis] 10:25:13
+And when are you back?
+
+[Kofi Nyarku] 10:25:16
+Uh, August 16th.
+
+[Leo Irakliotis] 10:25:17
+Okay, um…
+
+[Leo Irakliotis] 10:25:22
+Let me make a note, because I need to follow up with you over email with you to make any final arrangements.
+
+[Leo Irakliotis] 10:25:29
+Okay, go ahead.
+
+[Kofi Nyarku] 10:25:30
+Yeah, Professor.
+
+[Leo Irakliotis] 10:25:37
+Hey Temeeka, how are you?
+
+[Temeeka Glass] 10:25:37
+Good morning.
+
+[Temeeka Glass] 10:25:39
+Pretty good. How about y'all?
+
+[Leo Irakliotis] 10:25:44
+Good, good, uh, good weekend, everyone.
+
+[Leo Irakliotis] 10:25:51
+It's getting…
+
+[Leo Irakliotis] 10:25:53
+What's the forecast for today? Do I even want to look at it?
+
+[Leo Irakliotis] 10:26:02
+89 today, 9, oh lord.
+
+[Temeeka Glass] 10:26:07
+It's looking very warm. Very, very warm.
+
+[Leo Irakliotis] 10:26:13
+Uh, well, you know, it's the time of the year, I get it, I get it. But, uh…
+
+[Leo Irakliotis] 10:26:20
+I'll be… I'll be hugging the… I'll be like my… my… one of my dogs in the winter, she likes to sleep right next by the vent of the uh… the heating vent, because she likes that blast of hot air on her face. I'll be the opposite. I'll be next to the air conditioning vent.
+
+[Leo Irakliotis] 10:26:40
+clinging for dear life.
+
+[Leo Irakliotis] 10:26:51
+Let's get started. Any questions, any comments, any requests?
+
+[Leo Irakliotis] 10:27:01
+Are we okay with home?
+
+[Temeeka Glass] 10:27:03
+Oh, I was gonna say for the homework, I…
+
+[Temeeka Glass] 10:27:08
+On the, uh, well…
+
+[Temeeka Glass] 10:27:09
+I realized, like, on the adding portion, when I got to queuing in, like, popping, I mean, sorry, stacking, it was correct, but then, like, I don't know, I messed up the logic somewhere where, like, doing the queue, adding via the queue.
+
+[Temeeka Glass] 10:27:26
+Just messed up the array and didn't.
+
+[Temeeka Glass] 10:27:32
+like…
+
+[Temeeka Glass] 10:27:34
+Create the array correctly.
+
+[Temeeka Glass] 10:27:35
+I guess… or not create the array correct, like, queue in the crate… in the array correctly. Um, and so every time, like, I changed one, it would mess up stack, and then queue would be correct, and then if I changed it again, queue would be correct, but stack would be inc.
+
+[Leo Irakliotis] 10:27:50
+I like messing up with arrays because there is no other way to learn that stuff.
+
+[Leo Irakliotis] 10:27:56
+Um, and if you don't mess up, and if you don't make mistakes, and if you don't bang your head on the wall a couple of times, like, why me? Why is it… you're not learning.
+
+[Leo Irakliotis] 10:28:08
+But, um, the, um, the idea here, and, uh, that's, that's a good way, uh, to, uh, move into what I wanted to cover today. Um, the idea here is that we have an underlying array, like we do here, and I'll start with an initial capacity of 4.
+
+[Leo Irakliotis] 10:28:32
+to keep things like this. Um, and we want… let's say we're building.
+
+[Leo Irakliotis] 10:28:38
+A Q. Let's start with a Q. But, you know, whether we're doing a Q or a stack.
+
+[Leo Irakliotis] 10:28:46
+Some behavior…
+
+[Leo Irakliotis] 10:28:48
+Uh, is the same, like…
+
+[Leo Irakliotis] 10:28:50
+We have…
+
+[Leo Irakliotis] 10:28:52
+The same behavior, for example, when we do a peak.
+
+[Leo Irakliotis] 10:28:56
+We look at the first element.
+
+[Leo Irakliotis] 10:28:59
+when we look at the size, how many items are here, the same elements. That's why I have that, uh, what do I call it, uh, the bound…
+
+[Leo Irakliotis] 10:29:11
+Collection that has all the common, um…
+
+[Leo Irakliotis] 10:29:16
+operations. And what we end up here is… what we end up with is the bounded collection.
+
+[Leo Irakliotis] 10:29:30
+Object. Class.
+
+[Leo Irakliotis] 10:29:35
+And then we create a stack object, or a stack class, and a queue object, or a queue class, and we have those two classes inherit.
+
+[Leo Irakliotis] 10:29:50
+from the bounded collection.
+
+[Leo Irakliotis] 10:29:53
+And all the common operations are there, and we use inheritance to derive, so we don't have to replicate… we don't have to write, for example, a pick method in stack, and exactly the same method in Q. Because if you play your cards right.
+
+[Leo Irakliotis] 10:30:11
+And…
+
+[Leo Irakliotis] 10:30:16
+Whether you are building a stack or a queue.
+
+[Leo Irakliotis] 10:30:23
+This is…
+
+[Leo Irakliotis] 10:30:24
+the entry point.
+
+[Leo Irakliotis] 10:30:27
+This is the exit point.
+
+[Leo Irakliotis] 10:30:30
+For both.
+
+[Leo Irakliotis] 10:30:32
+data structures. And the difference is that for the stack.
+
+[Leo Irakliotis] 10:30:41
+This is also the entry point.
+
+[Leo Irakliotis] 10:30:47
+That's an interesting choice for ink here.
+
+[Leo Irakliotis] 10:30:50
+And…
+
+[Leo Irakliotis] 10:30:53
+For Stack.
+
+[Leo Irakliotis] 10:30:58
+And for a queue, the entry point could be…
+
+[Leo Irakliotis] 10:31:06
+Anywhere.
+
+[Leo Irakliotis] 10:31:08
+Depending on what is the first available position.
+
+[Leo Irakliotis] 10:31:34
+So…
+
+[Leo Irakliotis] 10:31:35
+But in both cases, we remove data, or the next item to come from the data structure, whether the data structure behaves as a stack or a queue, is at the front.
+
+[Leo Irakliotis] 10:31:50
+of the underlying.
+
+[Leo Irakliotis] 10:31:53
+All right.
+
+[Leo Irakliotis] 10:31:54
+And that's at position 0. So, for example, in both cases, whether you write a pick method for the stack or a queue, uh, your pick method will be.
+
+[Leo Irakliotis] 10:32:12
+Basically…
+
+[Leo Irakliotis] 10:32:14
+Return.
+
+[Leo Irakliotis] 10:32:16
+Whatever's at position zero in the underlying area, okay, fine, I have to have the, you know…
+
+[Leo Irakliotis] 10:32:22
+What do we call it? Self items for the underlying array.
+
+[Leo Irakliotis] 10:32:35
+So…
+
+[Leo Irakliotis] 10:32:36
+For both these…
+
+[Leo Irakliotis] 10:32:38
+operations.
+
+[Leo Irakliotis] 10:32:40
+Whether you're doing a stack or a queue, it's the same thing.
+
+[Leo Irakliotis] 10:32:44
+And that's why this method here…
+
+[Leo Irakliotis] 10:32:48
+belongs to the superclass, uh, because, you know, it's common to both. Now.
+
+[Leo Irakliotis] 10:32:56
+Here is where… here's where I see a lot of… here's where I make a mistake.
+
+[Leo Irakliotis] 10:33:03
+When I build these things from scratch. And again, it's a… contrary to what you will be doing after you're done with your studies, I will spend the rest of my life.
+
+[Leo Irakliotis] 10:33:14
+Building stacks and queues from scratch.
+
+[Leo Irakliotis] 10:33:18
+No self-respecting programmer.
+
+[Leo Irakliotis] 10:33:21
+does that for a living. If you want a stack or a queue, there are existing data structures that are much better than anything we write together here. But we write this together here because we want to figure out.
+
+[Leo Irakliotis] 10:33:37
+how the underlying principles.
+
+[Leo Irakliotis] 10:33:41
+are coming together to give us this behavior.
+
+[Leo Irakliotis] 10:33:45
+So let's say that this is our… this is going to be a cube. So we are going to use this object as a cube, and the cube is empty right now.
+
+[Leo Irakliotis] 10:33:55
+So its size is 0. And we use the size… the capacity is 4, and the size is 0.
+
+[Leo Irakliotis] 10:34:03
+So capacity doesn't change.
+
+[Leo Irakliotis] 10:34:08
+And size changes as long as it does not exceed capacity.
+
+[Leo Irakliotis] 10:34:12
+So size is zero right now, which means that there is room to add something to the queue, and okay, fine, here we add the first item.
+
+[Leo Irakliotis] 10:34:24
+So now size becomes 1. And I can use the size to point to the next available position. When size was 0, the next available position was the first position of the array. When size is 1, the next available position is the second.
+
+[Leo Irakliotis] 10:34:41
+place in the array and now my size becomes two.
+
+[Leo Irakliotis] 10:34:46
+See, the size becomes three.
+
+[Leo Irakliotis] 10:34:50
+D, the size, becomes 4, and if someone says, hey, add something to this.
+
+[Leo Irakliotis] 10:34:58
+Q, because size will now… will exceed the capacity, you… you reject the request, you don't take it.
+
+[Leo Irakliotis] 10:35:06
+And when we remove things, say, okay, who's next in line? That's whoever is in position A. The idea is…
+
+[Leo Irakliotis] 10:35:17
+that we remove and return A, and then…
+
+[Leo Irakliotis] 10:35:23
+We shift everything…
+
+[Leo Irakliotis] 10:35:27
+one position to the left and we clear the last item.
+
+[Leo Irakliotis] 10:35:36
+All right? So, how do we do this? We write a loop.
+
+[Leo Irakliotis] 10:35:54
+that goes up to… we can make it go up to the full length of the array. That would be capacity.
+
+[Leo Irakliotis] 10:36:00
+Or we can make it. Here's an example.
+
+[Leo Irakliotis] 10:36:05
+Well, you have a Q.
+
+[Leo Irakliotis] 10:36:10
+3, 4, 5, 6, 7. And this queue has data here, A, B, C. So this queue has a capacity of 7.
+
+[Leo Irakliotis] 10:36:23
+And a size.
+
+[Leo Irakliotis] 10:36:25
+of three. And if you ask this queue, hey, what's next? And you pull out A.
+
+[Leo Irakliotis] 10:36:33
+You will have to move.
+
+[Leo Irakliotis] 10:36:38
+B.
+
+[Leo Irakliotis] 10:36:41
+Here.
+
+[Leo Irakliotis] 10:36:43
+and see…
+
+[Leo Irakliotis] 10:36:45
+here. So you have to move the current elements, you don't… there is nothing, uh, in the other location, there's nothing here, here, here, and here to move. So we need to write a loop.
+
+[Leo Irakliotis] 10:37:02
+That moves the remaining elements one position to the left.
+
+[Leo Irakliotis] 10:37:25
+Okay? What are the remaining elements? From where you just remove the element, which we know always is position 0, up to the last occupied.
+
+[Leo Irakliotis] 10:37:37
+place. What is the last occupied place? The last occupied place.
+
+[Leo Irakliotis] 10:37:49
+is the size.
+
+[Leo Irakliotis] 10:37:52
+Minus 1. In this case, when A was still here, what was the size of this, uh, cube? 4. What is the last occup- the most recently occupied place? 0, 1, 2, 3.
+
+[Leo Irakliotis] 10:38:12
+So now we can write the loop and say.
+
+[Leo Irakliotis] 10:38:18
+for I…
+
+[Leo Irakliotis] 10:38:20
+In range…
+
+[Leo Irakliotis] 10:38:23
+1 through 3.
+
+[Leo Irakliotis] 10:38:26
+Size…
+
+[Leo Irakliotis] 10:38:27
+minus one.
+
+[Leo Irakliotis] 10:38:30
+Do something.
+
+[Leo Irakliotis] 10:38:33
+First of all, we grab a copy.
+
+[Leo Irakliotis] 10:38:37
+item…
+
+[Leo Irakliotis] 10:38:40
+to return.
+
+[Leo Irakliotis] 10:38:44
+is whatever is at the front.
+
+[Leo Irakliotis] 10:38:48
+of the array.
+
+[Leo Irakliotis] 10:38:51
+And then for.
+
+[Leo Irakliotis] 10:38:54
+and again as a reference this is position zero.
+
+[Leo Irakliotis] 10:39:01
+This is position one.
+
+[Leo Irakliotis] 10:39:06
+And here is position size.
+
+[Leo Irakliotis] 10:39:10
+Minus 1. That's the most recently occupied.
+
+[Leo Irakliotis] 10:39:15
+And we go, we start at position one and say, whatever is here, move it one position to the left.
+
+[Leo Irakliotis] 10:39:29
+Okay.
+
+[Leo Irakliotis] 10:39:37
+Let me highlight this to come back to you in a second.
+
+[Leo Irakliotis] 10:39:49
+Self items, I'm not writing the self part to keep the screen clean.
+
+[Leo Irakliotis] 10:39:55
+at position i minus 1.
+
+[Leo Irakliotis] 10:39:58
+Is whatever is at items.
+
+[Leo Irakliotis] 10:40:03
+And position I.
+
+[Leo Irakliotis] 10:40:05
+So this will come… one will come to zero.
+
+[Leo Irakliotis] 10:40:08
+two will count to one, and so on. Up until we get to this point, which is size minus one, how do we get this loop to give us size minus one? By running the loop all the way up to size.
+
+[Leo Irakliotis] 10:40:26
+And that's the shifting. That's all that we have to do. To move everything one position to, um…
+
+[Leo Irakliotis] 10:40:33
+To the right, uh, to the other right, to the left.
+
+[Leo Irakliotis] 10:40:37
+After removal. And then, of course, we write…
+
+[Leo Irakliotis] 10:40:41
+Return.
+
+[Leo Irakliotis] 10:40:43
+Item to return
+
+[Leo Irakliotis] 10:40:48
+Now, that's the DQ map.
+
+[Leo Irakliotis] 10:40:50
+That's the method to remove something from the queue.
+
+[Leo Irakliotis] 10:40:56
+Where we may get messed.
+
+[Leo Irakliotis] 10:41:03
+is at…
+
+[Leo Irakliotis] 10:41:08
+a stack when we are inserting in the stack. So here is again our little let's make it um.
+
+[Leo Irakliotis] 10:41:16
+Four element.
+
+[Leo Irakliotis] 10:41:19
+Underlying array, it's empty. Capacity is 4.
+
+[Leo Irakliotis] 10:41:24
+Size is zero.
+
+[Leo Irakliotis] 10:41:27
+And I add a value, A.
+
+[Leo Irakliotis] 10:41:32
+So, size is now 1. And then, I say, add another value. Before I add another value, I have to move this A to the right.
+
+[Leo Irakliotis] 10:41:44
+Come here, and now I have room.
+
+[Leo Irakliotis] 10:41:50
+for the next item, and now size went to 1, and then went to 2. And if I say I want to add more stuff, I have to move A.
+
+[Leo Irakliotis] 10:42:02
+One position to the right.
+
+[Leo Irakliotis] 10:42:06
+B, one position to the right, and now I can add my next element here.
+
+[Leo Irakliotis] 10:42:11
+And the size is 3.
+
+[Leo Irakliotis] 10:42:13
+And if I want, I have room, because size is less than capacity.
+
+[Leo Irakliotis] 10:42:19
+I have room, I can add another thing, but before I add another thing, I have to move the existing data.
+
+[Leo Irakliotis] 10:42:28
+One position.
+
+[Leo Irakliotis] 10:42:31
+To the right.
+
+[Leo Irakliotis] 10:42:33
+And now I can add.
+
+[Leo Irakliotis] 10:42:36
+Now my size is four and there is nothing more I can add. Shifting things.
+
+[Leo Irakliotis] 10:42:47
+To the right.
+
+[Leo Irakliotis] 10:42:50
+It's a little bit more tricky.
+
+[Leo Irakliotis] 10:42:52
+Let's say that I was looking at this state, like I had, uh.
+
+[Leo Irakliotis] 10:43:03
+B, A, and an empty space. So, clearly, size is 3, capacity is 4, I have room to add another element. The request to add another element comes.
+
+[Leo Irakliotis] 10:43:14
+And I have to shift things.
+
+[Leo Irakliotis] 10:43:19
+to the right.
+
+[Leo Irakliotis] 10:43:24
+How do I do this? How do I eat?
+
+[Leo Irakliotis] 10:43:29
+The first thing, that's the common mistake, is a lot of people will write a loop of this form.
+
+[Leo Irakliotis] 10:43:41
+For I…
+
+[Leo Irakliotis] 10:43:42
+In range…
+
+[Leo Irakliotis] 10:43:48
+up to but not including size.
+
+[Leo Irakliotis] 10:43:51
+And they will say…
+
+[Leo Irakliotis] 10:43:57
+Item.
+
+[Leo Irakliotis] 10:44:00
+at position one.
+
+[Leo Irakliotis] 10:44:02
+is the same as item at the previous position.
+
+[Leo Irakliotis] 10:44:07
+So we'll come here and say, hey, now you take the same value as the previous value.
+
+[Leo Irakliotis] 10:44:15
+then they will come here and say, hey, you take the value as the previous value. Well, the previous value was just updated to C, and when the loop ends, we end up.
+
+[Leo Irakliotis] 10:44:29
+With this array and then.
+
+[Leo Irakliotis] 10:44:32
+We'll go to the first place and add the new data, which will be the letter D.
+
+[Leo Irakliotis] 10:44:45
+Instead of DC BA, we got DC CC.
+
+[Leo Irakliotis] 10:44:51
+Because we started the shifting to the right.
+
+[Leo Irakliotis] 10:44:56
+We started from the left side of the array.
+
+[Leo Irakliotis] 10:45:01
+So we are polluting.
+
+[Leo Irakliotis] 10:45:05
+When you say that this item here is to obtain a copy from this.
+
+[Leo Irakliotis] 10:45:11
+And then this item here should obtain the copy from this. You're just propagating a copy of whatever is here through the remaining of the array.
+
+[Leo Irakliotis] 10:45:19
+When we're shifting to the right.
+
+[Leo Irakliotis] 10:45:22
+We need to start from the right. When we're shifting…
+
+[Leo Irakliotis] 10:45:28
+uh, to the left, we start from the left. When we're shifting to the right, we start from the right. So, the correct action here would have been, okay, here's the array.
+
+[Leo Irakliotis] 10:45:40
+Uh, C, B, A.
+
+[Leo Irakliotis] 10:45:42
+We want to go to this element.
+
+[Leo Irakliotis] 10:45:45
+Move it here.
+
+[Leo Irakliotis] 10:45:47
+go to this element, move it here, go to this element, move it here, so temporarily, the array, after these shifts, will look like CCBA.
+
+[Leo Irakliotis] 10:46:01
+And then we override the first position with the new data. So there is your correct.
+
+[Leo Irakliotis] 10:46:07
+state.
+
+[Leo Irakliotis] 10:46:14
+the… Temeeka, I don't know if that was, uh, the, uh, one of the things that, uh, messed up your array, but that is a common thing that happens with everyone, because we're so used.
+
+[Leo Irakliotis] 10:46:29
+to running loops from left to right, from zero to size, from one to size.
+
+[Leo Irakliotis] 10:46:36
+And running loops in reverse?
+
+[Leo Irakliotis] 10:46:41
+Doesn't happen often.
+
+[Leo Irakliotis] 10:46:43
+But that's happened.
+
+[Leo Irakliotis] 10:46:46
+And we need to… it's just a reverse loop.
+
+[Leo Irakliotis] 10:46:49
+So basically, the root here would have been for i equals size minus one. Sorry, for i in range. This is not Java.
+
+[Leo Irakliotis] 10:47:11
+For I…
+
+[Leo Irakliotis] 10:47:13
+in range.
+
+[Leo Irakliotis] 10:47:17
+Size minus one.
+
+[Leo Irakliotis] 10:47:23
+Okay, um, going to…
+
+[Leo Irakliotis] 10:47:27
+Zero.
+
+[Leo Irakliotis] 10:47:35
+Yeah, Oak and Golia.
+
+[Leo Irakliotis] 10:47:37
+Step minus one.
+
+[Leo Irakliotis] 10:47:39
+So we have to use the full…
+
+[Leo Irakliotis] 10:47:43
+syntax of the range command and now we can say hey the item.
+
+[Leo Irakliotis] 10:47:50
+at I plus 1…
+
+[Leo Irakliotis] 10:47:54
+is what is at the previous position.
+
+[Leo Irakliotis] 10:47:59
+So what will happen here is that item three will go to item four.
+
+[Leo Irakliotis] 10:48:05
+Item 2 will go to item 5.
+
+[Leo Irakliotis] 10:48:11
+And…
+
+[Leo Irakliotis] 10:48:12
+Item one.
+
+[Leo Irakliotis] 10:48:16
+We'll go to item 2. And…
+
+[Leo Irakliotis] 10:48:35
+A will come here.
+
+[Leo Irakliotis] 10:48:37
+B will come here and here.
+
+[Leo Irakliotis] 10:48:43
+Item three will go to four. Okay. Item two will go to three.
+
+[Leo Irakliotis] 10:48:53
+Item one will go to two.
+
+[Leo Irakliotis] 10:48:57
+And that's it. And then all we have to do is go and write.
+
+[Leo Irakliotis] 10:49:02
+Item 0.
+
+[Leo Irakliotis] 10:49:05
+is the new data that we're adding there.
+
+[Leo Irakliotis] 10:49:15
+That's a common mistake, that when we're shifting elements in an array to the right, we have to start scanning the array from the back.
+
+[Leo Irakliotis] 10:49:26
+And when we're shifting items in an array to the left, we can start from the left with a simpler loop syntax than in this case.
+
+[Leo Irakliotis] 10:49:41
+In either way.
+
+[Leo Irakliotis] 10:49:43
+Whether we're shifting to the left or to the right, we are going sequentially through the existing data of the array.
+
+[Leo Irakliotis] 10:49:51
+And that adds time. We, last week, we, uh, we talked about implementing stacks and queues using linked lists, where insertions and removal.
+
+[Leo Irakliotis] 10:50:01
+removals happen in constant time.
+
+[Leo Irakliotis] 10:50:06
+And here we have a different implementation of the same concept where insertions and removals.
+
+[Leo Irakliotis] 10:50:20
+May take some time.
+
+[Leo Irakliotis] 10:50:24
+Proportional to the number of items.
+
+[Leo Irakliotis] 10:50:28
+In a queue.
+
+[Leo Irakliotis] 10:50:33
+implemented within RA.
+
+[Leo Irakliotis] 10:50:53
+In a queue, the insertion happens in constant time. Why? Because we place the data at the next available position, and the next available position is known to us through the size value.
+
+[Leo Irakliotis] 10:51:08
+Okay? So it takes… it's constant step, but removal, if you remove something from the queue, you take the first element out, and then you have to shift everything one position.
+
+[Leo Irakliotis] 10:51:17
+To the left, that's linear time.
+
+[Leo Irakliotis] 10:51:22
+In a stack.
+
+[Leo Irakliotis] 10:51:26
+If there is room for a new element, first you have to shift everything to the right. That is done in linear time.
+
+[Leo Irakliotis] 10:51:36
+And then…
+
+[Leo Irakliotis] 10:51:38
+If you remove something from the stack.
+
+[Leo Irakliotis] 10:51:49
+Where do you remove it from? From the front.
+
+[Leo Irakliotis] 10:52:02
+you remove this here, everything has to move one position to the left. So here, you have to… the removal is also linear time, because you have to shift things now to the left. It's in the stack insertion.
+
+[Leo Irakliotis] 10:52:16
+Shifting is to the right. For stack removal, shifting is to the left.
+
+[Leo Irakliotis] 10:52:24
+And compare these numbers with what we had when we did the implementation using.
+
+[Leo Irakliotis] 10:52:32
+Link list, and everything was…
+
+[Leo Irakliotis] 10:52:38
+Big O of what?
+
+[Leo Irakliotis] 10:52:40
+constant time.
+
+[Leo Irakliotis] 10:52:42
+Why would you compromise?
+
+[Leo Irakliotis] 10:52:46
+Performance, for example, look here.
+
+[Leo Irakliotis] 10:52:50
+Queue insertions using lists are as fast as using linked lists.
+
+[Leo Irakliotis] 10:52:55
+But everything else…
+
+[Leo Irakliotis] 10:53:01
+He's worse off.
+
+[Leo Irakliotis] 10:53:08
+Everything else here is worse off, and…
+
+[Leo Irakliotis] 10:53:13
+Why would we do this? What do we stand to gain?
+
+[Leo Irakliotis] 10:53:21
+And the the answer to that is.
+
+[Leo Irakliotis] 10:53:25
+just a little bit more of, uh, understanding of insight, uh, into, um, how these things develop. I mean, this is…
+
+[Leo Irakliotis] 10:53:38
+This is slower than linked lists.
+
+[Leo Irakliotis] 10:53:42
+So why do we bother?
+
+[Leo Irakliotis] 10:53:44
+to do a stack and queue implementation.
+
+[Leo Irakliotis] 10:53:48
+using arrays when linked lists are so superior. For two reasons. For three reasons. The obvious reason is pedagogy. I mean, these are good, simple, practical programming problems to solve.
+
+[Leo Irakliotis] 10:54:05
+But, in addition.
+
+[Leo Irakliotis] 10:54:08
+We do this because it gives us some historical perspective.
+
+[Leo Irakliotis] 10:54:14
+into computing, because in the beginning, there were arrays. Everything was done with arrays, so if you wanted to build a stack or a queue, you had to use linear time insertions and removals for stacks, and linear time removals.
+
+[Leo Irakliotis] 10:54:27
+for Jews.
+
+[Leo Irakliotis] 10:54:29
+Why? Because that was the only container for data that was available in early programming languages.
+
+[Leo Irakliotis] 10:54:37
+when…
+
+[Leo Irakliotis] 10:54:39
+We started building linked lists with objects in the 70s. Okay, we now got a linked list, and that gives us superior performance with constant time across all operations for queues and stacks. However…
+
+[Leo Irakliotis] 10:54:53
+Memory.
+
+[Leo Irakliotis] 10:54:55
+Objects occupy a lot of memory.
+
+[Leo Irakliotis] 10:55:01
+Compare to a list, compare to an array.
+
+[Leo Irakliotis] 10:55:05
+And it's not…
+
+[Leo Irakliotis] 10:55:08
+The reason for that is that the objects have a lot of maintenance data, a lot of metadata, in addition to the actual data that they capture.
+
+[Leo Irakliotis] 10:55:23
+And we're talking 70s and 80s where memory is at a premium. So again, unless there was a specific and justifiable demand for performance that required to pay for memory.
+
+[Leo Irakliotis] 10:55:40
+Stacks and queues were still done with arrays.
+
+[Leo Irakliotis] 10:55:45
+Also.
+
+[Leo Irakliotis] 10:55:48
+Because…
+
+[Leo Irakliotis] 10:55:49
+If you think a little bit…
+
+[Leo Irakliotis] 10:55:53
+About NRA.
+
+[Leo Irakliotis] 10:56:05
+Everything can be done.
+
+[Leo Irakliotis] 10:56:21
+In constant time.
+
+[Leo Irakliotis] 10:56:27
+Everything.
+
+[Leo Irakliotis] 10:56:30
+can be done in constant time.
+
+[Leo Irakliotis] 10:56:33
+in an array when you think a little bit about it.
+
+[Leo Irakliotis] 10:56:40
+And that's another reason we're doing this, because we want to go from linear time for some operations using an array to everything in constant time using an array, essentially demonstrating that arrays.
+
+[Leo Irakliotis] 10:56:56
+are as competitive in performance as linked lists, and because they require less memory, then they're even more desirable.
+
+[Leo Irakliotis] 10:57:04
+But how is it possible that everything can be done?
+
+[Leo Irakliotis] 10:57:09
+in an array.
+
+[Leo Irakliotis] 10:57:12
+Because…
+
+[Leo Irakliotis] 10:57:16
+All it takes is to look at this array that looks like a linear thingy.
+
+[Leo Irakliotis] 10:57:22
+And…
+
+[Leo Irakliotis] 10:57:24
+Bend it.
+
+[Leo Irakliotis] 10:57:27
+to your will.
+
+[Leo Irakliotis] 10:57:45
+Bonus.
+
+[Leo Irakliotis] 10:58:16
+So this is the same array, only I'm using a different shape to represent it.
+
+[Leo Irakliotis] 10:58:24
+But when I am using this different shape to represent it.
+
+[Leo Irakliotis] 10:58:31
+I can go around the array round and round and round.
+
+[Leo Irakliotis] 10:58:37
+Because it's basically a circle that has no beginning or end, okay? And what I can do is, instead of moving data.
+
+[Leo Irakliotis] 10:58:50
+Left and right.
+
+[Leo Irakliotis] 10:58:52
+is to move two pointers.
+
+[Leo Irakliotis] 10:58:56
+One pointer…
+
+[Leo Irakliotis] 10:59:00
+Is… let's… let's do a Q.
+
+[Leo Irakliotis] 10:59:03
+The front of the queue.
+
+[Leo Irakliotis] 10:59:05
+And B is the back of the cube.
+
+[Leo Irakliotis] 10:59:11
+And when the queue is empty, the front and the back.
+
+[Leo Irakliotis] 10:59:21
+are at the same position.
+
+[Leo Irakliotis] 10:59:25
+I do.
+
+[Leo Irakliotis] 10:59:26
+So, it's easier to look for that information in the linear representation, and then map it to the circular. Okay, so now we're adding an item.
+
+[Leo Irakliotis] 10:59:40
+to the… to the queue, A.
+
+[Leo Irakliotis] 10:59:43
+Hey.
+
+[Leo Irakliotis] 10:59:44
+And what happens is that the back of the cube.
+
+[Leo Irakliotis] 10:59:51
+Goes to its current place, plus one.
+
+[Leo Irakliotis] 10:59:57
+Pointing to the next available position.
+
+[Leo Irakliotis] 11:00:03
+And if I add another item to the array, again, the back…
+
+[Leo Irakliotis] 11:00:10
+Goes to plus one.
+
+[Leo Irakliotis] 11:00:16
+And if I add another item to the array.
+
+[Leo Irakliotis] 11:00:24
+The back goes to…
+
+[Leo Irakliotis] 11:00:29
+Here.
+
+[Leo Irakliotis] 11:00:30
+And if I add another item to the array.
+
+[Leo Irakliotis] 11:00:35
+The Q. The back…
+
+[Leo Irakliotis] 11:00:39
+will go here wait a minute how it will go here plus three plus one is not zero.
+
+[Leo Irakliotis] 11:00:47
+Oh, well, we'll work out something.
+
+[Leo Irakliotis] 11:00:50
+But that doesn't mean that I can add data there, because at this point, the queue is full.
+
+[Leo Irakliotis] 11:00:57
+It means that…
+
+[Leo Irakliotis] 11:01:03
+If space became available.
+
+[Leo Irakliotis] 11:01:10
+to the array, that's where I may want to put data next.
+
+[Leo Irakliotis] 11:01:16
+but in order for space to become available in this array, I have to remove something from the queue, and what comes out first? What's at the front of the array? So I will have to remove A.
+
+[Leo Irakliotis] 11:01:29
+And the front of the array.
+
+[Leo Irakliotis] 11:01:33
+We'll move here.
+
+[Leo Irakliotis] 11:01:38
+So that's my array now.
+
+[Leo Irakliotis] 11:01:41
+And the next available position to add data in is wherever the back points to.
+
+[Leo Irakliotis] 11:01:54
+Here.
+
+[Leo Irakliotis] 11:01:56
+But when it's time to remove, I remove from the front. What does the front point to? Here.
+
+[Leo Irakliotis] 11:02:04
+And the front pointer.
+
+[Leo Irakliotis] 11:02:08
+Moose plus one.
+
+[Leo Irakliotis] 11:02:11
+Here.
+
+[Leo Irakliotis] 11:02:20
+So, as long as we can figure out that, uh, little weird mathematical thing that said 3 plus… uh, let me put plus 1 in quotes, because…
+
+[Leo Irakliotis] 11:02:35
+Plus.
+
+[Leo Irakliotis] 11:02:37
+one equals zero as long as I solve this problem I'm I'm set.
+
+[Leo Irakliotis] 11:02:42
+The data does not move in this arrangement.
+
+[Leo Irakliotis] 11:02:46
+What moves is where the front of the line is and where the back of the line is.
+
+[Leo Irakliotis] 11:02:52
+And this operation?
+
+[Leo Irakliotis] 11:02:54
+It's very easy to implement. 3 plus 1…
+
+[Leo Irakliotis] 11:03:02
+Modulo capacity.
+
+[Leo Irakliotis] 11:03:04
+In this case zero.
+
+[Leo Irakliotis] 11:03:08
+4 to 0. So this plus operation is subject to modulo the capacity of the array.
+
+[Leo Irakliotis] 11:03:16
+So my update is that the back.
+
+[Leo Irakliotis] 11:03:22
+is reassigned to back, plus one.
+
+[Leo Irakliotis] 11:03:26
+Modulo the capacity.
+
+[Leo Irakliotis] 11:03:30
+So, when I have something like 3 plus 1.
+
+[Leo Irakliotis] 11:03:34
+Modulo 4.
+
+[Leo Irakliotis] 11:03:37
+that for modulo 4.
+
+[Leo Irakliotis] 11:03:40
+That's zero.
+
+[Leo Irakliotis] 11:03:42
+That's why I said the backhoes at position 3 plus 1 took me to position 0.
+
+[Leo Irakliotis] 11:03:48
+And same thing for the frontal area.
+
+[Leo Irakliotis] 11:03:57
+Keep adding one and goes round and round and round and round. Modulo is a periodic function.
+
+[Leo Irakliotis] 11:04:05
+And anything periodic is basically something going around in a circle. That's the fundamental definition of periodicity.
+
+[Leo Irakliotis] 11:04:16
+What I do here is I remove and I add things from this queue in constant time.
+
+[Leo Irakliotis] 11:04:26
+at the expense of one more variable.
+
+[Leo Irakliotis] 11:04:30
+When I was doing removals in a plain array fashion by shifting things left and right, I had an extra variable that I used for the loops for i in range, whatever. So I had one variable there.
+
+[Leo Irakliotis] 11:04:46
+occupying memory in addition to the data in the array. Here, I have the data in the array.
+
+[Leo Irakliotis] 11:04:52
+And two variables B and F.
+
+[Leo Irakliotis] 11:04:55
+So I have two overhead memory.
+
+[Leo Irakliotis] 11:04:59
+locations as opposed to one.
+
+[Leo Irakliotis] 11:05:02
+So I'm taking a little bit more memory.
+
+[Leo Irakliotis] 11:05:08
+for incredible time performance. And that's a compromise I'm willing to accept, because, you know, these are… B and F are integer memo… integer values, so, you know, they're easy to store in memory.
+
+[Leo Irakliotis] 11:05:19
+And when your queue has 100 items in it.
+
+[Leo Irakliotis] 11:05:25
+The difference between the naive list implementation is…
+
+[Leo Irakliotis] 11:05:31
+101 versus 102 memory locations.
+
+[Leo Irakliotis] 11:05:36
+Big deal.
+
+[Leo Irakliotis] 11:05:43
+And the same thing can be done with Stack.
+
+[Leo Irakliotis] 11:05:49
+The idea is you draw the circle, you draw the linear and the circular representation, and you see what happens.
+
+[Leo Irakliotis] 11:05:59
+With the, uh, front and the back of the stack.
+
+[Leo Irakliotis] 11:06:03
+in the linear array and you map that into circular operations using modulo.
+
+[Leo Irakliotis] 11:06:11
+And that's something, uh…
+
+[Leo Irakliotis] 11:06:16
+that, uh, you should do on your own. It's not going to be part of an assignment. I'm not going to cover it, because, uh… I'm not going to cover it in class, but I'm asking you to do what I just did here for the cube with the front and the back.
+
+[Leo Irakliotis] 11:06:30
+to do it on your own with a stamp.
+
+[Leo Irakliotis] 11:06:33
+Because it is very likely that it will come up as an interview question, as a second question to an interview. Because the first question — not the first question, but at some point from the interview, someone might say, hey, you know what? Can you do constant time operations for a queue?
+
+[Leo Irakliotis] 11:06:50
+without using linked lists. And you say, of course, it's going to be a circular array, and I'm going to use modulo to advance the front and the back of the array indices, and they might tell you right there, stop, good, you got it.
+
+[Leo Irakliotis] 11:07:01
+How would you… and the follow-up question is, how would you do this?
+
+[Leo Irakliotis] 11:07:09
+with a stack.
+
+[Leo Irakliotis] 11:07:12
+And the assumption there is that.
+
+[Leo Irakliotis] 11:07:16
+Very likely you have done the circular cube.
+
+[Leo Irakliotis] 11:07:21
+In class.
+
+[Leo Irakliotis] 11:07:23
+And the implication is that you should know how to do the circular stack.
+
+[Leo Irakliotis] 11:07:27
+Whether you did that in class, or whether your instructor said, do it on your own.
+
+[Leo Irakliotis] 11:07:33
+Figure this out on your own. This is what I'm asking you. Figure the stack.
+
+[Leo Irakliotis] 11:07:38
+the circular stack on your own and come to me with questions.
+
+[Leo Irakliotis] 11:07:45
+if you are uncertain.
+
+[Leo Irakliotis] 11:07:46
+And the reason I'm doing that is because it, it, it has two viable, there are two viable parts in this, uh, request. A is that it forces you.
+
+[Leo Irakliotis] 11:07:58
+to repeat the work we did with the Q and reinforce the concept of the circular Q. And through that reinforcement.
+
+[Leo Irakliotis] 11:08:06
+You get the concept for a circular stack.
+
+[Leo Irakliotis] 11:08:09
+So the reason I'm asking you to do the stack on your own is not only just to prepare for the eventuality of someone asking that at an interview, but also because it will help you reinforce what we covered here.
+
+[Leo Irakliotis] 11:08:24
+And then transfer that knowledge in an operation that is identical. It's a little bit more — not quite identical, but very, very, very similar.
+
+[Leo Irakliotis] 11:08:36
+And that will reinforce circular operations even more.
+
+[Leo Irakliotis] 11:08:42
+Profoundly.
+
+[Leo Irakliotis] 11:08:43
+And when the time comes at an interview, uh, you will be…
+
+[Leo Irakliotis] 11:08:48
+I mean, you will be anxious at an interview, no matter how well prepared you are.
+
+[Leo Irakliotis] 11:08:54
+you will be anxious. But that would be a moment where you think you can control your anxiety, you can take a deep breath, and, you know, I have it, I don't have to deliver it perfectly.
+
+[Leo Irakliotis] 11:09:05
+But I can gesticulate how…
+
+[Leo Irakliotis] 11:09:10
+those front and back indices move with respect to modulo.
+
+[Leo Irakliotis] 11:09:15
+Once again, it puts the modular operation front and center.
+
+[Leo Irakliotis] 11:09:25
+Understand what this does. Make modulo operations your best friend. Write test code. Go to Python and write 5 modulo 3, 3 modulo 5.
+
+[Leo Irakliotis] 11:09:40
+Get to understand, get to appreciate, uh, how modulo works by trying different values. And before you press enter, ask yourself, what will I get here?
+
+[Leo Irakliotis] 11:10:02
+And for example.
+
+[Leo Irakliotis] 11:10:03
+5 modulo 3.
+
+[Leo Irakliotis] 11:10:04
+What do you expect to get from this?
+
+[Temeeka Glass] 11:10:10
+How are you?
+
+[Leo Irakliotis] 11:10:12
+What was that? I didn't hear.
+
+[Temeeka Glass] 11:10:14
+It was me, but I think I'm wrong. Sorry. Never mind.
+
+[Leo Irakliotis] 11:10:21
+Modulo is the integer remainder of an integer… the remainder of an integer division. How many whole times 3 fits into 5?
+
+[Leo Irakliotis] 11:10:32
+Whatever. And what is the remainder?
+
+[Leo Irakliotis] 11:10:37
+We're looking at the remainder and the remainder here is 2. So modulo gives us the remainder of an integer division.
+
+[Temeeka Glass] 11:10:39
+Two
+
+[Leo Irakliotis] 11:10:48
+7 modulo 3. What is it?
+
+[Temeeka Glass] 11:10:54
+Is there one?
+
+[Leo Irakliotis] 11:10:56
+Sean?
+
+[Leo Irakliotis] 11:10:57
+No, it's 3 because… it's 1 because 3 fits twice into 7.
+
+[Leo Irakliotis] 11:11:03
+And the remainder is what?
+
+[Leo Irakliotis] 11:11:10
+The remainder of an integer division of 7 by 3 is 1.
+
+[Leo Irakliotis] 11:11:21
+Modulo 3 is what?
+
+[Leo Irakliotis] 11:11:25
+2. Why? Because 3 fits into 8 two times. 2 times 3 is 6. What you need to go from 6 to 8, that's the remainder, 2.
+
+[Leo Irakliotis] 11:11:41
+The integer remainders are.
+
+[Leo Irakliotis] 11:11:43
+Elementary School Mathematics.
+
+[Leo Irakliotis] 11:11:46
+And…
+
+[Leo Irakliotis] 11:11:52
+we use that level of mathematics extensively in programming. Modulo, an elementary school mathematic arithmetic concept. It's not even mathematics, it's arithmetic.
+
+[Leo Irakliotis] 11:12:06
+Uh, is…
+
+[Leo Irakliotis] 11:12:08
+Central.
+
+[Leo Irakliotis] 11:12:09
+to this operation.
+
+[Leo Irakliotis] 11:12:11
+We have just built a super fast data structure using elementary school arithmetic.
+
+[Leo Irakliotis] 11:12:19
+And in doing so.
+
+[Leo Irakliotis] 11:12:21
+we performed a miracle, as close we're going to come to a miracle in computer science, because I told you that, you know, the, um… the dreamland.
+
+[Leo Irakliotis] 11:12:33
+for performance is constant time, when you can build something that operates in constant time. And whenever.
+
+[Leo Irakliotis] 11:12:41
+You take an operation that is not in constant time, maybe it's in linear time.
+
+[Leo Irakliotis] 11:12:47
+Or maybe it's in quadratic time.
+
+[Leo Irakliotis] 11:12:50
+and you bring it down to linear time, to constant time, that's a miracle. That's as close as we get to performing a miracle in this business.
+
+[Leo Irakliotis] 11:13:04
+And this miracle here that we took a linear time Q.
+
+[Leo Irakliotis] 11:13:10
+and convert it into a constant time Q.
+
+[Leo Irakliotis] 11:13:13
+was based on elementary school mathematics.
+
+[Leo Irakliotis] 11:13:20
+How cool is that?
+
+[Leo Irakliotis] 11:13:22
+Wouldn't be great if all other miracles required just that much of easy stuff.
+
+[Leo Irakliotis] 11:13:30
+That's it for today. Questions, comments?
+
+[Leo Irakliotis] 11:13:35
+All right, I'm going to post my solutions for the assignment. Take a look.
+
+[Leo Irakliotis] 11:13:42
+if not today, maybe tomorrow or Wednesday, you're going to have to take a look anyway for your reflection, uh, at some point. Let me know if you have any questions, but what I want to ask you as we're parting for today is do the circular stack on your own.
+
+[Leo Irakliotis] 11:14:01
+And see what you come up with.
+
+[Leo Irakliotis] 11:14:05
+If there's nothing else, I'll see you tomorrow.
+
+[Temeeka Glass] 11:14:09
+Thank you.
+
+[Leo Irakliotis] 11:14:10
+Take care, everyone.
+
+[Shú Perez] 11:14:11
+Thank you very much. Bye.
+
+[Leo Irakliotis] 11:30:39
+Hello, everyone.
+
+[Leo Irakliotis] 11:30:47
+Any questions, any comments, any requests?
+
+[Bella Fiorucci] 11:30:52
+I had a question about one of the week 7 problems, or, like, the solutions for it. Um, the question, I can't remember, I think it was problem 2, where it used the, like, double loop, um, to look at, like, finding a string within a string.
+
+[Leo Irakliotis] 11:30:55
+Yeah.
+
+[Leo Irakliotis] 11:30:57
+Yeah.
+
+[Bella Fiorucci] 11:31:09
+Um, I was kind of confused about how the double loop worked, because in my pseudocode, like, I did not use a double loop, um, and I was just wondering if you could maybe explain that a little bit more, or, like, how that works, or how we would use it.
+
+[Leo Irakliotis] 11:31:24
+Good question. Double loops.
+
+[Leo Irakliotis] 11:31:29
+are cool, and um…
+
+[Leo Irakliotis] 11:31:33
+Complicated.
+
+[Leo Irakliotis] 11:31:35
+Uh, expensive.
+
+[Leo Irakliotis] 11:31:37
+But, but super cool. So.
+
+[Leo Irakliotis] 11:31:41
+Let me start before we go into the substring.
+
+[Leo Irakliotis] 11:31:46
+No problem, Bella. Let me start with, uh…
+
+[Leo Irakliotis] 11:31:55
+It seems a problem. And, um…
+
+[Leo Irakliotis] 11:32:03
+Something that we do in elementary school, okay?
+
+[Leo Irakliotis] 11:32:09
+Um, if I ask you to print this…
+
+[Leo Irakliotis] 11:33:39
+First of all, what is… what… how will you describe this before you even try to print it? What do you describe… how will you describe this? What is this thing that I'm trying to draw here desperately?
+
+[Leo Irakliotis] 11:33:51
+But not very successfully.
+
+[Leo Irakliotis] 11:33:55
+What do you call this?
+
+[Bella Fiorucci] 11:34:04
+A multiplication chart?
+
+[Leo Irakliotis] 11:34:06
+is the multiplication table for the first 10 numbers, right? And we can do that for the first 9 numbers, because multiplying by 10 is easy, so really we can cross out.
+
+[Leo Irakliotis] 11:34:20
+the last line in the last column, since, as I say, you know, multiply, uh, the first nine numbers, uh, all possible combinations, right? Um…
+
+[Leo Irakliotis] 11:34:31
+How would you bring this?
+
+[Leo Irakliotis] 11:34:43
+And…
+
+[Leo Irakliotis] 11:34:45
+I don't want to hear, okay, you know, I'm going to start, right, I'm going to write 10, 9 print lines, and every line, the first line will be print, 1, 2, 3, 4, 5, 6.
+
+[Leo Irakliotis] 11:34:54
+Second line, print 2, 4, 6, and so on.
+
+[Leo Irakliotis] 11:35:56
+Let me run it.
+
+[Leo Irakliotis] 11:36:00
+There's your multiplication table. Okay.
+
+[Leo Irakliotis] 11:36:05
+Um, it doesn't look very nicely because it's not nicely aligned, so maybe because, you know, I like things to be nicely aligned, I'm going to come here and do a little bit more of a fancy printing.
+
+[Leo Irakliotis] 11:36:36
+Let's see if I can do the tweak.
+
+[Leo Irakliotis] 11:37:09
+Maybe more neatly arranged.
+
+[Leo Irakliotis] 11:37:13
+So, what I have here is…
+
+[Leo Irakliotis] 11:37:16
+Two loops, nested loop. One loop operates.
+
+[Leo Irakliotis] 11:37:20
+Within the other loop.
+
+[Leo Irakliotis] 11:37:23
+The outer loop, when you have two nested loops, you have the outer loop and the inner loop.
+
+[Leo Irakliotis] 11:37:30
+The outer loop comes from 1 to 9.
+
+[Leo Irakliotis] 11:37:33
+We don't go all the way to 10, that's how the range, uh, works. The second loop, for every value of i.
+
+[Leo Irakliotis] 11:37:42
+So I will go through the values 1, 2, 3, 4, 5, 6, 7, 8, 9. For each of those values, the inner loop.
+
+[Leo Irakliotis] 11:37:50
+The loop in line 3 will also go through those values.
+
+[Leo Irakliotis] 11:37:53
+So basically, what I'm asking this thing to do here is to produce all the products.
+
+[Leo Irakliotis] 11:38:07
+When I equals Swan.
+
+[Leo Irakliotis] 11:38:09
+I want you to produce 1 times 1, 1 times 2, 1 times 3, and so on, up to 1 times 9.
+
+[Leo Irakliotis] 11:38:22
+So this value.
+
+[Leo Irakliotis] 11:38:24
+The second value is J.
+
+[Leo Irakliotis] 11:38:30
+this variable here. And when I exhaust a full range of Js from 1 through 9, then the outer loop variable.
+
+[Leo Irakliotis] 11:38:42
+We'll get a new value.
+
+[Leo Irakliotis] 11:38:48
+And the loop will continue. So now I…
+
+[Leo Irakliotis] 11:38:52
+will be 2, and I'll print 2 times J1, 2 times 2, 2 times 3, all the way up to 2 times 9. And when that.
+
+[Leo Irakliotis] 11:39:05
+J value is exhausted from J value.
+
+[Leo Irakliotis] 11:39:09
+i from j equals 1 through 9 then again j i will reset to.
+
+[Leo Irakliotis] 11:39:18
+And I'll have three times one, three times two.
+
+[Leo Irakliotis] 11:39:23
+3 times 9. And that I, J, will get all the values in this instance from 1 to 9, and then I will update again and will go to the next value. So basically.
+
+[Leo Irakliotis] 11:39:38
+What nested loops do is…
+
+[Leo Irakliotis] 11:39:43
+The inner loop repeats itself as many times as the outer loop dictates.
+
+[Leo Irakliotis] 11:39:54
+And we can have multiple.
+
+[Leo Irakliotis] 11:39:57
+nested loops if we want to. We can have loops like… here is a scenario where you have three nested loops.
+
+[Leo Irakliotis] 11:40:08
+for I…
+
+[Leo Irakliotis] 11:40:10
+In some range.
+
+[Leo Irakliotis] 11:40:15
+Let's say range M.
+
+[Leo Irakliotis] 11:40:18
+N can be any number.
+
+[Leo Irakliotis] 11:40:21
+For J
+
+[Leo Irakliotis] 11:40:24
+In range
+
+[Leo Irakliotis] 11:40:26
+also N.
+
+[Leo Irakliotis] 11:40:30
+For K.
+
+[Leo Irakliotis] 11:40:32
+In range. N.
+
+[Leo Irakliotis] 11:40:35
+And then here it says, you know, print something.
+
+[Leo Irakliotis] 11:40:41
+Ring hello.
+
+[Leo Irakliotis] 11:40:44
+How many times, when I execute this program, how many times will the word hello print? Any guesses?
+
+[Leo Irakliotis] 11:41:08
+n to the power 3.
+
+[Leo Irakliotis] 11:41:11
+So if n is 10, I will print 1,000 hellos.
+
+[Leo Irakliotis] 11:41:18
+Why? Because the… this loop, the K loop, will execute how many times? N times.
+
+[Leo Irakliotis] 11:41:24
+All right. It will execute N times for every time the J loop executes.
+
+[Leo Irakliotis] 11:41:31
+And how many times the J loop executes? It will execute n times. So each time the I loop executes, everything in it executes 10 times.
+
+[Leo Irakliotis] 11:41:46
+And every time the J loop executes, everything in it executes 10 times.
+
+[Leo Irakliotis] 11:41:52
+And every time the K loop executes, everything in it executes 10 times, 10 times, 10 times, 10. There is yours.
+
+[Leo Irakliotis] 11:42:13
+Loops.
+
+[Leo Irakliotis] 11:42:14
+Nested loops.
+
+[Leo Irakliotis] 11:42:19
+Very useful. Nested loops, two nested loops, i and j, just two for statements.
+
+[Leo Irakliotis] 11:42:28
+Maybe three nested loops, IJK, are essential in so many algebraic problems, including implementation of neural networks, which is the foundation of artificial intelligence.
+
+[Leo Irakliotis] 11:42:43
+If you want to see at the engine.
+
+[Leo Irakliotis] 11:42:47
+of an AI system, you see loops.
+
+[Leo Irakliotis] 11:42:51
+And these loops, those three nested loops, were the reason that for decades we could not get efficient AI systems.
+
+[Leo Irakliotis] 11:43:01
+Because we did not have computers fast enough to do these loops, because we're not talking about range n equals 10.
+
+[Leo Irakliotis] 11:43:10
+We're talking about N.
+
+[Leo Irakliotis] 11:43:16
+In the order of 1 million.
+
+[Leo Irakliotis] 11:43:20
+And if n is 1 million, what happens inside the loop, which is not a print statement, by the way, when we're implementing AI systems, we're not printing hello.
+
+[Leo Irakliotis] 11:43:29
+Uh, we do a lot of, uh, heavy lifting math, so basically when n is 1 million, what we get.
+
+[Leo Irakliotis] 11:43:50
+It's that many executions. What's happening inside the third loop will execute so many times.
+
+[Leo Irakliotis] 11:43:57
+And if the computer is not fast enough, this is a lot of time to execute. Not to mention that those computations that happen instead of a low world there, um…
+
+[Leo Irakliotis] 11:44:09
+require a lot of memory that just simply didn't exist.
+
+[Leo Irakliotis] 11:44:15
+A single problem.
+
+[Leo Irakliotis] 11:44:19
+that, uh, where we, uh, we use nested loops in algebra, and again, I don't want to turn this into a discussion about algebra, but the fundamental operation in algebra is called matrix multiplication.
+
+[Leo Irakliotis] 11:44:41
+A matrix in algebra is a.
+
+[Leo Irakliotis] 11:44:46
+object that is a dimensional collection of numbers.
+
+[Leo Irakliotis] 11:44:53
+Okay, here's a symbol matrix, matrix A.
+
+[Leo Irakliotis] 11:44:59
+One, two…
+
+[Leo Irakliotis] 11:45:01
+Three.
+
+[Leo Irakliotis] 11:45:03
+Okay, what does that represent? Depends on the context.
+
+[Leo Irakliotis] 11:45:08
+of the problem we're trying to solve. It could be.
+
+[Leo Irakliotis] 11:45:14
+We're trying to solve the system of equations, uh, X plus Y equals 4, 3X minus Y equals 11.
+
+[Leo Irakliotis] 11:45:25
+Okay, and what is X and Y? How do we solve this system of equations? Well, we solve the first equation for X.
+
+[Leo Irakliotis] 11:45:37
+And then we substitute X here.
+
+[Leo Irakliotis] 11:45:40
+And it will solve for Y.
+
+[Leo Irakliotis] 11:45:42
+3
+
+[Leo Irakliotis] 11:45:44
+4 minus y minus y equals 11. Therefore, we have 12 minus 3y minus y equals 1. Therefore, we have 12 minus 4y equals.
+
+[Leo Irakliotis] 11:46:00
+Eleven, not one. Eleven.
+
+[Leo Irakliotis] 11:46:04
+Therefore…
+
+[Leo Irakliotis] 11:46:08
+minus 4y equals 11 minus 12. Therefore.
+
+[Leo Irakliotis] 11:46:14
+minus y equals 11 minus 12 divided by 4. Therefore y equals.
+
+[Leo Irakliotis] 11:46:23
+1/4.
+
+[Leo Irakliotis] 11:46:24
+So now, we have this value, and I can take it all the way up here, substitute Y for 1 fourth, and I can say that X equals 3.5… uh, 3.25… 3.75.
+
+[Leo Irakliotis] 11:46:43
+And doing this with a system of two equations with two unknowns is straightforward.
+
+[Leo Irakliotis] 11:46:50
+Right? Uh, even if I had 3 unknowns, if I had an equation that had X plus Y plus Z equals 5, X minus Y.
+
+[Leo Irakliotis] 11:47:01
+plus 3Z equals 20, and minus Y plus Z equals minus 2. Again, I can solve the first equation for X, substitute X in the second equation, obtain Y, plug in Y here, obtain a solution for Z, and then substitute upwards.
+
+[Leo Irakliotis] 11:47:19
+get a value for Y and get a value for X.
+
+[Leo Irakliotis] 11:47:23
+What happens if you have a 4 by — this is called a 3 by 3 system.
+
+[Leo Irakliotis] 11:47:28
+This year was a 2x2 system. What if you have a 10x10 system?
+
+[Leo Irakliotis] 11:47:34
+of equations. 10 equations with 10 unknowns. Can you do this by hand? Yes. It's going to be very laborious. And what we know from mathematics is because.
+
+[Leo Irakliotis] 11:47:49
+of all the labor that people in the past put in solving those equations there is those systems of equations there is a way to solve them very very very very fast without doing all the substitutions that you got to see here and that's an algebraic.
+
+[Leo Irakliotis] 11:48:06
+uh… approach. So, for example, when I had, uh, the system X plus.
+
+[Leo Irakliotis] 11:48:12
+Y equals 4.
+
+[Leo Irakliotis] 11:48:17
+And what was the second equation? 3x minus y equals 11.
+
+[Leo Irakliotis] 11:48:25
+The first thing that I do is to write the equation in a more canonical form. Canonical form means to write the equation first unknown.
+
+[Leo Irakliotis] 11:48:35
+plus second unknown equals this known value.
+
+[Leo Irakliotis] 11:48:44
+First, unknown.
+
+[Leo Irakliotis] 11:48:46
+Times 3 minus the second unknown equals the second.
+
+[Leo Irakliotis] 11:48:53
+known value. So instead of using separate letters, one for its unknown, I use indexed axes, because imagine if you had an equation system with 30 equations.
+
+[Leo Irakliotis] 11:49:04
+And 30 unknowns. You run out of letters. A, B, C, D, E, L, so on. Right? So we use subscripted variables for that.
+
+[Leo Irakliotis] 11:49:13
+And then, recognize that this equation has a more generic form that has a coefficient.
+
+[Leo Irakliotis] 11:49:21
+for the…
+
+[Leo Irakliotis] 11:49:23
+First equations, first unknown.
+
+[Leo Irakliotis] 11:49:25
+Times the first unknown.
+
+[Leo Irakliotis] 11:49:27
+plus a coefficient for the first equation's second unknown, times the second unknown, equals the known value of the first equation.
+
+[Leo Irakliotis] 11:49:36
+And the second equation has a coefficient for the second equation's first unknown.
+
+[Leo Irakliotis] 11:49:41
+That's a 3 here times x1.
+
+[Leo Irakliotis] 11:49:44
+Plus, the second equation's coefficient for the second unknown times the second unknown equals…
+
+[Leo Irakliotis] 11:49:50
+And now I can write this system two by two.
+
+[Leo Irakliotis] 11:49:57
+as if I use a matrix A to capture just the coefficients of the unknown.
+
+[Leo Irakliotis] 11:50:02
+First equation's coefficient for the first unknown. First equation's coefficient for the second unknown.
+
+[Leo Irakliotis] 11:50:08
+Second equations coefficient for the first unknown. coefficient for the second unknown.
+
+[Leo Irakliotis] 11:50:16
+It's a matrix. I will have another matrix that captures the unknown variables.
+
+[Leo Irakliotis] 11:50:22
+Next one.
+
+[Leo Irakliotis] 11:50:24
+Connects to.
+
+[Leo Irakliotis] 11:50:25
+And another matrix that captures the known values for each equation, first equation, second equation.
+
+[Leo Irakliotis] 11:50:32
+Okay, now I can write this system.
+
+[Leo Irakliotis] 11:50:36
+of equations in matrix representation, matrix A times matrix X.
+
+[Leo Irakliotis] 11:50:43
+equals matrix B.
+
+[Leo Irakliotis] 11:50:47
+And I can solve it by multiplying both sides on…
+
+[Leo Irakliotis] 11:50:51
+of the equation on the left with the inverse of matrix A.
+
+[Leo Irakliotis] 11:50:57
+Inverse of matrix A times the matrix A itself times X equals inverse of matrix A times matrix B.
+
+[Leo Irakliotis] 11:51:05
+And…
+
+[Leo Irakliotis] 11:51:07
+we much like in any other algebraic domain where you multiply something by its by its uh.
+
+[Leo Irakliotis] 11:51:16
+Inverse, those two terms cancel out.
+
+[Leo Irakliotis] 11:51:18
+And what we get is…
+
+[Leo Irakliotis] 11:51:22
+matrix X equals the inverse of Matrix A times Matrix B of course now we have to figure out uh.
+
+[Leo Irakliotis] 11:51:34
+How to invert the matrix, that's a whole different, uh, kind of worms, but…
+
+[Leo Irakliotis] 11:51:41
+These operations can be generalized for any system of equations where the matrix A.
+
+[Leo Irakliotis] 11:51:49
+may have.
+
+[Leo Irakliotis] 11:51:53
+and unknowns.
+
+[Leo Irakliotis] 11:52:01
+nth equation, first coefficient, nth equation, nth coefficient.
+
+[Leo Irakliotis] 11:52:26
+And I can plug this matrix… matrices into two-dimensional lists in Python or in any other programming language. So, for example, this would be a list like…
+
+[Leo Irakliotis] 11:52:40
+A11, A12.
+
+[Leo Irakliotis] 11:52:43
+There you are, man.
+
+[Leo Irakliotis] 11:52:45
+for the first row here.
+
+[Leo Irakliotis] 11:52:49
+For the second row that I'm not showing here, there's the second row.
+
+[Leo Irakliotis] 11:52:55
+I would have…
+
+[Leo Irakliotis] 11:52:57
+Another list.
+
+[Leo Irakliotis] 11:52:59
+A coefficient of the coefficient… second equation's coefficient for the first unknown, second equation's coefficient for the second unknown, up to second equation's coefficient for the nth unknown.
+
+[Leo Irakliotis] 11:53:13
+All the way.
+
+[Leo Irakliotis] 11:53:15
+to the end here.
+
+[Leo Irakliotis] 11:53:30
+This is a two-dimensional list. For example, in the simple problem that we tried here.
+
+[Leo Irakliotis] 11:53:38
+That list would have been something like…
+
+[Leo Irakliotis] 11:53:42
+for this problem.
+
+[Leo Irakliotis] 11:53:53
+1… 1…
+
+[Leo Irakliotis] 11:53:55
+3 minus…
+
+[Leo Irakliotis] 11:53:57
+Three comma.
+
+[Leo Irakliotis] 11:53:59
+minus one.
+
+[Leo Irakliotis] 11:54:02
+And I can manipulate these objects using.
+
+[Leo Irakliotis] 11:54:07
+Nested.
+
+[Leo Irakliotis] 11:54:09
+loops. I can traverse a matrix.
+
+[Leo Irakliotis] 11:54:18
+First, by row.
+
+[Leo Irakliotis] 11:54:20
+for each row.
+
+[Leo Irakliotis] 11:54:26
+for each column.
+
+[Leo Irakliotis] 11:54:31
+And I'll end up going for each row, column one, column two.
+
+[Leo Irakliotis] 11:54:37
+second row column one column two and I can do this scanning if I had more elements.
+
+[Leo Irakliotis] 11:54:46
+using a nested loop.
+
+[Leo Irakliotis] 11:54:49
+Nested loops are essential.
+
+[Leo Irakliotis] 11:54:52
+in programming.
+
+[Leo Irakliotis] 11:54:55
+for a lot of practical engineering scientific applications.
+
+[Leo Irakliotis] 11:54:59
+But that's not our thing here, that's not what Bella is asking, but I thought that was a good segue to throw a little bit of perspective as to why these loops are important.
+
+[Leo Irakliotis] 11:55:12
+However, very expensive, because every time we nest a loop.
+
+[Leo Irakliotis] 11:55:17
+we increase the number of time it takes for the operations to complete. And that was… that was… that was a big problem, because when… with artificial intelligence, because when you were looking at matrices like this to represent neural networks.
+
+[Leo Irakliotis] 11:55:31
+to capture knowledge.
+
+[Leo Irakliotis] 11:55:34
+Those matrices had millions of columns and millions of rows. So, first of all, they couldn't fit in memory because they were too big in memory, and then scanning row by row, column by column.
+
+[Leo Irakliotis] 11:55:49
+Took a lot of time.
+
+[Leo Irakliotis] 11:55:52
+A more everyday experience that we get with nested loops is in theater seating.
+
+[Leo Irakliotis] 11:56:00
+You have a stage?
+
+[Leo Irakliotis] 11:56:03
+And in front of the stage.
+
+[Leo Irakliotis] 11:56:07
+You have seats.
+
+[Leo Irakliotis] 11:56:12
+All right, let's, uh… let's see here…
+
+[Leo Irakliotis] 11:56:17
+Let's test your culture refinement.
+
+[Leo Irakliotis] 11:56:22
+And people about the world that you are.
+
+[Leo Irakliotis] 11:56:25
+How are seats numbered in a theater? Not in a movie theater, in an actual theater.
+
+[Leo Irakliotis] 11:56:32
+How are seats numbered?
+
+[Bella Fiorucci] 11:56:37
+Each row is usually a letter, and then each seat is a number.
+
+[Leo Irakliotis] 11:56:40
+Each row is a letter.
+
+[Leo Irakliotis] 11:56:44
+And they have 1, 2, 3, 4, or if it's, you know, if it's a 9 in the middle, you may have the odd numbers here, the even numbers there, but they have…
+
+[Leo Irakliotis] 11:56:56
+A horizontal index and a vertical index.
+
+[Leo Irakliotis] 11:57:00
+And there is for row.
+
+[Leo Irakliotis] 11:57:07
+in A, B, C, and what have you not there, right?
+
+[Leo Irakliotis] 11:57:17
+And for column.
+
+[Leo Irakliotis] 11:57:22
+One, two, what have you. There is your massive loop. So how do you go?
+
+[Leo Irakliotis] 11:57:31
+audience member after audience member in this theater.
+
+[Leo Irakliotis] 11:57:35
+You go row by row.
+
+[Leo Irakliotis] 11:57:37
+first person in this row, second person in this row, third person in this row, fourth person in this row, and so on. And when you get to the next row, end of the row, what do you do? You go to the next row, first person in this row, first person, second, third, fourth, and so on.
+
+[Leo Irakliotis] 11:57:50
+First, second, third, and fourth. So, row by row, and you count from first person to the last person for every row. That is what a nested loop is. Go person after person in a theater sitting.
+
+[Leo Irakliotis] 11:58:04
+And that traversal has applications in artificial intelligence, has applications in building silly multiplication tables, in case we forget what 5 times 6 is.
+
+[Leo Irakliotis] 11:58:15
+And I'll tell you that when I was in elementary school, the notebooks that we were getting for school at the back, they had that multiplication thing printed so that you can memorize it and those operations fast. We can do this to scan the people in any city.
+
+[Leo Irakliotis] 11:58:32
+two-dimensional seating arrangement to solve linear equation systems, and so on. Also.
+
+[Leo Irakliotis] 11:58:40
+We use nested loops.
+
+[Leo Irakliotis] 11:58:43
+to process strings.
+
+[Leo Irakliotis] 11:58:45
+Because when you're searching for a substring.
+
+[Leo Irakliotis] 11:58:50
+with the string.
+
+[Leo Irakliotis] 11:59:12
+Let me make something. That's too easy. Let me make it more challenging.
+
+[Leo Irakliotis] 11:59:17
+Example.
+
+[Leo Irakliotis] 12:00:01
+Let's see.
+
+[Leo Irakliotis] 12:00:03
+that I want to ask so the question is.
+
+[Leo Irakliotis] 12:00:09
+Naina.
+
+[Leo Irakliotis] 12:00:10
+in banana.
+
+[Leo Irakliotis] 12:00:13
+is this up string in this string.
+
+[Leo Irakliotis] 12:00:21
+No.
+
+[Leo Irakliotis] 12:00:23
+Don't like this example. Let me add one more letter.
+
+[Leo Irakliotis] 12:00:33
+Bananas.
+
+[Leo Irakliotis] 12:00:38
+the substring AS.
+
+[Leo Irakliotis] 12:00:41
+In bananas.
+
+[Leo Irakliotis] 12:00:46
+And if it is, what position can I find it?
+
+[Leo Irakliotis] 12:01:00
+So clearly the answer here is five.
+
+[Leo Irakliotis] 12:01:04
+AS is at position 5. But how do I go about finding it? I scan the string.
+
+[Leo Irakliotis] 12:01:12
+From left to right.
+
+[Leo Irakliotis] 12:01:20
+Until I find…
+
+[Leo Irakliotis] 12:01:24
+the substrings.
+
+[Leo Irakliotis] 12:01:28
+First letter.
+
+[Leo Irakliotis] 12:01:32
+What is the substring's first letter? A. So I scan from left to right until I find an A.
+
+[Leo Irakliotis] 12:01:38
+So I find here A.
+
+[Leo Irakliotis] 12:01:42
+So this character, where I'm currently at, scanning the input string, matches the first character of the substring.
+
+[Leo Irakliotis] 12:01:51
+And when I find a match.
+
+[Leo Irakliotis] 12:01:54
+What I want to do is then check if the second character.
+
+[Leo Irakliotis] 12:02:00
+of the substring matches the character after this.
+
+[Leo Irakliotis] 12:02:06
+So now, I want to initiate another scan.
+
+[Leo Irakliotis] 12:02:20
+Check if remaining characters.
+
+[Leo Irakliotis] 12:02:30
+of substring.
+
+[Leo Irakliotis] 12:02:33
+are also present.
+
+[Leo Irakliotis] 12:02:40
+So, if I'm VA.
+
+[Leo Irakliotis] 12:02:43
+And then I go next, is that an S? No.
+
+[Leo Irakliotis] 12:02:48
+And if that's an S, then I can skip my search…
+
+[Leo Irakliotis] 12:02:53
+to start here.
+
+[Leo Irakliotis] 12:02:54
+And look again for the first letter of the substring, null.
+
+[Leo Irakliotis] 12:02:59
+come here oh this matches the first letter of the star substring okay let me um.
+
+[Leo Irakliotis] 12:03:06
+Let me try again. Is what comes after it the next character from the substring? No.
+
+[Leo Irakliotis] 12:03:16
+Okay, continue the search. Come here. No, this does not match the first character of the substring. Go next. This matches the first character of the substring. Okay, stay here. And now traverse the substring from the second character on and make sure and see if we're matching.
+
+[Leo Irakliotis] 12:03:34
+And do this for all the subsequent characters in the substring. Here, the substring has only two characters to keep the example symbol.
+
+[Leo Irakliotis] 12:03:42
+So we are looking to find.
+
+[Leo Irakliotis] 12:03:47
+a match between the current character of the string and the first character.
+
+[Leo Irakliotis] 12:03:54
+of the substrate.
+
+[Leo Irakliotis] 12:04:32
+And when that match is found.
+
+[Leo Irakliotis] 12:04:35
+What we want to do next is we want to process the remaining characters of the substring.
+
+[Leo Irakliotis] 12:05:08
+And by process, I mean make sure that, okay, you just found a match.
+
+[Leo Irakliotis] 12:05:14
+For the first character of the substring.
+
+[Leo Irakliotis] 12:05:17
+Inside the string you're processing.
+
+[Leo Irakliotis] 12:05:23
+And let's say you are at position…
+
+[Leo Irakliotis] 12:05:29
+So, the input string…
+
+[Leo Irakliotis] 12:05:34
+at position I.
+
+[Leo Irakliotis] 12:05:36
+Machis.
+
+[Leo Irakliotis] 12:05:38
+the first character of your substring.
+
+[Leo Irakliotis] 12:05:43
+So now, what you want to make sure is that input.
+
+[Leo Irakliotis] 12:05:50
+I plus 1…
+
+[Leo Irakliotis] 12:05:53
+Marches.
+
+[Leo Irakliotis] 12:05:55
+the next character of the substring and.
+
+[Leo Irakliotis] 12:06:02
+Input.
+
+[Leo Irakliotis] 12:06:05
+Plus two matches the third character.
+
+[Leo Irakliotis] 12:06:09
+of that string, and so on, until input.
+
+[Leo Irakliotis] 12:06:15
+I plus, let's call it M.
+
+[Leo Irakliotis] 12:06:19
+Matches.
+
+[Leo Irakliotis] 12:06:21
+the M position.
+
+[Leo Irakliotis] 12:06:25
+of, um…
+
+[Leo Irakliotis] 12:06:27
+the substrate. What is M? M is equal to the length.
+
+[Leo Irakliotis] 12:06:34
+of the substring.
+
+[Leo Irakliotis] 12:06:39
+Minus one to be specific.
+
+[Leo Irakliotis] 12:06:43
+So, what we have here, once we found the match at position I.
+
+[Leo Irakliotis] 12:06:58
+What we're doing is we're checking to see what's after that position with respect.
+
+[Leo Irakliotis] 12:07:08
+to the substring.
+
+[Leo Irakliotis] 12:07:12
+And what we execute here…
+
+[Leo Irakliotis] 12:07:38
+is a loop over the substring.
+
+[Leo Irakliotis] 12:07:43
+And that loop exists within a loop for the input string.
+
+[Leo Irakliotis] 12:07:49
+So the outer loop.
+
+[Leo Irakliotis] 12:08:06
+when there is a match.
+
+[Leo Irakliotis] 12:08:11
+loop over…
+
+[Leo Irakliotis] 12:08:13
+the substrate.
+
+[Leo Irakliotis] 12:08:21
+And when we're looping over…
+
+[Leo Irakliotis] 12:08:25
+the substring we want these matches here.
+
+[Leo Irakliotis] 12:08:30
+to happen.
+
+[Leo Irakliotis] 12:08:35
+Simultaneously.
+
+[Leo Irakliotis] 12:08:38
+I want the next character in this input string to match the second character of the substring, this to match this, and so on and so on. I want to have a perfect match.
+
+[Leo Irakliotis] 12:08:52
+And that is done with nested loops.
+
+[Leo Irakliotis] 12:09:00
+Because the first loop is checking to see, hey.
+
+[Leo Irakliotis] 12:09:04
+is where I am in the input string.
+
+[Leo Irakliotis] 12:09:07
+The same as the first character of the substring.
+
+[Leo Irakliotis] 12:09:11
+And every time the answer is yes, and we had 3 such hits with banana.
+
+[Leo Irakliotis] 12:09:15
+We were looking for the substring AS, so we were looking as to where is A in banana, and there are three of those, and only one of those A's is the right one. The one that is followed with what? With the characters of the substring we're looking for.
+
+[Leo Irakliotis] 12:09:32
+So the outer loop is looking for the beginning of a possible target, and the inner loop verifies the presence of that target.
+
+[Leo Irakliotis] 12:09:42
+Just because we found an A in banana doesn't mean that the letter that follows after it is S.
+
+[Leo Irakliotis] 12:09:49
+We look bananas, we look for the AS, not for any A.
+
+[Leo Irakliotis] 12:09:53
+And so we write this.
+
+[Leo Irakliotis] 12:10:57
+And if…
+
+[Leo Irakliotis] 12:11:02
+The current character of the input string.
+
+[Leo Irakliotis] 12:11:09
+What is the current character of the input string, the character of position 9?
+
+[Leo Irakliotis] 12:11:14
+matches the first character of the substring.
+
+[Leo Irakliotis] 12:11:23
+Then, look what's after that. And for that, I have to do the nested loop.
+
+[Leo Irakliotis] 12:11:29
+for J in range.
+
+[Leo Irakliotis] 12:11:32
+One up through the length of the substring.
+
+[Leo Irakliotis] 12:11:38
+And I want to do a cumulative.
+
+[Leo Irakliotis] 12:11:42
+conjunction.
+
+[Leo Irakliotis] 12:11:45
+If the…
+
+[Leo Irakliotis] 12:11:47
+These two characters match. And these two characters match. And these two characters match.
+
+[Leo Irakliotis] 12:11:53
+How do I do this? This is a cumulative algorithm. This is where, uh, this is what might have been the most challenging part. Not the most challenging part, I don't… I don't…
+
+[Leo Irakliotis] 12:12:07
+give the impression that there are more or less challenging parts in this assignment.
+
+[Leo Irakliotis] 12:12:15
+what happens here is, let's say that, you know, with a simple example here that I'm looking at Chicago.
+
+[Leo Irakliotis] 12:12:31
+And my target…
+
+[Leo Irakliotis] 12:12:36
+is ICA. That's my substring. Okay so I'm coming here I'm asking hey is…
+
+[Leo Irakliotis] 12:12:43
+My eye loop…
+
+[Leo Irakliotis] 12:12:45
+It's in the range from 0, 0, 1, 2, 3, 4, 5, 6.
+
+[Leo Irakliotis] 12:12:53
+Through 6. So I'm asking, is the…
+
+[Leo Irakliotis] 12:12:58
+um current character in Chicago the same as the first character in my substrate.
+
+[Leo Irakliotis] 12:13:13
+So, sub…
+
+[Leo Irakliotis] 12:13:16
+0 is… what is this here? I. So I'm looking… is this an I? No. Is this an I? No. Is this an I? Yes.
+
+[Leo Irakliotis] 12:13:24
+So, at position 3…
+
+[Leo Irakliotis] 12:13:29
+I have a match. I have my input.
+
+[Leo Irakliotis] 12:13:34
+at position three equals to my sub at position zero.
+
+[Leo Irakliotis] 12:13:42
+This is, you know, Brian Choi's Leo using I for an index and I for a letter here.
+
+[Leo Irakliotis] 12:13:48
+But I have this, I have… what is the third letter? Uh…
+
+[Leo Irakliotis] 12:13:55
+What is the third letter in Chicago? In I. What is the first letter in my target? I. So I got the match at this position. So now, what I'm doing, I want to go and say, if this…
+
+[Leo Irakliotis] 12:14:09
+is equal to this, and this is equal to this, then I have a match.
+
+[Leo Irakliotis] 12:14:22
+How do I write?
+
+[Leo Irakliotis] 12:14:25
+in a loop.
+
+[Leo Irakliotis] 12:14:28
+this cumulative.
+
+[Leo Irakliotis] 12:14:31
+conjunctions.
+
+[Leo Irakliotis] 12:14:40
+In principle.
+
+[Leo Irakliotis] 12:14:44
+This is the same as writing a sum.
+
+[Leo Irakliotis] 12:15:04
+A summation. I initialized.
+
+[Leo Irakliotis] 12:15:07
+my target value.
+
+[Leo Irakliotis] 12:15:09
+Zero. And then I write a loop.
+
+[Leo Irakliotis] 12:15:16
+And say, my target value…
+
+[Leo Irakliotis] 12:15:19
+It's what it was before plus the new value.
+
+[Leo Irakliotis] 12:15:21
+So this is a plain cumulative algorithm.
+
+[Leo Irakliotis] 12:15:28
+I can do the same thing.
+
+[Leo Irakliotis] 12:15:32
+Boolean with logical operations. I can have an initial assumption.
+
+[Leo Irakliotis] 12:15:41
+And I will say, set it to true.
+
+[Leo Irakliotis] 12:15:45
+And then, I will have a look…
+
+[Leo Irakliotis] 12:15:50
+Of some.
+
+[Leo Irakliotis] 12:15:51
+Length.
+
+[Leo Irakliotis] 12:15:52
+I'm making up numbers here.
+
+[Leo Irakliotis] 12:15:54
+And I can say my initial assumption.
+
+[Leo Irakliotis] 12:16:02
+Is what it was before.
+
+[Leo Irakliotis] 12:16:12
+And…
+
+[Leo Irakliotis] 12:16:16
+Some new assumption.
+
+[Leo Irakliotis] 12:16:19
+That is based on some condition that is evaluated inside the loop.
+
+[Leo Irakliotis] 12:16:24
+And in the case of matching substring, what is evaluated inside the loop is whether I continue to have match character by character after I find a match between the first character of the substring and the current of the string.
+
+[Leo Irakliotis] 12:16:40
+Do the rest of the characters match one at a time?
+
+[Leo Irakliotis] 12:16:48
+And the moment… so…
+
+[Leo Irakliotis] 12:16:51
+The moment this new assumption.
+
+[Leo Irakliotis] 12:16:55
+becomes false. I have what… this is probably true here, and false. True and false becomes false. The assumption becomes false, and that tells me, you know what?
+
+[Leo Irakliotis] 12:17:07
+That's, uh…
+
+[Leo Irakliotis] 12:17:10
+um, that's not a match. For example, again, with the Chicago, uh, example, if I had…
+
+[Leo Irakliotis] 12:17:28
+And someone said okay your target substring.
+
+[Leo Irakliotis] 12:17:32
+is ice.
+
+[Leo Irakliotis] 12:17:35
+Okay? You're looking, first of all, to find a match with the first character of the substring.
+
+[Leo Irakliotis] 12:17:43
+Is this a match? No. Is this a match? No. Is this a match? Yes. So now, you go, is the next character after it.
+
+[Leo Irakliotis] 12:17:54
+a match with this? Yes. Ooh, things are looking good. Is this a match?
+
+[Leo Irakliotis] 12:17:59
+With this, no.
+
+[Leo Irakliotis] 12:18:01
+So you had here…
+
+[Leo Irakliotis] 12:18:04
+true, here you had true and true, and here you had true and false, and that collapses to false, and you stop, because that's not a match, and you move forward.
+
+[Leo Irakliotis] 12:18:40
+So, in the example with, um…
+
+[Leo Irakliotis] 12:18:46
+the substring.
+
+[Leo Irakliotis] 12:18:55
+And I know we have only one minute left, so…
+
+[Leo Irakliotis] 12:19:35
+Assume true.
+
+[Leo Irakliotis] 12:19:38
+Let's go. Hope.
+
+[Leo Irakliotis] 12:19:42
+For true.
+
+[Leo Irakliotis] 12:19:46
+And then…
+
+[Leo Irakliotis] 12:19:48
+for let's do the other look for J in range.
+
+[Leo Irakliotis] 12:19:53
+one up to the length of the substring.
+
+[Leo Irakliotis] 12:20:01
+if…
+
+[Leo Irakliotis] 12:20:05
+Oh, I'll say hope for.
+
+[Leo Irakliotis] 12:20:09
+is what you had before. We started with Prune and now…
+
+[Leo Irakliotis] 12:20:14
+And now…
+
+[Leo Irakliotis] 12:20:16
+do the AND operation with a current… with a new condition, with a new evaluation, that the character at the input string.
+
+[Leo Irakliotis] 12:20:29
+At what position? At the position I plus J.
+
+[Leo Irakliotis] 12:20:35
+is the same as the character at the J position.
+
+[Leo Irakliotis] 12:20:41
+of the substring.
+
+[Leo Irakliotis] 12:20:43
+And as long as this character-by-character match works, true, true, true, true, and at the end.
+
+[Leo Irakliotis] 12:20:50
+uh, we return true, we found what we're looking for at that position, or the moment we find a mismatch, ICE versus ICA in Chicago.
+
+[Leo Irakliotis] 12:21:00
+Hope for becomes false.
+
+[Leo Irakliotis] 12:21:03
+And the result says no, what you're looking for is not here.
+
+[Leo Irakliotis] 12:21:12
+Very important question. Very important question to ask. Ask me that question.
+
+[Leo Irakliotis] 12:21:16
+is ama… is… is… can't… can't thank you enough for asking this question, because, um, searching for substrings really brings forward two things. Nested loops and cumulative.
+
+[Leo Irakliotis] 12:21:30
+Boolean variables.
+
+[Leo Irakliotis] 12:21:33
+And doing cumulative integer variables is easy when we write a sum for all the numbers from 1 to 10. But when you do cumulative Boolean, because we don't use them every day in the same way we use numbers, it takes a little bit more getting used to. So it's a really good question.
+
+[Leo Irakliotis] 12:21:48
+I have no idea if I got anywhere close to answering Bella, but it's a start for a conversation.
+
+[Leo Irakliotis] 12:22:00
+Any other questions, any comments?
+
+[Leo Irakliotis] 12:22:03
+OK, we'll go back to the banking and the ATM and money withdrawal tomorrow and work some more things. But please reflect a little bit on the discussion we started with Bella's question and see if you have any more questions about it. I'll post my solutions today.
+
+[Leo Irakliotis] 12:22:20
+Uh, with extensive comments based, I'll basically ask Claude to take the transcript, uh, from this meeting and convert it into comments for that code, and see how well it does.
+
+[Leo Irakliotis] 12:22:32
+And, um, we'll see where we are tomorrow.
+
+[Leo Irakliotis] 12:22:39
+All right, everyone. We'll see you then.
+
+[kandacegarcia] 12:22:42
+Thank you.
+
+[Bella Fiorucci] 12:22:43
+Thank you
+
