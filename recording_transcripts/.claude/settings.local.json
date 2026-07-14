@@ -30,7 +30,11 @@
       "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-07-01-COMP170.md /Users/leo/GitHub_Clones/comp-170-su26/)",
       "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-07-01-COMP271.md /Users/leo/GitHub_Clones/comp-271-su26/)",
       "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-07-06-COMP170.md /Users/leo/GitHub_Clones/comp-170-su26/)",
-      "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-07-06-COMP271.md /Users/leo/GitHub_Clones/comp-271-su26/)"
+      "Bash(cp /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-07-06-COMP271.md /Users/leo/GitHub_Clones/comp-271-su26/)",
+      "Bash(grep -n \"^\\\\[.*\\\\] 1[01]:[0-9][0-9]:[0-9][0-9]$\" /Users/leo/GitHub_Clones/redesign-foundational-sequence/recording_transcripts/2026-07-08.txt)",
+      "Bash(awk -F'] ' '{print NR\": \"$0}')",
+      "Bash(cp 2026-07-08-COMP170.md ../../comp-170-su26/)",
+      "Bash(cp 2026-07-08-COMP271.md ../../comp-271-su26/)"
     ]
   }
 }

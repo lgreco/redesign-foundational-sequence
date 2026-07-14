@@ -182,6 +182,36 @@ Walk through why checking `a != 0` first — before ever computing `discriminant
 
 ---
 
+### 8. Naming the Skill: Testing, Introduced Through an ATM
+
+Before returning one last time to `solve_quadratic`, stop and name what sections 4-7 were actually doing — not as a math topic, but as a general skill: **testing**. Introduce it with no code and no math, through a single everyday machine everyone has used: an ATM cash withdrawal.
+
+Start with the normal case: a customer with a $200 balance asks to withdraw $60. The machine checks the balance covers it, counts out three $20 bills, and updates the balance to $140. Nobody designs an ATM by only ever thinking about this case, and nobody should test it that way either — ask the class directly: what could a customer type into that withdrawal screen that this normal case doesn't cover?
+
+Build the list with them, one at a time, and for each one ask what the *correct* behavior should be — not just "would this crash":
+
+- **Withdraw more than the balance** ($500 from a $200 balance). There is no correct amount of cash to hand over — the request has to be refused, not silently rounded down to whatever's available.
+- **Withdraw $0.** Not really a withdrawal at all — should the machine do nothing, or refuse the request outright?
+- **Withdraw a negative amount** (a typo, or a customer trying `-$40`). Handing back *negative* cash makes no sense; this has to be rejected, not processed.
+- **Withdraw an amount that isn't a multiple of $20** ($45, say). The machine only carries $20 bills — there is no way to dispense that exact amount, even though the balance easily covers it.
+- **The machine itself is out of cash.** Even a perfectly normal, valid request ($60 from a $200 balance) fails if the machine has nothing left to give — the problem isn't the customer's input at all, it's the machine's own state.
+
+Name the pattern once, out loud: none of these five showed up by accident — they came from deliberately asking "what value could someone put here that isn't the case this was obviously built for?" and then asking whether the machine's behavior in that case is actually *correct*, not just "doesn't crash." That is what testing means: trying the edge cases on purpose, before a real customer finds them first.
+
+Return to `solve_quadratic` and point out that sections 4-7 already did exactly this, just without naming it: the table below is the test plan that was actually built, one edge case at a time, alongside its ATM counterpart.
+
+| Case | Example call | ATM counterpart |
+|---|---|---|
+| Normal case | `solve_quadratic(1, -3, 2)` | Withdraw $60 from a $200 balance |
+| Boundary / repeated root | `solve_quadratic(1, 2, 1)` | An amount that exactly exhausts the balance to $0 |
+| No real solution | `solve_quadratic(1, 2, 5)` | Withdraw more than the balance — no correct amount to hand back |
+| Division by zero | `solve_quadratic(0, 2, -6)` | — (this one has no ATM counterpart; name that honestly, not every edge case in one setting maps onto another) |
+| Total edge case | `solve_quadratic(0, 0, 5)` | Withdraw $0 — not really a request at all |
+
+Name explicitly that the mapping isn't perfect, and that's fine: the point isn't that every method's edge cases look alike, it's that every method — an ATM's withdrawal check or `solve_quadratic` — has some set of zero, negative, and boundary values worth trying on purpose, and a tester's job is to go looking for them instead of waiting for them to show up by accident.
+
+---
+
 ## Concepts to Name This Week
 
 | Concept | One-line definition |
@@ -196,6 +226,8 @@ Walk through why checking `a != 0` first — before ever computing `discriminant
 | Returning multiple values | `return a, b` is shorthand for `return (a, b)` — a method can hand back more than one value at once |
 | Tuple of tuples | A fixed-size bundle whose elements are themselves fixed-size bundles — here, `((re1, im1), (re2, im2))` |
 | Guard before you divide | Checking `a != 0` before computing `2 * a` in a denominator avoids `ZeroDivisionError` entirely |
+| Testing | Deliberately trying the values a method is *not* obviously meant for, to find out whether its behavior is actually correct, before a user finds out instead |
+| Edge case | An input that sits at a boundary, a zero, a negative, or a missing value — like withdrawing more than a balance, withdrawing $0, or an amount an ATM has no bills to make exactly |
 
 ---
 
@@ -285,6 +317,16 @@ Questions:
 2. Try the same unpacking (`x1, x2 = sol`) on the result of `solve_quadratic(1, 2, 5)` (the complex case). What do `x1` and `x2` actually hold now, and why might that surprise a caller who expected two plain numbers?
 
 ---
+### Exercise 9 — Finding Edge Cases in a Machine You Use
+
+Pick one machine or routine from daily life that isn't the ATM (a vending machine, a laundromat's coin slot, a parking meter, a self-checkout scanner, anything that takes an input and reacts to it).
+
+Questions:
+1. What is the normal case — the input it was obviously built for?
+2. Name at least three edge cases for it: a zero, a negative, a boundary value sitting exactly on a line, or a missing/invalid value — the way the ATM example named "withdraw more than the balance," "withdraw $0," and "an amount with no exact combination of bills."
+3. For each edge case, is the machine's actual behavior correct, undefined, or silently wrong? How would you find out without breaking anything for real?
+
+---
 
 ## Topics Deferred to Later Weeks
 
@@ -296,3 +338,4 @@ Questions:
 - Rewriting `solve_quadratic` so every case — real or complex — returns the same uniform shape, resolving the design tension named in section 6
 - Distinguishing "infinitely many solutions" from "no solutions" when `a == 0` and `b == 0` (both currently collapse to the empty tuple)
 - Named tuples (`collections.namedtuple`) as a way to label a tuple's positions with names instead of only positions
+- Writing tests as actual code (`assert`, `unittest`/`pytest`) — this week only names edge cases and traces them by hand; automating the checks comes later
