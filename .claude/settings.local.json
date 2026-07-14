@@ -6,9 +6,28 @@
       "Bash(git -C ~/GitHub_Clones/introcs-cs2-examples-python pull)",
       "Bash(git -C ~/GitHub_Clones/prompts-public pull)",
       "Bash(git *)",
+      "Bash(python3 *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(mkdir *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(wc *)",
+      "Bash(diff *)",
       "Read(//Users/leo/GitHub_Clones/comp-271-su26/**)",
       "Read(//Users/leo/**)",
-      "Bash(python3 week07-solutions.py)"
+      "Read(//mnt/e/GitHub_Clones/**)",
+      "Read(//home/leo/GitHub_Clones/**)",
+      "Write(//mnt/e/GitHub_Clones/**)",
+      "Write(//home/leo/GitHub_Clones/**)",
+      "Write(//Users/leo/GitHub_Clones/**)"
+    ],
+    "additionalDirectories": [
+      "/mnt/e/GitHub_Clones/comp-170-su26",
+      "/mnt/e/GitHub_Clones/comp-271-su26",
+      "/home/leo/GitHub_Clones/comp-170-su26",
+      "/home/leo/GitHub_Clones/comp-271-su26"
     ]
   }
 }
