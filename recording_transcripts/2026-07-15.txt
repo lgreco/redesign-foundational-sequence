@@ -1,0 +1,2619 @@
+[Kofi Nyarku] 10:23:01
+want to get was
+
+[Leo Irakliotis] 10:25:15
+Hello.
+
+[Alexander Garcia] 10:25:23
+Morning.
+
+[Leo Irakliotis] 10:25:24
+Questions, comments, requests?
+
+[Leo Irakliotis] 10:25:33
+All right.
+
+[Leo Irakliotis] 10:25:33
+So we are talking about a map.
+
+[Leo Irakliotis] 10:25:38
+We call it a graph.
+
+[Leo Irakliotis] 10:25:40
+And the graph is a little bit more than a map, but at this level, if we conceptualize a graph as a map of towns connected by roads, and a couple of towns may be on an island, so there is no connection between the towns of that island and the mainland.
+
+[Leo Irakliotis] 10:25:58
+We got the 99% of the concept down. The rest 1% is mathematical details that can wait.
+
+[Leo Irakliotis] 10:26:08
+for in a later course.
+
+[Leo Irakliotis] 10:26:12
+And one question we asked yesterday was, okay, how do you describe this map?
+
+[Leo Irakliotis] 10:26:20
+In plain terms, if I gave you a piece of paper, how would you describe it? And the description that comes kind of naturally is what technically is known as the adjacency list representation of the graph.
+
+[Leo Irakliotis] 10:26:36
+For every…
+
+[Leo Irakliotis] 10:26:40
+node for every point, for every vertex.
+
+[Leo Irakliotis] 10:26:43
+In the graph?
+
+[Leo Irakliotis] 10:26:45
+We list next to it the nodes it has a direct and immediate connection to.
+
+[Leo Irakliotis] 10:26:52
+Because node A is connected to node E.
+
+[Leo Irakliotis] 10:26:57
+So we can claim.
+
+[Leo Irakliotis] 10:27:00
+that…
+
+[Leo Irakliotis] 10:27:03
+Node A is connected to node G through B and C. That's an indirect connection. We're only listing the direct connections.
+
+[Leo Irakliotis] 10:27:16
+Uh, for every node. So, for example, for A, the direct connections are B, C.
+
+[Leo Irakliotis] 10:27:22
+And
+
+[Leo Irakliotis] 10:27:23
+D.
+
+[Leo Irakliotis] 10:27:24
+And this mapping is essentially the foundation of adjacency list representation, which means that for every vertex, for every point, for every node, for every town in this map
+
+[Leo Irakliotis] 10:27:41
+create next to it a list
+
+[Leo Irakliotis] 10:27:46
+with the towns that connect to it immediately. And an immediate connection is manifested by this, by an edge. An edge…
+
+[Leo Irakliotis] 10:27:59
+associates two vertices, two nodes, two points, two towns with each other.
+
+[Leo Irakliotis] 10:28:09
+One problem we have, or let me phrase this as a question.
+
+[Leo Irakliotis] 10:28:17
+If we use letters.
+
+[Leo Irakliotis] 10:28:19
+to label the towns on a map.
+
+[Leo Irakliotis] 10:28:23
+Do you see us running into a problem?
+
+[Temeeka Glass] 10:28:30
+Would we run out of letters?
+
+[Leo Irakliotis] 10:28:32
+We run out of flavors. And what do you do when you run out of flavors? Um, can you, um…
+
+[Leo Irakliotis] 10:28:40
+uh, create, you know, the next… once you run out of letters, what do you do? You start using double letters, so here is town BK, and then you… when you run out of doublets, do you know… what do you do?
+
+[Leo Irakliotis] 10:28:52
+A, Z, K for letters, and when you write out of triplets, what do you do?
+
+[Leo Irakliotis] 10:28:57
+I mean, that's a solution.
+
+[Leo Irakliotis] 10:29:01
+To use double and triple and, uh, quadruple letters, but if you're going to use multiple letters.
+
+[Leo Irakliotis] 10:29:07
+Why don't you use the actual names of towns? So instead of calling…
+
+[Leo Irakliotis] 10:29:13
+Uh, this town here…
+
+[Leo Irakliotis] 10:29:19
+XWF, why do you not call it Chicago?
+
+[Leo Irakliotis] 10:29:23
+Chicago is just a bunch of letters, right? So we don't want to use letters because…
+
+[Leo Irakliotis] 10:29:34
+They're not great for enumerating large collections of items. Is there another tool we have to enumerate large collections of items?
+
+[Leo Irakliotis] 10:29:47
+Let's think about it. Do we have another tool to enumerate?
+
+[Leo Irakliotis] 10:29:51
+Items?
+
+[Zahra Nadeem] 10:29:52
+Numbers.
+
+[Leo Irakliotis] 10:29:53
+Numbers, maybe? So, the practice…
+
+[Leo Irakliotis] 10:29:59
+um, we use is to label these nodes, these vertices, with integer numbers beginning with the equivalent of letter A, which numerically is the number 0. So I'm going to draw not quite the same, but I'll try to keep it similar. Here's another.
+
+[Leo Irakliotis] 10:30:15
+graph, another map, that starts with vertex 0.
+
+[Leo Irakliotis] 10:30:21
+And it's connected to vertex one.
+
+[Leo Irakliotis] 10:30:27
+And maybe vertex two.
+
+[Leo Irakliotis] 10:30:29
+And let's do a vertex 3 here.
+
+[Leo Irakliotis] 10:30:34
+And then we have vertex four, and we have five here connected to seven. Oh, I'm missing six. Let's put a six here.
+
+[Leo Irakliotis] 10:30:54
+So there is a graph where instead of letters, I'm using numbers.
+
+[Leo Irakliotis] 10:30:58
+And again, using the adjacency representation technique that Temeeka suggested yesterday, I can create.
+
+[Leo Irakliotis] 10:31:08
+The least.
+
+[Leo Irakliotis] 10:31:11
+So for every vertex, 0…
+
+[Leo Irakliotis] 10:31:22
+5…
+
+[Leo Irakliotis] 10:31:24
+6…
+
+[Leo Irakliotis] 10:31:27
+Seven.
+
+[Leo Irakliotis] 10:31:29
+0, 1, 2, 3.
+
+[Leo Irakliotis] 10:31:33
+four, five, six.
+
+[Leo Irakliotis] 10:31:36
+Seven.
+
+[Leo Irakliotis] 10:31:37
+I can now write the neighbors. What are the neighbors for 0, 1, 2, and 3?
+
+[Leo Irakliotis] 10:31:48
+Let me use a different color.
+
+[Leo Irakliotis] 10:31:50
+for emphasis here.
+
+[Leo Irakliotis] 10:31:57
+Wake up, computer.
+
+[Leo Irakliotis] 10:32:17
+And 3. And for 1, what are the neighbors? 0 and 6.
+
+[Leo Irakliotis] 10:32:23
+And for two other neighbors.
+
+[Leo Irakliotis] 10:32:25
+034.
+
+[Leo Irakliotis] 10:32:30
+And what are four's neighbors? Two and six.
+
+[Leo Irakliotis] 10:32:35
+And what are…
+
+[Leo Irakliotis] 10:32:37
+No, three neighbors, sorry.
+
+[Leo Irakliotis] 10:32:48
+Two neighbors are zero, three, and four. We've got four there. Three's neighbors are two and zero. Doesn't matter which order you write them. Four neighbors are six.
+
+[Leo Irakliotis] 10:33:01
+and two. Five neighbors is seven. Six neighbors are one and four.
+
+[Leo Irakliotis] 10:33:06
+And 7 neighbors are…
+
+[Leo Irakliotis] 10:33:11
+Five.
+
+[Leo Irakliotis] 10:33:13
+So this is the adjacency list.
+
+[Leo Irakliotis] 10:33:17
+For, um…
+
+[Leo Irakliotis] 10:33:23
+for this map.
+
+[Leo Irakliotis] 10:33:25
+And it is very easy to represent it computationally because this is, in Python at least, because this is a list of lists. Here is one list.
+
+[Leo Irakliotis] 10:33:35
+Here is another list.
+
+[Leo Irakliotis] 10:33:38
+Here's another list.
+
+[Leo Irakliotis] 10:33:41
+Here's another list.
+
+[Leo Irakliotis] 10:33:51
+And the position of each of these lists in a bigger list.
+
+[Leo Irakliotis] 10:34:00
+The index…
+
+[Leo Irakliotis] 10:34:02
+of each of those lists in the bigger list is actually the label of the node in question. So if I say, hey, what are the neighbors for node with label three, you go to index three and you produce this list.
+
+[Leo Irakliotis] 10:34:18
+And it's straightforward to write this in, um…
+
+[Leo Irakliotis] 10:34:24
+in Python. So let's write this really quickly here.
+
+[Leo Irakliotis] 10:35:09
+Okay, so let's call it a graph.
+
+[Leo Irakliotis] 10:35:13
+And it's going to be a list.
+
+[Leo Irakliotis] 10:35:17
+And what I'm going to have inside this list is lists. So the first list is one.
+
+[Leo Irakliotis] 10:35:23
+One, two, three.
+
+[Leo Irakliotis] 10:35:29
+And I will label these neighbors.
+
+[Leo Irakliotis] 10:35:35
+of vertex zero.
+
+[Leo Irakliotis] 10:35:48
+And after that, I have 06.
+
+[Leo Irakliotis] 10:36:00
+And these are the neighbors for vertex one.
+
+[Leo Irakliotis] 10:36:03
+And after that, I have 2, 3, 4.
+
+[Leo Irakliotis] 10:36:07
+No, 034.
+
+[Leo Irakliotis] 10:36:16
+And after that, I have 2, 0.
+
+[Leo Irakliotis] 10:36:20
+These are the neighbors for vertex.
+
+[Leo Irakliotis] 10:36:27
+3, and then I'm moving to vertex 4, which is 6, 2.
+
+[Leo Irakliotis] 10:36:31
+Or 2, 6. Order doesn't really matter.
+
+[Leo Irakliotis] 10:36:37
+And after that, vertex 5 has only one neighbor, 7.
+
+[Leo Irakliotis] 10:36:44
+And if vertex 5, or any vertex for that matter, but let's do it here, if vertex 5 was just by itself, no connection anywhere else.
+
+[Leo Irakliotis] 10:36:55
+Then, this would have been an empty list.
+
+[Leo Irakliotis] 10:37:00
+To indicate that there are no neighbors. The absence of neighbors will be an empty list. But as it happens, five has a neighbor, seven.
+
+[Leo Irakliotis] 10:37:14
+And then for 6, the neighbors are 1 and 4.
+
+[Leo Irakliotis] 10:37:23
+And finally, for vertex 7, the neighbor is 5.
+
+[Leo Irakliotis] 10:37:34
+So this is a graph.
+
+[Leo Irakliotis] 10:37:38
+And if I want to find what are the neighbors.
+
+[Leo Irakliotis] 10:37:45
+For vertex 4, all I have to do is to recall the element with index 4, meaning the fifth element.
+
+[Leo Irakliotis] 10:37:52
+of this list.
+
+[Leo Irakliotis] 10:37:55
+Easy peasy, right?
+
+[Leo Irakliotis] 10:38:00
+Let me make sure that the syntax is correct.
+
+[Leo Irakliotis] 10:38:05
+Okay. And…
+
+[Leo Irakliotis] 10:38:33
+Here's our adjacency list. We say, hey, what are the neighbors in this adjacency list for vertex 2?
+
+[Leo Irakliotis] 10:38:43
+Graph.
+
+[Leo Irakliotis] 10:38:46
+For vertex 2, vertex is 2, 3, 4.
+
+[Leo Irakliotis] 10:38:51
+So I got that.
+
+[Leo Irakliotis] 10:38:52
+I got my computer to reproduce the map, not in the most easy-to-read way, because when you say, okay, what are the neighbors?
+
+[Leo Irakliotis] 10:39:03
+For vertex 2, get 2, 3, 4. It's easier to see that when, pictorially, when you draw it.
+
+[Leo Irakliotis] 10:39:11
+But drawing a map is very helpful to humans.
+
+[Leo Irakliotis] 10:39:16
+useless to a computer. A computer cannot read a map. We can. We can because we don't have.
+
+[Leo Irakliotis] 10:39:23
+the computer's ability to process the map in a more abstract way, like using an adjacency list like we did here.
+
+[Leo Irakliotis] 10:39:31
+So, straightforward.
+
+[Leo Irakliotis] 10:39:33
+To map the connections.
+
+[Leo Irakliotis] 10:39:37
+Like so.
+
+[Leo Irakliotis] 10:39:38
+And that's all we need to do, no matter how complex the map is, no matter how many connections one vertex has to other vertices.
+
+[Leo Irakliotis] 10:39:48
+You know, if a vertex is connected to 1,000 other vertices, you know, the neighborhood, the neighbor list, the adjacency list for that vertex would be 1,000 elements long.
+
+[Leo Irakliotis] 10:39:58
+Which is great, because what is the alternative?
+
+[Leo Irakliotis] 10:40:02
+One question that we often have in this context is, hey, you know what? These vertices here look very much like a node.
+
+[Leo Irakliotis] 10:40:16
+object. Like we had a node with a next pointer and a previous pointer. So basically this looks like a node with more than two pointers.
+
+[Leo Irakliotis] 10:40:25
+So, what if you created a node object with an indefinite.
+
+[Leo Irakliotis] 10:40:31
+Number of pointers to other nodes. Okay, you can do that. Actually, that's a good exercise in futility.
+
+[Leo Irakliotis] 10:40:39
+Because if you wrote a node object with multiple pointers to other node objects, you are…
+
+[Leo Irakliotis] 10:40:48
+Sucking up a lot of memory.
+
+[Leo Irakliotis] 10:41:00
+So…
+
+[Leo Irakliotis] 10:41:04
+If we don't care about memory, no problem. But I keep telling you that I'm very frugal.
+
+[Leo Irakliotis] 10:41:10
+when it comes to memory allocations, because I still treat memory as a precious commodity, even though it is not as expensive as it was 40 years ago. It's more expensive now than it was 3 years ago. But you know prices will go will go down hopefully, eventually, when all these AI companies go bankrupt, because.
+
+[Leo Irakliotis] 10:41:31
+You know, it's all vaporware, right?
+
+[Leo Irakliotis] 10:41:35
+I don't think so, but eventually memory prices hopefully, hopefully will come down.
+
+[Leo Irakliotis] 10:41:42
+On the other hand, I was driving back to Chicago from northern Wisconsin last week, and.
+
+[Leo Irakliotis] 10:41:52
+Southbound on 43, as you are approaching Milwaukee, they're building this data center.
+
+[Leo Irakliotis] 10:41:59
+just north of Milwaukee, right about the same location.
+
+[Leo Irakliotis] 10:42:05
+Location is Port Washington.
+
+[Leo Irakliotis] 10:42:08
+And
+
+[Leo Irakliotis] 10:42:09
+You drive down the highway for about a mile.
+
+[Leo Irakliotis] 10:42:13
+And for an entire month, your next.
+
+[Leo Irakliotis] 10:42:21
+The future data center.
+
+[Leo Irakliotis] 10:42:25
+They… it's sprawling. It's about more than a square mile, I guess.
+
+[Leo Irakliotis] 10:42:32
+If you go online and look at Vantage data centers and see their locations, one of them is here in Wisconsin.
+
+[Leo Irakliotis] 10:42:40
+And it's… it's massive. So, uh, they will need to put servers in that place, and those servers will, uh, need memory, so I don't see memory prices going down for another year, but…
+
+[Leo Irakliotis] 10:42:52
+We can only hope.
+
+[Leo Irakliotis] 10:42:54
+But going back to the pro… back to the project here, if we created a node object.
+
+[Leo Irakliotis] 10:43:01
+with multiple pointers. And let's, you know, just for the sake of it.
+
+[Leo Irakliotis] 10:43:06
+Let's do this exercise. Let's create a multi-node object.
+
+[Leo Irakliotis] 10:43:14
+And, okay, class multi-node.
+
+[Leo Irakliotis] 10:43:20
+So, it's like a train station. Instead of having one line coming in and one line going out, it has multiple lines, like Union Station. When you're at Union Station in Chicago, you have 30 train lines emanating from it.
+
+[Leo Irakliotis] 10:43:35
+So I'll just write the init constructor here.
+
+[Leo Irakliotis] 10:43:55
+And for neighbors, instead of calling previous or next, it's going to be the neighbors.
+
+[Leo Irakliotis] 10:44:03
+If you can spell it. It would be just a list.
+
+[Leo Irakliotis] 10:44:09
+And this will be…
+
+[Leo Irakliotis] 10:44:11
+a list of node objects.
+
+[Leo Irakliotis] 10:44:14
+of multi-node objects.
+
+[Leo Irakliotis] 10:44:21
+So you can add to that list if you have…
+
+[Leo Irakliotis] 10:44:30
+If you create a multi-node object.
+
+[Leo Irakliotis] 10:44:35
+And it will have a list inside it.
+
+[Leo Irakliotis] 10:44:40
+With, uh, it's, um…
+
+[Leo Irakliotis] 10:44:44
+Neighbors.
+
+[Leo Irakliotis] 10:44:48
+It will be an empty list for now. And you say, okay, here, I'm going to add a connection to node X. So it will place the object X here. And then you want the object Y. Okay, I will expand this list to add the node Y. And you want the…
+
+[Leo Irakliotis] 10:45:05
+a link to Z, okay, it will keep appending nodes to that list.
+
+[Leo Irakliotis] 10:45:11
+So it's doable.
+
+[Leo Irakliotis] 10:45:14
+But if you track…
+
+[Leo Irakliotis] 10:45:16
+how the memory.
+
+[Leo Irakliotis] 10:45:19
+for this object grows, it's going to be kind of scary.
+
+[Leo Irakliotis] 10:45:23
+Again, kind of scary if you're like me and you think that anything that takes more than one kilobyte is too much.
+
+[Leo Irakliotis] 10:45:33
+But still, it's an expense. It's a resource that you have to allocate. And if you have no other option, absolutely go ahead and do it. But if you have an option, and we have an option here, why not use something better? And what we have here.
+
+[Leo Irakliotis] 10:45:52
+in our… to our… to our advantage is…
+
+[Leo Irakliotis] 10:45:57
+RAs.
+
+[Leo Irakliotis] 10:45:58
+This is a list of lists of integers.
+
+[Leo Irakliotis] 10:46:03
+And, of course, it occupies memory.
+
+[Leo Irakliotis] 10:46:08
+But compared to the memory that the alternative requires.
+
+[Leo Irakliotis] 10:46:12
+This is awesome.
+
+[Leo Irakliotis] 10:46:15
+But even this comes with a price.
+
+[Leo Irakliotis] 10:46:22
+Because what we have here is a list of lists.
+
+[Leo Irakliotis] 10:46:28
+And technically speaking, that requires some work because the elements of the big list are not consistently the same.
+
+[Leo Irakliotis] 10:46:43
+For example, the first element has a list of size three. The sixth element has a list of size one.
+
+[Leo Irakliotis] 10:46:54
+So the size of the member lists is not consistent, so we need to know in advance how long is the list of every element
+
+[Leo Irakliotis] 10:47:07
+in this list of lists.
+
+[Leo Irakliotis] 10:47:10
+There is a better, more mathematical way to do things, moving from the adjacency list to the adjacency matrix.
+
+[Leo Irakliotis] 10:47:20
+And the adjacency matrix is…
+
+[Leo Irakliotis] 10:47:23
+Basically, the mathematical representation.
+
+[Leo Irakliotis] 10:47:28
+of, um…
+
+[Leo Irakliotis] 10:47:31
+of this graph. So we are going to create.
+
+[Leo Irakliotis] 10:47:36
+an actual matrix that has as many rows and as many columns as we have.
+
+[Leo Irakliotis] 10:47:45
+Elements, nodes in…
+
+[Leo Irakliotis] 10:47:51
+In this graph.
+
+[Leo Irakliotis] 10:47:56
+Okay, let's…
+
+[Leo Irakliotis] 10:47:58
+Slow things here.
+
+[Leo Irakliotis] 10:48:05
+Let's see if I can do this.
+
+[Leo Irakliotis] 10:48:10
+So I have 8.
+
+[Leo Irakliotis] 10:48:12
+So it will be a matrix that has 8 by 8, 1.
+
+[Leo Irakliotis] 10:48:23
+3…
+
+[Leo Irakliotis] 10:48:26
+for…
+
+[Leo Irakliotis] 10:48:29
+5.
+
+[Leo Irakliotis] 10:48:32
+6…
+
+[Leo Irakliotis] 10:48:34
+Seven.
+
+[Leo Irakliotis] 10:48:38
+And it will also have 8 columns.
+
+[Leo Irakliotis] 10:48:47
+One.
+
+[Leo Irakliotis] 10:48:52
+Let's see.
+
+[Leo Irakliotis] 10:48:56
+5.
+
+[Leo Irakliotis] 10:48:59
+6.
+
+[Leo Irakliotis] 10:49:01
+Serving.
+
+[Leo Irakliotis] 10:49:04
+And I will label those columns and rows from 0 to 1.
+
+[Leo Irakliotis] 10:49:10
+0, 1.
+
+[Leo Irakliotis] 10:49:12
+Two. Three.
+
+[Leo Irakliotis] 10:49:14
+4… 5…
+
+[Leo Irakliotis] 10:49:16
+six, seven.
+
+[Leo Irakliotis] 10:49:18
+0, 1, 2, 3, 4.
+
+[Leo Irakliotis] 10:49:23
+5, 6, 7. And what I'm going to do is…
+
+[Leo Irakliotis] 10:49:29
+Every row…
+
+[Leo Irakliotis] 10:49:31
+corresponds to a vertex, and every indexed element of that row corresponds to the absence or presence of an edge.
+
+[Leo Irakliotis] 10:49:43
+between the row label and the column label.
+
+[Leo Irakliotis] 10:49:48
+And as a matter of convention, we do not allow.
+
+[Leo Irakliotis] 10:49:53
+self edges. We do not allow an edge, a connection from a vertex to itself.
+
+[Leo Irakliotis] 10:50:00
+So, by definition, the main diagonal.
+
+[Leo Irakliotis] 10:50:04
+of this matrix.
+
+[Leo Irakliotis] 10:50:06
+is going to be zero. Zero indicates the absence.
+
+[Leo Irakliotis] 10:50:15
+Off an edge.
+
+[Leo Irakliotis] 10:50:25
+There is no edge from a vertex to itself. And I'm going to use 1 to indicate the presence of an edge between a row and a column. So from 0 to 1, is there an edge? Yes.
+
+[Leo Irakliotis] 10:50:38
+And you will notice that there is… whatever I put above the diagonal is reflected below the diagonal, because if there is an edge from 0 to 1.
+
+[Leo Irakliotis] 10:50:48
+There's also an edge from 1 to 0.
+
+[Leo Irakliotis] 10:50:52
+Is there an answer from 0 to 2? Yes.
+
+[Leo Irakliotis] 10:50:56
+And yes. Is there an edge from 0 to 3? Yes. And yes. Is there an edge from 0 to anything else? No.
+
+[Leo Irakliotis] 10:51:04
+From vertex 0 to anything else, no. So, I will go 0, 0, 0, 0 here. No edge, no edge, no edge, no edge.
+
+[Leo Irakliotis] 10:51:16
+Is there an edge?
+
+[Leo Irakliotis] 10:51:18
+from…
+
+[Leo Irakliotis] 10:51:20
+So now I'm moving in the second row. Is there an edge? So, you know, the first two elements are completed. So all I have to do is ask, is there an edge from 1 to 2? The answer is no.
+
+[Leo Irakliotis] 10:51:32
+And again, I'm completing the diagonal, no. Is there an edge from 0 to 3?
+
+[Leo Irakliotis] 10:51:39
+Sorry, from 1 to 3. No.
+
+[Leo Irakliotis] 10:51:43
+And no. Is there an edge from 1 to 4? No. And no. 1 to 5? No. And no. 1 to 6?
+
+[Leo Irakliotis] 10:51:53
+Yes and yes. One to seven, no and no. So next row, the first three elements are already completed.
+
+[Leo Irakliotis] 10:52:01
+Partially because of the diagonal property, partially because of the symmetry. So I go 2 to 3, is there an edge from 2 to 3? Yes and yes. 2 to 4, yes and yes. 2 to 5, no and no. 2 to 6, no.
+
+[Leo Irakliotis] 10:52:19
+And no, 2 to 7, no, and no.
+
+[Leo Irakliotis] 10:52:22
+Next roll.
+
+[Leo Irakliotis] 10:52:24
+3 to 4, is there a connection between 3 to 4? No and no. 3 to 5, no and no. 3 to 6, no and no. 3 to 7, no and no.
+
+[Leo Irakliotis] 10:52:36
+Go to four. Four and five, no and no. Four to six, yes and yes.
+
+[Leo Irakliotis] 10:52:44
+Four to seven, no.
+
+[Leo Irakliotis] 10:52:46
+And no.
+
+[Leo Irakliotis] 10:53:05
+Four to six is one.
+
+[Leo Irakliotis] 10:53:11
+And then five, is there five and six? No. Five and seven, yes and yes. And then six, six and seven, no and no. So varies.
+
+[Leo Irakliotis] 10:53:21
+A little bit more dense.
+
+[Leo Irakliotis] 10:53:24
+A little bit more mathematical abstraction.
+
+[Leo Irakliotis] 10:53:30
+But…
+
+[Leo Irakliotis] 10:53:32
+This representation
+
+[Leo Irakliotis] 10:53:37
+Much more programming friendly because this is essentially an eight by eight array, a two dimensional array, a square array whose size reflects the number of vertices in the graph. We have as many rows and columns.
+
+[Leo Irakliotis] 10:53:52
+There are vertices in the graph.
+
+[Leo Irakliotis] 10:53:57
+And as a plain array, it is easier to implement, it is easier to handle in most programming languages, not just Python.
+
+[Leo Irakliotis] 10:54:08
+So we started with the adjacency representation that is easier for us to transition from a map, from a visual map.
+
+[Leo Irakliotis] 10:54:19
+to an adjacency list.
+
+[Leo Irakliotis] 10:54:20
+But then the adjacency list
+
+[Leo Irakliotis] 10:54:26
+can be represented
+
+[Leo Irakliotis] 10:54:31
+as a matrix that is even faster to process. And the transition, at least computationally, is straightforward.
+
+[Leo Irakliotis] 10:54:40
+I do not have to manually type.
+
+[Leo Irakliotis] 10:54:50
+The, um…
+
+[Leo Irakliotis] 10:54:52
+the matrix. I can write code, and here's the code, to convert, define a function.
+
+[Leo Irakliotis] 10:55:00
+Produce adjacency matrix.
+
+[Leo Irakliotis] 10:55:04
+And the input is from an adjacency list. So I will give you the list and you'll give me the matrix.
+
+[Leo Irakliotis] 10:55:13
+The first thing to do is to find how many vertices…
+
+[Leo Irakliotis] 10:55:18
+are in the adjacency list? How many vertices are in the graph that the adjacency list represents?
+
+[Leo Irakliotis] 10:55:32
+Well, it's the length.
+
+[Leo Irakliotis] 10:55:35
+of the adjacency list.
+
+[Leo Irakliotis] 10:55:44
+Because for every vertex in the graph, there is an entry in the adjacency list. Even if that entry in the adjacency list is an empty list, because it's a vertex with no neighbors.
+
+[Leo Irakliotis] 10:55:57
+It occupies space in the adjacency list, so the adjacency list is as long as the number of vertices in the graph.
+
+[Leo Irakliotis] 10:56:06
+And the next thing I'll do is I will create a square.
+
+[Leo Irakliotis] 10:56:12
+Array.
+
+[Leo Irakliotis] 10:56:13
+Full of zeros.
+
+[Leo Irakliotis] 10:56:31
+The adjacency matrix is.
+
+[Leo Irakliotis] 10:57:07
+Can I change number of vertices to just n to make the code a little bit more compact?
+
+[Leo Irakliotis] 10:57:19
+And I'll add a comment here.
+
+[Leo Irakliotis] 10:57:28
+So this expression, this list comprehension here.
+
+[Leo Irakliotis] 10:57:36
+is a little bit more readable.
+
+[Leo Irakliotis] 10:57:48
+All right, so this is basically a square matrix full of, with 64 n by n zeros, in this example with 64 zeros.
+
+[Leo Irakliotis] 10:57:56
+So now, I will scan the adjacency list, and everywhere I have enabled, I'll switch the corresponding.
+
+[Leo Irakliotis] 10:58:05
+Position in the matrix 2 and 1.
+
+[Leo Irakliotis] 10:58:12
+For I in range N.
+
+[Leo Irakliotis] 10:58:17
+Process the i-th vertex.
+
+[Leo Irakliotis] 10:58:28
+For neighbor.
+
+[Leo Irakliotis] 10:58:31
+For J, in graph.
+
+[Leo Irakliotis] 10:58:34
+Position I.
+
+[Leo Irakliotis] 10:58:35
+So, for example, when i equals 2.
+
+[Leo Irakliotis] 10:58:39
+Graph 2 is this. So I'm asking for every value here. So J in this example would be 0, 3, 4.
+
+[Leo Irakliotis] 10:58:47
+What I want you to do.
+
+[Leo Irakliotis] 10:58:49
+And it's not graph, it's adjacency list.
+
+[Leo Irakliotis] 10:59:03
+That's how the graph is inputted here.
+
+[Leo Irakliotis] 10:59:06
+What I want you to do, so now I corresponds to one vertex, and J corresponds to a neighbor for that vertex. I'm going to go to my JC\C matrix.
+
+[Leo Irakliotis] 10:59:18
+At row I.
+
+[Leo Irakliotis] 10:59:20
+Column J.
+
+[Leo Irakliotis] 10:59:22
+And set this to 1.
+
+[Leo Irakliotis] 10:59:25
+And also because of the symmetry.
+
+[Leo Irakliotis] 10:59:36
+I'll do the other, the symmetric element, to one.
+
+[Leo Irakliotis] 10:59:43
+And when the loops are done.
+
+[Leo Irakliotis] 10:59:46
+Return.
+
+[Leo Irakliotis] 10:59:47
+adjacency matrix.
+
+[Leo Irakliotis] 10:59:56
+So now I can run a code, say, okay, the adjacency matrix for this graph is…
+
+[Leo Irakliotis] 11:00:09
+of this graph.
+
+[Leo Irakliotis] 11:00:10
+And now let's print it nicely.
+
+[Leo Irakliotis] 11:00:46
+print each element of this matrix.
+
+[Leo Irakliotis] 11:01:05
+And let's paste a line here.
+
+[Leo Irakliotis] 11:01:08
+Hold our breath and run the code.
+
+[Leo Irakliotis] 11:01:14
+So there is the adjacency matrix based. And this is if, if you notice.
+
+[Leo Irakliotis] 11:01:21
+It's very similar, hopefully. It should be identical to what we wrote here.
+
+[Leo Irakliotis] 11:01:29
+And if there are any differences, that's because I messed up with the zeros and ones with my handwriting. But…
+
+[Leo Irakliotis] 11:01:36
+If you see line one here, it's 01110000.
+
+[Leo Irakliotis] 11:01:44
+And if you look at the same line here.
+
+[Leo Irakliotis] 11:01:50
+01110000. So first line, we got it right.
+
+[Leo Irakliotis] 11:01:56
+Second line…
+
+[Leo Irakliotis] 11:01:58
+Let's see if we got that right. And if we got that right, I'll quit while I'm ahead because I'm sure that I made a mistake somewhere further down. Go ahead. One, zero, zero. Sorry, the second line, one.
+
+[Leo Irakliotis] 11:02:10
+0 0 0 0 0 1 0.
+
+[Leo Irakliotis] 11:02:14
+1 0 0 0 0 0 1 0.
+
+[Leo Irakliotis] 11:02:23
+So it's very easy to take an adjacency list and convert it to an adjacency matrix.
+
+[Leo Irakliotis] 11:02:30
+But adjacency matrix is the way that…
+
+[Leo Irakliotis] 11:02:35
+we want to represent a graph. Because now I can traverse the adjacency matrix and say, hey, is there…
+
+[Leo Irakliotis] 11:02:44
+an edge between 4 and 5, between the vertices at 4 and 5, and what I need to do is go to row 4.
+
+[Leo Irakliotis] 11:02:55
+Go to column 5.
+
+[Leo Irakliotis] 11:02:59
+And see what's on the intersection. If at the intersection, all I have is a zero, no edge. If there is one, yes, edge.
+
+[Leo Irakliotis] 11:03:07
+So the same information is contained here
+
+[Leo Irakliotis] 11:03:12
+in a…
+
+[Leo Irakliotis] 11:03:14
+In the simplest and most efficient
+
+[Leo Irakliotis] 11:03:19
+Data structure. Arrays.
+
+[Leo Irakliotis] 11:03:22
+arrays in, at least for me, arrays rule. I'll take arrays over anything else, any.
+
+[Leo Irakliotis] 11:03:30
+Every time.
+
+[Leo Irakliotis] 11:03:33
+So now that I have this representation, now that I have a computationally.
+
+[Leo Irakliotis] 11:03:38
+friendly representation.
+
+[Leo Irakliotis] 11:03:42
+of the graph.
+
+[Leo Irakliotis] 11:03:44
+How can I answer questions about reachability? Because that was our initial question. Hey, can you tell me, yes, no, if vertex 0 is connected to vertex 5? The answer is no. Can you tell me if vertex 0 is connected to vertex 6?
+
+[Leo Irakliotis] 11:04:01
+The answer is yes.
+
+[Leo Irakliotis] 11:04:09
+The way to do this…
+
+[Leo Irakliotis] 11:04:13
+is very similar to the way that we traverse.
+
+[Leo Irakliotis] 11:04:18
+a maze. And, you know, how many of us are actually going into mazes? How many of us actually…
+
+[Leo Irakliotis] 11:04:30
+go to a corn maze, you know, they're going to be all… there will be the rage all over the area in about a month or so, you know, if…
+
+[Leo Irakliotis] 11:04:39
+If you have nothing better to do, Malta, Illinois, there is an apple orchard there and they have a great, great corn maze that kind of freaks me out because, you know, you go to those little narrow passages and the corn stalks are about six, seven feet tall, so you don't see anyone.
+
+[Leo Irakliotis] 11:04:58
+And you get around as you go deeper into the maze, it gets more and more quiet because you have all this tall grass acting as a acoustic insulation. And on a couple of spots, they have little towers where you can climb and find where you are and, you know, find your way out.
+
+[Leo Irakliotis] 11:05:15
+Uh, but what's your… what… what… if you are lost in a maze.
+
+[Leo Irakliotis] 11:05:20
+Because I'm sure it happens to you every day
+
+[Leo Irakliotis] 11:05:24
+What's your strategy
+
+[Leo Irakliotis] 11:05:25
+for getting out of a maze.
+
+[Leo Irakliotis] 11:05:28
+No rush. You're not rushing. I mean, you don't have a panic attack. So what's your strategy of getting out of a maze?
+
+[Temeeka Glass] 11:05:44
+Do you just like hug to a side and keep going like left or right?
+
+[Leo Irakliotis] 11:05:52
+I would choose one direction.
+
+[Leo Irakliotis] 11:05:55
+And I'll keep going left, left, left, left, until I'm out.
+
+[Leo Irakliotis] 11:06:00
+If you choose one, if at every…
+
+[Leo Irakliotis] 11:06:05
+opportunity you have to turn. You always turn the same direction.
+
+[Leo Irakliotis] 11:06:12
+You will find the exit to that maze.
+
+[Leo Irakliotis] 11:06:17
+It's not the most efficient way, but if all you want to do is get out
+
+[Leo Irakliotis] 11:06:22
+It works fine
+
+[Leo Irakliotis] 11:06:24
+All right, so however here
+
+[Leo Irakliotis] 11:06:28
+We're going to do something slightly different, but not that much different. The concept is we have to go keep going in the same direction.
+
+[Leo Irakliotis] 11:06:36
+And for that
+
+[Leo Irakliotis] 11:06:39
+The question is, can I go is vertex 0. Here's the question we're trying to answer. Is vertex zero
+
+[Leo Irakliotis] 11:06:50
+Is vertex 6 reachable?
+
+[Leo Irakliotis] 11:06:58
+From Vertex.
+
+[Leo Irakliotis] 11:06:59
+Zero. Okay, we can see here that it is, but we have to prove it.
+
+[Leo Irakliotis] 11:07:06
+So, I'm going to initialize a list of visited vertices.
+
+[Leo Irakliotis] 11:07:19
+That is empty.
+
+[Leo Irakliotis] 11:07:20
+And a list of where to go next.
+
+[Leo Irakliotis] 11:07:28
+that has…
+
+[Leo Irakliotis] 11:07:30
+One item in it, the starting vertex. This is our starting vertex.
+
+[Leo Irakliotis] 11:07:37
+And I will write a loop.
+
+[Leo Irakliotis] 11:07:40
+While go next.
+
+[Leo Irakliotis] 11:07:55
+It's not empty.
+
+[Leo Irakliotis] 11:07:58
+Okay.
+
+[Leo Irakliotis] 11:08:01
+Remove an element
+
+[Leo Irakliotis] 11:08:08
+from
+
+[Leo Irakliotis] 11:08:09
+Go next.
+
+[Leo Irakliotis] 11:08:12
+Any element.
+
+[Leo Irakliotis] 11:08:14
+The first element, the last element, the middle element, remove one element.
+
+[Leo Irakliotis] 11:08:19
+It doesn't matter where you remove it from. Just think of Go Next as a bag with little balls that have labels on them. Each ball, it's a vertex is a ball
+
+[Leo Irakliotis] 11:08:30
+inside the bank. You read your hand in that bag and you pull out
+
+[Leo Irakliotis] 11:08:35
+A ball
+
+[Leo Irakliotis] 11:08:36
+Okay
+
+[Leo Irakliotis] 11:08:41
+If the element that you removed
+
+[Leo Irakliotis] 11:08:45
+is not invisited.
+
+[Leo Irakliotis] 11:08:50
+Add it.
+
+[Leo Irakliotis] 11:08:55
+to visit it. And then…
+
+[Leo Irakliotis] 11:09:02
+Add its neighbors.
+
+[Leo Irakliotis] 11:09:07
+to go next.
+
+[Leo Irakliotis] 11:09:12
+So let's apply this.
+
+[Leo Irakliotis] 11:09:15
+In this example, I've set up my visited and go next, my visited is empty, my go next has the starting vertex, so while go next is not empty, is go next not empty? Correct. Pull something out, put your hand in that bag, and pull the first, or the last, or the middle ball that you find. There's only one of them.
+
+[Leo Irakliotis] 11:09:34
+Right? So you move it, you say, okay, what am I removing? I'm removing this.
+
+[Leo Irakliotis] 11:09:42
+Is this invisited? No. So place it invisited.
+
+[Leo Irakliotis] 11:09:50
+And.
+
+[Leo Irakliotis] 11:09:57
+There we are. Replaced and visited.
+
+[Leo Irakliotis] 11:09:59
+And add its neighbors to the go next.
+
+[Leo Irakliotis] 11:10:04
+What are the zeroest neighbors? 1, 2, and three
+
+[Leo Irakliotis] 11:10:08
+One
+
+[Leo Irakliotis] 11:10:09
+2 and 3
+
+[Leo Irakliotis] 11:10:11
+How do I find those neighbors? I traverse the zeroth row of the adjacency matrix
+
+[Leo Irakliotis] 11:10:21
+Right here.
+
+[Leo Irakliotis] 11:10:23
+I traversed this row and say that for every position in this row that is not zero
+
+[Leo Irakliotis] 11:10:34
+That's a neighbor
+
+[Leo Irakliotis] 11:10:45
+1, 2, and three.
+
+[Leo Irakliotis] 11:10:45
+And again, while go next is not empty
+
+[Leo Irakliotis] 11:10:49
+go to that bag and remove something. What are you going to remove? Let's say I want to remove 2. Is 2 in the visited list? No, I will add it here
+
+[Leo Irakliotis] 11:10:56
+I will remove it from the go next
+
+[Leo Irakliotis] 11:11:02
+And I will add two neighbors.
+
+[Leo Irakliotis] 11:11:06
+to the go next? What are 2's neighbors?
+
+[Leo Irakliotis] 11:11:09
+Zero
+
+[Leo Irakliotis] 11:11:13
+Three
+
+[Leo Irakliotis] 11:11:14
+and 4
+
+[Leo Irakliotis] 11:11:16
+And repeat
+
+[Leo Irakliotis] 11:11:20
+What do you want to grab next? Let's grab one.
+
+[Leo Irakliotis] 11:11:23
+He is running the visited list. No, we added here, remove it from there, from go next, and we add
+
+[Leo Irakliotis] 11:11:30
+One's neighbors to the going eggs. What are the one's neighbors? Zero and six.
+
+[Leo Irakliotis] 11:11:38
+What are you going to remove next
+
+[Leo Irakliotis] 11:11:42
+Zero. Okay, I'll remove zero. Is 0V in visited? Yes, it is. So do nothing
+
+[Leo Irakliotis] 11:11:48
+Just remove it. Go to the next one
+
+[Leo Irakliotis] 11:11:51
+is 6 in the visited list. No
+
+[Leo Irakliotis] 11:11:55
+Put it here
+
+[Leo Irakliotis] 11:11:58
+Remove it from go next
+
+[Leo Irakliotis] 11:12:02
+And add its neighbors 1 and 4, to the go next.
+
+[Leo Irakliotis] 11:12:06
+Doesn't matter where you are just adding them where I have space. Remove one. Okay, I will remove one
+
+[Leo Irakliotis] 11:12:12
+Check if it's invisited. Well, it is invisited. Nothing to do.
+
+[Leo Irakliotis] 11:12:18
+Remove 4. Is it invisible? No.
+
+[Leo Irakliotis] 11:12:22
+Place it here.
+
+[Leo Irakliotis] 11:12:26
+And at its neighbors. What are forced neighbors
+
+[Leo Irakliotis] 11:12:29
+2 and 6.
+
+[Leo Irakliotis] 11:12:34
+Remove to
+
+[Leo Irakliotis] 11:12:36
+But it's already on the visited list, so there is nothing to do anymore. Remove 6, it's already on the visited list. There's nothing to do anymore. Remove 3, it's not in the visited list
+
+[Leo Irakliotis] 11:12:48
+We're adding it here. And we're adding three's neighbors which are 0.
+
+[Leo Irakliotis] 11:12:54
+And do here
+
+[Leo Irakliotis] 11:12:55
+Okay, what's next? Remove zero
+
+[Leo Irakliotis] 11:12:59
+But it's already on the visited list, so nothing to do anymore. Remove two, it's already on the visited list, nothing to do anymore. Remove zero already on the visited list, nothing to do anymore. Remove three, nothing on the visited list.
+
+[Leo Irakliotis] 11:13:10
+It's nothing to do because of the visited list. Remove 4, nothing to do because of the visited list. And now, go next is empty, and the loop stops, and what I have in visited is all the vertices that are reachable from the starting vertex.
+
+[Leo Irakliotis] 11:13:26
+And now all I have to do is ask the question is.
+
+[Leo Irakliotis] 11:13:32
+Invisited.
+
+[Leo Irakliotis] 11:13:35
+So there's your yes or no. I could have stopped this loop the moment I found that 6 is reachable. I don't have to complete this whole list. I could have stopped as soon as I got 6 there, because that's my target vertex.
+
+[Leo Irakliotis] 11:13:48
+I could have added one more if statement to add to go next.
+
+[Leo Irakliotis] 11:13:55
+Only items that are not already in Gonex, because you saw I had a few repetitions there.
+
+[Leo Irakliotis] 11:14:00
+But…
+
+[Leo Irakliotis] 11:14:01
+As inefficient as this tactic was.
+
+[Leo Irakliotis] 11:14:07
+It eventually comes to an end and what it gives you is
+
+[Leo Irakliotis] 11:14:13
+the list of all the vertices reachable from a given vertex. And now all you have to do is search there.
+
+[Leo Irakliotis] 11:14:22
+And say, hey, is 6 what I was looking for present?
+
+[Leo Irakliotis] 11:14:30
+As part of your assignment for next week, I will give you my inefficient code to do the reachability, and I will ask you to modify it to make it stop faster than mine.
+
+[Leo Irakliotis] 11:14:46
+Any questions, any comments, any requests?
+
+[Temeeka Glass] 11:14:54
+So…
+
+[Temeeka Glass] 11:14:54
+Oh, well, I guess, like, for, like, 5 and 7, if you're looking for 5 and 7, it would… it doesn't matter in this case.
+
+[Leo Irakliotis] 11:15:00
+He will never, he will never get there.
+
+[Leo Irakliotis] 11:15:03
+If you say is zero, connect to 5, it will terminate the process. It will empty the go next bag without ever touching five or seven
+
+[Temeeka Glass] 11:15:05
+Okay.
+
+[Leo Irakliotis] 11:15:17
+Coffee, if you have a minute, I have something to run by you. Everyone else have a great rest of your week. Stay cool and I will see you Monday.
+
+[Temeeka Glass] 11:15:27
+Thank you. I do actually have one question. I'm going to be out on Thursday.
+
+[] 11:15:28
+Thank you, Professor.
+
+[Dutch 🦍] 11:15:28
+Thank you.
+
+[Temeeka Glass] 11:15:34
+Third?
+
+[Temeeka Glass] 11:15:36
+But that Monday, Monday, two weeks from now, the 3rd.
+
+[Leo Irakliotis] 11:15:39
+Are you doing anything fun?
+
+[Temeeka Glass] 11:15:41
+I'm gonna be in Seattle. I'm gonna be flying back, though.
+
+[Leo Irakliotis] 11:15:45
+In my books, Seattle is fun, therefore it's an excused absence.
+
+[Temeeka Glass] 11:15:50
+Oh, okay. Thank you.
+
+[Leo Irakliotis] 11:15:53
+Alright, don't worry about it, seriously.
+
+[Temeeka Glass] 11:15:55
+Okay, thank you.
+
+[Leo Irakliotis] 11:15:57
+See ya.
+
+[Leo Irakliotis] 11:16:01
+All right, quick question for you. What if this assignment, I know that you're leaving this week, and I know that they will keep you a little bit busy out there.
+
+[Leo Irakliotis] 11:16:13
+Do you think you have time to make this assignment that is coming out today your last assignment and turn it in whenever you're back?
+
+[Kofi Nyarku] 11:16:22
+Oh, yes, Professor, uh, I should be able to do that. It should not be a problem. Um, because also, the last assignment, I missed it because, um, you, uh…
+
+[Kofi Nyarku] 11:16:31
+You posted the, um… it was on Sakai at 8.25 AM, and I didn't check.
+
+[Kofi Nyarku] 11:16:37
+So, um, yeah, I'm okay to do the next two assignments, because on the weekends, I should have some downtime, and I'll use that time to get on assignments.
+
+[Leo Irakliotis] 11:16:43
+Okay.
+
+[Leo Irakliotis] 11:16:45
+Okay, and next time I forget something on Sakai like this, just email me the stuff. It's just as good, but don't worry about it.
+
+[Leo Irakliotis] 11:16:54
+next assignment, and if you have time for one more, that's great, but, you know, I…
+
+[Leo Irakliotis] 11:16:58
+I have no idea how busy you'll be there and what kind of connectivity you'll have.
+
+[Leo Irakliotis] 11:17:04
+But next assignment plus one optional, depending on your time availability.
+
+[Kofi Nyarku] 11:17:09
+Okay, Professor.
+
+[Leo Irakliotis] 11:17:12
+All right.
+
+[Kofi Nyarku] 11:17:12
+Thank you.
+
+[Leo Irakliotis] 11:17:13
+Don't be a hero out there, okay?
+
+[Kofi Nyarku] 11:17:17
+No, no.
+
+[Kofi Nyarku] 11:17:18
+Thank you. See you.
+
+[Leo Irakliotis] 11:17:18
+See ya.
+
+[Leo Irakliotis] 11:30:18
+Hello everyone.
+
+[Leo Irakliotis] 11:30:38
+Any questions, any comments, any requests before we get started?
+
+[Leo Irakliotis] 11:31:32
+So I started working on, if I appear a bit confused.
+
+[Leo Irakliotis] 11:31:38
+is because I started working on something for our meeting today, yesterday, and I thought I committed it.
+
+[Leo Irakliotis] 11:31:46
+on the repository here and I can't find it now.
+
+[Leo Irakliotis] 11:32:08
+Okay, let me look at one more place.
+
+[Leo Irakliotis] 11:32:21
+Just in case I put it in the same folder for the other course.
+
+[Leo Irakliotis] 11:32:29
+Let me look at the repository as well.
+
+[Leo Irakliotis] 11:32:33
+Because I sent you the email yesterday saying, hey, the code we wrote is there.
+
+[Leo Irakliotis] 11:32:49
+Um, give me a minute to go grab my laptop, because I…
+
+[Leo Irakliotis] 11:32:54
+I'm not making things up. It's not like I remember writing the code. Let me go grab my laptop. And also just another…
+
+[Leo Irakliotis] 11:33:04
+warning that I'm expecting a package today and UPS usually comes in the afternoon in our neighborhood.
+
+[Leo Irakliotis] 11:33:13
+But, uh, once in a while, they know, I think the driver knows when I'm on Zoom with students, and they drive in front of the house when I'm on Zoom, so I don't know, maybe you're… the driver is a friend of yours, and you're texting the driver right now, he… So, in case, uh, that they, uh, that happens, I may have to step away for a minute.
+
+[Leo Irakliotis] 11:33:32
+But let me go downstairs and grab my laptop, because I'm… I'm.
+
+[Leo Irakliotis] 11:33:37
+What happened to the code I wrote? I'll be right back.
+
+[Leo Irakliotis] 11:34:28
+All right.
+
+[Leo Irakliotis] 11:34:31
+Let's see.
+
+[Leo Irakliotis] 11:36:04
+Still working on it.
+
+[Leo Irakliotis] 11:36:51
+I'm now searching all my files because…
+
+[Leo Irakliotis] 11:37:09
+Alright.
+
+[Leo Irakliotis] 11:37:11
+Okay.
+
+[Leo Irakliotis] 11:37:13
+Sure.
+
+[Leo Irakliotis] 11:37:37
+So, the, um…
+
+[Leo Irakliotis] 11:37:40
+the problem we looked at last week was to simulate the ATM transaction. And, um, yesterday we discussed about, uh, what can possibly go wrong.
+
+[Leo Irakliotis] 11:37:51
+during an ATM transaction. And in that context, we talked a little bit more broadly about what can go wrong when we interact with users, and how can we anticipate what can go wrong and mitigate it as much as possible. We did the example with, hey, what year were you born?
+
+[Leo Irakliotis] 11:38:11
+and how to fix.
+
+[Leo Irakliotis] 11:38:14
+how to… how to deal with a stubborn or uncooperative user that keeps entering their date… year of birth in Roman numerals instead of Arab numerals, or… basically, they're… they're being a pest, or they actually do it because… on purpose, because.
+
+[Leo Irakliotis] 11:38:33
+They want to be, um… to…
+
+[Leo Irakliotis] 11:38:35
+test the limits of our, uh, of our code, of our product. How do we handle dirty data, and whether they can inject dirty data, uh, to break the code and, uh, get an insight into our security mentality, into, you know, how, how robust they, um.
+
+[Leo Irakliotis] 11:38:53
+We write code.
+
+[Leo Irakliotis] 11:38:56
+We talked about mitigating those errors that we can anticipate, but also we talked about errors that are impossible, even though you can anticipate some of those errors, it's impossible to mitigate.
+
+[Leo Irakliotis] 11:39:12
+In rare instances, it's okay to let the program crash. We cannot prevent.
+
+[Leo Irakliotis] 11:39:19
+100% of program crashes, but we can prevent 90%.
+
+[Leo Irakliotis] 11:39:22
+And 90% prevention means that we are proactive, we're thinking extensively, uh, in conversations with our, uh, fellow programmers, fellow engineers. What can go wrong here?
+
+[Leo Irakliotis] 11:39:36
+And what can go wrong with bank withdrawals, as we saw yesterday?
+
+[Leo Irakliotis] 11:39:44
+is…
+
+[Leo Irakliotis] 11:39:46
+if the amount is not a multiple of 20. And we have a very easy way to check about multiples of any value. And the withdrawal process, the code that I wrote here is line 38 through 50, make the fonts a little bit larger.
+
+[Leo Irakliotis] 11:40:02
+is the first thing I check is, okay, withdraw this amount.
+
+[Leo Irakliotis] 11:40:08
+from an account with this balance, and the first thing I check is, hey, is that amount a multiple of 20s? If not, I print an error.
+
+[Leo Irakliotis] 11:40:17
+I have a multi-branch if statement. So if the amount is not a multiple of 20, print this error.
+
+[Leo Irakliotis] 11:40:25
+and come to the end of the program, to the end of the method.
+
+[Leo Irakliotis] 11:40:30
+I'm initializing the new balance of the account to the current balance, and I'm going to take some action on the new balance if the data entered for the withdrawal are legit. If they're not legit, I'm returning the new balance and modified basically by printing the error message saying, hey, you know, that's not a multiple of 20.
+
+[Leo Irakliotis] 11:40:54
+And here is your new balance, which is unchanged.
+
+[Leo Irakliotis] 11:40:58
+If the amount is a multiple of 20, if that is correct, but there's another else if.
+
+[Leo Irakliotis] 11:41:06
+situation here. That's a… so we're looking at a multi-branch if statement.
+
+[Leo Irakliotis] 11:41:12
+If the amount is correct in terms of multiple of 20s, but exceeds the balance.
+
+[Leo Irakliotis] 11:41:18
+Then print this, take no further action, and come to the end of the method.
+
+[Leo Irakliotis] 11:41:25
+Again, the balance is not affected.
+
+[Leo Irakliotis] 11:41:29
+Else, meaning that the amount is a multiple of 20, and the amount is less than or equal to the balance, adjust the balance by subtracting the amount that we're withdrawing.
+
+[Leo Irakliotis] 11:41:40
+and return the new balance.
+
+[Leo Irakliotis] 11:41:44
+So…
+
+[Leo Irakliotis] 11:41:45
+Here is the transaction with two protections. One is in line 42 that ensures that what we're withdrawing is a multiple of 20, and one is in line 45 that is ensure that what we're withdrawing exists in our account.
+
+[Leo Irakliotis] 11:42:02
+If these conditions are met, we're going straight to line 49, and we execute line 49. If I were to visualize this.
+
+[Leo Irakliotis] 11:42:12
+as a flow chart that sometimes it's easy to see things is, you know, I'll have a balance.
+
+[Leo Irakliotis] 11:42:24
+And an amount.
+
+[Leo Irakliotis] 11:42:26
+to withdraw. These are my inputs to this process.
+
+[Leo Irakliotis] 11:42:31
+And the first question I'm asking is, is the balance, is the amount.
+
+[Leo Irakliotis] 11:42:40
+a multiple of $20 bills? And the answer can be yes or no.
+
+[Leo Irakliotis] 11:42:46
+If the answer is yes.
+
+[Leo Irakliotis] 11:42:50
+The next question I ask, hey, is the amount you're withdrawing.
+
+[Leo Irakliotis] 11:42:56
+Available in your account. Do you have the money?
+
+[Leo Irakliotis] 11:43:14
+And if the answer is yes.
+
+[Leo Irakliotis] 11:43:16
+Then the balance.
+
+[Leo Irakliotis] 11:43:22
+is reduced by the withdrawal amount.
+
+[Leo Irakliotis] 11:43:29
+And that's what we return.
+
+[Leo Irakliotis] 11:43:32
+If there are… if it's not…
+
+[Leo Irakliotis] 11:43:35
+If the amount requested is not a multiple of 20s.
+
+[Leo Irakliotis] 11:43:40
+Doesn't exist.
+
+[Leo Irakliotis] 11:43:48
+We just return the balance.
+
+[Bella Fiorucci] 11:43:52
+I have a question. Um, what's the difference between using the if and then else if statements, as opposed to just using, like, two if statements in your code?
+
+[Leo Irakliotis] 11:43:54
+Yeah.
+
+[Leo Irakliotis] 11:44:07
+Not much.
+
+[Leo Irakliotis] 11:44:09
+For this problem, we could have used plain if statements.
+
+[Leo Irakliotis] 11:44:14
+If not multiple of 20, complain.
+
+[Leo Irakliotis] 11:44:17
+If amount greater than balance complain.
+
+[Leo Irakliotis] 11:44:22
+But…
+
+[Leo Irakliotis] 11:44:26
+What would happen is, after you complain.
+
+[Leo Irakliotis] 11:44:30
+What happens next? You still go ahead and you execute the transaction because you don't…
+
+[Leo Irakliotis] 11:44:38
+Give the program.
+
+[Leo Irakliotis] 11:44:40
+a way to exclude the… this operation here.
+
+[Leo Irakliotis] 11:44:44
+You want to have this operation here if and only if you have multiple… the amount is in multiple of 20s and within the balance of the account.
+
+[Leo Irakliotis] 11:44:54
+And in this scheme, the only way to ensure this is through the multiple if statements.
+
+[Leo Irakliotis] 11:45:02
+Now, there may be a way to do this using…
+
+[Leo Irakliotis] 11:45:08
+um… nested.
+
+[Leo Irakliotis] 11:45:10
+if statements. So, for example, if…
+
+[Leo Irakliotis] 11:45:17
+Multiple…
+
+[Leo Irakliotis] 11:45:21
+20. Then ask the question, if…
+
+[Leo Irakliotis] 11:45:28
+Amount less than balance.
+
+[Leo Irakliotis] 11:45:32
+Then, balance.
+
+[Leo Irakliotis] 11:45:35
+is subtracted.
+
+[Leo Irakliotis] 11:45:38
+Accordingly.
+
+[Leo Irakliotis] 11:45:51
+Where does the else go?
+
+[Bella Fiorucci] 11:45:56
+into the space.
+
+[Leo Irakliotis] 11:45:59
+Else. If the money is… Else. Print.
+
+[Leo Irakliotis] 11:46:03
+Not enough.
+
+[Leo Irakliotis] 11:46:13
+Okay, and then here…
+
+[Leo Irakliotis] 11:46:16
+else…
+
+[Leo Irakliotis] 11:46:19
+framed.
+
+[Leo Irakliotis] 11:46:20
+Not twenties.
+
+[Leo Irakliotis] 11:46:26
+And finally.
+
+[Leo Irakliotis] 11:46:28
+Somewhere here.
+
+[Leo Irakliotis] 11:46:32
+return balance.
+
+[Leo Irakliotis] 11:46:34
+So is that… is that what you had in mind?
+
+[Bella Fiorucci] 11:46:38
+Yeah, except for in mine, I didn't, like, uh… I did the two if statements, and they weren't nested, but I had it raise a value error instead of a print statement if it didn't work.
+
+[Leo Irakliotis] 11:46:49
+Okay.
+
+[Leo Irakliotis] 11:46:50
+Okay, so if you raise a value error.
+
+[Leo Irakliotis] 11:46:56
+You cause the program to crash, so you don't have to worry about the else part. The moment you find a violation, you report the violation and you crash the program.
+
+[Leo Irakliotis] 11:47:06
+So there is no need for else. Here in the nested loop thing, the else captures what happens, exits the program without crashing it.
+
+[Leo Irakliotis] 11:47:19
+And that's what I meant. But, you know, if you expect an error, mitigate it. And raising a value is not a mitigation. Raising a value is giving up too early.
+
+[Leo Irakliotis] 11:47:30
+You know, and again, maybe, you know, maybe a habitual thing, or maybe represent a different school of thought in terms of how we code, but…
+
+[Leo Irakliotis] 11:47:41
+My style, and you know I…
+
+[Leo Irakliotis] 11:47:45
+by questionable style.
+
+[Leo Irakliotis] 11:47:48
+is never give up, never surrender, or, um, at least don't give up right away.
+
+[Leo Irakliotis] 11:47:53
+If someone enters $30 withdrawal, well, it's not a multiple of 20.
+
+[Leo Irakliotis] 11:48:00
+Give them another chance.
+
+[Leo Irakliotis] 11:48:03
+Ask him twice. So create a structure, create a program.
+
+[Leo Irakliotis] 11:48:10
+that will allow recovery from an error. The moment you raise something.
+
+[Leo Irakliotis] 11:48:19
+There is no recovery. The program has crashed.
+
+[Leo Irakliotis] 11:48:25
+So, yeah, in principle, uh, we can write…
+
+[Leo Irakliotis] 11:48:38
+If not multiple of 20, however, let's write the actual thing.
+
+[Leo Irakliotis] 11:48:52
+If a mount.
+
+[Leo Irakliotis] 11:48:55
+Go ahead. All right.
+
+[Leo Irakliotis] 11:49:01
+Why are you so slow today, computer?
+
+[Leo Irakliotis] 11:49:32
+Okay.
+
+[Leo Irakliotis] 11:49:34
+If that if executes, if the amount is not a multiple of 20, the raise command will abort the program.
+
+[Leo Irakliotis] 11:49:43
+If that… if the… if this condition doesn't execute because the amount is indeed a multiple of 20, the next question is, is amount…
+
+[Leo Irakliotis] 11:49:54
+within limits.
+
+[Leo Irakliotis] 11:49:59
+And if it's not within limits.
+
+[Leo Irakliotis] 11:50:02
+If the amount is greater than the balance of the account.
+
+[Leo Irakliotis] 11:50:12
+Then again, another raise.
+
+[Leo Irakliotis] 11:50:16
+Value error.
+
+[Leo Irakliotis] 11:50:19
+Whatever the message you want to be.
+
+[Leo Irakliotis] 11:50:22
+And if we skip both ifs, then we can reassign…
+
+[Leo Irakliotis] 11:50:27
+the balance, adjust the balance to the withdrawn amount.
+
+[Leo Irakliotis] 11:50:34
+And say, uh, return…
+
+[Leo Irakliotis] 11:50:42
+Balance minus.
+
+[Leo Irakliotis] 11:50:44
+the amount.
+
+[Leo Irakliotis] 11:50:46
+So, the only way here to get to return… to the return statement…
+
+[Leo Irakliotis] 11:50:51
+is…
+
+[Leo Irakliotis] 11:50:57
+skip the conditions that will lead to a raise.
+
+[Leo Irakliotis] 11:51:02
+To raising an error.
+
+[Leo Irakliotis] 11:51:08
+It's fine.
+
+[Leo Irakliotis] 11:51:10
+And again, style, school of thought, background, whatever, you may find yourself in a development shop that encourages.
+
+[Leo Irakliotis] 11:51:20
+You know, throwing an exception, throwing a raise.
+
+[Leo Irakliotis] 11:51:24
+Error as early in the process, because…
+
+[Leo Irakliotis] 11:51:28
+That may reflect a different philosophy that we do not tolerate errors.
+
+[Leo Irakliotis] 11:51:35
+And the moment we see something wrong.
+
+[Leo Irakliotis] 11:51:39
+We abort the program because that's a warning for the development shop to go back to the.
+
+[Leo Irakliotis] 11:51:45
+Drawing board.
+
+[Leo Irakliotis] 11:51:46
+And figure out what did we do wrong here? Because you should never, never.
+
+[Leo Irakliotis] 11:51:54
+Have a an amount that is not a multiple of 20. How can you have?
+
+[Leo Irakliotis] 11:52:04
+Well, you have to design an ATM that doesn't have odd number keys.
+
+[Leo Irakliotis] 11:52:11
+So, uh, when the keyboard on that ADM will have only the two, four.
+
+[Leo Irakliotis] 11:52:17
+6, 8.
+
+[Leo Irakliotis] 11:52:20
+So if you had a keyboard that had only even numbers on it.
+
+[Leo Irakliotis] 11:52:25
+And the withdrawal amount was $30. That should never happen.
+
+[Leo Irakliotis] 11:52:31
+And in that context, the development shop might say, throw an error. Don't ask the user to say, hey, do you want to enter another amount? Because…
+
+[Leo Irakliotis] 11:52:40
+That number 30 should never have appeared.
+
+[Leo Irakliotis] 11:52:43
+through a keyboard that does not have odd numbers in it, that we… a keyboard where… from which we have removed all the odd numbered keys, and we left only 2, 4, 6, and 8.
+
+[Leo Irakliotis] 11:52:56
+How did that user type 30 on a keyboard that doesn't have the key 3?
+
+[Leo Irakliotis] 11:53:04
+Okay, that's kind of a, you know…
+
+[Leo Irakliotis] 11:53:07
+uh, far-fetched scenario, but it reflects a coding principle that is…
+
+[Leo Irakliotis] 11:53:13
+Legit, I'm not dismissing.
+
+[Leo Irakliotis] 11:53:17
+the, um…
+
+[Leo Irakliotis] 11:53:19
+The concept of raising a value error early.
+
+[Leo Irakliotis] 11:53:23
+And that's why this is totally subjective. And this may reflect how each one of us matures.
+
+[Leo Irakliotis] 11:53:29
+As a developer.
+
+[Leo Irakliotis] 11:53:31
+We're coming from different backgrounds, and we have different styles, and certain things depend in the context for which we're developing code.
+
+[Leo Irakliotis] 11:53:46
+All things being equal.
+
+[Leo Irakliotis] 11:53:49
+My suggestion is try to mitigate the errors.
+
+[Leo Irakliotis] 11:53:55
+before they crash your program.
+
+[Leo Irakliotis] 11:53:58
+Unless you can document.
+
+[Leo Irakliotis] 11:54:01
+How impossible an error could be, for example, an amount of $30 typed through a keyboard that doesn't have the number three on it because you removed all the odd number keys from that keyboard. How is that possible?
+
+[Leo Irakliotis] 11:54:14
+But in the absence of any…
+
+[Leo Irakliotis] 11:54:17
+Very niche, very specific, very unusual scenarios.
+
+[Leo Irakliotis] 11:54:23
+We have to be ready to deal with user errors. People will make mistakes when they're pressing buttons.
+
+[Leo Irakliotis] 11:54:34
+That's why we have two pilots in an airplane.
+
+[Leo Irakliotis] 11:54:40
+One is called the pilot flying, the other is called the pilot monitoring, and they switch roles every hour so that there will be no fatigue.
+
+[Leo Irakliotis] 11:54:48
+And when air traffic tells you, climb and maintain 36000, or actually, they will not say 36000, it will say climb and maintain level 360.
+
+[Leo Irakliotis] 11:54:58
+The pilot flying will reach to the autopilot console, because at that point the airplane is flying automatically, and will switch a **** to 360.
+
+[Leo Irakliotis] 11:55:07
+And if you're up, you know, distracted or tired, instead of 360, you might dial 367 or 365.
+
+[Leo Irakliotis] 11:55:18
+What's the big deal? 1,000 feet. Well, flights are separated by 1,000 feet vertically. If you're heading, if you're eastbound, if you're heading in any east direction, you're flying at odd numbered altitudes, 37,000 feet, 35,000 feet, 33,000 feet. And if you're flying westbound, you're flying at odd numbered altitudes.
+
+[Leo Irakliotis] 11:55:39
+36,000 feet, 34,000 feet, 32,000 feet. And if accidentally you're in a westbound flight, and you were given 360, and you dial 367, you may now be flying on opposite direction with a flight with another airplane.
+
+[Leo Irakliotis] 11:55:55
+Bad things will happen when you get a very close.
+
+[Leo Irakliotis] 11:56:00
+So the other pilot, the pilot monitoring, does exactly that. Make sure that air traffic control told you flight level 360 and you dialed 360. And if you make mistakes, and those mistakes happen all the time, you correct your copilot and say, hey, we're supposed to be 360.
+
+[Leo Irakliotis] 11:56:17
+Or you step on the radio and you check with air traffic control, did you assign 360 to fly United 415?
+
+[Leo Irakliotis] 11:56:27
+People will always make mistakes dialing in numbers or typing things, and that's not a situation where we should raise a value error too early.
+
+[Leo Irakliotis] 11:56:39
+We should give our users an opportunity to correct themselves.
+
+[Leo Irakliotis] 11:56:46
+Again.
+
+[Leo Irakliotis] 11:56:47
+Different shops, different software shops have different strategies, and I am only suggesting.
+
+[Leo Irakliotis] 11:56:59
+One possible.
+
+[Leo Irakliotis] 11:57:02
+strategy for.
+
+[Leo Irakliotis] 11:57:05
+you to consider.
+
+[Leo Irakliotis] 11:57:10
+Other reason.
+
+[Leo Irakliotis] 11:57:12
+that I use this approach in the solution is because so far we have been talking about.
+
+[Leo Irakliotis] 11:57:21
+Symbol if statements.
+
+[Leo Irakliotis] 11:57:23
+If statements that have an if and an else branch and nothing in between.
+
+[Leo Irakliotis] 11:57:29
+And…
+
+[Leo Irakliotis] 11:57:34
+The ability to write multi branch.
+
+[Leo Irakliotis] 11:57:37
+If statements gives you more flexibility with your code.
+
+[Leo Irakliotis] 11:57:45
+And the code reads a little bit more naturally.
+
+[Leo Irakliotis] 11:57:49
+Now…
+
+[Leo Irakliotis] 11:57:50
+I'll take this code here. This is the plan for today. Bella, does that help?
+
+[Leo Irakliotis] 11:58:22
+So, I will take the solution, uh, from, uh…
+
+[Leo Irakliotis] 11:58:28
+Last week.
+
+[Leo Irakliotis] 11:58:31
+And…
+
+[Leo Irakliotis] 11:58:40
+And for a change, I will use, um…
+
+[Leo Irakliotis] 11:58:45
+Visual Studio Code.
+
+[Leo Irakliotis] 11:58:48
+And I will rewrite it a little bit differently, because right now, whether you're using the…
+
+[Leo Irakliotis] 11:58:56
+raise command, and you crash the program, or the print commands that I have here.
+
+[Leo Irakliotis] 11:59:04
+The fact is, the moment a withdrawal is entered with the wrong information.
+
+[Leo Irakliotis] 11:59:11
+The program ends. Whether it ends gracefully or with a raise termination, it doesn't matter. The program, you have one shot at this. As a user, you have one shot. You go to the ATM, you ask for money, you don't plug in the right numbers.
+
+[Leo Irakliotis] 11:59:26
+And the ATM says, sorry, come back tomorrow.
+
+[Leo Irakliotis] 11:59:28
+Well, what if I made a mistake? What if, you know, I thought that I had, you know, I asked to withdraw $1 billion, and I forgot that I had only $900 million.
+
+[Leo Irakliotis] 11:59:41
+In my account.
+
+[Leo Irakliotis] 11:59:42
+Come on, I'm a good customer. If I have that money in the bank, give me another chance to withdraw some money. Uh, so, uh, sometimes we make mistakes, honest mistakes, right? So, what I would like, um…
+
+[Leo Irakliotis] 11:59:57
+to do is, um…
+
+[Leo Irakliotis] 12:00:01
+To write something.
+
+[Leo Irakliotis] 12:00:04
+And the edits I make here will not affect the solutions. The solutions are posted in week eight in the repository. So here I have, I renamed the solutions to atm.python and it's in week nine.
+
+[Leo Irakliotis] 12:00:20
+And I will write something like.
+
+[Leo Irakliotis] 12:00:23
+Well, again, for illustrative purposes, I will never, in real code.
+
+[Leo Irakliotis] 12:00:29
+Write something like this, like an infinite…
+
+[Leo Irakliotis] 12:00:34
+an infinite loop.
+
+[Leo Irakliotis] 12:00:37
+So, while true.
+
+[Leo Irakliotis] 12:00:39
+I'll say, uh, okay.
+
+[Leo Irakliotis] 12:00:42
+The amount is…
+
+[Leo Irakliotis] 12:00:45
+the integer of input.
+
+[Leo Irakliotis] 12:00:48
+How much?
+
+[Leo Irakliotis] 12:00:59
+And after that.
+
+[Leo Irakliotis] 12:01:02
+I will do my trying.
+
+[Leo Irakliotis] 12:01:05
+Exception. So, okay, try.
+
+[Leo Irakliotis] 12:01:09
+If, if line 40.
+
+[Leo Irakliotis] 12:01:12
+Execute smoothly, and that's a big if, because I have an input command there. Someone might type an actual number, 4-0.
+
+[Leo Irakliotis] 12:01:22
+Let's say you have $1,000 in your account and you want to withdraw $40. 40 is a multiple of two. It's within your balance. So you type four zero. What happens to variable amount? In this case, it is the string with the numbers four zero in it.
+
+[Leo Irakliotis] 12:01:40
+If it's a string with numbers only, fine, the integer function will work correctly. We'll take the string, strip it into an integer value. We'll take a string object and convert it into an integer value.
+
+[Leo Irakliotis] 12:01:57
+If instead of 4, 0, accidentally you typed 4, 0, because O looks like a 0.
+
+[Leo Irakliotis] 12:02:04
+then the integer conversion cannot happen, because you have a string with the symbols 4 and the letter O, and even though it looks like 40 to you and me, it doesn't look like 40 to the computer.
+
+[Leo Irakliotis] 12:02:17
+The computer expects every symbol.
+
+[Leo Irakliotis] 12:02:21
+in the input.
+
+[Leo Irakliotis] 12:02:24
+result to be a number, to have an ASCII value from between 48 and 57.
+
+[Leo Irakliotis] 12:02:33
+48 is 0, 57 is 9.
+
+[Leo Irakliotis] 12:02:38
+So…
+
+[Leo Irakliotis] 12:02:39
+If the command, if the integer function in line 40 works correctly as expected, then try this.
+
+[Leo Irakliotis] 12:02:49
+That's as the balance.
+
+[Leo Irakliotis] 12:03:00
+Call the withdraw function.
+
+[Leo Irakliotis] 12:03:03
+And we allowed the withdrawal to happen.
+
+[Leo Irakliotis] 12:03:10
+So the withdraw function exists somewhere. Let's write it. Let's rewrite here. Withdraw amount.
+
+[Leo Irakliotis] 12:03:17
+Violence.
+
+[Leo Irakliotis] 12:03:25
+And if…
+
+[Leo Irakliotis] 12:03:28
+Amount.
+
+[Leo Irakliotis] 12:03:31
+Modulo 20.
+
+[Leo Irakliotis] 12:03:34
+is not zero.
+
+[Leo Irakliotis] 12:03:40
+Then…
+
+[Leo Irakliotis] 12:03:44
+raise some value error.
+
+[Leo Irakliotis] 12:04:06
+Else if…
+
+[Leo Irakliotis] 12:04:15
+What I want to do for the else if…
+
+[Leo Irakliotis] 12:04:19
+What else, Eve?
+
+[Leo Irakliotis] 12:04:21
+Amount is greater than balance.
+
+[Leo Irakliotis] 12:04:27
+Raise value error.
+
+[Leo Irakliotis] 12:04:30
+Not enough.
+
+[Leo Irakliotis] 12:04:40
+New Balance.
+
+[Leo Irakliotis] 12:04:44
+is the current balance minus the amount.
+
+[Leo Irakliotis] 12:04:48
+and return the new balance.
+
+[Leo Irakliotis] 12:04:51
+And somewhere here, I have to initialize New Balance to balance.
+
+[Leo Irakliotis] 12:05:04
+Okay, so, and then let's call it the function input, define obtain data.
+
+[Leo Irakliotis] 12:05:22
+So try to get an amount information from the keyboard.
+
+[Leo Irakliotis] 12:05:26
+And if everything is correct in line 49, then line 50 will kick in. The scope of line 50 will kick in. We'll update the balance and we'll print a congratulatory message.
+
+[Leo Irakliotis] 12:05:41
+success, and then we'll break the program. We'll break the… we're done. If, however, anything wrong happens with line 49, then we can have the exception, except if you have a value error.
+
+[Leo Irakliotis] 12:05:58
+And we capture what value it is as a variable because we want to report it. And I say print here, I'll do a fancy, a formatted printing.
+
+[Leo Irakliotis] 12:06:08
+Something's wrong.
+
+[Leo Irakliotis] 12:06:13
+And I will print the error that the computer returns.
+
+[Leo Irakliotis] 12:06:16
+without actually crashing the program.
+
+[Leo Irakliotis] 12:06:21
+So I will inform you what you did wrong, because the value error will return a result, that's what you see when the program crashes, only this time it's… the program is not crashing, the error message is captured in this variable, this is a string.
+
+[Leo Irakliotis] 12:06:37
+Uh, I can call it message.
+
+[Leo Irakliotis] 12:06:43
+Just a variable.
+
+[Leo Irakliotis] 12:06:45
+And then…
+
+[Leo Irakliotis] 12:06:51
+Try again.
+
+[Leo Irakliotis] 12:06:54
+So this loop here.
+
+[Leo Irakliotis] 12:06:58
+will run until…
+
+[Leo Irakliotis] 12:07:01
+I get…
+
+[Leo Irakliotis] 12:07:04
+Data that are purely numeric.
+
+[Leo Irakliotis] 12:07:11
+So let me delete the rest of the code because that's all I want to test today.
+
+[Leo Irakliotis] 12:07:23
+Withdraw, obtain data. Okay, so let's save this program and run it Python 3.
+
+[Leo Irakliotis] 12:07:34
+Input from ATM.
+
+[Leo Irakliotis] 12:07:38
+Import everything.
+
+[Leo Irakliotis] 12:07:39
+Okay, so we got that. And let's say, would I just call the function obtainData?
+
+[Leo Irakliotis] 12:07:49
+obtained it.
+
+[Leo Irakliotis] 12:07:54
+How much do you want to withdraw?
+
+[Leo Irakliotis] 12:07:58
+Five bucks.
+
+[Leo Irakliotis] 12:08:04
+Clearly that's wrong.
+
+[Leo Irakliotis] 12:08:07
+In previous instances, the program would have crashed. Here, it says…
+
+[Leo Irakliotis] 12:08:24
+The program crashed.
+
+[Leo Irakliotis] 12:09:10
+Let me run it by itself.
+
+[Leo Irakliotis] 12:09:56
+Try this first.
+
+[Leo Irakliotis] 12:10:11
+Oh, my lord.
+
+[Leo Irakliotis] 12:10:13
+And is it Friday yet?
+
+[Leo Irakliotis] 12:10:17
+the trigger command.
+
+[Leo Irakliotis] 12:10:20
+The one that I want to try, if it works first, where is it? It's outside the try block.
+
+[Leo Irakliotis] 12:10:29
+This should be. What am I trying? Try this first.
+
+[Leo Irakliotis] 12:10:32
+Right? Try…
+
+[Leo Irakliotis] 12:10:35
+To obtain an amount from the keyboard.
+
+[Leo Irakliotis] 12:10:39
+Aye, aye, aye.
+
+[Leo Irakliotis] 12:10:41
+All right.
+
+[Leo Irakliotis] 12:10:47
+How much do you want to withdraw? Five bucks.
+
+[Leo Irakliotis] 12:10:52
+Something is wrong. This is what is wrong. By the way, this is what I was getting before. That's the value error that I was getting before my program crashed. Only this time, I'm getting the error, I'm capturing that error message, but my program is not crashing. It says, try again, how much you want to withdraw.
+
+[Leo Irakliotis] 12:11:11
+$50, $500, only instead of 500, I typed 500. It looked like 500.
+
+[Leo Irakliotis] 12:11:19
+Okay, again, how much do you wish to withdraw?
+
+[Leo Irakliotis] 12:11:24
+Everything. I'm closing my account.
+
+[Leo Irakliotis] 12:11:32
+How much you wish to withdraw? Okay.
+
+[Leo Irakliotis] 12:11:35
+60.
+
+[Leo Irakliotis] 12:11:38
+Finally, it got it. Uh, the, the, uh, the error here is because I forgot to give a value, a balance value, uh, for the, uh…
+
+[Leo Irakliotis] 12:11:47
+for the account. Uh, so, for example, here, when I say balance is withdraw amount of balance, let's make the balance here hard-coded $1,000.
+
+[Leo Irakliotis] 12:11:59
+So.
+
+[Leo Irakliotis] 12:12:00
+In this infinite loop, and again, line 53, I will not use the break command.
+
+[Leo Irakliotis] 12:12:08
+in a realistic situation, but I want to be dramatic here. What happens is, in line 49, if I have this hypothetical, I'll say, you know what? You're about to get data.
+
+[Leo Irakliotis] 12:12:19
+Here. Try this first.
+
+[Leo Irakliotis] 12:12:21
+And if that no error occurs.
+
+[Leo Irakliotis] 12:12:26
+Process what's inside the try block.
+
+[Leo Irakliotis] 12:12:28
+And what's inside the try block is get the amount. If the amount is actually correct, send that amount to the withdrawal method.
+
+[Leo Irakliotis] 12:12:38
+The withdrawal method will do its thing. What it will do, okay, you… at this point, we're calling withdrawal method, and we're giving it an actual number. That number may or may not be a multiple of 2.
+
+[Leo Irakliotis] 12:12:52
+That will be caught in the raise exception line 40. That amount may be less or more than the balance of the account. Again, we have an exception for that. And if everything else is good, we're going to execute the withdrawal.
+
+[Leo Irakliotis] 12:13:07
+So out of three things that could go wrong, I just mitigated one.
+
+[Leo Irakliotis] 12:13:12
+What if someone types gibberish on that keyboard?
+
+[Leo Irakliotis] 12:13:15
+So now what I have done here is to mitigate, to allow the user.
+
+[Leo Irakliotis] 12:13:23
+A few attempts.
+
+[Leo Irakliotis] 12:13:27
+To provide correct information and.
+
+[Leo Irakliotis] 12:13:33
+I also can introduce another safety mechanism.
+
+[Leo Irakliotis] 12:13:40
+Let's say that I will give you…
+
+[Leo Irakliotis] 12:13:51
+Five tries.
+
+[Leo Irakliotis] 12:13:57
+So every time you enter data, I'm updating.
+
+[Leo Irakliotis] 12:14:04
+the numbers, the number you've tried.
+
+[Leo Irakliotis] 12:14:09
+And after I'm using beam and after five tries.
+
+[Leo Irakliotis] 12:14:16
+I'll stop.
+
+[Leo Irakliotis] 12:14:22
+I want to withdraw ABC, nothing. I want to withdraw HJK, nothing.
+
+[Leo Irakliotis] 12:14:28
+I want to withdraw three alpha.
+
+[Leo Irakliotis] 12:14:31
+No, I want to withdraw alpha 3. No, I want to withdraw 900 IU.
+
+[Leo Irakliotis] 12:14:36
+Nothing. I want to withdraw.
+
+[Leo Irakliotis] 12:14:41
+Did I not save the program?
+
+[Leo Irakliotis] 12:15:08
+And and.
+
+[Leo Irakliotis] 12:15:10
+And both conditions have to be.
+
+[Leo Irakliotis] 12:15:14
+True.
+
+[Leo Irakliotis] 12:15:24
+Done. Five tries. I cannot, you cannot have, at some point you have to give up.
+
+[Leo Irakliotis] 12:15:31
+If I keep trying typing gibberish, you have to give up at some point.
+
+[Leo Irakliotis] 12:15:40
+So three things that can go wrong.
+
+[Leo Irakliotis] 12:15:43
+Not typing correct data. Not typing numbers.
+
+[Leo Irakliotis] 12:15:46
+Not typing multiples of 20 and not typing a number within the balance of the account. I have provided a mitigating mechanism for one of them. You with cleanup code will provide mitigating mechanisms for the other two.
+
+[Leo Irakliotis] 12:16:04
+So you will allow the user to enter an incorrect amount, for example, $35.
+
+[Leo Irakliotis] 12:16:09
+And say, hey, this is not a multiple of 20, do you want to try again? And you're going to give the user a few more attempts. And then you're going to give up after 4 or 5 attempts, whatever that is.
+
+[Leo Irakliotis] 12:16:21
+You're going to give up after that. You will not have a situation where a user can keep entering silly data. 31, 32, 33, 34, 35, 36, 38, 39…
+
+[Leo Irakliotis] 12:16:32
+41, 42, 43, 44. You're going… you're going to have a limit as to how many… how much time you're going to waste.
+
+[Leo Irakliotis] 12:16:40
+with that user. But you will allow graceful exits without actually.
+
+[Leo Irakliotis] 12:16:48
+throwing an exception like we did before. We are going to capture, instead of raise a value error, we're going to capture the value error, we're going to report it to the user and say, this is what you're doing wrong here, try again.
+
+[Leo Irakliotis] 12:17:03
+Try again, try again, try again, and after a few trials.
+
+[Leo Irakliotis] 12:17:08
+We give up.
+
+[Leo Irakliotis] 12:17:08
+Then we give up.
+
+[Leo Irakliotis] 12:17:12
+It will help here to do a little bit of reading about try and accept first and look at the examples I'm going to share with you before you attempt this. And you'll have much, much, much, much more clean code to work for your starter code for this week.
+
+[Leo Irakliotis] 12:17:28
+than what I just typed here.
+
+[Leo Irakliotis] 12:17:32
+today.
+
+[Leo Irakliotis] 12:17:34
+Questions? Comments?
+
+[Leo Irakliotis] 12:17:40
+All right, next week we are starting to look at files.
+
+[Leo Irakliotis] 12:17:47
+Files.
+
+[Leo Irakliotis] 12:17:48
+I'll preface it like this. Files.
+
+[Leo Irakliotis] 12:17:56
+Possibly the most important and.
+
+[Leo Irakliotis] 12:18:02
+concept in information storage and information processing.
+
+[Leo Irakliotis] 12:18:07
+And it's increasingly something that.
+
+[Leo Irakliotis] 12:18:11
+And I'm not saying that critically or in any judgmental capacity, but your generation takes them for granted.
+
+[Leo Irakliotis] 12:18:18
+Because of a… not only we have abundance of storage… of memory, but we also have abundance of storage. And we'll start next week with a discussion about what is the difference between memory and storage.
+
+[Leo Irakliotis] 12:18:33
+And in the last minute I have, here is why. I'm going to put a couple of you on the spot, starting with Erica. Erica, how much memory does your computer have?
+
+[Leo Irakliotis] 12:18:42
+First number that comes to mind.
+
+[Gregor, Erica] 12:18:46
+Uh, probably 100.
+
+[Leo Irakliotis] 12:18:48
+How many?
+
+[Gregor, Erica] 12:18:50
+100?
+
+[Leo Irakliotis] 12:18:50
+100. Jessica, how much memory your computer has? The first number that comes to mind when I ask that question.
+
+[cheska ocampo] 12:19:01
+Oh, like 128, or no, wait a minute.
+
+[Leo Irakliotis] 12:19:04
+128. Ben, first number that comes to mind, how much memory your computer has?
+
+[Ben Dorsey] 12:19:11
+Uh, 32 gigabytes.
+
+[Leo Irakliotis] 12:19:13
+Okay, Bella.
+
+[Bella Fiorucci] 12:19:16
+16 gigabytes?
+
+[Leo Irakliotis] 12:19:17
+Okay.
+
+[Leo Irakliotis] 12:19:19
+If you reported a number less than 40, you're correct. If you report a number more than 40.
+
+[Leo Irakliotis] 12:19:27
+Either you win the lottery and you bought a computer with 100GB of memory, or you confuse memory and storage, which is not a bad thing.
+
+[Leo Irakliotis] 12:19:39
+It's not a bad thing because it shows a new generation of professionals that do not have to worry about that very hard, very unforgiving boundary between memory and storage.
+
+[Leo Irakliotis] 12:19:53
+But that boundary still exists today, defines the computing architecture that we have available to us and has been available to us since the 1940s. We have not changed architectures.
+
+[Leo Irakliotis] 12:20:06
+And we're going to talk a little bit about the difference of storage and memory.
+
+[Leo Irakliotis] 12:20:11
+And, uh, why storage is still…
+
+[Leo Irakliotis] 12:20:15
+So important. And so much more persistent than memory itself. And what are the differences? So we're going to go into a little bit of architecture, a bit of hardware, and then we're going to see how to manipulate data stored in files.
+
+[Leo Irakliotis] 12:20:31
+Go ask your grandparents or your parents about cassettes and cassette
+
+[Leo Irakliotis] 12:20:37
+Players that will also become relevant on Monday.
+
+[Leo Irakliotis] 12:20:41
+Stay cool. It's pretty unforgiving out there
+
+[Leo Irakliotis] 12:20:45
+And I'll see you next week.
+
+[] 12:20:48
+Thank you.
+
+[] 12:20:49
+Thank you.
+
