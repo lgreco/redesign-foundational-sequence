@@ -8,6 +8,15 @@ A curriculum design project at Loyola University Chicago. The primary work is re
 
 The two principal authors are Leo Irakliotis and Karima Ennaoui.
 
+## Session scope
+
+Day-to-day course operations (weekly plans, reviews, transcript summaries) are scoped to four folders:
+
+- `comp170su26/` and `comp271su26/` — private, this repo
+- `../../comp-170-su26/` and `../../comp-271-su26/` — student-facing, sibling repos
+
+Treat other folders in this repo (`proposal_158_159/`, `recording_transcripts/`, `sources/`) as out of scope for that work unless a task specifically calls for them.
+
 ## Repository structure
 
 | Folder / file | Purpose |
