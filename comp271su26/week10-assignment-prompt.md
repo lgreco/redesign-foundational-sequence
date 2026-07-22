@@ -47,3 +47,13 @@ After adding another node (size==3), the files will be:
  File names for intermediate nodes are generated randomly as a combination of 8 letter characters (upper and lower letters only). Duplicates are unlikely but to avoid them we maintain a file with node file names. New files are compared against that directory before used.
 
  No lists or other in-memory data structures can be used.
+
+ The file-based linked list should be written as filell.py.
+
+ The linked list should implement:
+ * add: always appending after the tail
+ * remove: a node based on its payload string
+ * size, is_full, is_emty, and __str__.
+ * filelist -> str to return a list of files used from head.txt to tail.txt in sequential order
+ * clear(): to empty the list and therefore remove the underlying files.
+ * some way to recover an existing list if files are present in the folder (head and tail must be there, at the very least).
