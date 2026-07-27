@@ -21,7 +21,10 @@
       "Read(//home/leo/GitHub_Clones/**)",
       "Write(//mnt/e/GitHub_Clones/**)",
       "Write(//home/leo/GitHub_Clones/**)",
-      "Write(//Users/leo/GitHub_Clones/**)"
+      "Write(//Users/leo/GitHub_Clones/**)",
+      "Bash(rm -f head.txt tail.txt filell_registry.txt* stackq_demo.txt*)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(rm -f head.txt tail.txt filell_registry.txt*)"
     ],
     "additionalDirectories": [
       "/mnt/e/GitHub_Clones/comp-170-su26",
