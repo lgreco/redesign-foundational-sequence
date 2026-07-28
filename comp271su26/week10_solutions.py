@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-import os
-import random
-import string
+import os      # check whether head/tail/registry files exist, remove and
+               # replace files during node removal, unregistration, and clear()
+import random  # pick the letters that make up each random intermediate filename
+import string  # supply the upper- and lower-case letter pool random.choice() draws from
 
 # Week 10 Solutions -- A Front-Loaded Stack and a Doubly Linked List With
 # No Node Class, Only Files
@@ -299,6 +300,10 @@ _RANDOM_NAME_CHARACTERS = string.ascii_letters  # upper- and lower-case letters 
 _RANDOM_NAME_LENGTH = 8
 _RANDOM_NAME_SUFFIX = ".txt"
 _NODE_SEPARATOR = " -> "
+# A note about the following two constants: usually we do not need
+# constants for the empty string. The use of these constants here
+# is purely for improved code readability.
+_NO_NEXT = _NO_PREV = ""
 
 
 class FileLinkedList:
@@ -453,6 +458,8 @@ class FileLinkedList:
 
         while in_use:
             letters = ""
+            # _ signals the loop counter itself is unused -- only the
+            # number of iterations matters here
             for _ in range(_RANDOM_NAME_LENGTH):
                 letters += random.choice(_RANDOM_NAME_CHARACTERS)
             candidate = f"{letters}{_RANDOM_NAME_SUFFIX}"
@@ -497,8 +504,13 @@ class FileLinkedList:
         node = self._read_node(_HEAD_FILENAME)
         if node is not None:
             result = 1
+            # _read_node() always returns the tuple
+            # (payload, next_filename, prev_filename), assigned above to
+            # node. Unpacking it below pulls out all three items, but
+            # only next_filename is needed here -- the other two are
+            # discarded by assigning them to the dummy variable _.
             _, next_filename, _ = node
-            while next_filename != "":
+            while next_filename != _NO_NEXT:
                 node = self._read_node(next_filename)
                 _, next_filename, _ = node
                 result += 1
@@ -527,7 +539,7 @@ class FileLinkedList:
         if node is not None:
             payload, next_filename, _ = node
             result = payload
-            while next_filename != "":
+            while next_filename != _NO_NEXT:
                 node = self._read_node(next_filename)
                 payload, next_filename, _ = node
                 result += f"{_NODE_SEPARATOR}{payload}"
@@ -546,7 +558,7 @@ class FileLinkedList:
         if node is not None:
             result = _HEAD_FILENAME
             _, next_filename, _ = node
-            while next_filename != "":
+            while next_filename != _NO_NEXT:
                 result += f"{_NODE_SEPARATOR}{next_filename}"
                 node = self._read_node(next_filename)
                 _, next_filename, _ = node
@@ -582,14 +594,14 @@ class FileLinkedList:
 
         if old_tail is None:
             # size 0 -> 1.
-            self._write_node(_HEAD_FILENAME, payload, "", "")
-            self._write_node(_TAIL_FILENAME, payload, "", "")
+            self._write_node(_HEAD_FILENAME, payload, _NO_NEXT, _NO_PREV)
+            self._write_node(_TAIL_FILENAME, payload, _NO_NEXT, _NO_PREV)
         else:
             old_tail_payload, _, old_tail_prev = old_tail
 
-            if old_tail_prev == "":
+            if old_tail_prev == _NO_PREV:
                 # size 1 -> 2: the solo node keeps living in head.txt.
-                self._write_node(_HEAD_FILENAME, old_tail_payload, _TAIL_FILENAME, "")
+                self._write_node(_HEAD_FILENAME, old_tail_payload, _TAIL_FILENAME, _NO_PREV)
                 new_prev = _HEAD_FILENAME
             else:
                 # size N -> N+1, N >= 2: move the old tail's node out
@@ -597,7 +609,7 @@ class FileLinkedList:
                 new_filename = self._generate_unique_filename()
                 self._write_node(new_filename, old_tail_payload, _TAIL_FILENAME, old_tail_prev)
 
-                # old_tail_prev is never "" in this branch (that case
+                # old_tail_prev is never _NO_PREV in this branch (that case
                 # was handled above), so it is always a real file --
                 # head.txt or another intermediate node -- and it used
                 # to call tail.txt its next neighbor. Now it has to
@@ -606,7 +618,7 @@ class FileLinkedList:
                 self._write_node(old_tail_prev, prev_payload, new_filename, prev_prev)
                 new_prev = new_filename
 
-            self._write_node(_TAIL_FILENAME, payload, "", new_prev)
+            self._write_node(_TAIL_FILENAME, payload, _NO_NEXT, new_prev)
 
     def remove(self, payload: str) -> bool:
         """Search from head.txt toward tail.txt for the first node
@@ -631,7 +643,7 @@ class FileLinkedList:
                 removed = True
             else:
                 match_filename = match_next
-                if match_filename == "":
+                if match_filename == _NO_NEXT:
                     node = None
                 else:
                     node = self._read_node(match_filename)
@@ -662,7 +674,7 @@ class FileLinkedList:
           involved at all. Its two neighbors are pointed directly at
           each other, and its file is deleted.
         """
-        if filename == _HEAD_FILENAME and next_filename == "":
+        if filename == _HEAD_FILENAME and next_filename == _NO_NEXT:
             # size 1 -> 0: the one node lived in both fixed files;
             # both simply go back to empty. No intermediate file was
             # ever involved, so there is nothing to unregister.
@@ -698,10 +710,10 @@ class FileLinkedList:
         payload, next_filename, _ = self._read_node(new_head_filename)
 
         if new_head_filename == _TAIL_FILENAME:
-            self._write_node(_HEAD_FILENAME, payload, "", "")
-            self._write_node(_TAIL_FILENAME, payload, "", "")
+            self._write_node(_HEAD_FILENAME, payload, _NO_NEXT, _NO_PREV)
+            self._write_node(_TAIL_FILENAME, payload, _NO_NEXT, _NO_PREV)
         else:
-            self._write_node(_HEAD_FILENAME, payload, next_filename, "")
+            self._write_node(_HEAD_FILENAME, payload, next_filename, _NO_PREV)
 
             next_payload, next_next, _ = self._read_node(next_filename)
             self._write_node(next_filename, next_payload, next_next, _HEAD_FILENAME)
@@ -716,10 +728,10 @@ class FileLinkedList:
         payload, _, prev_filename = self._read_node(new_tail_filename)
 
         if new_tail_filename == _HEAD_FILENAME:
-            self._write_node(_HEAD_FILENAME, payload, "", "")
-            self._write_node(_TAIL_FILENAME, payload, "", "")
+            self._write_node(_HEAD_FILENAME, payload, _NO_NEXT, _NO_PREV)
+            self._write_node(_TAIL_FILENAME, payload, _NO_NEXT, _NO_PREV)
         else:
-            self._write_node(_TAIL_FILENAME, payload, "", prev_filename)
+            self._write_node(_TAIL_FILENAME, payload, _NO_NEXT, prev_filename)
 
             prev_payload, _, prev_prev = self._read_node(prev_filename)
             self._write_node(prev_filename, prev_payload, _TAIL_FILENAME, prev_prev)
