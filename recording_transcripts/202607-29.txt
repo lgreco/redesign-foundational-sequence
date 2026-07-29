@@ -1,0 +1,2340 @@
+[Leo Irakliotis] 10:26:07
+Hello! Good morning! Uh, the last…
+
+[Leo Irakliotis] 10:26:12
+Class meeting for the semester, because technically, next week…
+
+[Leo Irakliotis] 10:26:17
+is finals. Of course, we don't have a final in the course, but uh…
+
+[Leo Irakliotis] 10:26:24
+And I'll be available, uh, to meet with you to discuss, um, the last assignment and provide any support that you need for the last assignment. But, uh, this is our last.
+
+[Leo Irakliotis] 10:26:39
+Synchronous class.
+
+[Leo Irakliotis] 10:26:42
+Uh, for, uh, the term, and what I would like to do is, um, wrap up with, um…
+
+[Leo Irakliotis] 10:26:52
+the, uh, lookup table, uh, the hash table, how we build hash tables.
+
+[Leo Irakliotis] 10:26:58
+So any questions, any comments, any requests before I get started?
+
+[Leo Irakliotis] 10:27:03
+All right.
+
+[Leo Irakliotis] 10:27:07
+So we started with this weird alphabetical hotel thing, where we place people in rooms that match some characteristic of their names, and we took that concept a little bit further and got even more weird in terms of hotel operations, because now we ask people to.
+
+[Leo Irakliotis] 10:27:21
+stay on hammocks hanging outside the room. But the idea is that this is the… the reason I use the hammock example is because that's the closest way I can visualize linked lists and hotel rooms.
+
+[Leo Irakliotis] 10:27:38
+Which, you know, in the first place, maybe they do not belong in the same visualization, but…
+
+[Leo Irakliotis] 10:27:44
+I got with this paradigm three years ago, and so far, students have not complained.
+
+[Leo Irakliotis] 10:27:50
+And, you know, if…
+
+[Leo Irakliotis] 10:27:52
+if I see any complaints about this, eventually in course evaluations, or uh… someone goes to the department chairman and says, you know, this guy's nuts, what is he talking about? Maybe I'll change the paradigm, but there's, you know, why change something if, uh…
+
+[Leo Irakliotis] 10:28:08
+If your team doesn't complain about it, right?
+
+[Leo Irakliotis] 10:28:12
+So the idea is that we have this array, this list of linked lists.
+
+[Leo Irakliotis] 10:28:19
+Okay, and that's, you know, our hotel. Those are… this is our hotel with four rooms, and every room you can hang up to…
+
+[Leo Irakliotis] 10:28:27
+What did we discuss yesterday? Five hammocks.
+
+[Leo Irakliotis] 10:28:31
+So even if a hotel with four rooms can accommodate 20 guests, not very comfortably because of the hammocks involved, but at the end of the day, these are not guests, these are data objects, and these are not hammocks, these are nodes.
+
+[Leo Irakliotis] 10:28:47
+In a linked list.
+
+[Leo Irakliotis] 10:28:51
+And, uh…
+
+[Leo Irakliotis] 10:28:51
+You know, objects do not complain.
+
+[Leo Irakliotis] 10:28:55
+Yet.
+
+[Leo Irakliotis] 10:28:56
+Uh, so…
+
+[Leo Irakliotis] 10:28:58
+And again, the idea is that we're not doing this with only four.
+
+[Leo Irakliotis] 10:29:03
+elements in an array with only with an array with four linked lists, because it's kind of silly, but it's easier to draw. The idea is that we have an array that has a capacity of 1000 or 2000.
+
+[Leo Irakliotis] 10:29:16
+And each element in that array is a linked list with, let's say, 5 elements, so if your array has 1,000 elements and the linked list has 5, that's a storage capacity of 5,000.
+
+[Leo Irakliotis] 10:29:27
+And we discussed how you can find the position of the linked list where some data may or may not be.
+
+[Leo Irakliotis] 10:29:35
+in one step.
+
+[Leo Irakliotis] 10:29:36
+Because of the hash function.
+
+[Leo Irakliotis] 10:29:39
+And once you're there.
+
+[Leo Irakliotis] 10:29:42
+You can go down the link list, and how many steps are in this link list? Five steps at most, because there are five elements. So, you can look through 5,000.
+
+[Leo Irakliotis] 10:29:54
+objects and find an object you're searching for in no more than six steps. One step to find where the position in the array, and at most five steps to see if the object is indeed in that linked list, because there's only one linked list where that object is.
+
+[Leo Irakliotis] 10:30:09
+can be found, and you can tell the location of that linked list in one step, thanks to the hash function.
+
+[Leo Irakliotis] 10:30:17
+So now the discussion is, how do you build that hash function?
+
+[Leo Irakliotis] 10:30:25
+And that's where we get a little bit mathematical, because Monday and yesterday, we talked about hash functions that are very simple. The simplest hash function is, hey.
+
+[Leo Irakliotis] 10:30:36
+to the first letter of your last name, or the first letter of your first name, whatever, single letter. And that's a hash function that has 26 possible values. Why? Because there are 26 unique letters.
+
+[Leo Irakliotis] 10:30:47
+And that's not a very good idea for a distinct identifier, because it cannot distinctly identify 26 items.
+
+[Leo Irakliotis] 10:30:57
+And if those items are last names, they're last names that very few last names start with a Q or with a Z.
+
+[Leo Irakliotis] 10:31:06
+And a lot of last names start with an S or an M. So it's a very imbalanced, very inefficient hash function, a single letter.
+
+[Leo Irakliotis] 10:31:21
+We also talked about how the inefficiencies of hash functions as mathematical objects cannot be overcome, really, because what are you going to do? You're going to take someone's last name and add the letters?
+
+[Leo Irakliotis] 10:31:36
+Let's look at this example for a second here.
+
+[Leo Irakliotis] 10:31:46
+So let's take a name. And who is my favorite guest this week at Hotel Alphabetical? Ms. Glass.
+
+[Leo Irakliotis] 10:31:54
+Okay, so the hash function that we started at the beginning was this.
+
+[Leo Irakliotis] 10:32:04
+And, you know, 26 places, 26 possible values for that hash function because there are 26 possible first letters for a last name.
+
+[Leo Irakliotis] 10:32:13
+And then I said, okay, let me do something else. Let me create a sum.
+
+[Leo Irakliotis] 10:32:52
+Really? A print statement? Yeah, fine, I'll write.
+
+[Leo Irakliotis] 10:32:58
+Plain code.
+
+[Leo Irakliotis] 10:33:23
+What does that function here do? It takes a string…
+
+[Leo Irakliotis] 10:33:29
+and returns the sum of the ASCII code.
+
+[Leo Irakliotis] 10:33:33
+of every letter in that string.
+
+[Leo Irakliotis] 10:34:05
+Okay, so if you take G-L-A-S-S.
+
+[Leo Irakliotis] 10:34:11
+The ASCII codes for those letters add to 506.
+
+[Leo Irakliotis] 10:34:17
+So that…
+
+[Leo Irakliotis] 10:34:20
+is a…
+
+[Leo Irakliotis] 10:34:22
+more, uh, flexible, um.
+
+[Leo Irakliotis] 10:34:33
+numeric code.
+
+[Leo Irakliotis] 10:34:38
+71.
+
+[Leo Irakliotis] 10:34:42
+In both cases, for Garcia and Glass was 71.
+
+[Leo Irakliotis] 10:34:49
+But it has a problem because if you look at what numbers we're adding, whatever we're adding, any ASCII value for letters, which means any ASCII value from 67 to whatever.
+
+[Leo Irakliotis] 10:35:05
+92, and from 96 to 120-something for the upper and lower case. So the possible values that are involved in the computation of this sum are finite, and over time, we begin to see periodicity.
+
+[Leo Irakliotis] 10:35:19
+You begin to see that no matter what your last name is, there is already another name with the same hash code, with the same…
+
+[Leo Irakliotis] 10:35:26
+sum of ASCII. It gets even worse. You might say, okay, because I can see that, but let me try a different mathematical technique.
+
+[Leo Irakliotis] 10:35:40
+Instead of adding the ASCII values, let me multiply them. Hash product
+
+[Leo Irakliotis] 10:36:17
+Hash product. Let's do Temeeka first.
+
+[Leo Irakliotis] 10:36:25
+There is the order. You multiply the ASCII. So it's going to be a big number. But I want you to notice not the size of the number, but something else. Let's go with Garcia.
+
+[Leo Irakliotis] 10:36:36
+Let's go with Zara.
+
+[Leo Irakliotis] 10:36:48
+Let's go with Dutch.
+
+[Leo Irakliotis] 10:36:58
+Let's go with me.
+
+[Leo Irakliotis] 10:37:04
+More letters, bigger number. Let's go with the only person for which I'm going to kick Temeeka out of her room to accommodate at my hotel.
+
+[Leo Irakliotis] 10:37:15
+What do you see with these products? What catches your attention other than the fact there are big numbers? What else do you see here?
+
+[Zahra Nadeem] 10:37:29
+The more letters, the bigger the number?
+
+[Leo Irakliotis] 10:37:31
+Yeah, for sure. What else?
+
+[Temeeka Glass] 10:37:36
+Isn't that like for —.
+
+[Temeeka Glass] 10:37:39
+Like Garcia and Nadeem have like five letters. So like the product is…
+
+[Temeeka Glass] 10:37:45
+the same way.
+
+[Leo Irakliotis] 10:37:47
+Uh, no.
+
+[Temeeka Glass] 10:37:48
+Okay.
+
+[Leo Irakliotis] 10:37:49
+No, well, it is.
+
+[Leo Irakliotis] 10:37:51
+But don't focus on the length of the size of the number.
+
+[Leo Irakliotis] 10:37:56
+Look a little bit deeper at those numbers. What do you see?
+
+[Leo Irakliotis] 10:38:19
+Let's say someone's last name is Ace.
+
+[Leo Irakliotis] 10:38:24
+Now what do you see across all these numbers?
+
+[Leo Irakliotis] 10:38:37
+We have one, two, Garcia, Glas, Nadim, Dutch, Irakliotis, Gandalf. One, two, three, four, five, six names?
+
+[Leo Irakliotis] 10:38:45
+And all of them gave us a product that is an even number.
+
+[Leo Irakliotis] 10:38:57
+Why? Because half the letters…
+
+[Leo Irakliotis] 10:39:01
+in the alphabet, by definition, have an even ASCII code.
+
+[Leo Irakliotis] 10:39:07
+A is 65. Guess what B is? 66. 66 is an even number. Every time you multiply a number with an even number, the product is always going to be even.
+
+[Leo Irakliotis] 10:39:25
+That's one thing. So the most likely outcome of a product using ASCII codes, it will be a multiple of two, an even number.
+
+[Leo Irakliotis] 10:39:36
+If it is an odd number, most likely it will be a multiple of five.
+
+[Leo Irakliotis] 10:39:45
+So now, we are building a lot of, uh, numerical, uh, artifacts there because of, um…
+
+[Leo Irakliotis] 10:39:57
+parity issues.
+
+[Leo Irakliotis] 10:40:00
+of… in primality.
+
+[Leo Irakliotis] 10:40:02
+So this is very interesting from a number theory perspective, though not… not… not our remit, not our domain to worry about, but it is a problem, because it means that, um…
+
+[Leo Irakliotis] 10:40:15
+I cannot really hash quasi randomly.
+
+[Leo Irakliotis] 10:40:19
+These hash codes here are very predictable, odd versus even. 99% of my hash codes will be odd.
+
+[Leo Irakliotis] 10:40:25
+If I go down the phone book and produce house code for every last name, 99% of them will be…
+
+[Leo Irakliotis] 10:40:33
+Even numbers.
+
+[Leo Irakliotis] 10:40:35
+This name here, Ace.
+
+[Leo Irakliotis] 10:40:43
+Even because it is A65, I skip a letter, C is 67, I skip a letter, E is 69. So multiplying.
+
+[Leo Irakliotis] 10:40:55
+65, 67, 69, and this number…
+
+[Leo Irakliotis] 10:41:00
+is both a.
+
+[Leo Irakliotis] 10:41:02
+Multiple of 5 and a multiple of 3.
+
+[Leo Irakliotis] 10:41:12
+And I want to avoid these periodicities, these numerical periodicities in my code.
+
+[Leo Irakliotis] 10:41:21
+So…
+
+[Leo Irakliotis] 10:41:23
+And the good news is, uh.
+
+[Leo Irakliotis] 10:41:27
+I don't have to worry about it.
+
+[Leo Irakliotis] 10:41:35
+Because Python has a…
+
+[Leo Irakliotis] 10:41:40
+a built-in function to hash objects.
+
+[Leo Irakliotis] 10:41:48
+In, in, in unique ways, in more unique ways than products or sums.
+
+[Leo Irakliotis] 10:41:54
+And the hash code that is used for strings is a polynomial. And it's a polynomial that uses a prime number for its base.
+
+[Leo Irakliotis] 10:42:08
+So…
+
+[Leo Irakliotis] 10:42:10
+It avoids periodical values more so than other numerical schemes. And we're, you know, I'm going to provide you a reference to read that material. Not important right now. The important thing is that when we design an object.
+
+[Leo Irakliotis] 10:42:25
+And a string is an object, so someone designed that string for us.
+
+[Leo Irakliotis] 10:42:30
+They put an effort to create a way so that that string can create a relatively strong hash code instead of the trivial hash code that, you know, the string glass, the hash code was the letter G.
+
+[Leo Irakliotis] 10:42:45
+Very narrow.
+
+[Leo Irakliotis] 10:42:47
+domain, because you had 26 possible values using that function. Take the first letter, 26 possible letters. We need sums. All right.
+
+[Leo Irakliotis] 10:42:56
+Here is the problem with SAMS. What is the shortest last name you can imagine?
+
+[Leo Irakliotis] 10:43:04
+In English. The shortest last name you can imagine in English. Doesn't have to be correct, just give me something.
+
+[Temeeka Glass] 10:43:10
+One letter, like A.
+
+[Leo Irakliotis] 10:43:13
+Okay, so in France, there is this, uh, politician whose last name starts… is the letter Y, Mr. Monsieur Hu. So, okay, a single… so some…
+
+[Leo Irakliotis] 10:43:23
+So, it could be the smallest last name in English is the letter A. What is… how many letters…
+
+[Leo Irakliotis] 10:43:30
+Has the longest last name in English, you think?
+
+[Leo Irakliotis] 10:43:35
+Again, wild guess.
+
+[Leo Irakliotis] 10:43:37
+Reasonable wild guess. 15?
+
+[Leo Irakliotis] 10:43:40
+18.
+
+[Temeeka Glass] 10:43:43
+20.
+
+[Leo Irakliotis] 10:43:43
+Okay, we'll go 20. And let's go, and I'll be absolutely crass about it, and I'll say this is a letter with 20 Zs in it.
+
+[Leo Irakliotis] 10:43:57
+It's a very sleepy name, okay? So if I say, okay, what is the hash code using my sum technique of Z?
+
+[Leo Irakliotis] 10:44:10
+There you're 20.
+
+[Leo Irakliotis] 10:44:13
+letter, last name, with the highest possible… the most expensive characters. Z has the…
+
+[Leo Irakliotis] 10:44:21
+Highest asking value.
+
+[Leo Irakliotis] 10:44:27
+Without you.
+
+[Leo Irakliotis] 10:44:28
+And what do you say the shortest name goes? Single letter A? What is that value? 65?
+
+[Leo Irakliotis] 10:44:35
+So, the range of hash codes between the shortest possible last name and the longest possible last name is about 2100.
+
+[Leo Irakliotis] 10:44:45
+So that's the possible hash values that you can hash A.
+
+[Leo Irakliotis] 10:44:50
+Last name using the sum of it is of its.
+
+[Leo Irakliotis] 10:44:56
+ASCII values. Okay, what about if we did the product?
+
+[Leo Irakliotis] 10:45:00
+Again, if it's a single letter, the letter A, the product of itself is 65. If it's…
+
+[Leo Irakliotis] 10:45:11
+It is this number. Oh, that's a big number.
+
+[Leo Irakliotis] 10:45:15
+But guess what? This number at the same time is a multiple of 2, a multiple of 3, a multiple of 5.
+
+[Leo Irakliotis] 10:45:24
+And obviously a multiple of 10 and a multiple of 6.
+
+[Leo Irakliotis] 10:45:29
+So you have a lot of periodicity. So if you have a hash table, a lot of those products will fall in the zero column, in the fifth column, in the third column, in the 15th column. So you're going to have to hit those periodicities.
+
+[Leo Irakliotis] 10:45:45
+Specific locations. 0, uh, no, uh, 0, 2, uh, 3, 5, 9, 15, and so on.
+
+[Leo Irakliotis] 10:45:57
+Because of a periodicity.
+
+[Leo Irakliotis] 10:46:01
+So if I hash this by 2, that's obviously 0. If I hash this by 5, that's always… If I hash it by 10, 0. If I hash it by 15, 0.
+
+[Leo Irakliotis] 10:46:16
+So if I have an array of linguists with 2, 5, 10, 15…
+
+[Leo Irakliotis] 10:46:23
+30 elements, 100 elements.
+
+[Leo Irakliotis] 10:46:29
+This person with last name Z…
+
+[Leo Irakliotis] 10:46:32
+will fall more or less in predictable locations.
+
+[Leo Irakliotis] 10:46:49
+And there is the periodicity.
+
+[Leo Irakliotis] 10:46:52
+that I mentioned to you. And that's an amazing field of study, number theory. But we now have a technique with the hash function.
+
+[Leo Irakliotis] 10:47:02
+to avoid.
+
+[Leo Irakliotis] 10:47:05
+this periodicity.
+
+[Leo Irakliotis] 10:47:10
+Because the hash for A.
+
+[Leo Irakliotis] 10:47:17
+is this.
+
+[Leo Irakliotis] 10:47:19
+Configure, one letter, and the hash…
+
+[Leo Irakliotis] 10:47:23
+For this…
+
+[Leo Irakliotis] 10:47:33
+is comparable.
+
+[Leo Irakliotis] 10:47:37
+But notice I'm…
+
+[Leo Irakliotis] 10:47:39
+One even one old number.
+
+[Leo Irakliotis] 10:47:42
+This is probably a multiple of, not, this is not a multiple of three.
+
+[Leo Irakliotis] 10:47:49
+Even though it ends at night. Go figure.
+
+[Leo Irakliotis] 10:47:54
+So, the hash building function allows us to.
+
+[Leo Irakliotis] 10:47:58
+distribute the data more uniformly across an array, rather than more predictably using a product or a sum function. So, the hash function, the polynomial-based function is good enough, and if it's not enough for our needs, there are more advanced mathematical functions.
+
+[Leo Irakliotis] 10:48:17
+that will do the trick for us, but that takes us to number theory, and it's not relevant to the course. Now, with this hash function built in in the object, and that, when we design objects from scratch, it's our responsibility to write the hash function.
+
+[Leo Irakliotis] 10:48:32
+for objects we create.
+
+[Leo Irakliotis] 10:48:33
+So if I was writing an object for a student.
+
+[Leo Irakliotis] 10:48:39
+I have to come up with a mathematical function to hash the information in that object to a.
+
+[Leo Irakliotis] 10:48:48
+Number that is not periodic, that is not repeated, that is quasi random.
+
+[Leo Irakliotis] 10:48:55
+And there are… there are techniques for that, and again, we don't have to worry about it. We assume that every object we want to store in this, uh, data structure that is called the hash table.
+
+[Leo Irakliotis] 10:49:05
+Has a hash function.
+
+[Leo Irakliotis] 10:49:07
+as a way to represent itself quasi-uniquely with arithmetic techniques. When you want to guarantee that.
+
+[Leo Irakliotis] 10:49:18
+No two objects will have the same hash function.
+
+[Leo Irakliotis] 10:49:24
+And, and here's an example, again, using my simple techniques, uh, hash…
+
+[Leo Irakliotis] 10:49:36
+Hash as a product.
+
+[Leo Irakliotis] 10:49:38
+What is the hash for dog as a product?
+
+[Leo Irakliotis] 10:49:42
+this.
+
+[Leo Irakliotis] 10:49:45
+1.1 million something. You know, what is the hash for God?
+
+[Leo Irakliotis] 10:49:51
+The same number because I'm multiplying the ASCII code for D, the ASCII code for O, the ASCII code for G. No matter which way you multiply those numbers, DOG, GOD, it's the same product.
+
+[Leo Irakliotis] 10:50:07
+So here, if these were names, if these were items I wanted to store in a data structure, they will go in the same place.
+
+[Leo Irakliotis] 10:50:16
+And, you know, no matter how I… how much I believe that dogs are divine.
+
+[Leo Irakliotis] 10:50:22
+That's not a universal belief. That doesn't make any sense computationally in the first place.
+
+[Leo Irakliotis] 10:50:31
+But when you see… when you ask for the hash for dog.
+
+[Leo Irakliotis] 10:50:36
+And the hash…
+
+[Leo Irakliotis] 10:50:38
+For God, which is the same letters, different numbers.
+
+[Leo Irakliotis] 10:50:45
+One tiny observation here, notice that these numbers are negative.
+
+[Leo Irakliotis] 10:50:51
+Why is that?
+
+[Leo Irakliotis] 10:50:53
+Because…
+
+[Leo Irakliotis] 10:50:57
+A computer.
+
+[Leo Irakliotis] 10:50:59
+can represent a limited range of numbers.
+
+[Leo Irakliotis] 10:51:05
+Back in my day.
+
+[Leo Irakliotis] 10:51:08
+When a computer had eight bits.
+
+[Leo Irakliotis] 10:51:11
+The processor was 8 bits wide.
+
+[Leo Irakliotis] 10:51:15
+It could enumerate distinctly.
+
+[Leo Irakliotis] 10:51:18
+2 to the power 8.
+
+[Leo Irakliotis] 10:51:21
+items.
+
+[Leo Irakliotis] 10:51:23
+So, it could only recognize…
+
+[Leo Irakliotis] 10:51:28
+256.
+
+[Leo Irakliotis] 10:51:31
+integer numbers.
+
+[Leo Irakliotis] 10:51:32
+And if you wanted to use negative numbers as well, the range went from minus 128.
+
+[Leo Irakliotis] 10:51:42
+up to zero, up to plus 127. Those are the only integer numbers that computer could recognize. So when I asked it, okay, what is 127 plus one? This is such an easy addition that even I can do.
+
+[Leo Irakliotis] 10:52:00
+and expect 128, the computer says, you know, there is no number in my universe, there is no number beyond 127, so what I'm going to do is I'm going to wrap around.
+
+[Leo Irakliotis] 10:52:15
+And say this is minus 128.
+
+[Leo Irakliotis] 10:52:20
+That's what computers still do today, only instead of 8 bits, they have 32 or 64 bits to represent numbers.
+
+[Leo Irakliotis] 10:52:28
+So when I ask my computer what is 2 to the power 32, and I know it's a couple of billion.
+
+[Leo Irakliotis] 10:52:35
+Plus one…
+
+[Leo Irakliotis] 10:52:38
+It will give me a negative number because it's going to wrap around.
+
+[Leo Irakliotis] 10:52:42
+So when we're, and we know that, that's called a numeric overflow or arithmetic overflow.
+
+[Leo Irakliotis] 10:52:47
+And because of that, that's a known limitation, a known artifact of modern computers. Whenever I use hash functions.
+
+[Leo Irakliotis] 10:52:57
+I… I… I make sure…
+
+[Leo Irakliotis] 10:53:00
+That I avoid.
+
+[Leo Irakliotis] 10:53:03
+negative numbers by calling the absolute function first.
+
+[Leo Irakliotis] 10:53:11
+So I remove the negative. So if the number is negative, remove the negative. If the number is not negative, keep it.
+
+[Temeeka Glass] 10:53:18
+Question. So if it does eventually wrap around, does it eventually go back into the positive or —.
+
+[Leo Irakliotis] 10:53:19
+Yep.
+
+[Leo Irakliotis] 10:53:24
+Yeah, yeah.
+
+[Leo Irakliotis] 10:53:27
+Absolutely. And you're going to see oscillations. I mean, one of the things, Python is not very good at this because it's very forgiving with big numbers because when the numbers exceed the size that the CPU supports.
+
+[Leo Irakliotis] 10:53:44
+What Python does is converts these numbers to strings, does the operations in the string, and then converts them back to numbers.
+
+[Leo Irakliotis] 10:53:52
+So, a string can be much longer than an integer number. An integer number in Python, in a standard computer, can be 20, 30 digits long. If it goes more than that, you get into numeric overflow in a language like Java. But in Python, no, in Python.
+
+[Leo Irakliotis] 10:54:09
+It will go as big as it can accommodate a string, 4,000, 6,000.
+
+[Leo Irakliotis] 10:54:14
+digits before it breaks. So let's see if we can do this.
+
+[Leo Irakliotis] 10:54:22
+Let's start with 1 million.
+
+[Leo Irakliotis] 10:54:26
+Okay.
+
+[Leo Irakliotis] 10:54:28
+And then multiply it by self.
+
+[Leo Irakliotis] 10:54:33
+So what is 1 million times 1 million about the net worth of Elon Musk?
+
+[Leo Irakliotis] 10:54:41
+There is your, um…
+
+[Leo Irakliotis] 10:54:46
+Okay, let's do prod.
+
+[Leo Irakliotis] 10:54:48
+equals rod times itself.
+
+[Leo Irakliotis] 10:54:53
+And then print F.
+
+[Leo Irakliotis] 10:54:58
+with commas for readability.
+
+[Leo Irakliotis] 10:55:05
+Then maybe close the code here.
+
+[Leo Irakliotis] 10:55:27
+Ah, Leo, you are so stupid.
+
+[Leo Irakliotis] 10:55:30
+Last day of classes, and there you are.
+
+[Leo Irakliotis] 10:55:37
+Okay, so let's start with prod 1000.
+
+[Leo Irakliotis] 10:55:41
+Okay? And multiply by itself and print it. 1,000 times 1,000, there's 1,000,000. Let's do again. Multiply.
+
+[Leo Irakliotis] 10:55:49
+1 trillion.
+
+[Leo Irakliotis] 10:55:51
+Something bigger, something bigger. So it keeps increasing because it's now handling these numbers as integers.
+
+[Leo Irakliotis] 10:56:00
+And at some point, oh my God, this is a big number.
+
+[Leo Irakliotis] 10:56:07
+Okay, we exceed the limit of integer string conversion. Um…
+
+[Leo Irakliotis] 10:56:13
+So Python can be very forgiving about it.
+
+[Leo Irakliotis] 10:56:44
+That is 1 million.
+
+[Leo Irakliotis] 10:56:47
+The moment we go to 1 billion, it flips on the other side.
+
+[Leo Irakliotis] 10:56:51
+Because we can represent 2 billion distinct numbers in Java.
+
+[Leo Irakliotis] 10:56:58
+And if we want negative numbers, we have to start from minus 1 billion to plus 1 billion. So there you got it right there.
+
+[Leo Irakliotis] 10:57:14
+All right, all this discussion to say that we have…
+
+[Leo Irakliotis] 10:57:19
+Numbers?
+
+[Leo Irakliotis] 10:57:24
+that represent objects uniquely, and we can hash them into an array, and now our job is…
+
+[Leo Irakliotis] 10:57:31
+to do a couple of things.
+
+[Leo Irakliotis] 10:57:36
+I'm going to design this array vertically. This is an empty array.
+
+[Leo Irakliotis] 10:57:43
+And what I want to have here is a linked list. And what is fundamentally a linked list? A linked list is…
+
+[Leo Irakliotis] 10:57:53
+A node?
+
+[Leo Irakliotis] 10:57:55
+that may or may not be followed by another node. But it suffices to have one node to have a linked list.
+
+[Leo Irakliotis] 10:58:03
+And that first node that…
+
+[Leo Irakliotis] 10:58:05
+A few weeks ago.
+
+[Leo Irakliotis] 10:58:07
+We were calling the head.
+
+[Leo Irakliotis] 10:58:09
+We'll go here.
+
+[Leo Irakliotis] 10:58:14
+Because somehow it was hashed into position one.
+
+[Leo Irakliotis] 10:58:17
+And I no longer need to give it a special name because I called it head before because I wanted to be able to find it. Now I can find it because it's in this array. What do you want to call this array? Let's call it barbecue.
+
+[Leo Irakliotis] 10:58:34
+Because that's what I'm cooking for dinner tonight.
+
+[Leo Irakliotis] 10:58:36
+So in array barbecue.
+
+[Leo Irakliotis] 10:58:40
+In position one, that is the head of this specific linked list.
+
+[Leo Irakliotis] 10:58:47
+And there might be another linked list here in BBQ3.
+
+[Leo Irakliotis] 10:58:57
+And now, I'm adding a new…
+
+[Leo Irakliotis] 10:59:02
+node, and I do my hashing operation, and the hashing operation says, hey, this new node needs to go to position 3.
+
+[Leo Irakliotis] 10:59:11
+And from what we know.
+
+[Leo Irakliotis] 10:59:16
+from linked lists.
+
+[Leo Irakliotis] 10:59:19
+That would be the end result.
+
+[Leo Irakliotis] 10:59:22
+We'll go to BBQ3.
+
+[Leo Irakliotis] 10:59:24
+This is the head.
+
+[Leo Irakliotis] 10:59:27
+And we'll say next, next, next until there is no next. And that's where we append the new node.
+
+[Leo Irakliotis] 10:59:32
+But next, next, next makes this insertion dependent on the length of the linked list of the specified position.
+
+[Leo Irakliotis] 10:59:45
+Okay.
+
+[Leo Irakliotis] 10:59:47
+The whole premise of this data structure is we're designing something that is very fast.
+
+[Leo Irakliotis] 10:59:56
+So if the insertion of… and we argued, we kind of demonstrated that.
+
+[Leo Irakliotis] 11:00:04
+Uh, searching through this data structure is super fast, but insertion right now seems to be problematic, because I have to traverse the full length of an existing linked list to find its end.
+
+[Leo Irakliotis] 11:00:19
+and append the node there.
+
+[Leo Irakliotis] 11:00:20
+Is there a way to do it faster?
+
+[Leo Irakliotis] 11:00:24
+Sure, there is a way to do it faster. I will take this new node, and instead of putting it at the end of the linked list, I will take the existing linked list.
+
+[Leo Irakliotis] 11:00:37
+That is at barbecue 3.
+
+[Leo Irakliotis] 11:00:42
+Append it to this new node in one step.
+
+[Leo Irakliotis] 11:00:46
+And in another step.
+
+[Leo Irakliotis] 11:00:49
+Take this new linked list.
+
+[Leo Irakliotis] 11:00:51
+and move it here.
+
+[Leo Irakliotis] 11:00:57
+So make the new node.
+
+[Leo Irakliotis] 11:00:59
+By default.
+
+[Leo Irakliotis] 11:01:03
+The head of the list.
+
+[Leo Irakliotis] 11:01:06
+So now insertions are done in constant time.
+
+[Leo Irakliotis] 11:01:13
+And now I have a data structure that data can be placed and searched.
+
+[Leo Irakliotis] 11:01:19
+Very, very fast, but the price I pay is that in the underlying array, in my barbecue array.
+
+[Leo Irakliotis] 11:01:28
+Not every element is used. Here I have an array that uses 50% of its elements.
+
+[Leo Irakliotis] 11:01:34
+But that's very typical of barbecue, because, you know, if you're doing short ribs, you don't eat 100% of what you cook, because you cannot eat the bones.
+
+[Leo Irakliotis] 11:01:43
+So
+
+[Leo Irakliotis] 11:01:46
+That's my reflection of the day about the efficiency of barbecue cooking.
+
+[Leo Irakliotis] 11:01:51
+And also the fact that it takes 10 hours.
+
+[Leo Irakliotis] 11:01:57
+But that's okay, the inefficiency here.
+
+[Leo Irakliotis] 11:02:01
+is okay.
+
+[Leo Irakliotis] 11:02:03
+Why? Because…
+
+[Leo Irakliotis] 11:02:06
+This is all about storage. Storage is a commodity, therefore we can afford it. And the price we pay for that storage is the cost we pay for that storage is recovered.
+
+[Leo Irakliotis] 11:02:19
+by the efficiency of operations.
+
+[Leo Irakliotis] 11:02:22
+that we can search strings very, very fast.
+
+[Leo Irakliotis] 11:02:30
+In a different scenario.
+
+[Leo Irakliotis] 11:02:33
+So here is, again, an array with four positions only, and you have…
+
+[Leo Irakliotis] 11:02:39
+Every position is occupied.
+
+[Leo Irakliotis] 11:02:46
+And there's only one node in each element, in spite of my…
+
+[Leo Irakliotis] 11:02:49
+atrocious drawing here.
+
+[Leo Irakliotis] 11:03:03
+So this array of linked lists is saturated. Anything new that you add will go to one of the existing positions. So here you keep hanging hammocks after hammocks after hammocks in that weird hotel.
+
+[Leo Irakliotis] 11:03:18
+point gravity will take its toll.
+
+[Leo Irakliotis] 11:03:21
+And someone is going to plunge to their death
+
+[Leo Irakliotis] 11:03:24
+On the bottom hammock.
+
+[Leo Irakliotis] 11:03:30
+What do we do to avoid this situation? We come up with a rule that say that 75.
+
+[Leo Irakliotis] 11:03:42
+of a ray.
+
+[Leo Irakliotis] 11:03:42
+Up to…
+
+[Leo Irakliotis] 11:03:43
+75% of our A can be occupied.
+
+[Leo Irakliotis] 11:03:54
+And…
+
+[Leo Irakliotis] 11:03:55
+As soon as we reach that limit, we resize the array. We double the size of the array, and we take each one of these nodes.
+
+[Leo Irakliotis] 11:03:59
+And we redistribute it.
+
+[Leo Irakliotis] 11:04:07
+And this number is kind of artificial. You can…
+
+[Leo Irakliotis] 11:04:11
+You can adjust it, but the prevailing wisdom are there, and this is called the loading factor threshold. This is called the loading factor.
+
+[Leo Irakliotis] 11:04:20
+And the loading factor is very easy to compute. What is the length of the array? 4. How many elements of this array are occupied? 4. 4 divided by 4 is 100%. Earlier, uh, 4 element array, 2 elements occupied, 2 over 4, 0.5, 50%.
+
+[Leo Irakliotis] 11:04:34
+It's kind of arbitrary, but over the years we came to realize that about two thirds or three quarters is a sweet spot for efficiency.
+
+[Leo Irakliotis] 11:04:44
+to make sure that we don't create very, very, very long linked lists.
+
+[Leo Irakliotis] 11:04:49
+Of course, a question you might ask is, wait a minute, if the length of the link list is the limiting factor, not how many elements are occupied, why not have a limit here and say the moment.
+
+[Leo Irakliotis] 11:05:01
+The average length, or the moment you hit one of those link lists that has four or more items, or five or more items, you resize and you redistribute.
+
+[Leo Irakliotis] 11:05:12
+that might be a more, uh, productive way to ensure, uh, timely operations. Well, the problem here is that even if you.
+
+[Leo Irakliotis] 11:05:22
+Try to break an existing linked list and redistribute it to a larger array. It's not guaranteed that you are going to take this linked list with, let's say, six elements and break it into two linked lists.
+
+[Leo Irakliotis] 11:05:37
+three elements each. And even if you do, those three elements may come here, so now you have another linked list with six elements, and you have to break it, and these three elements might come here, and it's… it's… there is no.
+
+[Leo Irakliotis] 11:05:52
+efficient way or a way. There's no algorithm that guarantees efficiency here. And if you find that algorithm, write a paper, publish it, get a Turing award, and become famous instantly.
+
+[Leo Irakliotis] 11:06:09
+So, our way to maintain efficiency is as soon as the occupancy of the underlying array exceeds 75%, or whatever matter you want to have.
+
+[Leo Irakliotis] 11:06:19
+We redistribute.
+
+[Leo Irakliotis] 11:06:22
+And we hope that this redistribution will rebalance things, and we are willing to compromise that no matter how well you redistribute, how well you rebalance, you may end up with a scenario where you may have a few linked lists that are longer than your.
+
+[Leo Irakliotis] 11:06:41
+Desirable length.
+
+[Leo Irakliotis] 11:06:44
+And there is nothing you can do about it.
+
+[Leo Irakliotis] 11:06:48
+Well, there is something you can do about it.
+
+[Leo Irakliotis] 11:06:54
+You create a data structure where each item has a guaranteed position and nothing else goes there. You create a hotel with 320 million rooms so that anytime someone comes, a US resident arrives at your hotel.
+
+[Leo Irakliotis] 11:07:15
+You have a room dedicated with that person.
+
+[Leo Irakliotis] 11:07:19
+That's going to be a very, very big hotel to build, of course, like 300 million rooms. There's no such thing. So what do we do instead? You have a hotel that for every new customer that arrives, you create a new room that is uniquely identified to that customer. The number of that room, the moment someone arrives.
+
+[Leo Irakliotis] 11:07:39
+become is the social security number of that person.
+
+[Leo Irakliotis] 11:07:44
+And that is what the dictionary data structure.
+
+[Leo Irakliotis] 11:07:48
+is in Python.
+
+[Leo Irakliotis] 11:07:55
+And what in other programming languages is called a hash table, or a hash map, or a hash…
+
+[Leo Irakliotis] 11:08:04
+It is essentially a data structure.
+
+[Leo Irakliotis] 11:08:08
+Where you store key value pairs.
+
+[Leo Irakliotis] 11:08:14
+And an example of key-value pair is the university ID, for example, El Irakliotis. There is no other user at Loyola University with its user ID, and the value.
+
+[Leo Irakliotis] 11:08:28
+Is all the information that the university maintains about me, my first name, an object that's called faculty member.
+
+[Leo Irakliotis] 11:08:43
+that is uniquely.
+
+[Leo Irakliotis] 11:08:45
+tied to this identifying.
+
+[Leo Irakliotis] 11:08:48
+Item or could be my ID number, my employee ID number.
+
+[Leo Irakliotis] 11:08:54
+And…
+
+[Leo Irakliotis] 11:08:56
+That way we have a little bit of a compromise. Key value pairs, dictionaries are not as fast to search as this theoretical construct we've been discussing.
+
+[Leo Irakliotis] 11:09:07
+Very effective.
+
+[Leo Irakliotis] 11:09:10
+And they guarantee.
+
+[Leo Irakliotis] 11:09:13
+reasonably fast access to the data.
+
+[Leo Irakliotis] 11:09:18
+When you move.
+
+[Leo Irakliotis] 11:09:19
+to a course like 272.
+
+[Leo Irakliotis] 11:09:22
+Where you're going to explore non-linear data structures, like binary trees, for example.
+
+[Leo Irakliotis] 11:09:28
+and graphs, you'll see that for specific applications, they are much faster data structures. The binary search tree, for example, is spectacular, or the graph.
+
+[Leo Irakliotis] 11:09:40
+the undirected graph to map roads and directions from one place to another.
+
+[Leo Irakliotis] 11:09:46
+So for domain specific applications, there are still a few surprises that you're going to discover in a follow up course. But at this level, when we're looking to organize things in fairly tabular manner, in fairly linear manner.
+
+[Leo Irakliotis] 11:10:02
+Dictionaries are…
+
+[Leo Irakliotis] 11:10:06
+cache tables, dictionaries in Python, are as good as it gets.
+
+[Leo Irakliotis] 11:10:15
+No one will ever ask you to write your own dictionary. No one will ever ask you to write your own hash table.
+
+[Leo Irakliotis] 11:10:23
+Because…
+
+[Leo Irakliotis] 11:10:24
+the languages you will be using for development, Java, Python, C++, whatever, have those data structures already developed much better, much more reliably than you can ever do, no matter how competent you are.
+
+[Leo Irakliotis] 11:10:38
+The issue here is not your competency as a programmer, but your ability to do the quality assurance of your product, and one person doing quality assurance can never, never, never match.
+
+[Leo Irakliotis] 11:10:49
+the quality assurance results of an entire software development team using sophisticated testing methodologies.
+
+[Leo Irakliotis] 11:10:58
+So why are we studying this?
+
+[Leo Irakliotis] 11:11:01
+We're studying so that we can appreciate how hash tables work. Why is that important? Because without hash tables, there would be no databases. The whole notion of relational databases, the underlying technology that allows us to track data effectively for the last 60 years.
+
+[Leo Irakliotis] 11:11:17
+is based on key value pairs.
+
+[Leo Irakliotis] 11:11:20
+And this is one computational paradigm that has not changed since the 1970s. If you look at other aspects of computation in the last 60 years, operating systems, graph operating systems, user interfaces.
+
+[Leo Irakliotis] 11:11:37
+Programming paradigms.
+
+[Leo Irakliotis] 11:11:40
+Networking technologies.
+
+[Leo Irakliotis] 11:11:44
+All of these things have changed. We went from character-based operating systems to graphical user operating systems to mobile operating systems. We have seen a lot of evolution in…
+
+[Leo Irakliotis] 11:11:57
+Uh, operating systems, we have seen a lot of evolutions on computer networks, even though some might say, you know, we haven't moved from TCP IP over the last 50 years, yes, but how we deploy that infrastructure, how we create that infrastructure, going from thick coaxial cables that could not transmit data more than 100 feet.
+
+[Leo Irakliotis] 11:12:16
+yards in a laboratory to Wi-Fi and beyond, that is a lot of change.
+
+[Leo Irakliotis] 11:12:22
+programming languages. We went through dozens of languages before we narrowed down to now having some understanding of object-oriented development.
+
+[Leo Irakliotis] 11:12:31
+But one thing that hasn't changed.
+
+[Leo Irakliotis] 11:12:34
+is databases. A database practitioner from the late 1970s, if they travel forward in time, they can still get a job.
+
+[Leo Irakliotis] 11:12:44
+Without a problem today, as a database developer. A programmer from the 1970s?
+
+[Leo Irakliotis] 11:12:51
+No.
+
+[Leo Irakliotis] 11:12:53
+Without serious retraining, they cannot work as a developer, no matter how competent they were 50 years ago.
+
+[Leo Irakliotis] 11:13:01
+But a database developer, no problem.
+
+[Leo Irakliotis] 11:13:05
+Databases are an integral part of our technology, and that's why we study dictionaries.
+
+[Leo Irakliotis] 11:13:12
+Your last assignment for the course is based on this. I specifically avoided writing code.
+
+[Leo Irakliotis] 11:13:20
+For this part, because I want to give you starter code for a simple hash table and have you finish it and reflect on it.
+
+[Leo Irakliotis] 11:13:30
+And because this is the final assignment.
+
+[Leo Irakliotis] 11:13:33
+And next week is…
+
+[Leo Irakliotis] 11:13:35
+Finals week.
+
+[Leo Irakliotis] 11:13:37
+You have until next Wednesday to do this, and I will be available to you Monday, Wednesday, Friday, not only during class. I mean, I'll be available to you throughout the next seven days by, you know, you send me an email or to meet with me, I'll be there.
+
+[Leo Irakliotis] 11:13:53
+But I'll also be available during class hour time to answer any questions and to review any code that you have.
+
+[Leo Irakliotis] 11:14:02
+The important thing to remember about as we're wrapping up the course is that you are determining your grade, not me.
+
+[Leo Irakliotis] 11:14:10
+based on your reflections, based on your class participation, and based on your attendance. And all these rules were part of the syllabus in the course. I'm going to remind you of those rules with a checklist for you to go through.
+
+[Leo Irakliotis] 11:14:25
+And I'll be happy to answer any questions that you may have.
+
+[Leo Irakliotis] 11:14:30
+Any questions, any comments, any requests before we call it a semester?
+
+[Alexander Garcia] 11:14:38
+Kind of a random question, have you ever…
+
+[Alexander Garcia] 11:14:42
+Heard of, like, uh, heard of Hilbert's Paradox with the Grand Hotel.
+
+[Leo Irakliotis] 11:14:48
+I know Hilbert. You cannot be a physicist without having heard of Hilbert if you're talking about the mathematician. But no, I haven't heard of the hotel. I'll look it up.
+
+[Alexander Garcia] 11:14:59
+Okay, no, the reason why I was asking is, yesterday and the day before, when we were talking about, like, hotels and, like, making room for someone when it's an occupied room, and, like, shifting over slightly, uh, I just want… I was just wondering if that's, like, if Hilbert's Paradox was something, like, applicable to that, um…
+
+[Alexander Garcia] 11:15:18
+Well, the idea of it is applicable to that concept.
+
+[Leo Irakliotis] 11:15:21
+I don't know, Alex, but I'll look it up because that might be something interesting to incorporate in the course down the road. Thanks.
+
+[Leo Irakliotis] 11:15:33
+All right, everyone, you know where to find me. It's been a pleasure working with you this summer. Thanks for making the time to be here for the past 10 weeks or so, 11 weeks.
+
+[Leo Irakliotis] 11:15:43
+I hope to see you around. If there is anything I can help you with, you know where to find me.
+
+[Leo Irakliotis] 11:15:49
+And certainly as far as the next assignment is concerned, don't hesitate to reach out, okay?
+
+[Leo Irakliotis] 11:15:56
+Have a great rest of your summer!
+
+[Alexander Garcia] 11:15:59
+Thank you, Professor.
+
+[Temeeka Glass] 11:16:00
+Thank you. Thank you.
+
+[Leo Irakliotis] 11:16:01
+Bye, everyone.
+
+[Leo Irakliotis] 11:30:27
+Hello, everyone.
+
+[Leo Irakliotis] 11:30:40
+Any questions, any comments, any requests?
+
+[Leo Irakliotis] 11:30:47
+Alright.
+
+[Leo Irakliotis] 11:30:48
+Last class.
+
+[Leo Irakliotis] 11:30:50
+Meeting for the term next week is finals. We don't have a final for the course.
+
+[Leo Irakliotis] 11:30:57
+We have one last assignment.
+
+[Leo Irakliotis] 11:31:00
+Uh, but with the ungrading, uh, approach, I'm taking the course, you're… you're doing your own evaluation, and, um, because this is going to be the last assignment, uh, today, that I'm giving out today, I'm going to give you a little bit of a couple more extra days. I will be available throughout the…
+
+[Leo Irakliotis] 11:31:17
+Major of the semester.
+
+[Leo Irakliotis] 11:31:20
+To answer any questions you have about the last assignment, about the ungrading, whatever you need, I will be here.
+
+[Leo Irakliotis] 11:31:28
+to support you. And, uh, that also, uh, extends after the semester is, uh, over, if there is anything I can help you with, your studies, computer stuff, uh, whatever.
+
+[Leo Irakliotis] 11:31:42
+however I can be.
+
+[Leo Irakliotis] 11:31:44
+Useful to you, you know where to find me.
+
+[Leo Irakliotis] 11:31:48
+Probably at Metropolis most of the days, not my office.
+
+[Leo Irakliotis] 11:31:54
+Where were we yesterday? So we wrote a very simple file processing program to scan the file. The file we're scanning is the tale of two cities, basically the first three paragraphs from the book.
+
+[Leo Irakliotis] 11:32:10
+And, uh…
+
+[Leo Irakliotis] 11:32:12
+What I'm going to do… I want to do a couple of things first of all. First, you know, the program we wrote.
+
+[Leo Irakliotis] 11:32:27
+It's using two synchronized arrays.
+
+[Leo Irakliotis] 11:32:29
+And I said yesterday that this is not the safest way to write code, but if you're very, very careful, it works. Another thing I don't like with the code, and this is the code I'm sharing with you as of yesterday, and it's full of comments because I tried.
+
+[Leo Irakliotis] 11:32:45
+to narrate with the comments what we discussed in class.
+
+[Leo Irakliotis] 11:32:51
+It reads the file, and the file is locally on our computer. It reads the file one line at a time. It parses the line into its individual words. That's what happens in line 31. And line 32, for every work in the…
+
+[Leo Irakliotis] 11:33:05
+every word in the current line, it looks, hey, have I seen this word before? Because if I have seen this word before, I need to increase its frequency.
+
+[Leo Irakliotis] 11:33:17
+If I have not seen it before, I need to create a new record.
+
+[Leo Irakliotis] 11:33:21
+for this word with initial frequency of 1, and that's what happens in, uh, with the if statement in line 45. If the word has been found, line 54.
+
+[Leo Irakliotis] 11:33:32
+will increase its current frequency by one.
+
+[Leo Irakliotis] 11:33:35
+if it has not been seen before, lines 59 and 60, we'll create a new record for that word with initial frequency of 1. And then we'll go to the next line again and again and again until we are done.
+
+[Leo Irakliotis] 11:33:51
+This code, and let me make the smalls annoyingly… the fonts annoyingly small for a minute, because this is not intended for you to read, but you look at this… everything is done in this file.
+
+[Leo Irakliotis] 11:34:05
+And this is monolithic code. This is code that has… This is code that a physics major would write.
+
+[Leo Irakliotis] 11:34:15
+Circa 1980s.
+
+[Leo Irakliotis] 11:34:21
+Not even a physics major will write that bad code today.
+
+[Leo Irakliotis] 11:34:27
+So what I want to do is I want to look at the code here, and let me make a copy of this file because I'm going to edit it.
+
+[Leo Irakliotis] 11:34:36
+Violently.
+
+[Leo Irakliotis] 11:35:00
+And what I'm going to do in this version, I'm going to remove the comments because, you know, they take a lot of space.
+
+[Leo Irakliotis] 11:35:09
+But you still have your own version.
+
+[Leo Irakliotis] 11:35:12
+On the repository with the comments.
+
+[Leo Irakliotis] 11:35:24
+And my objective is to see if I can fit everything in one screen.
+
+[Leo Irakliotis] 11:35:29
+All right, there it is.
+
+[Leo Irakliotis] 11:35:32
+With room to spare.
+
+[Leo Irakliotis] 11:35:34
+So this is the code without the comments, right? And it's monolithic.
+
+[Leo Irakliotis] 11:35:40
+And I don't like that. We should not be writing monolithic code because it can cause repetitive things. It mixes the logic. You cannot tell here. This is not readable code. There is no beginning, middle, and end.
+
+[Leo Irakliotis] 11:35:54
+There is no structure.
+
+[Leo Irakliotis] 11:36:00
+And…
+
+[Leo Irakliotis] 11:36:05
+And I want to have…
+
+[Leo Irakliotis] 11:36:08
+a little bit more structure.
+
+[Leo Irakliotis] 11:36:11
+How? Well, let's discuss what we're doing here, what this code is doing.
+
+[Leo Irakliotis] 11:36:19
+And I'm distracted because I cannot find my mouse. There it is.
+
+[Leo Irakliotis] 11:36:24
+So…
+
+[Leo Irakliotis] 11:36:29
+This part here.
+
+[Leo Irakliotis] 11:36:40
+What does it do?
+
+[Leo Irakliotis] 11:36:43
+These lines, lines 10 through 15.
+
+[Leo Irakliotis] 11:36:49
+Looks if the current word.
+
+[Leo Irakliotis] 11:36:54
+has been seen before.
+
+[Leo Irakliotis] 11:37:00
+How? By looking at.
+
+[Leo Irakliotis] 11:37:05
+at this data structure, at Condens.
+
+[Leo Irakliotis] 11:37:07
+So…
+
+[Leo Irakliotis] 11:37:09
+15 lines of code here can be reduced to a single description. Have I seen you before?
+
+[Leo Irakliotis] 11:37:23
+And that is a yes/no question.
+
+[Leo Irakliotis] 11:37:28
+And not only that.
+
+[Leo Irakliotis] 11:37:30
+But…
+
+[Leo Irakliotis] 11:37:31
+Excuse me. If I have seen you before…
+
+[Leo Irakliotis] 11:37:35
+Where have I seen you before?
+
+[Leo Irakliotis] 11:37:38
+And the answer is right here. If I have seen you before, I've seen you at this position in the condensed array.
+
+[Leo Irakliotis] 11:37:48
+So I will say, okay, can I substitute these five lines with something that will return minus one if the answer is no, and an i greater than zero, greater or equal than zero if the answer is yes, giving me the position of what I've seen you before.
+
+[Leo Irakliotis] 11:38:06
+So I will replace this.
+
+[Leo Irakliotis] 11:38:13
+with something that tells me I have seen you before and where I've seen you before.
+
+[Leo Irakliotis] 11:38:17
+And then there is another block of code.
+
+[Leo Irakliotis] 11:38:19
+here.
+
+[Leo Irakliotis] 11:38:28
+That updates the record.
+
+[Leo Irakliotis] 11:38:32
+Updates or create.
+
+[Leo Irakliotis] 11:38:35
+a record for this word. If I have not seen you before, I will create a record.
+
+[Leo Irakliotis] 11:38:43
+If I have seen you before.
+
+[Leo Irakliotis] 11:38:46
+I will update your record by incrementing the frequency by one.
+
+[Leo Irakliotis] 11:38:51
+So in these terms.
+
+[Leo Irakliotis] 11:38:55
+I can reduce the code, and I'm going to write pseudocode here.
+
+[Leo Irakliotis] 11:39:18
+W equals…
+
+[Leo Irakliotis] 11:39:22
+Where have I seen?
+
+[Leo Irakliotis] 11:39:28
+this world before.
+
+[Leo Irakliotis] 11:39:34
+And next.
+
+[Leo Irakliotis] 11:39:37
+Update record.
+
+[Leo Irakliotis] 11:39:40
+For work.
+
+[Leo Irakliotis] 11:39:44
+According to W.
+
+[Leo Irakliotis] 11:39:47
+to the value W. If the W value says, I have not seen you before, create a new record.
+
+[Leo Irakliotis] 11:39:55
+If the W value says, I have seen you before at such and such location.
+
+[Leo Irakliotis] 11:40:01
+Update the record.
+
+[Leo Irakliotis] 11:40:06
+So now my code went from 20 or so lines that were nested loops and things that were not easy on the eye.
+
+[Leo Irakliotis] 11:40:17
+to barely 10 lines of code.
+
+[Leo Irakliotis] 11:40:21
+And now I have to delegate the functionality for lines 11 and 12 to other programs. So I'm going…
+
+[Leo Irakliotis] 11:40:31
+Somewhere up here.
+
+[Leo Irakliotis] 11:40:35
+Write a method that answers the question, where have I seen you before? So I'm going to find a function.
+
+[Leo Irakliotis] 11:40:47
+We're seeing…
+
+[Leo Irakliotis] 11:40:50
+This word…
+
+[Leo Irakliotis] 11:40:56
+In, uh…
+
+[Leo Irakliotis] 11:40:56
+this list, not a list in this collection.
+
+[Leo Irakliotis] 11:41:02
+of warts.
+
+[Leo Irakliotis] 11:41:05
+And I will assume that where I've seen you before is nowhere, minus one. I use minus one to indicate that this is not a legitimate position in an array, meaning that I have not seen you before. And that's what I'm returning.
+
+[Leo Irakliotis] 11:41:19
+But before I make such a bold step and assume that no word has been seen before, I am going to search through that collection.
+
+[Leo Irakliotis] 11:41:29
+for that work.
+
+[Leo Irakliotis] 11:41:30
+And I'm going to write a while loop starting at the beginning of that collection.
+
+[Leo Irakliotis] 11:41:35
+And while the index, the loop index for that collection is less than the length of the collection.
+
+[Leo Irakliotis] 11:41:46
+And…
+
+[Leo Irakliotis] 11:41:48
+The index value, the answer is still, I have not seen you before. What I want you to do is check the current word from the collection.
+
+[Leo Irakliotis] 11:41:57
+at position i.
+
+[Leo Irakliotis] 11:41:58
+If it matches the word I'm looking for.
+
+[Leo Irakliotis] 11:42:01
+And if the answer is correct, I want you to do one thing only.
+
+[Leo Irakliotis] 11:42:06
+Update the index from -1 to the current value of i.
+
+[Leo Irakliotis] 11:42:10
+And if not, you know, prepare to explore.
+
+[Leo Irakliotis] 11:42:16
+the next item.
+
+[Leo Irakliotis] 11:42:18
+But the moment I find a match, the moment I find that the work has been seen before, and it is stored in that collection that in the program we call contents.
+
+[Leo Irakliotis] 11:42:30
+This IDX value will be array assigned a number that is at least zero, if not greater.
+
+[Leo Irakliotis] 11:42:37
+And because it will no longer be minus one.
+
+[Leo Irakliotis] 11:42:42
+the loop will end, and I will get the current index value. If I have seen the word before, where in the contents array it is. If I have not seen before, if I scan through the entire collection.
+
+[Leo Irakliotis] 11:42:57
+And this condition eventually will be met and terminate the loop.
+
+[Leo Irakliotis] 11:43:02
+I'll get my minus one back.
+
+[Leo Irakliotis] 11:43:12
+So now…
+
+[Leo Irakliotis] 11:43:14
+I can come in the program here and replace line 20.
+
+[Leo Irakliotis] 11:43:19
+with actual code.
+
+[Leo Irakliotis] 11:43:22
+W is where seen.
+
+[Leo Irakliotis] 11:43:26
+This work.
+
+[Leo Irakliotis] 11:43:28
+In this collection.
+
+[Leo Irakliotis] 11:43:38
+And all I have to do here next is finish.
+
+[Leo Irakliotis] 11:43:45
+the, uh…
+
+[Leo Irakliotis] 11:43:54
+the record update. And for that.
+
+[Leo Irakliotis] 11:44:00
+How do I play this out?
+
+[Leo Irakliotis] 11:44:27
+I will create another function here.
+
+[Leo Irakliotis] 11:44:33
+Record.
+
+[Leo Irakliotis] 11:44:36
+For this word.
+
+[Leo Irakliotis] 11:44:46
+with this.
+
+[Leo Irakliotis] 11:44:48
+Sing before value.
+
+[Leo Irakliotis] 11:45:00
+And…
+
+[Leo Irakliotis] 11:45:02
+If the scene before value.
+
+[Leo Irakliotis] 11:45:09
+is minus one, meaning that this word has not been seen before.
+
+[Leo Irakliotis] 11:45:12
+I want you to create the new record.
+
+[Leo Irakliotis] 11:45:28
+Not update, append.
+
+[Leo Irakliotis] 11:45:30
+So add the word to the contents list.
+
+[Leo Irakliotis] 11:45:35
+And…
+
+[Leo Irakliotis] 11:45:37
+Create a corresponding entry.
+
+[Leo Irakliotis] 11:45:40
+in frequency.
+
+[Leo Irakliotis] 11:45:45
+Juan.
+
+[Leo Irakliotis] 11:45:47
+Else…
+
+[Leo Irakliotis] 11:45:51
+If I have seen this word before.
+
+[Leo Irakliotis] 11:45:53
+I know where I have seen it before.
+
+[Leo Irakliotis] 11:45:59
+In this location. If this location is not one I've seen you before, go to that location.
+
+[Leo Irakliotis] 11:46:13
+and increase the value by one.
+
+[Leo Irakliotis] 11:46:17
+Now, all I have to do is come here.
+
+[Leo Irakliotis] 11:46:23
+and just call.
+
+[Leo Irakliotis] 11:46:25
+Record.
+
+[Leo Irakliotis] 11:46:26
+for this word, for this seen before value that I call W.
+
+[Leo Irakliotis] 11:46:40
+So now my code is a little bit more clean. Look, this was what we started writing yesterday. This was the messy monolithic code that we wrote yesterday, and we still retain a lot of it, but lines 27 and 28.
+
+[Leo Irakliotis] 11:46:58
+8 replace about 10 lines of code from yesterday. And the code now is more readable. Line 27 answers if and where. We have seen this word before. And line 28.
+
+[Leo Irakliotis] 11:47:13
+Updates.
+
+[Leo Irakliotis] 11:47:14
+that information.
+
+[Leo Irakliotis] 11:47:16
+And not only that.
+
+[Leo Irakliotis] 11:47:19
+But I can combine lines 27 and 28 together.
+
+[Leo Irakliotis] 11:47:26
+to make the code more compact, but that comes at the cost of readability, so…
+
+[Leo Irakliotis] 11:47:32
+Looking at my code.
+
+[Leo Irakliotis] 11:47:34
+I see that…
+
+[Leo Irakliotis] 11:47:36
+this variable here, which is this variable here, these are the only two places where I'm using W, where I'm using the results of the WHERESIN function.
+
+[Leo Irakliotis] 11:47:47
+In my code here, the output of this call, the output of calling where seen is used only in one place.
+
+[Leo Irakliotis] 11:47:56
+And if I use it all in one place, why not just make this call directly in here?
+
+[Leo Irakliotis] 11:48:06
+Why not indeed? That's what I'm going to do.
+
+[Leo Irakliotis] 11:48:21
+So I'm going to delete this line and replace W here with what actually it is, a call.
+
+[Leo Irakliotis] 11:48:29
+to wear sin.
+
+[Leo Irakliotis] 11:48:35
+More compact code at the cost of readability, because now you say, okay, what is he doing here? He's using a variable and he's using a call with the same variable and something else to another function. Is this, to me, this is a little bit more, not to me, it's a little bit more compact, but even to me.
+
+[Leo Irakliotis] 11:48:53
+This is a little bit too dense. And that's, I mean, that's the idea of compacting something, you're making more dense. And there may be a value in it, there may not be a value.
+
+[Leo Irakliotis] 11:49:03
+So even if this was code that I was writing for my own work, I would leave it like this.
+
+[Leo Irakliotis] 11:49:10
+An extra line in the program is not going to kill the readability of the code. Instead, compressing those two lines into one might affect.
+
+[Leo Irakliotis] 11:49:19
+the readability a little bit.
+
+[Leo Irakliotis] 11:49:30
+The next step is that I may want to wrap this into an object.
+
+[Leo Irakliotis] 11:49:36
+I may want to do this. What is this? This is the.
+
+[Leo Irakliotis] 11:49:42
+Frequency count of unique words in a book.
+
+[Leo Irakliotis] 11:49:47
+So I want to have an object that represents the book by title and the frequency counts. So that will be the next step taking this further up, but I'm not going to focus on that yet. I am going to focus at eliminating the synchronized arrays.
+
+[Leo Irakliotis] 11:50:08
+Because I told you yesterday that synchronized and Monday the synchronized arrays are not a good idea. So finally I have to put my money where my mouth is.
+
+[Leo Irakliotis] 11:50:18
+And what I will do is I will go back to yesterday's program, to the monolithic program.
+
+[Leo Irakliotis] 11:50:27
+Make a copy of it using…
+
+[Leo Irakliotis] 11:50:32
+a new data structure that is called a dictionary. And in Python, a dictionary is not the dictionary that we know from libraries. A dictionary is a lookup table.
+
+[Leo Irakliotis] 11:50:47
+So I'm going to combine frequency and condense with a new data structure.
+
+[Leo Irakliotis] 11:51:27
+And I'm going to create a dictionary, what do we want to call it? Frequencies.
+
+[Leo Irakliotis] 11:51:33
+I will call it, no, no, frequency, just free. That would be confusing with what I'm using so far.
+
+[Leo Irakliotis] 11:51:48
+Karl.
+
+[Leo Irakliotis] 11:51:53
+It's a dictionary.
+
+[Leo Irakliotis] 11:51:55
+And I could have written something as simple as count.
+
+[Leo Irakliotis] 11:52:03
+Open close curly brackets.
+
+[Leo Irakliotis] 11:52:06
+It's the same thing. File to process is the same. I'm opening the file to process. I'm reading the first… I'm reading the line.
+
+[Leo Irakliotis] 11:52:15
+For every non-empty line, I'm splitting that line in its different words, and for every word in that line.
+
+[Leo Irakliotis] 11:52:25
+Here's where things are going to be different. Let me delete some stuff here.
+
+[Leo Irakliotis] 11:52:45
+If that word exists in Kaun.
+
+[Leo Irakliotis] 11:52:53
+Just like this.
+
+[Leo Irakliotis] 11:52:58
+If it exists, it means that we have seen it before.
+
+[Leo Irakliotis] 11:53:07
+Increase the frequency that you're capturing there.
+
+[Leo Irakliotis] 11:53:20
+Else, create a new entry for this word.
+
+[Leo Irakliotis] 11:53:24
+with a frequency of one.
+
+[Leo Irakliotis] 11:53:36
+Everything that I tried to do the last five minutes by creating different methods to compact things and all that using synchronized arrays, no longer needed. Why? Because I have a data structure that is called a dictionary, and it works in an amazing way.
+
+[Leo Irakliotis] 11:53:51
+amazing, way by…
+
+[Leo Irakliotis] 11:53:59
+This line here, every time I find a new word, it places it in this data structure.
+
+[Leo Irakliotis] 11:54:08
+It says, okay, Ward, I've got it.
+
+[Leo Irakliotis] 11:54:11
+And assigns one. And every time…
+
+[Leo Irakliotis] 11:54:17
+I'm asking this. Basically, I'm saying, search for this word in this data structure. If it finds it, it goes to the corresponding entry and increments it by one.
+
+[Leo Irakliotis] 11:54:32
+And so on and so on.
+
+[Leo Irakliotis] 11:54:55
+I am…
+
+[Leo Irakliotis] 11:54:57
+doing, essentially.
+
+[Leo Irakliotis] 11:55:00
+And let me write this a little bit more less pseudocode here.
+
+[Leo Irakliotis] 11:55:07
+Come on, computer. Oh.
+
+[Leo Irakliotis] 11:55:22
+If this word…
+
+[Leo Irakliotis] 11:55:24
+is in this dictionary. Go to the dictionary entry and update the corresponding value by one, adding one.
+
+[Leo Irakliotis] 11:55:35
+If this word is not in the dictionary, create a new entry in the dictionary with this word as a key. That's why we're calling this a key value pair. In other words, the key, the unique identifier is the word itself and the value associated by that identifier.
+
+[Leo Irakliotis] 11:55:55
+is the frequency.
+
+[Leo Irakliotis] 11:56:00
+And what we are going to do here is we're going to.
+
+[Leo Irakliotis] 11:56:05
+look for the data structure found. So…
+
+[Leo Irakliotis] 11:56:09
+Let's…
+
+[Leo Irakliotis] 11:56:10
+demonstrate the code really quickly.
+
+[Leo Irakliotis] 11:56:35
+So, when you look at the count.
+
+[Leo Irakliotis] 11:56:38
+This is the count of all the words in the same text, only now, you'll notice if we go to the beginning.
+
+[Leo Irakliotis] 11:56:45
+It has pairs.
+
+[Leo Irakliotis] 11:56:47
+It has pairs separated, whose elements are separated by… the pairs are separated by commas, and the pair elements themselves are separated by the column.
+
+[Leo Irakliotis] 11:56:58
+So this is a pair that associates the word eat. That's the value, the key of the pair with the number two. That's the value of the pair. So it tells me that this word appears twice. This word, the word that is.
+
+[Leo Irakliotis] 11:57:14
+identified by… was 13 times, V 29 times, and if I want to interrogate.
+
+[Leo Irakliotis] 11:57:23
+And say, hey, how many times?
+
+[Leo Irakliotis] 11:57:26
+The word "king" appears in this.
+
+[Leo Irakliotis] 11:57:29
+Give me the count of king.
+
+[Leo Irakliotis] 11:57:41
+Give me the count of times.
+
+[Leo Irakliotis] 11:58:19
+Why is not times? It was the best of times, it was the worst of times. Why, when I say, give me the count of times, it says an error, I cannot find times. And yet, yet.
+
+[Leo Irakliotis] 11:58:30
+When you look here, you see times that appears twice.
+
+[Leo Irakliotis] 11:58:36
+Oh, there is a comma there.
+
+[Leo Irakliotis] 11:58:39
+Why? Because I'm splitting each line.
+
+[Leo Irakliotis] 11:58:44
+by spaces, and I have not removed.
+
+[Leo Irakliotis] 11:58:51
+Punctuation.
+
+[Leo Irakliotis] 11:58:54
+So if I say this…
+
+[Leo Irakliotis] 11:58:57
+All right, Dave. What about age?
+
+[Leo Irakliotis] 11:59:01
+Amen.
+
+[Leo Irakliotis] 11:59:03
+Okay, twice. Epoch.
+
+[Leo Irakliotis] 11:59:10
+twice, and so on. So I can search through a little bit more effectively than before.
+
+[Leo Irakliotis] 11:59:18
+Powerful, powerful, powerful.
+
+[Leo Irakliotis] 11:59:20
+data structure. Key value pairs, we…
+
+[Leo Irakliotis] 11:59:25
+search by a key, and we get the value.
+
+[Leo Irakliotis] 11:59:29
+in everyday life, key value pairs, social security number, person, student ID, student, employee ID, employee, VIN, vehicle, ISBN, book.
+
+[Leo Irakliotis] 11:59:41
+Everything in these pairs, the first item is the key. The key is something, the primary key to be specific, is something that identifies you uniquely. Driver's license, VIN, ISBN, SKU.
+
+[Leo Irakliotis] 11:59:58
+passenger name record in airline reservations, what have you. Those are important, and the reason they're important is because they have driven for the last 60 years a technology.
+
+[Leo Irakliotis] 12:00:10
+that has transformed how we manage business, and that is database technology.
+
+[Leo Irakliotis] 12:00:15
+Database technologies is one of those computational pillars that has not changed since the early 70s.
+
+[Leo Irakliotis] 12:00:23
+Everything else we do in computer science and computation has changed in the last 60 years. Programming languages, operating systems, data networking, user interfaces, cybersecurity. There was no such thing as cybersecurity 60 years ago. The only thing that has not changed in the last 60 years.
+
+[Leo Irakliotis] 12:00:40
+is the way we do databases and the way we do databases.
+
+[Leo Irakliotis] 12:00:45
+depends on our understanding of key value pairs, unique identifiers for information.
+
+[Leo Irakliotis] 12:00:53
+database developer from the late 70s traveling through time.
+
+[Leo Irakliotis] 12:00:58
+2026 will have no problem finding a job in a week.
+
+[Leo Irakliotis] 12:01:02
+Zero retooling. If you knew how to do databases in 1976, you can have a job in 2026.
+
+[Leo Irakliotis] 12:01:11
+If you were an operating systems developer in 1976.
+
+[Leo Irakliotis] 12:01:17
+You'll be lucky to find a job at a Starbucks today, unless you went and did two or three years of retooling to catch up with what you missed the last 50 years.
+
+[Leo Irakliotis] 12:01:27
+So database technologies fundamental to business transactions, to data management, to record keeping.
+
+[Leo Irakliotis] 12:01:36
+because of key value pairs.
+
+[Leo Irakliotis] 12:01:42
+And your last assignment for the course.
+
+[Leo Irakliotis] 12:01:49
+to rebuild this, what we did here today.
+
+[Leo Irakliotis] 12:01:53
+And I kind of showed you how to do this with dictionary, with a dictionary.
+
+[Leo Irakliotis] 12:02:01
+There is one more element.
+
+[Leo Irakliotis] 12:02:04
+The book we're scanning.
+
+[Leo Irakliotis] 12:02:08
+The local file. The full book.
+
+[Leo Irakliotis] 12:02:14
+is on Project Gutenberg.
+
+[Leo Irakliotis] 12:02:23
+How to access it? How to access in plain Python a text file?
+
+[Leo Irakliotis] 12:02:30
+On the way.
+
+[Leo Irakliotis] 12:02:36
+When we are dealing with.
+
+[Leo Irakliotis] 12:02:40
+a file locally here, the answer is easy. We just look at line 22. We have the open statement for a local file, but if the book is somewhere else, somewhere on the cloud.
+
+[Leo Irakliotis] 12:02:54
+How do you access data on the cloud? Because a web server is…
+
+[Leo Irakliotis] 12:02:58
+Part of the cloud.
+
+[Leo Irakliotis] 12:03:01
+your Google Drive is part of the cloud, but I see it on my computer, yeah, because your operating system has a way to attach the cloud storage as a native.
+
+[Leo Irakliotis] 12:03:10
+Volume storage where you on your computer but.
+
+[Leo Irakliotis] 12:03:15
+Your Google Drive is not physically connected to your computer, it is virtually.
+
+[Leo Irakliotis] 12:03:20
+Connect to your computer.
+
+[Leo Irakliotis] 12:03:22
+So if my data are on the cloud, whether it's Google Drive, or OneDrive, or a web server.
+
+[Leo Irakliotis] 12:03:29
+How do I bring the data locally to my local memory, um, to process? And the first thing we need for that is the URL.
+
+[Leo Irakliotis] 12:03:40
+to obtain the URL.
+
+[Leo Irakliotis] 12:03:43
+We need, let me switch to my server here.
+
+[Leo Irakliotis] 12:03:59
+to find the URL. In this case, we're looking at Project Gutenberg.
+
+[Leo Irakliotis] 12:04:05
+and we are searching for the Tale of Two Cities, and we found the book we're looking for on Project Gutenberg, there it is, and we click on it, and it has all these formats.
+
+[Leo Irakliotis] 12:04:18
+And we want to find the most machine-readable format, and that's always plain text. So there is…
+
+[Leo Irakliotis] 12:04:28
+There is the URL. We copy that.
+
+[Leo Irakliotis] 12:04:32
+And we bring the URL.
+
+[Leo Irakliotis] 12:04:35
+to the program. How? Well, here is how different languages do things differently.
+
+[Leo Irakliotis] 12:04:41
+Let me switch to interactive Python.
+
+[Leo Irakliotis] 12:04:53
+URL. Here is… I'm capturing the URL as a string.
+
+[Leo Irakliotis] 12:04:59
+And…
+
+[Leo Irakliotis] 12:05:02
+I'm going to import something that I cannot live without when we are handling.
+
+[Leo Irakliotis] 12:05:11
+data that are not resident on our computer, we have to use a language extension. It's part of Python, but it's not the default part of Python that we load on our computer, because, you know, Python is done.
+
+[Leo Irakliotis] 12:05:23
+Programming is done mostly locally, and if you want to do something remotely, you have to import.
+
+[Leo Irakliotis] 12:05:32
+The language.
+
+[Leo Irakliotis] 12:05:35
+extension. You have to import the function request from the URL library. This is a part of Python. This is not a third-party application.
+
+[Leo Irakliotis] 12:05:45
+This is part of the language that is not loaded on your computer by default to conserve resources, because 90% of the time, you don't need it. But when you need it, and, you know, import it and make the commitment.
+
+[Leo Irakliotis] 12:05:59
+So with URL library request.
+
+[Leo Irakliotis] 12:06:11
+Open the URL.
+
+[Leo Irakliotis] 12:06:15
+That I just gave you, and I called it as a variable URL, but might as well put the whole string here one more time.
+
+[Leo Irakliotis] 12:06:24
+And give it a…
+
+[Leo Irakliotis] 12:06:26
+Nickname.
+
+[Leo Irakliotis] 12:06:26
+For easier handling, book.
+
+[Leo Irakliotis] 12:06:31
+Okay.
+
+[Leo Irakliotis] 12:06:34
+And.
+
+[Leo Irakliotis] 12:06:35
+Pull the text from that book.
+
+[Leo Irakliotis] 12:06:42
+Response.
+
+[Leo Irakliotis] 12:06:48
+book.
+
+[Leo Irakliotis] 12:06:50
+What do you do with the book? Read the book.
+
+[Leo Irakliotis] 12:06:57
+Done.
+
+[Leo Irakliotis] 12:06:58
+So this variable text here, when I print it.
+
+[Leo Irakliotis] 12:07:02
+Has everything.
+
+[Leo Irakliotis] 12:07:06
+The whole book.
+
+[Leo Irakliotis] 12:07:10
+And I have loaded this in memory.
+
+[Leo Irakliotis] 12:07:15
+It has a lot of metadata here, a lot of escape characters that have to do with the format of the text. I can try.
+
+[Leo Irakliotis] 12:07:26
+Uh, something…
+
+[Leo Irakliotis] 12:07:28
+a little bit…
+
+[Leo Irakliotis] 12:07:30
+And I'll see how I'm going to state the assignment for this.
+
+[Leo Irakliotis] 12:07:37
+Book, read the code.
+
+[Leo Irakliotis] 12:07:40
+Let's see if it's UPF.
+
+[Leo Irakliotis] 12:07:46
+16, 8.
+
+[Leo Irakliotis] 12:07:54
+Okay, I think it cleared up a few things. We still have a lot of those, um…
+
+[Leo Irakliotis] 12:08:01
+Escape characters, that's a return line, that's a new line. We can clean this up. And we're going, that's part of the assignment, step by step, how to clean this up. But also, you see, by reading that text from the server, I get a lot of the legalese, the limited warranty, blah, blah, blah, blah.
+
+[Leo Irakliotis] 12:08:17
+Eventually, inescapably, when you're counting the frequency of words in the
+
+[Leo Irakliotis] 12:08:24
+Tale of Two Cities, you're going to see the word project appearing a few times, Gutenberg appearing a few times, even though
+
+[Leo Irakliotis] 12:08:33
+Charles Dickens never wrote about Project Gutenberg
+
+[Leo Irakliotis] 12:08:37
+But that's an artifact of the metadata that come with the text. And there is a way to clean this up, but I don't want you to worry about it for this assignment.
+
+[Leo Irakliotis] 12:08:49
+The problem here, and that's something you're going to solve in your assignment, is that I just created this single variable called book, sorry, text that has the whole book in it. If I say, how long
+
+[Leo Irakliotis] 12:09:05
+Remember, I did this. When I read the book.
+
+[Leo Irakliotis] 12:09:10
+I assigned the whole book in one variable, text
+
+[Leo Irakliotis] 12:09:16
+And if I ask, how long is this text
+
+[Leo Irakliotis] 12:09:21
+It's 793,000 characters long. That's how many letters and spaces are in the Tale of Two Cities, including the metadata that Project Gutenberg puts there, the boilerplate.
+
+[Leo Irakliotis] 12:09:38
+That's a very long string.
+
+[Leo Irakliotis] 12:09:40
+In Python.
+
+[Leo Irakliotis] 12:09:42
+as a language, is very generous with the length of the string. How long can a string be in Python?
+
+[Leo Irakliotis] 12:09:49
+as long as your memory allows. But as long as your memory allows is different between computers. Most of us have computers now that have a few gigabytes of memory, so a string with nearly 1 million characters.
+
+[Leo Irakliotis] 12:10:03
+That is about…
+
+[Leo Irakliotis] 12:10:05
+By definition, about 16 to 20 million bytes long. That's nothing.
+
+[Leo Irakliotis] 12:10:12
+That's pocket change for our memory.
+
+[Leo Irakliotis] 12:10:16
+But I'm coming from the 20th century.
+
+[Leo Irakliotis] 12:10:20
+The time of frugal computing.
+
+[Leo Irakliotis] 12:10:25
+And I cannot make assumptions that you have 20, 25 megabytes of free memory for this book. So the challenge for you is not to read the entire book as a single string.
+
+[Leo Irakliotis] 12:10:40
+But to read that book from the server…
+
+[Leo Irakliotis] 12:10:44
+Line by line
+
+[Leo Irakliotis] 12:10:47
+And do the same processing we did with reading the book locally from a local file line by line. The difference here is that your file is a few thousand miles away
+
+[Leo Irakliotis] 12:10:59
+And you're connecting to that file through an inherently noisy channel.
+
+[Leo Irakliotis] 12:11:09
+And all it takes is the city of Chicago digging outside your place to cut that Comcast or Xfinity cable connecting.
+
+[Leo Irakliotis] 12:11:19
+your apartment building. It happens, not often, but it happens. But it's not going to happen to you, but it's a possibility.
+
+[Leo Irakliotis] 12:11:27
+But the idea is you're going to read that file, remote file, line by line and do the same processing using a dictionary instead of synchronized arrays.
+
+[Leo Irakliotis] 12:11:40
+And that wraps the course for this semester.
+
+[Leo Irakliotis] 12:11:44
+We started the course by saying, hey, there are four things that you need to know to be programmers. Strings, if statements, arrays, and loops
+
+[Leo Irakliotis] 12:11:53
+This assignment covers everything. The things we've been working the last few weeks cover everything.
+
+[Leo Irakliotis] 12:12:00
+intentionally, I did not write code, too much code for
+
+[Leo Irakliotis] 12:12:06
+Problem.
+
+[Leo Irakliotis] 12:12:07
+other than the monolithic code and a few improvements I did only as a transition.
+
+[Leo Irakliotis] 12:12:14
+to introduce dictionaries.
+
+[Leo Irakliotis] 12:12:17
+So that the last assignment can be a little bit more demanding because it will ask you to read a few things about dictionaries, it will ask you to read a few things about file handling, remote file handling, and then put the code together.
+
+[Leo Irakliotis] 12:12:32
+together. Because it's the last assignment, you can turn it in up until next Wednesday.
+
+[Leo Irakliotis] 12:12:40
+I am available throughout.
+
+[Leo Irakliotis] 12:12:43
+for support any way you need.
+
+[Leo Irakliotis] 12:12:46
+Certainly next week, we're not meeting for class.
+
+[Leo Irakliotis] 12:12:49
+But next week, I will be certainly available during class hours.
+
+[Leo Irakliotis] 12:12:54
+to provide again support for your assignment.
+
+[Leo Irakliotis] 12:12:58
+And in this course, remember, you're evaluating yourself based on your reflections on existing assignments, your attendance, your participation, everything that was part of the syllabus when we started the course.
+
+[Leo Irakliotis] 12:13:14
+I know that online is not the same as in person, but I want to say thank you for making the effort to be here every week.
+
+[Leo Irakliotis] 12:13:25
+Thank you for your participation.
+
+[Leo Irakliotis] 12:13:27
+There's still a few days left in the summer to enjoy before we come back to class. And what about.
+
+[Leo Irakliotis] 12:13:34
+Three and a half weeks from now.
+
+[Leo Irakliotis] 12:13:36
+And I hope you have something, uh, wonderful planned. Sarah and I are heading to Seattle mid… mid… last, uh, the week before classes begin in August.
+
+[Leo Irakliotis] 12:13:47
+to see some friends.
+
+[Leo Irakliotis] 12:13:50
+And looking forward to that trip.
+
+[Leo Irakliotis] 12:13:54
+You see me around campus.
+
+[Leo Irakliotis] 12:13:57
+grab me a sign, I'll be happy to talk about anything
+
+[Leo Irakliotis] 12:14:00
+I have an office on campus, but everybody who knows me knows that my real office is at the coffee shop
+
+[Leo Irakliotis] 12:14:08
+I'm there at opening time, I'm there on closing time, and sometimes I'm there in between.
+
+[Leo Irakliotis] 12:14:12
+And by the coffee shop, I mean the only coffee shop that matters in Rogers Park, which of course is Metropolis.
+
+[Leo Irakliotis] 12:14:19
+Any questions, any closing remarks, any requests?
+
+[Leo Irakliotis] 12:14:29
+All right, everyone, it's been a pleasure. Hope to see you around campus. Stay safe
+
+[Leo Irakliotis] 12:14:34
+Do some good and stay in touch
+
+[kandacegarcia] 12:14:37
+Thank you!
+
+[Katie McGowan] 12:14:38
+Hello, have a good one.
+
+[cheska ocampo] 12:14:38
+Thank you.
+
+[Ben Dorsey] 12:14:39
+Thank you.
+
+[Leo Irakliotis] 12:14:40
+Right.
+
+[] 12:14:40
+Thank you
+
