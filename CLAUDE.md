@@ -2,6 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## What happened at the end of the Summer 2026 COMP 170 term
+
+Start with `comp170su26/improvements.md` — an end-of-term reflection covering what to change in the course next time and what worked (or didn't) in these Claude sessions. It links to the other post-term documents: `comp170su26/week99/15-week-outline.md` (the same course content repaced from 11 to 15 weeks) and, in the student-facing repo, `../comp-170-su26/week99/course-review.md` and `../comp-170-su26/week99/last_assignment.md`.
+
+## What happened at the end of the Summer 2026 COMP 271 term
+
+Start with `comp271su26/improvements.md` — the same kind of end-of-term reflection, for COMP 271. It links to `comp271su26/week99/15-week-outline.md` (the same 11-week course repaced to 15 weeks) and, in the student-facing repo, `../comp-271-su26/week99/course-review.md`, `../comp-271-su26/week99/last_assignment.md`, and its companion stub `../comp-271-su26/week99/simple_hash_assignment.py`.
+
 ## What this repository is
 
 A curriculum design project at Loyola University Chicago. The primary work is redesigning the introductory CS sequence by proposing two integrated courses — **COMP 158** (fall) and **COMP 159** (spring) — to replace three separate legacy courses: COMP 141 (CLI/tools), COMP 163 (discrete math), and COMP 170 (CS1/Python). The downstream courses the sequence must prepare students for are COMP 271 (CS2, Python) and COMP 272 (non-linear data structures, Java).
@@ -22,8 +30,8 @@ Treat other folders in this repo (`proposal_158_159/`, `recording_transcripts/`,
 | Folder / file | Purpose |
 |---|---|
 | `proposal_158_159/` | Curriculum design documents: proposal, syllabi, topic plans, assessment framework, and QA notes. Contains its own `claude.md` with detailed context — read it before working on proposal content. |
-| `comp170su26/` | **Private** — development and planning materials for the Summer 2026 COMP 170 section: weekly review drafts, class session notes, code files, and Lubanovic textbook excerpts (`blubanovic<NN>.pdf`). Not student-facing. |
-| `comp271su26/` | **Private** — same role for the Summer 2026 COMP 271 section. Not student-facing. |
+| `comp170su26/` | **Private** — development and planning materials for the Summer 2026 COMP 170 section: weekly review drafts, class session notes, code files, and Lubanovic textbook excerpts (`blubanovic<NN>.pdf`). Not student-facing. **The term has ended** (last live week: 11); `week99/` holds post-course work — `15-week-outline.md`, a repaced 15-week outline of the same 11-week course content, with a linux/system, programming, and math thread in every week. |
+| `comp271su26/` | **Private** — same role for the Summer 2026 COMP 271 section. Not student-facing. **The term has ended** (last live week: 11); `week99/` holds post-course work — `15-week-outline.md`, a repaced 15-week outline of the same 11-week course content, with a linux/system, programming, and math thread in every week. See `comp271su26/improvements.md` for the end-of-term reflection. |
 | `../../comp-170-su26/` | **Student-facing** sibling repo for COMP 170. Published material goes here. |
 | `../../comp-271-su26/` | **Student-facing** sibling repo for COMP 271. Published material goes here. |
 | `recording_transcripts/` | Raw closed-caption `.txt` transcripts and the processed per-class `.md` summaries split by course. Contains a `summarize_transcript_prompt.md` prompt that governs how transcripts are processed. |
@@ -49,6 +57,8 @@ Weekly review documents (`week<NN>-review.md`) live in `comp170su26/` and `comp2
 Before writing, read the class session notes and any `.py` files for that week from the corresponding `../comp-<NNN>-su26/week<NN>/` sibling repo directory.
 
 ### Planning the next week's content
+
+**COMP 170 has finished its term (last live week: 11) — this workflow no longer applies to COMP 170.** Retain it here for COMP 271, and for whichever course picks it back up next term.
 
 To suggest a plan for week N+1, read the following in order:
 
