@@ -113,8 +113,59 @@ No new URLs invented — both pulled from `../../comp-170-su26/CLAUDE.md`'s Read
 
 ---
 
+## 5. Recipe Pair Bank for Later in the Term
+
+The eggs/omelette pair above is one instance of a general pattern: hold everything constant and change exactly one thing. Different pairs isolate different *kinds* of change, and each kind maps to a different category of code difference. Each pair below is placed at the week in `../comp170su26/week99/15-week-outline.md` where the matching code concept is actually taught — same format as Part 1: present both recipes, ask what's identical / what's different / predict the result, then name the code concept explicitly. (Placement assumes Fall 2026 follows that 15-week pacing — confirm before locking these in; see Open Questions.)
+
+### Week 2 — Data, Types: Soft-Boiled Egg vs. Hard-Boiled Egg
+*Same everything; one number changes.*
+
+Same egg, same pot, same water, same steps: bring water to a boil, lower the egg in gently, boil, then transfer to ice water.
+- **Recipe A (soft-boiled):** boil for **6 minutes**.
+- **Recipe B (hard-boiled):** boil for **12 minutes**.
+
+**Maps to:** a changed numeric literal or argument. Same procedure, one number swapped in, a completely different result (runny yolk vs. fully set). This is the cleanest pair for isolating "a number is the entire difference" — good contrast with the quotes pair, which isolates a *syntax structure* rather than a value.
+
+### Week 3 — Separation of Concerns: Béchamel vs. Velouté
+*Same technique; one input source changes.*
+
+Same roux (2 tbsp butter melted with 2 tbsp flour, cooked 1–2 minutes), same method: whisk in the liquid gradually, simmer while whisking until thickened.
+- **Recipe A (béchamel):** the liquid is **2 cups warm milk**.
+- **Recipe B (velouté):** the liquid is **2 cups warm stock**.
+
+**Maps to:** the same processing logic run against different data — the same shape as `interest.py` run with a different rate, or a method run against a different input file. The "algorithm" (roux + thicken) is identical; only the data fed into it changes, and that's enough to land in a different sauce family entirely.
+
+### Week 11 — Default Parameter Values: Pancakes vs. Crêpes
+*Same base; one ingredient present or absent.*
+
+Same batter base (1 cup flour, 2 eggs, 3/4 cup milk, pinch of salt).
+- **Recipe A (pancakes):** whisk in **1 tsp baking powder**. Cook in dollops until bubbles form, flip.
+- **Recipe B (crêpes):** **omit the baking powder**; thin the batter with an extra 1/4 cup milk. Cook in a thin layer, tilting the pan to spread it, flip once.
+
+**Maps to:** a parameter left at its default vs. supplied — one optional ingredient, present or absent, changes the entire downstream shape of the result. Direct lead-in to `def make_batter(leavening=True):`-style default-parameter thinking, which is exactly what this week introduces.
+
+### Week 12 — `while` / Infinite Loops: Whipped Cream vs. Butter
+*Same ingredient, same instruction; only the stopping point changes.*
+
+One ingredient (1 cup heavy cream), one instruction (whip it). Nothing else differs.
+- **Recipe A (whipped cream):** whip until **soft peaks form** (cream holds a shape but the tip droops). Stop there.
+- **Recipe B (butter):** keep whipping **past** soft peaks, past stiff peaks, until the mixture suddenly turns grainy and separates into solid fat and buttermilk. Stop only then.
+
+**Maps to:** a `while` loop's exit condition. The loop body doesn't change at all ("keep whipping") — only the condition that decides when to stop. This is the cleanest recipe form of "loop until X" vs. "loop one stage past X," and a natural lead-in to infinite-loop bugs, where the stopping condition is wrong or missing.
+
+### Week 13 — Interval / Range Validation: Caramel vs. Burnt Sugar
+*Same everything; cooked a little too far past the target.*
+
+Same sugar, same pan, same heat: melt sugar over medium heat, swirling (not stirring).
+- **Recipe A (caramel):** remove from heat at a deep amber color, roughly 340–350°F.
+- **Recipe B (burnt sugar):** keep cooking past that point — even 20–30 seconds longer, past ~370°F — and it turns dark, bitter, and unusable.
+
+**Maps to:** a boundary crossed by a small margin — the same shape as an off-by-one bug, or a range check using `<=` where `<` was meant. Unlike the other pairs, this one isn't two valid dishes — it's correct vs. broken, which is closer to what real debugging feels like. Pairs naturally with this week's interval-membership math thread (checking a value against $[1901, 2025]$ is the same shape as checking a temperature against a safe range).
+
+---
+
 ## Open Questions for the Instructor
 
 - **Placement:** fold into Day 1 (recommended above) or run as a standalone Day 0? Affects whether `week01_outline.md` needs to be rewritten or just extended.
-- **A second code-reading pair before the term progresses:** the eggs/omelette + quotes pair is static (both are "correct," just different). Worth pairing it later — maybe week 4 or 5, once `if` and `for` exist — with a pair where the changed instruction is a *loop or condition*, so students see the same lesson apply to control flow, not just literals. Not built here; flagging it as a follow-on lesson to design once this one is tested in class.
+- **Confirm the pacing assumption:** Part 5's placements assume Fall 2026 follows `week99/15-week-outline.md` week-for-week. If Fall 2026's actual pacing diverges, the five pairs need to be re-mapped to wherever their matching concept (numeric literals, same-logic-different-data, default parameters, `while` loops, range validation) actually lands.
 - **Assessment tie-in:** if "predict before running" becomes a running habit, consider whether it belongs as a standing instruction on assignments from week 1 onward (a one-line "before you run this, write what you expect to see" prompt), rather than a one-time warm-up exercise.
