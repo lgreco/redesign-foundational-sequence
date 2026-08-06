@@ -1,0 +1,120 @@
+# COMP 170 — Fall 2026 — Lesson Plan: Reading Code Before Writing It
+
+## Why This, Why Now
+
+Every prior offering (see `../comp170su26/week01_outline.md`) opens with writing: terminal, Vim, `print("Hello, World!")`, run it. That order made sense when producing correct syntax was the scarce skill. It no longer is — AI tools generate syntactically correct code instantly. What's scarce now is the ability to look at code (yours, a classmate's, or a model's) and know what it actually does before you run it, trust it, or hand it in. Fall 2026 opens with that skill instead, deliberately, before students write a single line of Python.
+
+The core idea: a program is a literal set of instructions performed on data, in order, with no common sense filled in. A single changed instruction — not a changed goal, not a changed ingredient — can produce a completely different result. Students need to feel that before they start writing, so that when they read code (their own, a classmate's, or an AI's) later in the term, close reading is already a habit, not a new skill bolted on.
+
+## Placement (open decision)
+
+This doesn't require any Python syntax, so it can run before `week01_outline.md` Day 1's terminal demo — either as a short Day 0 warm-up, or as the first 15–20 minutes of Day 1 before "The Terminal Is a Tool, Not Magic." Recommend the latter: keep it inside Day 1 so the recipe-to-code bridge (Part 2 below) lands in the same session as the first real `print()` demo, rather than a full day earlier. Flag for a decision once the rest of Week 1 is repaced around this addition.
+
+---
+
+## 1. Warm-Up: Two Recipes, One Instruction (No Code Yet)
+
+Put both recipes on the board or screen side by side. Do not mention programming yet.
+
+**Ingredients (identical for both):** 3 eggs, 1 tsp butter, pinch of salt.
+
+**Recipe A — Scrambled Eggs**
+1. Beat eggs with salt.
+2. Melt butter in a pan over medium-low heat.
+3. Pour in eggs.
+4. **Stir continuously, scraping the bottom, until soft curds form.**
+5. Remove from heat while still glossy.
+
+**Recipe B — French Omelette**
+1. Beat eggs with salt.
+2. Melt butter in a pan over medium-low heat.
+3. Pour in eggs.
+4. **Let sit undisturbed for 10 seconds, then push the cooked edges toward the center, tilting the pan so raw egg flows to the edge. Do not stir continuously.**
+5. When just set, fold in thirds and slide onto a plate.
+
+**Ask students, in order:**
+1. What's identical between these two recipes? (List it out loud: ingredients, pan, heat, number of steps.)
+2. What's the one thing that's different?
+3. Why does that one difference produce two completely different dishes — different texture, different presentation, different name on a menu?
+
+**Land this point explicitly:** a recipe followed literally, by someone who fills in no gaps with judgment or experience, will always produce the same dish from the same recipe. A computer is exactly that literal a cook. It has no judgment to fill gaps with — it runs the instructions exactly as written, in order.
+
+---
+
+## 2. Bridging: From Recipes to Programs
+
+Build this mapping with the class, don't just present it:
+
+| Recipe | Program |
+|---|---|
+| Ingredients | Data / values |
+| Numbered steps | Instructions / statements |
+| The order the steps are performed in | Execution order |
+| The dish that comes out | The output / behavior |
+| A cook who follows the recipe literally | The computer / interpreter |
+
+Name the concept explicitly: **a program is a sequence of instructions, executed in order, on some data, producing an output.** Reading code well means running that sequence in your head — like reading a recipe and picturing the dish — before you ever run it on a machine.
+
+---
+
+## 3. First Code-Reading Pair
+
+Now switch to actual Python — the same "one instruction changes everything" structure, applied to code. No syntax lecture yet; treat this the same way the recipes were treated: read it, predict, then check.
+
+**Version A**
+```python
+name = "Ada"
+print("Hello,", name)
+```
+
+**Version B**
+```python
+name = "Ada"
+print("Hello, name")
+```
+
+**Ask before running either one:**
+1. What's identical between these two programs?
+2. What's the one thing that's different?
+3. Predict: what does each one print?
+
+Run both. Confirm:
+- Version A prints `Hello, Ada`
+- Version B prints `Hello, name`
+
+**Discussion — let students arrive at this, don't just tell them:** In the recipe, the one changed instruction was *stir continuously* vs. *let sit undisturbed*. Here, the one changed instruction is whether `name` sits **inside** the quotation marks or **outside** them, separated by a comma. Ask: based only on what just happened, what do quotation marks seem to mean? What does it seem to mean when something is *not* in quotes? Students should be able to propose, in their own words, something close to "quotes mean the text is used exactly as typed; no quotes means Python looks up a value stored under that name" — before that idea is ever formally defined as a string literal vs. a variable reference.
+
+**Why this pair, specifically:** it isn't a contrived gotcha — forgetting to take a variable name out of quotes (or forgetting to put literal text into quotes) is one of the most common mistakes beginners make in the first two weeks of any Python course. Using it here means the first bug students learn to *read* is one they will personally *write* within days, and they'll recognize it when it happens instead of being surprised by it.
+
+---
+
+## 4. Concepts to Name This Session
+
+| Concept | One-line definition |
+|---|---|
+| Instruction | A single step a program tells the computer to perform |
+| Sequence | Instructions run in the order they're written, top to bottom |
+| Literal (string) | Text used exactly as written, marked by quotation marks |
+| Name / variable reference | A word that stands for a stored value, not the value itself |
+| Reading code | Predicting what a program does before running it |
+
+Do not formally define "variable" or "string" yet if `week01_outline.md`'s existing Day 4 material still covers that — this session's job is the *habit* of close reading, not the vocabulary. Let the vocabulary catch up when Day 4's `name = "Leo"` example arrives.
+
+---
+
+## Reading
+
+| Topic | Source |
+|---|---|
+| What Python is, running a first program | [Introducing Python, 3rd Ed. — Ch. 1: Introduction](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/) |
+| Strings as literal text | [An Informal Introduction: Text — docs.python.org](https://docs.python.org/3/tutorial/introduction.html#text) |
+
+No new URLs invented — both pulled from `../../comp-170-su26/CLAUDE.md`'s Reading Materials table.
+
+---
+
+## Open Questions for the Instructor
+
+- **Placement:** fold into Day 1 (recommended above) or run as a standalone Day 0? Affects whether `week01_outline.md` needs to be rewritten or just extended.
+- **A second code-reading pair before the term progresses:** the eggs/omelette + quotes pair is static (both are "correct," just different). Worth pairing it later — maybe week 4 or 5, once `if` and `for` exist — with a pair where the changed instruction is a *loop or condition*, so students see the same lesson apply to control flow, not just literals. Not built here; flagging it as a follow-on lesson to design once this one is tested in class.
+- **Assessment tie-in:** if "predict before running" becomes a running habit, consider whether it belongs as a standing instruction on assignments from week 1 onward (a one-line "before you run this, write what you expect to see" prompt), rather than a one-time warm-up exercise.
