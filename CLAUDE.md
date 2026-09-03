@@ -36,7 +36,6 @@ Treat other folders in this repo (`proposal_158_159/`, `recording_transcripts/`,
 | `../../comp-271-su26/` | **Student-facing** sibling repo for COMP 271. Published material goes here. |
 | `recording_transcripts/` | Raw closed-caption `.txt` transcripts and the processed per-class `.md` summaries split by course. Contains a `summarize_transcript_prompt.md` prompt that governs how transcripts are processed. |
 | `sources/` | Original syllabi PDFs for COMP 141, 163, 170, 271, and 272 (Spring 2026). |
-| `.github/` | CI workflow and publish script (see below). |
 
 ## Recurring tasks
 
@@ -79,10 +78,6 @@ Then write `week<N+1>-plan.md` in the private folder (`comp170su26/` or `comp271
 Do not invent URLs. If a needed resource is not yet in those tables, note it as a placeholder and flag it for the instructor to add.
 
 Do not write to the student-facing repo — plans are private working documents.
-
-### Publishing review documents
-
-Pushing a `comp*su26/week*-review.md` file triggers the GitHub Actions workflow at `.github/workflows/publish-review.yml`. It runs `.github/scripts/publish_review.py`, which clones the target student-facing repo (`comp-<NNN>-su26`), copies the review file and any locally-linked assets into a `week<NN>/` subdirectory, and pushes a commit. The workflow requires a `PUBLISH_TOKEN` secret with write access to the target repos.
 
 ## Math formatting
 
