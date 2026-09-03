@@ -97,6 +97,14 @@ Use LaTeX for all mathematical notation in `comp170su26/` and `comp271su26/` mat
 - **Sequence order:** types → logic → functions → sequences → iteration → OOP → recursion → algorithm analysis.
 - **Python → Java transition:** COMP 158/159/271 use Python; COMP 272 uses Java. Build language-agnostic intuition throughout.
 
+## Pedagogical Decisions Already Made
+
+- **AI use is framed as human-centric, not incidental.** Every AI-mediated element of the sequence (e.g., agent-conducted oral exams) must be defensible as *restoring* a human pedagogical practice at scale, not replacing it. The standing example: agent-conducted orals are framed as recovering *viva voce* assessment in a large-enrollment CS1 where the realistic alternative is an autograder scoring unsubmitted-for-defense code, not a professor sitting with each student. Faculty retain evaluative judgment; students remain obliged to articulate reasoning aloud.
+- **When evaluating any AI-integration choice in this curriculum, ask first what human practice it recovers or protects**, and name that explicitly — this is the throughline for CFD Human-Centered AI grant framing (see `sources/` or ask the user for the CFP text) and should inform how COMP 158/159 syllabi, assessment design, and any AI-policy language are written.
+- **Where AI should be disallowed is a deliberate design decision, not a gap.** Don't default to permitting AI use in an assignment or activity; treat prohibition as an equally legitimate, explicitly reasoned pedagogical choice alongside adoption.
+
+**Future consideration:** retroactively frame decisions already made in COMP 170/271 (e.g., agent-conducted orals, AI-assisted grading) using this same human-centric/recovery lens, so the completed terms can serve as documented precedent/evidence for a CFD grant proposal (see `comp170su26/improvements.md` and `comp271su26/improvements.md`) rather than being left as undocumented practice.
+
 ## Key source documents
 
 Before proposing changes to proposal content, read the relevant files in `proposal_158_159/`:
