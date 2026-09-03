@@ -14,6 +14,11 @@ These are settled design choices — do not relitigate them unless asked:
 - **Math in service of programming**: mathematical concepts (logic, sets, combinatorics, recurrences) are introduced at the moment they clarify what a program is doing — not on a separate schedule.
 - **Sequence driven by programming concepts**: the weekly order follows programming development (types → logic → functions → sequences → iteration → OOP → recursion → algorithm analysis), with math and CLI woven in.
 - **Python → Java transition**: COMP 158/159 and the immediate downstream course (COMP 271) use Python. COMP 272 uses Java. The integrated sequence should build language-agnostic intuition (separating concepts like recursion and iteration from syntax) so the Python-to-Java shift in COMP 272 is not a barrier.
+- **AI use is framed as human-centric, not incidental.** Every AI-mediated element of the sequence (e.g., agent-conducted oral exams) must be defensible as *restoring* a human pedagogical practice at scale, not replacing it. The standing example: agent-conducted orals are framed as recovering *viva voce* assessment in a large-enrollment CS1 where the realistic alternative is an autograder scoring unsubmitted-for-defense code, not a professor sitting with each student. Faculty retain evaluative judgment; students remain obliged to articulate reasoning aloud.
+- **When evaluating any AI-integration choice in this curriculum, ask first what human practice it recovers or protects**, and name that explicitly — this is the throughline for CFD Human-Centered AI grant framing and should inform how COMP 158/159 syllabi, assessment design, and any AI-policy language are written.
+- **Where AI should be disallowed is a deliberate design decision, not a gap.** Don't default to permitting AI use in an assignment or activity; treat prohibition as an equally legitimate, explicitly reasoned pedagogical choice alongside adoption.
+
+**Future consideration:** retroactively frame decisions already made in COMP 170/271 (e.g., agent-conducted orals, AI-assisted grading) using this same human-centric/recovery lens, so the completed terms can serve as documented precedent/evidence for a CFD grant proposal (see `../comp170su26/improvements.md` and `../comp271su26/improvements.md`) rather than being left as undocumented practice.
 
 ## Work in Progress
 
