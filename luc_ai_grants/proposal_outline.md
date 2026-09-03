@@ -6,7 +6,7 @@ Status: draft outline, not yet submission-ready.
 
 - **Category:** Programmatic Curricular Innovations — $20,000 max
   - Rationale: COMP 158/159 qualifies on all three programmatic tests — first-year sequence, intro requirement feeding multiple programs, and (once fully integrated) more than one course. Cite the completed COMP 170/271 Summer 2026 pilot as feasibility evidence rather than applying under Impact Research.
-- **Applicants:** Leo Irakliotis, Karima Ennaoui (confirm both meet full-time eligibility)
+- **Applicants:** Leo Irakliotis, Karima Ennaoui — both confirmed full-time eligible
 - **Letter of support:** from academic unit head — needed before December; flag to chair early given curricular-replacement scope
 - **CFD Human-Centered AI Digital Badge (Fall 2026):** optional but recommended — decide this month whether to enroll
 - **Application window:** opens 2026-12-01, closes 2027-02-01; decisions by 2027-03-01
@@ -68,6 +68,5 @@ Per CFP, Faculty Advisory Board scores on:
 
 ## Open questions
 
-- Full-time eligibility status for both applicants — confirm before drafting further
 - Whether to pursue the CFD badge in Fall 2026
 - Dissemination plan specifics (toolkit vs. university-wide presentation) — to be developed in cohort meetings per CFP, but a first-draft preference is worth having going in
