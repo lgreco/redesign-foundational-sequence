@@ -7,7 +7,7 @@ Status: draft outline, not yet submission-ready.
 - **Category:** Programmatic Curricular Innovations — $20,000 max
   - Rationale: COMP 158/159 qualifies on all three programmatic tests — first-year sequence, intro requirement feeding multiple programs, and (once fully integrated) more than one course. Cite the completed COMP 170/271 Summer 2026 pilot as feasibility evidence rather than applying under Impact Research.
 - **Applicants:** Leo Irakliotis, Karima Ennaoui, Eric Chantin
-- **Letter of support:** from academic unit head — needed before December; flag to chair early given curricular-replacement scope
+- **Letter of support:** from academic unit head — needed before December; flag to GKT early given curricular-replacement scope
 - **CFD Human-Centered AI Digital Badge (Fall 2026):** optional but recommended — decide this month whether to enroll
 - **Application window:** opens 2026-12-01, closes 2027-02-01; decisions by 2027-03-01
 - **Pilot window:** project must be piloted/completed during AY 2027–2028
