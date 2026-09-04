@@ -48,7 +48,7 @@ Typical work includes: refining syllabi and weekly topic plans, designing rubric
 - When proposing rubrics, keep them to 3-point scales
 - Flag any assessment instrument that requires IRB consideration
 
-## Source Syllabi
+## Sources
 
 Original course materials are in [./sources/](./sources/).
 
@@ -62,3 +62,5 @@ Downstream courses the integrated sequence must prepare students for:
 
 - [COMP 271](./sources/COMP%20271%20Syllabus%20Spring%202026.pdf) — linear data structures (CS2, Python)
 - [COMP 272](./sources/COMP%20272%20Syllabus%20Spring%202026.pdf) — non-linear data structures (Java)
+
+External sources (Leo's course repos and other URL references) are tracked separately in [./sources/external.md](./sources/external.md).

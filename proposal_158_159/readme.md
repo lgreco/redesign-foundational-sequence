@@ -7,6 +7,7 @@ A curriculum design project at Loyola University Chicago proposing two new integ
 ## Principals
 * Leo Irakliotis
 * Karima Ennaoui
+* Eric Chantin
 
 ## The Problem
 

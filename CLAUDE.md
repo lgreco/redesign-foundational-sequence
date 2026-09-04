@@ -16,7 +16,7 @@ This repository is scoped tightly to two things: the COMP 158/159 redesign propo
 |---|---|
 | `proposal_158_159/` | Curriculum design documents: proposal, syllabi, topic plans, assessment framework, QA notes, and the legacy-sequence ground-truth record. Contains its own `claude.md` with detailed context — read it before working on proposal content. |
 | `luc_ai_grants/` | Draft materials for a CFD Human-Centered AI grant proposal (`proposal_outline.md`, `rationale.md`), built on the completed Summer 2026 COMP 170/271 pilot as feasibility evidence for the COMP 158/159 sequence. |
-| `sources/` | Original syllabi PDFs for COMP 141, 163, 170, 271, and 272 (Spring 2026). |
+| `sources/` | Original syllabi PDFs for COMP 141, 163, 170, 271, and 272 (Spring 2026), plus `external.md` — a table of external URL sources (Leo's course repos, the legacy outline). |
 
 ## Math formatting
 
