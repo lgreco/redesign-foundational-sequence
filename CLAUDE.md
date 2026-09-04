@@ -8,9 +8,7 @@ A curriculum design project at Loyola University Chicago. The primary work is re
 
 The two principal authors are Leo Irakliotis and Karima Ennaoui.
 
-As of the `ready_for_public` commit (2026-09-03), this repository is scoped tightly to two things: the COMP 158/159 redesign proposal and the CFD Human-Centered AI grant built on it. The Summer 2026 COMP 170/271 private course-operations material (`comp170su26/`, `comp271su26/`, `recording_transcripts/`) was removed from the working tree — it is still recoverable from git history before that commit, but treat it as gone for day-to-day purposes. `proposal_158_159/legacy_outline_170_271.md` is the surviving, purpose-written ground-truth record of what those two courses actually covered; use it instead of looking for the removed folders.
-
-Day-to-day operations for the Fall 2026 offerings of COMP 170, COMP 271, and the new COMP 363 (including their near-term section planning) live entirely in separate sibling repos — `../comp-170-f26/`, `../comp-271-f26/`, `../comp-363-f26/`, and `../classroom-recordings/` (recordings, transcripts, and per-session summaries for all three) — outside this repository's scope.
+This repository is scoped tightly to two things: the COMP 158/159 redesign proposal and the CFD Human-Centered AI grant built on it. `proposal_158_159/legacy_outline_170_271.md` is the ground-truth record of what the Summer 2026 COMP 170/271 pilot terms actually covered — use it as the source for that history.
 
 ## Repository structure
 
