@@ -18,7 +18,7 @@ I don't want to gesture at *Magnifica Humanitas* the way a lot of applicants wil
 
 ## Where AI should be disallowed
 
-The CFP explicitly invites "careful consideration of when to disallow the use of AI in a curriculum," and I take that as seriously as the adoption side. Not every use of AI in COMP 158/159 should default to permitted — some assignments and activities exist specifically to build skills (debugging by hand, reading a stack trace, reasoning through recursion on paper) that AI assistance would let students skip past without acquiring. Deciding where to prohibit AI is as deliberate a design act as deciding where to use it, and the proposal should name both sides of that decision, not just the adoption half.
+The CFP explicitly invites "careful consideration of when to disallow the use of AI in a curriculum," and I take that as seriously as the adoption side. Not every use of AI in COMP 158/159 should default to permitted — some assignments and activities exist specifically to build skills (debugging by hand, reading a stack trace, reasoning through recursion on paper) that AI assistance would let students skip past without acquiring. Deciding where to prohibit AI is as deliberate a design act as deciding where to use it, and the proposal should name both sides of that decision, not just the adoption half. [Need to add a note here that use of CLI/vim restricts the use of AI at early stages in the course.]
 
 ## Timing and dependencies
 
