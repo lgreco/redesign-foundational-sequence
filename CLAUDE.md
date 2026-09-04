@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A curriculum design project at Loyola University Chicago. The primary work is redesigning the introductory CS sequence by proposing two integrated courses — **COMP 158** (fall) and **COMP 159** (spring) — to replace three separate legacy courses: COMP 141 (CLI/tools), COMP 163 (discrete math), and COMP 170 (CS1/Python). The downstream courses the sequence must prepare students for are COMP 271 (CS2, Python) and COMP 272 (non-linear data structures, Java).
 
-The two principal authors are Leo Irakliotis and Karima Ennaoui.
+The principal authors are Leo Irakliotis, Karima Ennaoui, and Eric Chantin.
 
 This repository is scoped tightly to two things: the COMP 158/159 redesign proposal and the CFD Human-Centered AI grant built on it. `proposal_158_159/legacy_outline_170_271.md` is the ground-truth record of what the Summer 2026 COMP 170/271 pilot terms actually covered — use it as the source for that history.
 
